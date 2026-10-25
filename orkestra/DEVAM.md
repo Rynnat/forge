@@ -106,3 +106,11 @@ Kullanıcının bilgisayarı yeniden başlatılacağı için iş yarıda kesildi
   İki sistem aynı soruyu alıyor. B'de etkisi: şef planı İngilizce; Türkçe soru, sıralamanın 6–9 sorgu metninden yalnız biri.
   Durdurulmadı; raporda yazılacak. q01: $0.652, 1151 s.
 - v1 adayı tasarım: `gelistirme/ONERI-arxiv-yerel.md` (yerel arXiv FTS5 dizini; indirme B bitince).
+
+## DURDURULDU (2026-10-25 ~19:15, kullanıcı isteği)
+- Kullanıcı tüm çalışan görevleri durdurttu; sebep: Forge'un yönü sorgulanıyor (literatür hattına daralma, gerçek kullanım 0).
+- Durdurulduğunda: B 4/30 soru bitmiş (deney-sonuc/B), A0 deney-sonuc/A0 (bkz. sayı), v1 ajanı yarıda
+  (forge-v1 worktree'de commit'siz dosyalar; forge-veri/arxiv_yerel.sqlite ~5,2 GB, kurulum bitmemiş olabilir).
+- Deney yarıda: n < 30 → ON KAYIT'a göre karar yok. Devam edilirse B aynı komutla, bitmiş soruları atlayarak sürdürülmeli
+  (batch'in atlama yapıp yapmadığını önce kontrol et). Kod etiketi orkestra-v0-donmus değişmedi.
+- Sıradaki önerilen iş (kullanıcı onayı bekliyor): "diğer" %79'luk kullanımı projelere bölmek (maliyet-sayaci), sıradaki çalgıcıyı ona göre seçmek.
