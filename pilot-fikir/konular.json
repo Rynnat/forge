@@ -1,0 +1,5 @@
+[
+ {"id": "T1", "konu": "non-invasive EEG brain-computer interfaces with deep learning"},
+ {"id": "T2", "konu": "LLM-based agents for automated software testing"},
+ {"id": "T3", "konu": "learning robotic manipulation from human video demonstrations"}
+]
