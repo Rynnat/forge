@@ -169,25 +169,40 @@ def snowball(ctx: Ctx, pool: list[dict]) -> list[dict]:
     cites: dict[str, set] = {}
     late: set[str] = set()
     calls = 0
-    for sd in seeds:
-        sid = public_id(sd)
-        try:
-            for d in opencitations.seed_dois(sd):
-                if not d.startswith("10.48550/"):  # arXiv DataCite DOI'lerinin kaynakçası yok
-                    calls += 1
-                    for x in ctx.oc.references(d):
-                        refs.setdefault(x, set()).add(sid)
-                calls += 1
-                for x, created in ctx.oc.citations(d):
-                    if opencitations.created_before(created, ctx.cut) is False:
-                        late.add(x)
-                        continue
-                    cites.setdefault(x, set()).add(sid)
-        except FATAL as exc:
-            f.source("atif", EKSIK, f"{type(exc).__name__}: {exc.detail}"[:200])
-            break
-        except (RequestFailed, ValueError, KeyError) as exc:
-            f.error(f"atif:{type(exc).__name__}")
+
+    def fetch(sd: dict) -> tuple[str, list[str], list[tuple[str, str]], int]:
+        """Bir tohumun referansları + atıf yapanları; hata olursa yükseltir (hiçbiri yarım eklenmez)."""
+        rs, cs, n = [], [], 0
+        for d in opencitations.seed_dois(sd):
+            if not d.startswith("10.48550/"):  # arXiv DataCite DOI'lerinin kaynakçası yok
+                n += 1
+                rs += ctx.oc.references(d)
+            n += 1
+            cs += ctx.oc.citations(d)
+        return public_id(sd), rs, cs, n
+
+    with cf.ThreadPoolExecutor(max_workers=3) as ex:  # OpenCitations: es_zamanli=3
+        futs = [ex.submit(fetch, sd) for sd in seeds]
+        fatal = False
+        for fut in futs:  # tohum sırasıyla: sonuç koşudan koşuya aynı
+            try:
+                sid, rs, cs, n = fut.result()
+            except FATAL as exc:
+                if not fatal:
+                    f.source("atif", EKSIK, f"{type(exc).__name__}: {exc.detail}"[:200])
+                fatal = True
+                continue
+            except (RequestFailed, ValueError, KeyError) as exc:
+                f.error(f"atif:{type(exc).__name__}")
+                continue
+            calls += n
+            for x in rs:
+                refs.setdefault(x, set()).add(sid)
+            for x, created in cs:
+                if opencitations.created_before(created, ctx.cut) is False:
+                    late.add(x)
+                    continue
+                cites.setdefault(x, set()).add(sid)
     late -= set(refs) | set(cites)
     ref_sel = sorted(refs, key=lambda d: -len(refs[d]))[: cfg.snowball_refs_max]
     cite_pool = [d for d in cites if d not in refs]

@@ -20,6 +20,7 @@ class SourceLimits:
     max_retries: int = 4
     backoff_s: tuple[float, ...] = (10.0, 30.0, 60.0, 120.0)  # Retry-After'sız 429 için
     max_wait_s: float = 300.0  # Retry-After bundan büyükse kota bitti sayılır
+    es_zamanli: int = 1  # aynı anda uçuşta en çok N istek (1 = sıralı)
 
 
 DEFAULT_LIMITS = {
@@ -28,8 +29,8 @@ DEFAULT_LIMITS = {
     "dblp": SourceLimits(min_interval_s=1.0, max_retries=2, backoff_s=(15.0, 45.0)),
     "openalex": SourceLimits(min_interval_s=0.3),
     "s2": SourceLimits(min_interval_s=1.2, max_retries=2, backoff_s=(10.0, 30.0)),
-    "oc_index": SourceLimits(min_interval_s=0.5, max_retries=3, backoff_s=(10.0, 30.0, 60.0)),
-    "oc_meta": SourceLimits(min_interval_s=0.5, max_retries=3, backoff_s=(10.0, 30.0, 60.0)),
+    "oc_index": SourceLimits(min_interval_s=0.5, max_retries=3, backoff_s=(10.0, 30.0, 60.0), es_zamanli=3),
+    "oc_meta": SourceLimits(min_interval_s=0.5, max_retries=3, backoff_s=(10.0, 30.0, 60.0), es_zamanli=3),
 }
 
 
@@ -71,7 +72,7 @@ class Config:
     # okuyucu
     reader_max: int = 1200
     reader_batch: int = 30
-    reader_parallel: int = 4
+    reader_parallel: int = 8
     abstract_words_reader: int = 140
     # damıtıcı
     embed_model: str = "sentence-transformers/all-MiniLM-L6-v2"

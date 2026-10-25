@@ -137,12 +137,18 @@ def title_sim(a: str, b: str) -> float:
     return SequenceMatcher(None, a, b, autojunk=False).ratio()
 
 
+def _tok_set(s: str) -> frozenset[str]:
+    return frozenset(t[:-1] if len(t) > 3 and t.endswith("s") else t for t in s.split())
+
+
+def _jac(ta: frozenset, tb: frozenset) -> float:
+    return len(ta & tb) / max(1, len(ta | tb))
+
+
 def _tok_jaccard(a: str, b: str) -> float:
     """Kelime kümesi benzerliği (sondaki 's' atılarak): tek kelimesi farklı kısa başlıkların
     karakter benzerliğiyle yanlışlıkla birleşmesini önler."""
-    ta = {t[:-1] if len(t) > 3 and t.endswith("s") else t for t in a.split()}
-    tb = {t[:-1] if len(t) > 3 and t.endswith("s") else t for t in b.split()}
-    return len(ta & tb) / max(1, len(ta | tb))
+    return _jac(_tok_set(a), _tok_set(b))
 
 
 class _UF:
@@ -181,27 +187,39 @@ def dedup(recs: list[dict], fuzzy: float = 0.90) -> tuple[list[dict], int]:
                 uf.union(by[k], i)
             else:
                 by[k] = i
-    # bulanık başlık: anahtar-kelime bloklaması + SequenceMatcher
+    # bulanık başlık: anahtar-kelime bloklaması + SequenceMatcher.
+    # Ucuz süzgeçler önce (uzunluk, kelime kümesi, çakışma), pahalı oran en son; her çift bir kez.
     blocks: dict[str, list[int]] = {}
     for i, nt in enumerate(nts):
         if len(nt) < 20:
             continue
         for tok in _title_key_tokens(nt):
             blocks.setdefault(tok, []).append(i)
+    toks: dict[int, frozenset] = {}
+    seen: set[tuple[int, int]] = set()
     for idx in blocks.values():
         if len(idx) > 400:  # aşırı yaygın kelime: bloklama işe yaramaz
             continue
         for a_i in range(len(idx)):
             for b_i in range(a_i + 1, len(idx)):
                 a, b = idx[a_i], idx[b_i]
+                if (a, b) in seen:
+                    continue
+                seen.add((a, b))
                 if uf.find(a) == uf.find(b):
                     continue
-                la, lb = len(nts[a]), len(nts[b])
+                na, nb = nts[a], nts[b]
+                la, lb = len(na), len(nb)
                 if min(la, lb) / max(la, lb) < fuzzy - 0.05:
                     continue
-                if _conflict(recs[a], recs[b]):
+                ta = toks.get(a) or toks.setdefault(a, _tok_set(na))
+                tb = toks.get(b) or toks.setdefault(b, _tok_set(nb))
+                if _jac(ta, tb) < 0.75:
                     continue
-                if title_sim(nts[a], nts[b]) >= fuzzy and _tok_jaccard(nts[a], nts[b]) >= 0.75:
+                if _conflict(recs[a], recs[b], na, nb):
+                    continue
+                sm = SequenceMatcher(None, na, nb, autojunk=False)
+                if sm.real_quick_ratio() >= fuzzy and sm.quick_ratio() >= fuzzy and sm.ratio() >= fuzzy:
                     uf.union(a, b)
     groups: dict[int, list[int]] = {}
     for i in range(n):
@@ -221,12 +239,15 @@ _DIGITS = re.compile(r"\d+")
 _ROMAN = re.compile(r"\b(?:i{1,3}|iv|v|vi{0,3}|ix|x)\b")
 
 
-def _conflict(a: dict, b: dict) -> bool:
+def _conflict(a: dict, b: dict, na: str | None = None, nb: str | None = None) -> bool:
     """Başlık benzer olsa da birleşmeyecek çiftler: farklı arXiv id'leri; başlıktaki sayılar ya da
     roma rakamları farklı ('Part I/II', 'v2/v3', '... 2019/2020')."""
     if a.get("arxiv_id") and b.get("arxiv_id") and a["arxiv_id"] != b["arxiv_id"]:
         return True
-    na, nb = norm_title(a.get("title")), norm_title(b.get("title"))
+    if na is None:
+        na = norm_title(a.get("title"))
+    if nb is None:
+        nb = norm_title(b.get("title"))
     if _DIGITS.findall(na) != _DIGITS.findall(nb):
         return True
     return _ROMAN.findall(na) != _ROMAN.findall(nb)

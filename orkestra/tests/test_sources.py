@@ -152,3 +152,31 @@ def test_s2_parse():
     assert r["arxiv_id"] == "1704.01212" and r["doi"] == "10.1/q" and [2017, 4, 4] in r["dates"]
     assert s2.parse_paper({"title": None}) == {"_drop": "basliksiz"}
     assert s2.s2_key(r) == "ARXIV:1704.01212"
+
+
+def test_concurrent_source_overlaps_serial_does_not(cfg):
+    import threading, time
+    from orkestra.config import SourceLimits
+
+    def run(es):
+        cfg.limits = {**getattr(cfg, "limits", {}), "oc_index": SourceLimits(min_interval_s=0.0, es_zamanli=es)}
+        state = {"now": 0, "max": 0}
+        lock = threading.Lock()
+
+        def slow(kw):
+            with lock:
+                state["now"] += 1
+                state["max"] = max(state["max"], state["now"])
+            time.sleep(0.05)
+            with lock:
+                state["now"] -= 1
+            return R(200, b"[]")
+
+        h = Http(cfg, session=Sess([slow] * 6), sleep=lambda s: None, cache_path=None)
+        ts = [threading.Thread(target=h.get, args=("oc_index", f"u{i}")) for i in range(6)]
+        [t.start() for t in ts]
+        [t.join() for t in ts]
+        return state["max"]
+
+    assert run(1) == 1
+    assert 1 < run(3) <= 3

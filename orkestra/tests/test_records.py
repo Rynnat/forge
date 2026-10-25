@@ -82,3 +82,13 @@ def test_fuzzy_title_merge_but_not_different_arxiv_ids():
     out, n = dedup([a, b, c])
     assert n == 1  # a+b birleşir, c farklı arXiv id → ayrı
     assert len(out) == 2
+
+
+def test_fuzzy_needs_both_char_and_word_similarity():
+    # karakterce çok yakın ama bir anahtar kelime farklı: birleşmemeli (kelime kümesi süzgeci)
+    a = rec("Deep Learning for Protein Folding", src="crossref", doi="10.1/a")
+    b = rec("Deep Learning for Protein Holding", src="crossref", doi="10.1/b")
+    # aynı başlığın üç ortak anahtar kelimeli iki yazımı: birleşmeli (çift birden çok blokta)
+    c = rec("Deep learning for protein folding.", src="arxiv", arxiv_id="2101.00001")
+    out, n = dedup([a, b, c])
+    assert n == 1 and len(out) == 2

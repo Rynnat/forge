@@ -108,6 +108,7 @@ class Http:
         self.cache = Cache(cache_path or None)
         self.locks: dict[str, threading.Lock] = defaultdict(threading.Lock)
         self.last: dict[str, float] = {}
+        self.sems: dict[str, threading.BoundedSemaphore] = {}
         self.stats: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
         self.exhausted: dict[str, str] = {}
 
@@ -131,17 +132,9 @@ class Http:
         hdrs = {"User-Agent": USER_AGENT, **(headers or {})}
         last = ""
         for attempt in range(lim.max_retries + 1):
-            with self.locks[source]:  # kaynak başına sıralı + aralıklı
-                gap = time.monotonic() - self.last.get(source, -1e9)
-                if gap < lim.min_interval_s:
-                    self.sleep(lim.min_interval_s - gap)
-                try:
-                    r = self.session.request(method, url, params=params, data=data, json=json_body,
-                                             headers=hdrs, timeout=self.cfg.http_timeout_s)
-                except (requests.RequestException, OSError) as exc:
-                    r = None
-                    last = f"{type(exc).__name__}: {exc}"
-                self.last[source] = time.monotonic()
+            r, err = self._send(source, lim, method, url, params, data, json_body, hdrs)
+            if err:
+                last = err
             st["istek"] += 1
             if r is None:
                 st["ag_hatasi"] += 1
@@ -180,6 +173,35 @@ class Http:
                 continue
             raise RequestFailed(source, code, last)
         raise RequestFailed(source, None, f"tekrarlar tükendi: {last}")
+
+    def _send(self, source, lim, method, url, params, data, json_body, hdrs):
+        """Tek istek. es_zamanli=1: kaynak başına sıralı + aralıklı (kilit istek boyunca tutulur).
+        es_zamanli>1: başlangıçlar yine min_interval aralıklı, ama en çok N istek aynı anda uçuşta."""
+        def call():
+            try:
+                return self.session.request(method, url, params=params, data=data, json=json_body,
+                                            headers=hdrs, timeout=self.cfg.http_timeout_s), ""
+            except (requests.RequestException, OSError) as exc:
+                return None, f"{type(exc).__name__}: {exc}"
+
+        def wait_gap():
+            gap = time.monotonic() - self.last.get(source, -1e9)
+            if gap < lim.min_interval_s:
+                self.sleep(lim.min_interval_s - gap)
+
+        if lim.es_zamanli <= 1:
+            with self.locks[source]:
+                wait_gap()
+                res = call()
+                self.last[source] = time.monotonic()
+            return res
+        with self.locks["_sem"]:
+            sem = self.sems.setdefault(source, threading.BoundedSemaphore(lim.es_zamanli))
+        with sem:
+            with self.locks[source]:
+                wait_gap()
+                self.last[source] = time.monotonic()
+            return call()
 
     def get(self, source: str, url: str, params: dict | None = None, **kw) -> Resp:
         return self.request(source, url, params=params, **kw)
