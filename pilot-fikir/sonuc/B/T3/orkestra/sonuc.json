@@ -1,0 +1,955 @@
+{
+ "run_id": "20261025-201530-cb7f10",
+ "soru": "What are the most important works and open problems in learning robotic manipulation from human video demonstrations?",
+ "kesim": "2026-10-25",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.5554,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.062724,
+   "in": 1174,
+   "out": 2667,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.15606722,
+   "in": 374744,
+   "out": 76121,
+   "web_search": 8
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.21688890000000002,
+   "in": 285387,
+   "out": 319639,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.119672,
+   "in": 10840,
+   "out": 1648,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 26.4,
+  "toplama:openalex": 1.2,
+  "toplama:crossref": 124.6,
+  "web_isci": 150.7,
+  "toplama:dblp": 232.5,
+  "toplama:arxiv": 326.7,
+  "toplama": 326.8,
+  "tekil+kesim_1": 43.1,
+  "atif": 129.5,
+  "okuyucu": 332.7,
+  "damitma": 19.0,
+  "sef_final": 14.8,
+  "toplam": 892.3
+ },
+ "ozet_token_tahmini": 3802,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "What are the foundations and classic methods for learning manipulation from human demonstrations and video (imitation learning, learning from observation, third-person imitation)?",
+    "sorgular": [
+     "\"learning from observation\" robot imitation",
+     "\"third-person imitation learning\"",
+     "\"imitation from observation\" video",
+     "\"behavioral cloning from observation\"",
+     "robot \"learning from demonstration\" human video"
+    ],
+    "yeterli": "Coverage is sufficient when seminal LfD/LfO works (e.g., BCO, time-contrastive networks, third-person imitation, imitation from observation) and early video-to-robot pipelines are identified."
+   },
+   {
+    "id": "S2",
+    "soru": "How are visual representations pretrained on human video (egocentric, internet-scale) and reused for robot manipulation?",
+    "sorgular": [
+     "\"visual representation\" human video robot manipulation pretraining",
+     "R3M \"universal visual representation\" robot",
+     "egocentric video pretraining robot policy",
+     "\"masked visual pretraining\" motor control",
+     "value-implicit pretraining VIP robot"
+    ],
+    "yeterli": "Coverage is sufficient when key pretrained representations (R3M, MVP, VIP, Voltron, VC-1, LIV) and their evaluations are covered."
+   },
+   {
+    "id": "S3",
+    "soru": "What methods extract actionable intermediate representations (affordances, hand poses, object/point tracks, optical flow) from human videos for transfer to robots?",
+    "sorgular": [
+     "affordance learning human video robot",
+     "hand-object interaction human video robot transfer",
+     "\"point tracking\" robot policy human video",
+     "optical flow \"object-centric\" manipulation video",
+     "\"embodiment gap\" hand retargeting manipulation"
+    ],
+    "yeterli": "Coverage is sufficient when affordance-based (VRB), track/flow-based (ATM, Track2Act, Im2Flow2Act, General Flow), and hand-pose retargeting approaches (DexMV, VideoDex) are captured."
+   },
+   {
+    "id": "S4",
+    "soru": "How do video prediction / world models and latent action models trained on human video enable robot policies (video generation as policy, latent actions, VLA pretraining on human videos)?",
+    "sorgular": [
+     "video generation \"universal policy\" robot",
+     "\"latent action\" pretraining human video robot",
+     "world model human video manipulation",
+     "video diffusion policy robot planning",
+     "\"vision-language-action\" human video pretraining"
+    ],
+    "yeterli": "Coverage is sufficient when UniPi, latent action pretraining (LAPA, Genie), video-language planning, and recent VLA works using human video (e.g., GR-1/GR-2, EgoVLA) are covered."
+   },
+   {
+    "id": "S5",
+    "soru": "Which datasets and data-collection systems of human manipulation video are used (egocentric datasets, handheld grippers, wearable capture)?",
+    "sorgular": [
+     "Ego4D egocentric video dataset",
+     "\"EPIC-KITCHENS\" dataset",
+     "egocentric dexterous manipulation dataset hand pose",
+     "\"universal manipulation interface\" handheld gripper",
+     "human demonstration data collection wearable robot learning"
+    ],
+    "yeterli": "Coverage is sufficient when major video datasets (Ego4D, EPIC-KITCHENS, Something-Something, HOI4D, EgoDex) and in-the-wild collection systems (UMI, DexCap) are identified."
+   },
+   {
+    "id": "S6",
+    "soru": "How are rewards and task specifications learned from human videos for reinforcement learning on robots?",
+    "sorgular": [
+     "reward learning from human videos robot",
+     "\"domain-agnostic video discriminator\"",
+     "video-language reward model robot",
+     "\"learning rewards\" in-the-wild videos manipulation",
+     "inverse reinforcement learning video demonstrations"
+    ],
+    "yeterli": "Coverage is sufficient when reward-from-video works (DVD, XIRL, Concept2Robot, VIP/LIV rewards) and their limitations are covered."
+   },
+   {
+    "id": "S7",
+    "soru": "How are these methods evaluated and what open problems remain (embodiment gap, scaling, generalization, dexterity, benchmarks)?",
+    "sorgular": [
+     "embodiment gap human-to-robot transfer survey",
+     "cross-embodiment manipulation generalization benchmark",
+     "learning from human videos survey robotics",
+     "\"Open X-Embodiment\" robot learning",
+     "scaling robot learning human video challenges"
+    ],
+    "yeterli": "Coverage is sufficient when surveys, benchmark/evaluation protocols, and clearly stated open challenges (embodiment mismatch, missing actions, evaluation standards) are collected."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Time-Contrastive Networks: Self-Supervised Learning from Video",
+    "yil": 2018
+   },
+   {
+    "baslik": "Behavioral Cloning from Observation",
+    "yil": 2018
+   },
+   {
+    "baslik": "Imitation from Observation: Learning to Imitate Behaviors from Raw Video via Context Translation",
+    "yil": 2018
+   },
+   {
+    "baslik": "R3M: A Universal Visual Representation for Robot Manipulation",
+    "yil": 2022
+   },
+   {
+    "baslik": "Masked Visual Pre-training for Motor Control",
+    "yil": 2022
+   },
+   {
+    "baslik": "Real-World Robot Learning with Masked Visual Pre-training",
+    "yil": 2022
+   },
+   {
+    "baslik": "VIP: Towards Universal Visual Reward and Representation via Value-Implicit Pre-Training",
+    "yil": 2023
+   },
+   {
+    "baslik": "Learning Generalizable Robotic Reward Functions from \"In-The-Wild\" Human Videos",
+    "yil": 2021
+   },
+   {
+    "baslik": "XIRL: Cross-embodiment Inverse Reinforcement Learning",
+    "yil": 2021
+   },
+   {
+    "baslik": "Affordances from Human Videos as a Versatile Representation for Robotics",
+    "yil": 2023
+   },
+   {
+    "baslik": "Human-to-Robot Imitation in the Wild",
+    "yil": 2022
+   },
+   {
+    "baslik": "DexMV: Imitation Learning for Dexterous Manipulation from Human Videos",
+    "yil": 2022
+   },
+   {
+    "baslik": "VideoDex: Learning Dexterity from Internet Videos",
+    "yil": 2022
+   },
+   {
+    "baslik": "Learning Universal Policies via Text-Guided Video Generation",
+    "yil": 2023
+   },
+   {
+    "baslik": "Language-Driven Representation Learning for Robotics",
+    "yil": 2023
+   },
+   {
+    "baslik": "Where are we in the search for an Artificial Visual Cortex for Embodied Intelligence?",
+    "yil": 2023
+   },
+   {
+    "baslik": "Any-point Trajectory Modeling for Policy Learning",
+    "yil": 2024
+   },
+   {
+    "baslik": "Track2Act: Predicting Point Tracks from Internet Videos enables Generalizable Robot Manipulation",
+    "yil": 2024
+   },
+   {
+    "baslik": "Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots",
+    "yil": 2024
+   },
+   {
+    "baslik": "DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation",
+    "yil": 2024
+   },
+   {
+    "baslik": "Latent Action Pretraining from Videos",
+    "yil": 2024
+   },
+   {
+    "baslik": "Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation",
+    "yil": 2023
+   },
+   {
+    "baslik": "Ego4D: Around the World in 3,000 Hours of Egocentric Video",
+    "yil": 2022
+   },
+   {
+    "baslik": "Scaling Egocentric Vision: The EPIC-KITCHENS Dataset",
+    "yil": 2018
+   },
+   {
+    "baslik": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+    "yil": 2023
+   }
+  ],
+  "web_odaklari": [
+   "awesome learning from human videos robot manipulation github",
+   "awesome robot learning from egocentric video papers list",
+   "human video to robot manipulation reading list survey"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:1707.03374",
+  "arXiv:2103.16817",
+  "arXiv:2410.11758",
+  "arXiv:2203.12601",
+  "arXiv:2606.15768",
+  "arXiv:2402.10329",
+  "arXiv:2304.08488",
+  "arXiv:1805.01954",
+  "arXiv:2210.00030",
+  "arXiv:2108.05877",
+  "arXiv:2302.00111",
+  "arXiv:2106.03911"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1707.03374",
+   "arxiv_id": "1707.03374",
+   "doi": "10.1109/icra.2018.8462901",
+   "baslik": "Imitation from Observation: Learning to Imitate Behaviors from Raw Video via Context Translation",
+   "yil": 2017,
+   "tarih": "2017-07-11",
+   "gerekce": "Foundational imitation-from-observation work learning to imitate behaviors from raw video via context translation.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we observe another person performing some behavior and then figure out which actions will realize that behavior",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 166,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:1805.01954",
+   "arxiv_id": "1805.01954",
+   "doi": "10.24963/ijcai.2018/687",
+   "baslik": "Behavioral Cloning from Observation",
+   "yil": 2018,
+   "tarih": "2018-05-04",
+   "gerekce": "Highly cited behavioral cloning from observation, addressing learning from observation only with self-supervised pre-experience.",
+   "gerekce_kokeni": "sef",
+   "alinti": "there are two particular aspects that have largely been overlooked: (1) that the learning is done from observation only",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 430,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:1704.06888",
+   "arxiv_id": "1704.06888",
+   "doi": "10.1109/icra.2018.8462891",
+   "baslik": "Time-Contrastive Networks: Self-Supervised Learning from Video",
+   "yil": 2017,
+   "tarih": "2017-04-23",
+   "gerekce": "Classic self-supervised representation learning from multi-view video using a metric learning loss for imitation.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We train our representations using a metric learning loss, where multiple simultaneous viewpoints of the same observation are attracted in the embedding space",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2203.12601",
+   "arxiv_id": "2203.12601",
+   "doi": null,
+   "baslik": "R3M: A Universal Visual Representation for Robot Manipulation",
+   "yil": 2022,
+   "tarih": "2022-03-23",
+   "gerekce": "R3M shows visual representations pretrained on diverse human video enable data-efficient downstream robot manipulation learning.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We study how visual representations pre-trained on diverse human video data can enable data-efficient learning of downstream robotic manipulation tasks",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2110.07058",
+   "arxiv_id": "2110.07058",
+   "doi": "10.1109/cvpr52688.2022.01842",
+   "baslik": "Ego4D: Around the World in 3,000 Hours of Egocentric Video",
+   "yil": 2021,
+   "tarih": "2021-10-13",
+   "gerekce": "Ego4D provides 3,670 hours of daily-life egocentric video, a foundational dataset for human-video robot learning.",
+   "gerekce_kokeni": "sef",
+   "alinti": "It offers 3,670 hours of daily-life activity video spanning hundreds of scenarios (household, outdoor, workplace, leisure, etc.)",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2210.00030",
+   "arxiv_id": "2210.00030",
+   "doi": null,
+   "baslik": "VIP: Towards Universal Visual Reward and Representation via Value-Implicit Pre-Training",
+   "yil": 2022,
+   "tarih": "2022-09-30",
+   "gerekce": "VIP learns a universal visual reward and representation from large, diverse offline human videos via value-implicit pre-training.",
+   "gerekce_kokeni": "sef",
+   "alinti": "learning from large, diverse, offline human videos has emerged as a promising path towards acquiring a generally useful visual representation for control",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2210.03109",
+   "arxiv_id": "2210.03109",
+   "doi": null,
+   "baslik": "Real-World Robot Learning with Masked Visual Pre-training",
+   "yil": 2022,
+   "tarih": "2022-10-06",
+   "gerekce": "Scales masked visual pretraining to 4.5M Internet and egocentric images, training a 307M-parameter vision transformer for real-world robots.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Finally, we train a 307M parameter vision transformer on a massive collection of 4.5M images from the Internet and egocentric videos",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2304.08488",
+   "arxiv_id": "2304.08488",
+   "doi": "10.1109/cvpr52729.2023.01324",
+   "baslik": "Affordances from Human Videos as a Versatile Representation for Robotics",
+   "yil": 2023,
+   "tarih": "2023-04-17",
+   "gerekce": "Trains visual affordance models from human videos estimating where and how humans interact, a versatile robotics representation.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we train a visual affordance model that estimates where and how in the scene a human is likely to interact",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 138,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2402.10329",
+   "arxiv_id": "2402.10329",
+   "doi": "10.15607/rss.2024.xx.045",
+   "baslik": "Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots",
+   "yil": 2024,
+   "tarih": "2024-02-15",
+   "gerekce": "UMI uses hand-held grippers for portable, low-cost, information-rich in-the-wild data collection without in-the-wild robots.",
+   "gerekce_kokeni": "sef",
+   "alinti": "UMI employs hand-held grippers coupled with careful interface design to enable portable, low-cost, and information-rich data collection",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 209,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2410.11758",
+   "arxiv_id": "2410.11758",
+   "doi": null,
+   "baslik": "Latent Action Pretraining from Videos",
+   "yil": 2024,
+   "tarih": "2024-10-15",
+   "gerekce": "Latent action pretraining learns discrete latent actions between frames with a VQ-VAE objective from unlabeled videos.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We first train an action quantization model leveraging VQ-VAE-based objective to learn discrete latent actions between image frames",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2103.16817",
+   "arxiv_id": "2103.16817",
+   "doi": "10.15607/rss.2021.xvii.012",
+   "baslik": "Learning Generalizable Robotic Reward Functions from \"In-The-Wild\" Human Videos",
+   "yil": 2021,
+   "tarih": "2021-03-31",
+   "gerekce": "Learns generalizable robotic reward functions from in-the-wild human videos such as YouTube.",
+   "gerekce_kokeni": "sef",
+   "alinti": "videos of humans (e.g. YouTube) contain an extensive collection of people doing interesting tasks",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 49,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2108.05877",
+   "arxiv_id": "2108.05877",
+   "doi": "10.1007/978-3-031-19842-7_33",
+   "baslik": "DexMV: Imitation Learning for Dexterous Manipulation from Human Videos",
+   "yil": 2021,
+   "tarih": "2021-08-12",
+   "gerekce": "DexMV extracts 3D hand and object poses from videos and translates human motion into robot demonstrations for dexterity.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we extract 3D hand and object poses from videos, and propose a novel demonstration translation method to convert human motion to robot demonstrations",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2405.01527",
+   "arxiv_id": "2405.01527",
+   "doi": null,
+   "baslik": "Track2Act: Predicting Point Tracks from Internet Videos enables Generalizable Robot Manipulation",
+   "yil": 2024,
+   "tarih": "2024-05-02",
+   "gerekce": "Track2Act predicts point tracks trained on diverse web videos of humans and robots for generalizable manipulation.",
+   "gerekce_kokeni": "sef",
+   "alinti": "can be trained with diverse videos on the web including those of humans and robots manipulating everyday objects",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2604.27621",
+   "arxiv_id": "2604.27621",
+   "doi": null,
+   "baslik": "Robot Learning from Human Videos: A Survey",
+   "yil": 2026,
+   "tarih": "2026-04-30",
+   "gerekce": "Recent survey of robot learning from human videos, reviewing policy foundations and interfaces for incorporating human videos.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We first review the policy learning foundations in robotics, and then describe the fundamental interfaces to incorporate human videos.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2505.11709",
+   "arxiv_id": "2505.11709",
+   "doi": null,
+   "baslik": "EgoDex: Learning Dexterous Manipulation from Large-Scale Egocentric Video",
+   "yil": 2025,
+   "tarih": "2025-05-16",
+   "gerekce": "EgoDex offers 829 hours of egocentric video paired with 3D hand and finger tracking for dexterous manipulation.",
+   "gerekce_kokeni": "sef",
+   "alinti": "EgoDex has 829 hours of egocentric video with paired 3D hand and finger tracking data collected at the time of recording",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2302.12422",
+   "arxiv_id": "2302.12422",
+   "doi": null,
+   "baslik": "MimicPlay: Long-Horizon Imitation Learning by Watching Human Play",
+   "yil": 2023,
+   "tarih": "2023-02-24",
+   "gerekce": "MimicPlay uses human play data for long-horizon imitation learning, exploiting rich physical interaction information.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we hypothesize that human play data contain rich and salient information about physical interactions that can readily facilitate robot policy learning",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2106.03911",
+   "arxiv_id": "2106.03911",
+   "doi": null,
+   "baslik": "XIRL: Cross-embodiment Inverse Reinforcement Learning",
+   "yil": 2021,
+   "tarih": "2021-06-07",
+   "gerekce": "XIRL learns cross-embodiment rewards so agents learn policies from videos of other agents such as humans.",
+   "gerekce_kokeni": "sef",
+   "alinti": "agents learn policies from videos of other agents (such as humans) demonstrating the same task",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2401.00025",
+   "arxiv_id": "2401.00025",
+   "doi": null,
+   "baslik": "Any-point Trajectory Modeling for Policy Learning",
+   "yil": 2023,
+   "tarih": "2023-12-28",
+   "gerekce": "Any-point trajectory modeling provides control guidance from video, enabling robust policies with minimal action-labeled data.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Once trained, these trajectories provide detailed control guidance, enabling the learning of robust visuomotor policies with minimal action-labeled data",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2212.04498",
+   "arxiv_id": "2212.04498",
+   "doi": null,
+   "baslik": "VideoDex: Learning Dexterity from Internet Videos",
+   "yil": 2022,
+   "tarih": "2022-12-08",
+   "gerekce": "VideoDex leverages visual, action, and physical priors from internet human video datasets to guide robot dexterity.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We build a learning algorithm, VideoDex, that leverages visual, action, and physical priors from human video datasets to guide robot behavior",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2403.07788",
+   "arxiv_id": "2403.07788",
+   "doi": null,
+   "baslik": "DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation",
+   "yil": 2024,
+   "tarih": "2024-03-12",
+   "gerekce": "DexCap provides portable, occlusion-resistant wrist and finger motion capture for scalable dexterous data collection.",
+   "gerekce_kokeni": "sef",
+   "alinti": "DexCap offers precise, occlusion-resistant tracking of wrist and finger motions based on SLAM and electromagnetic field together with 3D observations",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2409.16283",
+   "arxiv_id": "2409.16283",
+   "doi": null,
+   "baslik": "Gen2Act: Human Video Generation in Novel Scenarios enables Generalizable Robot Manipulation",
+   "yil": 2024,
+   "tarih": "2024-09-24",
+   "gerekce": "Gen2Act uses video generation models trained on web data to generate human videos that enable generalizable manipulation.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Instead of attempting to scale robot data collection which is expensive, we show how we can leverage video generation models trained on easily available web data, for enabling generalization.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2302.00111",
+   "arxiv_id": "2302.00111",
+   "doi": "10.52202/075280-0403",
+   "baslik": "Learning Universal Policies via Text-Guided Video Generation",
+   "yil": 2023,
+   "tarih": "2023-01-31",
+   "gerekce": "Casts sequential decision making as text-conditioned video generation, establishing video generation as policy.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Specifically, we cast the sequential decision making problem as a text-conditioned video generation problem, where, given a text-encoded specification",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 33,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2211.09019",
+   "arxiv_id": "2211.09019",
+   "doi": null,
+   "baslik": "Learning Reward Functions for Robotic Manipulation by Observing Humans",
+   "yil": 2022,
+   "tarih": "2022-11-16",
+   "gerekce": "Learns task-agnostic reward functions for robotic manipulation from unlabeled videos of humans solving diverse tasks.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we use unlabeled videos of humans solving a wide range of manipulation tasks to learn a task-agnostic reward function for robotic manipulation policies",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2309.13041",
+   "arxiv_id": "2309.13041",
+   "doi": "10.1109/icra57147.2024.10611575",
+   "baslik": "Robotic Offline RL from Internet Videos via Value-Function Pre-Training",
+   "yil": 2023,
+   "tarih": "2023-09-22",
+   "gerekce": "Shows value learning on video datasets yields representations more conducive to downstream robotic offline RL.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We show that value learning on video datasets learns representations that are more conducive to downstream robotic offline RL",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:1912.04443",
+   "arxiv_id": "1912.04443",
+   "doi": "10.15607/rss.2020.xvi.024",
+   "baslik": "AVID: Learning Multi-Stage Tasks via Pixel-Level Translation of Human Videos",
+   "yil": 2019,
+   "tarih": "2019-12-10",
+   "gerekce": "AVID uses CycleGAN pixel-level translation to convert human demonstrations into robot videos for multi-stage tasks.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We instead take an automated approach and perform pixel-level image translation via CycleGAN to convert the human demonstration into a video of a robot",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 68,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2207.09450",
+   "arxiv_id": "2207.09450",
+   "doi": "10.15607/rss.2022.xviii.026",
+   "baslik": "Human-to-Robot Imitation in the Wild",
+   "yil": 2022,
+   "tarih": "2022-06-27",
+   "gerekce": "Addresses one-shot learning by watching humans in the wild for human-to-robot imitation.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We approach the problem of learning by watching humans in the wild. While traditional approaches",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2606.06627",
+   "arxiv_id": "2606.06627",
+   "doi": null,
+   "baslik": "What Matters When Cotraining Robot Manipulation Policies on Everyday Human Videos?",
+   "yil": 2026,
+   "tarih": "2026-06-04",
+   "gerekce": "Analyzes cotraining on everyday human video, finding hand pose quality and inherent motion gap limit transfer.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We find that hand pose quality affects transfer, but even with accurate hands, the inherent motion gap hinders transfer",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2509.15212",
+   "arxiv_id": "2509.15212",
+   "doi": null,
+   "baslik": "RynnVLA-001: Using Human Demonstrations to Improve Robot Manipulation",
+   "yil": 2025,
+   "tarih": "2025-09-18",
+   "gerekce": "RynnVLA-001 pretrains an image-to-video model on 12M egocentric manipulation videos to improve VLA robot manipulation.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The first stage, Ego-Centric Video Generative Pretraining, trains an Image-to-Video model on 12M ego-centric manipulation videos to predict future frames",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2609.24778",
+   "arxiv_id": "2609.24778",
+   "doi": null,
+   "baslik": "H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer",
+   "yil": 2026,
+   "tarih": "2026-09-21",
+   "gerekce": "H2RBench provides a standardized real-to-sim protocol for evaluating human-to-robot transfer across four manipulation tasks.",
+   "gerekce_kokeni": "sef",
+   "alinti": "H2RBench provides a standardized protocol built on real human video demonstrations and simulated robot demonstrations, and includes four manipulation tasks spanning diverse interaction requirements.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2505.21864",
+   "arxiv_id": "2505.21864",
+   "doi": null,
+   "baslik": "DexUMI: Using Human Hand as the Universal Manipulation Interface for Dexterous Manipulation",
+   "yil": 2025,
+   "tarih": "2025-05-28",
+   "gerekce": "DexUMI uses the human hand as the interface to transfer dexterous manipulation skills to various robot hands.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We present DexUMI - a data collection and policy learning framework that uses the human hand as the natural interface to transfer dexterous manipulation skills to various robot hands.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

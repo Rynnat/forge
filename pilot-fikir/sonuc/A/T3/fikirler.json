@@ -1,0 +1,65 @@
+{
+ "sistem": "A",
+ "konu": {
+  "id": "T3",
+  "konu": "learning robotic manipulation from human video demonstrations"
+ },
+ "durum": "OK",
+ "fikirler": [
+  {
+   "baslik": "Learned per-sample uncertainty weighting for co-training robot policies on noisy monocular hand-pose pseudo-actions from human video",
+   "bosluk": "Training on noisy monocular hand estimates (e.g., HaWoR) performs much worse than training on high-quality triangulated poses. Current co-training schemes either balance whole embodiments or use hand-set reliability weights for each action channel. I found no work that uses learned, per-sample, per-timestep uncertainty from the hand-pose estimator to weight or filter human pseudo-actions during policy co-training.",
+   "neden_simdi": "Recent 2026 work (ViDiHand, ACE-Ego-Hand) makes egocentric 3D hand recovery much better and directly motivates it by policy learning, but these papers leave the question of whether better or uncertainty-aware trajectories actually improve downstream policies explicitly as future work.",
+   "ilk_adim": "Months 1-2: on a public egocentric dataset (or the human split of an existing co-training benchmark), run an off-the-shelf hand estimator (HaMeR/HaWoR) with test-time augmentation or a small ensemble to get per-frame variance. Months 2-4: train a diffusion or ACT policy in simulation (e.g., LIBERO/RoboCasa or H2RBench tasks) on a mix of human and robot data. Compare three schemes: (a) uniform weighting, (b) the fixed per-channel heuristic used in ACE-Ego-0, and (c) your learned heteroscedastic, variance-based loss weighting. Months 4-6: inject controlled noise to plot success rate against pose-noise level, and write up the results as a workshop paper.",
+   "dayanaklar": [
+    "2606.06627",
+    "2606.17200",
+    "2608.20308",
+    "2606.30308",
+    "2604.10809"
+   ],
+   "yenilik_notu": "The closest work is ACE-Ego-0 (2606.17200). It weights noisy human pseudo-actions with a fixed per-channel prior based on measured estimator noise, plus a smoothness factor at each step. This idea instead uses learned uncertainty predicted for each sample and timestep, and tests how it relates to policy success. 'What Matters When Cotraining…' (2606.06627) only compares noise levels and balances embodiments; it does not do uncertainty weighting."
+  },
+  {
+   "baslik": "Influence-function data attribution for curating human video clips in cross-embodiment co-training",
+   "bosluk": "CUPID and ATHENA use influence functions to score how much each robot demonstration helps or hurts closed-loop success, but only for robot-embodiment data. The current way of choosing human videos (SiMDex) relies on similarity, and Ego2Robot uses quality filters. I found no work that estimates the causal effect of individual human video clips on robot policy return.",
+   "neden_simdi": "In 2026 the field shifted from 'more human video' to 'which human video matters' (SiMDex), and ATHENA showed influence-based curation scales to π0-sized policies. That makes cross-embodiment attribution the obvious, still-open next step.",
+   "ilk_adim": "Use CUPID's open-source code with a small diffusion policy co-trained on human and robot data in simulation (H2RBench or Imitator Game–style paired tasks, or LIBERO with converted human hand trajectories). Compute influence scores for each human clip from evaluation rollouts. Compare policies trained on the top-k, random-k and similarity-selected (SiMDex-style) human subsets at equal data budgets. Then analyse which properties of a clip (viewpoint, pose noise, task relevance) predict high influence.",
+   "dayanaklar": [
+    "2506.19121",
+    "2606.16208",
+    "2608.04196",
+    "2608.02580",
+    "2609.24778"
+   ],
+   "yenilik_notu": "The closest work is CUPID (2506.19121) and its multitask extension ATHENA (2606.16208). Both curate robot demonstrations only. SiMDex (2608.04196) picks human videos by similarity, not by measured effect on the policy. This idea applies return-based influence across embodiments, to human clips specifically."
+  },
+  {
+   "baslik": "Occlusion-aware 3D point-track pretraining from human videos for deformable-object (cloth/rope) manipulation",
+   "bosluk": "Methods that pretrain policies on human-video point tracks or motion fields are evaluated mostly on rigid objects. 3PoinTr includes only a single sock-folding task. Deformable objects bring heavy self-occlusion and unreliable tracks, and I found no work that systematically studies or models track reliability when learning cloth or rope manipulation from human videos.",
+   "neden_simdi": "In 2026, dense 3D point-track policy pretraining from unconstrained human videos (3PoinTr) and marker-free deformable 3D keypoint tracking (TrackDeform3D) both became available, but the two have not yet been combined, and a 2026 perspective paper lists occlusion as an open challenge for deformable manipulation.",
+   "ilk_adim": "Record about 100 smartphone or RGB-D videos of yourself folding towels and moving ropes. Extract 3D tracks with an off-the-shelf tracker (CoTracker3 + depth, or the TrackDeform3D pipeline). Train a small transformer to predict future tracks, adding visibility and confidence outputs. Condition a cloth policy in simulation (SoftGym or Genesis/MuJoCo cloth) on the predicted tracks, and compare it with 3PoinTr-style conditioning that ignores visibility. Report how success changes with the amount of occlusion.",
+   "dayanaklar": [
+    "2603.08485",
+    "2603.17068",
+    "2506.04227",
+    "2602.22998"
+   ],
+   "yenilik_notu": "The closest work is 3PoinTr (2603.08485): visibility-aware 3D point-track plans from human videos, with one sock-folding task. This idea differs by focusing entirely on deformable objects, adding explicit modelling of track confidence and self-occlusion, and building a systematic set of deformable tasks. Object-centric 3D Motion Field (2506.04227) is described as estimating object motion (rigid-body-style actions) and does not target cloth."
+  }
+ ],
+ "maliyet": {
+  "toplam_usd": 0.3805,
+  "asama": {
+   "fikir_A": {
+    "calls": 1,
+    "failed": 0,
+    "cost_usd": 0.3805111,
+    "in": 212412,
+    "out": 15233,
+    "web_search": 11
+   }
+  }
+ },
+ "sure_s": 81.5
+}

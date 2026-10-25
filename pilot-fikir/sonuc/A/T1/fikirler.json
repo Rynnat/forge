@@ -1,0 +1,65 @@
+{
+ "sistem": "A",
+ "konu": {
+  "id": "T1",
+  "konu": "non-invasive EEG brain-computer interfaces with deep learning"
+ },
+ "durum": "OK",
+ "fikirler": [
+  {
+   "baslik": "Subject-adaptive conformal prediction with a reject option for cross-subject EEG decoding (motor imagery and P300/SSVEP) on top of EEG foundation models",
+   "bosluk": "Uncertainty work in EEG BCIs uses deep ensembles, MC-dropout, temperature scaling and abstention (e.g., for motor imagery and overt speech), but I found no work that gives distribution-free coverage guarantees (conformal prediction) for cross-subject BCI decoding or that wraps EEG foundation models this way. The only EEG conformal study I found, on seizure classification, showed that subject-level shift breaks exchangeability and lowers coverage, and that personalized calibration recovers more than 20 points. This has not been tested for BCI paradigms.",
+   "neden_simdi": "Pretrained EEG foundation models (LaBraM, CBraMod, etc.) and large 2026 benchmarks now make strong cross-subject decoders easy to get, yet these benchmarks report that their reliability on new users is inconsistent, so calibrated 'when to trust or abstain' guarantees are the missing piece for real BCI use.",
+   "ilk_adim": "Months 1-2: with MOABB (BCI IV-2a, OpenBMI/Lee2019) and EEGNet plus one open foundation model (CBraMod or LaBraM), run a leave-one-subject-out setup. Months 3-4: implement split, class-conditional and APS/RAPS conformal methods with three calibration options: pooled other subjects, a few labeled trials from the new user, and nearest-neighbor subject calibration. Measure empirical coverage per subject, set size, and the accuracy-vs-rejection curve. Months 5-6: simulate a closed-loop BCI where the system abstains when the prediction set has more than one class, report the effective information-transfer rate, and write a workshop paper with open code.",
+   "dayanaklar": [
+    "arXiv:2602.19483",
+    "arXiv:2507.07511",
+    "arXiv:2511.07890",
+    "arXiv:2601.17883",
+    "arXiv:2201.00627"
+   ],
+   "yenilik_notu": "Closest work: arXiv:2602.19483, conformal prediction for EEG seizure classification (clinical task, not BCI). Also arXiv:2507.07511, uncertainty and rejection for motor imagery, which uses ensembles and temperature scaling without coverage guarantees. This idea brings coverage-guaranteed, subject-adaptive conformal sets to cross-subject BCI paradigms and foundation-model backbones. My searches found no prior work combining these, but the search was limited, so check Google Scholar again before submitting."
+  },
+  {
+   "baslik": "Distilling EEG foundation models into microcontroller-deployable BCI decoders while keeping cross-subject generalization",
+   "bosluk": "DLink (2026) distills EEG foundation models into compact students but, from its abstract, reports no microcontroller deployment and no explicit cross-subject evaluation. FEMBA runs a foundation model on a RISC-V MCU using quantization, not distillation. I found no study measuring whether the cross-subject advantage of LaBraM/CBraMod-type teachers survives distillation into an EEGNet-sized student running on real MCU hardware, with latency and energy reported.",
+   "neden_simdi": "Foundation models are now strong enough to be worth compressing, and low-cost wearable BCIs need on-device inference. The first works on this (DLink, FEMBA-on-the-edge) only appeared in 2026, so the area is open and not yet saturated.",
+   "ilk_adim": "Fine-tune an open foundation model (CBraMod/LaBraM) on BCI IV-2a and one SSVEP dataset as the teacher. Distill it into EEGNet or a tiny TCN using logit plus intermediate-feature distillation, and compare against the same student trained from scratch and an int8-quantized teacher under leave-one-subject-out evaluation. Deploy the best student on an STM32 or ESP32-S3 (TFLite Micro / X-CUBE-AI), and report accuracy, cross-subject gap, RAM/flash, latency and energy per inference.",
+   "dayanaklar": [
+    "arXiv:2604.15016",
+    "arXiv:2603.26716",
+    "arXiv:2403.13844",
+    "arXiv:2601.17883"
+   ],
+   "yenilik_notu": "Closest work: DLink (arXiv:2604.15016), foundation-model distillation without stated MCU deployment or cross-subject focus, and FEMBA on the Edge (arXiv:2603.26716), MCU deployment through quantization of the model's own architecture. The new part is (a) checking whether cross-subject generalization survives distillation and (b) measuring end-to-end on real hardware. I could only read DLink's abstract, so read the full paper first to confirm it does not already cover this."
+  },
+  {
+   "baslik": "Do EEG foundation models transfer to low-cost, few-channel dry-electrode headsets? A benchmark and adaptation study",
+   "bosluk": "Channel-flexible foundation models (HEAR, EEG-X) and robustness benchmarks (OmniEEG-Bench, Beyond Accuracy) simulate missing channels and noise on research-grade recordings. My searches found no evaluation of foundation-model transfer on real consumer-grade 4-16 channel dry-electrode data, such as Muse or OpenBCI, where signal statistics differ (for example, higher low-frequency power from dry electrodes).",
+   "neden_simdi": "Channel-agnostic foundation models appeared in 2025-2026, and consumer EEG hardware has become affordable, so whether these models really work on the hardware students and startups actually use is a practical and timely question.",
+   "ilk_adim": "Collect public consumer-device datasets (e.g., Muse and OpenBCI recordings from MindBigData and other open sets) and, if possible, record a small SSVEP or eyes-open/closed and motor imagery dataset with an 8-channel OpenBCI (10-15 participants). Compare 2-3 channel-flexible foundation models (EEG-X, HEAR, or LaBraM through channel mapping) against EEGNet trained from scratch under linear probing, LoRA, and full fine-tuning. Then compare simulated channel dropout with real low-density data to see whether simulation underestimates the performance drop.",
+   "dayanaklar": [
+    "arXiv:2511.08861",
+    "arXiv:2510.12515",
+    "arXiv:2606.00815",
+    "arXiv:2605.17562",
+    "arXiv:2601.17883"
+   ],
+   "yenilik_notu": "Closest work: EEG-X (arXiv:2511.08861) and HEAR (arXiv:2510.12515), which target device and electrode variability, and OmniEEG-Bench (arXiv:2606.00815), which simulates channel masking. This idea uses real consumer dry-electrode, few-channel data and directly tests the gap between simulation and reality. My searches found no paper doing exactly this, but the search was limited, so check again before publishing."
+  }
+ ],
+ "maliyet": {
+  "toplam_usd": 0.3538,
+  "asama": {
+   "fikir_A": {
+    "calls": 1,
+    "failed": 0,
+    "cost_usd": 0.35376100000000005,
+    "in": 179525,
+    "out": 15067,
+    "web_search": 10
+   }
+  }
+ },
+ "sure_s": 77.2
+}

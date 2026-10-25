@@ -1,0 +1,66 @@
+{
+ "sistem": "A",
+ "konu": {
+  "id": "T2",
+  "konu": "LLM-based agents for automated software testing"
+ },
+ "durum": "OK",
+ "fikirler": [
+  {
+   "baslik": "Flaky tests written by AI coding agents: measuring how common they are in real agentic PRs, and building an agent loop that checks for flakiness",
+   "bosluk": "Studies of agent-authored PRs look at whether tests are included, how much code they cover, and how strong their oracles are. In my searches, none of them reran those tests to check for flakiness. The only study that measures flakiness in LLM-generated tests covers DBMS test suites, not autonomous agents working on GitHub.",
+   "neden_simdi": "The public AIDev dataset of agent-authored GitHub PRs has made this kind of mining study possible. Generated tests have also been shown to be slightly flakier than existing tests, with order dependence as the most common cause.",
+   "ilk_adim": "Take about 300-500 merged Python PRs from AIDev that add tests. Check out each repo at the PR commit and run the added tests 50-100 times, both in the original order and in shuffled order (pytest-randomly / pytest-rerunfailures). Report the flakiness rate per agent and label root causes (order dependence, time, randomness, network) using the existing taxonomy. Then add a 'rerun and shuffle' feedback step to an open-source agent (e.g., SWE-agent or Aider) and measure how much flakiness drops.",
+   "dayanaklar": [
+    "2507.15003",
+    "2601.08998",
+    "2601.03556",
+    "2607.18057",
+    "2404.09398"
+   ],
+   "yenilik_notu": "The closest work is Berndt et al. (2601.08998), which measured flakiness of LLM-generated tests in DBMS projects using a non-agent prompting setup. 2601.03556 and 2607.18057 study tests in agentic PRs but only look at whether tests are included and how much they cover, not flakiness. This idea measures flakiness in real-world PRs from autonomous agents and turns the findings into a fix inside the agent loop."
+  },
+  {
+   "baslik": "Diff-scoped, mutation-guided oracle hardening for agent-authored Python PRs",
+   "bosluk": "One study found that 80.2% of agent-authored test patches have weak or no oracle signals, and another found that agent tests cover only 27% of changed lines in Python. Existing mutation-guided test updating (MuMuTestUp) targets Java PRs written by humans, and ACH targets Meta's internal code. I found no published system that hardens the oracles of tests in agent-authored Python PRs as part of PR review.",
+   "neden_simdi": "Agent PRs are now merged at scale, while 2026 studies show their tests mostly provide structure without real checks. A reviewer bot that strengthens these tests is something maintainers need right now.",
+   "ilk_adim": "Build a GitHub Action or CLI bot. It runs mutmut or cosmic-ray only on the lines changed in the PR, gives the surviving mutants to an open LLM (e.g., Qwen-Coder via Ollama), and asks it to strengthen assertions until the mutants are killed. Evaluate it on about 200 AIDev Python PRs, measuring mutation score before and after, the oracle-signal categories from 'All Smoke, No Alarm', and the false-positive (flaky or wrong) assertion rate.",
+   "dayanaklar": [
+    "2606.18168",
+    "2605.19265",
+    "2501.12862",
+    "2308.16557",
+    "2607.18057"
+   ],
+   "yenilik_notu": "The closest work is MuMuTestUp (2605.19265, ISSTA 2026), a multi-agent system for mutation-based test updating, evaluated on PRBENCH (Java PRs written by humans). ACH (2501.12862) works on Meta's internal code. This idea differs in three ways: it targets agent-authored PRs, it works on Python, and it measures success with the oracle-signal taxonomy. This is the closest existing work, so the student should stress the agent-PR focus and the Python setting."
+  },
+  {
+   "baslik": "Emulator-in-the-loop LLM test agent for embedded firmware: testing drivers against Renode peripheral models instead of mocks",
+   "bosluk": "Current LLM-based embedded C test generation works on the host. It relies on stubs, mocks, and fakes (openSIL) or on RAG (EmbC-Test), so driver and peripheral interactions are largely mocked away. In my searches I found no work where an LLM agent generates and repairs tests that run against emulated MCU peripherals in Renode or QEMU.",
+   "neden_simdi": "Firmware test agents appeared in 2026 (2606.19725, 2603.09497), and over-mocking in agent-written tests is already being studied. Renode makes emulated MCU testing inside CI practical.",
+   "ilk_adim": "Write about 20-30 drivers (UART, I2C sensor, GPIO interrupt) on an STM32 or nRF52 Zephyr project. Build an agent that generates Robot Framework and Renode tests and repairs them from emulator logs. Compare it with a baseline that generates host-side unit tests with mocks (Unity/CMock), measuring buildability, coverage, and how many deliberately injected driver bugs each approach catches.",
+   "dayanaklar": [
+    "2606.19725",
+    "2603.09497",
+    "2509.09970",
+    "1909.06472",
+    "2602.00409"
+   ],
+   "yenilik_notu": "The closest works are the AMD openSIL work (2606.19725: multi-agent unit tests with test doubles and a compile-and-repair loop) and EmbC-Test (2603.09497), both on the host side. 2509.09970 validates LLM-generated firmware in QEMU, but it focuses on security and timing, not on test generation. This idea replaces mocks with emulated peripherals to catch hardware-interaction bugs, which also fits a computer engineering background."
+  }
+ ],
+ "maliyet": {
+  "toplam_usd": 0.376,
+  "asama": {
+   "fikir_A": {
+    "calls": 1,
+    "failed": 0,
+    "cost_usd": 0.37601579999999996,
+    "in": 197326,
+    "out": 14966,
+    "web_search": 11
+   }
+  }
+ },
+ "sure_s": 81.3
+}

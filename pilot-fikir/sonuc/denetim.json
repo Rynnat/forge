@@ -1,0 +1,600 @@
+{
+ "tohum": 20261025,
+ "konular": {
+  "T1": {
+   "A": {
+    "yenilik": [
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "Making Conformal Predictors Robust in Healthcare Settings: a Case Study on EEG Classification",
+       "yil": 2026,
+       "url": "https://arxiv.org/abs/2602.19483"
+      },
+      "gerekce": "I found no conformal prediction work on cross-subject BCI decoding (motor imagery, P300 or SSVEP) or on EEG foundation models like LaBraM or CBraMod. The closest work is the 2026 seizure-classification study with personalized calibration, and Eliades & Papadopoulos (2019) applied conformal prediction to a single-subject EEG exoskeleton BCI. The idea is therefore a meaningful extension, not a duplicate. Only a few searches were run, so a missed paper is still possible."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "DLink: Distilling Layer-wise and Dominant Knowledge from EEG Foundation Models",
+       "yil": 2026,
+       "url": "https://arxiv.org/abs/2604.15016"
+      },
+      "gerekce": "DLink distills EEG foundation models into compact students for embedded BCI and reports CPU latency. FEMBA on the Edge runs a foundation model on a RISC-V MCU with quantization. My searches found no paper that combines distillation into an EEGNet-sized student, leave-one-subject-out testing, and real MCU measurements of latency and energy. I only saw search snippets and abstracts, not the full DLink paper, so I haven't ruled out MCU or cross-subject results inside it."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "A multi-dimensional framework for evaluating generalization in EEG foundation models (LaBraM, CSBrain, CBraMod under low-resource / reduced-sensor conditions)",
+       "yil": 2026,
+       "url": "https://www.emergentmind.com/papers/2605.28563"
+      },
+      "gerekce": "Several benchmarks test EEG foundation models under channel reduction and low-resource settings, but the ones I found use research-grade data or simulated dropout. I found no study that tests them on real Muse or OpenBCI dry-electrode recordings, or one that compares real low-density data with simulated dropout. My searches were limited, so a close paper could still exist."
+     }
+    ],
+    "dayanak": [
+     [
+      [
+       "arXiv:2602.19483",
+       "VAR"
+      ],
+      [
+       "arXiv:2507.07511",
+       "VAR"
+      ],
+      [
+       "arXiv:2511.07890",
+       "VAR"
+      ],
+      [
+       "arXiv:2601.17883",
+       "VAR"
+      ],
+      [
+       "arXiv:2201.00627",
+       "VAR"
+      ]
+     ],
+     [
+      [
+       "arXiv:2604.15016",
+       "VAR"
+      ],
+      [
+       "arXiv:2603.26716",
+       "VAR"
+      ],
+      [
+       "arXiv:2403.13844",
+       "VAR"
+      ],
+      [
+       "arXiv:2601.17883",
+       "VAR"
+      ]
+     ],
+     [
+      [
+       "arXiv:2511.08861",
+       "VAR"
+      ],
+      [
+       "arXiv:2510.12515",
+       "VAR"
+      ],
+      [
+       "arXiv:2606.00815",
+       "VAR"
+      ],
+      [
+       "arXiv:2605.17562",
+       "VAR"
+      ],
+      [
+       "arXiv:2601.17883",
+       "VAR"
+      ]
+     ]
+    ]
+   },
+   "B": {
+    "yenilik": [
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "Matched-Input Estimates Differ in Sign Across Architectures: Auditing EEG Foundation Models on Motor Imagery",
+       "yil": 2026,
+       "url": "https://papers.cool/arxiv/2609.23924"
+      },
+      "gerekce": "This audit compares LaBraM and CBraMod with supervised decoders on BCI IV 2a and BNCI2014-004, and finds the supervised models do better. I found no mention in it of EEGNet, Euclidean Alignment, EEGPT, or session-wise splits with varied target-session calibration data. Other work covers Euclidean Alignment with EEGNet-style models (arXiv 2405.14994) or builds it into MI foundation models (MIRepNet), but none runs your full controlled comparison. Because my searches were limited, I can't rule out a closer paper."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "SW-ProxyCE: Zero-Query Adversarial Transfer from Public EEG Encoders to Private Downstream Models",
+       "yil": 2026,
+       "url": "https://arxiv.org/pdf/2608.16931"
+      },
+      "gerekce": "SW-ProxyCE attacks EEG foundation encoders and transfers the attacks to downstream models. Separate work covers detecting attacks on compact EEG CNNs (arXiv 2212.00727). I found no study that compares fine-tuned foundation models with EEGNet and Conformer on accuracy drop and attack detectability, or one that uses band-limited mu/beta perturbations. My searches were limited, so a closer paper may exist."
+     },
+     {
+      "hukum": "YENI",
+      "en_yakin": {
+       "baslik": "Predicting Motor Imagery Performance From Resting-State EEG Using Dynamic Causal Modeling",
+       "yil": 2020,
+       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7438792/"
+      },
+      "gerekce": "Three searches found only handcrafted resting-state predictors: DCM connectivity, microstates, spectral entropy and alpha power. They also found a 2024 preprint that adds resting-state data to MI decoders. None used frozen pretrained EEG foundation-model embeddings of resting-state data to predict MI-BCI performance or illiteracy. None tested transfer between OpenBMI and Cho et al. The searches were not exhaustive, since I did not search GitHub directly."
+     }
+    ],
+    "dayanak": [
+     [
+      [
+       "arXiv:1805.06427",
+       "VAR"
+      ],
+      [
+       "arXiv:2401.10746",
+       "VAR"
+      ],
+      [
+       "doi:10.1038/s41597-022-01647-1",
+       "BILINMIYOR:RequestFailed"
+      ],
+      [
+       "doi:10.52202/079017-1239",
+       "BILINMIYOR:RequestFailed"
+      ],
+      [
+       "arXiv:2412.07236",
+       "VAR"
+      ]
+     ],
+     [
+      [
+       "doi:10.5753/sbsi.2026.248345",
+       "BILINMIYOR:RequestFailed"
+      ],
+      [
+       "arXiv:2506.16168",
+       "VAR"
+      ],
+      [
+       "arXiv:1611.08024",
+       "VAR"
+      ],
+      [
+       "doi:10.1109/tnsre.2022.3230250",
+       "BILINMIYOR:RequestFailed"
+      ],
+      [
+       "doi:10.52202/079017-1239",
+       "BILINMIYOR:RequestFailed"
+      ]
+     ],
+     [
+      [
+       "doi:10.1093/gigascience/giz002",
+       "BILINMIYOR:RequestFailed"
+      ],
+      [
+       "doi:10.1093/gigascience/gix034",
+       "BILINMIYOR:RequestFailed"
+      ],
+      [
+       "arXiv:2405.19346",
+       "VAR"
+      ],
+      [
+       "doi:10.1016/j.neuroimage.2007.01.051",
+       "BILINMIYOR:RequestFailed"
+      ]
+     ]
+    ]
+   },
+   "hakem": {
+    "X_sistemi": "B",
+    "sonuc": {
+     "daha_iyi": "X",
+     "puan_X": 7.5,
+     "puan_Y": 6.5,
+     "gerekce": "Set X is more feasible for a 3rd-year student: all three ideas use public datasets and standard tools (MOABB, FGSM/PGD, public checkpoints), and they come with concrete, well-scoped novelty comparisons and supporting references. Set Y has higher-impact ideas, especially conformal prediction for BCIs, but it asks for hardware deployment and new data collection, so it is riskier and less feasible. Y also relies on abstract-only reading and on citations that could not be verified, such as arXiv:2606.00815, which makes it less well grounded.",
+     "kazanan_sistem": "B"
+    }
+   }
+  },
+  "T2": {
+   "A": {
+    "yenilik": [
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "Beyond Test Presence: Assessing the Quality and Robustness of Agent-Generated Tests in Open-Source Projects",
+       "yil": 2026,
+       "url": "https://arxiv.org/pdf/2607.12068"
+      },
+      "gerekce": "This paper already studies flakiness in AIDev agent-written tests. It reports a static \"candidate\" flakiness rate of 0.435 for agents against 0.301 for humans. As far as the search results show, it did not rerun or shuffle the tests, and it did not build an agent feedback loop. Dynamic rerun-based measurement per agent, root-cause labelling, and a rerun-and-shuffle step in an agent are still open, but the gap is narrower than you claimed."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "Adversarial Test-Hardening for AI-Written Code: An Instrument Autopsy and a Pre-Registered Causal Estimate of the Critic Loop",
+       "yil": 2026,
+       "url": "https://arxiv.org/pdf/2607.23002"
+      },
+      "gerekce": "Each component already exists. Mutahunter does diff-scoped mutation testing with LLM analysis of surviving mutants, GEM does mutation-guided oracle strengthening for LLM tests, MuMuTestUp does mutation-guided test updating, and 'All Smoke, No Alarm' (arXiv 2606.18168) defines the oracle categories on AIDev. I found no published system that combines them as a PR-review step for agent-authored Python PRs and evaluates it on AIDev, so the combination is still open. I did not open the 2607.23002 paper (it is only a search-result title), so it may be closer than I've judged. Check it first."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "Securing LLM-Generated Embedded Firmware through AI Agent-Driven Validation and Patching",
+       "yil": 2025,
+       "url": "https://arxiv.org/pdf/2509.09970"
+      },
+      "gerekce": "I found no work where an LLM agent generates and repairs Renode/Robot Framework tests against emulated MCU peripherals. Close work exists: 2509.09970 runs LLM-generated firmware on an RTOS under QEMU and patches it from the results, and the openSIL paper (2606.19725) repairs host-side tests that use doubles. Neither tests drivers against peripheral models, and neither compares emulator-based testing with mock-based testing on injected bugs. Only two searches were run, so a narrower search (for example 'Renode LLM') might still turn up something."
+     }
+    ],
+    "dayanak": [
+     [
+      [
+       "2507.15003",
+       "VAR"
+      ],
+      [
+       "2601.08998",
+       "VAR"
+      ],
+      [
+       "2601.03556",
+       "VAR"
+      ],
+      [
+       "2607.18057",
+       "VAR"
+      ],
+      [
+       "2404.09398",
+       "VAR"
+      ]
+     ],
+     [
+      [
+       "2606.18168",
+       "VAR"
+      ],
+      [
+       "2605.19265",
+       "VAR"
+      ],
+      [
+       "2501.12862",
+       "VAR"
+      ],
+      [
+       "2308.16557",
+       "VAR"
+      ],
+      [
+       "2607.18057",
+       "VAR"
+      ]
+     ],
+     [
+      [
+       "2606.19725",
+       "VAR"
+      ],
+      [
+       "2603.09497",
+       "VAR"
+      ],
+      [
+       "2509.09970",
+       "VAR"
+      ],
+      [
+       "1909.06472",
+       "VAR"
+      ],
+      [
+       "2602.00409",
+       "VAR"
+      ]
+     ]
+    ]
+   },
+   "B": {
+    "yenilik": [
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "YATE: The Role of Test Repair in LLM-Based Unit Test Generation",
+       "yil": 2025,
+       "url": "https://arxiv.org/pdf/2507.18316"
+      },
+      "gerekce": "YATE notes that fixing failing assertions from observed output can hide bugs, and related work (AugmenTest, Doc2OracLL, AssertFlip) uses Javadoc or buggy/fixed pairs for oracles. I found no study that measures bug lock-in during ChatUniTest- or TestART-style repair loops, or that adds a justify-from-Javadoc guard that flags suspected bugs. My searches were limited, so a closer paper could exist."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "Mutation-Guided Unit Test Generation with a Large Language Model (MutGen)",
+       "yil": 2025,
+       "url": "https://arxiv.org/abs/2506.02954"
+      },
+      "gerekce": "MutGen (mutation feedback) and AdverTest (coverage plus mutation in an agent loop, evaluated on Defects4J) are close. I found no controlled study that compares no feedback, coverage-gap feedback and surviving-mutant feedback in one agent loop with the same budget on real faults. I also found no study that reports cost per detected fault or how well each proxy tracks real-fault detection. My searches were limited, and I did not read the 2026 replicability study's results, which look at whether coverage and mutation scores track real faults."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "A Metamorphic Testing Approach to Diagnosing Memorization in LLM-Based Program Repair",
+       "yil": 2026,
+       "url": "https://arxiv.org/pdf/2604.21579"
+      },
+      "gerekce": "De Koning et al. apply semantics-preserving transformations to Defects4J and GitBug-Java and correlate the performance drop with negative log-likelihood, a memorization signal. That is the same method as this idea, but they study program repair, not test generation. They list test generation only as future work. My two searches found no study of bug-reveal rate or coverage for LLM test generators under transformation. I did not search GitHub or run further queries."
+     }
+    ],
+    "dayanak": [
+     [
+      [
+       "arXiv:2412.14137",
+       "VAR"
+      ],
+      [
+       "arXiv:2408.03095",
+       "VAR"
+      ],
+      [
+       "arXiv:2305.04764",
+       "VAR"
+      ],
+      [
+       "doi:10.1145/2610384.2628055",
+       "BILINMIYOR:RequestFailed"
+      ]
+     ],
+     [
+      [
+       "arXiv:2308.16557",
+       "VAR"
+      ],
+      [
+       "arXiv:2506.02954",
+       "VAR"
+      ],
+      [
+       "arXiv:2503.14713",
+       "VAR"
+      ],
+      [
+       "arXiv:2408.03095",
+       "VAR"
+      ]
+     ],
+     [
+      [
+       "arXiv:2411.13323",
+       "VAR"
+      ],
+      [
+       "arXiv:2310.18018",
+       "VAR"
+      ],
+      [
+       "arXiv:2601.09695",
+       "VAR"
+      ],
+      [
+       "doi:10.1145/2610384.2628055",
+       "BILINMIYOR:RequestFailed"
+      ]
+     ]
+    ]
+   },
+   "hakem": {
+    "X_sistemi": "A",
+    "sonuc": {
+     "daha_iyi": "X",
+     "puan_X": 8,
+     "puan_Y": 7,
+     "gerekce": "Set X is more tightly grounded in a specific, current dataset (AIDev), with concrete gaps, closest-work comparisons and actionable first steps, and it targets agentic testing (the request's focus). Its embedded-firmware idea also suits a computer engineering student, though idea 3 (writing 20-30 drivers) is heavier and idea 2 sits close to existing work. Set Y is feasible and methodologically clean (controlled ablation, Defects4J ground truth), but it is less about agents, and its contamination idea transfers a known approach from program repair, so its novelty is more incremental.",
+     "kazanan_sistem": "A"
+    }
+   }
+  },
+  "T3": {
+   "A": {
+    "yenilik": [
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining",
+       "yil": 2026,
+       "url": "https://arxiv.org/abs/2606.17200"
+      },
+      "gerekce": "ACE-Ego-0 already uses a reliability-aware auxiliary loss for human pseudo-actions. It combines step-level and dataset-level quality estimates with per-channel priors. \"What Matters When Cotraining Robot Manipulation Policies on Everyday Human Videos?\" (2026) shows that HaWoR labels perform worse than triangulated labels. I found no work that learns heteroscedastic, estimator-derived per-sample uncertainty to weight human pseudo-actions, so the specific idea still looks open. The overlap with ACE-Ego-0's step-level weights could be large, and I only saw secondary summaries of that paper, so check its method section before committing."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "CUPID: Curating Data your Robot Loves with Influence Functions",
+       "yil": 2025,
+       "url": "https://arxiv.org/pdf/2506.19121"
+      },
+      "gerekce": "Influence-based robot data selection already exists (CUPID, QoQ, DataMIL), but I found none that attributes individual human video clips to robot policy return in cross-embodiment co-training. Related human and egocentric co-training papers (X-Diffusion, Ego2Robot, AtomEgo) use filtering or alignment instead of attribution. Searches were standard-mode only, and DataMIL is known mainly from QoQ's citation of it, so I didn't check whether it covers human video."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "3PoinTr: 3D Point Tracks for Learning Manipulation from Unconstrained Human Videos",
+       "yil": 2026,
+       "url": "https://arxiv.org/pdf/2603.08485"
+      },
+      "gerekce": "3PoinTr predicts 3D point tracks from human videos and masks the loss on occluded points. Its only deformable task is sock folding. My searches (only two) found no work that studies track reliability or occlusion for cloth or rope policies learned from human videos, or that outputs visibility and confidence for conditioning. The idea therefore differs meaningfully from 3PoinTr. I did not check GitHub or Google Scholar directly."
+     }
+    ],
+    "dayanak": [
+     [
+      [
+       "2606.06627",
+       "VAR"
+      ],
+      [
+       "2606.17200",
+       "VAR"
+      ],
+      [
+       "2608.20308",
+       "VAR"
+      ],
+      [
+       "2606.30308",
+       "VAR"
+      ],
+      [
+       "2604.10809",
+       "VAR"
+      ]
+     ],
+     [
+      [
+       "2506.19121",
+       "VAR"
+      ],
+      [
+       "2606.16208",
+       "VAR"
+      ],
+      [
+       "2608.04196",
+       "VAR"
+      ],
+      [
+       "2608.02580",
+       "VAR"
+      ],
+      [
+       "2609.24778",
+       "VAR"
+      ]
+     ],
+     [
+      [
+       "2603.08485",
+       "VAR"
+      ],
+      [
+       "2603.17068",
+       "VAR"
+      ],
+      [
+       "2506.04227",
+       "VAR"
+      ],
+      [
+       "2602.22998",
+       "VAR"
+      ]
+     ]
+    ]
+   },
+   "B": {
+    "yenilik": [
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "ReWiND: Language-Guided Rewards Teach Robot Policies without New Demonstrations",
+       "yil": 2025,
+       "url": "https://arxiv.org/pdf/2505.10911"
+      },
+      "gerekce": "Close work exists on several pieces. ReWiND builds failure-like rollouts by shuffling or perturbing demos. TimeRewarder ablates reversed or non-adjacent negatives. Video-Language Critic uses reversed negatives. DenseReward synthesizes failures. I found no systematic comparison of reversed, stalled, shuffled-segment and wrong-object negatives for a Rank2Reward-style reward trained on passive human video. That is based on a few searches, not an exhaustive one."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "Motion-Focused Latent Action Enables Cross-Embodiment VLA Training from Human EgoVideos",
+       "yil": 2026,
+       "url": "https://arxiv.org/pdf/2606.18955"
+      },
+      "gerekce": "Two searches found related work but nothing that matches the whole idea. The Motion-Focused Latent Action paper compares human and robot latent action representations with CKA, and HARP-VLA aligns human and robot latents. ALAM introduced composition/reversal consistency, but it was evaluated only on policy success. I found no work that probes latents linearly to end-effector deltas across embodiments, or that tests whether consistency regularization improves cross-embodiment alignment. I only ran two searches and did not check GitHub or the full text of these papers."
+     },
+     {
+      "hukum": "KISMEN",
+      "en_yakin": {
+       "baslik": "COLLAGE: Adaptive Fusion-based Retrieval for Augmented Policy Learning",
+       "yil": 2025,
+       "url": "https://arxiv.org/pdf/2508.01131"
+      },
+      "gerekce": "Retrieval with optical-flow and appearance keys on LIBERO exists (COLLAGE, FlowRetrieval, STRAP). R+X and TrajSkill cover human-video retrieval and flow-based cross-embodiment transfer. I found no work that compares 2D point-track (DTW) keys against flow and CLIP keys when the retrieved clip conditions a track-guided policy, or that measures how retrieval degrades as the human-clip share grows. I ran only two searches, so this is not exhaustive."
+     }
+    ],
+    "dayanak": [
+     [
+      [
+       "arXiv:2404.14735",
+       "VAR"
+      ],
+      [
+       "arXiv:2407.14872",
+       "VAR"
+      ],
+      [
+       "arXiv:2210.00030",
+       "VAR"
+      ],
+      [
+       "arXiv:2310.07899",
+       "VAR"
+      ]
+     ],
+     [
+      [
+       "arXiv:2410.11758",
+       "VAR"
+      ],
+      [
+       "arXiv:2605.10819",
+       "VAR"
+      ],
+      [
+       "arXiv:2606.04130",
+       "VAR"
+      ],
+      [
+       "arXiv:2512.13030",
+       "VAR"
+      ]
+     ],
+     [
+      [
+       "arXiv:2407.12957",
+       "VAR"
+      ],
+      [
+       "arXiv:2511.05199",
+       "VAR"
+      ],
+      [
+       "arXiv:2405.01527",
+       "VAR"
+      ],
+      [
+       "arXiv:2401.00025",
+       "VAR"
+      ]
+     ]
+    ]
+   },
+   "hakem": {
+    "X_sistemi": "B",
+    "sonuc": {
+     "daha_iyi": "X",
+     "puan_X": 7,
+     "puan_Y": 5,
+     "gerekce": "Set X is better scoped for a 3rd-year student: each idea is a controlled, simulation-only study using public code (VIP, Rank2Reward, LAPA, CoTracker, ATM, LIBERO/Meta-World), and it states its prior-art caveats openly (TimeRewarder, FlowRetrieval, and the snippet-level checks). Set Y has higher-impact and more novel ideas, but they depend on heavier infrastructure. Idea 2 needs influence functions on co-trained policies, and idea 3 needs deformable-cloth simulation and self-collected data. Its grounding also leans on many very recent arXiv IDs that are harder to verify, and the 'found no work' claims are strong. Set X's feasibility and clearer, more verifiable grounding outweigh Set Y's upside.",
+     "kazanan_sistem": "B"
+    }
+   }
+  }
+ },
+ "denetim_maliyet_usd": 1.1098
+}

@@ -1,0 +1,419 @@
+{
+ "sistem": "B",
+ "konu": {
+  "id": "T3",
+  "konu": "learning robotic manipulation from human video demonstrations"
+ },
+ "durum": "OK",
+ "fikirler": [
+  {
+   "baslik": "Synthetic failure augmentation for progress-based rewards learned from passive human video",
+   "bosluk": "Progress and value reward models learned from passive human video (Rank2Reward, VIP) train only on successful demonstrations, and Adapt2Reward notes that real failure videos are scarce. No study has systematically compared types of cheap synthetic failures (reversed, stalled, wrong-object, shuffled-segment clips) as negatives, or measured how each affects reward quality and downstream RL.",
+   "neden_simdi": "VIP, Rank2Reward and RoboCLIP all have public code and Meta-World evaluations, so this controlled study fits on one consumer GPU and needs no robot hardware.",
+   "ilk_adim": "1. Train a small Rank2Reward-style ranking reward on a task subset of Something-Something.\n2. Add four synthetic-failure negative types, one at a time and then combined: reversed, stalled/frozen, shuffled segments, and wrong-object crops.\n3. Include an ablation that uses only reversed clips, as a TimeRewarder-like baseline.\n4. Measure how well each reward correlates with ground-truth progress on held-out clips, including real failure rollouts.\n5. Measure RL success on 3 Meta-World tasks.",
+   "dayanaklar": [
+    "arXiv:2404.14735",
+    "arXiv:2407.14872",
+    "arXiv:2210.00030",
+    "arXiv:2310.07899"
+   ],
+   "yenilik_notu": "TimeRewarder (2025) already uses reverse-ordered frame pairs as negatives. RoboReward (2026) creates negatives by relabeling and early truncation. Adapt2Reward uses real robot failures and failure text prompts. None of them compares several synthetic failure types for a ranking-based progress reward trained on human video, so the contribution is that systematic comparison. Reversed clips should be treated as an existing baseline, not as new work."
+  },
+  {
+   "baslik": "Do latent actions mean the same thing for humans and robots? Probing cross-embodiment consistency of latent action models",
+   "bosluk": "Latent action models such as LAPA, ALAM, CLAW and Motus are judged mainly by downstream policy success. Two questions have not been measured directly:\n- Does a given latent code produce the same physical motion for a human and for a robot? This could be tested by linear probes from latents to end-effector deltas.\n- Does ALAM-style composition/reversal consistency actually improve this alignment and human-to-robot transfer?",
+   "neden_simdi": "Open latent-action checkpoints released in 2025-2026 make a diagnostic probing paper feasible without training a foundation model.",
+   "ilk_adim": "1. Extract latents with an open LAPA checkpoint on paired human and robot clips of the same tasks.\n2. Train linear and small MLP probes from the latents to robot end-effector deltas, and test how well they transfer across embodiments.\n3. Measure cross-embodiment cluster alignment. Report CKA as well, so results are comparable with prior work.\n4. Retrain a small latent action model with and without composition/reversal consistency regularization, and compare probe accuracy and a simple downstream transfer task.",
+   "dayanaklar": [
+    "arXiv:2410.11758",
+    "arXiv:2605.10819",
+    "arXiv:2606.04130",
+    "arXiv:2512.13030"
+   ],
+   "yenilik_notu": "Several 2026 papers measure human-robot latent alignment in other ways:\n- 2606.18955 (Motion-Focused Latent Action) uses CKA.\n- GALA uses human-robot retrieval R@1.\n- HARP-VLA uses cross-prediction.\n\nThis idea differs in two ways: it grounds alignment in physical end-effector deltas through linear probes, and it isolates the effect of composition/reversal consistency regularization. The prior-art check was snippet-level only, so read those papers in full first."
+  },
+  {
+   "baslik": "Point tracks as retrieval keys: comparing 2D track, optical-flow and CLIP retrieval of human/robot clips for track-guided in-context imitation",
+   "bosluk": "Motion-based retrieval already exists: FlowRetrieval uses optical flow on robot data, and RoboTok uses 3D hand trajectories. However, no work has compared embodiment-agnostic 2D point tracks against flow and semantic (CLIP) retrieval keys when the retrieved human or robot clip directly conditions a track-guided policy.",
+   "neden_simdi": "Off-the-shelf trackers like CoTracker are cheap, and ATM's open code and LIBERO make a retrieval-only, training-light study feasible in simulation.",
+   "ilk_adim": "1. Build a clip library with CoTracker tracks: LIBERO robot demos plus a small set of human clips.\n2. Implement DTW-based track retrieval.\n3. Condition an ATM-style track-guided policy on the retrieved tracks.\n4. Compare against CLIP retrieval and a FlowRetrieval-style optical-flow key on 5 LIBERO tasks.\n5. Report success, and also how retrieval quality degrades as the share of human clips in the library grows.",
+   "dayanaklar": [
+    "arXiv:2407.12957",
+    "arXiv:2511.05199",
+    "arXiv:2405.01527",
+    "arXiv:2401.00025"
+   ],
+   "yenilik_notu": "FlowRetrieval (CoRL 2024) and RoboTok (2026; checked only through a secondary summary) weaken the claim that motion-based retrieval is new, so the idea is reframed as a comparison of retrieval keys. The specific new combination is 2D point tracks plus DTW plus ATM-style track conditioning, run on mixed human/robot libraries. Motion Tracks (2025) uses tracks as the action space, not as a retrieval key."
+  }
+ ],
+ "adaylar": [
+  {
+   "baslik": "Disentangling hand-pose error from the human-robot motion gap: a controlled noise study on a real-to-sim benchmark",
+   "bosluk": "Card #17 reports that hand pose quality affects transfer but that the inherent motion gap still hinders it. It does not quantify how much of the failure each factor causes, or for which task types. H2RBench (#45) now offers a standardized real-to-sim protocol, but no study systematically injects controlled hand-pose noise or swaps the action representation (wrist-only, fingertips, object-centric) to separate the two effects.",
+   "neden_simdi": "H2RBench (#45) and accurate 3D hand data such as EgoDex (#29) and Hand2Robot-style 4D reconstruction (#63) appeared in 2025-2026. Together they make a sim-only, GPU-light ablation possible for the first time.",
+   "ilk_adim": "Reproduce one H2RBench task with a simple cotraining baseline. Then add calibrated Gaussian and temporal-jitter noise to the extracted hand poses at 4-5 levels. Plot success against noise for two action representations.",
+   "dayanak_kartlar": [
+    17,
+    45,
+    29,
+    63
+   ],
+   "yenilik_sorgulari": [
+    "hand pose estimation noise effect on human-to-robot policy transfer ablation",
+    "H2RBench human-to-robot transfer hand pose error analysis",
+    "embodiment motion gap vs hand tracking error cotraining human video robot"
+   ],
+   "dayanaklar": [
+    "arXiv:2606.06627",
+    "arXiv:2609.24778",
+    "arXiv:2505.11709",
+    "arXiv:2610.15769"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "What Matters When Cotraining Robot Manipulation Policies on Everyday Human Videos?",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2606.06627",
+      "fark": "This is the closest work and covers much of the idea. Per search summaries (I did not read the full PDF), it has a hand-pose noise sweep with per-task success curves, and it finds that a motion gap limits transfer even with accurate hands. It does not appear to swap action representations (wrist-only, fingertips, object-centric), and the summaries don't mention calibrated Gaussian plus temporal-jitter noise. Verify Table 4 and the noise protocol in the PDF before relying on this."
+     },
+     {
+      "baslik": "H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2609.24778",
+      "fark": "This is the benchmark the idea builds on. The retrieved excerpt covers stage-wise transfer gains, not hand-pose noise injection or action-representation comparisons. I found no hand-pose error analysis in the snippets I could see."
+     },
+     {
+      "baslik": "H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2608.13049",
+      "fark": "This is a different benchmark for video generation, not policy transfer. It does not inject controlled hand-pose noise or vary the action representation."
+     }
+    ],
+    "not": "The core noise-vs-success experiment and the 'accurate hands still leave a motion gap' finding appear to be already published in arXiv 2606.06627, so the remaining novelty is mainly the action-representation factor and the calibrated jitter protocol, which I could not confirm are absent from the full paper."
+   }
+  },
+  {
+   "baslik": "Synthetic failure augmentation for progress-based rewards learned from passive human video",
+   "bosluk": "Adapt2Reward (#68) notes that human video datasets rarely contain failure videos. Rank2Reward (#22) and VIP (#7) learn progress and value signals only from successful demonstrations. Cheap synthetic failures (reversed clips, stalled clips, wrong-object crops, shuffled segments) have not been compared systematically as negatives for these reward models.",
+   "neden_simdi": "VIP, Rank2Reward and RoboCLIP (#26) all have public code and Meta-World-style evaluations. The experiment fits on one consumer GPU and needs no robot hardware.",
+   "ilk_adim": "Train a small Rank2Reward-style ranking model on human task videos, for example a subset of the Something-Something dataset. Add 3-4 types of synthetic failure clips as negatives. Measure the reward's correlation with true task progress, and RL success, on 3 Meta-World tasks.",
+   "dayanak_kartlar": [
+    22,
+    68,
+    7,
+    26
+   ],
+   "yenilik_sorgulari": [
+    "synthetic failure videos negative augmentation reward learning human video",
+    "Rank2Reward failure augmentation reversed video",
+    "video reward model robustness hard negatives manipulation"
+   ],
+   "dayanaklar": [
+    "arXiv:2404.14735",
+    "arXiv:2407.14872",
+    "arXiv:2210.00030",
+    "arXiv:2310.07899"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "TimeRewarder: Learning Dense Reward from Passive Videos via Frame-wise Temporal Distance",
+      "yil": 2025,
+      "url": "https://arxiv.org/pdf/2509.26627",
+      "fark": "Pasif videodan ödül öğrenir ve ters sıralı kare çiftlerini negatif olarak kullanır; bu, önerilen 'ters klip' negatifiyle örtüşür. Ancak sistematik bir karşılaştırma yapmaz, 3-4 farklı sentetik başarısızlık türünü karşılaştırmaz ve Something-Something gibi insan videolarına odaklanmaz."
+     },
+     {
+      "baslik": "Adapt2Reward: Adapting Video-Language Models to Generalizable Robotic Rewards via Failure Prompts",
+      "yil": 2024,
+      "url": "https://arxiv.org/abs/2407.14872",
+      "fark": "Başarısızlık videolarının eksikliğini açıkça tespit eder, ancak gerçek robot başarısızlık kliplerini ve başarısızlık metin istemlerini kullanır; sentetik negatif üretmez ve ilerleme tabanlı ödül yerine video-dil modeli uyarlaması yapar."
+     },
+     {
+      "baslik": "RoboReward: General-Purpose Vision-Language Reward Models for Robotics",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2601.00675",
+      "fark": "Başarılı videoları karşıt görev komutlarıyla yeniden etiketleyerek ve erken bitirerek negatif/kısmi ilerleme örnekleri üretir; fakat bunlar video üretimi değil, yeniden etiketleme ve kırpmadır, ayrıca dil-görüntü ödül modeli olduğu için ranking tabanlı Rank2Reward yaklaşımından farklıdır."
+     },
+     {
+      "baslik": "Rank2Reward: Learning Shaped Reward Functions from Passive Video",
+      "yil": 2024,
+      "url": "https://arxiv.org/html/2404.14735v1",
+      "fark": "Önerilen modelin temel aldığı yöntemdir; pasif videodan kare sıralamasıyla ilerleme ödülü öğrenir, ancak sentetik başarısızlık negatifleri kullanmaz ve yalnızca başarılı demonstrasyonlarla eğitilir."
+     }
+    ],
+    "not": "Ters sıralı kare negatifleri (TimeRewarder) ve başarısızlık örnekleri (Adapt2Reward) zaten var olduğundan fikrin genel çerçevesi kısmen yapılmış, ancak dört sentetik başarısızlık türünün insan videosu üzerinde sistematik karşılaştırmasının ve Meta-World'de RL başarısının ölçülmesinin yapıldığına dair bir kanıt bulunamadı."
+   }
+  },
+  {
+   "baslik": "Do latent actions mean the same thing for humans and robots? Probing cross-embodiment consistency of latent action models",
+   "bosluk": "LAPA (#3), ALAM (#44), CLAW (#64) and Motus (#70) learn latent actions from action-free video, often mixing human and robot clips. They are evaluated mainly by downstream policy success. Whether a given latent code induces semantically aligned transitions across embodiments, and whether the algebraic consistency that ALAM proposes actually improves human-to-robot transfer, has not been measured directly.",
+   "neden_simdi": "Several open latent-action models were released in 2025-2026, which makes a probing and diagnostic paper feasible without training a foundation model from scratch.",
+   "ilk_adim": "Extract latent actions with an open LAPA checkpoint on paired human and robot clips of the same task. Train linear probes from latents to robot end-effector deltas. Measure cross-embodiment cluster alignment, and compare results with and without composition/reversal consistency regularization on a small retrained model.",
+   "dayanak_kartlar": [
+    3,
+    44,
+    64,
+    70
+   ],
+   "yenilik_sorgulari": [
+    "latent action model cross-embodiment alignment probing human robot",
+    "LAPA latent action interpretability linear probe end-effector",
+    "consistency regularization latent actions human video transfer evaluation"
+   ],
+   "dayanaklar": [
+    "arXiv:2410.11758",
+    "arXiv:2605.10819",
+    "arXiv:2606.04130",
+    "arXiv:2512.13030"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "HARP-VLA: Human-Robot Aligned Representation Learning for Vision-Language-Action Model",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2605.31234",
+      "fark": "Latent action modeli insan-robot hizalamasını hedefliyor ve çapraz tahmin (cross-prediction) amaçlı kullanıyor. Ancak lineer probe ile end-effector delta'sına karşı doğrulama ve ALAM tarzı cebirsel tutarlılık (composition/reversal) düzenlemesinin ayrı ölçümü yapılmamış gibi görünüyor. Snippet'ten yalnızca özet bilgi alındı, tam metin doğrulanmadı."
+     },
+     {
+      "baslik": "Motion-Focused Latent Action Enables Cross-Embodiment VLA Training from Human EgoVideos",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2606.18955",
+      "fark": "İnsan ve robot latent aksiyonları arasında CKA ile temsil hizalaması ölçüyor (0.9139 vs UniVLA 0.8659) ve alan alt uzayını çıkarıyor. Fark: lineer probe ile end-effector delta'sı üzerinden anlamsal hizalama ölçümü ve kompozisyon/ters çevirme tutarlılığı yok. Bilgiler ikincil bir özetleyiciden (emergentmind) alındı, orijinal kayıt doğrulanmalı."
+     },
+     {
+      "baslik": "GALA: Geometry-Aware Latent Action Modeling for VLA Pretraining across Embodiments",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2609.21948",
+      "fark": "Çapraz-embodiment latent aksiyon hizalaması yapıyor ve insan-robot retrieval benchmark'ı (R@1) kullanıyor. Fark: retrieval tabanlı ölçüm, lineer probe ile end-effector delta regresyonu ve tutarlılık düzenlemesinin karşılaştırmalı analizi sunulmuyor."
+     },
+     {
+      "baslik": "Learning Latent Action World Models In The Wild",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2601.05230",
+      "fark": "Latent aksiyonların transferini döngü tutarlılığı (cycle-consistency) testiyle değerlendiriyor. Fark: odak in-the-wild video ve düzenlileştirme aileleri; insan-robot semantik hizalaması ve end-effector probe'u ele alınmıyor."
+     },
+     {
+      "baslik": "Learning a semantically aligned latent action space for human hand and robot end-effectors (arXiv:2506.14608; başlık snippet'te doğrulanamadı)",
+      "yil": 2025,
+      "url": "https://arxiv.org/html/2506.14608v3",
+      "fark": "İnsan eli ve robot end-effector'ları için kontrastif kayıpla hizalanmış latent aksiyon uzayı öğreniyor ve ortak eğitimin başarı artışını raporluyor. Fark: LAPA/ALAM tarzı video tabanlı latentler yerine retargeting tabanlı hizalama kullanıyor; lineer probe ile tutarlılık ölçümü ve kompozisyon/ters çevirme düzenlemesi analiz edilmemiş."
+     }
+    ],
+    "not": "Çapraz-embodiment latent aksiyon hizalaması ve tutarlılık üzerine yakın çalışmalar (HARP-VLA, GALA, 2606.18955) mevcut, ancak bu fikirdeki lineer probe ile end-effector delta'sına karşı anlamsal hizalama ölçümü ve ALAM tarzı kompozisyon/ters çevirme düzenlemesinin karşılaştırmalı etkisi aramada bulunamadı; aramalar yalnızca snippet düzeyinde yapıldı, tam metinler doğrulanmadı."
+   }
+  },
+  {
+   "baslik": "Track-based retrieval: retrieving human video clips by point-track similarity instead of semantics for in-context imitation",
+   "bosluk": "R+X (#41) and Retrieving-from-Video (#79) retrieve relevant human clips mostly with vision-language or semantic cues. Track2Act (#28) and ATM (#31) show that point tracks carry embodiment-agnostic motion information. No work uses motion/track similarity as the retrieval key, even though it could pick clips that are physically more relevant for execution.",
+   "neden_simdi": "Off-the-shelf point trackers such as CoTracker are now cheap to run. Retrieval needs no large training, so a student can build it and test it in simulation (LIBERO or Meta-World) with ATM's code.",
+   "ilk_adim": "Build a small library of human and robot clips with CoTracker tracks. Implement DTW-based track retrieval. Condition an ATM-style track-guided policy on the retrieved tracks, and compare against CLIP-based retrieval on 5 LIBERO tasks.",
+   "dayanak_kartlar": [
+    41,
+    79,
+    28,
+    31
+   ],
+   "yenilik_sorgulari": [
+    "retrieval human video point track similarity robot policy",
+    "motion-based retrieval in-context imitation learning tracks",
+    "R+X retrieval CoTracker trajectory matching manipulation"
+   ],
+   "dayanaklar": [
+    "arXiv:2407.12957",
+    "arXiv:2511.05199",
+    "arXiv:2405.01527",
+    "arXiv:2401.00025"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "RoboTok (arXiv 2609.03199)",
+      "yil": 2026,
+      "url": "https://hyper.ai/en/papers/2609.03199",
+      "fark": "Closest match. It retrieves manipulation-relevant human demonstrations from web videos by comparing canonicalized 3D hand trajectories, with a retrieval encoder trained on DTW-derived similarity labels. The proposed idea differs in using CoTracker 2D point tracks instead of 3D hand trajectories, in conditioning an ATM-style track-guided policy on the retrieved tracks, and in the LIBERO evaluation against CLIP retrieval. Based on a secondary summary; the full paper was not checked."
+     },
+     {
+      "baslik": "FlowRetrieval: Flow-Guided Data Retrieval for Few-Shot Imitation Learning",
+      "yil": 2024,
+      "url": "https://proceedings.mlr.press/v270/lin25a.html",
+      "fark": "Retrieves prior data by motion similarity rather than visual or language similarity, using optical flow representations to select data for few-shot imitation. The proposed idea differs in using point tracks (CoTracker) rather than dense optical flow, in building the library from human clips as well as robot clips, and in conditioning an ATM-style track-guided policy."
+     },
+     {
+      "baslik": "Motion Tracks: A Unified Representation for Human-Robot Transfer in Few-Shot Imitation Learning",
+      "yil": 2025,
+      "url": "https://arxiv.org/pdf/2501.06994",
+      "fark": "Uses 2D track-based motion representations shared by human hands and robot end-effectors for few-shot human-robot transfer. The proposed idea differs because it uses tracks as the policy's action space, not as the retrieval key for selecting clips."
+     },
+     {
+      "baslik": "SAIL: Test-Time Scaling for In-Context Imitation Learning with VLM",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2603.08269",
+      "fark": "In-context imitation learning that retrieves scene-compatible reference trajectories from an archive. Its retrieval is not based on motion or track similarity, so the proposed idea differs in its retrieval key."
+     }
+    ],
+    "not": "The specific pipeline (CoTracker tracks, DTW retrieval, ATM-style conditioning, LIBERO vs. CLIP) appears unpublished, but the core claim that motion or track similarity is an unexplored retrieval key is weakened by RoboTok and FlowRetrieval, so the novelty should be reframed around the track-based pipeline and its comparison."
+   }
+  },
+  {
+   "baslik": "Cheap-data mixing laws: cotraining with a smartphone-built UMI gripper plus bare-hand egocentric video",
+   "bosluk": "UMI (#9), MV-UMI (#34) and YUBI (#37) scale handheld-gripper data, and #17 studies bare human-hand video. There is little guidance on the optimal ratio of gripper demos to plain hand videos at small budgets, which is exactly the regime of low-resource labs.",
+   "neden_simdi": "UMI hardware is open-source and 3D-printable, phones can stand in for GoPros, and #17 raised the question of when human video helps. A small, carefully controlled data-mixing study is publishable and feasible with one low-cost arm.",
+   "ilk_adim": "3D-print a UMI gripper and pick one pick-and-place task. Collect about 50 gripper demos and about 200 bare-hand phone videos. Train a diffusion policy on 0/25/50/75% hand-video mixes, and report success against data-collection minutes.",
+   "dayanak_kartlar": [
+    9,
+    34,
+    37,
+    17
+   ],
+   "yenilik_sorgulari": [
+    "data mixing ratio human video handheld gripper cotraining low budget",
+    "low-cost UMI replication smartphone data collection",
+    "scaling law human hand video vs robot demonstrations cotraining"
+   ],
+   "dayanaklar": [
+    "arXiv:2402.10329",
+    "arXiv:2509.18757",
+    "arXiv:2606.10244",
+    "arXiv:2606.06627"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "What Matters When Cotraining Robot Manipulation Policies on Everyday Human Videos?",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2606.06627",
+      "fark": "Aynı sorunun bir kısmına yaklaşıyor: insan videosu ile robot verisinin birlikte eğitimi, karışım ağırlıkları ve düşük robot verisi rejimi (başarıda %29,7 kazanç bildiriyor). Ancak UMI tipi el aleti verisi kullanmıyor, bütçeyi dakika cinsinden ölçmüyor ve 0/25/50/75% karışım taramasını yapmıyor; insan videosu internet/çok kameralı setupla işleniyor."
+     },
+     {
+      "baslik": "CosmoH2G: A Hand-to-Gripper Transfer Dataset and Baseline Method for Object Manipulation with Complex Spatial Movements",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2609.07498",
+      "fark": "UMI el aleti ile çıplak el hareketlerinin eşleştirilmiş verisini topluyor, yani aynı iki veri türünü kullanıyor. Ancak amacı bir veri transfer seti ve taban yöntemi; karışım oranı optimizasyonu ya da küçük bütçe için veri-verimlilik analizi sunmuyor."
+     },
+     {
+      "baslik": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+      "yil": 2026,
+      "url": "https://arxiv.org/html/2602.16710",
+      "fark": "Egocentric insan verisinin ölçeğini (20 bin saat) ve insan verisiyle ön eğitim ardından az miktarda hizalı robot verisi önerisini inceliyor. Gripper verisi kullanmıyor, düşük bütçe rejimine ve oran taramasına odaklanmıyor; dexterous el üzerinde çalışıyor."
+     },
+     {
+      "baslik": "Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots",
+      "yil": 2024,
+      "url": "https://arxiv.org/html/2402.10329v3",
+      "fark": "Temel el aleti (gripper) veri toplama çerçevesi; Diffusion Policy ile eğitim yapıyor. Ancak bare-hand video ile karışımı, oran araştırmasını ve akıllı telefon tabanlı bir yapıyı içermiyor; fikrin temel aldığı taban çalışmadır."
+     }
+    ],
+    "not": "Insan videosu ile el aleti/robot verisinin birlikte eğitimi (2606.06627, CosmoH2G) yakın çalışmalar olarak mevcut, ancak akıllı telefonla kurulan düşük bütçeli UMI, çıplak el videosu ile 0/25/50/75% karışım oranı taraması ve veri toplama dakikasına göre başarı raporlaması birlikte yapılmış bir çalışma bulunamadı."
+   }
+  },
+  {
+   "baslik": "Do video-generation metrics predict policy success? Linking H2R-Bench generation quality to downstream human-to-robot transfer",
+   "bosluk": "H2R-Bench (#24) evaluates human-to-robot video generation with visual and physical metrics. Gen2Act (#72) uses generated human videos to condition policies. Whether higher generation scores actually translate into better policy success has not been tested, so the field may be optimizing the wrong metrics.",
+   "neden_simdi": "Benchmarks for both generation (#24) and transfer (#45) appeared in 2026, and open image-to-video models can be run at small scale. A correlation study is inference-heavy rather than training-heavy, which suits student compute.",
+   "ilk_adim": "Generate conditioning videos for 3 simulated tasks with 3-4 open video models or checkpoints. Score them with H2R-Bench-style metrics. Feed them to a fixed Gen2Act-style track-extraction policy, and compute the rank correlation between each metric and task success.",
+   "dayanak_kartlar": [
+    24,
+    72,
+    45,
+    55
+   ],
+   "yenilik_sorgulari": [
+    "video generation metrics correlation robot policy success",
+    "H2R-Bench downstream policy evaluation generated video",
+    "does video quality predict manipulation success Gen2Act analysis"
+   ],
+   "dayanaklar": [
+    "arXiv:2608.13049",
+    "arXiv:2409.16283",
+    "arXiv:2609.24778",
+    "arXiv:2302.00111"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "DreamGen Bench / DreamGen: video world models for robot learning (NVIDIA et al.)",
+      "yil": 2025,
+      "url": "https://hyper.ai/de/papers/2505.12705",
+      "fark": "Closest match. It reports that video-generation benchmark scores correlate with downstream policy success. But it uses generic video-model benchmarks and a video-to-action pipeline, not H2R-Bench's human-to-robot transfer metrics or a Gen2Act-style track-extraction policy. I did not open the full paper, and the URL is a search-result mirror I could not fully confirm."
+     },
+     {
+      "baslik": "WorldEval: World Model as Real-World Robot Policies Evaluator",
+      "yil": 2025,
+      "url": "https://alphaxiv.org/overview/2505.19017v1",
+      "fark": "Uses video world models as policy evaluators and reports a strong correlation (about 0.79 Pearson) between simulated and real success. It tests the policy side, not whether generation-quality metrics predict success for conditioning videos, and it does not use human-to-robot videos. The URL is from search, and I did not open the full paper."
+     },
+     {
+      "baslik": "WorldGym: World Model as an Environment for Policy Evaluation",
+      "yil": 2025,
+      "url": "https://liner.com/review/worldgym-world-model-as-an-environment-for-policy-evaluation",
+      "fark": "Reports about 0.78 Pearson correlation between world-model policy success and real-world success across 17 tasks. Like WorldEval, it measures policy-evaluation fidelity rather than correlating generation-quality metrics with policy success from human-to-robot conditioning videos."
+     },
+     {
+      "baslik": "H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2608.13049",
+      "fark": "The benchmark the idea builds on. It scores generated robot videos on goal, action, contact, embodiment and quality. It does not, per the abstract summary, link those scores to downstream policy success, which is the gap the idea claims."
+     },
+     {
+      "baslik": "Gen2Act: Human Video Generation in Novel Scenarios enables Generalizable Robot Manipulation",
+      "yil": 2024,
+      "url": "https://arxiv.org/abs/2409.16283v1",
+      "fark": "The conditioning pipeline the idea reuses. Its video quality is judged qualitatively on samples, with no sweep over generation quality and no correlation with policy success, which leaves the gap open."
+     },
+     {
+      "baslik": "BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2602.03793",
+      "fark": "Related evaluation work. It reports that world-model policy evaluation overestimates success relative to real-world results, which touches on fidelity-to-success alignment. It does not compare generation metrics across models or use human-to-robot conditioning."
+     }
+    ],
+    "not": "Closest prior work is DreamGen Bench and WorldEval/WorldGym, which already show that video-model or world-model scores correlate with downstream policy success, but none tests H2R-Bench-style human-to-robot transfer metrics against a Gen2Act-style conditioned policy, so the idea is partially covered rather than new."
+   }
+  }
+ ],
+ "maliyet": {
+  "orkestra_usd": 0.5554,
+  "fikir_usd": 0.5461,
+  "toplam_usd": 1.1015,
+  "fikir_asama": {
+   "fikir_uret": {
+    "calls": 1,
+    "failed": 0,
+    "cost_usd": 0.163212,
+    "in": 11855,
+    "out": 3419,
+    "web_search": 0
+   },
+   "fikir_yenilik": {
+    "calls": 6,
+    "failed": 0,
+    "cost_usd": 0.24835980000000002,
+    "in": 326743,
+    "out": 30167,
+    "web_search": 20
+   },
+   "fikir_sec": {
+    "calls": 1,
+    "failed": 0,
+    "cost_usd": 0.134556,
+    "in": 10998,
+    "out": 2329,
+    "web_search": 0
+   }
+  }
+ },
+ "genislik": {
+  "okuyucuya_giden": 1200,
+  "kart": 80,
+  "funnel_ozet": "orkestra/funnel.json"
+ },
+ "sef_girdi_karakter": 30050,
+ "sure_s": 979.7
+}

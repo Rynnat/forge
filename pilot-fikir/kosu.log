@@ -1,3 +1,19 @@
 == B T1 19:25:38
 Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
 Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3808.57it/s]
+{"sistem": "B", "durum": "OK", "maliyet": {"orkestra_usd": 0.5534, "fikir_usd": 0.5468, "toplam_usd": 1.1002, "fikir_asama": {"fikir_uret": {"calls": 1, "failed": 0, "cost_usd": 0.157728, "in": 11987, "out": 3092, "web_search": 0}, "fikir_yenilik": {"calls": 6, "failed": 0, "cost_usd": 0.25143445, "in": 356347, "out": 31855, "web_search": 20}, "fikir_sec": {"calls": 1, "failed": 0, "cost_usd": 0.13766, "in": 10051, "out": 2863, "web_search": 0}}}, "sure_s": 1874.7}
+== B T2 19:56:54
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2988.53it/s]
+{"sistem": "B", "durum": "OK", "maliyet": {"orkestra_usd": 0.5891, "fikir_usd": 0.5315, "toplam_usd": 1.1206, "fikir_asama": {"fikir_uret": {"calls": 1, "failed": 0, "cost_usd": 0.164972, "in": 11780, "out": 3537, "web_search": 0}, "fikir_yenilik": {"calls": 6, "failed": 0, "cost_usd": 0.23818404, "in": 316610, "out": 31735, "web_search": 19}, "fikir_sec": {"calls": 1, "failed": 0, "cost_usd": 0.12832, "in": 10526, "out": 2206, "web_search": 0}}}, "sure_s": 1114.1}
+== B T3 20:15:29
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3207.80it/s]
+{"sistem": "B", "durum": "OK", "maliyet": {"orkestra_usd": 0.5554, "fikir_usd": 0.5461, "toplam_usd": 1.1015, "fikir_asama": {"fikir_uret": {"calls": 1, "failed": 0, "cost_usd": 0.163212, "in": 11855, "out": 3419, "web_search": 0}, "fikir_yenilik": {"calls": 6, "failed": 0, "cost_usd": 0.24835980000000002, "in": 326743, "out": 30167, "web_search": 20}, "fikir_sec": {"calls": 1, "failed": 0, "cost_usd": 0.134556, "in": 10998, "out": 2329, "web_search": 0}}}, "sure_s": 979.7}
+== A paralel 20:31:50
+{"sistem": "A", "durum": "OK", "maliyet": {"toplam_usd": 0.3538, "asama": {"fikir_A": {"calls": 1, "failed": 0, "cost_usd": 0.35376100000000005, "in": 179525, "out": 15067, "web_search": 10}}}, "sure_s": 77.2}
+{"sistem": "A", "durum": "OK", "maliyet": {"toplam_usd": 0.376, "asama": {"fikir_A": {"calls": 1, "failed": 0, "cost_usd": 0.37601579999999996, "in": 197326, "out": 14966, "web_search": 11}}}, "sure_s": 81.3}
+{"sistem": "A", "durum": "OK", "maliyet": {"toplam_usd": 0.3805, "asama": {"fikir_A": {"calls": 1, "failed": 0, "cost_usd": 0.3805111, "in": 212412, "out": 15233, "web_search": 11}}}, "sure_s": 81.5}
+== denetim 20:33:12
+{"denetim_maliyet_usd": 1.1098}
+== bitti 20:40:08

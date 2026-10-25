@@ -1,0 +1,423 @@
+{
+ "sistem": "B",
+ "konu": {
+  "id": "T2",
+  "konu": "LLM-based agents for automated software testing"
+ },
+ "durum": "OK",
+ "fikirler": [
+  {
+   "baslik": "Bug-Preserving Repair Loops: Detecting When LLM Test Repair Turns Bug-Revealing Tests into Bug-Validating Ones",
+   "bosluk": "Generate-validate-repair loops such as ChatUniTest and TestART treat a failing test as broken and rewrite its assertions to match current behavior, which can lock in real bugs. The failure mode is documented, but no lightweight in-loop mechanism separates 'the test is wrong' from 'the code is wrong'.",
+   "neden_simdi": "Repair loops are now the default in LLM unit-test tools and are being studied in their own right, and Defects4J's buggy and fixed version pairs give free ground truth for measuring bug lock-in.",
+   "ilk_adim": "Months 1-2: pick 20-30 Defects4J bugs, run a ChatUniTest-style loop on the buggy versions, and log every assertion the repair step changes. Month 3: re-run the repaired tests on the fixed versions and count repairs that locked in the bug. Months 4-5: add a guard. Before changing an assertion after a failure, the LLM must justify the expected value from the Javadoc or method name, and unresolved cases are flagged as suspected bugs. Measure lock-in reduction, flag precision, and the cost in lost coverage.",
+   "dayanaklar": [
+    "arXiv:2412.14137",
+    "arXiv:2408.03095",
+    "arXiv:2305.04764",
+    "doi:10.1145/2610384.2628055"
+   ],
+   "yenilik_notu": "arXiv:2412.14137 documents that generate-validate-repair loops validate bugs and reject bug-revealing tests, but it proposes no mitigation. arXiv:2410.21136 shows that oracles copy actual behavior. AugmenTest infers oracles from documentation, but at generation time, not as a repair-step guard. YATE applies oracle repairs without checking for lock-in. This idea differs by auditing assertion changes at the repair step itself across buggy and fixed versions, and by adding a justification guard that turns unresolved repairs into bug reports."
+  },
+  {
+   "baslik": "Surviving-Mutant Feedback vs. Coverage Feedback in Agentic Test Generation: Which Proxy Actually Finds Real Faults?",
+   "bosluk": "Agentic test generators mostly steer with coverage feedback, while mutation-guided methods claim better fault detection. No controlled study compares no feedback, coverage-gap feedback, and surviving-mutant feedback inside the same agent loop, under the same budget, on real faults.",
+   "neden_simdi": "Replication work from 2025-2026 has reopened the debate over proxy metrics, and cheap mutation tools (PIT, mutmut) make mutant-feedback loops affordable for a single student.",
+   "ilk_adim": "Months 1-2: build a minimal agent loop in Python (pytest + coverage.py + mutmut) or Java (JUnit + JaCoCo + PIT). Month 3: implement three arms that differ only in the feedback signal and use the same token and iteration budget: none, coverage gaps, and MuTAP-style surviving mutants. Months 4-5: evaluate real-fault detection on a BugsInPy or Defects4J subset, and report cost per detected fault and how well each proxy correlates with real-fault detection.",
+   "dayanaklar": [
+    "arXiv:2308.16557",
+    "arXiv:2506.02954",
+    "arXiv:2503.14713",
+    "arXiv:2408.03095"
+   ],
+   "yenilik_notu": "Meta's ACH (mutation-guided, industrial, no controlled ablation), AdverTest (combines coverage and mutation signals in one adversarial method), MuTAP (no matched-budget coverage arm), and CoverUp (compared against MuTAP on coverage, not real faults) all leave the isolated head-to-head unanswered. This idea is a controlled ablation that holds the feedback signal as the only variable and scores it on real-fault benchmarks."
+  },
+  {
+   "baslik": "Contamination-Controlled Evaluation of LLM Test Generators via Semantics-Preserving Benchmark Transformation",
+   "bosluk": "Most LLM test-generation results are reported on public benchmarks such as Defects4J, which models may have memorized. No one has systematically measured how much bug-reveal rate and coverage drop when the code is transformed so it cannot be recalled.",
+   "neden_simdi": "Newer LLMs have seen more public code during training and their reported results shift substantially across model versions, so the memorization confound in test-generation evaluation is getting worse.",
+   "ilk_adim": "Months 1-2: write a JavaParser script that renames identifiers, reorders methods, and strips comments in about 30 Defects4J classes while preserving the bugs, and verify this with the existing bug-triggering tests. Months 3-4: generate tests with 2-3 LLMs, including at least one open model, on the original and transformed versions, then compare bug-reveal rate and coverage. Month 5: apply a memorization probe and correlate each model's per-bug performance drop with its recall signal.",
+   "dayanaklar": [
+    "arXiv:2411.13323",
+    "arXiv:2310.18018",
+    "arXiv:2601.09695",
+    "doi:10.1145/2610384.2628055"
+   ],
+   "yenilik_notu": "The closest work (arXiv:2604.21579, 2026) applies semantics-preserving transformations to Defects4J and correlates performance drops with negative log-likelihood, but for program repair. 'Memorize or Generalize?' does the same for code generation on MBPP+ and BigCodeBench, and GitHub Recent Bugs addresses contamination with a new dataset instead. This idea transfers the approach to test generation, with test-specific metrics (bug-reveal rate, coverage) and a recall-probe correlation."
+  }
+ ],
+ "adaylar": [
+  {
+   "baslik": "Bug-Preserving Repair Loops: Detecting When LLM Test Repair Turns Bug-Revealing Tests into Bug-Validating Ones",
+   "bosluk": "Generation-validation-repair loops (ChatUniTest, TestART) treat a failing test as broken and 'fix' it. Their assertions then end up encoding the current, possibly buggy, behavior. Card #44 shows this design rejects bug-revealing tests. No lightweight mechanism yet separates 'test is wrong' from 'code is wrong' inside the loop.",
+   "neden_simdi": "Repair loops are now the default in LLM unit-test tools, and 2026 work has started studying them in their own right (#46). The failure mode is documented but has no proposed mitigation. Defects4J offers buggy and fixed versions, which gives free ground truth.",
+   "ilk_adim": "Pick 20-30 Defects4J bugs. Run a ChatUniTest-style loop on the buggy version and log every assertion the repair step changes. Re-run each repaired test on the fixed version and count how many repairs 'locked in' the bug. Then try a simple guard: instead of auto-repairing an assertion failure, the LLM must justify the expected value from the Javadoc or method name, and unresolved cases are flagged as suspected bugs. Measure how the counts change.",
+   "dayanak_kartlar": [
+    44,
+    46,
+    18,
+    15,
+    40
+   ],
+   "yenilik_sorgulari": [
+    "LLM test repair loop assertion overfitting buggy behavior",
+    "LLM unit test generation oracle bug-validating tests mitigation",
+    "distinguish faulty test from faulty code LLM test generation repair"
+   ],
+   "dayanaklar": [
+    "arXiv:2412.14137",
+    "doi:10.1145/3803437.3804438",
+    "arXiv:2408.03095",
+    "arXiv:2305.04764",
+    "doi:10.1145/2610384.2628055"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "Can LLM-Generated Tests Reveal Bugs? (CoverAgent / CoverUp study: LLM test generation can validate bugs and reject bug-revealing tests)",
+      "yil": 2024,
+      "url": "https://arxiv.org/abs/2412.14137v1",
+      "fark": "This paper already identifies the core problem the idea names: CoverAgent and CoverUp-style generate-validate-repair loops can validate buggy behavior and reject bug-revealing tests. It does not propose the proposed guard, which requires justifying expected values from Javadoc or method names and flags unresolved cases as suspected bugs, and it does not measure assertion changes across buggy and fixed versions."
+     },
+     {
+      "baslik": "AugmenTest: Enhancing Tests with LLM-driven Oracles",
+      "yil": 2025,
+      "url": "https://conf.researchr.org/details/icst-2025/icst-2025-papers/25/AugmenTest-Enhancing-Tests-with-LLM-driven-Oracles",
+      "fark": "Infers the intended behavior of a method from its documentation and developer comments rather than from the code, which is close to the proposed Javadoc-justified guard. It is a generation method, not a repair-loop check, and it does not log repair-step assertion changes or re-run repaired tests on fixed versions to count bug lock-in."
+     },
+     {
+      "baslik": "Do LLMs generate test oracles that capture the actual or the expected program behaviour?",
+      "yil": 2024,
+      "url": "https://arxiv.org/html/2410.21136v1",
+      "fark": "Shows that LLM-generated oracles often copy actual program behaviour instead of expected behaviour, which is the failure mode the idea targets. It is an empirical study of oracle generation and proposes no in-loop mitigation or repair-step guard."
+     },
+     {
+      "baslik": "YATE: The Role of Test Repair in LLM-Based Unit Test Generation",
+      "yil": 2025,
+      "url": "https://arxiv.org/html/2507.18316v1",
+      "fark": "Treats failing tests as repairable and applies rule-based oracle fixes, which is the repair behaviour the idea wants to audit. It optimises coverage and mutant kill rate and does not check whether repairs lock in bugs or add a justification step before changing assertions."
+     },
+     {
+      "baslik": "Better Understanding, Better Fixes? A Study of Hallucination in LLM-based Automated Program Repair",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2609.04909",
+      "fark": "Categorises generated tests that pass on buggy code and on the model's patch but fail on the developer fix, which overlaps with bug lock-in. The focus is on hallucinated tests in APR, not on test repair in ChatUniTest-style loops, and it proposes no justification guard."
+     }
+    ],
+    "not": "The bug-validation risk of generate-validate-repair test loops is already documented (arXiv 2412.14137), and documentation-grounded oracle inference (AugmenTest) overlaps the proposed guard, but the specific repair-step audit on Defects4J with flagged suspected bugs does not appear to be published."
+   }
+  },
+  {
+   "baslik": "Contamination-Controlled Evaluation of LLM Test Generators via Semantics-Preserving Benchmark Transformation",
+   "bosluk": "Most LLM test-generation results are reported on Defects4J and similar public benchmarks, which models may have memorized (#78, #65). No one has systematically measured how much test-generation metrics (bug detection, coverage) drop when the code is transformed so it cannot be recalled.",
+   "neden_simdi": "Card #21 shows that results shift substantially with newer LLM versions. Newer models also saw more public code during training, so the memorization confound is getting worse. Reliable evaluation methodology is becoming a hot topic.",
+   "ilk_adim": "Write a small script (e.g., using JavaParser) that renames identifiers, reorders methods, and strips comments in about 30 Defects4J classes while preserving the bugs. Generate tests with 2-3 LLMs on the original and transformed versions. Compare bug-reveal rate and coverage. Use a memorization probe in the style of #78 to correlate the drop with recall.",
+   "dayanak_kartlar": [
+    78,
+    65,
+    21,
+    40,
+    52
+   ],
+   "yenilik_sorgulari": [
+    "data contamination LLM unit test generation Defects4J obfuscation",
+    "semantics-preserving transformation benchmark LLM test generation memorization",
+    "Defects4J leakage LLM test generation evaluation"
+   ],
+   "dayanaklar": [
+    "arXiv:2411.13323",
+    "arXiv:2310.18018",
+    "arXiv:2601.09695",
+    "doi:10.1145/2610384.2628055",
+    "arXiv:2503.13572"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "A Metamorphic Testing Approach to Diagnosing Memorization in LLM-Based Program Repair",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2604.21579",
+      "fark": "Closest match. It applies semantics-preserving transformations (identifier renaming, statement reordering, loop rewriting) to Defects4J and GitBug-Java, measures the drop in LLM repair success, and correlates the drop with the models' negative log-likelihood as a memorization signal. It targets program repair, not test generation, so it does not measure bug-reveal rate or coverage, and it does not use a recall probe in the style of #78."
+     },
+     {
+      "baslik": "Memorize or Generalize? Evaluating LLM Code Generation with Code Rewriting",
+      "yil": 2025,
+      "url": "https://arxiv.org/html/2503.02296v2",
+      "fark": "Proposes semantically altering code rewrites plus a memorization metric (harmful memorization = high similarity to the original plus performance drop under rewriting). It is applied to code generation on MBPP+ and BigCodeBench, not to test generation or Defects4J bug-revealing tests."
+     },
+     {
+      "baslik": "The GitHub Recent Bugs Dataset for Evaluating LLM-based Debugging Applications",
+      "yil": 2023,
+      "url": "https://huggingface.co/papers/2310.13229.md",
+      "fark": "Motivates the concern by reporting that Defects4J bugs often appear in StarCoder's training data, and proposes a post-cutoff bug dataset as the remedy. It does not transform code to control contamination and does not evaluate test generation."
+     }
+    ],
+    "not": "Closest prior work (De Koning et al. 2026) uses semantics-preserving transformations of Defects4J to detect memorization, but for program repair rather than test generation, so the specific test-generation metrics (bug-reveal rate, coverage) and the recall-correlation design remain unexamined."
+   }
+  },
+  {
+   "baslik": "Surviving-Mutant Feedback vs. Coverage Feedback in Agentic Test Generation: Which Proxy Actually Finds Real Faults?",
+   "bosluk": "Agentic test generators (TestForge, TestART) mostly steer with coverage feedback. Card #22 argues coverage is a weak indicator, and #35 questions whether coverage and mutation scores correlate with real effectiveness at all. Nobody has compared feedback signals head-to-head in the same agent loop on real faults.",
+   "neden_simdi": "The 2025-2026 replication work (#35) has opened the debate over proxy metrics. Cheap mutation tools (PIT, mutmut) make mutant-feedback loops affordable for one student.",
+   "ilk_adim": "Build a minimal agent loop for Python (pytest + coverage.py + mutmut) or Java (JUnit + JaCoCo + PIT). Implement three variants with the same budget: no feedback, coverage-gap feedback, and surviving-mutant feedback (as in MuTAP). Evaluate real-fault detection on BugsInPy or Defects4J subsets.",
+   "dayanak_kartlar": [
+    22,
+    34,
+    35,
+    29,
+    18
+   ],
+   "yenilik_sorgulari": [
+    "mutation feedback vs coverage feedback LLM agent test generation",
+    "surviving mutants prompt LLM test generation real fault detection",
+    "MuTAP comparison coverage-guided LLM test generation"
+   ],
+   "dayanaklar": [
+    "arXiv:2506.02954",
+    "arXiv:2308.16557",
+    "arXiv:2607.22880",
+    "arXiv:2503.14713",
+    "arXiv:2408.03095"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "Mutation-Guided LLM-based Test Generation at Meta",
+      "yil": 2025,
+      "url": "https://arxiv.org/pdf/2501.12862",
+      "fark": "Uses mutants (ACH) to steer LLM test generation in an industrial setting and reports that coverage-driven generation mostly fails to kill mutants. It is not a controlled three-way comparison of no-feedback, coverage-gap, and surviving-mutant feedback in one agent loop, and it evaluates on Meta's code rather than real-fault benchmarks like BugsInPy or Defects4J."
+     },
+     {
+      "baslik": "AdverTest: adversarial mutant and test-generation agents",
+      "yil": 2026,
+      "url": "https://arxiv.org/html/2602.08146v2",
+      "fark": "Closest to the proposed design: an agent loop guided by both coverage and mutation scores, evaluated on Defects4J and GrowingBugs for fault detection. It is a single adversarial method that combines the signals rather than an ablation that isolates coverage-gap feedback against surviving-mutant feedback under the same budget."
+     },
+     {
+      "baslik": "Effective Test Generation Using Pre-trained Large Language Models and Mutation Testing (MuTAP)",
+      "yil": 2023,
+      "url": "https://arxiv.org/pdf/2308.16557",
+      "fark": "Introduces the surviving-mutant feedback approach for Python, claiming up to 28% more faults detected on human-written code. It does not test against a coverage-feedback agent loop under matched budget, and its evaluation is on its own snippet set rather than a head-to-head on real-fault subsets."
+     },
+     {
+      "baslik": "CoverUp: Effective High Coverage Test Generation for Python",
+      "yil": 2024,
+      "url": "https://arxiv.org/pdf/2403.16218",
+      "fark": "A coverage-driven LLM agent for Python that is compared against MuTAP, with coverage of about 89% versus 77%. The comparison measures coverage rather than real-fault detection, so it does not answer which feedback signal finds real faults."
+     },
+     {
+      "baslik": "YATE: The Role of Test Repair in LLM-Based Unit Test Generation",
+      "yil": 2025,
+      "url": "https://arxiv.org/pdf/2507.18316",
+      "fark": "Studies which feedback signals matter in LLM test generation and finds that compilation-relevant feedback matters more than coverage feedback. It does not evaluate surviving-mutant feedback as a separate arm, so the mutation-versus-coverage question remains open."
+     }
+    ],
+    "not": "Closely related work exists (Meta's mutation-guided ACH, AdverTest, and MuTAP), but none runs a controlled head-to-head of no-feedback, coverage-gap, and surviving-mutant feedback in the same agent loop on real faults, so the specific gap appears to be open."
+   }
+  },
+  {
+   "baslik": "Flakiness-Aware Test Generation Agent: Detecting and Repairing Nondeterministic LLM-Generated Tests Inside the Loop",
+   "bosluk": "Card #37 shows that LLM-generated tests are often flaky. Current agent loops accept a test after a single passing run. Flakiness is measured after the fact but not prevented during generation, outside the DBMS setting.",
+   "neden_simdi": "Industrial deployments such as Meta's TestGen-LLM (#6) depend on tests being trustworthy. The flakiness issue was raised for LLM tests very recently (2026), so the space is open.",
+   "ilk_adim": "Generate tests for 10-15 open-source Python projects with an LLM. Re-run each accepted test 20 times, including with shuffled order (pytest-randomly), to measure the flaky rate and categorize root causes (time, ordering, randomness, I/O). Then add a 'rerun-N + root-cause-guided repair' step to the loop and measure how much flakiness drops and what it costs.",
+   "dayanak_kartlar": [
+    37,
+    6,
+    29,
+    44
+   ],
+   "yenilik_sorgulari": [
+    "flaky LLM-generated unit tests detection repair",
+    "LLM test generation flakiness rerun agent",
+    "nondeterministic tests generated by large language models study"
+   ],
+   "dayanaklar": [
+    "arXiv:2601.08998",
+    "arXiv:2402.09171",
+    "arXiv:2503.14713",
+    "arXiv:2412.14137"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "NIODebugger: Non-Idempotent-Outcome Flaky Test Repair with LLM-Based Agent (ICSE 2025)",
+      "yil": 2025,
+      "url": "https://conf.researchr.org/details/icse-2025/icse-2025-research-track/241/NIODebugger-A-Novel-Approach-to-Repair-Non-Idempotent-Outcome-Tests-with-LLM-Based-A",
+      "fark": "Bir LLM ajanı, mevcut flaky testleri tekrar çalıştırmalarla tespit edip onarır (ajan tabanlı onarım). Ancak üretilmiş testleri değil, zaten var olan testleri hedefler ve üretim döngüsü içinde önleme yapmaz; onarım sonradan yapılır."
+     },
+     {
+      "baslik": "On the Flakiness of LLM-Generated Tests for Industrial and Open-Source Database Management Systems",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2601.08998",
+      "fark": "LLM ile üretilen testlerin flakiness oranını ölçer ve kök nedenleri (ör. sıralamaya bağımlılık, sırasız koleksiyonlar) manuel inceler. Bu, önerinin ilk adımındaki ölçüm/kategorizasyon kısmıyla büyük ölçüde örtüşür; ancak DBMS alanıyla sınırlıdır, Python projelerini kapsamaz ve üretim döngüsüne onarım adımı eklemez."
+     },
+     {
+      "baslik": "FlakyGuard: Repairing Flaky Tests with Codebase-Aware Exploration",
+      "yil": 2025,
+      "url": "https://arxiv.org/pdf/2511.14002",
+      "fark": "Flaky testleri LLM ile onarır ve üretim kodu bağlamını kod grafı üzerinden keşfeder. Yaklaşım mevcut testlerin sonradan onarımıdır; LLM ile test üretimini, yeniden çalıştırma ile kabul kararını veya üretim döngüsü içi önlemeyi ele almaz."
+     },
+     {
+      "baslik": "FlakyFix: Using Large Language Models for Predicting Flaky Test Fix Categories and Test Code Repair",
+      "yil": 2023,
+      "url": "https://arxiv.org/pdf/2307.00012",
+      "fark": "Flaky testlerin düzeltme kategorilerini tahmin edip LLM ile test kodu onarımı yapar. Kök neden kategorileri önerideki 'zaman, sıralama, rastgelelik, I/O' sınıflandırmasına benzer; ama üretilmiş testleri ve üretim döngüsünü hedeflemez."
+     }
+    ],
+    "not": "Flaky testlerin tespiti ve LLM ile onarımı (NIODebugger, FlakyGuard, FlakyFix) ve LLM ile üretilen testlerin flakiness ölçümü (DBMS çalışması) ayrı ayrı yapılmış olsa da, üretim döngüsü içinde rerun-N ve kök-neden odaklı onarımı birleştiren bir çalışma bulunamadı; bu nedenle fikir kısmen yenidir, en çok çakışan kısım ilk ölçüm adımıdır."
+   }
+  },
+  {
+   "baslik": "Agentless vs. Agentic for Issue-Driven Test Generation: A Cost-Effectiveness Study on SWT-Bench",
+   "bosluk": "For program repair, Agentless (#42, #33) showed that simple pipelines can rival complex agents. SWT-Bench (#12) reports that repair agents also generate good tests, but no study has compared a simple fixed pipeline with an agent on test generation in terms of cost (tokens, $) versus success.",
+   "neden_simdi": "SWT-Bench and SWE-agent are open source, and open-source and cheap models make experiments feasible on a student budget. The agent vs. pipeline debate is current.",
+   "ilk_adim": "Pick a 50-100 instance subset of SWT-Bench Lite. Build a three-step Agentless-style pipeline: file localization, test writing, and a run check on the buggy version. Run SWE-agent with the same model. Compare fail-to-pass rate, token cost, and failure categories.",
+   "dayanak_kartlar": [
+    12,
+    33,
+    42,
+    13,
+    14
+   ],
+   "yenilik_sorgulari": [
+    "agentless test generation SWT-Bench",
+    "simple pipeline vs agent LLM reproduction test generation cost",
+    "SWT-Bench agentless baseline fail-to-pass"
+   ],
+   "dayanaklar": [
+    "arXiv:2406.12952",
+    "doi:10.1145/3715754",
+    "arXiv:2407.01489",
+    "arXiv:2405.15793",
+    "arXiv:2209.11515"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "SWT-Bench: Testing and Validating Real-World Bug-Fixes with Code Agents",
+      "yil": 2024,
+      "url": "https://arxiv.org/pdf/2406.12952",
+      "fark": "Introduces the benchmark the idea would use and compares SWE-agent with a ZeroShot single-call baseline on fail-to-pass rate, but it is a single prompt with no localization, test-writing, and run-check pipeline and no token or dollar cost analysis."
+     },
+     {
+      "baslik": "Agentless: Demystifying LLM-based Software Engineering Agents",
+      "yil": 2024,
+      "url": "https://arxiv.org/abs/2407.01489",
+      "fark": "Shows a fixed localization-then-patch pipeline can rival agents for program repair, but it addresses repair, not test generation, and does not evaluate SWT-Bench."
+     },
+     {
+      "baslik": "ReProAgent: Tool-Augmented Multi-Stage Agentic Generation of Bug Reproduction Tests from Issue Reports",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2607.09123",
+      "fark": "Agentic issue-to-reproduction-test system that reports about $0.14 per instance, but it is an agent only, uses its own pipeline, and does not compare against a simple fixed pipeline on SWT-Bench."
+     },
+     {
+      "baslik": "TEX-T: Test-time scaling on SWT-Bench (Salesforce blog)",
+      "yil": 2025,
+      "url": "https://www.salesforce.com/blog/tex-test-time-scaling/",
+      "fark": "Uses fixed, Agentless-sourced code context with tool-limited agents on SWT-Bench, but it is a test-time scaling method and does not isolate a simple pipeline versus an agent on cost."
+     }
+    ],
+    "not": "Closest work is the SWT-Bench ZeroShot baseline compared against agents and ReProAgent's per-instance cost reporting, but no found study compares a three-step Agentless-style test-generation pipeline against SWE-agent on SWT-Bench in terms of token cost and fail-to-pass success."
+   }
+  },
+  {
+   "baslik": "Filtering False-Positive Crashes from LLM-Generated Fuzz Drivers via Automated API-Misuse Triage",
+   "bosluk": "LLM-generated fuzz drivers have low validity (#79, #27). Many crashes come from the driver misusing the API, not from a library bug. Driver generation is well studied (#11, #56), but triage that separates driver bugs from real library bugs remains an open reliability problem.",
+   "neden_simdi": "The 2025 vision paper (#79) names this reliability problem as the main barrier to adoption. Infrastructure such as OSS-Fuzz and libFuzzer makes experiments easy.",
+   "ilk_adim": "Generate drivers with an LLM for 3-5 small C libraries (e.g., cJSON, libpng). Collect the crashes and manually label them as driver misuse or real bug to build a small dataset. Then implement a triage step in which an LLM reads the stack trace, the driver, and the API documentation to classify each crash. Measure precision and recall.",
+   "dayanak_kartlar": [
+    79,
+    27,
+    11,
+    56,
+    63
+   ],
+   "yenilik_sorgulari": [
+    "LLM fuzz driver false positive crash triage API misuse",
+    "validating LLM-generated fuzz harness crashes",
+    "fuzz driver bug vs library bug classification LLM"
+   ],
+   "dayanaklar": [
+    "arXiv:2503.00795",
+    "arXiv:2307.12469",
+    "arXiv:2312.17677",
+    "arXiv:2604.17977",
+    "arXiv:2306.15596"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "FalseCrashReducer: Mitigating False Positive Crashes in OSS-Fuzz-Gen Using Agentic AI",
+      "yil": 2025,
+      "url": "https://arxiv.org/html/2510.02185v1",
+      "fark": "Targets the same problem (spurious crashes from LLM-generated drivers) and uses LLM-driven crash validation, but it evaluates on OSS-Fuzz-Gen's 1,500-function benchmark, not a hand-labeled set of misuse-vs-bug labels from small C libraries, and it does not report precision and recall against those labels."
+     },
+     {
+      "baslik": "Quality-Assured Fuzz Harness Generation via the Four Principles Framework",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2605.21824",
+      "fark": "Includes an 'API protocol compliance' principle and a generate-check-fix loop that catches harness-induced false-positive crashes, which overlaps with the API-misuse triage step, but it is a generation-side validation loop rather than a classifier of individual crashes from stack trace, driver and docs, and it reports no precision/recall on a labeled crash dataset."
+     },
+     {
+      "baslik": "CKGFuzzer: LLM-Based Fuzz Driver Generation Enhanced By Code Knowledge Graph",
+      "yil": 2024,
+      "url": "https://arxiv.org/abs/2411.11532",
+      "fark": "Has a crash analysis module that labels crashes as API misuse or real bugs, so the core classification idea exists, but the labeling is deliberately conservative, is validated only by a 10% manual sample of misuse labels, and is not measured for precision and recall on a dedicated dataset."
+     },
+     {
+      "baslik": "FuzzAgent: Multi-Agent System for Evolutionary Library Fuzzing",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2605.14431",
+      "fark": "A multi-agent crash analyzer triages deduplicated crashes into candidate library bugs and reports manual confirmation (108 of 128), which is close to the proposed triage, but it is a full fuzzing system with its own triage pipeline, not a standalone LLM classifier that reads stack trace, driver and API documentation and is scored on a labeled dataset."
+     }
+    ],
+    "not": "Driver generation and LLM-based false-positive crash triage for generated harnesses have already been published (FalseCrashReducer, CKGFuzzer, Four Principles, FuzzAgent), so the remaining gap is mainly a standalone, precision/recall-measured misuse-vs-bug classifier evaluated on a manually labeled dataset of small C libraries."
+   }
+  }
+ ],
+ "maliyet": {
+  "orkestra_usd": 0.5891,
+  "fikir_usd": 0.5315,
+  "toplam_usd": 1.1206,
+  "fikir_asama": {
+   "fikir_uret": {
+    "calls": 1,
+    "failed": 0,
+    "cost_usd": 0.164972,
+    "in": 11780,
+    "out": 3537,
+    "web_search": 0
+   },
+   "fikir_yenilik": {
+    "calls": 6,
+    "failed": 0,
+    "cost_usd": 0.23818404,
+    "in": 316610,
+    "out": 31735,
+    "web_search": 19
+   },
+   "fikir_sec": {
+    "calls": 1,
+    "failed": 0,
+    "cost_usd": 0.12832,
+    "in": 10526,
+    "out": 2206,
+    "web_search": 0
+   }
+  }
+ },
+ "genislik": {
+  "okuyucuya_giden": 1200,
+  "kart": 80,
+  "funnel_ozet": "orkestra/funnel.json"
+ },
+ "sef_girdi_karakter": 28391,
+ "sure_s": 1114.1
+}

@@ -1,0 +1,1061 @@
+[
+ {
+  "id": "arXiv:2302.06527",
+  "baslik": "An Empirical Evaluation of Using Large Language Models for Automated Model-Based Test Generation",
+  "yil": 2023,
+  "cites": 411,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM unit test generation with repair re-prompting",
+  "alinti": "This paper presents a large-scale empirical evaluation on the effectiveness of LLMs for automated unit test generation without additional training or manual effort"
+ },
+ {
+  "id": "arXiv:2212.14834",
+  "baslik": "Large Language Models are Zero-Shot Fuzzers: Fuzzing Deep-Learning Libraries via Large Language Models",
+  "yil": 2022,
+  "cites": 340,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Core LLM fuzzing for deep learning libraries",
+  "alinti": "we propose TitanFuzz - the first approach to directly leveraging Large Language Models (LLMs) to generate input programs for fuzzing DL libraries"
+ },
+ {
+  "id": "arXiv:2310.03533",
+  "baslik": "Large Language Models for Software Engineering: Survey and Open Problems",
+  "yil": 2023,
+  "cites": 526,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "General SE survey with open challenges",
+  "alinti": "Our survey reveals the pivotal role that hybrid techniques (traditional SE plus LLMs) have to play"
+ },
+ {
+  "id": "arXiv:2308.04748",
+  "baslik": "Fuzz4All: Universal Fuzzing with Large Language Models",
+  "yil": 2023,
+  "cites": 249,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Universal LLM-based fuzzer across languages",
+  "alinti": "This paper presents Fuzz4All, the first fuzzer that is universal in the sense that it can target many different input languages"
+ },
+ {
+  "id": "doi:10.1109/icse48619.2023.00085",
+  "baslik": "CodaMosa: Escaping Coverage Plateaus in Test Generation with Pre-trained Large Language Models",
+  "yil": 2023,
+  "cites": 330,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Coverage-plateau LLM test generation; only title",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2402.09171",
+  "baslik": "Automated Unit Test Improvement using Large Language Models at Meta",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Industrial LLM test improvement deployment at Meta",
+  "alinti": "We believe this is the first report on industrial scale deployment of LLM-generated code backed by such assurances of code improvement"
+ },
+ {
+  "id": "arXiv:2307.07221",
+  "baslik": "Software Testing with Large Language Models: Survey, Landscape, and Vision",
+  "yil": 2023,
+  "cites": 563,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Core survey of LLMs for software testing",
+  "alinti": "This paper provides a comprehensive review of the utilization of LLMs in software testing. It analyzes 102 relevant studies"
+ },
+ {
+  "id": "arXiv:2501.10200",
+  "baslik": "Test Wars: A Comparative Study of SBST, Symbolic Execution, and LLM-Based Approaches to Unit Test Generation",
+  "yil": 2025,
+  "cites": 18,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Compares SBST, symbolic execution, and LLM testing",
+  "alinti": "Our results show that while LLM-based test generation is promising, it falls behind traditional methods in terms of coverage"
+ },
+ {
+  "id": "doi:10.1002/stvr.294",
+  "baslik": "Search‐based software test data generation: a survey",
+  "yil": 2004,
+  "cites": 932,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Classic pre-LLM search-based test generation survey",
+  "alinti": "To date, metaheuristic search techniques have been applied to automate test data generation for structural and functional testing"
+ },
+ {
+  "id": "arXiv:2109.09262",
+  "baslik": "TOGA: A Neural Method for Test Oracle Generation",
+  "yil": 2021,
+  "cites": 138,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Neural test oracle generation; central to oracle problem",
+  "alinti": "A test oracle, typically expressed as an condition, documents the intended behavior of a unit under a given test prefix"
+ },
+ {
+  "id": "arXiv:2312.17677",
+  "baslik": "Prompt Fuzzing for Fuzz Driver Generation",
+  "yil": 2023,
+  "cites": 54,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Coverage-guided LLM fuzz driver generation",
+  "alinti": "we propose PromptFuzz, a coverage-guided fuzzer for prompt fuzzing that iteratively generates fuzz drivers to explore undiscovered library code"
+ },
+ {
+  "id": "arXiv:2406.12952",
+  "baslik": "SWT-Bench: Testing and Validating Real-World Bug-Fixes with Code Agents",
+  "yil": 2024,
+  "cites": 26,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Benchmark for LLM agents generating tests from issues",
+  "alinti": "We find that LLMs generally perform surprisingly well at generating relevant test cases, with Code Agents designed for code repair exceeding the performance"
+ },
+ {
+  "id": "arXiv:2405.15793",
+  "baslik": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+  "yil": 2024,
+  "cites": 329,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Agent interface for SE tasks; tangential to testing",
+  "alinti": "SWE-agent's custom agent-computer interface (ACI) significantly enhances an agent's ability to create and edit code files, navigate entire repositories, and execute tests"
+ },
+ {
+  "id": "arXiv:2209.11515",
+  "baslik": "Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction",
+  "yil": 2022,
+  "cites": 206,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM bug reproduction from bug reports",
+  "alinti": "To automate test generation from general bug reports, we propose LIBRO, a framework that uses Large Language Models (LLMs)"
+ },
+ {
+  "id": "arXiv:2305.04764",
+  "baslik": "ChatUniTest: A Framework for LLM-Based Test Generation",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "LLM unit test framework with repair loop",
+  "alinti": "ChatUniTest incorporates an adaptive focal context mechanism to encompass valuable context in prompts and adheres to a generation-validation-repair mechanism"
+ },
+ {
+  "id": "arXiv:2409.02977",
+  "baslik": "Large Language Model-Based Agents for Software Engineering: A Survey",
+  "yil": 2024,
+  "cites": 36,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Survey of LLM-based agents in SE with challenges",
+  "alinti": "In this work, we present a comprehensive and systematic survey on LLM-based agents for SE."
+ },
+ {
+  "id": "arXiv:2408.02479",
+  "baslik": "From LLMs to LLM-based Agents for Software Engineering: A Survey of Current, Challenges and Future",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Survey distinguishing LLMs from LLM-based agents in SE",
+  "alinti": "LLM-based agents, a novel tech nology with the potential for Artificial General Intelligence (AGI), combine LLMs as the core for decision-making and action-taking"
+ },
+ {
+  "id": "arXiv:2408.03095",
+  "baslik": "TestART: Improving LLM-based Unit Testing via Co-evolution of Automated Generation and Repair Iteration",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Generation-repair co-evolution with coverage feedback",
+  "alinti": "TestART improves LLM-based unit testing via co-evolution of automated generation and repair iteration, representing a significant advancement in automated unit test generation"
+ },
+ {
+  "id": "arXiv:2310.15780",
+  "baslik": "Make LLM a Testing Expert: Bringing Human-like Interaction to Mobile GUI Testing via Functionality-aware Decisions",
+  "yil": 2023,
+  "cites": 145,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM-driven mobile GUI testing agent",
+  "alinti": "We propose GPTDroid, asking LLM to chat with the mobile apps by passing the GUI page information to LLM to elicit testing scripts"
+ },
+ {
+  "id": "doi:10.1007/978-981-95-0011-6_10",
+  "baslik": "AgentTester: An LLM-Based Tool for Unit Test Generation with Automatically Generated Prompts",
+  "yil": 2025,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM agent-style unit test tool; title only",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2601.09695",
+  "baslik": "How well LLM-based test generation techniques perform with newer LLM versions?",
+  "yil": 2026,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Replicates HITS, SymPrompt, TestSpark, CoverUp with newer LLMs",
+  "alinti": "While important, LLM-based test generation techniques have been evaluated against relatively weak baselines (for todays' standards), i.e., old LLM versions and relatively weak prompts"
+ },
+ {
+  "id": "arXiv:2506.02954",
+  "baslik": "Mutation-Guided Unit Test Generation with a Large Language Model",
+  "yil": 2025,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Mutation-guided LLM test generation; argues against coverage",
+  "alinti": "code coverage metrics -- such as line and branch coverage -- remain overly emphasized in reported research, despite being weak indicators"
+ },
+ {
+  "id": "doi:10.1109/gcat62922.2024.10923987",
+  "baslik": "AI-Powered Multi-Agent Framework for Automated Unit Test Case Generation: Enhancing Software Quality through LLM’s",
+  "yil": 2024,
+  "cites": 12,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Multi-agent LLM unit test generation; only title",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/sita67914.2025.11273637",
+  "baslik": "MAGISTER: LLM-Based Test Generation with Role-Specialized Agents",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Multi-agent LLM test generation; title only",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2408.07846",
+  "baslik": "A System for Automated Unit Test Generation Using Large Language Models and Assessment of Generated Test Suites",
+  "yil": 2024,
+  "cites": 27,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Large-scale LLM unit test generation and assessment system",
+  "alinti": "Designing and creating unit tests is a costly and labor-intensive process that is ripe for automation"
+ },
+ {
+  "id": "arXiv:2406.04531",
+  "baslik": "TESTEVAL: Benchmarking Large Language Models for Test Case Generation",
+  "yil": 2024,
+  "cites": 33,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Benchmark for LLM test generation coverage tasks",
+  "alinti": "We find that generating test cases to cover specific program lines/branches/paths is still challenging for current LLMs"
+ },
+ {
+  "id": "arXiv:2307.12469",
+  "baslik": "How Effective Are They? Exploring Large Language Model Based Fuzz Driver Generation",
+  "yil": 2023,
+  "cites": 47,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Large empirical study of LLM fuzz driver generation",
+  "alinti": "Unlike traditional program analysis-based method, this text-based approach is more general and capable of harnessing a variety of API usage information"
+ },
+ {
+  "id": "arXiv:2307.00588",
+  "baslik": "ChatGPT vs SBST: A Comparative Assessment of Unit Test Suite Generation",
+  "yil": 2023,
+  "cites": 93,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "ChatGPT versus EvoSuite comparison; classic baseline",
+  "alinti": "In this study, we present a systematic comparison of test suites generated by the ChatGPT LLM and the state-of-the-art SBST tool EvoSuite"
+ },
+ {
+  "id": "arXiv:2503.14713",
+  "baslik": "TestForge: Feedback-Driven, Agentic Test Suite Generation",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Agentic iterative unit test generation with feedback",
+  "alinti": "We present TestForge, an agentic unit testing framework designed to cost-effectively generate high-quality test suites for real-world code"
+ },
+ {
+  "id": "doi:10.1145/3660783",
+  "baslik": "Evaluating and Improving ChatGPT for Unit Test Generation",
+  "yil": 2024,
+  "cites": 193,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Empirical ChatGPT unit test generation study; central",
+  "alinti": "Recent work has shown the large potential of large language models (LLMs) in unit test generation."
+ },
+ {
+  "id": "doi:10.1186/s42400-025-00532-9",
+  "baslik": "Automating fuzz driver generation for deep learning libraries with large language models",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Multi-agent LLM fuzz driver generation pipeline",
+  "alinti": "Inspired by the modular design of industrial production lines, FD-FACTORY decomposes the generation process into eight distinct stages"
+ },
+ {
+  "id": "doi:10.1109/icicse67247.2025.11390823",
+  "baslik": "LLMFuzzTestGen: From Automation to Robustness via Multi-Agent LLM-Driven Fuzzing and Feedback Loops",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Multi-agent LLM-driven fuzzing; title only",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3715754",
+  "baslik": "Demystifying LLM-Based Software Engineering Agents",
+  "yil": 2025,
+  "cites": 161,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Agentless vs agent-based SWE systems; central comparison",
+  "alinti": "These agents are equipped with the ability to use tools, run commands, observe feedback from the environment, and plan for future actions."
+ },
+ {
+  "id": "arXiv:2308.16557",
+  "baslik": "Effective Test Generation Using Pre-trained Large Language Models and Mutation Testing",
+  "yil": 2023,
+  "cites": 162,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Mutant-augmented prompting for LLM test generation",
+  "alinti": "we introduce MuTAP for improving the effectiveness of test cases generated by LLMs in terms of revealing bugs by leveraging mutation testing"
+ },
+ {
+  "id": "arXiv:2607.22880",
+  "baslik": "Do Coverage and Mutation Scores of LLM-Generated Test Suites Correlate with Their Effectiveness? (Replicability Study)",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Replication on validity of coverage and mutation metrics",
+  "alinti": "Prior work commonly evaluates generated test suites using proxy metrics such as code coverage and mutation score."
+ },
+ {
+  "id": "doi:10.1145/3803437.3806428",
+  "baslik": "TestAgent: A Multi-Agent LLM Framework for Repository-Level Unit Test Generation",
+  "yil": 2026,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; multi-agent LLM repository-level unit test generation",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2601.08998",
+  "baslik": "On the Flakiness of LLM-Generated Tests for Industrial and Open-Source Database Management Systems",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Flakiness of LLM-generated DBMS tests; central",
+  "alinti": "Recent work on LLM-based test generation has identified flakiness as a potential problem with generated tests."
+ },
+ {
+  "id": "arXiv:2310.15991",
+  "baslik": "WhiteFox: White-Box Compiler Fuzzing Empowered by Large Language Models",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Multi-agent LLM white-box compiler fuzzing",
+  "alinti": "WhiteFox adopts a multi-agent framework: an LLM-based analysis agent examines the low-level optimization source code and"
+ },
+ {
+  "id": "arXiv:2511.20403",
+  "baslik": "LLMs for Automated Unit Test Generation and Assessment in Java: The AgoneTest Framework",
+  "yil": 2025,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Evaluation framework and dataset for LLM Java tests",
+  "alinti": "We introduce the Classes2Test dataset, which maps Java classes under test to their corresponding test classes"
+ },
+ {
+  "id": "doi:10.1145/2610384.2628055",
+  "baslik": "Defects4J: a database of existing faults to enable controlled testing studies for Java programs",
+  "yil": 2014,
+  "cites": 1299,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Classic pre-LLM Java fault benchmark; only title",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2406.18181",
+  "baslik": "On the Evaluation of Large Language Models in Unit Test Generation",
+  "yil": 2024,
+  "cites": 93,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Empirical study of open-source LLM prompting for tests",
+  "alinti": "we conduct the first empirical study to fill this gap, based on 17 Java projects, five widely-used open-source LLMs"
+ },
+ {
+  "id": "arXiv:2407.01489",
+  "baslik": "Agentless: Demystifying LLM-based Software Engineering Agents",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Agent versus simple pipeline for repair; adjacent",
+  "alinti": "Agentless employs a simplistic three-phase process of localization, repair, and patch validation, without letting the LLM decide future"
+ },
+ {
+  "id": "doi:10.48161/qtj.v1n3a15",
+  "baslik": "Automated Software Testing through Large Language Models: Opportunities and Challenges",
+  "yil": 2022,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Survey of LLM software testing opportunities and challenges",
+  "alinti": "surveys show that approximately 51% of studies focus on test-case generation, while 26% address program repair, 11% focus on test-oracle creation, and 12% on debugging assistance."
+ },
+ {
+  "id": "arXiv:2412.14137",
+  "baslik": "Design choices made by LLM-based test generators prevent them from finding bugs",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Shows LLM test generators validate bugs; key open problem",
+  "alinti": "more alarmingly, how their design can worsen the situation by validating bugs in the generated test suite and rejecting bug-revealing tests."
+ },
+ {
+  "id": "doi:10.1145/3802827",
+  "baslik": "Enhancing Automated Unit Test Generation with Large Language Models: A Systematic Literature Review",
+  "yil": 2026,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Systematic review of LLM-based unit test generation",
+  "alinti": "This review draws on research from leading SE and AI conferences and journals, including 69 papers published across 25 distinct venues, along with 47 high-quality preprint"
+ },
+ {
+  "id": "doi:10.1145/3803437.3804438",
+  "baslik": "A Qualitative and Quantitative Exploration of LLM-Based Test Generation Repair Loops",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; LLM test generation repair loops studied",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.14722/ndss.2024.24556",
+  "baslik": "Large Language Model guided Protocol Fuzzing",
+  "yil": 2024,
+  "cites": 254,
+  "kaynaklar": [
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "LLM protocol fuzzing; title only",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2405.03786",
+  "baslik": "TOGLL: Correct and Strong Test Oracle Generation with LLMs",
+  "yil": 2024,
+  "cites": 30,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM test oracle generation; central to oracle problem",
+  "alinti": "we present the first comprehensive study to investigate the capabilities of LLMs in generating correct, diverse, and strong test oracles"
+ },
+ {
+  "id": "doi:10.1145/3691620.3695330",
+  "baslik": "LLMs and Prompting for Unit Test Generation: A Large-Scale Evaluation",
+  "yil": 2024,
+  "cites": 13,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; large-scale LLM prompting evaluation for unit tests",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icst60714.2024.00020",
+  "baslik": "Intent-Driven Mobile GUI Testing with Autonomous Large Language Model Agents",
+  "yil": 2024,
+  "cites": 49,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title-only duplicate of item 0's topic",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.2139/ssrn.5024683",
+  "baslik": "Generate High-Coverage Unit Test Data Using&amp;nbsp; the LLM Tool",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Coverage-focused LLM unit test data generation",
+  "alinti": "Despite their potential, using LLMs in a straightforward manner to generate unit tests may lead to low test coverage."
+ },
+ {
+  "id": "arXiv:2503.13572",
+  "baslik": "VeriContaminated: Assessing LLM-Driven Verilog Coding for Data Contamination",
+  "yil": 2025,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Verilog code gen; contamination concept applies to benchmarks",
+  "alinti": "concerns about data contamination - where benchmark data inadvertently leaks into pre-training or fine-tuning datasets - raise questions about the validity of these evaluations."
+ },
+ {
+  "id": "arXiv:2402.00097",
+  "baslik": "Code-Aware Prompting: A study of Coverage Guided Test Generation in Regression Setting using LLM",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Coverage-guided multi-step prompting for LLM test generation",
+  "alinti": "We apply this methodology to test generation by deconstructing the testsuite generation process into a multi-stage sequence"
+ },
+ {
+  "id": "doi:10.1109/icstw.2010.31",
+  "baslik": "Optimizing for the Number of Tests Generated in Search Based Test Data Generation with an Application to the Oracle Cost Problem",
+  "yil": 2010,
+  "cites": 60,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Classic search-based test generation; oracle cost relevant",
+  "alinti": "Optimizing for the Number of Tests Generated in Search Based Test Data Generation with an Application to the Oracle Cost Problem."
+ },
+ {
+  "id": "doi:10.1109/icse55347.2025.00243",
+  "baslik": "Test Intention Guided LLM-Based Unit Test Generation",
+  "yil": 2025,
+  "cites": 29,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LLM unit test generation; title only",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2604.17977",
+  "baslik": "MASFuzzer: Fuzz Driver Generation and Adaptive Scheduling via Multidimensional API Sequences",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM fuzz driver generation with API sequences and scheduling",
+  "alinti": "While recent studies have explored the use of Large Language Models (LLMs) to automate fuzz driver generation, the resulting drivers often fail to cover deep program branches."
+ },
+ {
+  "id": "doi:10.1109/icstw72326.2026.00018",
+  "baslik": "Automated Black-Box Testing: A Comparative Study of LLM Agent Architectures and Prompt Engineering",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; LLM agent architectures for black-box testing",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2601.05542",
+  "baslik": "Understanding LLM-Driven Test Oracle Generation",
+  "yil": 2025,
+  "cites": 9,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM test oracle generation; directly addresses the oracle problem",
+  "alinti": "They do not address the oracle problem: the challenge of distinguishing correct from incorrect program behavior."
+ },
+ {
+  "id": "arXiv:2304.02014",
+  "baslik": "Large Language Models are Edge-Case Fuzzers: Testing Deep Learning Libraries via FuzzGPT",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "LLM-driven fuzzing of DL libraries",
+  "alinti": "To fill this gap, this paper proposes FuzzGPT, the first technique to prime LLMs to synthesize unusual programs for fuzzing."
+ },
+ {
+  "id": "doi:10.1109/icse.2007.37",
+  "baslik": "Feedback-Directed Random Test Generation",
+  "yil": 2007,
+  "cites": 667,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Classic random test generation baseline; title only",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ase63991.2025.00260",
+  "baslik": "Industry Practice of LLM-Assisted Protocol Fuzzing for Commercial Communication Modules",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "Industrial LLM protocol fuzzing; title only",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3703412.3703439",
+  "baslik": "Methodology for Quality Assurance Testing of LLM-based Multi-Agent Systems",
+  "yil": 2024,
+  "cites": 3,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "QA testing of LLM multi-agent systems; title only",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2306.15596",
+  "baslik": "Automated Fuzzing Harness Generation for Library APIs and Binary Protocol Parsers",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Automated fuzz harness generation for APIs and parsers",
+  "alinti": "In particular, we present an automated system that can generate fuzzing harnesses for library APIs"
+ },
+ {
+  "id": "doi:10.3390/electronics14234550",
+  "baslik": "LLM-Boofuzz: Generation-Based Black-Box Fuzzing for Network Protocols via LLMs",
+  "yil": 2025,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM-driven network protocol fuzzing with agent loop",
+  "alinti": "It leverages LLMs to parse real traffic to extract protocol information, guides LLMs to generate executable scripts with a repair mechanism, and enables multi-script iterative fuzzing via an LLM-based agent."
+ },
+ {
+  "id": "arXiv:2310.18018",
+  "baslik": "NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark",
+  "yil": 2023,
+  "cites": 82,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Position paper on benchmark data contamination.",
+  "alinti": "The worst kind of data contamination happens when a Large Language Model (LLM) is trained on the test split of a benchmark, and then evaluated in the same benchmark."
+ },
+ {
+  "id": "arXiv:1701.07232",
+  "baslik": "Learn&Fuzz: Machine Learning for Input Fuzzing",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Pre-LLM neural input grammar learning for fuzzing",
+  "alinti": "In this paper, we show how to automate the generation of an input grammar suitable for input fuzzing using sample inputs and neural-network-based statistical machine-learning techniques."
+ },
+ {
+  "id": "doi:10.1145/3213846.3213848",
+  "baslik": "Compiler fuzzing through deep learning",
+  "yil": 2018,
+  "cites": 122,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; deep-learning compiler fuzzing, pre-LLM",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icstw.2009.36",
+  "baslik": "Comparison of Unit-Level Automated Test Generation Tools",
+  "yil": 2009,
+  "cites": 22,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Comparison of classic unit test tools; title only",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icst62969.2025.10989038",
+  "baslik": "Evaluation of the Choice of LLM in a Multi-Agent Solution for GUI-Test Generation",
+  "yil": 2025,
+  "cites": 3,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; multi-agent LLM GUI-test generation evaluation",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icstw.2011.100",
+  "baslik": "Search-Based Software Testing: Past, Present and Future",
+  "yil": 2011,
+  "cites": 244,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; classic search-based testing survey",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3715763",
+  "baslik": "LLMDroid: Enhancing Automated Mobile App GUI Testing Coverage with Large Language Model Guidance",
+  "yil": 2025,
+  "cites": 29,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM-guided mobile GUI testing with reduced LLM queries",
+  "alinti": "a novel testing framework designed to enhance existing automated mobile GUI testing tools by leveraging LLMs more efficiently."
+ },
+ {
+  "id": "arXiv:2609.37864",
+  "baslik": "AgentBug-Smith: Automatically Reproducing Real-World Harness Bugs in Agentic Systems",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Agentic bug reproduction plus live benchmark construction",
+  "alinti": "AgentBug-Smith consistently outperforms existing bug reproduction techniques designed for general software, achieving 10.67% - 27.56% higher success rates of reproducing harness bugs."
+ },
+ {
+  "id": "doi:10.1109/saner67736.2026.00013",
+  "baslik": "HieraTest: Hierarchical Dependency-Driven Framework with Multi-Strategy Repair for LLM-Based Unit Test Generation",
+  "yil": 2026,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Hierarchical multi-strategy repair for LLM unit test generation",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/issre.2013.6698889",
+  "baslik": "Improving search-based test suite generation with dynamic symbolic execution",
+  "yil": 2013,
+  "cites": 58,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Classic search-based test generation with symbolic execution; title only",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.5753/sbes.2025.9618",
+  "baslik": "LLMs As Test Generators: A Comparative Benchmarking Study",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "LLM test generation benchmarking study; abstract absent",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2508.14300",
+  "baslik": "MultiFuzz: A Dense Retrieval-based Multi-Agent System for Network Protocol Fuzzing",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "LLM multi-agent protocol fuzzing with RAG",
+  "alinti": "This paper introduces MultiFuzz, a novel dense retrieval-based multi-agent system designed to overcome these limitations by integrating semantic-aware context retrieval, specialized agents, and structured tool-assisted reasoning."
+ },
+ {
+  "id": "arXiv:2506.05079",
+  "baslik": "Scenario-Guided LLM-based Mobile App GUI Testing",
+  "yil": 2025,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Multi-agent LLM scenario-guided mobile GUI testing",
+  "alinti": "we propose ScenGen , a novel scenario-guided LLM-based GUI testing framework that employs a multi-agent collaboration mechanism"
+ },
+ {
+  "id": "arXiv:2411.13323",
+  "baslik": "Are Large Language Models Memorizing Bug Benchmarks?",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Data contamination in bug benchmarks, central",
+  "alinti": "a growing concern within the software engineering community is that these benchmarks may not reliably reflect true LLM performance due to the risk of data leakage."
+ },
+ {
+  "id": "arXiv:2503.00795",
+  "baslik": "Towards Reliable LLM-Driven Fuzz Testing: Vision and Road Ahead",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Vision paper on reliability of LLM-driven fuzzing",
+  "alinti": "current LLM4Fuzz solutions face critical reliability challenges, including low driver validity rates and seed quality trade-offs, hindering their practical adoption."
+ },
+ {
+  "id": "arXiv:2505.01123",
+  "baslik": "Poster: Machine Learning for Vulnerability Detection as Target Oracle in Automated Fuzz Driver Generation",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "ML target oracle guiding automated fuzz driver generation",
+  "alinti": "we propose an automated fuzz driver generation workflow composed of: (1) identifying a likely vulnerable function"
+ }
+]

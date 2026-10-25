@@ -1,0 +1,409 @@
+{
+ "sistem": "B",
+ "konu": {
+  "id": "T1",
+  "konu": "non-invasive EEG brain-computer interfaces with deep learning"
+ },
+ "durum": "OK",
+ "fikirler": [
+  {
+   "baslik": "Do EEG foundation models beat EEGNet + Euclidean Alignment on cross-session motor imagery? A controlled MOABB benchmark",
+   "bosluk": "Recent benchmarks find that EEG foundation models often fail to beat compact decoders when data is scarce. None of them runs a controlled comparison of EEGNet with and without Euclidean Alignment against EEGPT, LaBraM and CBraMod on multi-day cross-session MI, using identical session-wise splits and also applying EA to the foundation-model inputs.",
+   "neden_simdi": "Public foundation-model checkpoints, MOABB and a large multi-day MI dataset now make a reproducible, GPU-light benchmark possible, and the 2026 'are they worth it' debate makes a focused MI cross-session answer timely.",
+   "ilk_adim": "1) Load BCI IV 2a and the multi-day MI dataset through MOABB. 2) Define session-wise train/test splits (train on early sessions, test on later ones). 3) Train EEGNet with and without EA. 4) Linear-probe and fine-tune 2-3 public foundation-model checkpoints, with and without EA on their inputs. 5) Vary the amount of calibration data from the target session. 6) Report per-subject mean and variance with paired statistical tests. 7) Release the code as a MOABB-compatible pipeline.",
+   "dayanaklar": [
+    "arXiv:1805.06427",
+    "arXiv:2401.10746",
+    "doi:10.1038/s41597-022-01647-1",
+    "doi:10.52202/079017-1239",
+    "arXiv:2412.07236"
+   ],
+   "yenilik_notu": "The closest works are 'Are EEG Foundation Models Worth It?' (ICLR 2026), a multi-task comparison of foundation models with compact decoders that has no stated MOABB cross-session MI split or EA arm, and the 2026 LaBraM/CBraMod MI audit, which has no EEGNet+EA baseline, no EEGPT and no described cross-session split. This idea adds the 2x2 factorial of EA × model family on multi-day cross-session MI with identical splits."
+  },
+  {
+   "baslik": "Adversarial robustness and attack detectability of EEG foundation models versus compact CNNs",
+   "bosluk": "Adversarial attacks and defenses are well studied for compact EEG classifiers such as EEGNet, and recent work attacks public EEG encoders or tests foundation models on non-adversarial corruptions. Still, no study directly compares the adversarial accuracy drop of fine-tuned foundation models against EEGNet and EEG Conformer, or checks whether large-scale pretraining makes attacks easier to detect.",
+   "neden_simdi": "Foundation models are being proposed as default backbones for real-world BCIs, and standard FGSM/PGD tooling makes a safety audit cheap to run.",
+   "ilk_adim": "1) Fine-tune EEGNet, EEG Conformer and one public foundation model on BCI IV 2a. 2) Apply FGSM and PGD at matched SNR budgets. 3) Apply physically plausible band-limited perturbations, for example restricted to the mu/beta bands. 4) Measure accuracy drop curves and test transferability between architectures. 5) Train a simple detector, such as a logistic regression on intermediate features, and compare how detectable the attacks are for each model family.",
+   "dayanaklar": [
+    "doi:10.5753/sbsi.2026.248345",
+    "arXiv:2506.16168",
+    "arXiv:1611.08024",
+    "doi:10.1109/tnsre.2022.3230250",
+    "doi:10.52202/079017-1239"
+   ],
+   "yenilik_notu": "The closest works do not cover this comparison. SW-ProxyCE (2026) is a transfer-attack method from public EEG encoders, not a robustness comparison, and has no detector. arXiv 2605.17562 benchmarks foundation models on noise and channel dropout only, with no CNN baseline. ABAT (2024) and the 2022 adversarial-training study cover compact CNNs only. This idea is the first head-to-head comparison of foundation models and compact CNNs that adds band-limited attacks and a detection study. The prior-art search was limited to about five queries."
+  },
+  {
+   "baslik": "Predicting BCI illiteracy from resting-state EEG with pretrained foundation-model embeddings",
+   "bosluk": "Handcrafted resting-state predictors of MI-BCI performance are established, using mu/beta power, DCM connectivity, nonlinear features and neuronal avalanches. No found work uses self-supervised or pretrained EEG embeddings of resting-state data to predict a subject's MI accuracy before training, or tests whether such a predictor generalizes across datasets.",
+   "neden_simdi": "Public MI datasets include resting-state recordings and per-subject performance, and pretrained EEG encoders now make subject-level embeddings cheap to compute.",
+   "ilk_adim": "1) Extract resting-state segments from OpenBMI (54 subjects) and Cho et al. (52 subjects). 2) Compute handcrafted baseline features, such as the mu-power predictor of Blankertz et al. 3) Compute frozen pretrained-encoder embeddings and pool them per subject. 4) Regress each subject's MI accuracy and classify illiterate vs literate users, using subject-level cross-validation. 5) Train on one dataset and test on the other to measure cross-dataset transfer.",
+   "dayanaklar": [
+    "doi:10.1093/gigascience/giz002",
+    "doi:10.1093/gigascience/gix034",
+    "arXiv:2405.19346",
+    "doi:10.1016/j.neuroimage.2007.01.051"
+   ],
+   "yenilik_notu": "The closest works rely on handcrafted features and do not test cross-dataset generalization: Lee et al. 2020 uses DCM connectivity, Kang et al. 2021 uses nonlinear features with a deep model, and the 2025 avalanche preprint proposes spatiotemporal biomarkers. Neuro-GPT pretrains for within-session MI decoding, not aptitude prediction. The novelty is pretrained resting-state embeddings plus cross-dataset testing. The prior-art check was only about four searches, so run a dedicated search on arXiv and IEEE first. With roughly 100 subjects in total, use careful nested cross-validation."
+  }
+ ],
+ "adaylar": [
+  {
+   "baslik": "Do EEG foundation models beat EEGNet + Euclidean Alignment on cross-session motor imagery? A fair benchmark",
+   "bosluk": "Foundation models (EEGPT, CBraMod, LaBraM) claim universal EEG representations. Simple baselines such as EEGNet with Euclidean Alignment are strong and cheap. No card shows a controlled comparison of the two on multi-day, cross-session MI data under MOABB-style protocols. Card #16 explicitly flags reliability hurdles for foundation models.",
+   "neden_simdi": "Pretrained weights for several EEG foundation models are now public. A large multi-day MI dataset (#67) and MOABB (#6) make a reproducible, GPU-light benchmark possible for a student.",
+   "ilk_adim": "Use MOABB to load the cross-session dataset (#67) and BCI IV 2a. Train EEGNet with and without EA. Fine-tune or linear-probe 2 public foundation-model checkpoints. Use identical session-wise splits and report mean and variance across subjects.",
+   "dayanak_kartlar": [
+    6,
+    51,
+    67,
+    31,
+    32
+   ],
+   "yenilik_sorgulari": [
+    "EEG foundation model vs EEGNet Euclidean alignment cross-session motor imagery benchmark",
+    "LaBraM CBraMod EEGPT motor imagery cross-session evaluation MOABB",
+    "are EEG foundation models better than compact CNNs motor imagery"
+   ],
+   "dayanaklar": [
+    "arXiv:1805.06427",
+    "arXiv:2401.10746",
+    "doi:10.1038/s41597-022-01647-1",
+    "doi:10.52202/079017-1239",
+    "arXiv:2412.07236"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "Are EEG Foundation Models Worth It? Comparative Evaluation with Traditional Decoders in Diverse BCI Tasks",
+      "yil": 2026,
+      "url": "https://iclr.cc/virtual/2026/poster/10011450",
+      "fark": "Closest overall match. It compares fine-tuned and linear-probed EEG foundation models against compact neural and classical decoders, and finds that foundation models often do not significantly beat compact networks when data is scarce. It covers several BCI tasks, not motor imagery alone, and the snippet does not mention MOABB, EEGPT, EA, or a cross-session split."
+     },
+     {
+      "baslik": "Matched-Input Estimates Differ in Sign Across Architectures: Auditing EEG Foundation Models on Motor Imagery",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2609.23924",
+      "fark": "Closest on the motor imagery side. It compares LaBraM-base and CBraMod on MI with frozen probing and fine-tuning. It does not include EEGNet+EA as a baseline, its EEGPT run was not possible, and the excerpt does not describe a cross-session split."
+     },
+     {
+      "baslik": "MIRepNet: A Pipeline and Foundation Model for EEG-Based Motor Imagery Classification",
+      "yil": 2025,
+      "url": "https://arxiv.org/html/2507.20254v1",
+      "fark": "An MI-specific foundation model that uses Euclidean alignment in its preprocessing. Its reported gains are cross-subject and cross-dataset, and the snippets show no cross-session comparison against EEGNet with EA on identical splits."
+     },
+     {
+      "baslik": "Revisiting Euclidean Alignment for Transfer Learning in EEG-Based Brain-Computer Interfaces",
+      "yil": 2025,
+      "url": "https://arxiv.org/pdf/2502.09203",
+      "fark": "Covers EA with deep models, including EEGNet, so it addresses the baseline side of the idea. It does not include any EEG foundation model, and its evaluation is mainly cross-subject (leave-one-subject-out) rather than cross-session."
+     }
+    ],
+    "not": "The question has been partly studied (a 2026 ICLR benchmark and a 2026 LaBraM/CBraMod motor imagery audit), but no found work runs a controlled EEGNet±EA versus EEG foundation model comparison on MOABB cross-session MI with EEGPT, LaBraM, and CBraMod under identical session-wise splits, so the idea is still distinct enough to pursue."
+   }
+  },
+  {
+   "baslik": "Off-the-shelf time-series and vision foundation models as frozen EEG-BCI encoders",
+   "bosluk": "Card #37 reports that vision and time-series foundation models transfer surprisingly well to EEG. It remains unclear which generic models, input representations (raw signal vs spectrogram) and probing strategies work best for low-data BCI paradigms such as MI and ERP.",
+   "neden_simdi": "Generic foundation models are freely available. Frozen-encoder linear probing needs little compute, which suits a student project.",
+   "ilk_adim": "Extract frozen features for MOABB MI and P300 datasets from 2-3 generic models (for example a time-series FM on raw channels, and a ViT on per-channel spectrograms). Train linear or logistic heads. Compare against EEGNet and Riemannian baselines in few-shot regimes.",
+   "dayanak_kartlar": [
+    37,
+    6,
+    1,
+    11
+   ],
+   "yenilik_sorgulari": [
+    "time series foundation model frozen features EEG motor imagery",
+    "vision transformer pretrained spectrogram EEG BCI linear probing",
+    "generic foundation model transfer EEG brain-computer interface few-shot"
+   ],
+   "dayanaklar": [
+    "arXiv:2603.04478",
+    "arXiv:1805.06427",
+    "arXiv:1611.08024",
+    "doi:10.1109/tbme.2011.2172210"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "Temporal Feature Extractors in EEG Foundation Models: A Controlled Comparison Including a Pretrained Time-Series Model",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2606.30104",
+      "fark": "Closest match. It uses a frozen pretrained time-series model (MOMENT) as a temporal extractor and evaluates on motor imagery, but only as a component inside an EEG foundation model architecture. It does not test P300, spectrogram-based ViT inputs, or a linear/logistic probe against EEGNet and Riemannian baselines in few-shot regimes."
+     },
+     {
+      "baslik": "Time-series classification foundation model on EEG (motor imagery and sleep staging)",
+      "yil": 2025,
+      "url": "https://arxiv.org/abs/2510.27522v1",
+      "fark": "Evaluates a generalist time-series foundation model on motor imagery and reports it beats EEGNet and CBraMod. It appears to use pretraining and adaptation on raw signals, not frozen features with linear heads, and it has no spectrogram-ViT arm, no P300, and no systematic probing-strategy comparison."
+     },
+     {
+      "baslik": "EEG Foundation Models: Progresses, Benchmarking, and Open Problems",
+      "yil": 2026,
+      "url": "https://arxiv.org/abs/2601.17883",
+      "fark": "Benchmarks EEG foundation models across 13 datasets and nine BCI paradigms, including few-shot calibration, and finds linear probing often insufficient. It covers EEG-specific models, not generic time-series or vision models with frozen features, and it does not compare spectrogram versus raw input representations."
+     }
+    ],
+    "not": "Frozen generic time-series features for EEG motor imagery have been tested (arXiv 2606.30104), and EEG benchmarks show linear probing is often weak, but no found work compares generic time-series and spectrogram-ViT frozen encoders across MI and P300 under few-shot linear heads against EEGNet and Riemannian baselines."
+   }
+  },
+  {
+   "baslik": "Combining Euclidean Alignment with online test-time adaptation for calibration-free continual MI decoding",
+   "bosluk": "EA (#17, #39) and online test-time adaptation (#56, #76) are each shown to reduce calibration. Their interaction over many sessions is not systematically studied: whether they are complementary or redundant, and how stable they remain with recursive alignment updates.",
+   "neden_simdi": "Large longitudinal MI datasets now exist. TTA methods are lightweight and can be run offline in simulated-online mode.",
+   "ilk_adim": "Simulate online streaming on the multi-day dataset (#67). Compare four conditions with a shared EEGNet backbone: no adaptation, EA only (recursive covariance updates), TTA only (entropy minimization / BN update), and EA+TTA. Track accuracy drift across days.",
+   "dayanak_kartlar": [
+    56,
+    76,
+    39,
+    67
+   ],
+   "yenilik_sorgulari": [
+    "Euclidean alignment test-time adaptation motor imagery online",
+    "recursive Euclidean alignment online adaptation EEG cross-session",
+    "continual test-time adaptation EEG BCI calibration-free"
+   ],
+   "dayanaklar": [
+    "arXiv:2311.18520",
+    "arXiv:2502.06828",
+    "arXiv:2502.09203",
+    "doi:10.1038/s41597-022-01647-1"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "Calibration-free online test-time adaptation for electroencephalography motor imagery decoding (Wimpff, Döbler, Yang)",
+      "yil": 2023,
+      "url": "https://arxiv.org/abs/2311.18520",
+      "fark": "Closest match. It combines alignment, adaptive batch normalization, and entropy minimization for calibration-free online MI decoding, which covers the EA+TTA condition. It estimates the EA reference from a buffer of recent trials rather than a recursive covariance update, and per the search snippets it evaluates on BCI IV 2a and one other dataset across three data settings, not a multi-day stream with drift tracking or a systematic four-condition factorial ablation. I did not verify its ablation tables."
+     },
+     {
+      "baslik": "Online Adaptation via Dual-Stage Alignment and Self-Supervision for Fast-Calibration Brain-Computer Interfaces (Duan et al.)",
+      "yil": 2025,
+      "url": "https://arxiv.org/abs/2509.19403",
+      "fark": "Applies Euclidean alignment in data space plus batch-norm statistic updates and a self-supervised decoder loss, one trial per update, across five datasets and seven decoders. It is an EA+online-adaptation method that is close to the proposed EA+TTA condition, but it proposes a full pipeline rather than isolating the EA-only vs. TTA-only vs. combined interaction, and it does not study multi-day stability under recursive alignment."
+     },
+     {
+      "baslik": "Fine-Tuning Strategies for Continual Online EEG Motor Imagery Decoding: Insights from a Large-Scale Longitudinal Study",
+      "yil": 2025,
+      "url": "https://arxiv.org/html/2502.06828v1",
+      "fark": "Studies continual online MI decoding over time on a large longitudinal cohort (61 subjects) and combines offline fine-tuning with online test-time adaptation, so it addresses the multi-session drift setting. It compares fine-tuning strategies rather than EA vs. TTA vs. EA+TTA, and it does not appear to include Euclidean alignment or recursive covariance updates as a factor."
+     }
+    ],
+    "not": "The core combination of Euclidean alignment with online test-time adaptation for calibration-free MI decoding is already published (Wimpff et al. 2023, Duan et al. 2025), so the remaining novelty is limited to the multi-day recursive-EA stability analysis and the systematic factorial comparison, which I could not confirm as done."
+   }
+  },
+  {
+   "baslik": "Adversarial robustness of EEG foundation models versus compact CNNs",
+   "bosluk": "Adversarial vulnerability has been evaluated for EEG-BCI classifiers (#59). It is unknown whether large pretrained EEG foundation models are more or less robust than compact models like EEGNet, and whether large-scale pretraining helps detection.",
+   "neden_simdi": "Foundation models are being proposed for real-world BCIs, so safety and robustness questions are timely (#16). Standard attack libraries (FGSM/PGD) are easy to apply.",
+   "ilk_adim": "Fine-tune EEGNet, EEG Conformer and one public foundation model on BCI IV 2a. Run FGSM/PGD and physically plausible band-limited perturbations. Compare accuracy drops and how easily a simple detector identifies the attacks.",
+   "dayanak_kartlar": [
+    59,
+    16,
+    1,
+    22,
+    31
+   ],
+   "yenilik_sorgulari": [
+    "adversarial robustness EEG foundation model",
+    "adversarial attack pretrained transformer EEG BCI EEGNet comparison",
+    "robustness large brain model EEG adversarial perturbation"
+   ],
+   "dayanaklar": [
+    "doi:10.5753/sbsi.2026.248345",
+    "arXiv:2506.16168",
+    "arXiv:1611.08024",
+    "doi:10.1109/tnsre.2022.3230250",
+    "doi:10.52202/079017-1239"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "SW-ProxyCE: Zero-Query Adversarial Transfer from Public EEG Encoders to Private Downstream Models",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2608.16931",
+      "fark": "Closest work: it attacks public EEG encoders and transfers the perturbations to private downstream models. It is an attack method, not a comparison of foundation-model vs. EEGNet robustness, and it does not evaluate attack detection. Per search snippets only; the full paper was not checked."
+     },
+     {
+      "baslik": "Benchmarking six EEG foundation models on noise, channel dropout and region-specific perturbations (arXiv 2605.17562)",
+      "yil": 2026,
+      "url": "https://www.emergentmind.com/papers/2605.17562",
+      "fark": "Compares robustness of EEG foundation models, but uses non-adversarial corruptions (noise, channel dropout), not FGSM/PGD or band-limited adversarial perturbations, and has no compact-CNN baseline like EEGNet."
+     },
+     {
+      "baslik": "Making Brain-Computer Interfaces More Secure",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2606.02597",
+      "fark": "Adversarial FGSM evaluation of a lightweight CNN against EEGNet, DeepConvNet and SleepEEGNet. It covers compact models only, with no pretrained foundation model and no detector study."
+     },
+     {
+      "baslik": "Alignment-Based Adversarial Training (ABAT) for Improving the Robustness and Accuracy of EEG-Based BCIs",
+      "yil": 2024,
+      "url": "https://arxiv.org/abs/2411.02094",
+      "fark": "Adversarial training defense evaluated on EEGNet, ShallowCNN and DeepCNN across five datasets. It studies compact CNNs only, with no foundation models and no detection of attacks."
+     },
+     {
+      "baslik": "Adversarial Training for the Adversarial Robustness of EEG-based BCIs (five defenses, three EEG datasets, three classifiers)",
+      "yil": 2022,
+      "url": "https://scholar.xjtu.edu.cn/en/publications/adversarial-training-for-the-adversarial-robustness-of-eeg-based-/",
+      "fark": "Systematic study of adversarial-training defenses on EEG classifiers. It does not include large pretrained EEG models, does not compare them with EEGNet on robustness, and does not study detection."
+     }
+    ],
+    "not": "Adversarial robustness of EEG classifiers is well covered and a 2026 transfer-attack paper touches EEG encoders, but I found no work directly comparing adversarial accuracy drops of EEG foundation models against EEGNet/EEG Conformer on BCI IV 2a with a detector study, though this was a limited search of about five queries."
+   }
+  },
+  {
+   "baslik": "Predicting BCI illiteracy from resting-state EEG using pretrained representations",
+   "bosluk": "BCI illiteracy is documented in large multi-paradigm datasets (#20, #54). Resting-state EEG is known to carry rich subject information (#72). However, the cards show no use of self-supervised or pretrained embeddings of resting-state EEG to predict, before training, which users will fail at MI.",
+   "neden_simdi": "Public datasets include resting-state recordings, per-subject performance and questionnaires. Pretrained EEG encoders make subject-level embeddings cheap to compute.",
+   "ilk_adim": "From OpenBMI (#20) and Cho et al. (#54), extract resting-state segments. Compute handcrafted features (e.g., mu/beta power predictors) and pretrained-encoder embeddings. Regress each subject's MI accuracy with subject-level cross-validation, then test cross-dataset generalization.",
+   "dayanak_kartlar": [
+    20,
+    54,
+    72,
+    80
+   ],
+   "yenilik_sorgulari": [
+    "predict BCI illiteracy resting state EEG deep learning",
+    "resting-state EEG predictor motor imagery performance OpenBMI",
+    "self-supervised embedding BCI inefficiency prediction"
+   ],
+   "dayanaklar": [
+    "doi:10.1093/gigascience/giz002",
+    "doi:10.1093/gigascience/gix034",
+    "arXiv:2405.19346",
+    "doi:10.1016/j.neuroimage.2007.01.051"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "Predicting Motor Imagery Performance From Resting-State EEG Using Dynamic Causal Modeling",
+      "yil": 2020,
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7438792/",
+      "fark": "Predicts MI performance from resting-state EEG using hand-built effective connectivity (dynamic causal modeling) and group comparison of low and high performers. It uses no pretrained or self-supervised embeddings and does not test cross-dataset generalization."
+     },
+     {
+      "baslik": "Nonlinear resting-state EEG features with deep learning for predicting BCI performance (Frontiers in Neuroscience)",
+      "yil": 2021,
+      "url": "https://www.frontiersin.org/articles/10.3389/fnins.2021.663101/text",
+      "fark": "Uses handcrafted nonlinear resting-state features (e.g., frontal theta, determinism) with a supervised deep model to predict later BCI performance. The features are not self-supervised or pretrained embeddings, and I did not confirm a cross-dataset test."
+     },
+     {
+      "baslik": "Neuronal avalanches as a predictive biomarker for guiding tailored BCI training programs",
+      "yil": 2025,
+      "url": "https://www.biorxiv.org/content/10.1101/2025.05.31.657206.full.pdf",
+      "fark": "Proposes handcrafted spatiotemporal avalanche features from EEG as biomarkers of BCI performance across 20 subjects and four sessions. It does not use pretrained encoders, resting-state-only pretraining, or cross-dataset validation."
+     },
+     {
+      "baslik": "Neuro-GPT: Towards A Foundation Model for EEG",
+      "yil": 2023,
+      "url": "https://arxiv.org/abs/2311.03764",
+      "fark": "Pretrains an EEG foundation model with masked reconstruction and fine-tunes it for motor imagery classification. It decodes MI within sessions rather than predicting per-subject MI aptitude from resting-state embeddings before training."
+     }
+    ],
+    "not": "Resting-state EEG as a predictor of MI-BCI performance is well established (Lee 2020, Kang 2021), and the 2025 neuronal-avalanche preprint proposes related biomarkers, so the handcrafted-feature arm of the idea is already covered. The unclaimed part is the self-supervised or pretrained resting-state embedding for predicting MI illiteracy with cross-dataset testing, which none of my searches found. Coverage is limited to about four searches, so a dedicated search on arXiv and IEEE for contrastive or foundation-model resting-state biomarkers of BCI aptitude is still worth doing."
+   }
+  },
+  {
+   "baslik": "Do EEG foundation models learn neurophysiology? Probing and attribution for mu/beta ERD in MI",
+   "bosluk": "Interpretability work has examined CNNs such as ResNet and EEGNet (#74), and Conformer offers visualization (#22). It is unclear whether foundation-model representations (#32, #48) encode known MI markers (contralateral mu/beta desynchronization) or rely on artifacts.",
+   "neden_simdi": "Foundation models are becoming default backbones, yet trust and reliability remain open issues (#16). Probing and attribution tools are mature and cheap to run.",
+   "ilk_adim": "On BCI IV 2a, compute attribution maps (integrated gradients, occlusion by band and channel) for EEGNet and a fine-tuned foundation model. Train linear probes on intermediate layers to predict C3/C4 band power. Quantify alignment with expected ERD topographies.",
+   "dayanak_kartlar": [
+    74,
+    22,
+    32,
+    48,
+    16
+   ],
+   "yenilik_sorgulari": [
+    "interpretability EEG foundation model motor imagery ERD attribution",
+    "probing representations LaBraM CBraMod neurophysiological features",
+    "what do pretrained EEG transformers learn explainability"
+   ],
+   "dayanaklar": [
+    "doi:10.1162/imag.a.1033",
+    "doi:10.1109/tnsre.2022.3230250",
+    "arXiv:2412.07236",
+    "arXiv:2405.18765",
+    "arXiv:2506.16168"
+   ],
+   "yenilik_taramasi": {
+    "hukum": "KISMEN",
+    "en_yakin": [
+     {
+      "baslik": "From Clever Hans to Scientific Discovery: Interpreting EEG Foundational Transformers with LRP",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2605.11885",
+      "fark": "Applies attention-aware LRP to EEG foundation Transformers on motor imagery and finds Clever Hans reliance on ocular signals. It is a relevance-propagation heatmap study, not a probe of mu/beta ERD: it does not train linear probes on intermediate layers, does not regress C3/C4 band power, and does not quantify alignment with expected ERD topographies."
+     },
+     {
+      "baslik": "EEG-Xplain: Decoding Neural Black-Boxes of EEG Foundation Models",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2609.15687",
+      "fark": "Unified attribution framework for BIOT, LaBraM, and EEGMamba covering channels, time segments, and frequency bands via spectral perturbation, with Integrated Gradients on CBraMod band power. It reports consistency with neurophysiological markers and artifact dependence, but it is not MI-specific, uses no C3/C4 ERD-focused linear probing, and does not compare against EEGNet under the proposed topographic alignment metric."
+     },
+     {
+      "baslik": "What do EEG Foundation Models Capture from Human Brain Signals?",
+      "yil": 2026,
+      "url": "https://neurips.cc/virtual/2026/poster/150770",
+      "fark": "Layer-wise ridge probing plus concept erasure on CSBrain, CBraMod, and LaBraM across five clinical tasks with a 63-feature lexicon, finding most features are representation-causal. It closely matches the probing method but targets clinical tasks and a general feature set, not MI mu/beta ERD or lateralized C3/C4 band power, and it does not include attribution maps against EEGNet."
+     },
+     {
+      "baslik": "EEG-FM-Audit: A Systematic Evaluation and Analysis Pipeline for EEG Foundation Models",
+      "yil": 2026,
+      "url": "https://arxiv.org/pdf/2605.26910",
+      "fark": "Perturbation audit (phase randomization, ROI noise, band-wise ablation) of EEG foundation models to test reliance on spectral, spatial, and temporal features. It shows band reliance by performance drop rather than by layer-wise probes or attribution aligned to expected MI ERD topographies."
+     }
+    ],
+    "not": "Close work exists: 2026 papers already probe or attribute EEG foundation models (LaBraM, CBraMod, BIOT) for neurophysiological features and find MI Clever Hans effects, but none tests whether intermediate layers encode lateralized C3/C4 mu/beta ERD compared against EEGNet with topographic alignment, so the idea is partly novel; this check relied on search snippets, not full texts."
+   }
+  }
+ ],
+ "maliyet": {
+  "orkestra_usd": 0.5534,
+  "fikir_usd": 0.5468,
+  "toplam_usd": 1.1002,
+  "fikir_asama": {
+   "fikir_uret": {
+    "calls": 1,
+    "failed": 0,
+    "cost_usd": 0.157728,
+    "in": 11987,
+    "out": 3092,
+    "web_search": 0
+   },
+   "fikir_yenilik": {
+    "calls": 6,
+    "failed": 0,
+    "cost_usd": 0.25143445,
+    "in": 356347,
+    "out": 31855,
+    "web_search": 20
+   },
+   "fikir_sec": {
+    "calls": 1,
+    "failed": 0,
+    "cost_usd": 0.13766,
+    "in": 10051,
+    "out": 2863,
+    "web_search": 0
+   }
+  }
+ },
+ "genislik": {
+  "okuyucuya_giden": 1200,
+  "kart": 80,
+  "funnel_ozet": "orkestra/funnel.json"
+ },
+ "sef_girdi_karakter": 29358,
+ "sure_s": 1874.7
+}
