@@ -102,3 +102,7 @@ Kullanıcının bilgisayarı yeniden başlatılacağı için iş yarıda kesildi
   A0 (`--mod a0 --out deney-sonuc/A0`), B kararlılık (rastgele 10 soru k=3), sadakat (n=30), puanlama (`orkestra.deney.puanla esli`).
 - Ara durdurma kuralı: ilk 10 soruda ortalama(B − A1) ≤ −10 puan → RED, kalan koşulmaz (tek bakış).
 - Bu oturum `forge-altin/altin.json`'u yalnız puanlayıcı üzerinden okur; içeriğini bağlama dökmez.
+- **Bilinen sınırlama:** altın set ajanı araştırma sorularını Türkçe yazdı (talimat "dosyalara Türkçe yaz" idi; ON KAYIT örneği de Türkçe).
+  İki sistem aynı soruyu alıyor. B'de etkisi: şef planı İngilizce; Türkçe soru, sıralamanın 6–9 sorgu metninden yalnız biri.
+  Durdurulmadı; raporda yazılacak. q01: $0.652, 1151 s.
+- v1 adayı tasarım: `gelistirme/ONERI-arxiv-yerel.md` (yerel arXiv FTS5 dizini; indirme B bitince).
