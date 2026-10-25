@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a1-20261025-173253-789d5d",
+ "sistem": "A-taban-a1",
+ "mod": "a1",
+ "soru": "What are the most important works and open problems in fuzzing of network protocol implementations?",
+ "kesim": "2025-06-01",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 3.0,
+ "maliyet_usd": 1.1733,
+ "sure_s": 231.4,
+ "web_arama": 33,
+ "token": {
+  "in": 465061,
+  "out": 44470,
+  "cache_read": 467327,
+  "cache_write": 50349
+ },
+ "son_rapor_token_tahmini": 3033,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 26,
+ "istem": "Research question: What are the most important works and open problems in fuzzing of network protocol implementations?\n\nCutoff date: 2025-06-01. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first) — the kind a careful expert survey published right after the cutoff would cite. Give each with its arXiv id and/or DOI.\n\nYou MUST research this with web search rather than answer from memory: search for the important works, and verify each listed work's title, publication date and identifier on the web (e.g. arxiv.org, doi.org, the publisher or DBLP page) before including it.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1109/icst46399.2020.00062",
+   "arxiv_id": null,
+   "doi": "10.1109/ICST46399.2020.00062",
+   "baslik": "AFLNet: A Greybox Fuzzer for Network Protocols",
+   "yil": 2020,
+   "gerekce": "This was the first coverage-guided greybox fuzzer for protocol implementations. It uses server response codes as state feedback, and it is the baseline that most later protocol fuzzers are built on and compared against."
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.14722/ndss.2024.24556",
+   "arxiv_id": null,
+   "doi": "10.14722/ndss.2024.24556",
+   "baslik": "Large Language Model guided Protocol Fuzzing",
+   "yil": 2024,
+   "gerekce": "ChatAFL brought LLMs into protocol fuzzing. It uses them to extract message grammars from RFCs, to diversify seed sequences and to get past coverage plateaus, which opened the current LLM-assisted line of research."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2101.05102",
+   "arxiv_id": "2101.05102",
+   "doi": "10.1145/3460319.3469077",
+   "baslik": "ProFuzzBench: A Benchmark for Stateful Protocol Fuzzing",
+   "yil": 2021,
+   "gerekce": "This is the standard benchmark for network protocol fuzzers, and nearly every later evaluation uses it."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2204.02545",
+   "arxiv_id": "2204.02545",
+   "doi": null,
+   "baslik": "Stateful Greybox Fuzzing",
+   "yil": 2022,
+   "gerekce": "SGFuzz infers protocol state automatically from enum-type state variables and builds a state transition tree from them, so it can fuzz stateful protocols in-process without a protocol model."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2110.06253",
+   "arxiv_id": "2110.06253",
+   "doi": "10.1007/s10664-022-10233-3",
+   "baslik": "StateAFL: Greybox Fuzzing for Stateful Network Servers",
+   "yil": 2022,
+   "gerekce": "It infers server states by fuzzy-hashing snapshots of long-lived memory, which removes the need for hand-written protocol state models."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2111.03013",
+   "arxiv_id": "2111.03013",
+   "doi": "10.1145/3492321.3519591",
+   "baslik": "Nyx-Net: Network Fuzzing with Incremental Snapshots",
+   "yil": 2022,
+   "gerekce": "It uses hypervisor-based incremental snapshots to get up to 300x more throughput, tackling the slow speed of network fuzzing."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2201.04048",
+   "arxiv_id": "2201.04048",
+   "doi": "10.1145/3533767.3534376",
+   "baslik": "SnapFuzz: High-Throughput Fuzzing of Network Applications",
+   "yil": 2022,
+   "gerekce": "It turns asynchronous network I/O into fast synchronous communication and adds snapshotting and an in-memory filesystem, which removes fragile harness delays and cleanup scripts."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2401.01568",
+   "arxiv_id": "2401.01568",
+   "doi": null,
+   "baslik": "A Survey of Protocol Fuzzing",
+   "yil": 2024,
+   "gerekce": "A comprehensive survey of fuzzing for stateful network protocol implementations that sets out the taxonomy and the open challenges."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2301.02490",
+   "arxiv_id": "2301.02490",
+   "doi": "10.1145/3648468",
+   "baslik": "Fuzzers for stateful systems: Survey and Research Directions",
+   "yil": 2024,
+   "gerekce": "The first taxonomy of fuzzers for stateful systems, published in ACM Computing Surveys, with research directions on state inference and feedback."
+  },
+  {
+   "sira": 10,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Protocol State Fuzzing of TLS Implementations",
+   "yil": 2015,
+   "gerekce": "It established 'protocol state fuzzing', which uses model learning to infer state machines of TLS implementations, and it found logic flaws in OpenSSL, GnuTLS and JSSE."
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1145/3580598",
+   "arxiv_id": null,
+   "doi": "10.1145/3580598",
+   "baslik": "NSFuzz: Towards Efficient and State-Aware Network Service Fuzzing",
+   "yil": 2023,
+   "gerekce": "It identifies state variables and network event loops by static analysis, giving state-aware feedback and a fast synchronisation mechanism. It is a main baseline in later work."
+  },
+  {
+   "sira": 12,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Bleem: Packet Sequence Oriented Fuzzing for Protocol Implementations",
+   "yil": 2023,
+   "gerekce": "A non-invasive black-box fuzzer that works on whole packet sequences, using output-sequence feedback and state tracking of all parties. It found many CVEs in TLS and QUIC implementations."
+  },
+  {
+   "sira": 13,
+   "id": "doi:10.1109/sp40000.2020.00117",
+   "arxiv_id": null,
+   "doi": "10.1109/SP40000.2020.00117",
+   "baslik": "Ijon: Exploring Deep State Spaces via Fuzzing",
+   "yil": 2020,
+   "gerekce": "It introduced human state annotations that expose internal state to the fuzzer. It shaped how stateful targets are fuzzed and is a common stateful-fuzzing baseline."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2412.20324",
+   "arxiv_id": "2412.20324",
+   "doi": null,
+   "baslik": "AFLNet Five Years Later: On Coverage-Guided Protocol Fuzzing",
+   "yil": 2024,
+   "gerekce": "A full empirical re-evaluation of AFLNet's design choices, such as state feedback and sequence selection, with a look back at the field's open problems."
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1145/2976749.2978411",
+   "arxiv_id": null,
+   "doi": "10.1145/2976749.2978411",
+   "baslik": "Systematic Fuzzing and Testing of TLS Libraries",
+   "yil": 2016,
+   "gerekce": "It introduced TLS-Attacker, a protocol-aware framework for fuzzing cryptographic protocol implementations that later state-learning work builds on."
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1109/sp54263.2024.00096",
+   "arxiv_id": null,
+   "doi": "10.1109/SP54263.2024.00096",
+   "baslik": "DY Fuzzing: Formal Dolev-Yao Models Meet Cryptographic Protocol Fuzz Testing",
+   "yil": 2024,
+   "gerekce": "It mutates symbolic Dolev-Yao attacker traces (tlspuffin), so the fuzzer can find logical attacks on cryptographic protocols such as TLS that bit-level fuzzers miss."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2409.01059",
+   "arxiv_id": "2409.01059",
+   "doi": "10.1145/3658644.3690274",
+   "baslik": "No Peer, no Cry: Network Application Fuzzing via Fault Injection",
+   "yil": 2024,
+   "gerekce": "Fuzztruction-Net injects faults into the peer rather than mutating messages. This handles encryption and integrity protection, and it fuzzes both clients and servers."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2402.17394",
+   "arxiv_id": "2402.17394",
+   "doi": null,
+   "baslik": "A Survey of Network Protocol Fuzzing: Model, Techniques and Directions",
+   "yil": 2024,
+   "gerekce": "A survey that gives a general model of network protocol fuzzing and lists future research directions."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2112.15498",
+   "arxiv_id": "2112.15498",
+   "doi": null,
+   "baslik": "State Selection Algorithms and Their Impact on The Performance of Stateful Network Protocol Fuzzing",
+   "yil": 2022,
+   "gerekce": "An empirical study showing that state-selection heuristics in AFLNet-style fuzzers give little improvement, which points to state scheduling as an open problem."
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1007/978-3-319-28865-9_18",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-319-28865-9_18",
+   "baslik": "Pulsar: Stateful Black-Box Fuzzing of Proprietary Network Protocols",
+   "yil": 2015,
+   "gerekce": "It combines protocol reverse engineering from network traffic with stateful model-based fuzzing, so proprietary protocols can be fuzzed without a specification."
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1007/11836810_25",
+   "arxiv_id": null,
+   "doi": "10.1007/11836810_25",
+   "baslik": "SNOOZE: Toward a Stateful NetwOrk prOtocol fuzZEr",
+   "yil": 2006,
+   "gerekce": "An early stateful network protocol fuzzer built on specified state machines, often cited as the origin of stateful protocol fuzzing."
+  },
+  {
+   "sira": 22,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Analysis of DTLS Implementations Using Protocol State Fuzzing",
+   "yil": 2020,
+   "gerekce": "It applied state-machine learning to 13 DTLS implementations and found serious bugs, including a JSSE client authentication bypass."
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1109/sp.2019.00038",
+   "arxiv_id": null,
+   "doi": "10.1109/SP.2019.00038",
+   "baslik": "Touching the Untouchables: Dynamic Security Analysis of the LTE Control Plane",
+   "yil": 2019,
+   "gerekce": "LTEFuzz brought stateful protocol fuzzing to cellular control-plane protocols and found 36 new vulnerabilities in real networks."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2105.05445",
+   "arxiv_id": "2105.05445",
+   "doi": "10.1145/3460120.3484543",
+   "baslik": "Snipuzz: Black-box Fuzzing of IoT Firmware via Message Snippet Inference",
+   "yil": 2021,
+   "gerekce": "It uses device responses to infer message snippets, which makes black-box network fuzzing of IoT devices possible without firmware access."
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.14722/ndss.2018.23159",
+   "arxiv_id": null,
+   "doi": "10.14722/ndss.2018.23159",
+   "baslik": "IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing",
+   "yil": 2018,
+   "gerekce": "It reuses the protocol logic in companion mobile apps to fuzz the network interfaces of IoT devices without reverse-engineering the protocol."
+  },
+  {
+   "sira": 26,
+   "id": "doi:10.1109/sp54263.2024.00211",
+   "arxiv_id": null,
+   "doi": "10.1109/SP54263.2024.00211",
+   "baslik": "LLMIF: Augmented Large Language Model for Fuzzing IoT Devices",
+   "yil": 2024,
+   "gerekce": "It uses an LLM to extract information from protocol specifications and reason about device responses when fuzzing Zigbee devices, an example of specification-aware LLM protocol fuzzing."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2109.02312",
+   "arxiv_id": "2109.02312",
+   "doi": null,
+   "baslik": "Linear-time Temporal Logic guided Greybox Fuzzing",
+   "yil": 2022,
+   "gerekce": "LTL-Fuzzer checks temporal properties taken from RFCs on protocol implementations, which addresses the oracle problem beyond crash detection."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:1812.00140",
+   "arxiv_id": "1812.00140",
+   "doi": "10.1109/TSE.2019.2946563",
+   "baslik": "The Art, Science, and Engineering of Fuzzing: A Survey",
+   "yil": 2019,
+   "gerekce": "The standard general fuzzing survey and model, which protocol-fuzzing work uses to frame its design choices."
+  },
+  {
+   "sira": 29,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Tango: Extracting Higher-Order Feedback through State Inference",
+   "yil": 2024,
+   "gerekce": "It infers state by cross-validating coverage to collapse equivalent paths, and adds state-aware feedback to AFL++ and Nyx-Net for network servers."
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1109/sp.2009.14",
+   "arxiv_id": null,
+   "doi": "10.1109/SP.2009.14",
+   "baslik": "Prospex: Protocol Specification Extraction",
+   "yil": 2009,
+   "gerekce": "A foundational work on automatically inferring protocol message formats and state machines, with the inferred models used to drive stateful fuzzers."
+  }
+ ]
+}
