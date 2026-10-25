@@ -1,0 +1,13 @@
+﻿.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.db
+*.db-journal
+*.sqlite
+*.pdf
+data/
+hf_cache/
+cache/
+.cache/
+gapmine.toml
