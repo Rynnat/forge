@@ -50,7 +50,11 @@ Geniş kapsamlı bir literatür araştırmasında Forge orkestrası (Opus şef +
 - B'nin hedefi soru başına < $0,65.
 
 ## Altın set hash
-(Altın set oluşturulunca buraya eklenecek.)
+- `forge-altin/altin.json` SHA-256: `3aa01a9fe2b04af88eca025342bb954de4f76e0108125228e13ef50b98ec8681`
+  (forge-altin commit `817ca51`, 2026-10-25). Diskteki dosya ve git blob'u aynı hash'i verir; `.gitattributes` ile json satır sonu sabit.
+- 30 survey, 10 alan × 3; 4089 altın kaynak. Kalite kontrolü 3×10: 2/30 hata (kesik DOI bir bildiri kitabına çözülmüş),
+  sistematik süzgeçle 26 kayıt (%0,6) atıldı; süzgeç sonrası yeni örneklem çekilmedi. Kesim ihlali 0/30.
+- Altını, orkestrayı yazan/koşan oturum görmedi; bu oturum yalnız hash ve sayıları gördü.
 
 ## Açıklama eki — 2026-10-25 (hiçbir deney koşusundan ve altın set görülmeden ÖNCE)
 Puanlayıcı yazılırken iki belirsizlik çıktı. Eşikler değişmedi; yalnız okunuşları sabitlendi.
