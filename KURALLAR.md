@@ -15,11 +15,12 @@ Kural değişikliği tarihle yazılır, eskisi silinmez, üstü çizilir.
 
 ## 2. Kapsam
 1. Forge, Claude'un orkestrasıdır. **Ana kullanım:** "bana yüksek potansiyelli bir fikir / makale ver" → arkada ucuz çalgıcılar geniş tarar ve doğrular, Claude damıtılmışı yargılar (2026-10-25).
-2. Tek bir projenin yardımcısına indirgenmez. Ama bir uygulama oturmadan ikincisine geçilmez (2026-10-25).
-3. Yeni iş seçimi ölçüme dayanır. Elde tek veri var diye ("CAD ölçülmüştü") genelleme yapılmaz; önce ilgili payı ölç (CAD sapması, 2026-10-25).
-4. Forge'un kendine harcadığı (forge-meta), gerçek kullanımın 3 katını aşmaz (OLUM-KRITERI K3).
-5. "Bağımsız" istenen analizde sentez ve öneriye mevcut projeler (CAD vb.) sokulmaz (2026-10-24).
-6. Plan ya da tasarımdan önce fizibilite yapılır: ihtiyaç, en yakın rakip, fiziksel tavan, erişim. Olumsuz bulgu başta söylenir (2026-10-22).
+2. Forge kullanıcının uzantısıdır; başarısı kullanıcının onunla ürettiği gerçek işlerle ölçülür. Forge'un kendisini makaleye çevirmek hedef değildir (2026-10-25).
+3. Tek bir projenin yardımcısına indirgenmez. Ama bir uygulama oturmadan ikincisine geçilmez (2026-10-25).
+4. Yeni iş seçimi ölçüme dayanır. Elde tek veri var diye ("CAD ölçülmüştü") genelleme yapılmaz; önce ilgili payı ölç (CAD sapması, 2026-10-25).
+5. Forge'un kendine harcadığı (forge-meta), gerçek kullanımın 3 katını aşmaz (OLUM-KRITERI K3).
+6. "Bağımsız" istenen analizde sentez ve öneriye mevcut projeler (CAD vb.) sokulmaz (2026-10-24).
+7. Plan ya da tasarımdan önce fizibilite yapılır: ihtiyaç, en yakın rakip, fiziksel tavan, erişim. Olumsuz bulgu başta söylenir (2026-10-22).
 
 ## 3. Çalışma düzeni
 1. **Paralel varsayılan.** Bir iş yalnız (a) veri bağımlılığı ya da (b) paylaşılan kaynak çakışması varsa bekler; "alışkanlık" sebep değildir (2026-10-25).

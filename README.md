@@ -17,6 +17,11 @@ Forge, Claude'un bir projeye bağlı yardımcı aracı değil, orkestrasıdır. 
 
 Kapsam kaydı: kullanıcı kararı, 2026-10-25. Önceki dar kapsam ("akademik araştırmanın yan aracı") bir yanlış anlamaydı.
 
+## Forge kimin için (kullanıcı, 2026-10-25)
+Forge kullanıcının bir parçası, bilişsel bir uzantısıdır (augmentation): birlikte yaratıldı. Kendisi bir yayın konusu değildir.
+- **Başarı ölçütü:** kullanıcının Forge ile ürettiği gerçek işler ("kendi yapay zekâ araçlarımla şunu yaptım"), Forge'un kendi ölçümleri değil.
+- **Kara kutu olamaz:** kullanıcı Forge'un nasıl çalıştığını anlatabilmelidir. Kilit parçalar kısaca açıklanır ve kullanıcıya sorulur.
+
 ## İlkeler
 - **Şef yargılar, çalgıcı toplar.** Ucuz model kesin hüküm vermez. Ucuz katman yalnız kesin olarak alakasız olanı atar; şüpheli olan yukarı çıkar.
 - **Çıktı özettir, döküm değildir.** Bağlam bütçesi ölçülür.
