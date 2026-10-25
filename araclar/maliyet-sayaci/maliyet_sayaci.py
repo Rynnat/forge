@@ -576,6 +576,11 @@ def tool_loglari(gapmine: Path = GAPMINE_RAPORLAR, forge: Path = FORGE_ARACLAR) 
         for p in sorted(forge.glob("*/logs/maliyet*.json*")):
             if p.suffix in (".json", ".jsonl"):
                 dosyalar.append((p.parent.parent.name, p))
+    orkestra = forge.parent / "orkestra" / "logs"  # forge/orkestra (araclar/ disinda, ayni sozlesme)
+    if orkestra.is_dir():
+        for p in sorted(orkestra.glob("maliyet*.json*")):
+            if p.suffix in (".json", ".jsonl"):
+                dosyalar.append(("orkestra", p))
     return dosyalar
 
 

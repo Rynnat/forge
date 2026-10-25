@@ -245,6 +245,19 @@ def test_tools_yalniz_llm_blogunu_toplar(calisma):
     assert d["kalite"]["bozuk"] == 2 and d["kalite"]["dosya"] == 3
 
 
+def test_tools_orkestra_logu(calisma):
+    fg = calisma / "forge" / "araclar"
+    fg.mkdir(parents=True)
+    ok = calisma / "forge" / "orkestra" / "logs"
+    ok.mkdir(parents=True)
+    satir = {"asama": "okuyucu", "soru": GIZLI, "llm": {"backend": "claude_cli", "calls": 1, "ok": 1, "failed": 0,
+             "input_tokens": 5, "output_tokens": 7, "cache_read_tokens": 1, "cache_write_tokens": 2, "cost_usd": 0.25}}
+    (ok / "maliyet.jsonl").write_text(json.dumps(satir) + "\n" + json.dumps(satir) + "\n", encoding="utf-8")
+    d = ms.cmd_tools(None, None, gapmine=calisma / "yok", forge=fg)
+    assert GIZLI not in json.dumps(d)
+    assert d["araclar"]["orkestra"]["calls"] == 2 and d["araclar"]["orkestra"]["cost_usd"] == 0.5
+
+
 # ------------------------------------------------------------------ son bağlam + son çıktı
 def test_son_baglam_cikti_zamana_gore_son_tekil_mesaj(fiyat):
     t, m = topla([

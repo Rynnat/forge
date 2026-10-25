@@ -103,6 +103,7 @@ Okunan dosyalar (yalnız bunlar):
 - `C:\Users\LENOVO\Projeler\forge\araclar\*\logs\maliyet*.json` ve `maliyet*.jsonl` — forge araçlarının
   maliyet log sözleşmesi: her kayıt ya üst düzeyde ya da `llm` altında yukarıdaki sayısal alanları taşır.
   (makale-okuyucu henüz yok; bu sözleşmeye uyarak yazdığında otomatik okunur.)
+- `C:\Users\LENOVO\Projeler\forge\orkestra\logs\maliyet*.json(l)` — orkestra'nın çağrı başına maliyet logu (aynı sözleşme; araç adı `orkestra`).
 `cost_usd` aracın kendi bildirdiğidir (gapmine'da `claude -p`'nin `total_cost_usd`'u); yeniden fiyatlanmaz.
 gapmine'ın `data/gapmine.db` `llm_calls` tablosu aynı çağrıları tutar; çift sayım olmasın diye okunmaz.
 

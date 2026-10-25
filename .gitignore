@@ -11,3 +11,5 @@ hf_cache/
 cache/
 .cache/
 gapmine.toml
+orkestra.toml
+.pytest_tmp/
