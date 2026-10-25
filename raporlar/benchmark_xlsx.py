@@ -68,7 +68,7 @@ items = [
     ("Forge'un fikirleri daha iyi", "Pilot sürüyor; 3 konu karar için az", "Pilot (yön) → kullanıcının kör hükmü → 30 konuluk deney", "Pilot sürüyor"),
     ("Ağırlıkta yarı yarıya ucuz", "Yalnız 1 soruluk A1 ölçümüne dayanıyor", "A1'in 30 sorusu", "Fabrikada sırada"),
     ("Opus token'ında ~65 kat fark", "B ve A1 Opus sayısı tek koşudan", "30 soruda aşama aşama token dökümü", "Fabrikada sırada"),
-    ("A0 ve A1'in kimlikleri gerçek", "Yalnız biçim kontrolü", "Puanlayıcı + sadakat denetimi gerçek kayıtla eşler", "Deney sonunda"),
+    ("A0 ve A1'in kimlikleri gerçek", "KISMEN ÖLÇÜLDÜ (2026-10-26): A0 arXiv kimliklerinin %98,3'ü doğru, 0 uydurma, 10/602 başka makaleye bağlı. DOI'ler kontrol edilmedi", "DOI'ler: Crossref (deney bitince)", "Kısmen"),
     ("Sonuçlar tekrarlanabilir", "Aynı soru hiç tekrar koşulmadı", "10 soru × 3 koşu, sapma", "Planlı"),
     ("Sadakat (gerekçe kaynakla tutarlı)", "Pilotta 10 iddia; bazı gerekçeler tautolojik", "n=30 denetim + tautoloji sayımı", "Planlı"),
     ("Sürdürülebilirlik (her iş öncekinden ucuz)", "Hiç ölçülmedi", "Tekrar kullanımda token düşüşü (yerel arXiv, önbellek)", "v1"),
