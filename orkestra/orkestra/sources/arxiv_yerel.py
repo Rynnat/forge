@@ -156,8 +156,12 @@ def by_titles(dz: Dizin, titles: list[str], per_title: int = 5) -> list[dict]:
         ws = [w for w in _WORD.findall(t or "") if w.strip("_")][:16]
         if not ws:
             continue
-        got, _ = _match(dz, "baslik : (" + " AND ".join(_fts_term(w) for w in ws) + ")", None,
-                        per_title, count=False)
+        # Önce bitişik ifade (tam başlık): FTS5 yaygın kelimeli başlıklarda (AND) milyonlarca
+        # eşleşmeyi bm25 ile sıralıyordu (tek başlık dakikalar-saatler); ifade seçici ve hızlı.
+        got, _ = _match(dz, "baslik : " + _fts_term(" ".join(ws)), None, per_title, count=False)
+        if not got:
+            got, _ = _match(dz, "baslik : (" + " AND ".join(_fts_term(w) for w in ws) + ")", None,
+                            per_title, count=False)
         if not got:
             long_ = [w for w in ws if len(w) >= 4] or ws
             got, _ = _match(dz, "baslik : (" + " OR ".join(_fts_term(w) for w in long_) + ")", None,

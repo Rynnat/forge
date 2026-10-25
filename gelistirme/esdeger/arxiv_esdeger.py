@@ -69,6 +69,8 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--db", default=r"C:\Users\LENOVO\Projeler\forge-veri\arxiv_yerel.sqlite")
     ap.add_argument("--cache", default=str(HERE / "http_cache_kopya.sqlite"))
+    ap.add_argument("--sample", type=int, default=0, help="rastgele N sorgu (seed 1); 0=hepsi")
+    ap.add_argument("--title-sample", type=int, default=12, help="başlık sorgusu örneği (by_titles OR yedeği yavaş)")
     ap.add_argument("--json", default=str(HERE / "esdeger_sonuc.json"))
     a = ap.parse_args(argv)
     dz = arxiv_yerel.Dizin(a.db)
@@ -99,7 +101,14 @@ def main(argv=None):
     date_cmp = collections.Counter()
     pub_vs_v1_days = []
     agg = collections.Counter()
-    for key, s in searches.items():
+    import random
+    import time as _t
+    items = list(searches.items())
+    if a.sample and a.sample < len(items):
+        items = random.Random(1).sample(items, a.sample)
+    titles = random.Random(1).sample(titles, min(a.title_sample, len(titles)))
+    for qi, (key, s) in enumerate(items):
+        _t0 = _t.time()
         live = [e for st in sorted(s["pages"]) for e in s["pages"][st] if e["id"]]
         if not live:
             agg["bos_canli_sorgu"] += 1
@@ -116,6 +125,7 @@ def main(argv=None):
             agg["fts_hata"] += 1
             print("FTS hata:", fts[:120], exc, file=sys.stderr)
             continue
+        print(f"[{qi+1}/{len(items)}] {tier} {_t.time()-_t0:.1f}s n_local={total_local} {s['expr'][:70]}", file=sys.stderr, flush=True)
         set_full = set(ids_full)
         set_cap = set(ids_full[: caps[tier]])
         n = len(live)
@@ -149,9 +159,22 @@ def main(argv=None):
                         v = "v1_kesim_sonrasi(yerel)"
                     else:
                         # aynı ifade kesimsiz ve tek kayıtla: metin eşleşmesi var mı?
-                        rid = dz.query("SELECT rid FROM kayit WHERE id=?", (e["id"],))[0][0]
-                        hit = dz.query("SELECT count(*) FROM ara WHERE ara MATCH ? AND rowid=?", (fts, rid))[0][0]
-                        v = "metin_eslesmiyor(baslik+ozet)" if not hit else "baska"
+                        # FTS5 içeriksiz tabloda `MATCH AND rowid=` saatler sürdü; tanı Python'da:
+                        # kayıt metninde (başlık+özet) ifadedeki her terimin ilk 5 harfi geçiyor mu?
+                        rid, bas, oz = dz.query("SELECT rid, baslik, ozet_z FROM kayit WHERE id=?", (e["id"],))[0]
+                        txt = (bas + " " + arxiv_yerel.ozet(oz)).lower()
+                        terms_ = [t.lower() for t in re.findall(r'"([^"]+)"', fts)]
+                        if tier == "OR":
+                            ok = any(all(w[:5] in txt for w in re.findall(r"\w+", t)) for t in terms_)
+                        elif tier == "MAJ":
+                            ok = False  # çoğunluk ifadesi grupların OR'u; aşağıda grupla bakılır
+                            for grp in re.findall(r"\(([^()]*)\)", fts):
+                                gt = [t.lower() for t in re.findall(r'"([^"]+)"', grp)]
+                                if all(all(w[:5] in txt for w in re.findall(r"\w+", t)) for t in gt):
+                                    ok = True
+                        else:
+                            ok = all(all(w[:5] in txt for w in re.findall(r"\w+", t)) for t in terms_)
+                        v = "metin_eslesmiyor(baslik+ozet)" if not ok else "baska(metinde_var)"
                 miss_reasons[v] += 1
                 if len(miss_examples[v]) < 6:
                     miss_examples[v].append({"id": e["id"], "baslik": e["title"][:90], "expr": s["expr"][:90],
