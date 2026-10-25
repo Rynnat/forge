@@ -114,3 +114,17 @@ Kullanıcının bilgisayarı yeniden başlatılacağı için iş yarıda kesildi
 - Deney yarıda: n < 30 → ON KAYIT'a göre karar yok. Devam edilirse B aynı komutla, bitmiş soruları atlayarak sürdürülmeli
   (batch'in atlama yapıp yapmadığını önce kontrol et). Kod etiketi orkestra-v0-donmus değişmedi.
 - Sıradaki önerilen iş (kullanıcı onayı bekliyor): "diğer" %79'luk kullanımı projelere bölmek (maliyet-sayaci), sıradaki çalgıcıyı ona göre seçmek.
+
+## LINUX'A GEÇİŞ (2026-10-25 akşam) — yeni oturum buradan devam eder
+Önce `forge/KURALLAR.md`'yi oku. Sonra sırayla:
+1. **Ortam:** `cd ~/Projeler/forge/orkestra && python3 -m venv .venv && .venv/bin/pip install requests numpy scikit-learn pytest sentence-transformers`.
+   `orkestra.toml` içine `hf_cache = ""` yaz (MiniLM HF'den iner). `.venv/bin/python -m pytest -q` → 70 test geçmeli. `claude -p` tek duman çağrısıyla doğrula.
+2. **Fikir pilotu:** sonuçları `pilot-fikir/sonuc/` (commit'li). Eksikse (A veya denetim yarım kaldıysa) `python pilot-fikir/fikir.py a T1..T3` / `denetle` ile tamamla.
+   Kullanıcıya: kısa sonuç + 6 fikri KÖR göster (sistem adı yok), kullanıcı seçsin; sonra B hattını 4-5 cümleyle anlat ve "en zayıf halka?" diye sor.
+3. **Orkestra v0 deneyi (kullanıcı onayı bekliyor, ~$60 ağırlık):** B 4/30 bitti (q01–q04), A0 29/30.
+   Kod `orkestra-v0-donmus` etiketinde; DEĞİŞTİRME. Kalan soruları ayrı listeye koyarak devam et (batch atlama yapmaz):
+   `jq '[.[] | select(.id as $i | ["q01","q02","q03","q04"] | index($i) | not)]' ../../forge-altin/sorular.json > deney-sonuc/sorular-kalan.json`
+   sonra `python -m orkestra batch --sorular deney-sonuc/sorular-kalan.json --out deney-sonuc/B`. B bitince A1, A0'ın eksik 1'i, kararlılık, sadakat, `analiz/rapor.py`.
+   Her koşunun işletim sistemini not et (Windows: q01–q04, A0).
+4. **v1 (yerel arXiv):** `v1` dalı (commit 795c3a8, ajan yarıda kesildi). Parquet dosyaları `~/Projeler/forge-veri/arxiv/` (linux-baslat.sh kopyalar); sqlite dizini yeniden kurulmalı.
+5. **Bekleyen kullanıcı kararları:** Forge tanımı (taslak sohbette; README'ye konacak), yeteneklerden 6 (yaz) mı 7 (öğret) mi önce, ilerleme barı (status line, evde birlikte).

@@ -43,6 +43,13 @@ for r in "${REPOS[@]}"; do
   git -C "$PROJ/$r" remote get-url win >/dev/null 2>&1 || git -C "$PROJ/$r" remote add win "$WINHOME/Projeler/$r"
 done
 
+# 3b) Forge verisi: arXiv anlık görüntüsü (parquet, ~2,7 GB); sqlite dizini Linux'ta yeniden kurulur
+if [ -d "$WINHOME/Projeler/forge-veri/arxiv" ]; then
+  say "forge-veri/arxiv kopyalanıyor"
+  mkdir -p "$PROJ/forge-veri/arxiv"
+  cp -ru "$WINHOME/Projeler/forge-veri/arxiv/." "$PROJ/forge-veri/arxiv/"
+fi
+
 # 4) Hafıza ve özel ajanlar (yalnız daha yeni dosyalar)
 SLUG=$(printf '%s' "$HOME" | sed 's#[^A-Za-z0-9]#-#g')
 MEM="$HOME/.claude/projects/$SLUG/memory"
@@ -61,6 +68,7 @@ if ! grep -q "FORGE-DEVAM" "$CM"; then
 ## Linux devam kuralı
 - Bu makinede projeler `~/Projeler/` altında. Hafızadaki `C:\Users\LENOVO\Projeler\X` yolları burada `~/Projeler/X` demektir.
 - Oturumun başında `~/Projeler/akademik-bosluk/DEVAM-LINUX.md` dosyası varsa ve en üstünde "TAMAMLANDI" yazmıyorsa: onu oku, kullanıcıya 3 satırlık durum özeti ver ve "3. Yapılacak işler"den devam et.
+- Forge için ayrıca `~/Projeler/forge/orkestra/DEVAM.md` sonundaki "LINUX'A GEÇİŞ" bölümünü oku ve oradan devam et.
 - Linux'ta yapılan commit'leri Windows'a geri taşımak için: `git push win HEAD:linux`. Windows'ta da `git merge linux`.
 EOF
 fi
