@@ -243,3 +243,140 @@ def test_tools_yalniz_llm_blogunu_toplar(calisma):
     assert d["araclar"]["gapmine"]["cost_usd"] == 0.01 and d["araclar"]["gapmine"]["calls"] == 3
     assert d["araclar"]["makale-okuyucu"]["cost_usd"] == 0.5
     assert d["kalite"]["bozuk"] == 2 and d["kalite"]["dosya"] == 3
+
+
+# ------------------------------------------------------------------ son bağlam + son çıktı
+def test_son_baglam_cikti_zamana_gore_son_tekil_mesaj(fiyat):
+    t, m = topla([
+        asst("m1", ts="2026-10-24T10:00:00Z", inp=1, cr=100, out=10),
+        asst("m3", ts="2026-10-24T12:00:00Z", inp=2, cw5=50, cw1=25, cr=300, out=7),
+        asst("m3", ts="2026-10-24T12:00:00Z", inp=2, cw5=50, cw1=25, cr=300, out=40),  # akış tekrarı: max
+        asst("m2", ts="2026-10-24T11:00:00Z", inp=3, cr=200, out=20),  # dosyada sonra ama zamanca önce
+        asst("m4", model="<synthetic>", ts="2026-10-24T13:00:00Z", out=0),  # API çağrısı değil, sayılmaz
+        asst("m5", ts="2026-10-24T14:00:00Z", usage=None),  # usage yok, sayılmaz
+    ])
+    g = ms.grupla(m, fiyat, t.kalite, lambda x: "a")["a"]
+    assert g["son_baglam_cikti"] == 2 + 50 + 25 + 300 + 40
+
+
+def test_son_baglam_ayni_zamanda_ilk_gorulme_sirasi_belirler(fiyat):
+    t, m = topla([asst("m1", ts="2026-10-24T10:00:00Z", out=1), asst("m2", ts="2026-10-24T10:00:00Z", out=2)])
+    g = ms.grupla(m, fiyat, t.kalite, lambda x: "a")["a"]
+    assert g["son_baglam_cikti"] == 10 + 2
+
+
+# ------------------------------------------------------------------ etiketler
+def etiket_dosyasi(calisma, metin):
+    p = calisma / "etiketler.csv"
+    p.write_text(metin, encoding="utf-8")
+    return p
+
+
+def test_etiket_en_ozgul_kural_kazanir(calisma):
+    p = etiket_dosyasi(calisma, "oturum_onek,ajan_onek,etiket\nS1,,forge-meta\nS1,aaa,arastirma\nS,,diger\n"
+                                "# yorum,,arastirma\n")
+    et = ms.Etiketler(p)
+    assert et.etiket("S1", "aaa111") == "arastirma"
+    assert et.etiket("S1", "ana") == "forge-meta"
+    assert et.etiket("S2", "ana") == "diger"
+    assert et.etiket("X9", "ana") == "etiketsiz"
+    assert et.gecersiz == []
+
+
+def test_gecersiz_etiket_satiri_raporlanir_yoksa_dosya_yok(calisma):
+    p = etiket_dosyasi(calisma, "oturum_onek,ajan_onek,etiket\nS1,,uydurma\n,,diger\nS2,,ogrenme\n")
+    et = ms.Etiketler(p)
+    assert et.gecersiz == [2, 3] and et.etiket("S2", "ana") == "ogrenme" and et.etiket("S1", "ana") == "etiketsiz"
+    yok = ms.Etiketler(calisma / "yok.csv")
+    assert not yok.dosya_var and yok.etiket("S1", "ana") == "etiketsiz"
+
+
+def test_etiketsiz_pay_hesaplanir(calisma, fiyat):
+    p = etiket_dosyasi(calisma, "oturum_onek,ajan_onek,etiket\nS1,,arastirma\n")
+    _, m = topla([asst("m1", sid="S1", inp=0, out=300), asst("m2", sid="S2", inp=0, out=100)])
+    ep = ms.etiket_paylari(m, fiyat, ms.Etiketler(p))
+    assert ep["etiketler"]["arastirma"]["token"] == 300
+    assert ep["etiketsiz_pay"]["token"] == 0.25 and ep["etiketsiz_pay"]["usd"] == 0.25
+
+
+def test_ozet_hafta_penceresi_ve_etiket_paylari(calisma, capsys):
+    kur_oturum(calisma)  # S1: m1/m2 2026-10-24, m3 2026-10-25T01
+    p = calisma / "proj-A"
+    (p / "S9.jsonl").write_text(asst("eski", sid="S9", ts="2026-10-10T00:00:00Z", out=999) + "\n", encoding="utf-8")
+    (p / "S8.jsonl").write_text(asst("m8", sid="S8", ts="2026-10-24T00:00:00Z", inp=0, out=125) + "\n",
+                                encoding="utf-8")
+    et = etiket_dosyasi(calisma, "oturum_onek,ajan_onek,etiket\nS1,,ogrenme\nS1,bbb,arastirma\n")
+    ms.ana(["--root", str(calisma), "--etiketler", str(et), "--json", "ozet", "--hafta",
+            "--simdi", "2026-10-25T12:00:00Z"])
+    d = json.loads(capsys.readouterr().out)
+    ep = d["etiket_paylari"]["etiketler"]
+    assert d["toplam"]["mesaj"] == 4  # S9 pencere dışında
+    assert ep["ogrenme"]["mesaj"] == 2 and ep["arastirma"]["mesaj"] == 1 and ep["etiketsiz"]["mesaj"] == 1
+    assert ep["etiketsiz"]["token"] == 125
+    ms.ana(["--root", str(calisma), "--etiketler", str(et), "ozet", "--hafta", "--simdi", "2026-10-25T12:00:00Z"])
+    out = capsys.readouterr().out
+    assert GIZLI not in out and "etiketsiz pay" in out and len(out.splitlines()) <= 40
+
+
+# ------------------------------------------------------------------ regresyon: hakemin 19 ajanı (gerçek veri)
+HAKEM_OTURUM = "76053f18-2f05-4b54-95dc-6d814aa601eb"
+HAKEM_DIZIN = Path.home() / ".claude" / "projects" / "C--Users-LENOVO"
+# Hakemin anlık görüntüsü (ajan: mesaj, kümülatif token). Transkriptler yalnız büyür → güncel >= anlık.
+HAKEM_19 = {
+    "ana": (71, 9328639), "ae543bee44423bf6d": (17, 1318611), "a2e86353468af456e": (18, 1200555),
+    "a83815696ccf2d322": (22, 1753722), "a98e4b201bcc117f8": (21, 1502624), "a35b6eb1c6ce97900": (26, 2101963),
+    "aa01367638e0c802d": (25, 2410483), "a1cb386b01bab5e48": (24, 2073845), "ae40262a62d447bcd": (26, 2289095),
+    "ac3cd4bf8643c15c4": (60, 5532777), "ab83d6e8a21f404f7": (40, 3682748), "aa77868cb1983c14f": (40, 3836357),
+    "ac6707190cb427ca7": (41, 4857712), "a91f6ac630e86b891": (15, 1101308), "a39ba301b2f698919": (118, 23659207),
+    "a38f17e90c74cd0f3": (79, 16549721), "ac6809b097eb28bbe": (44, 5380557), "a5c172921029068f3": (32, 3611282),
+    "af755726335bef2ab": (6, 330919),
+}
+
+
+def _bagimsiz_say(yol: Path):
+    """Araçtan bağımsız sayım: yalnız type/id/usage/model/timestamp alanları."""
+    msj, sira = {}, []
+    with open(yol, "r", encoding="utf-8") as f:
+        for satir in f:
+            try:
+                r = json.loads(satir)
+            except ValueError:
+                continue
+            if not isinstance(r, dict) or r.get("type") != "assistant":
+                continue
+            m = r.get("message") or {}
+            mid, u, ts, model = m.get("id") or r.get("requestId"), m.get("usage"), r.get("timestamp"), m.get("model")
+            r = m = None
+            if not isinstance(u, dict):
+                continue
+            v = [u.get(k) or 0 for k in ("input_tokens", "cache_creation_input_tokens",
+                                         "cache_read_input_tokens", "output_tokens")]
+            if mid not in msj:
+                msj[mid] = [v, ts, model]
+                sira.append(mid)
+            else:
+                msj[mid][0] = [max(a, b) for a, b in zip(msj[mid][0], v)]
+    kum = sum(sum(msj[k][0]) for k in sira)
+    gercek = [k for k in sira if msj[k][2] != "<synthetic>"]
+    son = max(gercek, key=lambda k: (msj[k][1] or "", sira.index(k))) if gercek else None
+    return len(sira), kum, (sum(msj[son][0]) if son else 0)
+
+
+def test_regresyon_hakem_19_ajan_toplamlari(capsys):
+    ana_dosya = HAKEM_DIZIN / f"{HAKEM_OTURUM}.jsonl"
+    sub = HAKEM_DIZIN / HAKEM_OTURUM / "subagents"
+    if not ana_dosya.is_file() or not sub.is_dir():
+        pytest.skip(f"gercek transkript yok: {ana_dosya}")
+    eksik = [a for a in HAKEM_19 if a != "ana" and not (sub / f"agent-{a}.jsonl").is_file()]
+    if eksik:
+        pytest.skip(f"hakem ajan transkriptleri eksik: {eksik}")
+    ms.ana(["--root", str(HAKEM_DIZIN.parent), "--json", "agents", "--session", HAKEM_OTURUM])
+    d = json.loads(capsys.readouterr().out)
+    arac = {a["ajan"]: a for a in d["ajanlar"]}
+    for aid, (an_msj, an_kum) in HAKEM_19.items():
+        yol = ana_dosya if aid == "ana" else sub / f"agent-{aid}.jsonl"
+        b_msj, b_kum, b_son = _bagimsiz_say(yol)
+        a = arac[aid]
+        a_kum = a["input"] + a["output"] + a["cw5m"] + a["cw1h"] + a["cache_read"]
+        assert (a["mesaj"], a_kum, a["son_baglam_cikti"]) == (b_msj, b_kum, b_son), aid
+        assert a["mesaj"] >= an_msj and a_kum >= an_kum, aid  # transkriptler yalnız büyür

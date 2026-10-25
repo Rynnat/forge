@@ -46,6 +46,27 @@ nesne olmayan; atlanır ama sayılır, dosya adıyla `--json`'da listelenir), te
 assistant mesajı, id'siz mesaj, **fiyatı bilinmeyen model** (token'ları sayılır, doları `null`).
 `<synthetic>` model (yerel üretilmiş, API'ye gitmemiş mesaj) 0 maliyetle sayılır.
 
+## Son bağlam + son çıktı (`son_baglam_cikti`)
+Grup (ajan) başına **son assistant mesajının** `input + cache_creation (5m+1h) + cache_read + output` toplamı.
+Sistemin alt-ajan için bildirdiği `subagent_tokens` bu büyüklüğe karşılık gelir (kümülatif kullanım değildir).
+"Son" mesajın tanımı:
+- tekilleştirilmiş mesajlar arasından (yukarıdaki kural; tekrar parçalarında alan başına en büyük değer),
+- zaman damgasına (`timestamp`, mesajın en erken parçası) göre en son olan; eşit zamanda ilk görülme sırası
+  daha geç olan,
+- `<synthetic>` model (API çağrısı değil) ve usage'ı olmayan mesajlar aday değildir.
+Tabloda `son-bgl+cik` sütunu (yalnız `agents`), `--json`'da her grupta `son_baglam_cikti`.
+
+## Etiketler (`etiketler.csv`)
+Kolonlar: `oturum_onek, ajan_onek, etiket`; `etiket ∈ {arastirma, forge-meta, ogrenme, diger}`.
+- `ajan_onek` boşsa kural tüm oturuma uyar; ana iş parçacığı için `ana` yazılır.
+- `#` ile başlayan satır yorumdur. Birden çok kural uyarsa en özgül kazanır: ajan önekli > ajan öneksiz,
+  sonra daha uzun oturum öneki, sonra daha uzun ajan öneki.
+- Hiçbir kurala uymayan mesaj `etiketsiz` sayılır. Geçersiz satırlar (boş oturum öneki, bilinmeyen etiket)
+  uygulanmaz ve satır numarasıyla raporlanır; dosya yoksa bu da yazılır.
+- Pay hesabı: token = girdi + cache yazma + cache okuma + çıktı; $ = yukarıdaki fiyat. `sessions`, `agents`,
+  `since` ve `ozet` çıktılarında "etiketsiz pay" satırı (token % ve $ %) ayrıca gösterilir.
+- Dosya yolu `--etiketler` ile değiştirilebilir.
+
 ## Fiyatlandırma
 - `fiyatlar.json`: model başına `input`, `output`, `cache_write_5m`, `cache_write_1h`, `cache_read` ($/MTok),
   isteğe bağlı `uzun_baglam` (eşik + ayrı fiyatlar; Haiku 5.5 > 100K prompt), `fast_carpan`,
@@ -61,8 +82,11 @@ assistant mesajı, id'siz mesaj, **fiyatı bilinmeyen model** (token'ları sayı
 python maliyet_sayaci.py sessions [--proje AD] [--since TARIH] [--limit N] [--json]
 python maliyet_sayaci.py agents --session ID_ONEKI [--ek-dizin DIZIN] [--json]
 python maliyet_sayaci.py since TARIH [--proje AD] [--json]
+python maliyet_sayaci.py ozet --hafta [--proje AD] [--simdi ISO] [--json]
 python maliyet_sayaci.py tools [--json]
 ```
+- `ozet --hafta`: `[şimdi − 7 gün, şimdi]` (UTC) penceresindeki mesajların etiket bazında token ve $ payı +
+  etiketsiz pay. Zaman damgası olmayan mesajlar pencere dışında kalır ve sayısı yazılır. `--simdi` test içindir.
 Ortak: `--root` (vars. `~/.claude/projects`), `--fiyat` (vars. araç klasöründeki `fiyatlar.json`).
 - `sessions`: oturum başına (ana + tüm alt-ajanlar) toplam; son etkinliğe göre yeni→eski. En çok 40 satır;
   fazlası "N oturum gösterilmedi" diye yazılır.
@@ -84,5 +108,10 @@ gapmine'ın `data/gapmine.db` `llm_calls` tablosu aynı çağrıları tutar; çi
 
 ## Testler
 `pytest` (`tests/`): tekilleştirme, dosyalar arası tekilleştirme, eksik usage, bozuk satır sayımı,
-model bazlı fiyat (5m/1h, uzun bağlam, fast, bölge, bilinmeyen model, synthetic), alt-ajan keşfi, tools modu.
+model bazlı fiyat (5m/1h, uzun bağlam, fast, bölge, bilinmeyen model, synthetic), alt-ajan keşfi, tools modu,
+son bağlam + son çıktı seçimi, etiket eşleme / geçersiz satır / etiketsiz pay, `ozet --hafta` penceresi.
+**Regresyon (gerçek veri, ağ yok):** hakemin 19 ajanı (oturum 76053f18: ana + 18 alt-ajan) için aracın mesaj
+sayısı, kümülatif token ve `son_baglam_cikti` değeri, testteki bağımsız bir sayımla birebir eşit olmalı;
+ayrıca hakem anlık görüntüsünden küçük olamaz (transkriptler yalnız büyür). Transkriptler yoksa test `skip`
+eder (sessizce geçmez).
 Test dosyaları araç klasörü içindeki geçici `tests/_calisma/` altına yazılır ve silinir.

@@ -6,22 +6,27 @@ Ayrıntı: SPEC.md.
 from __future__ import annotations
 
 import argparse
+import csv
 import glob
 import json
 import os
 import re
 import sys
 from dataclasses import dataclass, field
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ARAC_DIZINI = Path(__file__).resolve().parent
 VARSAYILAN_FIYAT = ARAC_DIZINI / "fiyatlar.json"
+VARSAYILAN_ETIKET = ARAC_DIZINI / "etiketler.csv"
 VARSAYILAN_KOK = Path.home() / ".claude" / "projects"
 GAPMINE_RAPORLAR = Path(r"C:\Users\LENOVO\Projeler\akademik-bosluk\gapmine\reports")
 FORGE_ARACLAR = ARAC_DIZINI.parent
 MAKS_SATIR = 40
-VERI_SATIRI = MAKS_SATIR - 7  # baslik+cizgi+TOPLAM+gizli notu+kalite(2)+abonelik notu
+VERI_SATIRI = MAKS_SATIR - 8  # baslik+cizgi+TOPLAM+gizli notu+etiketsiz pay+kalite(2)+abonelik notu
 AJAN_CIKTI = re.compile(r"^a[0-9a-f]{8,}\.output$")
+ETIKETLER = ("arastirma", "forge-meta", "ogrenme", "diger")
+ETIKETSIZ = "etiketsiz"
 ABONELIK_NOTU = "Not: abonelik (Pro/Max) kullanicisi icin $ teoriktir (API liste fiyati), fatura degildir."
 
 TOKEN_ALANLARI = ("input", "output", "cw5m", "cw1h", "cache_read", "web_search")
@@ -45,6 +50,7 @@ class Mesaj:
     bolge: str | None = None
     usage_var: bool = True
     kirilim_yok: bool = False  # cache_creation 5m/1h kırılımı yoktu → 5m sayıldı
+    sira: int = 0  # ilk görülme sırası (aynı zaman damgasında son mesajı seçmek için)
 
 
 @dataclass
@@ -147,10 +153,12 @@ class Toplayici:
     def _ekle(self, m: Mesaj) -> None:
         if not m.anahtar:
             self.kalite.id_yok += 1
+            m.sira = 10**9 + len(self.idsiz)
             self.idsiz.append(m)
             return
         eski = self.mesajlar.get(m.anahtar)
         if eski is None:
+            m.sira = len(self.mesajlar)
             self.mesajlar[m.anahtar] = m
             return
         self.kalite.tekrar_satir += 1
@@ -272,7 +280,12 @@ class Fiyatlar:
 def _bos() -> dict:
     return {"mesaj": 0, "input": 0, "output": 0, "cw5m": 0, "cw1h": 0, "cache_read": 0,
             "web_search": 0, "usd": 0.0, "fiyatsiz_mesaj": 0, "modeller": set(),
-            "ilk": None, "son": None}
+            "ilk": None, "son": None, "son_baglam_cikti": 0, "_son_anahtar": None}
+
+
+def baglam_cikti(m: Mesaj) -> int:
+    """Bir çağrının bağlamı + çıktısı: input + cache yazma + cache okuma + output."""
+    return m.input + m.cw5m + m.cw1h + m.cache_read + m.output
 
 
 def _topla(acc: dict, m: Mesaj, usd: float | None) -> None:
@@ -285,6 +298,11 @@ def _topla(acc: dict, m: Mesaj, usd: float | None) -> None:
         acc["usd"] += usd
     if m.model:
         acc["modeller"].add(m.model)
+    if m.usage_var and m.model != "<synthetic>":
+        anahtar = (m.zaman or "", m.sira)
+        if acc["_son_anahtar"] is None or anahtar > acc["_son_anahtar"]:
+            acc["_son_anahtar"] = anahtar
+            acc["son_baglam_cikti"] = baglam_cikti(m)
     if m.zaman:
         acc["ilk"] = m.zaman if acc["ilk"] is None or m.zaman < acc["ilk"] else acc["ilk"]
         acc["son"] = m.zaman if acc["son"] is None or m.zaman > acc["son"] else acc["son"]
@@ -292,6 +310,7 @@ def _topla(acc: dict, m: Mesaj, usd: float | None) -> None:
 
 def _disa(acc: dict) -> dict:
     d = dict(acc)
+    d.pop("_son_anahtar", None)
     d["modeller"] = sorted(acc["modeller"])
     d["cache_write"] = acc["cw5m"] + acc["cw1h"]
     d["usd"] = round(acc["usd"], 4)
@@ -309,6 +328,68 @@ def grupla(mesajlar, fiyat: Fiyatlar, kalite: Kalite, anahtar_fn) -> dict:
             continue
         _topla(gruplar.setdefault(k, _bos()), m, usd)
     return gruplar
+
+
+# --------------------------------------------------------------------------- etiketler
+class Etiketler:
+    """etiketler.csv: oturum_onek, ajan_onek (boş olabilir), etiket. '#' ile başlayan satır yorumdur.
+    En özgül kural kazanır: ajan_onek dolu olan > boş olan; sonra daha uzun önekler."""
+
+    def __init__(self, yol: Path | None = VARSAYILAN_ETIKET) -> None:
+        self.kurallar: list[tuple[str, str, str]] = []
+        self.gecersiz: list[int] = []
+        self.dosya_var = bool(yol) and Path(yol).is_file()
+        if not self.dosya_var:
+            return
+        with open(yol, "r", encoding="utf-8-sig", newline="") as f:
+            for no, satir in enumerate(csv.reader(f), start=1):
+                if not satir or not "".join(satir).strip() or satir[0].lstrip().startswith("#"):
+                    continue
+                h = [x.strip() for x in satir] + ["", "", ""]
+                if no == 1 and h[0] == "oturum_onek":
+                    continue
+                if not h[0] or h[2] not in ETIKETLER:
+                    self.gecersiz.append(no)
+                    continue
+                self.kurallar.append((h[0], h[1], h[2]))
+
+    def etiket(self, oturum: str, ajan: str) -> str:
+        en, en_k = ETIKETSIZ, None
+        for o, a, e in self.kurallar:
+            if oturum.startswith(o) and (not a or ajan.startswith(a)):
+                k = (bool(a), len(o), len(a))
+                if en_k is None or k > en_k:
+                    en, en_k = e, k
+        return en
+
+
+def etiket_paylari(mesajlar, fiyat: Fiyatlar, et: Etiketler) -> dict:
+    """Etiket bazında mesaj, token (girdi+cache yazma+cache okuma+çıktı) ve $ payı."""
+    gruplar: dict = {}
+    for m in mesajlar:
+        g = gruplar.setdefault(et.etiket(m.oturum, m.ajan), {"mesaj": 0, "token": 0, "usd": 0.0})
+        g["mesaj"] += 1
+        g["token"] += baglam_cikti(m)
+        g["usd"] += fiyat.maliyet(m) or 0.0
+    top_t = sum(g["token"] for g in gruplar.values())
+    top_u = sum(g["usd"] for g in gruplar.values())
+    for g in gruplar.values():
+        g["token_pay"] = round(g["token"] / top_t, 4) if top_t else 0.0
+        g["usd_pay"] = round(g["usd"] / top_u, 4) if top_u else 0.0
+        g["usd"] = round(g["usd"], 4)
+    es = gruplar.get(ETIKETSIZ, {"token_pay": 0.0, "usd_pay": 0.0})
+    return {"etiketler": dict(sorted(gruplar.items(), key=lambda kv: -kv[1]["token"])),
+            "etiketsiz_pay": {"token": es["token_pay"], "usd": es["usd_pay"]},
+            "etiket_dosyasi": et.dosya_var, "gecersiz_satirlar": et.gecersiz}
+
+
+def etiketsiz_satiri(p: dict) -> str:
+    s = f"etiketsiz pay: token %{100 * p['etiketsiz_pay']['token']:.1f}, $ %{100 * p['etiketsiz_pay']['usd']:.1f}"
+    if not p["etiket_dosyasi"]:
+        s += " (etiketler.csv yok)"
+    if p["gecersiz_satirlar"]:
+        s += f" | GECERSIZ etiket satirlari: {p['gecersiz_satirlar']}"
+    return s
 
 
 # --------------------------------------------------------------------------- biçim
@@ -371,6 +452,7 @@ def cmd_sessions(a, fiyat: Fiyatlar) -> dict:
         "komut": "sessions", "since": a.since,
         "oturumlar": [{"oturum": k, "proje": proje_of.get(k, "?"), "alt_ajan": ajan_say.get(k, 0), **_disa(v)}
                       for k, v in sirali],
+        "etiket_paylari": etiket_paylari(msj, fiyat, _etiketler(a)),
         "toplam": _disa(toplam), "kalite": top.kalite.sozluk(), "fiyat_kaynagi": fiyat.kaynak,
     }
 
@@ -400,10 +482,13 @@ def cmd_agents(a, fiyat: Fiyatlar) -> dict:
     for m in msj:
         _topla(toplam, m, fiyat.maliyet(m))
     sirali = sorted(g.items(), key=lambda kv: (kv[0] != "ana", kv[1]["ilk"] or ""))
+    et = _etiketler(a)
     return {
         "komut": "agents", "oturum": o.oturum, "proje": o.proje,
-        "ajanlar": [{"ajan": k, "tur": "ana" if k == "ana" else top.ajan_turleri.get(k, "?"), **_disa(v)}
+        "ajanlar": [{"ajan": k, "tur": "ana" if k == "ana" else top.ajan_turleri.get(k, "?"),
+                     "etiket": et.etiket(o.oturum, k), **_disa(v)}
                     for k, v in sirali],
+        "etiket_paylari": etiket_paylari(msj, fiyat, et),
         "toplam": _disa(toplam), "kalite": top.kalite.sozluk(), "fiyat_kaynagi": fiyat.kaynak,
     }
 
@@ -425,6 +510,46 @@ def cmd_since(a, fiyat: Fiyatlar) -> dict:
         "komut": "since", "tarih": a.tarih, "oturum_sayisi": oturum_say, "alt_ajan_mesaji": ajan_msj,
         "modeller": {k: _disa(v) for k, v in sorted(g.items(), key=lambda kv: -kv[1]["usd"])},
         "gunler": {k: _disa(v) for k, v in sorted(gun.items())},
+        "etiket_paylari": etiket_paylari(msj, fiyat, _etiketler(a)),
+        "toplam": _disa(toplam), "kalite": top.kalite.sozluk(), "fiyat_kaynagi": fiyat.kaynak,
+    }
+
+
+def _etiketler(a) -> Etiketler:
+    return Etiketler(Path(getattr(a, "etiketler", None) or VARSAYILAN_ETIKET))
+
+
+def _zaman(z: str | None) -> datetime | None:
+    if not z:
+        return None
+    try:
+        t = datetime.fromisoformat(z.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return t if t.tzinfo else t.replace(tzinfo=timezone.utc)
+
+
+def cmd_ozet(a, fiyat: Fiyatlar) -> dict:
+    if not a.hafta:
+        raise SystemExit("ozet: su an yalniz --hafta destekleniyor")
+    simdi = _zaman(a.simdi) if a.simdi else datetime.now(timezone.utc)
+    if simdi is None:
+        raise SystemExit(f"gecersiz --simdi: {a.simdi}")
+    bas = simdi - timedelta(days=7)
+    top = Toplayici()
+    for o in oturumlari_bul(Path(a.root), a.proje):
+        oturumu_oku(top, o)
+    tum = top.tum_mesajlar()
+    zamansiz = sum(1 for m in tum if _zaman(m.zaman) is None)
+    msj = [m for m in tum if (t := _zaman(m.zaman)) is not None and bas <= t <= simdi]
+    grupla(msj, fiyat, top.kalite, lambda m: None)  # fiyatsız modeller kaliteye işlensin
+    toplam = _bos()
+    for m in msj:
+        _topla(toplam, m, fiyat.maliyet(m))
+    return {
+        "komut": "ozet", "baslangic": bas.isoformat(), "bitis": simdi.isoformat(),
+        "oturum_sayisi": len({m.oturum for m in msj}), "zamansiz_mesaj_disarida": zamansiz,
+        "etiket_paylari": etiket_paylari(msj, fiyat, _etiketler(a)),
         "toplam": _disa(toplam), "kalite": top.kalite.sozluk(), "fiyat_kaynagi": fiyat.kaynak,
     }
 
@@ -507,18 +632,27 @@ def yazdir(s: dict, limit: int = VERI_SATIRI) -> str:
         if gizli:
             out.append(f"({gizli} oturum gosterilmedi; --json ile tamami)")
     elif k == "agents":
-        satirlar = [_satir(x["ajan"][:17], x, (x["tur"][:22], ",".join(m.replace("claude-", "") for m in x["modeller"])))
-                    for x in s["ajanlar"]]
+        satirlar = [_satir(x["ajan"][:17], x, (x["tur"][:22], x["etiket"],
+                                                ",".join(m.replace("claude-", "") for m in x["modeller"])))
+                    + [_k(x["son_baglam_cikti"])] for x in s["ajanlar"]]
         gizli = max(0, len(satirlar) - limit)
         out.append(f"oturum {s['oturum']} ({s['proje']})")
-        out.append(tablo(["ajan", "tur", "model"] + TOKEN_BASLIK,
-                         satirlar[:limit] + [_satir("TOPLAM", s["toplam"], ("", ""))]))
+        out.append(tablo(["ajan", "tur", "etiket", "model"] + TOKEN_BASLIK + ["son-bgl+cik"],
+                         satirlar[:limit] + [_satir("TOPLAM", s["toplam"], ("", "", "")) + [""]]))
         if gizli:
             out.append(f"({gizli} ajan gosterilmedi; --json ile tamami)")
     elif k == "since":
         out.append(f"{s['tarih']} itibariyle: {s['oturum_sayisi']} oturum, alt-ajan mesaji {s['alt_ajan_mesaji']}")
         satirlar = [_satir(m, v) for m, v in s["modeller"].items()]
         out.append(tablo(["model"] + TOKEN_BASLIK, satirlar[:limit - 2] + [_satir("TOPLAM", s["toplam"])]))
+    elif k == "ozet":
+        out.append(f"son 7 gun ({s['baslangic'][:16]} - {s['bitis'][:16]} UTC): {s['oturum_sayisi']} oturum")
+        ep = s["etiket_paylari"]
+        satirlar = [[e, v["mesaj"], _k(v["token"]), f"%{100 * v['token_pay']:.1f}", f"{v['usd']:.2f}",
+                     f"%{100 * v['usd_pay']:.1f}"] for e, v in ep["etiketler"].items()]
+        tt = sum(v["token"] for v in ep["etiketler"].values())
+        out.append(tablo(["etiket", "msj", "token", "token%", "$", "$%"],
+                         satirlar + [["TOPLAM", s["toplam"]["mesaj"], _k(tt), "", f"{s['toplam']['usd']:.2f}", ""]]))
     elif k == "tools":
         satirlar = [[a, ",".join(v["backendler"]), v["kosu"], v["calls"], _k(v["input_tokens"]), _k(v["output_tokens"]),
                      _k(v["cache_write_tokens"]), _k(v["cache_read_tokens"]), f"{v['cost_usd']:.4f}"]
@@ -528,6 +662,8 @@ def yazdir(s: dict, limit: int = VERI_SATIRI) -> str:
         out.append(f"veri: {kq['dosya']} dosya, {kq['kayit']} kayit, bozuk {kq['bozuk']}, llm-blogu-yok {kq['llm_blogu_yok']}")
         out.append(s["not"])
         return "\n".join(out)
+    if "etiket_paylari" in s:
+        out.append(etiketsiz_satiri(s["etiket_paylari"]))
     q = s["kalite"]
     kq = Kalite(dosya=q["dosya"], satir=q["satir"], bozuk=q["bozuk_satir"], tekrar_satir=q["tekrar_satir_tekillestirildi"],
                 usage_yok=q["usage_eksik_mesaj"], id_yok=q["id_siz_mesaj"], kirilim_yok=q["cache_kirilimi_yok_5m_sayildi"],
@@ -541,6 +677,7 @@ def ana(argv=None) -> int:
     p = argparse.ArgumentParser(prog="maliyet_sayaci", description="Claude Code token/maliyet sayaci")
     p.add_argument("--root", default=str(VARSAYILAN_KOK))
     p.add_argument("--fiyat", default=str(VARSAYILAN_FIYAT))
+    p.add_argument("--etiketler", default=str(VARSAYILAN_ETIKET))
     p.add_argument("--json", action="store_true")
     alt = p.add_subparsers(dest="komut", required=True)
     s = alt.add_parser("sessions")
@@ -553,12 +690,17 @@ def ana(argv=None) -> int:
     n = alt.add_parser("since")
     n.add_argument("tarih")
     n.add_argument("--proje")
+    z = alt.add_parser("ozet")
+    z.add_argument("--hafta", action="store_true", help="son 7 gunun etiket bazinda token ve $ payi")
+    z.add_argument("--proje")
+    z.add_argument("--simdi", help="pencere bitisi (ISO, UTC); vars. su an")
     alt.add_parser("tools")
     for sp in alt.choices.values():
         sp.add_argument("--json", action="store_true", default=argparse.SUPPRESS)
     a = p.parse_args(argv)
     fiyat = Fiyatlar(Path(a.fiyat))
-    sonuc = {"sessions": cmd_sessions, "agents": cmd_agents, "since": cmd_since, "tools": cmd_tools}[a.komut](a, fiyat)
+    sonuc = {"sessions": cmd_sessions, "agents": cmd_agents, "since": cmd_since, "ozet": cmd_ozet,
+             "tools": cmd_tools}[a.komut](a, fiyat)
     if a.json:
         print(json.dumps(sonuc, ensure_ascii=False, indent=1, default=sorted))
     else:
