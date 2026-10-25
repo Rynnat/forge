@@ -1,0 +1,248 @@
+{
+  "ozet": {
+    "seed": 20261025,
+    "n_istenen": 10,
+    "n": 10,
+    "havuz": 60,
+    "sayim": {
+      "DESTEKLENIYOR": 10,
+      "DESTEKLENMIYOR": 0,
+      "UYDURMA": 0,
+      "KONTROL_EDILEMEDI": 0
+    },
+    "destekleniyor": "10/10",
+    "wilson_alt_95": 0.722,
+    "uydurma": 0,
+    "muhafazakar_kural": "KONTROL_EDILEMEDI ve DESTEKLENMIYOR 'desteklenmiyor' sayilir; payda n'dir.",
+    "esik3": "n=30'da >=28 destekleniyor, Wilson alt >=0,79, uydurma=0",
+    "sonuc": "PILOT (n<30; esik hukmu yok)",
+    "maliyet_usd": 0.29,
+    "denetci_model": "sonnet"
+  },
+  "girdiler": [
+    "duman\\kosu1\\D1-gnn-molekul\\k1\\sonuc.json",
+    "duman\\kosu2\\D2-protokol-fuzzing\\sonuc.json"
+  ],
+  "iddialar": [
+    {
+      "kaynak_dosya": "duman\\kosu1\\D1-gnn-molekul\\k1\\sonuc.json",
+      "sira": 28,
+      "id": "doi:10.52202/075280-0072",
+      "arxiv_id": null,
+      "doi": "10.52202/075280-0072",
+      "baslik": "Uncovering Neural Scaling Laws in Molecular Representation Learning",
+      "yil": 2023,
+      "gerekce": "Addresses the open problem of neural scaling laws in molecular representation learning.",
+      "varlik_kodu": {
+        "durum": "ESLESTI",
+        "kimlik": "doi:10.52202/075280-0072",
+        "bulunan_baslik": "Uncovering Neural Scaling Laws in Molecular Representation Learning",
+        "benzerlik": 1.0,
+        "url": "https://doi.org/10.52202/075280-0072"
+      },
+      "sure_s": 20.1,
+      "karar": "DESTEKLENIYOR",
+      "var_mi": true,
+      "kanit_alinti": "the influence of both data quantity and quality on molecular representations is not yet clearly understood within this field.",
+      "url": "https://arxiv.org/abs/2309.15123",
+      "not": "The work exists (NeurIPS 2023 D&B, arXiv 2309.15123). The abstract doesn't use the phrase 'open problem', but it presents the study of scaling laws in molecular representation learning as filling a gap, so the sentence is a fair paraphrase. I did not open the DOI landing page itself."
+    },
+    {
+      "kaynak_dosya": "duman\\kosu1\\D1-gnn-molekul\\k1\\sonuc.json",
+      "sira": 25,
+      "id": "doi:10.1021/acs.jcim.0c00502",
+      "arxiv_id": null,
+      "doi": "10.1021/acs.jcim.0c00502",
+      "baslik": "Uncertainty Quantification Using Neural Networks for Molecular Property Prediction",
+      "yil": 2020,
+      "gerekce": "Compares uncertainty quantification methods for molecular property prediction; none is unequivocally superior or reliably ranks errors across datasets.",
+      "varlik_kodu": {
+        "durum": "ESLESTI",
+        "kimlik": "doi:10.1021/acs.jcim.0c00502",
+        "bulunan_baslik": "Uncertainty Quantification Using Neural Networks for\nMolecular Property Prediction",
+        "benzerlik": 1.0,
+        "url": "https://doi.org/10.1021/acs.jcim.0c00502"
+      },
+      "sure_s": 25.9,
+      "karar": "DESTEKLENIYOR",
+      "var_mi": true,
+      "kanit_alinti": "none of the methods we tested is unequivocally superior to all others ... none produces a particularly reliable ranking of errors across multiple datasets",
+      "url": "https://arxiv.org/abs/2005.10036",
+      "not": "The ACS page returned 403, so I checked the arXiv version (2005.10036) of the same paper. Its abstract matches the claim."
+    },
+    {
+      "kaynak_dosya": "duman\\kosu2\\D2-protokol-fuzzing\\sonuc.json",
+      "sira": 20,
+      "id": "doi:10.14722/ndss.2021.24531",
+      "arxiv_id": null,
+      "doi": "10.14722/ndss.2021.24531",
+      "baslik": "NetPlier: Probabilistic Network Protocol Reverse Engineering from Message Traces",
+      "yil": 2021,
+      "gerekce": "NetPlier offers probabilistic network protocol reverse engineering from message traces, supporting format inference for fuzzing.",
+      "varlik_kodu": {
+        "durum": "ESLESTI",
+        "kimlik": "doi:10.14722/ndss.2021.24531",
+        "bulunan_baslik": "NetPlier: Probabilistic Network Protocol Reverse Engineering from Message Traces",
+        "benzerlik": 1.0,
+        "url": "https://doi.org/10.14722/ndss.2021.24531"
+      },
+      "sure_s": 33.0,
+      "karar": "DESTEKLENIYOR",
+      "var_mi": true,
+      "kanit_alinti": "Network protocol reverse engineering is an important challenge with many security applications.",
+      "url": "https://www.ndss-symposium.org/ndss-paper/netplier-probabilistic-network-protocol-reverse-engineering-from-message-traces/",
+      "not": "The work exists and the DOI resolves to the NDSS paper. The abstract confirms probabilistic reverse engineering from message traces and message format recovery. Fuzzing is not named in the abstract, and I couldn't read the PDF text to confirm it, so the fuzzing link is a plausible application rather"
+    },
+    {
+      "kaynak_dosya": "duman\\kosu1\\D1-gnn-molekul\\k1\\sonuc.json",
+      "sira": 15,
+      "id": "arXiv:1810.00826",
+      "arxiv_id": "1810.00826",
+      "doi": null,
+      "baslik": "How Powerful are Graph Neural Networks?",
+      "yil": 2018,
+      "gerekce": "Characterizes discriminative power of popular GNN variants, showing they cannot distinguish certain simple graph structures; foundational expressivity theory.",
+      "varlik_kodu": {
+        "durum": "BILINMIYOR",
+        "kimlik": "1810.00826",
+        "not": "arxiv: HTTP 429: 5 denemede 429"
+      },
+      "sure_s": 14.5,
+      "karar": "DESTEKLENIYOR",
+      "var_mi": true,
+      "kanit_alinti": "They show that popular variants, including Graph Convolutional Networks and GraphSAGE, cannot separate certain basic graph structures.",
+      "url": "https://arxiv.org/abs/1810.00826",
+      "not": "Bu alıntı, arXiv özet sayfasının WebFetch ile alınan özetinden geliyor, doğrudan özet metninden değil. 'Foundational' ifadesi doğrulanamayan bir etki yargısı. Betimleyici kısım özetle uyuşuyor."
+    },
+    {
+      "kaynak_dosya": "duman\\kosu1\\D1-gnn-molekul\\k1\\sonuc.json",
+      "sira": 13,
+      "id": "arXiv:2106.05234",
+      "arxiv_id": "2106.05234",
+      "doi": null,
+      "baslik": "Do Transformers Really Perform Bad for Graph Representation?",
+      "yil": 2021,
+      "gerekce": "Graphormer shows that transformers with simple structural encodings can model graph-structured data effectively, a central graph transformer.",
+      "varlik_kodu": {
+        "durum": "BILINMIYOR",
+        "kimlik": "2106.05234",
+        "not": "arxiv: HTTP 429: 5 denemede 429"
+      },
+      "sure_s": 28.6,
+      "karar": "DESTEKLENIYOR",
+      "var_mi": true,
+      "kanit_alinti": "we propose several simple yet effective structural encoding methods to help Graphormer better model graph-structured data",
+      "url": "https://arxiv.org/abs/2106.05234",
+      "not": "The descriptive part is supported by the abstract; \"a central graph transformer\" is an unverifiable impact judgement, which I did not assess."
+    },
+    {
+      "kaynak_dosya": "duman\\kosu2\\D2-protokol-fuzzing\\sonuc.json",
+      "sira": 14,
+      "id": "arXiv:2204.02545",
+      "arxiv_id": "2204.02545",
+      "doi": null,
+      "baslik": "Stateful Greybox Fuzzing",
+      "yil": 2022,
+      "gerekce": "Stateful Greybox Fuzzing addresses reactive protocol implementations, targeting stateful bugs and state coverage without specifications.",
+      "varlik_kodu": {
+        "durum": "BILINMIYOR",
+        "kimlik": "2204.02545",
+        "not": "arxiv: HTTP 429: 5 denemede 429"
+      },
+      "sure_s": 16.0,
+      "karar": "DESTEKLENIYOR",
+      "var_mi": true,
+      "kanit_alinti": "Many protocol implementations are reactive, so some bugs appear only in specific states. Reaching those states requires particular sequences of inputs, which is hard for a fuzzer without a formal protocol specification.",
+      "url": "https://arxiv.org/abs/2204.02545",
+      "not": "The arXiv page's title and ID match. The abstract supports the sentence: it covers reactive protocols, stateful bugs, state coverage and no need for a specification. The quote is from the fetch tool's summary of the abstract, not the verbatim page text."
+    },
+    {
+      "kaynak_dosya": "duman\\kosu2\\D2-protokol-fuzzing\\sonuc.json",
+      "sira": 17,
+      "id": "doi:10.1145/2976749.2978411",
+      "arxiv_id": null,
+      "doi": "10.1145/2976749.2978411",
+      "baslik": "Systematic Fuzzing and Testing of TLS Libraries",
+      "yil": 2016,
+      "gerekce": "This work applies systematic fuzzing and testing to TLS libraries, a key protocol domain.",
+      "varlik_kodu": {
+        "durum": "ESLESTI",
+        "kimlik": "doi:10.1145/2976749.2978411",
+        "bulunan_baslik": "Systematic Fuzzing and Testing of TLS Libraries",
+        "benzerlik": 1.0,
+        "url": "https://doi.org/10.1145/2976749.2978411"
+      },
+      "sure_s": 15.2,
+      "karar": "DESTEKLENIYOR",
+      "var_mi": true,
+      "kanit_alinti": "TLS-Attacker, an open-source framework for evaluating the security of TLS libraries ... a two-stage fuzzing approach ... the TLS server behavior",
+      "url": "https://www.nds.rub.de/research/publications/systematic-fuzzing-and-testing-tls-libraries",
+      "not": "The search summary paraphrases the abstract, so the quote is not verbatim. The work exists with a matching title and DOI, and it does apply fuzzing and testing to TLS libraries. The 'key protocol domain' wording is a mild judgement, not a checkable fact."
+    },
+    {
+      "kaynak_dosya": "duman\\kosu2\\D2-protokol-fuzzing\\sonuc.json",
+      "sira": 7,
+      "id": "arXiv:2111.03013",
+      "arxiv_id": "2111.03013",
+      "doi": "10.1145/3492321.3519591",
+      "baslik": "Nyx-Net: Network Fuzzing with Incremental Snapshots",
+      "yil": 2021,
+      "gerekce": "Nyx-Net uses incremental snapshots to fuzz a wide range of network targets, spanning servers and clients.",
+      "varlik_kodu": {
+        "durum": "BILINMIYOR",
+        "kimlik": "2111.03013",
+        "not": "arxiv: HTTP 429: bu koşuda zaten tükendi: 5 denemede 429"
+      },
+      "sure_s": 27.2,
+      "karar": "DESTEKLENIYOR",
+      "var_mi": true,
+      "kanit_alinti": "a novel snapshot-based fuzzing approach that can successfully fuzz a wide range of targets spanning servers, clients, games",
+      "url": "https://arxiv.org/abs/2111.03013",
+      "not": "The arXiv page for 2111.03013 has the matching title. The abstract supports the wide range of server and client targets, and the title names incremental snapshots."
+    },
+    {
+      "kaynak_dosya": "duman\\kosu1\\D1-gnn-molekul\\k1\\sonuc.json",
+      "sira": 29,
+      "id": "doi:10.1186/s13321-024-00846-9",
+      "arxiv_id": null,
+      "doi": "10.1186/s13321-024-00846-9",
+      "baslik": "MolPROP: Molecular Property prediction with multimodal language and graph fusion",
+      "yil": 2024,
+      "gerekce": "MolPROP fuses language models and graphs for property prediction, benchmarked on seven scaffold-split MoleculeNet datasets, exemplifying LLM integration.",
+      "varlik_kodu": {
+        "durum": "ESLESTI",
+        "kimlik": "doi:10.1186/s13321-024-00846-9",
+        "bulunan_baslik": "MolPROP: Molecular Property prediction with multimodal language and graph fusion",
+        "benzerlik": 1.0,
+        "url": "https://doi.org/10.1186/s13321-024-00846-9"
+      },
+      "sure_s": 38.0,
+      "karar": "DESTEKLENIYOR",
+      "var_mi": true,
+      "kanit_alinti": "We benchmark the MolPROP suite of models on seven scaffold split MoleculeNet datasets",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11112823/",
+      "not": "The paper exists and fuses the ChemBERTa-2 language model with graph neural networks on seven scaffold-split MoleculeNet datasets. The 'exemplifying LLM integration' wording is the tool's own framing, and ChemBERTa-2 is a small pretrained chemical language model rather than a typical LLM."
+    },
+    {
+      "kaynak_dosya": "duman\\kosu1\\D1-gnn-molekul\\k1\\sonuc.json",
+      "sira": 5,
+      "id": "arXiv:2101.03164",
+      "arxiv_id": "2101.03164",
+      "doi": "10.21203/rs.3.rs-244137/v1",
+      "baslik": "SE(3)-Equivariant Graph Neural Networks for Data-Efficient and Accurate Interatomic Potentials",
+      "yil": 2021,
+      "gerekce": "NequIP uses E(3)-equivariant convolutions on geometric tensors for data-efficient, accurate interatomic potentials, a landmark equivariant GNN.",
+      "varlik_kodu": {
+        "durum": "BILINMIYOR",
+        "kimlik": "2101.03164",
+        "not": "arxiv: HTTP 429: bu koşuda zaten tükendi: 5 denemede 429"
+      },
+      "sure_s": 19.8,
+      "karar": "DESTEKLENIYOR",
+      "var_mi": true,
+      "kanit_alinti": "NequIP instead applies equivariant convolutions to geometric tensors, which gives a richer description of atomic environments. It reaches state-of-the-art accuracy ... needing far less training data",
+      "url": "https://arxiv.org/abs/2101.03164",
+      "not": "arXiv 2101.03164 is NequIP and the descriptive claim matches; the current title says E(3) rather than SE(3), and the 'landmark' label can't be verified. I did not open the Research Square DOI page, which redirects there."
+    }
+  ]
+}

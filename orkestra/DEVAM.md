@@ -48,6 +48,11 @@ Kullanıcının bilgisayarı yeniden başlatılacağı için iş yarıda kesildi
   Crossref bu yayıncıların özetini taşımıyor; S2 zenginleştirmesi 429. Okuyucu bunları yalnız başlıktan
   yargıladı. Çözüm: S2 ve OpenAlex anahtarı. `s2_api_key` / `S2_API_KEY` desteği eklendi (42 test).
 
+- Sadakat denetçisi (`deney/sadakat.py`, Sonnet + web): pilot n=10 → 10/10 destekli, 0 uydurma, $0.29.
+  Elle bakıldı: kanıtlar gerçek. **Zayıflık:** bazı gerekçeler başlığı tekrar ediyor (ör. "TLS kütüphanelerine
+  fuzzing uygular") → tautolojik destek; "foundational / landmark" gibi etki ifadeleri denetlenmiyor.
+  Asıl ölçümde denetçi raporu bu iki sınıfı ayrıca saymalı (eşik değişmez; betimsel not).
+
 ## Kalan işler (ilk oturumdan; 1, 2, 5 bitti)
 1. D2'yi baştan koş: `python -m orkestra batch --sorular duman/sorular.json --out duman/kosu2`. Ya da yalnız D2'yi `run` ile koş.
 2. Duman sonuçlarını (maliyet, süre, funnel) README'nin "Duman testi" bölümüne yaz.
