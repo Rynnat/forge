@@ -1,17 +1,25 @@
-# Forge Ölüm Kriteri (ön kayıt, 2026-10-25)
+# Forge Ölüm Kriteri — v3 (orkestra kapsamı, 2026-10-25)
 
-Kaynak: `gelistirme/YARGI.md`, düzeltilmiş hâliyle. **Bu dosya bu tarihten sonra değiştirilirse Forge otomatik olarak DONDUR'a geçer.**
+## Değişiklik kaydı
+v2 (aynı gün, commit 74e36a9) dar kapsamla yazılmıştı: "Forge araştırma projesine hizmet etsin". Hoca ve pilot maddeleri kullanıcıyı ölçüyordu, Forge'u değil. Kullanıcı kapsamı düzeltti: Forge bir orkestradır.
+
+v2'nin kendi kuralı "değişirse otomatik DONDUR" diyordu. Bu kural dürüstçe uygulandı:
+- **Dar kapsamlı Forge v2 DONDURULDU.**
+- Forge v3, aşağıdaki yeni kriterle başlıyor.
+- Hoca ve pilot maddeleri `akademik-bosluk/YOL.md`'ye taşındı.
+
+**Bu dosya (v3) bu tarihten sonra değiştirilirse Forge yine otomatik DONDUR'a geçer.**
 
 ## 2026-11-22'de ölçülür
-- **K2:** forge-meta harcaması / araştırma harcaması **≤ %25**. Ölçüm maliyet-sayaci'nin etiketleriyle yapılır.
-- **K3:** pilot hükümleri (K5 ve K8) verilmiş ve hocaya görüşme isteği gönderilmiş.
-- **K4:** önceden commit edilmiş bir eşikle verilmiş en az 1 gerçek KABUL ya da RED.
+- **K1 — Deney:** `ONKAYIT-orkestra-v0.md` deneyi n=30 ile koşulmuş ve KABUL ya da RED almış.
+- **K2 — Değer:** deney KABUL aldıysa, orkestra en az 2 farklı projede gerçek işte kullanılmış.
+- **K3 — Maliyet disiplini:** forge-meta harcaması (orkestranın inşası ve denetimi), orkestranın gerçek işlerde kullanılmasından kaynaklanan harcamanın 3 katını aşmıyor. Ölçüm maliyet-sayaci etiketleriyle yapılır.
 
 ## Hüküm
-- K3 tutmazsa → **DONDUR**.
-- K2 ve K4 birlikte tutmazsa → **ÖLDÜR**: Forge arşive alınır, araçlar bağımsız kalır.
-- Aksi hâlde → **DEVAM**.
+- K1 tutmazsa → **DONDUR**: deney yapılmadan büyütme yok.
+- K1 = RED ise → orkestra v0 ARŞİV olur. Forge, dersleriyle birlikte tek bir v1 denemesi hakkı kazanır. O da RED alırsa Forge ÖLÜR.
+- K1 = KABUL olduğu hâlde K2 ya da K3 tutmazsa → **DONDUR** (araç kullanılmıyor ya da pahalı).
 
 ## 2026-12-24'te ölçülür
-- **K1:** maliyet-sayaci dışında, gerçek işte ≥5 kez çağrılmış bir KABUL'lü araç.
-- K1 tutmazsa Forge tek sayfalık bir ön kayıt şablonuna iner.
+- Orkestra, gerçek işte ≥10 kez çağrılmış ve maliyet-sayaci'ye göre ortalama maliyeti taban çizgisinin ≤ %50'si.
+- Tutmazsa → **DONDUR**.
