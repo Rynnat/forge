@@ -1,0 +1,944 @@
+{
+ "run_id": "20261025-175137-954e08",
+ "soru": "Veri ve yapay zeka ekosistemlerini yöneten LLM tabanlı veri ajanları (otonomi seviyeleri, sorgu ve veri analizi görevleri) üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-09-27",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6524,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.104224,
+   "in": 1234,
+   "out": 4718,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.14505016,
+   "in": 463674,
+   "out": 60899,
+   "web_search": 7
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.24265130000000001,
+   "in": 305304,
+   "out": 363197,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.160492,
+   "in": 12155,
+   "out": 3163,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 41.5,
+  "toplama:openalex": 1.5,
+  "toplama:crossref": 87.4,
+  "web_isci": 104.5,
+  "toplama:dblp": 242.9,
+  "toplama:arxiv": 358.7,
+  "toplama": 368.5,
+  "tekil+kesim_1": 42.8,
+  "atif": 206.8,
+  "okuyucu": 428.1,
+  "damitma": 33.3,
+  "sef_final": 30.2,
+  "toplam": 1151.2
+ },
+ "ozet_token_tahmini": 3601,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "What is an LLM-based data agent, and how are autonomy levels, taxonomies and paradigms defined for agents that manage data and AI ecosystems?",
+    "sorgular": [
+     "\"data agent\" large language model survey",
+     "LLM agents data management autonomy levels",
+     "\"agent-first\" data systems",
+     "agentic data systems taxonomy",
+     "LLM meets database survey"
+    ],
+    "yeterli": "Coverage is sufficient once the main surveys, vision papers and autonomy-level or taxonomy definitions (L0–L5 style) for data agents are identified."
+   },
+   {
+    "id": "S2",
+    "soru": "Which methods do LLM-based querying and natural language interfaces (Text-to-SQL, NL2SQL, multi-agent SQL generation) use, and which benchmarks are used to evaluate them?",
+    "sorgular": [
+     "LLM text-to-SQL agent",
+     "NL2SQL large language models",
+     "\"natural language interface\" database LLM",
+     "multi-agent text-to-SQL framework",
+     "Spider BIRD benchmark text-to-SQL"
+    ],
+    "yeterli": "Coverage is sufficient once classic benchmarks (Spider, BIRD), agentic benchmarks (Spider 2.0) and leading LLM methods (DIN-SQL, DAIL-SQL, MAC-SQL, CHESS, CHASE-SQL) are covered."
+   },
+   {
+    "id": "S3",
+    "soru": "How do LLM agents automate data analysis, data science and machine learning engineering tasks?",
+    "sorgular": [
+     "data science agent LLM",
+     "LLM data analysis agent benchmark",
+     "automated machine learning LLM agents",
+     "\"code interpreter\" data analysis agent",
+     "MLE agent Kaggle benchmark"
+    ],
+    "yeterli": "Coverage is sufficient once the main data science agents (Data Interpreter, DS-Agent, AIDE, AutoKaggle) and benchmarks (DS-1000, DABench, DSBench, DA-Code, MLE-bench, KramaBench) are identified."
+   },
+   {
+    "id": "S4",
+    "soru": "How are LLMs used for data preparation, cleaning, integration and table understanding?",
+    "sorgular": [
+     "foundation models data wrangling",
+     "LLM data cleaning entity matching",
+     "data preprocessing large language model",
+     "table understanding LLM reasoning",
+     "LLM data integration data discovery"
+    ],
+    "yeterli": "Coverage is sufficient once key work on data wrangling and preparation (Can Foundation Models Wrangle..., Jellyfish, Table-GPT, Chain-of-Table) is covered."
+   },
+   {
+    "id": "S5",
+    "soru": "How do LLMs serve as agents for database operations and optimization (diagnosis, configuration tuning, query rewriting)?",
+    "sorgular": [
+     "LLM database diagnosis",
+     "LLM database knob tuning",
+     "LLM query rewrite optimization",
+     "LLM DBA agent",
+     "large language model query optimizer"
+    ],
+    "yeterli": "Coverage is sufficient once the main LLM-based DB operations systems such as D-Bot, GPTuner and LLM-R2 are identified."
+   },
+   {
+    "id": "S6",
+    "soru": "How do semantic operators and declarative LLM-powered analytics systems process unstructured and multimodal data?",
+    "sorgular": [
+     "semantic operators LLM analytics",
+     "declarative LLM query processing",
+     "LLM-powered document processing pipelines",
+     "AI-powered analytics unstructured data",
+     "LLM data lake query system"
+    ],
+    "yeterli": "Coverage is sufficient once LOTUS, Palimpzest, DocETL and similar declarative LLM analytics systems are covered."
+   },
+   {
+    "id": "S7",
+    "soru": "What are the general agent foundations reused by data agents (tool use, planning, reasoning, multi-agent collaboration), and what open problems remain (reliability, hallucination, security, cost, evaluation)?",
+    "sorgular": [
+     "ReAct reasoning acting language models",
+     "LLM tool use agents",
+     "LLM-based autonomous agents survey",
+     "data agent open challenges hallucination",
+     "agent evaluation reliability data tasks"
+    ],
+    "yeterli": "Coverage is sufficient once foundational agent methods (ReAct, Toolformer, agent surveys) and the open problems repeatedly raised in the data agent literature are listed."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task",
+    "yil": 2018
+   },
+   {
+    "baslik": "Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs",
+    "yil": 2023
+   },
+   {
+    "baslik": "DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction",
+    "yil": 2023
+   },
+   {
+    "baslik": "Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation",
+    "yil": 2023
+   },
+   {
+    "baslik": "MAC-SQL: A Multi-Agent Collaborative Framework for Text-to-SQL",
+    "yil": 2023
+   },
+   {
+    "baslik": "CHESS: Contextual Harnessing for Efficient SQL Synthesis",
+    "yil": 2024
+   },
+   {
+    "baslik": "CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL",
+    "yil": 2024
+   },
+   {
+    "baslik": "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+    "yil": 2024
+   },
+   {
+    "baslik": "DS-1000: A Natural and Reliable Benchmark for Data Science Code Generation",
+    "yil": 2022
+   },
+   {
+    "baslik": "InfiAgent-DABench: Evaluating Agents on Data Analysis Questions",
+    "yil": 2024
+   },
+   {
+    "baslik": "Data Interpreter: An LLM Agent For Data Science",
+    "yil": 2024
+   },
+   {
+    "baslik": "DS-Agent: Automated Data Science by Empowering Large Language Models with Case-Based Reasoning",
+    "yil": 2024
+   },
+   {
+    "baslik": "DSBench: How Far Are Data Science Agents from Becoming Data Science Experts?",
+    "yil": 2024
+   },
+   {
+    "baslik": "DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models",
+    "yil": 2024
+   },
+   {
+    "baslik": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+    "yil": 2024
+   },
+   {
+    "baslik": "AutoKaggle: A Multi-Agent Framework for Autonomous Data Science Competitions",
+    "yil": 2024
+   },
+   {
+    "baslik": "Can Foundation Models Wrangle Your Data?",
+    "yil": 2022
+   },
+   {
+    "baslik": "Jellyfish: A Large Language Model for Data Preprocessing",
+    "yil": 2023
+   },
+   {
+    "baslik": "Table-GPT: Table-tuned GPT for Diverse Table Tasks",
+    "yil": 2023
+   },
+   {
+    "baslik": "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding",
+    "yil": 2024
+   },
+   {
+    "baslik": "D-Bot: Database Diagnosis System using Large Language Models",
+    "yil": 2024
+   },
+   {
+    "baslik": "GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization",
+    "yil": 2023
+   },
+   {
+    "baslik": "DocETL: Agentic Query Rewriting and Evaluation for Complex Document Processing",
+    "yil": 2024
+   },
+   {
+    "baslik": "Supporting Our AI Overlords: Redesigning Data Systems to be Agent-First",
+    "yil": 2025
+   },
+   {
+    "baslik": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "yil": 2022
+   }
+  ],
+  "web_odaklari": [
+   "awesome data agents LLM papers github",
+   "awesome LLM data science agents text-to-SQL reading list",
+   "LLM for data management database papers list github"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:2308.15363",
+  "arXiv:2305.03111",
+  "arXiv:2505.10468",
+  "arXiv:1809.08887",
+  "arXiv:2410.07095",
+  "arXiv:2304.11015",
+  "arXiv:2402.01680",
+  "arXiv:2402.17453",
+  "arXiv:2402.18679",
+  "arXiv:2509.00997",
+  "arXiv:2410.12189",
+  "arXiv:2411.07763"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2412.14222",
+   "arxiv_id": "2412.14222",
+   "doi": "10.1080/00031305.2025.2561140",
+   "baslik": "A Survey on Large Language Model-based Agents for Statistics and Data Science",
+   "yil": 2024,
+   "tarih": "2024-12-18",
+   "gerekce": "LLM tabanlı veri bilimi ajanlarını 'data agents' olarak adlandırıp veri analizi paradigmasındaki dönüşümü kapsamlı biçimde derleyen merkezi bir çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In recent years, data science agents powered by Large Language Models (LLMs), known as \"data agents,\" have shown significant potential to transform the traditional data analysis paradigm.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2509.00997",
+   "arxiv_id": "2509.00997",
+   "doi": null,
+   "baslik": "Supporting Our AI Overlords: Redesigning Data Systems to be Agent-First",
+   "yil": 2025,
+   "tarih": "2025-08-31",
+   "gerekce": "LLM ajanlarının veri sistemlerinde baskın iş yükü olacağını öngörüp veri sistemlerinin ajan-öncelikli yeniden tasarımını tartışıyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Large Language Model (LLM) agents, acting on their users' behalf to manipulate and analyze data, are likely to become the dominant workload for data systems in the future.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2305.03111",
+   "arxiv_id": "2305.03111",
+   "doi": null,
+   "baslik": "Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs",
+   "yil": 2023,
+   "tarih": "2023-05-04",
+   "gerekce": "BIRD, 95 veritabanı ve 12.751 örnekle büyük ölçekli, veritabanı değerlerine dayalı Text-to-SQL değerlendirmesi için temel benchmark.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we present Bird, a big benchmark for large-scale database grounded in text-to-SQL tasks, containing 12,751 pairs of text-to-SQL data and 95 databases",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:1809.08887",
+   "arxiv_id": "1809.08887",
+   "doi": "10.18653/v1/d18-1425",
+   "baslik": "Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task",
+   "yil": 2018,
+   "tarih": "2018-09-24",
+   "gerekce": "Spider, 200 veritabanı ve 138 alanı kapsayan, alanlar arası Text-to-SQL için temel ve öncü insan etiketli veri seti.",
+   "gerekce_kokeni": "sef",
+   "alinti": "It consists of 10,181 questions and 5,693 unique complex SQL queries on 200 databases with multiple tables, covering 138 different domains.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 809,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2411.07763",
+   "arxiv_id": "2411.07763",
+   "doi": null,
+   "baslik": "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+   "yil": 2024,
+   "tarih": "2024-11-12",
+   "gerekce": "Spider 2.0, kurumsal veritabanı kullanımından türetilmiş 632 gerçek Text-to-SQL iş akışı problemiyle ajan düzeyinde değerlendirme sunuyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We introduce Spider 2.0, an evaluation framework comprising 632 real-world text-to-SQL workflow problems derived from enterprise-level database use cases.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2407.11418",
+   "arxiv_id": "2407.11418",
+   "doi": null,
+   "baslik": "Semantic Operators: A Declarative Model for Rich, AI-based Data Processing",
+   "yil": 2024,
+   "tarih": "2024-07-16",
+   "gerekce": "Doğal dil tanımlarına dayalı, bildirimsel ve genel amaçlı yapay zeka dönüşümleri için ilk biçimsel model olan semantik operatörleri tanıtıyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We introduce semantic operators, the first formalism for declarative and general-purpose AI-based transformations based on natural language specifications",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2402.18679",
+   "arxiv_id": "2402.18679",
+   "doi": "10.18653/v1/2025.findings-acl.1016",
+   "baslik": "Data Interpreter: An LLM Agent For Data Science",
+   "yil": 2024,
+   "tarih": "2024-02-28",
+   "gerekce": "Hiyerarşik graf modellemeyle karmaşık problemleri alt problemlere ayıran, uçtan uca veri bilimi iş akışları için LLM ajanı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our Data Interpreter incorporates two key modules: 1) Hierarchical Graph Modeling, which breaks down complex problems into manageable subproblems",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2410.07095",
+   "arxiv_id": "2410.07095",
+   "doi": null,
+   "baslik": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+   "yil": 2024,
+   "tarih": "2024-10-09",
+   "gerekce": "Kaggle kaynaklı görevlerle yapay zeka ajanlarının makine öğrenmesi mühendisliği performansını ölçen önemli bir benchmark.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We introduce MLE-bench, a benchmark for measuring how well AI agents perform at machine learning engineering.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2308.15363",
+   "arxiv_id": "2308.15363",
+   "doi": "10.14778/3641204.3641221",
+   "baslik": "Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation",
+   "yil": 2023,
+   "tarih": "2023-08-29",
+   "gerekce": "LLM tabanlı Text-to-SQL için sistematik prompt mühendisliği benchmark'ı ve DAIL-SQL yöntemini sunarak etkin ve ekonomik tasarımı inceliyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Large language models (LLMs) have emerged as a new paradigm for Text-to-SQL task. However, the absence of a systematical benchmark inhibits the development of designing effective, efficient and economic LLM-based Text-to-SQL solutions.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 329,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2304.11015",
+   "arxiv_id": "2304.11015",
+   "doi": "10.52202/075280-1577",
+   "baslik": "DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction",
+   "yil": 2023,
+   "tarih": "2023-04-21",
+   "gerekce": "Ayrıştırılmış bağlam içi öğrenme ve öz-düzeltmeyle LLM'lerin Text-to-SQL doğruluğunu yaklaşık %10 artıran etkili bir yöntem.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our experiments with three LLMs show that this approach consistently improves their simple few-shot performance by roughly 10%, pushing the accuracy of LLMs towards SOTA or surpassing it.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 220,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2312.11242",
+   "arxiv_id": "2312.11242",
+   "doi": null,
+   "baslik": "MAC-SQL: A Multi-Agent Collaborative Framework for Text-to-SQL",
+   "yil": 2023,
+   "tarih": "2023-12-18",
+   "gerekce": "Ayrıştırıcı çekirdek ajan ve araç kullanan yardımcı ajanlarla çoklu ajan iş birliğine dayalı Text-to-SQL çerçevesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our framework comprises a core decomposer agent for Text-to-SQL generation with few-shot chain-of-thought reasoning, accompanied by two auxiliary agents that utilize external tools or models",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2405.16755",
+   "arxiv_id": "2405.16755",
+   "doi": null,
+   "baslik": "CHESS: Contextual Harnessing for Efficient SQL Synthesis",
+   "yil": 2024,
+   "tarih": "2024-05-27",
+   "gerekce": "Şema budama ve birim testleri içeren, verimli ve ölçeklenebilir SQL sentezi için LLM tabanlı çoklu ajan çerçevesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We introduce CHESS, a Large Language Model (LLM) based multi-agent framework for efficient and scalable SQL synthesis",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2410.01943",
+   "arxiv_id": "2410.01943",
+   "doi": null,
+   "baslik": "CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL",
+   "yil": 2024,
+   "tarih": "2024-10-02",
+   "gerekce": "Farklı LLM üreteçleriyle çok yollu akıl yürütme ve tercih optimizasyonlu aday seçimiyle güçlü bir Text-to-SQL yaklaşımı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "CHASE-SQL leverages LLMs' intrinsic knowledge to generate diverse and high-quality SQL candidates using different LLM generators with:",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2402.17453",
+   "arxiv_id": "2402.17453",
+   "doi": null,
+   "baslik": "DS-Agent: Automated Data Science by Empowering Large Language Models with Case-Based Reasoning",
+   "yil": 2024,
+   "tarih": "2024-02-27",
+   "gerekce": "Vaka tabanlı akıl yürütmeyle görev gereksinimlerini anlayıp uygun ML modelini kuran ve eğiten veri bilimi ajanı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this work, we investigate the potential of large language models (LLMs) based agents to automate data science tasks, with the goal of comprehending task requirements, then building and training the best-fit machine learning models.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2409.07703",
+   "arxiv_id": "2409.07703",
+   "doi": null,
+   "baslik": "DSBench: How Far Are Data Science Agents from Becoming Data Science Experts?",
+   "yil": 2024,
+   "tarih": "2024-09-12",
+   "gerekce": "466 veri analizi ve 74 veri modelleme göreviyle veri bilimi ajanlarının uzman düzeyine uzaklığını ölçen benchmark.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This benchmark includes 466 data analysis tasks and 74 data modeling tasks, sourced from Eloquence and Kaggle competitions.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2312.01454",
+   "arxiv_id": "2312.01454",
+   "doi": null,
+   "baslik": "D-Bot: Database Diagnosis System using Large Language Models",
+   "yil": 2023,
+   "tarih": "2023-12-03",
+   "gerekce": "Teşhis belgelerinden otomatik bilgi edinen LLM tabanlı veritabanı teşhis sistemi; veritabanı operasyonları için öncü ajan.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose D-Bot, an LLM-based database diagnosis system that can automatically acquire knowledge from diagnosis documents",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2311.03157",
+   "arxiv_id": "2311.03157",
+   "doi": "10.14778/3659437.3659449",
+   "baslik": "GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization",
+   "yil": 2023,
+   "tarih": "2023-11-06",
+   "gerekce": "Kılavuz okuyan, GPT yönlendirmeli Bayes optimizasyonuyla DBMS ayar parametrelerini belirleyen LLM tabanlı ayarlama sistemi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Determining the appropriate values for these knobs to improve DBMS performance is a long-standing problem in the database community.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2403.09060",
+   "arxiv_id": "2403.09060",
+   "doi": null,
+   "baslik": "GenRewrite: Query Rewriting via Large Language Models",
+   "yil": 2024,
+   "tarih": "2024-03-14",
+   "gerekce": "Geleneksel kuralların ötesinde sorgu yeniden yazımı için LLM'lerden yararlanan ilk bütünsel sistem olarak tanıtılıyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, we present GenRewrite, the first holistic system that leverages LLMs for query rewriting beyond traditional rules.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2205.09911",
+   "arxiv_id": "2205.09911",
+   "doi": null,
+   "baslik": "Can Foundation Models Wrangle Your Data?",
+   "yil": 2022,
+   "tarih": "2022-05-20",
+   "gerekce": "Beş veri temizleme ve entegrasyon görevini prompt görevlerine dönüştürerek temel modellerin veri düzenlemedeki yeteneğini değerlendiren öncü çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we cast five data cleaning and integration tasks as prompting tasks and evaluate the performance of FMs on these tasks.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2312.01678",
+   "arxiv_id": "2312.01678",
+   "doi": null,
+   "baslik": "Jellyfish: A Large Language Model for Data Preprocessing",
+   "yil": 2023,
+   "tarih": "2023-12-04",
+   "gerekce": "Ham veriyi temiz formata dönüştüren veri ön işleme için talimatla ince ayarlanmış LLM çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This paper explores the utilization of LLMs for data preprocessing (DP), a crucial step in the data mining pipeline that transforms raw data into a clean format",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2410.12189",
+   "arxiv_id": "2410.12189",
+   "doi": null,
+   "baslik": "DocETL: Agentic Query Rewriting and Evaluation for Complex Document Processing",
+   "yil": 2024,
+   "tarih": "2024-10-16",
+   "gerekce": "Karmaşık belge işleme hatlarında maliyetin yanında doğruluğu iyileştirmek için ajan tabanlı sorgu yeniden yazımı ve değerlendirme sunuyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "However, these frameworks focus on reducing cost when executing user-specified operations using LLMs, rather than improving accuracy",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2407.10956",
+   "arxiv_id": "2407.10956",
+   "doi": null,
+   "baslik": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+   "yil": 2024,
+   "tarih": "2024-07-15",
+   "gerekce": "Veri bilimi ve mühendislik iş akışlarını SQL, Python ve GUI işlemleriyle otomatikleştiren çok modlu ajanlar için benchmark.",
+   "gerekce_kokeni": "sef",
+   "alinti": "VLM-based agents could potentially automate these workflows by generating SQL queries, Python code, and GUI operations.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2401.04398",
+   "arxiv_id": "2401.04398",
+   "doi": null,
+   "baslik": "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding",
+   "yil": 2024,
+   "tarih": "2024-01-09",
+   "gerekce": "Tablo verisini akıl yürütme zincirinde ara düşünceler olarak kullanarak tablo anlamayı geliştiren Chain-of-Table çerçevesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose the Chain-of-Table framework, where tabular data is explicitly used in the reasoning chain as a proxy for intermediate thoughts",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2506.08800",
+   "arxiv_id": "2506.08800",
+   "doi": null,
+   "baslik": "Measuring Data Science Automation: A Survey of Evaluation Tools for AI Assistants and Agents",
+   "yil": 2025,
+   "tarih": "2025-06-10",
+   "gerekce": "Veri bilimi ajanlarının değerlendirmesini derleyip ara insan-yapay zeka iş birliği otonomi seviyelerinin ihmal edildiğini açık problem olarak vurguluyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "a concentration on pure assistance or fully autonomous agents, without considering intermediate levels of human-AI collaboration",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2505.10468",
+   "arxiv_id": "2505.10468",
+   "doi": "10.1016/j.inffus.2025.103599",
+   "baslik": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+   "yil": 2025,
+   "tarih": "2025-05-15",
+   "gerekce": "Yapay zeka ajanları ile ajan tabanlı yapay zekayı çoklu ajan iş birliği ve koordineli otonomi üzerinden ayıran kavramsal taksonomi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We then characterize Agentic AI systems, which, in contrast to AI Agents, represent a paradigm shift marked by multi-agent collaboration, dynamic task decomposition, persistent memory, and coordinated autonomy.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 194,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2408.05109",
+   "arxiv_id": "2408.05109",
+   "doi": "10.1109/tkde.2025.3592032",
+   "baslik": "A Survey of Text-to-SQL in the Era of LLMs: Where are we, and where are we going?",
+   "yil": 2024,
+   "tarih": "2024-08-09",
+   "gerekce": "LLM destekli Text-to-SQL tekniklerini tüm yaşam döngüsü boyunca kapsamlı biçimde derleyen ve gelecek yönleri tartışan anket.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this survey, we provide a comprehensive review of Text-to-SQL techniques powered by LLMs, covering its entire lifecycle from the following four aspects",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2410.20424",
+   "arxiv_id": "2410.20424",
+   "doi": null,
+   "baslik": "AutoKaggle: A Multi-Agent Framework for Autonomous Data Science Competitions",
+   "yil": 2024,
+   "tarih": "2024-10-27",
+   "gerekce": "Kod yürütme, hata ayıklama ve birim testiyle tablo verisi yarışmalarını otonom çözen çoklu ajan veri bilimi çerçevesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "AutoKaggle implements an iterative development process that combines code execution, debugging, and comprehensive unit testing to ensure code correctness and logic consistency.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2409.00847",
+   "arxiv_id": "2409.00847",
+   "doi": null,
+   "baslik": "The Design of an LLM-powered Unstructured Analytics System",
+   "yil": 2024,
+   "tarih": "2024-09-01",
+   "gerekce": "Doğal dil sorgularından semantik plan üretip büyük yapılandırılmamış belge koleksiyonlarında yürüten bildirimsel LLM analitik sistemi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "With Aryn, users specify queries in natural language and the system automatically determines a semantic plan and executes it to compute an answer from a large collection of unstructured documents.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2210.03629",
+   "arxiv_id": "2210.03629",
+   "doi": null,
+   "baslik": "ReAct: Synergizing Reasoning and Acting in Language Models",
+   "yil": 2022,
+   "tarih": "2022-10-06",
+   "gerekce": "Akıl yürütme izleri ile eylemleri iç içe üreten ReAct, veri ajanlarının yeniden kullandığı temel ajan paradigmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2503.16416",
+   "arxiv_id": "2503.16416",
+   "doi": null,
+   "baslik": "Survey on Evaluation of LLM-based Agents",
+   "yil": 2025,
+   "tarih": "2025-03-20",
+   "gerekce": "LLM ajan değerlendirmesinde maliyet verimliliği, güvenlik ve sağlamlık gibi kritik açık boşlukları belirleyen derleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We also identify critical gaps that future research must address, particularly in assessing cost-efficiency, safety, and robustness, and in developing fine-grained, scalable evaluation methods.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

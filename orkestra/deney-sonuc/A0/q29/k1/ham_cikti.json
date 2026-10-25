@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 91852,
+ "stop_reason": "end_turn",
+ "session_id": "453ab359-5e30-49e0-832f-e6284f4d9604",
+ "total_cost_usd": 0.249742,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 7770,
+  "cache_read_input_tokens": 8477,
+  "output_tokens": 8102,
+  "output_tokens_details": {
+   "thinking_tokens": 4299
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7770,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4603,
+    "cache_read_input_tokens": 4945,
+    "cache_creation_input_tokens": 6357,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6357
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 8102,
+   "cacheReadInputTokens": 8477,
+   "cacheCreationInputTokens": 7770,
+   "webSearchRequests": 0,
+   "costUSD": 0.22591139999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 4299,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 27611,
+   "outputTokens": 2139,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.0238306,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 445,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [{\"sira\": 1, \"baslik\": \"Considering virtual reality in children's lives\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1080/17482798.2016.1268779\", \"gerekce\": \"A foundational paper that sets out the developmental, psychological and ethical questions raised by children's VR use and the research agenda that follows from them.\"}, {\"sira\": 2, \"baslik\": \"Could virtual reality applications pose real risks to children and adolescents? A systematic review of ethical issues and concerns\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.1007/s10055-021-00563-w\", \"gerekce\": \"The most comprehensive systematic review of the ethical, health and safety risks of VR for children.\"}, {\"sira\": 3, \"baslik\": \"Effects of immersive virtual reality headset viewing on young children: visuomotor function, postural stability, and motion sickness\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1016/j.ajo.2019.07.020\", \"gerekce\": \"Clinical evidence measuring the effects of VR headsets on young children's eye health, balance and motion sickness.\"}, {\"sira\": 4, \"baslik\": \"Learning from the real and the virtual worlds: Educational use of augmented reality in early childhood\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1016/j.ijcci.2019.06.002\", \"gerekce\": \"Examines the use of AR in early childhood from a developmental-psychology perspective and lays out its pedagogical opportunities and open questions.\"}, {\"sira\": 5, \"baslik\": \"Augmented reality for early language learning: A systematic review of augmented reality application design, instructional strategies, and evaluation outcomes\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1177/0735633120927489\", \"gerekce\": \"A systematic review of the design, instructional strategies and evaluation outcomes of AR for early language learning.\"}, {\"sira\": 6, \"baslik\": \"Educational magic toys developed with augmented reality technology for early childhood education\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": \"10.1016/j.chb.2015.07.040\", \"gerekce\": \"A highly cited pioneering study that tests AR-based educational toys with preschool children and teachers.\"}, {\"sira\": 7, \"baslik\": \"Children and parents' reading of an augmented reality picture book: Analyses of behavioral patterns and cognitive attainment\", \"yil\": 2014, \"arxiv_id\": null, \"doi\": \"10.1016/j.compedu.2013.12.003\", \"gerekce\": \"Analyzes the behavioral patterns and cognitive gains when parents and children read an AR picture book together.\"}, {\"sira\": 8, \"baslik\": \"Using augmented reality in early art education: a case study in Hong Kong kindergarten\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": \"10.1080/03004430.2015.1067888\", \"gerekce\": \"A case study of how AR is integrated into kindergarten art education.\"}, {\"sira\": 9, \"baslik\": \"Virtual reality's effect on children's inhibitory control, social compliance, and sharing\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1016/j.appdev.2019.101052\", \"gerekce\": \"Experimentally shows that immersive VR affects young children's inhibitory control and social compliance differently from television.\"}, {\"sira\": 10, \"baslik\": \"Virtually true: Children's acquisition of false memories in virtual reality\", \"yil\": 2009, \"arxiv_id\": null, \"doi\": \"10.1080/15213260903287267\", \"gerekce\": \"A classic study showing that VR can create false memories in young children, raising critical ethical concerns.\"}, {\"sira\": 11, \"baslik\": \"Embedding immersive virtual reality in classrooms: Ethical, organisational and educational lessons in bridging research and practice\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1016/j.ijcci.2018.10.002\", \"gerekce\": \"Sets out the ethical and organizational lessons from bringing immersive VR into real classrooms.\"}, {\"sira\": 12, \"baslik\": \"Understanding Parents' Perceptions and Practices Toward Children's Security and Privacy in Virtual Reality\", \"yil\": 2024, \"arxiv_id\": \"2403.06172\", \"doi\": null, \"gerekce\": \"An IEEE S&P study showing that parents lack awareness of children's VR security and privacy and calling for a multi-stakeholder approach.\"}, {\"sira\": 13, \"baslik\": \"Augmented reality-based virtual manipulatives versus physical manipulatives for teaching geometric shapes to preschool children\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1111/bjet.12740\", \"gerekce\": \"An experimental comparison of AR and physical manipulatives for teaching geometry to preschool children.\"}, {\"sira\": 14, \"baslik\": \"The effect of augmented reality activities on improving preschool children's spatial skills\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1080/10494820.2018.1546747\", \"gerekce\": \"Tests the effect of AR activities on preschool children's spatial skills.\"}, {\"sira\": 15, \"baslik\": \"Augmented reality for preschool children: An experience with educational contents\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.1111/bjet.13168\", \"gerekce\": \"Evaluates the experience and learning effects of AR educational content in preschool settings.\"}, {\"sira\": 16, \"baslik\": \"Are augmented reality picture books magic or real for preschool children aged five to six?\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1111/bjet.12452\", \"gerekce\": \"Examines the effects of AR picture books on 5–6-year-olds' story comprehension and attitudes.\"}, {\"sira\": 17, \"baslik\": \"The current trends of augmented reality in early childhood education\", \"yil\": 2018, \"arxiv_id\": null, \"doi\": \"10.5121/ijma.2018.10606\", \"gerekce\": \"An early trend review of AR research in early childhood education.\"}, {\"sira\": 18, \"baslik\": \"Fun learning with AR alphabet book for preschool children\", \"yil\": 2013, \"arxiv_id\": null, \"doi\": \"10.1016/j.procs.2013.11.026\", \"gerekce\": \"One of the earliest examples of AR-supported alphabet learning in preschool.\"}, {\"sira\": 19, \"baslik\": \"Integration of augmented reality in the teaching of English as a foreign language in early childhood education\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1007/s10643-019-00999-5\", \"gerekce\": \"Investigates the use of AR for foreign-language teaching in early childhood.\"}, {\"sira\": 20, \"baslik\": \"Introducing augmented reality in early childhood literacy learning\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.25304/rlt.v29.2539\", \"gerekce\": \"Examines the pedagogical effects of AR in early literacy learning.\"}, {\"sira\": 21, \"baslik\": \"Personal identifiability of user tracking data during observation of 360-degree VR video\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1038/s41598-020-74486-y\", \"gerekce\": \"Shows that VR motion data is enough to identify individuals, a privacy risk that is especially critical for children.\"}, {\"sira\": 22, \"baslik\": \"Unique Identification of 50,000+ Virtual Reality Users from Head & Hand Motion Data\", \"yil\": 2023, \"arxiv_id\": \"2302.08927\", \"doi\": null, \"gerekce\": \"Demonstrates at scale that biometric motion data in VR uniquely identifies users.\"}, {\"sira\": 23, \"baslik\": \"Exploring the Unprecedented Privacy Risks of the Metaverse\", \"yil\": 2023, \"arxiv_id\": \"2207.13176\", \"doi\": null, \"gerekce\": \"Shows that VR can infer many sensitive attributes, such as age, which bears directly on child privacy.\"}, {\"sira\": 24, \"baslik\": \"Advantages and challenges associated with augmented reality for education: A systematic review of the literature\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1016/j.edurev.2016.11.002\", \"gerekce\": \"A highly cited systematic review of the pedagogical advantages and challenges of AR in education.\"}, {\"sira\": 25, \"baslik\": \"Meta-analysis of the impact of Augmented Reality on students' learning gains\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1016/j.edurev.2019.04.001\", \"gerekce\": \"A meta-analysis of AR's effect on learning gains, including effect sizes at early educational levels.\"}, {\"sira\": 26, \"baslik\": \"Augmented reality in education: a meta-review and cross-media analysis\", \"yil\": 2014, \"arxiv_id\": null, \"doi\": \"10.1007/s00779-013-0747-y\", \"gerekce\": \"A foundational meta-review of the learning effects of AR and the conditions under which they occur.\"}, {\"sira\": 27, \"baslik\": \"Augmenting the learning experience in primary and secondary school education: a systematic review of recent trends in augmented reality game-based learning\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1007/s10055-018-0347-2\", \"gerekce\": \"A systematic review of AR game-based learning in the early school years.\"}, {\"sira\": 28, \"baslik\": \"\\\"Making it real\\\": exploring the potential of augmented reality for teaching primary school science\", \"yil\": 2006, \"arxiv_id\": null, \"doi\": \"10.1007/s10055-006-0036-4\", \"gerekce\": \"A pioneering study of AR's potential and design requirements for teaching young children, from the teacher's perspective.\"}, {\"sira\": 29, \"baslik\": \"Using an augmented reality enhanced tabletop system to promote learning of mathematics: A case study with students with special educational needs\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.12973/eurasia.2017.00621a\", \"gerekce\": \"Shows the potential of AR for young children with special educational needs, including inclusion.\"}, {\"sira\": 30, \"baslik\": \"Children and Virtual Reality: Emerging Possibilities and Challenges\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"A report that reviews the possibilities and the health and safety and ethical challenges of children's VR use and frames open problems.\"}]}",
+ "ttft_ms": 40258,
+ "type": "result",
+ "duration_ms": 85758,
+ "uuid": "9c3387fa-9608-4c1e-9784-fd2ff3aac6cb",
+ "ttft_stream_ms": 1785,
+ "time_to_request_ms": 146,
+ "first_content_frame_ms": 1786,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

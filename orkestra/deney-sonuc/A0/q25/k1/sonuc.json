@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-191416-5c0b5b",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Büyük dil modellerinin eğitim verisinde belirli bir metnin yer alıp almadığını tespit etme (üyelik çıkarımı) ve test verisi kirlenmesi üzerine en önemli çalışmalar, güvenlik sonuçları ve açık problemler neler?",
+ "kesim": "2026-04-21",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.1175,
+ "sure_s": 48.2,
+ "web_arama": 0,
+ "token": {
+  "in": 2,
+  "out": 5271,
+  "cache_read": 3532,
+  "cache_write": 1425
+ },
+ "son_rapor_token_tahmini": 2881,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: Büyük dil modellerinin eğitim verisinde belirli bir metnin yer alıp almadığını tespit etme (üyelik çıkarımı) ve test verisi kirlenmesi üzerine en önemli çalışmalar, güvenlik sonuçları ve açık problemler neler?\n\nCutoff date: 2026-04-21. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1610.05820",
+   "arxiv_id": "1610.05820",
+   "doi": "10.1109/SP.2017.41",
+   "baslik": "Membership Inference Attacks against Machine Learning Models",
+   "yil": 2017,
+   "gerekce": "This paper defined the membership inference attack and introduced the shadow-model method that all later work on detecting training data builds on."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2012.07805",
+   "arxiv_id": "2012.07805",
+   "doi": null,
+   "baslik": "Extracting Training Data from Large Language Models",
+   "yil": 2021,
+   "gerekce": "It showed that verbatim training data can be extracted from GPT-2 and used membership-inference signals to rank candidates, making LLM privacy risk concrete."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2310.16789",
+   "arxiv_id": "2310.16789",
+   "doi": null,
+   "baslik": "Detecting Pretraining Data from Large Language Models",
+   "yil": 2023,
+   "gerekce": "It introduced the Min-K% Prob method and the WikiMIA benchmark, which became the standard baseline for reference-free detection of pretraining data."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2402.07841",
+   "arxiv_id": "2402.07841",
+   "doi": null,
+   "baslik": "Do Membership Inference Attacks Work on Large Language Models?",
+   "yil": 2024,
+   "gerekce": "Its MIMIR benchmark showed that membership inference on LLMs often performs near chance when the train/test distributions are properly matched."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2112.03570",
+   "arxiv_id": "2112.03570",
+   "doi": "10.1109/SP46214.2022.9833649",
+   "baslik": "Membership Inference Attacks From First Principles",
+   "yil": 2022,
+   "gerekce": "It introduced the LiRA attack and evaluation by true-positive rate at low false-positive rates, which set the methodological standard for the field."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2202.07646",
+   "arxiv_id": "2202.07646",
+   "doi": null,
+   "baslik": "Quantifying Memorization Across Neural Language Models",
+   "yil": 2022,
+   "gerekce": "It showed that memorization grows log-linearly with model size, data duplication and context length."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2310.17623",
+   "arxiv_id": "2310.17623",
+   "doi": null,
+   "baslik": "Proving Test Set Contamination in Black Box Language Models",
+   "yil": 2023,
+   "gerekce": "It provides a black-box statistical test for test-set contamination, based on how likely the model finds the original ordering of benchmark examples."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2406.16201",
+   "arxiv_id": "2406.16201",
+   "doi": null,
+   "baslik": "Blind Baselines Beat Membership Inference Attacks for Foundation Models",
+   "yil": 2024,
+   "gerekce": "It showed that blind baselines that never query the model beat the published attacks, exposing distribution shift in the evaluation datasets."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2406.17975",
+   "arxiv_id": "2406.17975",
+   "doi": null,
+   "baslik": "SoK: Membership Inference Attacks on LLMs are Rushing Nowhere (and How to Fix It)",
+   "yil": 2024,
+   "gerekce": "It systematizes the flawed post-hoc evaluation setups in LLM membership inference and proposes randomized test designs."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2308.08493",
+   "arxiv_id": "2308.08493",
+   "doi": null,
+   "baslik": "Time Travel in LLMs: Tracing Data Contamination in Large Language Models",
+   "yil": 2023,
+   "gerekce": "It introduced guided-instruction prompting to detect contamination at the instance and partition level."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2310.18018",
+   "arxiv_id": "2310.18018",
+   "doi": null,
+   "baslik": "NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark",
+   "yil": 2023,
+   "gerekce": "This position paper made data contamination a central problem for reliable NLP evaluation."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2305.18462",
+   "arxiv_id": "2305.18462",
+   "doi": null,
+   "baslik": "Membership Inference Attacks against Language Models via Neighbourhood Comparison",
+   "yil": 2023,
+   "gerekce": "It proposed a reference-model-free attack that compares a text's loss with the losses of its neighbor texts."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2404.02936",
+   "arxiv_id": "2404.02936",
+   "doi": null,
+   "baslik": "Min-K%++: Improved Baseline for Detecting Pre-Training Data from Large Language Models",
+   "yil": 2024,
+   "gerekce": "It improved Min-K% with normalized token scores based on local-maximum detection, giving a stronger baseline."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2406.06443",
+   "arxiv_id": "2406.06443",
+   "doi": null,
+   "baslik": "LLM Dataset Inference: Did you train on my dataset?",
+   "yil": 2024,
+   "gerekce": "It moved the problem from single examples to whole datasets, enabling statistically significant detection for copyright claims."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2311.17035",
+   "arxiv_id": "2311.17035",
+   "doi": null,
+   "baslik": "Scalable Extraction of Training Data from (Production) Language Models",
+   "yil": 2023,
+   "gerekce": "It showed that large amounts of training data can be extracted even from aligned production models such as ChatGPT."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2406.04244",
+   "arxiv_id": "2406.04244",
+   "doi": null,
+   "baslik": "Benchmark Data Contamination of Large Language Models: A Survey",
+   "yil": 2024,
+   "gerekce": "It is a comprehensive survey of methods for detecting and mitigating benchmark contamination."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2311.09783",
+   "arxiv_id": "2311.09783",
+   "doi": null,
+   "baslik": "Investigating Data Contamination in Modern Benchmarks for Large Language Models",
+   "yil": 2023,
+   "gerekce": "Its TS-Guessing protocol found that models such as GPT-4 can guess hidden options in benchmarks like MMLU."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2402.15938",
+   "arxiv_id": "2402.15938",
+   "doi": null,
+   "baslik": "Generalization or Memorization: Data Contamination and Trustworthy Evaluation for Large Language Models",
+   "yil": 2024,
+   "gerekce": "It proposed CDD, which detects contamination from the output distribution alone, together with the TED trustworthy-evaluation method."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2405.00332",
+   "arxiv_id": "2405.00332",
+   "doi": null,
+   "baslik": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+   "yil": 2024,
+   "gerekce": "Using the new GSM1k set, it measured overfitting to GSM8K and the resulting drop in performance."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2203.08242",
+   "arxiv_id": "2203.08242",
+   "doi": null,
+   "baslik": "Data Contamination: From Memorization to Exploitation",
+   "yil": 2022,
+   "gerekce": "It was an early controlled study of how contamination in pretraining is exploited on downstream tasks."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2310.15007",
+   "arxiv_id": "2310.15007",
+   "doi": null,
+   "baslik": "Did the Neurons Read your Book? Document-level Membership Inference for Large Language Models",
+   "yil": 2023,
+   "gerekce": "It introduced document-level membership inference for copyrighted books and papers."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2402.09910",
+   "arxiv_id": "2402.09910",
+   "doi": null,
+   "baslik": "DE-COP: Detecting Copyrighted Content in Language Models Training Data",
+   "yil": 2024,
+   "gerekce": "It detects copyrighted content in training data with a multiple-choice test that asks the model to pick the verbatim passage among paraphrases."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2402.09363",
+   "arxiv_id": "2402.09363",
+   "doi": null,
+   "baslik": "Copyright Traps for Large Language Models",
+   "yil": 2024,
+   "gerekce": "It proposed injecting trap sequences into documents in advance so that their later use in training can be detected."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:1709.01604",
+   "arxiv_id": "1709.01604",
+   "doi": "10.1109/CSF.2018.00027",
+   "baslik": "Privacy Risk in Machine Learning: Analyzing the Connection to Overfitting",
+   "yil": 2018,
+   "gerekce": "It formalized the link between membership inference and overfitting and introduced the loss-threshold attack."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2202.06539",
+   "arxiv_id": "2202.06539",
+   "doi": null,
+   "baslik": "Deduplicating Training Data Mitigates Privacy Risks in Language Models",
+   "yil": 2022,
+   "gerekce": "It showed that data duplication drives memorization and membership-inference success, and that deduplication is an effective defense."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2409.19798",
+   "arxiv_id": "2409.19798",
+   "doi": null,
+   "baslik": "Membership Inference Attacks Cannot Prove that a Model Was Trained On Your Data",
+   "yil": 2024,
+   "gerekce": "It showed that membership inference cannot provide legally sound proof of training-data use, and recommends data canaries and similar alternatives."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2406.19314",
+   "arxiv_id": "2406.19314",
+   "doi": null,
+   "baslik": "LiveBench: A Challenging, Contamination-Free LLM Benchmark",
+   "yil": 2024,
+   "gerekce": "It is a leading continuously updated benchmark designed to prevent contamination."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2403.07974",
+   "arxiv_id": "2403.07974",
+   "doi": null,
+   "baslik": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+   "yil": 2024,
+   "gerekce": "It made contamination measurable for code by evaluating models on problems published after their training cutoff."
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2402.03927",
+   "arxiv_id": "2402.03927",
+   "doi": null,
+   "baslik": "Leak, Cheat, Repeat: Data Contamination and Evaluation Malpractices in Closed-Source LLMs",
+   "yil": 2024,
+   "gerekce": "It documented indirect data leakage from closed-source models through user interactions, and related problems in evaluation practice."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2411.00154",
+   "arxiv_id": "2411.00154",
+   "doi": null,
+   "baslik": "Scaling Up Membership Inference: When and How Attacks Succeed on Large Language Models",
+   "yil": 2024,
+   "gerekce": "It showed that membership inference becomes effective when aggregated at the document and collection level."
+  }
+ ]
+}

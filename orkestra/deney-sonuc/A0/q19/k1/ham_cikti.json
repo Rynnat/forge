@@ -1,0 +1,99 @@
+{
+ "duration_api_ms": 44929,
+ "stop_reason": "end_turn",
+ "session_id": "49c00d93-e736-41f3-841c-c35f7330a306",
+ "total_cost_usd": 0.1218584,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1383,
+  "cache_read_input_tokens": 3532,
+  "output_tokens": 5504,
+  "output_tokens_details": {
+   "thinking_tokens": 2012
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1383,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 5504,
+    "cache_read_input_tokens": 3532,
+    "cache_creation_input_tokens": 1383,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1383
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 5504,
+   "cacheReadInputTokens": 3532,
+   "cacheCreationInputTokens": 1383,
+   "webSearchRequests": 0,
+   "costUSD": 0.1218584,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2012,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 1,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [{\"sira\": 1, \"baslik\": \"ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning\", \"yil\": 2022, \"arxiv_id\": \"2203.10244\", \"doi\": null, \"gerekce\": \"It became the standard chart QA benchmark for multimodal models, with human-written questions that need visual and logical reasoning.\"}, {\"sira\": 2, \"baslik\": \"CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs\", \"yil\": 2024, \"arxiv_id\": \"2406.18521\", \"doi\": null, \"gerekce\": \"Using realistic charts from scientific papers, it shows a large gap between MLLMs and humans and that results on earlier benchmarks are inflated.\"}, {\"sira\": 3, \"baslik\": \"DePlot: One-shot visual language reasoning by plot-to-table translation\", \"yil\": 2022, \"arxiv_id\": \"2212.10505\", \"doi\": null, \"gerekce\": \"It set up the plot-to-table translation plus LLM reasoning paradigm.\"}, {\"sira\": 4, \"baslik\": \"MatCha: Enhancing Visual Language Pretraining with Math Reasoning and Chart Derendering\", \"yil\": 2022, \"arxiv_id\": \"2212.09662\", \"doi\": null, \"gerekce\": \"It showed that chart derendering and math reasoning pretraining improve chart understanding.\"}, {\"sira\": 5, \"baslik\": \"Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding\", \"yil\": 2022, \"arxiv_id\": \"2210.03347\", \"doi\": null, \"gerekce\": \"Its OCR-free visual language pretraining became the base architecture for many chart models.\"}, {\"sira\": 6, \"baslik\": \"ChartLlama: A Multimodal LLM for Chart Understanding and Generation\", \"yil\": 2023, \"arxiv_id\": \"2311.16483\", \"doi\": null, \"gerekce\": \"It is one of the first LLaVA-style chart MLLMs trained on GPT-4-generated chart instruction data.\"}, {\"sira\": 7, \"baslik\": \"UniChart: A Universal Vision-language Pretrained Model for Chart Comprehension and Reasoning\", \"yil\": 2023, \"arxiv_id\": \"2305.14761\", \"doi\": null, \"gerekce\": \"It brought chart-specific pretraining objectives together in one universal model.\"}, {\"sira\": 8, \"baslik\": \"PlotQA: Reasoning over Scientific Plots\", \"yil\": 2020, \"arxiv_id\": \"1909.00997\", \"doi\": null, \"gerekce\": \"It is a large-scale QA dataset over scientific plots that needs open-vocabulary answers and numerical reasoning.\"}, {\"sira\": 9, \"baslik\": \"ChartX & ChartVLM: A Versatile Benchmark and Foundation Model for Complicated Chart Reasoning\", \"yil\": 2024, \"arxiv_id\": \"2402.12185\", \"doi\": null, \"gerekce\": \"It provides a multi-task benchmark across many chart types and a foundation model for complex chart reasoning.\"}, {\"sira\": 10, \"baslik\": \"ChartGemma: Visual Instruction-tuning for Chart Reasoning in the Wild\", \"yil\": 2024, \"arxiv_id\": \"2407.04172\", \"doi\": null, \"gerekce\": \"It showed that instruction data generated directly from chart images works better than training on the underlying data tables.\"}, {\"sira\": 11, \"baslik\": \"MMC: Advancing Multimodal Chart Understanding with Large-scale Instruction Tuning\", \"yil\": 2023, \"arxiv_id\": \"2311.10774\", \"doi\": null, \"gerekce\": \"It contributed a large-scale chart instruction dataset and a benchmark.\"}, {\"sira\": 12, \"baslik\": \"ChartAssisstant: A Universal Chart Multimodal Language Model via Chart-to-Table Pre-training and Multitask Instruction Tuning\", \"yil\": 2024, \"arxiv_id\": \"2401.02384\", \"doi\": null, \"gerekce\": \"It combined chart-to-table pretraining with multi-task instruction tuning.\"}, {\"sira\": 13, \"baslik\": \"ChartBench: A Benchmark for Complex Visual Reasoning in Charts\", \"yil\": 2023, \"arxiv_id\": \"2312.15915\", \"doi\": null, \"gerekce\": \"It uses charts without data annotations to show how much MLLMs rely on OCR shortcuts.\"}, {\"sira\": 14, \"baslik\": \"From Pixels to Insights: A Survey on Automatic Chart Understanding in the Era of Large Foundation Models\", \"yil\": 2024, \"arxiv_id\": \"2403.12027\", \"doi\": null, \"gerekce\": \"It is a comprehensive survey of the field and lays out its limitations and open problems.\"}, {\"sira\": 15, \"baslik\": \"ChartInstruct: Instruction Tuning for Chart Comprehension and Reasoning\", \"yil\": 2024, \"arxiv_id\": \"2403.09028\", \"doi\": null, \"gerekce\": \"It is a large chart instruction-tuning dataset with accompanying models.\"}, {\"sira\": 16, \"baslik\": \"FigureQA: An Annotated Figure Dataset for Visual Reasoning\", \"yil\": 2017, \"arxiv_id\": \"1710.07300\", \"doi\": null, \"gerekce\": \"It is one of the first synthetic figure QA datasets.\"}, {\"sira\": 17, \"baslik\": \"DVQA: Understanding Data Visualizations via Question Answering\", \"yil\": 2018, \"arxiv_id\": \"1801.08163\", \"doi\": null, \"gerekce\": \"It was an early dataset that defined bar chart QA and the out-of-vocabulary answer problem.\"}, {\"sira\": 18, \"baslik\": \"Chart-to-Text: A Large-Scale Benchmark for Chart Summarization\", \"yil\": 2022, \"arxiv_id\": \"2203.06486\", \"doi\": null, \"gerekce\": \"It is the main large-scale benchmark for chart summarization.\"}, {\"sira\": 19, \"baslik\": \"MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts\", \"yil\": 2023, \"arxiv_id\": \"2310.02255\", \"doi\": null, \"gerekce\": \"It is a widely used benchmark for mathematical reasoning in visual contexts, including figures and charts.\"}, {\"sira\": 20, \"baslik\": \"ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation\", \"yil\": 2024, \"arxiv_id\": \"2406.09961\", \"doi\": null, \"gerekce\": \"It evaluates cross-modal reasoning through chart-to-code generation.\"}, {\"sira\": 21, \"baslik\": \"TinyChart: Efficient Chart Understanding with Visual Token Merging and Program-of-Thoughts Learning\", \"yil\": 2024, \"arxiv_id\": \"2404.16635\", \"doi\": null, \"gerekce\": \"It combines efficient high-resolution chart processing with program-of-thoughts numerical reasoning.\"}, {\"sira\": 22, \"baslik\": \"OneChart: Purify the Chart Structural Extraction via One Auxiliary Token\", \"yil\": 2024, \"arxiv_id\": \"2404.09987\", \"doi\": null, \"gerekce\": \"It improves the reliability of structural data extraction from charts.\"}, {\"sira\": 23, \"baslik\": \"Are Large Vision Language Models up to the Challenge of Chart Comprehension and Reasoning? An Extensive Investigation into the Capabilities and Limitations of LVLMs\", \"yil\": 2024, \"arxiv_id\": \"2406.00257\", \"doi\": null, \"gerekce\": \"It systematically analyzes what LVLMs can and cannot do with charts, including hallucinations.\"}, {\"sira\": 24, \"baslik\": \"ChartQAPro: A More Diverse and Challenging Benchmark for Chart Question Answering\", \"yil\": 2025, \"arxiv_id\": \"2504.05506\", \"doi\": null, \"gerekce\": \"It addresses ChartQA's saturation with a more diverse and harder benchmark.\"}, {\"sira\": 25, \"baslik\": \"Distill Visual Chart Reasoning Ability from LLMs to MLLMs\", \"yil\": 2024, \"arxiv_id\": \"2410.18798\", \"doi\": null, \"gerekce\": \"Its code-based synthesis distills chart reasoning from LLMs into MLLMs.\"}, {\"sira\": 26, \"baslik\": \"ChartMoE: Mixture of Diversely Aligned Expert Connector for Chart Understanding\", \"yil\": 2024, \"arxiv_id\": \"2409.03277\", \"doi\": null, \"gerekce\": \"It improves chart understanding with a mixture-of-experts connector aligned to different tasks.\"}, {\"sira\": 27, \"baslik\": \"Plot2Code: A Comprehensive Benchmark for Evaluating Multi-modal Large Language Models in Code Generation from Scientific Plots\", \"yil\": 2024, \"arxiv_id\": \"2405.07990\", \"doi\": null, \"gerekce\": \"It benchmarks MLLMs on generating code from scientific plots.\"}, {\"sira\": 28, \"baslik\": \"mPLUG-DocOwl 1.5: Unified Structure Learning for OCR-free Document Understanding\", \"yil\": 2024, \"arxiv_id\": \"2403.12895\", \"doi\": null, \"gerekce\": \"It is a strong OCR-free MLLM for structure learning across documents and charts.\"}, {\"sira\": 29, \"baslik\": \"ChartCoder: Advancing Multimodal Large Language Model for Chart-to-Code Generation\", \"yil\": 2025, \"arxiv_id\": \"2501.06598\", \"doi\": null, \"gerekce\": \"It is a dedicated code-LLM-based model and large dataset for chart-to-code generation.\"}, {\"sira\": 30, \"baslik\": \"Effective Training Data Synthesis for Improving MLLM Chart Understanding\", \"yil\": 2025, \"arxiv_id\": \"2508.06492\", \"doi\": null, \"gerekce\": \"It shows how synthetic chart data can be made realistic and diverse enough to improve MLLMs.\"}]}",
+ "ttft_ms": 20831,
+ "type": "result",
+ "duration_ms": 45040,
+ "uuid": "fc4743e2-40c0-4a82-837b-3aac616f8e9d",
+ "ttft_stream_ms": 1832,
+ "time_to_request_ms": 110,
+ "first_content_frame_ms": 1832,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

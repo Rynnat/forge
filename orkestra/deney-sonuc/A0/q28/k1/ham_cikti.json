@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 64531,
+ "stop_reason": "end_turn",
+ "session_id": "952bbb91-d6b5-4d67-aac9-b710646728b6",
+ "total_cost_usd": 0.1616246,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 4149,
+  "cache_read_input_tokens": 14960,
+  "output_tokens": 5266,
+  "output_tokens_details": {
+   "thinking_tokens": 1782
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4149,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4885,
+    "cache_read_input_tokens": 6487,
+    "cache_creation_input_tokens": 1194,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1194
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 5266,
+   "cacheReadInputTokens": 14960,
+   "cacheCreationInputTokens": 4149,
+   "webSearchRequests": 0,
+   "costUSD": 0.141528,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1782,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 82811,
+   "outputTokens": 3631,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.0200966,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2106,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"SoK: Colluding Adversaries in Machine Learning Pipelines\", \"yil\": 2026, \"arxiv_id\": \"2606.10091\", \"doi\": null, \"gerekce\": \"This is the main systematization of collusion. It gives a framework for train-time and inference-time adversaries coordinating with each other, and for inference-time adversaries coordinating among themselves, plus guidelines for predicting collusion.\"},\n{\"sira\": 2, \"baslik\": \"Truth Serum: Poisoning Machine Learning Models to Reveal Their Secrets\", \"yil\": 2022, \"arxiv_id\": \"2204.00032\", \"doi\": \"10.1145/3548606.3560554\", \"gerekce\": \"It is the canonical demonstration that a poisoning adversary can greatly amplify membership and attribute inference attacks.\"},\n{\"sira\": 3, \"baslik\": \"Amplifying Membership Exposure via Data Poisoning\", \"yil\": 2022, \"arxiv_id\": \"2211.00463\", \"doi\": null, \"gerekce\": \"It shows that targeted clean-label poisoning raises the membership exposure of specific data points.\"},\n{\"sira\": 4, \"baslik\": \"SoK: Unintended Interactions among Machine Learning Defenses and Risks\", \"yil\": 2024, \"arxiv_id\": \"2312.04542\", \"doi\": null, \"gerekce\": \"It systematizes how defenses for one risk amplify or reduce other security, privacy and fairness risks.\"},\n{\"sira\": 5, \"baslik\": \"Property Inference from Poisoning\", \"yil\": 2022, \"arxiv_id\": \"2101.11073\", \"doi\": null, \"gerekce\": \"It shows that poisoning amplifies inference of a dataset's global properties.\"},\n{\"sira\": 6, \"baslik\": \"SNAP: Efficient Extraction of Private Properties with Poisoning\", \"yil\": 2023, \"arxiv_id\": \"2208.12348\", \"doi\": null, \"gerekce\": \"It makes property inference much more efficient by combining it with poisoning.\"},\n{\"sira\": 7, \"baslik\": \"Privacy Backdoors: Enhancing Membership Inference through Poisoning Pre-trained Models\", \"yil\": 2024, \"arxiv_id\": \"2404.01231\", \"doi\": null, \"gerekce\": \"It shows collusion between pre-trained model suppliers and inference attackers across the supply chain.\"},\n{\"sira\": 8, \"baslik\": \"Privacy Backdoors: Stealing Data with Corrupted Pretrained Models\", \"yil\": 2024, \"arxiv_id\": \"2404.00473\", \"doi\": null, \"gerekce\": \"It shows that a tampered pre-trained model can leak fine-tuning data.\"},\n{\"sira\": 9, \"baslik\": \"Conflicting Interactions Among Protection Mechanisms for Machine Learning Models\", \"yil\": 2023, \"arxiv_id\": \"2207.01991\", \"doi\": null, \"gerekce\": \"It empirically shows that protection mechanisms against different adversaries conflict with each other.\"},\n{\"sira\": 10, \"baslik\": \"Privacy Risks of Securing Machine Learning Models against Adversarial Examples\", \"yil\": 2019, \"arxiv_id\": \"1905.10291\", \"doi\": \"10.1145/3319535.3354211\", \"gerekce\": \"It shows that adversarial robustness defenses increase membership inference risk.\"},\n{\"sira\": 11, \"baslik\": \"On the Privacy Risks of Algorithmic Fairness\", \"yil\": 2021, \"arxiv_id\": \"2011.03731\", \"doi\": null, \"gerekce\": \"It shows that fairness constraints raise privacy risk for underrepresented groups.\"},\n{\"sira\": 12, \"baslik\": \"Exacerbating Algorithmic Bias through Fairness Attacks\", \"yil\": 2021, \"arxiv_id\": \"2012.08723\", \"doi\": null, \"gerekce\": \"It shows that poisoning attacks can deliberately worsen fairness.\"},\n{\"sira\": 13, \"baslik\": \"Poisoning Attacks on Algorithmic Fairness\", \"yil\": 2020, \"arxiv_id\": \"2004.07401\", \"doi\": null, \"gerekce\": \"It is foundational work on how a train-time adversary can degrade fairness.\"},\n{\"sira\": 14, \"baslik\": \"Practical Black-Box Attacks against Machine Learning\", \"yil\": 2017, \"arxiv_id\": \"1602.02697\", \"doi\": \"10.1145/3052973.3053009\", \"gerekce\": \"It is the classic example of a model extraction (substitute model) adversary enabling an evasion adversary.\"},\n{\"sira\": 15, \"baslik\": \"Stealing Machine Learning Models via Prediction APIs\", \"yil\": 2016, \"arxiv_id\": \"1609.02943\", \"doi\": null, \"gerekce\": \"It is the foundational model extraction attack, which acts as a stepping stone for later attacks.\"},\n{\"sira\": 16, \"baslik\": \"Knockoff Nets: Stealing Functionality of Black-Box Models\", \"yil\": 2019, \"arxiv_id\": \"1812.02766\", \"doi\": null, \"gerekce\": \"It shows functionality-stealing extraction that can feed other attacks.\"},\n{\"sira\": 17, \"baslik\": \"PRADA: Protecting Against DNN Model Stealing Attacks\", \"yil\": 2019, \"arxiv_id\": \"1805.02628\", \"doi\": null, \"gerekce\": \"It addresses detection of extraction attacks and connects them to transferable adversarial examples.\"},\n{\"sira\": 18, \"baslik\": \"Towards Reverse-Engineering Black-Box Neural Networks\", \"yil\": 2018, \"arxiv_id\": \"1711.01768\", \"doi\": null, \"gerekce\": \"It shows that inferring model attributes strengthens subsequent evasion attacks.\"},\n{\"sira\": 19, \"baslik\": \"Stealing Part of a Production Language Model\", \"yil\": 2024, \"arxiv_id\": \"2403.06634\", \"doi\": null, \"gerekce\": \"It shows extraction against production LLMs, which can enable further attacks.\"},\n{\"sira\": 20, \"baslik\": \"Membership Inference Attacks against Machine Learning Models\", \"yil\": 2017, \"arxiv_id\": \"1610.05820\", \"doi\": \"10.1109/SP.2017.41\", \"gerekce\": \"It is the foundational membership inference work and the target of many amplification attacks.\"},\n{\"sira\": 21, \"baslik\": \"Membership Inference Attacks From First Principles\", \"yil\": 2022, \"arxiv_id\": \"2112.03570\", \"doi\": null, \"gerekce\": \"It introduced LiRA, the strong attack used to measure membership inference amplified by collusion.\"},\n{\"sira\": 22, \"baslik\": \"Label-Only Membership Inference Attacks\", \"yil\": 2021, \"arxiv_id\": \"2007.14321\", \"doi\": null, \"gerekce\": \"It shows that adversarial-example (evasion) techniques power membership inference.\"},\n{\"sira\": 23, \"baslik\": \"The Privacy Onion Effect: Memorization is Relative\", \"yil\": 2022, \"arxiv_id\": \"2206.10469\", \"doi\": null, \"gerekce\": \"It shows that removing data or applying defenses exposes other points to privacy risk.\"},\n{\"sira\": 24, \"baslik\": \"Machine Learning Models that Remember Too Much\", \"yil\": 2017, \"arxiv_id\": \"1709.07886\", \"doi\": \"10.1145/3133956.3134077\", \"gerekce\": \"It shows a malicious training procedure covertly encoding data into the model.\"},\n{\"sira\": 25, \"baslik\": \"Formalizing and Estimating Distribution Inference Risks\", \"yil\": 2022, \"arxiv_id\": \"2109.06024\", \"doi\": null, \"gerekce\": \"It formalizes distribution and property inference, one of the risks that collusion amplifies.\"},\n{\"sira\": 26, \"baslik\": \"Dissecting Distribution Inference\", \"yil\": 2023, \"arxiv_id\": \"2212.07591\", \"doi\": null, \"gerekce\": \"It analyzes the factors that affect distribution inference, which helps explain enabling factors for collusion.\"},\n{\"sira\": 27, \"baslik\": \"Are Attribute Inference Attacks Just Imputation?\", \"yil\": 2022, \"arxiv_id\": \"2209.01292\", \"doi\": \"10.1145/3548606.3560663\", \"gerekce\": \"It re-evaluates attribute inference risk and is the basis for measuring attacks amplified by poisoning.\"},\n{\"sira\": 28, \"baslik\": \"Adversarial Examples Make Strong Poisons\", \"yil\": 2021, \"arxiv_id\": \"2106.10807\", \"doi\": null, \"gerekce\": \"It shows that inference-time adversarial example techniques combine with train-time poisoning.\"},\n{\"sira\": 29, \"baslik\": \"When Machine Unlearning Jeopardizes Privacy\", \"yil\": 2021, \"arxiv_id\": \"2005.02205\", \"doi\": \"10.1145/3460120.3484756\", \"gerekce\": \"It shows that a defense or mechanism introduced at one pipeline stage creates new privacy leakage.\"},\n{\"sira\": 30, \"baslik\": \"Fairwashing: the risk of rationalization\", \"yil\": 2019, \"arxiv_id\": \"1901.09749\", \"doi\": null, \"gerekce\": \"It shows that explanation mechanisms can be manipulated to hide fairness risks, an example of interaction between fairness and transparency risks.\"}\n]}",
+ "ttft_ms": 2528,
+ "type": "result",
+ "duration_ms": 65881,
+ "uuid": "3a4ace1e-9060-48f7-8fa2-a718cf8cf297",
+ "ttft_stream_ms": 1327,
+ "time_to_request_ms": 150,
+ "first_content_frame_ms": 1327,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

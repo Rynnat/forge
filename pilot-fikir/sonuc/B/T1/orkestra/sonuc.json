@@ -1,0 +1,967 @@
+{
+ "run_id": "20261025-192538-ae258a",
+ "soru": "What are the most important works and open problems in non-invasive EEG brain-computer interfaces with deep learning?",
+ "kesim": "2026-10-25",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.5534,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.072024,
+   "in": 1179,
+   "out": 3130,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.14499631000000002,
+   "in": 523757,
+   "out": 51808,
+   "web_search": 7
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.21296539999999997,
+   "in": 257357,
+   "out": 323004,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.123388,
+   "in": 11057,
+   "out": 1747,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 30.2,
+  "toplama:openalex": 1.0,
+  "web_isci": 80.6,
+  "toplama:crossref": 149.3,
+  "toplama:dblp": 303.1,
+  "toplama:arxiv": 385.4,
+  "toplama": 385.4,
+  "tekil+kesim_1": 42.8,
+  "atif": 219.0,
+  "okuyucu": 1068.9,
+  "damitma": 17.5,
+  "sef_final": 17.2,
+  "toplam": 1781.0
+ },
+ "ozet_token_tahmini": 3773,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "What are the foundational paradigms and classic (pre-deep-learning) signal processing and classification methods for non-invasive EEG BCIs?",
+    "sorgular": [
+     "\"common spatial patterns\" EEG motor imagery",
+     "\"brain-computer interface\" review EEG",
+     "P300 speller \"event-related potential\" classification",
+     "SSVEP \"canonical correlation analysis\"",
+     "Riemannian geometry EEG classification"
+    ],
+    "yeterli": "Covers the seminal BCI definition and review papers, the main paradigms (MI, P300/ERP, SSVEP) and the classic CSP/FBCSP, xDAWN, CCA and Riemannian baselines that deep models are compared against."
+   },
+   {
+    "id": "S2",
+    "soru": "What are the main deep learning architecture families for EEG decoding (CNNs, RNNs, Transformers, GNNs, hybrid models)?",
+    "sorgular": [
+     "EEGNet compact convolutional network",
+     "\"deep learning\" EEG decoding convolutional",
+     "transformer EEG classification attention",
+     "\"graph neural network\" EEG",
+     "\"deep convnet\" \"shallow convnet\" EEG"
+    ],
+    "yeterli": "Covers the canonical CNN models (EEGNet, Shallow/Deep ConvNet), key Transformer and hybrid models (e.g. EEG Conformer), and representative graph and recurrent approaches, along with systematic reviews of deep learning for EEG."
+   },
+   {
+    "id": "S3",
+    "soru": "How are self-supervised learning, pretraining and large EEG foundation models used for brain-computer interfaces?",
+    "sorgular": [
+     "EEG \"foundation model\" pretraining",
+     "\"self-supervised learning\" EEG",
+     "\"contrastive learning\" EEG representation",
+     "large brain model EEG transformer",
+     "masked autoencoder EEG pretraining"
+    ],
+    "yeterli": "Covers the major self-supervised and pretrained EEG models (BENDR, BIOT, LaBraM, EEGPT, CBraMod and similar) and benchmarks that evaluate how well they generalize."
+   },
+   {
+    "id": "S4",
+    "soru": "How do deep EEG-BCI methods handle cross-subject and cross-session variability (transfer learning, domain adaptation, calibration reduction)?",
+    "sorgular": [
+     "\"transfer learning\" EEG BCI",
+     "\"domain adaptation\" EEG cross-subject",
+     "\"euclidean alignment\" EEG",
+     "calibration-free BCI subject-independent",
+     "\"domain generalization\" EEG"
+    ],
+    "yeterli": "Covers the main transfer learning and domain adaptation reviews and methods, including alignment-based approaches and subject-independent deep models, along with evidence on how much calibration they save."
+   },
+   {
+    "id": "S5",
+    "soru": "Which datasets, benchmarks, software libraries and evaluation protocols are standard, and what reproducibility issues exist?",
+    "sorgular": [
+     "BCI Competition IV dataset 2a",
+     "MOABB benchmark reproducibility BCI",
+     "\"Temple University Hospital\" EEG corpus",
+     "OpenBMI large EEG dataset",
+     "braindecode deep learning EEG toolbox"
+    ],
+    "yeterli": "Covers the standard public datasets (BCI IV 2a/2b, PhysioNet MI, OpenBMI, TUH, SEED, DEAP), benchmarking frameworks such as MOABB and braindecode, and critiques of evaluation practice such as data leakage and within-subject versus cross-subject splits."
+   },
+   {
+    "id": "S6",
+    "soru": "What are the key applications of deep EEG BCIs (motor imagery control, speech/imagined speech decoding, visual/semantic decoding, emotion, rehabilitation)?",
+    "sorgular": [
+     "imagined speech EEG decoding deep learning",
+     "EEG \"visual decoding\" image reconstruction",
+     "EEG emotion recognition deep learning",
+     "motor imagery BCI stroke rehabilitation",
+     "\"brain-to-text\" EEG language decoding"
+    ],
+    "yeterli": "Covers representative high-impact application papers for motor control and rehabilitation, speech and language decoding, visual and image decoding, and affective BCIs, including critiques of the claims made in EEG-to-text work."
+   },
+   {
+    "id": "S7",
+    "soru": "What are the open problems: robustness, interpretability, BCI illiteracy, adversarial vulnerability, real-time online use, and privacy and ethics?",
+    "sorgular": [
+     "\"BCI illiteracy\" inefficiency",
+     "adversarial attacks EEG BCI",
+     "interpretability explainable EEG deep learning",
+     "online closed-loop BCI deep learning",
+     "EEG privacy neuroethics BCI"
+    ],
+    "yeterli": "Covers surveys and key studies on open challenges, including non-stationarity, BCI inefficiency, adversarial attacks, explainability, online evaluation, and privacy or ethical concerns, plus forward-looking roadmap papers."
+   },
+   {
+    "id": "S8",
+    "soru": "Which adjacent-area methods (sleep staging, clinical EEG and seizure detection, MEG and fMRI decoding, time-series foundation models) are reused in EEG-BCI deep learning?",
+    "sorgular": [
+     "sleep staging deep learning EEG",
+     "seizure detection EEG deep learning",
+     "MEG decoding speech perception deep learning",
+     "time series self-supervised representation learning",
+     "fMRI image reconstruction diffusion"
+    ],
+    "yeterli": "Covers the adjacent works whose architectures, pretraining schemes, or data augmentation methods are directly borrowed by EEG-BCI deep learning, such as MEG speech decoding, sleep staging nets and EEG augmentation studies."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Brain-computer interfaces for communication and control",
+    "yil": 2002
+   },
+   {
+    "baslik": "EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces",
+    "yil": 2018
+   },
+   {
+    "baslik": "Deep learning with convolutional neural networks for EEG decoding and visualization",
+    "yil": 2017
+   },
+   {
+    "baslik": "Deep learning-based electroencephalography analysis: a systematic review",
+    "yil": 2019
+   },
+   {
+    "baslik": "Deep learning for electroencephalogram (EEG) classification tasks: a review",
+    "yil": 2019
+   },
+   {
+    "baslik": "A review of classification algorithms for EEG-based brain–computer interfaces: a 10 year update",
+    "yil": 2018
+   },
+   {
+    "baslik": "Optimizing spatial filters for robust EEG single-trial analysis",
+    "yil": 2008
+   },
+   {
+    "baslik": "Multiclass brain–computer interface classification by Riemannian geometry",
+    "yil": 2012
+   },
+   {
+    "baslik": "Filter Bank Common Spatial Pattern (FBCSP) in Brain-Computer Interface",
+    "yil": 2008
+   },
+   {
+    "baslik": "EEG Conformer: Convolutional Transformer for EEG Decoding and Visualization",
+    "yil": 2023
+   },
+   {
+    "baslik": "BENDR: using transformers and a contrastive self-supervised learning task to learn from massive amounts of EEG data",
+    "yil": 2021
+   },
+   {
+    "baslik": "Large Brain Model for Learning Generic Representations with Tremendous EEG Data in BCI",
+    "yil": 2024
+   },
+   {
+    "baslik": "BIOT: Biosignal Transformer for Cross-data Learning in the Wild",
+    "yil": 2023
+   },
+   {
+    "baslik": "EEGPT: Pretrained Transformer for Universal and Reliable Representation of EEG Signals",
+    "yil": 2024
+   },
+   {
+    "baslik": "CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding",
+    "yil": 2025
+   },
+   {
+    "baslik": "Uncovering the structure of clinical EEG signals with self-supervised learning",
+    "yil": 2021
+   },
+   {
+    "baslik": "Transfer Learning for Brain–Computer Interfaces: A Euclidean Space Data Alignment Approach",
+    "yil": 2020
+   },
+   {
+    "baslik": "MOABB: trustworthy algorithm benchmarking for BCIs",
+    "yil": 2018
+   },
+   {
+    "baslik": "Review of the BCI Competition IV",
+    "yil": 2012
+   },
+   {
+    "baslik": "The Temple University Hospital EEG Data Corpus",
+    "yil": 2016
+   },
+   {
+    "baslik": "EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy",
+    "yil": 2019
+   },
+   {
+    "baslik": "Decoding speech perception from non-invasive brain recordings",
+    "yil": 2023
+   },
+   {
+    "baslik": "Transfer Learning for EEG-Based Brain–Computer Interfaces: A Review of Progress Made Since 2016",
+    "yil": 2022
+   },
+   {
+    "baslik": "Data augmentation for deep-learning-based electroencephalography",
+    "yil": 2020
+   },
+   {
+    "baslik": "Investigating the Use of Pretrained Convolutional Neural Network on Cross-Subject and Cross-Dataset EEG Emotion Recognition",
+    "yil": 2020
+   }
+  ],
+  "web_odaklari": [
+   "awesome EEG deep learning papers github",
+   "EEG foundation models brain-computer interface survey list",
+   "deep learning BCI reading list github"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:1611.08024",
+  "doi:10.1088/1741-2552/aab2f2",
+  "arXiv:1805.06427",
+  "doi:10.3389/fnins.2016.00196",
+  "doi:10.1088/1741-2552/ab0ab5",
+  "arXiv:2602.03269",
+  "arXiv:1806.07741",
+  "doi:10.26599/bsa.2018.9050010",
+  "doi:10.1093/gigascience/giz002",
+  "arXiv:1808.05464",
+  "arXiv:1901.05498",
+  "arXiv:1703.05051"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1611.08024",
+   "arxiv_id": "1611.08024",
+   "doi": "10.1088/1741-2552/aace8c",
+   "baslik": "EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces",
+   "yil": 2016,
+   "tarih": "2016-11-23",
+   "gerekce": "Introduces EEGNet, the canonical compact CNN designed to classify EEG signals accurately across different BCI paradigms.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Here, we ask if we can design a single CNN architecture to accurately classify EEG signals from different BCI paradigms",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 4990,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:1703.05051",
+   "arxiv_id": "1703.05051",
+   "doi": "10.1002/hbm.23730",
+   "baslik": "Deep learning with convolutional neural networks for EEG decoding and visualization",
+   "yil": 2017,
+   "tarih": "2017-03-15",
+   "gerekce": "Foundational deep ConvNet decoding paper showing batch normalization, ELUs and cropped training boosted performance, benchmarked against FBCSP.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our results show that recent advances from the machine learning field, including batch normalization and exponential linear units, together with a cropped training strategy, boosted the deep ConvNets decoding performance",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 3694,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1016/s1388-2457(02)00057-3",
+   "arxiv_id": null,
+   "doi": "10.1016/s1388-2457(02)00057-3",
+   "baslik": "Brain–computer interfaces for communication and control",
+   "yil": 2002,
+   "tarih": "2002-06",
+   "gerekce": "Foundational review of brain-computer interfaces for communication and control, anchoring the field's core paradigms.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 6528,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1088/1741-2552/aab2f2",
+   "arxiv_id": null,
+   "doi": "10.1088/1741-2552/aab2f2",
+   "baslik": "A review of classification algorithms for EEG-based brain–computer interfaces: a 10 year update",
+   "yil": 2018,
+   "tarih": "2018-04-16",
+   "gerekce": "Surveys BCI and machine learning literature from 2007 to 2017, covering classic and newer EEG classification approaches.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We surveyed the BCI and machine learning literature from 2007 to 2017 to identify the new classification approaches that have been investigated to design BCIs.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 2160,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:1901.05498",
+   "arxiv_id": "1901.05498",
+   "doi": "10.1088/1741-2552/ab260c",
+   "baslik": "Deep learning-based electroencephalography analysis: a systematic review",
+   "yil": 2019,
+   "tarih": "2019-01-16",
+   "gerekce": "Systematic review of 156 papers applying deep learning to EEG between 2010 and 2018, including BCI applications.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we review 156 papers that apply DL to EEG, published between January 2010 and July 2018",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1109/ijcnn.2008.4634130",
+   "arxiv_id": null,
+   "doi": "10.1109/ijcnn.2008.4634130",
+   "baslik": "Filter Bank Common Spatial Pattern (FBCSP) in Brain-Computer Interface",
+   "yil": 2008,
+   "tarih": "2008-06",
+   "gerekce": "Introduces Filter Bank Common Spatial Pattern, a foundational classic spatial-filtering method for BCIs.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 636,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1109/tbme.2011.2172210",
+   "arxiv_id": null,
+   "doi": "10.1109/tbme.2011.2172210",
+   "baslik": "Multiclass Brain–Computer Interface Classification by Riemannian Geometry",
+   "yil": 2012,
+   "tarih": "2012-04",
+   "gerekce": "Establishes Riemannian geometry for multiclass BCI classification, a major classic method family.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 850,
+   "rel": 2,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:1805.06427",
+   "arxiv_id": "1805.06427",
+   "doi": "10.1088/1741-2552/aadea0",
+   "baslik": "MOABB: Trustworthy algorithm benchmarking for BCIs",
+   "yil": 2018,
+   "tarih": "2018-05-16",
+   "gerekce": "MOABB benchmarking framework analyzing decoding algorithms across 12 open datasets with over 250 subjects; core reproducibility resource.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To validate our efforts, we analyze a set of state-of-the-art decoding algorithms across 12 open access datasets, with over 250 subjects",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 228,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2101.12037",
+   "arxiv_id": "2101.12037",
+   "doi": "10.3389/fnhum.2021.653659",
+   "baslik": "BENDR: using transformers and a contrastive self-supervised learning task to learn from massive amounts of EEG data",
+   "yil": 2021,
+   "tarih": "2021-01-28",
+   "gerekce": "BENDR adapts speech-recognition style transformers and contrastive self-supervised learning to learn from massive amounts of EEG data.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We specifically adapt an approach effectively used for automatic speech recognition, which similarly (to LMs) uses a self-supervised training objective to learn compressed representations of raw data signals",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 281,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2405.18765",
+   "arxiv_id": "2405.18765",
+   "doi": null,
+   "baslik": "Large Brain Model for Learning Generic Representations with Tremendous EEG Data in BCI",
+   "yil": 2024,
+   "tarih": "2024-05-29",
+   "gerekce": "Large Brain Model aims for universal EEG perceptual capabilities through unsupervised pre-training on tremendous EEG data.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We hope that LEMs can break through the limitations of different task types of EEG datasets, and obtain universal perceptual capabilities of EEG signals through unsupervised pre-training.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2412.07236",
+   "arxiv_id": "2412.07236",
+   "doi": null,
+   "baslik": "CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding",
+   "yil": 2024,
+   "tarih": "2024-12-10",
+   "gerekce": "CBraMod proposes a criss-cross brain foundation model for EEG decoding amid growing EEG foundation-model research.",
+   "gerekce_kokeni": "sef",
+   "alinti": "With the success of large language models, there is a growing body of studies focusing on EEG foundation models.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1109/tnsre.2022.3230250",
+   "arxiv_id": null,
+   "doi": "10.1109/tnsre.2022.3230250",
+   "baslik": "EEG Conformer: Convolutional Transformer for EEG Decoding and Visualization",
+   "yil": 2023,
+   "tarih": "2023",
+   "gerekce": "EEG Conformer is a convolutional transformer hybrid for EEG decoding and visualization, a highly cited architecture.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 1188,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:1808.05464",
+   "arxiv_id": "1808.05464",
+   "doi": "10.1109/tbme.2019.2913914",
+   "baslik": "Transfer Learning for Brain-Computer Interfaces: A Euclidean Space Data Alignment Approach",
+   "yil": 2018,
+   "tarih": "2018-08-08",
+   "gerekce": "Proposes Euclidean-space alignment of EEG trials across subjects to improve learning for a new subject; widely used transfer preprocessing.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose a novel approach to align EEG trials from different subjects in the Euclidean space to make them more similar, and hence improve the learning performance for a new subject",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 512,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2004.06286",
+   "arxiv_id": "2004.06286",
+   "doi": "10.1109/tcds.2020.3007453",
+   "baslik": "Transfer Learning for EEG-Based Brain-Computer Interfaces: A Review of Progress Made Since 2016",
+   "yil": 2020,
+   "tarih": "2020-04-13",
+   "gerekce": "Reviews transfer learning for EEG BCIs since 2016, using data from other subjects, sessions or devices to reduce calibration.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Transfer learning (TL), which utilizes data or knowledge from similar or relevant subjects/sessions/devices/tasks to facilitate learning for a new subject/session/device/task, is frequently used to reduce the amount of calibration effort",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2007.16104",
+   "arxiv_id": "2007.16104",
+   "doi": "10.1088/1741-2552/abca18",
+   "baslik": "Uncovering the structure of clinical EEG signals with self-supervised learning",
+   "yil": 2020,
+   "tarih": "2020-07-31",
+   "gerekce": "Investigates self-supervised learning to discover structure in unlabeled clinical EEG, bridging adjacent clinical domain and representation learning.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We investigated self-supervised learning (SSL), a promising technique for discovering structure in unlabeled data, to learn representations of EEG signals",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 242,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2311.03764",
+   "arxiv_id": "2311.03764",
+   "doi": "10.1109/isbi56570.2024.10635453",
+   "baslik": "Neuro-GPT: Towards A Foundation Model for EEG",
+   "yil": 2023,
+   "tarih": "2023-11-07",
+   "gerekce": "Neuro-GPT foundation model pre-trained on large-scale data via self-supervised reconstruction of masked EEG segments.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The foundation model is pre-trained on a large-scale data set using a self-supervised task that learns how to reconstruct masked EEG segments",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "web"
+   ],
+   "atif": 46,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.52202/079017-1239",
+   "arxiv_id": null,
+   "doi": "10.52202/079017-1239",
+   "baslik": "EEGPT: Pretrained Transformer for Universal and Reliable Representation of EEG Signals",
+   "yil": 2024,
+   "tarih": "2024",
+   "gerekce": "EEGPT presents a pretrained transformer for universal and reliable representations of EEG signals.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 63,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.52202/075280-3420",
+   "arxiv_id": null,
+   "doi": "10.52202/075280-3420",
+   "baslik": "BIOT: Biosignal Transformer for Cross-data Learning in the Wild",
+   "yil": 2023,
+   "tarih": "2023",
+   "gerekce": "BIOT biosignal transformer enables cross-data learning from heterogeneous EEG recordings in the wild.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 68,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.1093/gigascience/giz002",
+   "arxiv_id": null,
+   "doi": "10.1093/gigascience/giz002",
+   "baslik": "EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy",
+   "yil": 2019,
+   "tarih": "2019-01-30",
+   "gerekce": "Provides a three-paradigm EEG dataset and OpenBMI toolbox while investigating general, severe cases of BCI illiteracy.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we looked for more general, severe cases of BCI illiteracy than have been previously reported in the literature",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 570,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1093/gigascience/gix034",
+   "arxiv_id": null,
+   "doi": "10.1093/gigascience/gix034",
+   "baslik": "EEG datasets for motor imagery brain–computer interface",
+   "yil": 2017,
+   "tarih": "2017-05-04",
+   "gerekce": "Widely used 52-subject motor imagery EEG dataset accompanied by psychological and physiological questionnaire results.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Here we present not only EEG datasets for MI BCI from 52 subjects, but also the results of a psychological and physiological questionnaire",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 331,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.3389/fnins.2016.00196",
+   "arxiv_id": null,
+   "doi": "10.3389/fnins.2016.00196",
+   "baslik": "The Temple University Hospital EEG Data Corpus",
+   "yil": 2013,
+   "tarih": "2013-12",
+   "gerekce": "Temple University Hospital EEG corpus, a large clinical EEG resource used for pretraining foundation models.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 514,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.3389/fnhum.2020.00103",
+   "arxiv_id": null,
+   "doi": "10.3389/fnhum.2020.00103",
+   "baslik": "Cross-Dataset Variability Problem in EEG Decoding With Deep Learning",
+   "yil": 2020,
+   "tarih": "2020-04-21",
+   "gerekce": "Addresses the cross-dataset variability problem in EEG decoding with deep learning, a key generalization issue.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 133,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2208.12266",
+   "arxiv_id": "2208.12266",
+   "doi": "10.1038/s42256-023-00714-5",
+   "baslik": "Decoding speech perception from non-invasive brain recordings",
+   "yil": 2022,
+   "tarih": "2022-08-25",
+   "gerekce": "Decodes perceived speech from non-invasive recordings of a large cohort using contrastive learning on self-supervised representations.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Here, we introduce a model trained with contrastive-learning to decode self-supervised representations of perceived speech from the non-invasive recordings of a large cohort of healthy individuals.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2403.07721",
+   "arxiv_id": "2403.07721",
+   "doi": "10.52202/079017-3266",
+   "baslik": "Visual Decoding and Reconstruction via EEG Embeddings with Guided Diffusion",
+   "yil": 2024,
+   "tarih": "2024-03-12",
+   "gerekce": "EEG-based visual decoding and reconstruction using EEG embeddings with guided diffusion, motivated by fMRI's cost and temporal limitations.",
+   "gerekce_kokeni": "sef",
+   "alinti": "However, the high cost and low temporal resolution of fMRI limit their applications in brain-computer interfaces (BCIs), prompting a high need for visual decoding based on electroencephalography (EEG).",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 60,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.5753/sbsi.2026.248345",
+   "arxiv_id": null,
+   "doi": "10.5753/sbsi.2026.248345",
+   "baslik": "Evaluating Robustness and Detection of Adversarial Attacks in EEG-Based Brain-Computer Interfaces",
+   "yil": 2026,
+   "tarih": "2026-05-25",
+   "gerekce": "Evaluates adversarial attacks on EEG-BCI classifiers, which can compromise accuracy, safety and user privacy.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Machine learning classifiers used in BCIs are vulnerable to adversarial attacks, which can compromise accuracy, safety, and user privacy.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 0,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2506.16168",
+   "arxiv_id": "2506.16168",
+   "doi": "10.1080/10447318.2025.2561185",
+   "baslik": "On using AI for EEG-based BCI applications: problems, current challenges and future trends",
+   "yil": 2025,
+   "tarih": "2025-06-19",
+   "gerekce": "Discusses problems, current challenges and future trends of AI-based EEG BCIs, including hurdles for foundational models' reliability.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Applying AI to real-world EEG-based BCIs, particularly in building powerful foundational models, presents unique and intricate hurdles that could affect their reliability",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:1806.07741",
+   "arxiv_id": "1806.07741",
+   "doi": "10.1109/smc.2018.00185",
+   "baslik": "A large-scale evaluation framework for EEG deep learning architectures",
+   "yil": 2018,
+   "tarih": "2018-06-18",
+   "gerekce": "Large-scale evaluation framework for EEG deep learning architectures across six classification problems, supporting reproducible benchmarking.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This framework comprises (i) a collection of EEG datasets currently including 100 examples (recording sessions) from six different classification problems",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2311.18520",
+   "arxiv_id": "2311.18520",
+   "doi": "10.1109/bci60775.2024.10480468",
+   "baslik": "Calibration-free online test-time adaptation for electroencephalography motor imagery decoding",
+   "yil": 2023,
+   "tarih": "2023-11-30",
+   "gerekce": "Calibration-free online test-time adaptation for motor imagery decoding that preserves privacy by not accessing source data.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our approach guarantees the preservation of privacy by eliminating the requirement to access the source data during the adaptation process.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 9,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1162/imag.a.1033",
+   "arxiv_id": null,
+   "doi": "10.1162/imag.a.1033",
+   "baslik": "What does my network learn? Assessing interpretability of deep learning for EEG",
+   "yil": 2025,
+   "tarih": "2025-12-02",
+   "gerekce": "Assesses interpretability of deep learning for EEG by examining what ResNet and EEGNet models learn.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We trained two convolutional neural networks (CNN): (1) ResNet, a residual network, and (2) EEGNet, which leverages spatiotemporal properties of EEG.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 1,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1038/s41597-022-01647-1",
+   "arxiv_id": null,
+   "doi": "10.1038/s41597-022-01647-1",
+   "baslik": "A large EEG dataset for studying cross-session variability in motor imagery brain-computer interface",
+   "yil": 2022,
+   "tarih": "2022-09-01",
+   "gerekce": "Large multi-day motor imagery dataset for studying cross-session variability, a long-standing BCI challenge.",
+   "gerekce_kokeni": "sef",
+   "alinti": "the classification of motor imagery (MI) from electroencephalography (EEG) across multiple days is a long-standing challenge due to the large variability of the EEG signals.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 96,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

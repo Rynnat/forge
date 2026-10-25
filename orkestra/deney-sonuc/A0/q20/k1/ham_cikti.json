@@ -1,0 +1,99 @@
+{
+ "duration_api_ms": 46340,
+ "stop_reason": "end_turn",
+ "session_id": "6ebc1e53-0ebb-41db-8986-7d7cee7d4f92",
+ "total_cost_usd": 0.1141744,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1415,
+  "cache_read_input_tokens": 3532,
+  "output_tokens": 5107,
+  "output_tokens_details": {
+   "thinking_tokens": 1537
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1415,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 5107,
+    "cache_read_input_tokens": 3532,
+    "cache_creation_input_tokens": 1415,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1415
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 5107,
+   "cacheReadInputTokens": 3532,
+   "cacheCreationInputTokens": 1415,
+   "webSearchRequests": 0,
+   "costUSD": 0.1141744,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1537,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 1,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"Towards Monosemanticity: Decomposing Language Models With Dictionary Learning\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"This Anthropic study trained a sparse autoencoder on a one-layer transformer's MLP activations and showed it found interpretable, monosemantic features, which set the template for the field.\"},\n{\"sira\": 2, \"baslik\": \"Sparse Autoencoders Find Highly Interpretable Features in Language Models\", \"yil\": 2023, \"arxiv_id\": \"2309.08600\", \"doi\": null, \"gerekce\": \"Working independently, it showed that SAE features are more interpretable than neurons or PCA/ICA directions, and that they help locate which features cause a model behavior.\"},\n{\"sira\": 3, \"baslik\": \"Toy Models of Superposition\", \"yil\": 2022, \"arxiv_id\": \"2209.10652\", \"doi\": null, \"gerekce\": \"It set out the superposition hypothesis, which is the main theoretical reason for using sparse dictionary learning.\"},\n{\"sira\": 4, \"baslik\": \"Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It scaled SAEs to a production-size LLM, found millions of abstract, multilingual and multimodal features, and showed they can be used to steer the model.\"},\n{\"sira\": 5, \"baslik\": \"Scaling and evaluating sparse autoencoders\", \"yil\": 2024, \"arxiv_id\": \"2406.04093\", \"doi\": null, \"gerekce\": \"OpenAI's TopK SAE work trained up to 16 million latents, reported scaling laws, dealt with dead latents, and proposed new evaluation metrics.\"},\n{\"sira\": 6, \"baslik\": \"Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models\", \"yil\": 2024, \"arxiv_id\": \"2403.19647\", \"doi\": null, \"gerekce\": \"It used SAE features to find causal circuits and applied them to downstream tasks such as removing a spurious correlation (SHIFT).\"},\n{\"sira\": 7, \"baslik\": \"Gemma Scope: Open Sparse Autoencoders Everywhere All At Once on Gemma 2\", \"yil\": 2024, \"arxiv_id\": \"2408.05147\", \"doi\": null, \"gerekce\": \"It released JumpReLU SAEs for every layer of Gemma 2, which became widely used open research infrastructure.\"},\n{\"sira\": 8, \"baslik\": \"Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders\", \"yil\": 2024, \"arxiv_id\": \"2407.14435\", \"doi\": null, \"gerekce\": \"It introduced the JumpReLU architecture, which trains directly on an L0 penalty and improves the reconstruction-sparsity trade-off.\"},\n{\"sira\": 9, \"baslik\": \"Improving Dictionary Learning with Gated Sparse Autoencoders\", \"yil\": 2024, \"arxiv_id\": \"2404.16014\", \"doi\": null, \"gerekce\": \"It fixed the shrinkage bias caused by the L1 penalty with a gated architecture.\"},\n{\"sira\": 10, \"baslik\": \"SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability\", \"yil\": 2025, \"arxiv_id\": \"2503.09532\", \"doi\": null, \"gerekce\": \"It provides a comprehensive benchmark that measures SAEs on many practical metrics, and shows that proxy metrics do not always track practical usefulness.\"},\n{\"sira\": 11, \"baslik\": \"Open Problems in Mechanistic Interpretability\", \"yil\": 2025, \"arxiv_id\": \"2501.16496\", \"doi\": null, \"gerekce\": \"This broad survey lays out the conceptual and practical open problems of SAEs and the sparse dictionary learning approach.\"},\n{\"sira\": 12, \"baslik\": \"Towards Principled Evaluations of Sparse Autoencoders for Interpretability and Control\", \"yil\": 2024, \"arxiv_id\": \"2405.08366\", \"doi\": null, \"gerekce\": \"It evaluated SAEs against supervised feature dictionaries on a task (IOI) where the ground truth is known.\"},\n{\"sira\": 13, \"baslik\": \"Automatically Interpreting Millions of Features in Large Language Models\", \"yil\": 2024, \"arxiv_id\": \"2410.13928\", \"doi\": null, \"gerekce\": \"It built an open, LLM-based pipeline for automatically explaining and scoring SAE features at scale.\"},\n{\"sira\": 14, \"baslik\": \"Language models can explain neurons in language models\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It introduced the explain-then-simulate automated interpretability method that underlies how SAE features are evaluated.\"},\n{\"sira\": 15, \"baslik\": \"A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders\", \"yil\": 2024, \"arxiv_id\": \"2409.14507\", \"doi\": null, \"gerekce\": \"It identified and measured feature absorption, a basic way SAEs fail.\"},\n{\"sira\": 16, \"baslik\": \"Transcoders Find Interpretable LLM Feature Circuits\", \"yil\": 2024, \"arxiv_id\": \"2406.11944\", \"doi\": null, \"gerekce\": \"It introduced transcoders, which approximate the MLP computation sparsely, and made circuit analysis at the level of input-independent weights possible.\"},\n{\"sira\": 17, \"baslik\": \"Identifying Functionally Important Features with End-to-End Sparse Dictionary Learning\", \"yil\": 2024, \"arxiv_id\": \"2405.12241\", \"doi\": null, \"gerekce\": \"It proposed e2e SAEs, which optimize for faithfulness to the model's downstream output instead of only reconstruction loss.\"},\n{\"sira\": 18, \"baslik\": \"Are Sparse Autoencoders Useful? A Case Study in Sparse Probing\", \"yil\": 2025, \"arxiv_id\": \"2502.16681\", \"doi\": null, \"gerekce\": \"It found that SAEs did not beat simple baselines on probing tasks, an important negative result about practical value.\"},\n{\"sira\": 19, \"baslik\": \"AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders\", \"yil\": 2025, \"arxiv_id\": \"2501.17148\", \"doi\": null, \"gerekce\": \"Its benchmark showed SAEs falling behind simple methods on steering and concept detection.\"},\n{\"sira\": 20, \"baslik\": \"Sparse Autoencoders Do Not Find Canonical Units of Analysis\", \"yil\": 2025, \"arxiv_id\": \"2502.04878\", \"doi\": null, \"gerekce\": \"Using SAE stitching and meta-SAEs, it showed that SAE features are not canonical, atomic units.\"},\n{\"sira\": 21, \"baslik\": \"Sparse Autoencoders Trained on the Same Data Learn Different Features\", \"yil\": 2025, \"arxiv_id\": \"2501.16615\", \"doi\": null, \"gerekce\": \"It showed that SAEs trained with different seeds learn substantially different features, raising doubts about reliability and identifiability.\"},\n{\"sira\": 22, \"baslik\": \"Sparse Autoencoders Can Interpret Randomly Initialized Transformers\", \"yil\": 2025, \"arxiv_id\": \"2501.17727\", \"doi\": null, \"gerekce\": \"It found that random models also give 'interpretable' features, questioning how valid automated interpretability metrics are.\"},\n{\"sira\": 23, \"baslik\": \"BatchTopK Sparse Autoencoders\", \"yil\": 2024, \"arxiv_id\": \"2412.06410\", \"doi\": null, \"gerekce\": \"It improved the TopK architecture by allowing adaptive sparsity at the batch level.\"},\n{\"sira\": 24, \"baslik\": \"Learning Multi-Level Features with Matryoshka Sparse Autoencoders\", \"yil\": 2025, \"arxiv_id\": \"2503.17547\", \"doi\": null, \"gerekce\": \"It reduced feature splitting and absorption with nested dictionaries that learn hierarchical features.\"},\n{\"sira\": 25, \"baslik\": \"Llama Scope: Extracting Millions of Features from Llama-3.1-8B with Sparse Autoencoders\", \"yil\": 2024, \"arxiv_id\": \"2410.20526\", \"doi\": null, \"gerekce\": \"It released a large open SAE suite for Llama-3.1-8B, widening research infrastructure.\"},\n{\"sira\": 26, \"baslik\": \"Decomposing The Dark Matter of Sparse Autoencoders\", \"yil\": 2024, \"arxiv_id\": \"2410.14670\", \"doi\": null, \"gerekce\": \"It analyzed the structure of SAE reconstruction error ('dark matter') and how predictable it is.\"},\n{\"sira\": 27, \"baslik\": \"Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models\", \"yil\": 2024, \"arxiv_id\": \"2408.00113\", \"doi\": null, \"gerekce\": \"It proposed measuring SAE quality with ground-truth features in chess and Othello models.\"},\n{\"sira\": 28, \"baslik\": \"Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small\", \"yil\": 2024, \"arxiv_id\": \"2409.04478\", \"doi\": null, \"gerekce\": \"It showed SAEs falling behind neurons and DAS-based baselines on causal disentanglement (RAVEL).\"},\n{\"sira\": 29, \"baslik\": \"Not All Language Model Features Are Linear\", \"yil\": 2024, \"arxiv_id\": \"2405.14860\", \"doi\": null, \"gerekce\": \"It used SAEs to find multi-dimensional, circular features, challenging the linear representation assumption.\"},\n{\"sira\": 30, \"baslik\": \"Transformer visualization via dictionary learning: contextualized embedding as a linear superposition of transformer factors\", \"yil\": 2021, \"arxiv_id\": \"2103.15949\", \"doi\": null, \"gerekce\": \"It is an early study that applied dictionary learning to decompose transformer embeddings into interpretable factors, and a precursor of the SAE approach.\"}\n]}",
+ "ttft_ms": 19671,
+ "type": "result",
+ "duration_ms": 46424,
+ "uuid": "1ea2466a-2515-4543-a188-40b40ffcbd2c",
+ "ttft_stream_ms": 2816,
+ "time_to_request_ms": 83,
+ "first_content_frame_ms": 2816,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

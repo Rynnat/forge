@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-185818-9af2fa",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Büyük dil modellerinde halüsinasyonların nedenleri, tespiti, azaltılması ve önlenmesi üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-06-20",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.1088,
+ "sure_s": 41.8,
+ "web_arama": 0,
+ "token": {
+  "in": 2,
+  "out": 4846,
+  "cache_read": 3532,
+  "cache_write": 1390
+ },
+ "son_rapor_token_tahmini": 2798,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: Büyük dil modellerinde halüsinasyonların nedenleri, tespiti, azaltılması ve önlenmesi üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-06-20. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2202.03629",
+   "arxiv_id": "2202.03629",
+   "doi": "10.1145/3571730",
+   "baslik": "Survey of Hallucination in Natural Language Generation",
+   "yil": 2022,
+   "gerekce": "This is the first broad survey of hallucination in NLG, and it set the intrinsic/extrinsic taxonomy the field uses."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2311.05232",
+   "arxiv_id": "2311.05232",
+   "doi": "10.1145/3703155",
+   "baslik": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+   "yil": 2023,
+   "gerekce": "It is the most cited survey that organizes the causes, detection, mitigation and open problems of LLM hallucination."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2509.04664",
+   "arxiv_id": "2509.04664",
+   "doi": null,
+   "baslik": "Why Language Models Hallucinate",
+   "yil": 2025,
+   "gerekce": "It traces hallucination to the statistics of pretraining and to evaluation schemes that reward guessing, and it proposes changing how models are scored."
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1038/s41586-024-07421-0",
+   "arxiv_id": null,
+   "doi": "10.1038/s41586-024-07421-0",
+   "baslik": "Detecting hallucinations in large language models using semantic entropy",
+   "yil": 2024,
+   "gerekce": "Published in Nature, it shows that confabulations can be detected without supervision by measuring uncertainty at the level of meaning."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2109.07958",
+   "arxiv_id": "2109.07958",
+   "doi": "10.18653/v1/2022.acl-long.229",
+   "baslik": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+   "yil": 2021,
+   "gerekce": "It is the basic benchmark for testing whether models repeat human falsehoods, and it showed that larger models are not necessarily more truthful."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2303.08896",
+   "arxiv_id": "2303.08896",
+   "doi": null,
+   "baslik": "SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models",
+   "yil": 2023,
+   "gerekce": "It introduced black-box detection that needs no external resources and works by checking consistency across sampled outputs."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2302.09664",
+   "arxiv_id": "2302.09664",
+   "doi": null,
+   "baslik": "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation",
+   "yil": 2023,
+   "gerekce": "It first proposed semantic entropy, which became the basis of uncertainty-based hallucination detection."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2207.05221",
+   "arxiv_id": "2207.05221",
+   "doi": null,
+   "baslik": "Language Models (Mostly) Know What They Know",
+   "yil": 2022,
+   "gerekce": "It showed that LLMs can be calibrated about whether their own answers are correct, which underpins self-evaluation and abstention."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2305.14251",
+   "arxiv_id": "2305.14251",
+   "doi": "10.18653/v1/2023.emnlp-main.741",
+   "baslik": "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation",
+   "yil": 2023,
+   "gerekce": "It made factuality in long-form text measurable by splitting outputs into atomic facts."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2311.14648",
+   "arxiv_id": "2311.14648",
+   "doi": null,
+   "baslik": "Calibrated Language Models Must Hallucinate",
+   "yil": 2023,
+   "gerekce": "It proves theoretically that a calibrated language model must hallucinate rare facts at some rate."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2401.11817",
+   "arxiv_id": "2401.11817",
+   "doi": null,
+   "baslik": "Hallucination is Inevitable: An Innate Limitation of Large Language Models",
+   "yil": 2024,
+   "gerekce": "It uses a formal, computability-based argument to show that hallucination cannot be eliminated entirely."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2005.11401",
+   "arxiv_id": "2005.11401",
+   "doi": null,
+   "baslik": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+   "yil": 2020,
+   "gerekce": "It established RAG, the most widely used way to reduce hallucination by grounding outputs in external knowledge."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2005.00661",
+   "arxiv_id": "2005.00661",
+   "doi": "10.18653/v1/2020.acl-main.173",
+   "baslik": "On Faithfulness and Factuality in Abstractive Summarization",
+   "yil": 2020,
+   "gerekce": "It was a pioneering systematic analysis of hallucination in summarization and of the difference between faithfulness and factuality."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2309.11495",
+   "arxiv_id": "2309.11495",
+   "doi": null,
+   "baslik": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+   "yil": 2023,
+   "gerekce": "It reduces hallucination by having the model plan and answer verification questions about its own draft."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2306.03341",
+   "arxiv_id": "2306.03341",
+   "doi": null,
+   "baslik": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model",
+   "yil": 2023,
+   "gerekce": "It shifts internal activations along 'truthfulness' directions and substantially improves truthfulness."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2309.03883",
+   "arxiv_id": "2309.03883",
+   "doi": null,
+   "baslik": "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+   "yil": 2023,
+   "gerekce": "It is an influential training-free decoding method that improves factuality by contrasting the outputs of different layers."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2310.11511",
+   "arxiv_id": "2310.11511",
+   "doi": null,
+   "baslik": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+   "yil": 2023,
+   "gerekce": "It teaches the model to decide when to retrieve and to critique its own outputs, improving factuality."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2305.11747",
+   "arxiv_id": "2305.11747",
+   "doi": "10.18653/v1/2023.emnlp-main.397",
+   "baslik": "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models",
+   "yil": 2023,
+   "gerekce": "It is a widely used large-scale benchmark for evaluating hallucination recognition."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2309.01219",
+   "arxiv_id": "2309.01219",
+   "doi": null,
+   "baslik": "Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+   "yil": 2023,
+   "gerekce": "It is a comprehensive LLM-focused survey that brings together the types of hallucination, their sources and mitigation methods."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2304.13734",
+   "arxiv_id": "2304.13734",
+   "doi": null,
+   "baslik": "The Internal State of an LLM Knows When It's Lying",
+   "yil": 2023,
+   "gerekce": "It showed that hidden activations can be used to predict whether a statement is true or false."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2212.03827",
+   "arxiv_id": "2212.03827",
+   "doi": null,
+   "baslik": "Discovering Latent Knowledge in Language Models Without Supervision",
+   "yil": 2022,
+   "gerekce": "It introduced CCS, a method that finds a latent truth representation without supervision and that started the probing line of work."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2405.05904",
+   "arxiv_id": "2405.05904",
+   "doi": null,
+   "baslik": "Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?",
+   "yil": 2024,
+   "gerekce": "It showed that fine-tuning on unfamiliar new knowledge increases hallucination, an important finding about causes."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2311.08401",
+   "arxiv_id": "2311.08401",
+   "doi": null,
+   "baslik": "Fine-tuning Language Models for Factuality",
+   "yil": 2023,
+   "gerekce": "It reduces hallucination by preference optimization with automatically generated factuality preferences."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2403.18802",
+   "arxiv_id": "2403.18802",
+   "doi": null,
+   "baslik": "Long-form factuality in large language models",
+   "yil": 2024,
+   "gerekce": "It introduced SAFE, a search-backed automatic evaluator, together with the LongFact benchmark for long-form factuality."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2305.13534",
+   "arxiv_id": "2305.13534",
+   "doi": null,
+   "baslik": "How Language Model Hallucinations Can Snowball",
+   "yil": 2023,
+   "gerekce": "It showed that models build on their earlier mistakes, so hallucinations accumulate."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2305.14552",
+   "arxiv_id": "2305.14552",
+   "doi": null,
+   "baslik": "Sources of Hallucination by Large Language Models on Inference Tasks",
+   "yil": 2023,
+   "gerekce": "It identified memorization and corpus-frequency heuristics as sources of hallucination."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2104.07567",
+   "arxiv_id": "2104.07567",
+   "doi": null,
+   "baslik": "Retrieval Augmentation Reduces Hallucination in Conversation",
+   "yil": 2021,
+   "gerekce": "It was early evidence that retrieval augmentation reduces hallucination in dialogue systems."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2210.08726",
+   "arxiv_id": "2210.08726",
+   "doi": null,
+   "baslik": "RARR: Researching and Revising What Language Models Say, Using Language Models",
+   "yil": 2022,
+   "gerekce": "It provided a post-hoc framework that adds attribution to outputs and revises them using retrieved evidence."
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2205.14334",
+   "arxiv_id": "2205.14334",
+   "doi": null,
+   "baslik": "Teaching Models to Express Their Uncertainty in Words",
+   "yil": 2022,
+   "gerekce": "It showed that models can learn to state their uncertainty in words in a calibrated way, which supports preventing hallucination."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2305.10355",
+   "arxiv_id": "2305.10355",
+   "doi": null,
+   "baslik": "Evaluating Object Hallucination in Large Vision-Language Models",
+   "yil": 2023,
+   "gerekce": "Its POPE benchmark made object hallucination in multimodal models measurable and extended the problem to vision-language models."
+  }
+ ]
+}

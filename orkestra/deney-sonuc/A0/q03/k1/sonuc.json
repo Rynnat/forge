@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-185046-66a54e",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Uç cihazlarda birlikte çalışan çoklu LLM ajanlarının sıfır güven mimarisiyle güvenliğinin sağlanması üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-07-27",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.1713,
+ "sure_s": 63.2,
+ "web_arama": 1,
+ "token": {
+  "in": 13053,
+  "out": 7067,
+  "cache_read": 8443,
+  "cache_write": 4835
+ },
+ "son_rapor_token_tahmini": 2897,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: Uç cihazlarda birlikte çalışan çoklu LLM ajanlarının sıfır güven mimarisiyle güvenliğinin sağlanması üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2025-07-27. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.6028/nist.sp.800-207",
+   "arxiv_id": null,
+   "doi": "10.6028/NIST.SP.800-207",
+   "baslik": "Zero Trust Architecture",
+   "yil": 2020,
+   "gerekce": "This is the basic NIST standard that defines zero-trust principles (never trust by default, always verify, least privilege), and every zero-trust multi-agent design builds on it."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2502.14143",
+   "arxiv_id": "2502.14143",
+   "doi": null,
+   "baslik": "Multi-Agent Risks from Advanced AI",
+   "yil": 2025,
+   "gerekce": "It sorts the risks of interacting AI agents (miscoordination, conflict, collusion) into a full taxonomy and sets the research agenda for multi-agent security."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2505.02077",
+   "arxiv_id": "2505.02077",
+   "doi": null,
+   "baslik": "Open Challenges in Multi-Agent Security: Towards Secure Systems of Interacting AI Agents",
+   "yil": 2025,
+   "gerekce": "It names multi-agent security as its own field and lays out the open problems in trust, identity and secure communication between agents."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2302.12173",
+   "arxiv_id": "2302.12173",
+   "doi": "10.1145/3605764.3623985",
+   "baslik": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+   "yil": 2023,
+   "gerekce": "It introduced indirect prompt injection, showing that external data an LLM reads cannot be trusted, which is the main motivation for zero trust in agents."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2410.07283",
+   "arxiv_id": "2410.07283",
+   "doi": null,
+   "baslik": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
+   "yil": 2024,
+   "gerekce": "It shows that a malicious prompt can spread from agent to agent like a virus, so implicit trust between agents is dangerous."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2402.08567",
+   "arxiv_id": "2402.08567",
+   "doi": null,
+   "baslik": "Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast",
+   "yil": 2024,
+   "gerekce": "It shows that an infectious jailbreak can spread exponentially through a population of multimodal agents."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2503.18813",
+   "arxiv_id": "2503.18813",
+   "doi": null,
+   "baslik": "Defeating Prompt Injections by Design",
+   "yil": 2025,
+   "gerekce": "CaMeL is a system-level defense that applies zero-trust thinking to agents by separating control flow from data flow and adding capability-based policies."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2503.09648",
+   "arxiv_id": "2503.09648",
+   "doi": null,
+   "baslik": "A Survey on Trustworthy LLM Agents: Threats and Countermeasures",
+   "yil": 2025,
+   "gerekce": "It systematically maps threats and countermeasures for intra-agent and agent-to-agent trust."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2406.02630",
+   "arxiv_id": "2406.02630",
+   "doi": "10.1145/3716628",
+   "baslik": "AI Agents Under Threat: A Survey of Key Security Challenges and Future Pathways",
+   "yil": 2024,
+   "gerekce": "It surveys the main security challenges for agents, including untrusted inputs, agent-to-agent interaction and the environment."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2502.14847",
+   "arxiv_id": "2502.14847",
+   "doi": null,
+   "baslik": "Red-Teaming LLM Multi-Agent Systems via Communication Attacks",
+   "yil": 2025,
+   "gerekce": "Its Agent-in-the-Middle attack shows that inter-agent communication channels need to be authenticated and verified."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2505.02279",
+   "arxiv_id": "2505.02279",
+   "doi": null,
+   "baslik": "A Survey of Agent Interoperability Protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)",
+   "yil": 2025,
+   "gerekce": "It compares the main inter-agent communication protocols and their security and identity mechanisms."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2503.23278",
+   "arxiv_id": "2503.23278",
+   "doi": null,
+   "baslik": "Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions",
+   "yil": 2025,
+   "gerekce": "It analyzes the security threats to MCP, the de facto standard for connecting agents to tools, and the open problems."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2504.16902",
+   "arxiv_id": "2504.16902",
+   "doi": null,
+   "baslik": "Building A Secure Agentic AI Application Leveraging A2A Protocol",
+   "yil": 2025,
+   "gerekce": "It gives a threat model and secure-implementation guidance for Google's A2A agent-to-agent protocol."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2505.19301",
+   "arxiv_id": "2505.19301",
+   "doi": null,
+   "baslik": "A Novel Zero-Trust Identity Framework for Agentic AI: Decentralized Authentication and Fine-Grained Access Control",
+   "yil": 2025,
+   "gerekce": "It proposes a zero-trust identity and access framework for agents based on DIDs and verifiable credentials."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2501.09674",
+   "arxiv_id": "2501.09674",
+   "doi": null,
+   "baslik": "Authenticated Delegation and Authorized AI Agents",
+   "yil": 2025,
+   "gerekce": "It extends OAuth/OpenID to agents for verifiable delegation of authority, which is a basic building block of zero trust."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2403.04960",
+   "arxiv_id": "2403.04960",
+   "doi": null,
+   "baslik": "IsolateGPT: An Execution Isolation Architecture for LLM-Based Agentic Systems",
+   "yil": 2024,
+   "gerekce": "It applies segmentation and least privilege to agent architecture by isolating apps from each other."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2504.11703",
+   "arxiv_id": "2504.11703",
+   "doi": null,
+   "baslik": "Progent: Programmable Privilege Control for LLM Agents",
+   "yil": 2025,
+   "gerekce": "It uses programmable policies to enforce least privilege on agent tool calls."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2502.11127",
+   "arxiv_id": "2502.11127",
+   "doi": null,
+   "baslik": "G-Safeguard: A Topology-Guided Security Lens and Treatment on LLM-based Multi-agent Systems",
+   "yil": 2025,
+   "gerekce": "It uses graph neural networks to detect compromised agents and intervene on the communication topology, a form of continuous verification."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2410.15686",
+   "arxiv_id": "2410.15686",
+   "doi": null,
+   "baslik": "NetSafe: Exploring the Topological Safety of Multi-agent Networks",
+   "yil": 2024,
+   "gerekce": "It studies how the topology of a multi-agent network affects the spread of misinformation and attacks."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2408.00989",
+   "arxiv_id": "2408.00989",
+   "doi": null,
+   "baslik": "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+   "yil": 2024,
+   "gerekce": "It measures how robust different collaboration structures are to faulty or malicious agents."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2407.07791",
+   "arxiv_id": "2407.07791",
+   "doi": null,
+   "baslik": "Flooding Spread of Manipulated Knowledge in LLM-Based Multi-Agent Communities",
+   "yil": 2024,
+   "gerekce": "It shows how manipulated knowledge spreads through agent communities, making the case for verifying shared information."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2401.11880",
+   "arxiv_id": "2401.11880",
+   "doi": null,
+   "baslik": "PsySafe: A Comprehensive Framework for Psychological-based Attack, Defense, and Evaluation of Multi-agent System Safety",
+   "yil": 2024,
+   "gerekce": "It offers an early framework that evaluates attacks and defenses in multi-agent systems together."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2503.12188",
+   "arxiv_id": "2503.12188",
+   "doi": null,
+   "baslik": "Multi-Agent Systems Execute Arbitrary Malicious Code",
+   "yil": 2025,
+   "gerekce": "It shows that trust relationships inside popular multi-agent frameworks can be hijacked to run arbitrary code."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2410.02644",
+   "arxiv_id": "2410.02644",
+   "doi": null,
+   "baslik": "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents",
+   "yil": 2024,
+   "gerekce": "It provides a comprehensive benchmark that formalizes attacks and defenses against agents."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2406.13352",
+   "arxiv_id": "2406.13352",
+   "doi": null,
+   "baslik": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+   "yil": 2024,
+   "gerekce": "It is the standard dynamic evaluation environment for prompt injection defenses in agents."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2504.19956",
+   "arxiv_id": "2504.19956",
+   "doi": null,
+   "baslik": "Securing Agentic AI: A Comprehensive Threat Model and Mitigation Framework for Generative AI Agents",
+   "yil": 2025,
+   "gerekce": "It presents the ATFAA threat model and the SHIELD mitigation framework for agent systems."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2506.04133",
+   "arxiv_id": "2506.04133",
+   "doi": null,
+   "baslik": "TRiSM for Agentic AI: A Review of Trust, Risk, and Security Management in LLM-based Agentic Multi-Agent Systems",
+   "yil": 2025,
+   "gerekce": "It reviews trust, risk and security management for LLM-based multi-agent systems."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2407.18921",
+   "arxiv_id": "2407.18921",
+   "doi": null,
+   "baslik": "Mobile Edge Intelligence for Large Language Models: A Contemporary Survey",
+   "yil": 2024,
+   "gerekce": "It covers deploying LLMs on edge devices along with the related privacy and security issues."
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2309.16739",
+   "arxiv_id": "2309.16739",
+   "doi": null,
+   "baslik": "Pushing Large Language Models to the 6G Edge: Vision, Challenges, and Opportunities",
+   "yil": 2023,
+   "gerekce": "It sets out the vision and challenges for running LLMs at the edge in 6G networks."
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1109/access.2022.3174679",
+   "arxiv_id": null,
+   "doi": "10.1109/ACCESS.2022.3174679",
+   "baslik": "Zero Trust Architecture (ZTA): A Comprehensive Survey",
+   "yil": 2022,
+   "gerekce": "It surveys zero-trust authentication, access control and continuous monitoring mechanisms and their open problems in distributed and IoT systems."
+  }
+ ]
+}

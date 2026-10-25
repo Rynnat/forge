@@ -1,0 +1,961 @@
+{
+ "run_id": "20261025-181048-a5ef03",
+ "soru": "Uzamsal bağlaşık (spatially coupled) kodlar, iletişim ve veri depolama için kodlama kuramındaki son gelişmeler üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-04-12",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6693,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.108036,
+   "in": 1223,
+   "out": 4913,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.19635718000000002,
+   "in": 698031,
+   "out": 35363,
+   "web_search": 11
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.21406119999999998,
+   "in": 203601,
+   "out": 346698,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.150836,
+   "in": 11678,
+   "out": 2871,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 48.0,
+  "toplama:openalex": 1.2,
+  "web_isci": 49.4,
+  "toplama:crossref": 118.5,
+  "toplama:dblp": 259.4,
+  "toplama:arxiv": 378.6,
+  "toplama": 378.6,
+  "tekil+kesim_1": 46.7,
+  "atif": 162.2,
+  "okuyucu": 366.8,
+  "damitma": 17.8,
+  "sef_final": 27.9,
+  "toplam": 1048.0
+ },
+ "ozet_token_tahmini": 3762,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Uzamsal bağlaşık LDPC kodlarının (LDPC evrişimli kodlar) temelleri ve eşik doygunluğu kuramı nedir? Bu kodların BP altında kapasiteye ulaşması nasıl kanıtlandı?",
+    "sorgular": [
+     "\"threshold saturation\" spatial coupling",
+     "\"LDPC convolutional codes\" iterative decoding threshold",
+     "\"spatially coupled\" ensembles capacity belief propagation",
+     "\"Maxwell saturation\" coupled scalar recursions",
+     "time-varying periodic convolutional codes low-density parity-check"
+    ],
+    "yeterli": "Felström–Zigangirov kökenleri, Kudekar–Richardson–Urbanke eşik doygunluğu kanıtları (BEC ve BMS) ve potansiyel fonksiyonu tabanlı genel ispatlar kapsanmışsa yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "Protograf tabanlı SC-LDPC kod yapıları, sonlu uzunluk tasarımı ve hata tabanı (error floor) optimizasyonu için hangi yöntemler geliştirildi?",
+    "sorgular": [
+     "protograph spatially coupled LDPC construction",
+     "SC-LDPC finite-length partitioning lifting",
+     "spatially coupled codes \"error floor\" absorbing sets",
+     "\"edge spreading\" SC-LDPC design",
+     "SC-LDPC \"scaling law\" finite-length"
+    ],
+    "yeterli": "Protograf kenar yayma yöntemleri, blok koddan evrişimli kod türetme, sonlu uzunluk ölçekleme yasaları ve yerel yapı ya da emici küme optimizasyonu çalışmaları bulunmuşsa yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Pencereli (windowed / sliding-window) kod çözme, düşük gecikmeli kod çözücüler ve donanım gerçeklemeleri hangi düzeye ulaştı?",
+    "sorgular": [
+     "\"windowed decoding\" LDPC convolutional codes",
+     "sliding window decoder spatially coupled latency",
+     "SC-LDPC decoder hardware implementation",
+     "low-latency spatially coupled codes streaming",
+     "pipeline decoder LDPC convolutional codes"
+    ],
+    "yeterli": "Pencereli kod çözme analizi, gecikme ve performans ödünleşimleri ile en az birkaç donanım veya VLSI çalışması kapsanmışsa yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "LDPC dışındaki bağlaşık kod aileleri nelerdir ve optik iletişimde nasıl kullanılır? Bu aileler arasında staircase, genelleştirilmiş çarpım (GPC), turbo benzeri, polar ve seyrek süperpozisyon kodları sayılabilir.",
+    "sorgular": [
+     "\"staircase codes\" optical FEC",
+     "spatially coupled \"product codes\" hard-decision decoding",
+     "\"spatially coupled turbo-like codes\"",
+     "spatially coupled polar codes",
+     "\"sparse superposition codes\" spatial coupling AMP"
+    ],
+    "yeterli": "Staircase, braided ve zipper kodları, SC-GLDPC ve çarpım kodları, SC turbo kodları ve SC-SPARC çalışmaları ile optik ağ standartlarındaki rolleri belirlenmişse yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Uzamsal bağlaşık kodlar veri depolamada nasıl uygulanır? Bu alan flash/NAND bellekleri, manyetik kayıt, DNA depolamayı ve çok boyutlu (MD) SC kodları kapsar.",
+    "sorgular": [
+     "spatially coupled codes flash memory",
+     "multi-dimensional spatially coupled codes storage",
+     "SC-LDPC magnetic recording",
+     "spatially coupled codes DNA storage",
+     "non-uniform channels spatially coupled codes Dolecek"
+    ],
+    "yeterli": "Flash ve manyetik kayıt için SC kod tasarımları, MD-SC kodlar ve kanal asimetrisine uyarlanmış yapılar kapsanmışsa yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Uzamsal bağlaşım fikri komşu alanlarda nasıl yeniden kullanıldı? Örnekler arasında sıkıştırılmış algılama, AMP, istatistiksel fizik, çok kullanıcılı ve kodlu modülasyon yer alır.",
+    "sorgular": [
+     "spatial coupling \"compressed sensing\" approximate message passing",
+     "\"coupled graphical models\" thresholds",
+     "spatially coupled CDMA multiuser detection",
+     "spatially coupled codes \"coded modulation\" BICM",
+     "spatial coupling statistical physics inference"
+    ],
+    "yeterli": "Sıkıştırılmış algılamadaki SC+AMP sonuçları, istatistiksel fizik bağlantıları ve çok kullanıcılı veya modülasyonlu iletişim uygulamaları kapsanmışsa yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Son gelişmeler ve açık problemler nelerdir? Bunlar arasında sonlu uzunlukta kapasiteye yaklaşma, oran uyumluluğu, 5G/6G ve kuantum SC kodları, makine öğrenmesi destekli tasarım ve kısmi bilgi bağlaşımı sayılabilir.",
+    "sorgular": [
+     "spatially coupled codes survey open problems",
+     "quantum spatially coupled LDPC codes",
+     "\"partially information coupled\" codes",
+     "rate-compatible SC-LDPC 6G",
+     "spatially coupled codes deep learning decoder"
+    ],
+    "yeterli": "2020 ve sonrasındaki derleme ve öncü çalışmalarla kuantum, ML, oran uyumlu ve düşük gecikmeli SC kod yönelimleri ve tanımlanmış açık sorular belirlenmişse yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Time-varying periodic convolutional codes with low-density parity-check matrix",
+    "yil": 1999
+   },
+   {
+    "baslik": "Threshold saturation via spatial coupling: Why convolutional LDPC ensembles perform so well over the BEC",
+    "yil": 2011
+   },
+   {
+    "baslik": "Spatially coupled ensembles universally achieve capacity under belief propagation",
+    "yil": 2013
+   },
+   {
+    "baslik": "Iterative decoding threshold analysis for LDPC convolutional codes",
+    "yil": 2010
+   },
+   {
+    "baslik": "Approaching capacity with asymptotically regular LDPC codes",
+    "yil": 2009
+   },
+   {
+    "baslik": "Spatially coupled sparse codes on graphs: theory and practice",
+    "yil": 2014
+   },
+   {
+    "baslik": "A simple proof of Maxwell saturation for coupled scalar recursions",
+    "yil": 2014
+   },
+   {
+    "baslik": "Threshold saturation for spatially coupled LDPC and LDGM codes on BMS channels",
+    "yil": 2014
+   },
+   {
+    "baslik": "Windowed decoding of protograph-based LDPC convolutional codes over erasure channels",
+    "yil": 2012
+   },
+   {
+    "baslik": "Spatially coupled LDPC codes constructed from protographs",
+    "yil": 2015
+   },
+   {
+    "baslik": "Deriving good LDPC convolutional codes from LDPC block codes",
+    "yil": 2011
+   },
+   {
+    "baslik": "A scaling law to predict the finite-length performance of spatially-coupled LDPC codes",
+    "yil": 2015
+   },
+   {
+    "baslik": "Wave-like solutions of general 1-D spatially coupled systems",
+    "yil": 2015
+   },
+   {
+    "baslik": "Coupled graphical models and their thresholds",
+    "yil": 2010
+   },
+   {
+    "baslik": "The effect of spatial coupling on compressive sensing",
+    "yil": 2010
+   },
+   {
+    "baslik": "Information-theoretically optimal compressed sensing via spatial coupling and approximate message passing",
+    "yil": 2013
+   },
+   {
+    "baslik": "Statistical-physics-based reconstruction in compressed sensing",
+    "yil": 2012
+   },
+   {
+    "baslik": "Staircase codes: FEC for 100 Gb/s OTN",
+    "yil": 2012
+   },
+   {
+    "baslik": "Approaching capacity at high rates with iterative hard-decision decoding",
+    "yil": 2017
+   },
+   {
+    "baslik": "Spatially coupled turbo-like codes",
+    "yil": 2017
+   },
+   {
+    "baslik": "Capacity-achieving sparse superposition codes via approximate message passing decoding",
+    "yil": 2017
+   },
+   {
+    "baslik": "Approximate message-passing decoder and capacity achieving sparse superposition codes",
+    "yil": 2017
+   },
+   {
+    "baslik": "Finite-length construction of high performance spatially-coupled codes via optimized partitioning and lifting",
+    "yil": 2019
+   }
+  ],
+  "web_odaklari": [
+   "spatially coupled LDPC codes reading list",
+   "awesome channel coding papers github spatially coupled",
+   "spatial coupling threshold saturation tutorial survey"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:1001.1826",
+  "doi:10.1109/tit.2010.2059490",
+  "arXiv:1309.7543",
+  "arXiv:1309.7910",
+  "arXiv:1201.2999",
+  "arXiv:1604.07315",
+  "arXiv:1112.0708",
+  "doi:10.1109/18.782171",
+  "arXiv:1407.5366",
+  "arXiv:1010.6020",
+  "arXiv:1010.4548",
+  "arXiv:1404.5719"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1001.1826",
+   "arxiv_id": "1001.1826",
+   "doi": "10.1109/isit.2010.5513587",
+   "baslik": "Threshold Saturation via Spatial Coupling: Why Convolutional LDPC Ensembles Perform so well over the BEC",
+   "yil": 2010,
+   "tarih": "2010-01-12",
+   "gerekce": "Kurucu çalışma: uzamsal bağlaşımın BP eşiğini mümkün olan en yüksek değerine çıkardığını, yani eşik doygunluğunu BEC üzerinde gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In essence, the spatial coupling of the individual code structure has the effect of increasing the belief-propagation (BP) threshold of the new ensemble to its maximum possible value",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 543,
+   "rel": 3,
+   "tohum_yakinligi": 9
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:1201.2999",
+   "arxiv_id": "1201.2999",
+   "doi": "10.1109/tit.2013.2280915",
+   "baslik": "Spatially Coupled Ensembles Universally Achieve Capacity under Belief Propagation",
+   "yil": 2012,
+   "tarih": "2012-01-14",
+   "gerekce": "Bağlaşık topluluklarının BP altında genel ikili girişli, belleksiz ve çıkış simetrik kanallarda evrensel olarak kapasiteye ulaştığını kanıtlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We show that the equivalent result holds true for transmission over general binary-input memoryless output-symmetric channels.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 309,
+   "rel": 3,
+   "tohum_yakinligi": 10
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1109/18.782171",
+   "arxiv_id": null,
+   "doi": "10.1109/18.782171",
+   "baslik": "Time-varying periodic convolutional codes with low-density parity-check matrix",
+   "yil": 1999,
+   "tarih": "1999",
+   "gerekce": "Düşük yoğunluklu eşlik matrisli, zamanla değişen periyodik evrişimli kodları tanıtan öncü LDPC evrişimli kod çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 629,
+   "rel": 2,
+   "tohum_yakinligi": 9
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:1309.7543",
+   "arxiv_id": "1309.7543",
+   "doi": "10.1109/tit.2014.2360692",
+   "baslik": "Threshold Saturation for Spatially-Coupled LDPC and LDGM Codes on BMS Channels",
+   "yil": 2013,
+   "tarih": "2013-09-29",
+   "gerekce": "Bağlaşık düzenli LDPC ve LDGM kodlarının BMS kanallarda BP altında evrensel olarak kapasiteye ulaştığı sonucunu ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In particular, it was proven that spatially-coupled regular LDPC codes universally achieve capacity over the class of binary memoryless symmetric (BMS) channels under belief-propagation decoding.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 78,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:1309.7910",
+   "arxiv_id": "1309.7910",
+   "doi": "10.1109/istc.2012.6325197",
+   "baslik": "A Simple Proof of Threshold Saturation for Coupled Vector Recursions",
+   "yil": 2012,
+   "tarih": "2012-04-25",
+   "gerekce": "Potansiyel fonksiyonlarına dayanan basit bir eşik doygunluğu ispatı sunar; bağlaşık özyinelemenin sabit noktasını bağlaşıksız potansiyelin minimumu belirler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our results actually show that the fixed point of the coupled recursion is essentially determined by the minimum of the uncoupled potential function",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 61,
+   "rel": 3,
+   "tohum_yakinligi": 7
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:1310.3724",
+   "arxiv_id": "1310.3724",
+   "doi": "10.1109/mcom.2014.6852099",
+   "baslik": "Spatially Coupled Sparse Codes on Graphs - Theory and Practice",
+   "yil": 2013,
+   "tarih": "2013-10-14",
+   "gerekce": "Uzamsal bağlaşık seyrek kodların kuramını ve pratiğini derleyen, geniş kanal koşullarındaki başarımlarını özetleyen bir derleme çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we review a particularly exciting new class of low-density parity-check codes, called spatially-coupled codes, which promise excellent performance over a broad range of channel conditions",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 71,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:cs/0508030",
+   "arxiv_id": "cs/0508030",
+   "doi": "10.1109/isit.2005.1523567",
+   "baslik": "Terminated LDPC Convolutional Codes with Thresholds Close to Capacity",
+   "yil": 2005,
+   "tarih": "2005-08-03",
+   "gerekce": "Sonlandırılmış LDPC evrişimli kodların yapısal düzensizliği sayesinde blok kodlardan çok daha iyi, kapasiteye yakın eşikler elde ettiğini gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We observe that the structured irregularity in the Tanner graph of the codes leads to significantly better thresholds when compared to corresponding LDPC block codes.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 8
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:1407.5366",
+   "arxiv_id": "1407.5366",
+   "doi": "10.1109/tit.2015.2453267",
+   "baslik": "Spatially Coupled LDPC Codes Constructed from Protographs",
+   "yil": 2014,
+   "tarih": "2014-07-21",
+   "gerekce": "Protograf tabanlı SC-LDPC kodlarını kurar; kapasiteye yaklaşan BP eşiklerini minimum uzaklığın doğrusal büyümesiyle tek tasarımda birleştirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We demonstrate that the resulting codes combine the best features of optimized irregular and regular codes in one design: capacity approaching iterative belief propagation (BP) decoding thresholds and linear growth of minimum distance with block length.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:1802.06481",
+   "arxiv_id": "1802.06481",
+   "doi": "10.1109/tcomm.2018.2867493",
+   "baslik": "Finite-Length Construction of High Performance Spatially-Coupled Codes via Optimized Partitioning and Lifting",
+   "yil": 2018,
+   "tarih": "2018-02-19",
+   "gerekce": "Sonlu uzunluk SC kodlarında zararlı kombinatoryal nesneleri sayar; optimize bölümleme ve kaldırma ile hata tabanını iyileştiren bir tasarım sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, we first introduce a general approach for the enumeration of detrimental combinatorial objects in the graph of finite-length SC codes.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 41,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:1404.5719",
+   "arxiv_id": "1404.5719",
+   "doi": "10.1109/tit.2015.2422816",
+   "baslik": "A Scaling Law to Predict the Finite-Length Performance of Spatially-Coupled LDPC Codes",
+   "yil": 2014,
+   "tarih": "2014-04-23",
+   "gerekce": "BEC üzerinde sonlu uzunluk bağlaşık toplulukların hata olasılığını öngören bir ölçekleme yasası önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose a scaling law to predict the error probability of finite-length spatially-coupled ensembles when transmission takes place over the binary erasure channel.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 53,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1109/tcomm.2020.3001029",
+   "arxiv_id": null,
+   "doi": "10.1109/tcomm.2020.3001029",
+   "baslik": "Designing Protograph-Based Quasi-Cyclic Spatially Coupled LDPC Codes With Large Girth",
+   "yil": 2020,
+   "tarih": "2020-09",
+   "gerekce": "Protograf tabanlı, büyük girth değerine sahip yarı devirli SC-LDPC kod tasarımını ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 28,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:1303.1858",
+   "arxiv_id": "1303.1858",
+   "doi": "10.1109/isit.2013.6620551",
+   "baslik": "On the Minimum Distance of Generalized Spatially Coupled LDPC Codes",
+   "yil": 2013,
+   "tarih": "2013-03-08",
+   "gerekce": "Genelleştirilmiş SC-LDPC topluluklarının asimptotik olarak iyi olduğunu ve yüksek minimum uzaklık büyüme oranlarına sahip olduğunu gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Here we show that, in addition to their excellent iterative decoding thresholds, ensembles of GSC-LDPC codes are asymptotically good and have large minimum distance growth rates.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 21,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:1010.4548",
+   "arxiv_id": "1010.4548",
+   "doi": "10.1109/tit.2011.2177439",
+   "baslik": "Windowed Decoding of Protograph-based LDPC Convolutional Codes over Erasure Channels",
+   "yil": 2010,
+   "tarih": "2010-10-21",
+   "gerekce": "Protograf tabanlı LDPC evrişimli kodlar için BP tabanlı pencereli kod çözmeyi silme kanallarında inceleyen temel çalışmadır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We consider a windowed decoding scheme for LDPC convolutional codes that is based on the belief-propagation (BP) algorithm.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 211,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1109/eucnc/6gsummit51104.2021.9482457",
+   "arxiv_id": null,
+   "doi": "10.1109/eucnc/6gsummit51104.2021.9482457",
+   "baslik": "A 336 Gbit/s Full-Parallel Window Decoder for Spatially Coupled LDPC Codes",
+   "yil": 2021,
+   "tarih": "2021-06-08",
+   "gerekce": "SC-LDPC kodları için 336 Gbit/s hızında tam paralel bir pencereli çözücü sunar; donanım gerçeklemesinde yüksek hız düzeyini temsil eder.",
+   "gerekce_kokeni": "sef",
+   "alinti": "A 336 Gbit/s Full-Parallel Window Decoder for Spatially Coupled LDPC Codes.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 13,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1109/icc.2016.7511553",
+   "arxiv_id": null,
+   "doi": "10.1109/icc.2016.7511553",
+   "baslik": "Fully parallel window decoder architecture for spatially-coupled LDPC codes",
+   "yil": 2016,
+   "tarih": "2016-05",
+   "gerekce": "Uzamsal bağlaşık LDPC kodları için tam paralel bir pencereli çözücü mimarisi önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Fully parallel window decoder architecture for spatially-coupled LDPC codes.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 14,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1109/tcomm.2016.2633466",
+   "arxiv_id": null,
+   "doi": "10.1109/tcomm.2016.2633466",
+   "baslik": "Non-Uniform Window Decoding Schedules for Spatially Coupled LDPC Codes",
+   "yil": 2017,
+   "tarih": "2017-02",
+   "gerekce": "SC-LDPC kodları için düzgün olmayan pencereli çözme çizelgelerini ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 27,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1109/access.2017.2771375",
+   "arxiv_id": null,
+   "doi": "10.1109/access.2017.2771375",
+   "baslik": "Improving Windowed Decoding of SC LDPC Codes by Effective Decoding Termination, Message Reuse, and Amplification",
+   "yil": 2018,
+   "tarih": "2018",
+   "gerekce": "Etkin sonlandırma, mesaj yeniden kullanımı ve güçlendirme yoluyla SC-LDPC pencereli çözmesini iyileştirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Improving Windowed Decoding of SC LDPC Codes by Effective Decoding Termination, Message Reuse, and Amplification.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 22,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:1201.4106",
+   "arxiv_id": "1201.4106",
+   "doi": "10.1109/jlt.2011.2175479",
+   "baslik": "Staircase Codes: FEC for 100 Gb/s OTN",
+   "yil": 2012,
+   "tarih": "2012-01-19",
+   "gerekce": "Yüksek hızlı optik iletişim için 100 Gb/s OTN'ye yönelik yeni bir FEC ailesi olarak staircase kodlarını tanıtır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Staircase codes, a new class of forward-error-correction (FEC) codes suitable for high-speed optical communications, are introduced.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 298,
+   "rel": 2,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:1202.6095",
+   "arxiv_id": "1202.6095",
+   "doi": "10.1109/isit.2012.6284009",
+   "baslik": "Approaching Capacity at High-Rates with Iterative Hard-Decision Decoding",
+   "yil": 2012,
+   "tarih": "2012-02-28",
+   "gerekce": "BCH bileşenli bağlaşık GLDPC kodlarının yüksek oranlarda yinelemeli sert karar çözmeyle kapasiteye yaklaşabildiğini gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Specifically, a class of spatially-coupled GLDPC codes with BCH component codes is considered, and it is observed that, in the high-rate regime, they can approach capacity under the proposed iterative HDD.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:1604.07315",
+   "arxiv_id": "1604.07315",
+   "doi": "10.1109/istc.2014.6955090",
+   "baslik": "Half Spatially Coupled Turbo-Like Codes",
+   "yil": 2014,
+   "tarih": "2014-04-09",
+   "gerekce": "Turbo benzeri topluluklar bağlaşarak uzamsal bağlaşık turbo benzeri kodlar kavramını tanıtır; LDPC dışı bir ailedir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, we introduce the concept of spatially coupled turbo-like codes (SC-TCs) as the spatial coupling of a number of turbo-like code ensembles.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 50,
+   "rel": 2,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2002.07844",
+   "arxiv_id": "2002.07844",
+   "doi": "10.1109/tit.2021.3083733",
+   "baslik": "Capacity-achieving Spatially Coupled Sparse Superposition Codes with AMP Decoding",
+   "yil": 2020,
+   "tarih": "2020-02-18",
+   "gerekce": "Bant köşegen tasarımlı uzamsal bağlaşık seyrek süperpozisyon kodlarının AMP çözmeyle AWGN kapasitesine ulaştığını kanıtlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Applying this bound to a simple band-diagonal design matrix, we prove that spatially coupled SPARCs with AMP decoding achieve the capacity of the AWGN channel.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 32,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:1503.08040",
+   "arxiv_id": "1503.08040",
+   "doi": "10.1109/tit.2017.2713833",
+   "baslik": "Approximate message-passing decoder and capacity-achieving sparse superposition codes",
+   "yil": 2015,
+   "tarih": "2015-03-27",
+   "gerekce": "Seyrek süperpozisyon kodlarında Shannon kapasitesine ulaşmak için uzamsal bağlaşımı yeni bir çözüm olarak önerir ve AMP çözücü sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We consider two solutions to this problem, that both allow to reach the Shannon capacity: i) a power allocation strategy and ii) the use of spatial coupling, a novelty for these codes that appears to be promising.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 97,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1109/istc49272.2021.9594120",
+   "arxiv_id": null,
+   "doi": "10.1109/istc49272.2021.9594120",
+   "baslik": "Design of Spatially Coupled Turbo Product Codes for Optical Communications",
+   "yil": 2021,
+   "tarih": "2021-08-30",
+   "gerekce": "Optik iletişim için uzamsal bağlaşık turbo çarpım kodlarının tasarımını ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 5,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:1804.05504",
+   "arxiv_id": "1804.05504",
+   "doi": "10.1109/tit.2020.2979981",
+   "baslik": "A Channel-Aware Combinatorial Approach to Design High Performance Spatially-Coupled Codes for Magnetic Recording Systems",
+   "yil": 2018,
+   "tarih": "2018-04-16",
+   "gerekce": "Yoğun veri depolama için manyetik kayıt sistemlerine yönelik kanal farkında, kombinatoryal yüksek başarımlı SC kod tasarımı sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Because of their capacity-approaching performance and their complexity/latency advantages, spatially-coupled (SC) codes are among the most attractive error-correcting codes for use in modern dense data storage systems.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 18,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1109/tmag.2016.2609937",
+   "arxiv_id": null,
+   "doi": "10.1109/tmag.2016.2609937",
+   "baslik": "Spatially Coupled Codes Optimized for Magnetic Recording Applications",
+   "yil": 2017,
+   "tarih": "2017-02",
+   "gerekce": "Manyetik kayıt uygulamaları için optimize edilmiş uzamsal bağlaşık kodları ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 20,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 26,
+   "id": "doi:10.1109/iccc62479.2024.10681799",
+   "arxiv_id": null,
+   "doi": "10.1109/iccc62479.2024.10681799",
+   "baslik": "Construction of Spatially Coupled GC-LDPC Code for NAND Flash Memory",
+   "yil": 2024,
+   "tarih": "2024-08-07",
+   "gerekce": "NAND flash bellek için uzamsal bağlaşık GC-LDPC kod yapısını önerir; depolama alanındaki güncel bir uygulamadır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 1,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:1112.0708",
+   "arxiv_id": "1112.0708",
+   "doi": "10.1109/tit.2013.2274513",
+   "baslik": "Information-Theoretically Optimal Compressed Sensing via Spatial Coupling and Approximate Message Passing",
+   "yil": 2011,
+   "tarih": "2011-12-04",
+   "gerekce": "Uzamsal bağlaşımdan esinlenen bant köşegen ölçüm matrisleri ve AMP ile bilgi kuramsal olarak optimal sıkıştırılmış algılamayı sağlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We study the compressed sensing reconstruction problem for a broad class of random, band-diagonal sensing matrices. This construction is inspired by the idea of spatial coupling in coding theory.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 143,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:1105.0785",
+   "arxiv_id": "1105.0785",
+   "doi": "10.1109/cig.2010.5592881",
+   "baslik": "Coupled Graphical Models and Their Thresholds",
+   "yil": 2010,
+   "tarih": "2010-08",
+   "gerekce": "Bağlaşım olgusunu kodlama kuramının ötesine taşır; genel grafik modelleri tek boyutlu zincire bağlayarak eşiklerini inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We investigate the generality of this phenomenon beyond coding theory: we couple general graphical models into a one-dimensional chain of large individual systems.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 37,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:1102.3061",
+   "arxiv_id": "1102.3061",
+   "doi": "10.1109/isit.2011.6033789",
+   "baslik": "Improvement of BP-Based CDMA Multiuser Detection by Spatial Coupling",
+   "yil": 2011,
+   "tarih": "2011-02-15",
+   "gerekce": "Rastgele yayılımlı CDMA sistemlerinde BP tabanlı çok kullanıcılı algılamayı iyileştirmek için uzamsal bağlaşım uygular.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, spatial coupling is applied to randomly-spread code-division multiple-access (CDMA) systems in order to improve the performance of BP-based multiuser detection (MUD).",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 28,
+   "rel": 2,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1109/itw.2012.6404686",
+   "arxiv_id": null,
+   "doi": "10.1109/itw.2012.6404686",
+   "baslik": "Spatially coupled quantum LDPC codes",
+   "yil": 2012,
+   "tarih": "2012-09",
+   "gerekce": "Uzamsal bağlaşık kuantum LDPC kodlarını ele alır; kuantum SC kodları açık problem alanıyla ilgilidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 10,
+   "rel": 2,
+   "tohum_yakinligi": 4
+  }
+ ]
+}

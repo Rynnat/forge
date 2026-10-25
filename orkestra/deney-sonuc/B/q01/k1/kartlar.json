@@ -1,0 +1,1033 @@
+[
+ {
+  "id": "arXiv:2308.15363",
+  "baslik": "Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation",
+  "yil": 2023,
+  "cites": 329,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Prompt-engineering benchmark for LLM Text-to-SQL; DAIL-SQL method",
+  "alinti": "Large language models (LLMs) have emerged as a new paradigm for Text-to-SQL task. However, the absence of a systematical benchmark inhibits the development of designing effective, efficient and economic LLM-based Text-to-SQL solutions."
+ },
+ {
+  "id": "arXiv:2402.18679",
+  "baslik": "Data Interpreter: An LLM Agent For Data Science",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "End-to-end LLM agent for data science workflows",
+  "alinti": "Our Data Interpreter incorporates two key modules: 1) Hierarchical Graph Modeling, which breaks down complex problems into manageable subproblems"
+ },
+ {
+  "id": "arXiv:2402.17453",
+  "baslik": "DS-Agent: Automated Data Science by Empowering Large Language Models with Case-Based Reasoning",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "LLM agent automating data science with case-based reasoning",
+  "alinti": "In this work, we investigate the potential of large language models (LLMs) based agents to automate data science tasks, with the goal of comprehending task requirements, then building and training the best-fit machine learning models."
+ },
+ {
+  "id": "arXiv:2410.07095",
+  "baslik": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Benchmark for ML engineering agents from Kaggle",
+  "alinti": "We introduce MLE-bench, a benchmark for measuring how well AI agents perform at machine learning engineering."
+ },
+ {
+  "id": "arXiv:2505.10468",
+  "baslik": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+  "yil": 2025,
+  "cites": 194,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Taxonomy of AI agents versus agentic AI, autonomy levels",
+  "alinti": "We then characterize Agentic AI systems, which, in contrast to AI Agents, represent a paradigm shift marked by multi-agent collaboration, dynamic task decomposition, persistent memory, and coordinated autonomy."
+ },
+ {
+  "id": "arXiv:1809.08887",
+  "baslik": "Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task",
+  "yil": 2018,
+  "cites": 809,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Spider cross-domain text-to-SQL dataset, foundational benchmark",
+  "alinti": "It consists of 10,181 questions and 5,693 unique complex SQL queries on 200 databases with multiple tables, covering 138 different domains."
+ },
+ {
+  "id": "arXiv:2410.12189",
+  "baslik": "DocETL: Agentic Query Rewriting and Evaluation for Complex Document Processing",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Agentic query rewriting for LLM document processing pipelines",
+  "alinti": "However, these frameworks focus on reducing cost when executing user-specified operations using LLMs, rather than improving accuracy"
+ },
+ {
+  "id": "arXiv:2304.11015",
+  "baslik": "DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction",
+  "yil": 2023,
+  "cites": 220,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Decomposed prompting with self-correction for Text-to-SQL",
+  "alinti": "Our experiments with three LLMs show that this approach consistently improves their simple few-shot performance by roughly 10%, pushing the accuracy of LLMs towards SOTA or surpassing it."
+ },
+ {
+  "id": "arXiv:2505.14738",
+  "baslik": "R&D-Agent: An LLM-Agent Framework Towards Autonomous Data Science",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Decoupled LLM agent framework for autonomous ML engineering",
+  "alinti": "R&D-Agent defines the MLE workflow into two phases and six components, turning agent design for MLE from ad-hoc craftsmanship into a principled, testable process."
+ },
+ {
+  "id": "arXiv:2305.03111",
+  "baslik": "Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "BIRD benchmark with large real database values",
+  "alinti": "we present Bird, a big benchmark for large-scale database grounded in text-to-SQL tasks, containing 12,751 pairs of text-to-SQL data and 95 databases"
+ },
+ {
+  "id": "arXiv:2409.00847",
+  "baslik": "The Design of an LLM-powered Unstructured Analytics System",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Declarative LLM analytics over unstructured documents",
+  "alinti": "With Aryn, users specify queries in natural language and the system automatically determines a semantic plan and executes it to compute an answer from a large collection of unstructured documents."
+ },
+ {
+  "id": "arXiv:2508.02744",
+  "baslik": "Large Language Model-based Data Science Agent: A Survey",
+  "yil": 2025,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Survey of LLM agents for data science workflows",
+  "alinti": "From the data science perspective, we identify key processes for LLM-based agents, including data preprocessing, model development, evaluation, visualization, etc."
+ },
+ {
+  "id": "arXiv:2505.07782",
+  "baslik": "MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Gym-style interactive environment for ML engineering agents",
+  "alinti": "Built upon 200+ real-world Kaggle challenges, MLE-Dojo covers diverse, open-ended MLE tasks carefully curated to reflect realistic engineering scenarios"
+ },
+ {
+  "id": "arXiv:2509.00997",
+  "baslik": "Supporting Our AI Overlords: Redesigning Data Systems to be Agent-First",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Agent-first data system design; agentic speculation workloads",
+  "alinti": "Large Language Model (LLM) agents, acting on their users' behalf to manipulate and analyze data, are likely to become the dominant workload for data systems in the future."
+ },
+ {
+  "id": "arXiv:2409.07703",
+  "baslik": "DSBench: How Far Are Data Science Agents from Becoming Data Science Experts?",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Benchmark for data science agents on analysis and modeling",
+  "alinti": "This benchmark includes 466 data analysis tasks and 74 data modeling tasks, sourced from Eloquence and Kaggle competitions."
+ },
+ {
+  "id": "arXiv:2410.20424",
+  "baslik": "AutoKaggle: A Multi-Agent Framework for Autonomous Data Science Competitions",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Multi-agent framework for tabular data science competitions",
+  "alinti": "AutoKaggle implements an iterative development process that combines code execution, debugging, and comprehensive unit testing to ensure code correctness and logic consistency."
+ },
+ {
+  "id": "arXiv:2402.01680",
+  "baslik": "Large Language Model based Multi-Agents: A Survey of Progress and Challenges",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "General survey of LLM-based multi-agent systems",
+  "alinti": "Due to the impressive planning and reasoning abilities of LLMs, they have been used as autonomous agents to do many tasks automatically."
+ },
+ {
+  "id": "arXiv:2407.15186",
+  "baslik": "A Survey on Employing Large Language Models for Text-to-SQL Tasks",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Survey of LLM text-to-SQL methods, benchmarks, metrics",
+  "alinti": "For the two mainstream methods, prompt engineering and finetuning, we introduce a comprehensive taxonomy and offer practical insights into each subcategory."
+ },
+ {
+  "id": "arXiv:2410.07331",
+  "baslik": "DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Ajan tabanlı veri bilimi kod üretimi benchmark'ı.",
+  "alinti": "We introduce DA-Code, a code generation benchmark specifically designed to assess LLMs on agent-based data science tasks."
+ },
+ {
+  "id": "arXiv:2410.01943",
+  "baslik": "CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Multi-path reasoning and candidate selection for text-to-SQL",
+  "alinti": "CHASE-SQL leverages LLMs' intrinsic knowledge to generate diverse and high-quality SQL candidates using different LLM generators with:"
+ },
+ {
+  "id": "arXiv:2410.01066",
+  "baslik": "From Natural Language to SQL: Review of LLM-based Text-to-SQL Systems",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Survey of LLM text-to-SQL, RAG, benchmarks, challenges",
+  "alinti": "Unlike previous reviews, this survey provides a comprehensive study of the evolution of LLM-based text-to-SQL systems, from early rule-based models to advanced LLM approaches that use (RAG) systems."
+ },
+ {
+  "id": "arXiv:2507.21504",
+  "baslik": "Evaluation and Benchmarking of LLM Agents: A Survey",
+  "yil": 2025,
+  "cites": 79,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Taxonomy of LLM agent evaluation with enterprise challenges",
+  "alinti": "In addition to taxonomy, we highlight enterprise-specific challenges, such as role-based access to data, the need for reliability guarantees, dynamic and long-horizon interactions, and compliance"
+ },
+ {
+  "id": "arXiv:2405.16755",
+  "baslik": "CHESS: Contextual Harnessing for Efficient SQL Synthesis",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Multi-agent text-to-SQL with schema pruning and unit tests",
+  "alinti": "We introduce CHESS, a Large Language Model (LLM) based multi-agent framework for efficient and scalable SQL synthesis"
+ },
+ {
+  "id": "arXiv:2506.15692",
+  "baslik": "MLE-STAR: Machine Learning Engineering Agent via Search and Targeted Refinement",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "MLE ajanı; arama ve hedefli iyileştirme ile ML otomasyonu.",
+  "alinti": "Agents based on large language models (LLMs) for machine learning engineering (MLE) can automatically implement ML models via code generation."
+ },
+ {
+  "id": "arXiv:2509.02751",
+  "baslik": "Deep Research is the New Analytics System: Towards Building the Runtime for AI-Driven Analytics",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Semantik operatörler ve derin araştırma ajanları için runtime.",
+  "alinti": "Recent work has explored executing such analytics queries using semantic operators -- a declarative set of AI-powered data transformations with natural language specifications."
+ },
+ {
+  "id": "arXiv:2408.05109",
+  "baslik": "A Survey of Text-to-SQL in the Era of LLMs: Where are we, and where are we going?",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM çağında Text-to-SQL kapsamlı derleme.",
+  "alinti": "In this survey, we provide a comprehensive review of Text-to-SQL techniques powered by LLMs, covering its entire lifecycle from the following four aspects"
+ },
+ {
+  "id": "arXiv:2406.01265",
+  "baslik": "The Dawn of Natural Language to SQL: Are We Fully Ready?",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "NL2SQL değerlendirme çerçevesi; üretime hazırlık analizi.",
+  "alinti": "we present a multi-angle NL2SQL evaluation framework, NL2SQL360, to facilitate the design and test of new NL2SQL methods for researchers."
+ },
+ {
+  "id": "doi:10.1007/s00778-022-00776-8",
+  "baslik": "A survey on deep learning approaches for text-to-SQL",
+  "yil": 2023,
+  "cites": 187,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Derin öğrenme tabanlı Text-to-SQL taksonomisi.",
+  "alinti": "The purpose of this survey is to present a detailed taxonomy of neural text-to-SQL systems that will enable a deeper study of all the parts of such a system."
+ },
+ {
+  "id": "arXiv:2205.09911",
+  "baslik": "Can Foundation Models Wrangle Your Data?",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "FM'lerin veri temizleme ve entegrasyonunda kullanımı.",
+  "alinti": "we cast five data cleaning and integration tasks as prompting tasks and evaluate the performance of FMs on these tasks."
+ },
+ {
+  "id": "arXiv:2506.10974",
+  "baslik": "AutoMind: Adaptive Knowledgeable Agent for Automated Data Science",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Adaptive agent for automated data science",
+  "alinti": "LLM-driven data science agents promise to automate the entire machine learning pipeline, yet their real-world effectiveness remains limited"
+ },
+ {
+  "id": "arXiv:2506.05364",
+  "baslik": "Survey of LLM Agent Communication with MCP: A Software Design Pattern Centric Review",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Agent communication design patterns with MCP, multi-agent",
+  "alinti": "It examines the foundational architectures of LLM-based agents and their evolution from isolated operation to sophisticated, multi-agent collaboration, addressing key communication hurdles"
+ },
+ {
+  "id": "arXiv:2503.16416",
+  "baslik": "Survey on Evaluation of LLM-based Agents",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Survey of evaluation methods for LLM agents",
+  "alinti": "We also identify critical gaps that future research must address, particularly in assessing cost-efficiency, safety, and robustness, and in developing fine-grained, scalable evaluation methods."
+ },
+ {
+  "id": "arXiv:2411.07763",
+  "baslik": "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Enterprise multi-dialect text-to-SQL workflow benchmark",
+  "alinti": "We introduce Spider 2.0, an evaluation framework comprising 632 real-world text-to-SQL workflow problems derived from enterprise-level database use cases."
+ },
+ {
+  "id": "arXiv:2505.19988",
+  "baslik": "Automatic Metadata Extraction for Text-to-SQL",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Text-to-SQL için otomatik metadata çıkarımı; veritabanı anlama.",
+  "alinti": "We explore the use of two standard and one newer metadata extraction techniques: profiling, query log analysis, and SQL-to text generation using an LLM."
+ },
+ {
+  "id": "arXiv:2312.11242",
+  "baslik": "MAC-SQL: A Multi-Agent Collaborative Framework for Text-to-SQL",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Çoklu ajan Text-to-SQL; dekompozer ve düzeltme ajanları.",
+  "alinti": "Our framework comprises a core decomposer agent for Text-to-SQL generation with few-shot chain-of-thought reasoning, accompanied by two auxiliary agents that utilize external tools or models"
+ },
+ {
+  "id": "arXiv:2505.14661",
+  "baslik": "Abacus: A Cost-Based Optimizer for Semantic Operator Systems",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Semantik operatörler için maliyet tabanlı optimizasyon.",
+  "alinti": "An optimizer for this setting must determine how to physically implement each semantic operator in a way that optimizes the system globally."
+ },
+ {
+  "id": "doi:10.15662/ijeetr.2025.0703007",
+  "baslik": "MarketingMind: A Multi-Agent LLM Architecture for Federated Natural Language Querying Across Enterprise Marketing Data Systems",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Kurumsal pazarlama verisi üzerinde çoklu ajan NL2SQL.",
+  "alinti": "The framework combines a ReAct-based orchestrator [14] with six dedicated agents responsible for schema discovery, natural language to SQL (NL-to-SQL) translation, hallucination mitigation"
+ },
+ {
+  "id": "doi:10.1007/s42979-025-03662-6",
+  "baslik": "LLM-Based Text-to-SQL for Real-World Databases",
+  "yil": 2025,
+  "cites": 16,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; no abstract provided for assessment",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.14778/3681954.3681960",
+  "baslik": "Combining Small Language Models and Large Language Models for Zero-Shot NL2SQL",
+  "yil": 2024,
+  "cites": 54,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Küçük+büyük dil modelleri ile sıfır atış NL2SQL.",
+  "alinti": "we propose a ZeroNL2SQL framework, which divides NL2SQL into smaller sub-tasks and utilizes both SLMs and LLMs."
+ },
+ {
+  "id": "arXiv:2508.01556",
+  "baslik": "Empowering Tabular Data Preparation with Language Models: Why and How?",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Survey of LMs for tabular data preparation; central to S4.",
+  "alinti": "In this survey, we systematically analyze the role of LMs in enhancing tabular data preparation processes, focusing on four core phases: data acquisition, integration, cleaning, and transformation."
+ },
+ {
+  "id": "arXiv:2508.17692",
+  "baslik": "LLM-based Agentic Reasoning Frameworks: A Survey from Methods to Scenarios",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Taxonomy of LLM agent reasoning frameworks, general",
+  "alinti": "This survey introduces a unified formal language to systematically categorize these frameworks at three compositional levels: single-agent, tool-based, and multi-agent methods."
+ },
+ {
+  "id": "arXiv:2412.17867",
+  "baslik": "Evaluating and Enhancing LLMs for Multi-turn Text-to-SQL with Multiple Question Types",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Çok turlu Text-to-SQL ve soru türü sınıflandırma.",
+  "alinti": "we propose MMSQL, a comprehensive test suite designed to evaluate the question classification and SQL generation capabilities of LLMs"
+ },
+ {
+  "id": "arXiv:2401.04398",
+  "baslik": "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Table reasoning via evolving tables",
+  "alinti": "We propose the Chain-of-Table framework, where tabular data is explicitly used in the reasoning chain as a proxy for intermediate thoughts"
+ },
+ {
+  "id": "arXiv:2410.06011",
+  "baslik": "Large Language Model Enhanced Text-to-SQL Generation: A Survey",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM destekli Text-to-SQL derlemesi; ajan grubu dahil.",
+  "alinti": "we survey the large language model enhanced text-to-SQL generations, classifying them into prompt engineering, fine-tuning, pre-trained, and Agent groups according to training strategies."
+ },
+ {
+  "id": "arXiv:2412.14222",
+  "baslik": "A Survey on Large Language Model-based Agents for Statistics and Data Science",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Veri bilimi ajanları üzerine kapsamlı derleme; açık problemler.",
+  "alinti": "In recent years, data science agents powered by Large Language Models (LLMs), known as \"data agents,\" have shown significant potential to transform the traditional data analysis paradigm."
+ },
+ {
+  "id": "arXiv:1911.04942",
+  "baslik": "RAT-SQL: Relation-Aware Schema Encoding and Linking for Text-to-SQL Parsers",
+  "yil": 2019,
+  "cites": 365,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Schema encoding and linking for text-to-SQL",
+  "alinti": "We present a unified framework, based on the relation-aware self-attention mechanism, to address schema encoding, schema linking, and feature representation"
+ },
+ {
+  "id": "arXiv:2407.19517",
+  "baslik": "Evaluating LLMs for Text-to-SQL Generation With Complex SQL Workload",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Compares TPC-DS complexity with BIRD and Spider",
+  "alinti": "Our findings reveal that TPC-DS queries exhibit a significantly higher level of structural complexity compared to the other two benchmarks."
+ },
+ {
+  "id": "arXiv:2504.14764",
+  "baslik": "Steering Semantic Data Processing With DocWrangler",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "IDE for LLM-powered semantic data processing pipelines.",
+  "alinti": "where familiar data processing operators (e.g., map, reduce, filter) are powered by LLMs instead of code."
+ },
+ {
+  "id": "arXiv:2310.17342",
+  "baslik": "ACT-SQL: In-Context Learning for Text-to-SQL with Automatically-Generated Chain-of-Thought",
+  "yil": 2023,
+  "cites": 52,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "In-context CoT prompting for text-to-SQL",
+  "alinti": "Our approach achieves SOTA performance on the Spider dev set among existing in-context learning approaches."
+ },
+ {
+  "id": "arXiv:2508.17028",
+  "baslik": "Improving Table Understanding with LLMs and Entity-Oriented Search",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM table understanding via entity-oriented search; central.",
+  "alinti": "This approach effectively leverages the semantic similarities between questions and table data, as well as the implicit relationships between table cells, minimizing the need for data preprocessing and keyword matching."
+ },
+ {
+  "id": "arXiv:2410.01869",
+  "baslik": "Enhancing LLM Fine-tuning for Text-to-SQLs by SQL Quality Measurement",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "SQL kalite ölçümüyle LLM ince ayarı; BIRD benchmark.",
+  "alinti": "This feedback loop enables continuous learning and refinement of model outputs based on both syntactic correctness and semantic accuracy."
+ },
+ {
+  "id": "arXiv:2407.10956",
+  "baslik": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Multimodal agent benchmark for data science and engineering workflows.",
+  "alinti": "VLM-based agents could potentially automate these workflows by generating SQL queries, Python code, and GUI operations."
+ },
+ {
+  "id": "arXiv:2210.03629",
+  "baslik": "ReAct: Synergizing Reasoning and Acting in Language Models",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "ReAct: akıl yürütme ve eylemin birleştirilmesi; temel çalışma.",
+  "alinti": "we explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner"
+ },
+ {
+  "id": "arXiv:2311.03157",
+  "baslik": "GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM-guided DBMS knob tuning",
+  "alinti": "Determining the appropriate values for these knobs to improve DBMS performance is a long-standing problem in the database community."
+ },
+ {
+  "id": "arXiv:2405.04674",
+  "baslik": "Towards Accurate and Efficient Document Analytics with Large Language Models",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM system answering SQL queries over unstructured documents.",
+  "alinti": "we introduce ZenDB, a document analytics system that leverages this semantic structure, coupled with LLMs, to answer ad-hoc SQL queries on document collections."
+ },
+ {
+  "id": "arXiv:2503.21460",
+  "baslik": "Large Language Model Agent: A Survey on Methodology, Applications and Challenges",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "General LLM agent taxonomy survey",
+  "alinti": "This survey systematically deconstructs LLM agent systems through a methodology-centered taxonomy, linking architectural foundations, collaboration mechanisms, and evolutionary pathways."
+ },
+ {
+  "id": "arXiv:2204.00498",
+  "baslik": "Evaluating the Text-to-SQL Capabilities of Large Language Models",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Codex text-to-SQL evaluation and failure analysis",
+  "alinti": "We find that, without any finetuning, Codex is a strong baseline on the Spider benchmark"
+ },
+ {
+  "id": "doi:10.36948/ijfmr.2024.v06i03.23616",
+  "baslik": "Design Patterns for Building More Efficient Generative Autonomous Agents: A Survey",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Ajan tasarım desenleri; planlama, araç kullanımı, çoklu ajan.",
+  "alinti": "These agents can independently plan, execute, and refine tasks, enabling them to overcome limitations such as the need for continuous human input and rules-based reasoning."
+ },
+ {
+  "id": "arXiv:2506.08800",
+  "baslik": "Measuring Data Science Automation: A Survey of Evaluation Tools for AI Assistants and Agents",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Survey of evaluation for data science agents; addresses autonomy levels.",
+  "alinti": "a concentration on pure assistance or fully autonomous agents, without considering intermediate levels of human-AI collaboration"
+ },
+ {
+  "id": "arXiv:2407.11418",
+  "baslik": "Semantic Operators: A Declarative Model for Rich, AI-based Data Processing",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Core semantic operators paper; declarative LLM-powered data processing.",
+  "alinti": "We introduce semantic operators, the first formalism for declarative and general-purpose AI-based transformations based on natural language specifications"
+ },
+ {
+  "id": "arXiv:2502.03368",
+  "baslik": "PalimpChat: Declarative and Interactive AI analytics",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Chat interface to declarative LLM analytics; central.",
+  "alinti": "Recent progress has seen the rise of declarative AI frameworks (e.g., Palimpzest, Lotus, and DocETL) to build optimized and increasingly complex pipelines"
+ },
+ {
+  "id": "arXiv:2411.07464",
+  "baslik": "BudgetMLAgent: A Cost-Effective LLM Multi-Agent system for Automating Machine Learning Tasks",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Cost-efficient multi-agent system for automating ML engineering tasks.",
+  "alinti": "we propose an LLM Multi-Agent based system which leverages combination of experts using profiling, efficient retrieval of past observations, LLM cascades"
+ },
+ {
+  "id": "arXiv:2408.01703",
+  "baslik": "WaitGPT: Monitoring and Steering Conversational LLM Agent in Data Analysis with On-the-Fly Code Visualization",
+  "yil": 2024,
+  "cites": 53,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Human monitoring of LLM data-analysis agents; directly on data analysis.",
+  "alinti": "Large language models (LLMs) support data analysis through conversational user interfaces, as exemplified in OpenAI's ChatGPT"
+ },
+ {
+  "id": "arXiv:2312.01454",
+  "baslik": "D-Bot: Database Diagnosis System using Large Language Models",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "LLM agent for database diagnosis; central to S5.",
+  "alinti": "we propose D-Bot, an LLM-based database diagnosis system that can automatically acquire knowledge from diagnosis documents"
+ },
+ {
+  "id": "doi:10.5753/sbsi.2025.246471",
+  "baslik": "Performance Evaluation Of LLMs In The Text-to-SQL Task In Portuguese",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; Portekizce Text-to-SQL değerlendirmesi.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3627673.3679216",
+  "baslik": "Demonstration of a Multi-agent Framework for Text to SQL Applications with Large Language Models",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Multi-agent Text-to-SQL framework; title only, no abstract.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s41019-025-00296-9",
+  "baslik": "LLM-Based Agents for Tool Learning: A Survey",
+  "yil": 2025,
+  "cites": 60,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Araç öğrenen LLM ajanları üzerine genel derleme.",
+  "alinti": "Thus, integrating LLMs and tools into tool learning agents has become a new emerging research direction."
+ },
+ {
+  "id": "arXiv:2312.03463",
+  "baslik": "DBCopilot: Natural Language Querying over Massive Databases via Schema Routing",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Büyük veritabanlarında şema yönlendirme ile NL2SQL.",
+  "alinti": "This framework utilizes a single lightweight differentiable search index to construct semantic mappings for massive database schemata"
+ },
+ {
+  "id": "arXiv:2402.14851",
+  "baslik": "$R^3$: \"This is My SQL, Are You With Me?\" A Consensus-Based Multi-Agent System for Text-to-SQL Tasks",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Consensus-based multi-agent text-to-SQL system",
+  "alinti": "we propose $R^3$ (Review-Rebuttal-Revision), a consensus-based multi-agent system for Text-to-SQL tasks."
+ },
+ {
+  "id": "arXiv:2404.12872",
+  "baslik": "LLM-R <sup>2</sup> : A Large Language Model Enhanced Rule-Based Rewrite System for Boosting Query Efficiency",
+  "yil": 2024,
+  "cites": 28,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM-enhanced rule-based query rewriting",
+  "alinti": "Query rewrite, which aims to improve query efficiency by altering an SQL query's structure without changing its result"
+ },
+ {
+  "id": "arXiv:2410.17238",
+  "baslik": "SELA: Tree-Search Enhanced LLM Agents for Automated Machine Learning",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM agents with tree search for AutoML; central.",
+  "alinti": "While LLM-based agents have shown promise in automating machine learning tasks, they often generate low-diversity and suboptimal code, even after multiple iterations"
+ },
+ {
+  "id": "arXiv:2503.00600",
+  "baslik": "Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Declarative guardrails for LLM semantic query outputs.",
+  "alinti": "we introduce semantic integrity constraints (SICs) -- a declarative abstraction for specifying and enforcing correctness conditions over LLM outputs in semantic queries"
+ },
+ {
+  "id": "arXiv:2312.01678",
+  "baslik": "Jellyfish: A Large Language Model for Data Preprocessing",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Instruction-tuned LLMs for data preprocessing; central.",
+  "alinti": "This paper explores the utilization of LLMs for data preprocessing (DP), a crucial step in the data mining pipeline that transforms raw data into a clean format"
+ },
+ {
+  "id": "doi:10.1109/aiotc63215.2024.10748304",
+  "baslik": "A Survey of LLM-based Agents: Theories, Technologies, Applications and Suggestions",
+  "yil": 2024,
+  "cites": 22,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; genel LLM ajan derlemesi.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.14778/3749646.3749685",
+  "baslik": "Semantic Operators and Their Optimization: Enabling LLM-Based Data Processing with Accuracy Guarantees in LOTUS",
+  "yil": 2025,
+  "cites": 33,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Semantic operators for LLM-powered data processing; central.",
+  "alinti": "the first formalism with statistical accuracy guarantees for general-purpose AI-based operations with natural language parameters"
+ },
+ {
+  "id": "doi:10.1145/3708635.3708655",
+  "baslik": "Case Studies on LLM Centric and Services Oriented Data Analytics Agent Development",
+  "yil": 2024,
+  "cites": 3,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; veri analitiği ajanları vaka çalışmaları.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2403.09060",
+  "baslik": "GenRewrite: Query Rewriting via Large Language Models",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM-based query rewriting for optimizer; central to S5.",
+  "alinti": "In this paper, we present GenRewrite, the first holistic system that leverages LLMs for query rewriting beyond traditional rules."
+ },
+ {
+  "id": "arXiv:2509.08535",
+  "baslik": "Agents of Discovery",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM agent team for data analysis; central.",
+  "alinti": "we investigate a new and orthogonal direction: Using recent progress in large language models (LLMs) to create a team of agents"
+ },
+ {
+  "id": "doi:10.3390/fi17010012",
+  "baslik": "FI-NL2PY2SQL: Financial Industry NL2SQL Innovation Model Based on Python and Large Language Model",
+  "yil": 2025,
+  "cites": 7,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "NL2SQL via Python intermediate; financial domain",
+  "alinti": "First, natural language is converted into Python language, and then SQL is generated through Python."
+ },
+ {
+  "id": "arXiv:2402.07304",
+  "baslik": "Insights into Natural Language Database Query Errors: From Attention Misalignment to User Handling Strategies",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "NL2SQL error taxonomy and user study",
+  "alinti": "a taxonomy of errors made by four representative NL2SQL models was built in this work"
+ }
+]

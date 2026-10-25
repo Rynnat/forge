@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-191820-c11f9d",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Okul öncesi ve erken çocukluk eğitiminde artırılmış/sanal gerçeklik kullanımının pedagojik, sağlık, etik ve gizlilik boyutları üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-01-13",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.2497,
+ "sure_s": 87.7,
+ "web_arama": 2,
+ "token": {
+  "in": 27615,
+  "out": 10241,
+  "cache_read": 8477,
+  "cache_write": 7770
+ },
+ "son_rapor_token_tahmini": 3083,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 29,
+ "istem": "Research question: Okul öncesi ve erken çocukluk eğitiminde artırılmış/sanal gerçeklik kullanımının pedagojik, sağlık, etik ve gizlilik boyutları üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-01-13. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1080/17482798.2016.1268779",
+   "arxiv_id": null,
+   "doi": "10.1080/17482798.2016.1268779",
+   "baslik": "Considering virtual reality in children's lives",
+   "yil": 2017,
+   "gerekce": "A foundational paper that sets out the developmental, psychological and ethical questions raised by children's VR use and the research agenda that follows from them."
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1007/s10055-021-00563-w",
+   "arxiv_id": null,
+   "doi": "10.1007/s10055-021-00563-w",
+   "baslik": "Could virtual reality applications pose real risks to children and adolescents? A systematic review of ethical issues and concerns",
+   "yil": 2022,
+   "gerekce": "The most comprehensive systematic review of the ethical, health and safety risks of VR for children."
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1016/j.ajo.2019.07.020",
+   "arxiv_id": null,
+   "doi": "10.1016/j.ajo.2019.07.020",
+   "baslik": "Effects of immersive virtual reality headset viewing on young children: visuomotor function, postural stability, and motion sickness",
+   "yil": 2020,
+   "gerekce": "Clinical evidence measuring the effects of VR headsets on young children's eye health, balance and motion sickness."
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1016/j.ijcci.2019.06.002",
+   "arxiv_id": null,
+   "doi": "10.1016/j.ijcci.2019.06.002",
+   "baslik": "Learning from the real and the virtual worlds: Educational use of augmented reality in early childhood",
+   "yil": 2019,
+   "gerekce": "Examines the use of AR in early childhood from a developmental-psychology perspective and lays out its pedagogical opportunities and open questions."
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1177/0735633120927489",
+   "arxiv_id": null,
+   "doi": "10.1177/0735633120927489",
+   "baslik": "Augmented reality for early language learning: A systematic review of augmented reality application design, instructional strategies, and evaluation outcomes",
+   "yil": 2020,
+   "gerekce": "A systematic review of the design, instructional strategies and evaluation outcomes of AR for early language learning."
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1016/j.chb.2015.07.040",
+   "arxiv_id": null,
+   "doi": "10.1016/j.chb.2015.07.040",
+   "baslik": "Educational magic toys developed with augmented reality technology for early childhood education",
+   "yil": 2016,
+   "gerekce": "A highly cited pioneering study that tests AR-based educational toys with preschool children and teachers."
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1016/j.compedu.2013.12.003",
+   "arxiv_id": null,
+   "doi": "10.1016/j.compedu.2013.12.003",
+   "baslik": "Children and parents' reading of an augmented reality picture book: Analyses of behavioral patterns and cognitive attainment",
+   "yil": 2014,
+   "gerekce": "Analyzes the behavioral patterns and cognitive gains when parents and children read an AR picture book together."
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1080/03004430.2015.1067888",
+   "arxiv_id": null,
+   "doi": "10.1080/03004430.2015.1067888",
+   "baslik": "Using augmented reality in early art education: a case study in Hong Kong kindergarten",
+   "yil": 2016,
+   "gerekce": "A case study of how AR is integrated into kindergarten art education."
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.1016/j.appdev.2019.101052",
+   "arxiv_id": null,
+   "doi": "10.1016/j.appdev.2019.101052",
+   "baslik": "Virtual reality's effect on children's inhibitory control, social compliance, and sharing",
+   "yil": 2019,
+   "gerekce": "Experimentally shows that immersive VR affects young children's inhibitory control and social compliance differently from television."
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1080/15213260903287267",
+   "arxiv_id": null,
+   "doi": "10.1080/15213260903287267",
+   "baslik": "Virtually true: Children's acquisition of false memories in virtual reality",
+   "yil": 2009,
+   "gerekce": "A classic study showing that VR can create false memories in young children, raising critical ethical concerns."
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1016/j.ijcci.2018.10.002",
+   "arxiv_id": null,
+   "doi": "10.1016/j.ijcci.2018.10.002",
+   "baslik": "Embedding immersive virtual reality in classrooms: Ethical, organisational and educational lessons in bridging research and practice",
+   "yil": 2019,
+   "gerekce": "Sets out the ethical and organizational lessons from bringing immersive VR into real classrooms."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2403.06172",
+   "arxiv_id": "2403.06172",
+   "doi": null,
+   "baslik": "Understanding Parents' Perceptions and Practices Toward Children's Security and Privacy in Virtual Reality",
+   "yil": 2024,
+   "gerekce": "An IEEE S&P study showing that parents lack awareness of children's VR security and privacy and calling for a multi-stakeholder approach."
+  },
+  {
+   "sira": 13,
+   "id": "doi:10.1111/bjet.12740",
+   "arxiv_id": null,
+   "doi": "10.1111/bjet.12740",
+   "baslik": "Augmented reality-based virtual manipulatives versus physical manipulatives for teaching geometric shapes to preschool children",
+   "yil": 2019,
+   "gerekce": "An experimental comparison of AR and physical manipulatives for teaching geometry to preschool children."
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1080/10494820.2018.1546747",
+   "arxiv_id": null,
+   "doi": "10.1080/10494820.2018.1546747",
+   "baslik": "The effect of augmented reality activities on improving preschool children's spatial skills",
+   "yil": 2020,
+   "gerekce": "Tests the effect of AR activities on preschool children's spatial skills."
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1111/bjet.13168",
+   "arxiv_id": null,
+   "doi": "10.1111/bjet.13168",
+   "baslik": "Augmented reality for preschool children: An experience with educational contents",
+   "yil": 2022,
+   "gerekce": "Evaluates the experience and learning effects of AR educational content in preschool settings."
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1111/bjet.12452",
+   "arxiv_id": null,
+   "doi": "10.1111/bjet.12452",
+   "baslik": "Are augmented reality picture books magic or real for preschool children aged five to six?",
+   "yil": 2017,
+   "gerekce": "Examines the effects of AR picture books on 5–6-year-olds' story comprehension and attitudes."
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.5121/ijma.2018.10606",
+   "arxiv_id": null,
+   "doi": "10.5121/ijma.2018.10606",
+   "baslik": "The current trends of augmented reality in early childhood education",
+   "yil": 2018,
+   "gerekce": "An early trend review of AR research in early childhood education."
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1016/j.procs.2013.11.026",
+   "arxiv_id": null,
+   "doi": "10.1016/j.procs.2013.11.026",
+   "baslik": "Fun learning with AR alphabet book for preschool children",
+   "yil": 2013,
+   "gerekce": "One of the earliest examples of AR-supported alphabet learning in preschool."
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.1007/s10643-019-00999-5",
+   "arxiv_id": null,
+   "doi": "10.1007/s10643-019-00999-5",
+   "baslik": "Integration of augmented reality in the teaching of English as a foreign language in early childhood education",
+   "yil": 2020,
+   "gerekce": "Investigates the use of AR for foreign-language teaching in early childhood."
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.25304/rlt.v29.2539",
+   "arxiv_id": null,
+   "doi": "10.25304/rlt.v29.2539",
+   "baslik": "Introducing augmented reality in early childhood literacy learning",
+   "yil": 2021,
+   "gerekce": "Examines the pedagogical effects of AR in early literacy learning."
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1038/s41598-020-74486-y",
+   "arxiv_id": null,
+   "doi": "10.1038/s41598-020-74486-y",
+   "baslik": "Personal identifiability of user tracking data during observation of 360-degree VR video",
+   "yil": 2020,
+   "gerekce": "Shows that VR motion data is enough to identify individuals, a privacy risk that is especially critical for children."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2302.08927",
+   "arxiv_id": "2302.08927",
+   "doi": null,
+   "baslik": "Unique Identification of 50,000+ Virtual Reality Users from Head & Hand Motion Data",
+   "yil": 2023,
+   "gerekce": "Demonstrates at scale that biometric motion data in VR uniquely identifies users."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2207.13176",
+   "arxiv_id": "2207.13176",
+   "doi": null,
+   "baslik": "Exploring the Unprecedented Privacy Risks of the Metaverse",
+   "yil": 2023,
+   "gerekce": "Shows that VR can infer many sensitive attributes, such as age, which bears directly on child privacy."
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1016/j.edurev.2016.11.002",
+   "arxiv_id": null,
+   "doi": "10.1016/j.edurev.2016.11.002",
+   "baslik": "Advantages and challenges associated with augmented reality for education: A systematic review of the literature",
+   "yil": 2017,
+   "gerekce": "A highly cited systematic review of the pedagogical advantages and challenges of AR in education."
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1016/j.edurev.2019.04.001",
+   "arxiv_id": null,
+   "doi": "10.1016/j.edurev.2019.04.001",
+   "baslik": "Meta-analysis of the impact of Augmented Reality on students' learning gains",
+   "yil": 2019,
+   "gerekce": "A meta-analysis of AR's effect on learning gains, including effect sizes at early educational levels."
+  },
+  {
+   "sira": 26,
+   "id": "doi:10.1007/s00779-013-0747-y",
+   "arxiv_id": null,
+   "doi": "10.1007/s00779-013-0747-y",
+   "baslik": "Augmented reality in education: a meta-review and cross-media analysis",
+   "yil": 2014,
+   "gerekce": "A foundational meta-review of the learning effects of AR and the conditions under which they occur."
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1007/s10055-018-0347-2",
+   "arxiv_id": null,
+   "doi": "10.1007/s10055-018-0347-2",
+   "baslik": "Augmenting the learning experience in primary and secondary school education: a systematic review of recent trends in augmented reality game-based learning",
+   "yil": 2019,
+   "gerekce": "A systematic review of AR game-based learning in the early school years."
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.1007/s10055-006-0036-4",
+   "arxiv_id": null,
+   "doi": "10.1007/s10055-006-0036-4",
+   "baslik": "\"Making it real\": exploring the potential of augmented reality for teaching primary school science",
+   "yil": 2006,
+   "gerekce": "A pioneering study of AR's potential and design requirements for teaching young children, from the teacher's perspective."
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.12973/eurasia.2017.00621a",
+   "arxiv_id": null,
+   "doi": "10.12973/eurasia.2017.00621a",
+   "baslik": "Using an augmented reality enhanced tabletop system to promote learning of mathematics: A case study with students with special educational needs",
+   "yil": 2017,
+   "gerekce": "Shows the potential of AR for young children with special educational needs, including inclusion."
+  },
+  {
+   "sira": 30,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Children and Virtual Reality: Emerging Possibilities and Challenges",
+   "yil": 2017,
+   "gerekce": "A report that reviews the possibilities and the health and safety and ethical challenges of children's VR use and frames open problems."
+  }
+ ]
+}

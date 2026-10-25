@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-190614-40b095",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "6G kablosuz ağ yönetiminde (kaynak tahsisi, yörünge tasarımı, optimizasyon) büyük dil modellerinin kullanımı üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-08-07",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.2026,
+ "sure_s": 66.8,
+ "web_arama": 2,
+ "token": {
+  "in": 26750,
+  "out": 8358,
+  "cache_read": 8469,
+  "cache_write": 6413
+ },
+ "son_rapor_token_tahmini": 2843,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: 6G kablosuz ağ yönetiminde (kaynak tahsisi, yörünge tasarımı, optimizasyon) büyük dil modellerinin kullanımı üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2025-08-07. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2308.06013",
+   "arxiv_id": "2308.06013",
+   "doi": null,
+   "baslik": "Large Language Models for Telecom: Forthcoming Impact on the Industry",
+   "yil": 2023,
+   "gerekce": "An early agenda-setting paper that lays out where LLMs can be used in telecom network management and optimization, and the open problems that come with them."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2405.10825",
+   "arxiv_id": "2405.10825",
+   "doi": null,
+   "baslik": "Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities",
+   "yil": 2024,
+   "gerekce": "A comprehensive survey that organizes LLM principles, adaptation techniques and wireless optimization uses, along with the open challenges."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2402.02338",
+   "arxiv_id": "2402.02338",
+   "doi": "10.1145/3651890.3672268",
+   "baslik": "NetLLM: Adapting Large Language Models for Networking",
+   "yil": 2024,
+   "gerekce": "Shows a general framework for adapting LLMs to networking decision tasks such as scheduling and adaptive bitrate."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2312.07850",
+   "arxiv_id": "2312.07850",
+   "doi": null,
+   "baslik": "Large Language Model Enhanced Multi-Agent Systems for 6G Communications",
+   "yil": 2023,
+   "gerekce": "Proposes a multi-agent LLM architecture for 6G communication design and optimization, with a semantic communication case study."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2408.02944",
+   "arxiv_id": "2408.02944",
+   "doi": null,
+   "baslik": "LLM-Empowered Resource Allocation in Wireless Communications Systems",
+   "yil": 2024,
+   "gerekce": "One of the first studies to solve wireless resource allocation directly with an LLM through few-shot in-context learning."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2408.00214",
+   "arxiv_id": "2408.00214",
+   "doi": null,
+   "baslik": "Large Language Model (LLM)-enabled In-context Learning for Wireless Network Optimization: A Case Study of Power Control",
+   "yil": 2024,
+   "gerekce": "Shows that base-station power control can be done with in-context learning and no retraining."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2309.03409",
+   "arxiv_id": "2309.03409",
+   "doi": null,
+   "baslik": "Large Language Models as Optimizers",
+   "yil": 2023,
+   "gerekce": "Introduces the OPRO paradigm of using an LLM as a black-box optimizer, which became the methodological basis for LLM-driven optimization in wireless networks."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2311.17474",
+   "arxiv_id": "2311.17474",
+   "doi": null,
+   "baslik": "Large Language Models for Networking: Applications, Enabling Techniques, and Challenges",
+   "yil": 2023,
+   "gerekce": "Sets out the ChatNet framework and the open problems for automating network planning and management with LLMs."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2405.17053",
+   "arxiv_id": "2405.17053",
+   "doi": null,
+   "baslik": "WirelessLLM: Empowering Large Language Models Towards Wireless Intelligence",
+   "yil": 2024,
+   "gerekce": "Proposes adapting LLMs to wireless problems through knowledge alignment, fusion and evolution."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2402.01748",
+   "arxiv_id": "2402.01748",
+   "doi": null,
+   "baslik": "Large Multi-Modal Models (LMMs) as Universal Foundation Models for AI-Native Wireless Systems",
+   "yil": 2024,
+   "gerekce": "Sets a vision of multimodal, grounded and causal-reasoning foundation models for AI-native 6G."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2401.07764",
+   "arxiv_id": "2401.07764",
+   "doi": null,
+   "baslik": "When Large Language Model Agents Meet 6G Networks: Perception, Grounding, and Alignment",
+   "yil": 2024,
+   "gerekce": "Discusses deploying LLM agents in 6G networks, edge-cloud collaboration, and the grounding and alignment problems that remain open."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2307.02779",
+   "arxiv_id": "2307.02779",
+   "doi": null,
+   "baslik": "Large Language Models Empowered Autonomous Edge AI for Connected Intelligence",
+   "yil": 2023,
+   "gerekce": "Shows how LLMs can autonomously plan and optimize edge AI workflows in 6G."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2309.16739",
+   "arxiv_id": "2309.16739",
+   "doi": null,
+   "baslik": "Pushing Large Language Models to the 6G Edge: Vision, Challenges, and Opportunities",
+   "yil": 2023,
+   "gerekce": "Covers how to train and run LLMs at the 6G edge and the resource-management problems this raises."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2306.10249",
+   "arxiv_id": "2306.10249",
+   "doi": null,
+   "baslik": "Large Generative AI Models for Telecom: The Next Big Thing?",
+   "yil": 2023,
+   "gerekce": "An early vision paper on how large generative AI models could enable self-managing telecom networks."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2407.09424",
+   "arxiv_id": "2407.09424",
+   "doi": null,
+   "baslik": "TelecomGPT: A Framework to Build Telecom-Specific Large Language Models",
+   "yil": 2024,
+   "gerekce": "Presents a pipeline and benchmarks for building telecom-domain-specific LLMs."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2310.15051",
+   "arxiv_id": "2310.15051",
+   "doi": null,
+   "baslik": "TeleQnA: A Benchmark Dataset to Assess Large Language Models Telecommunications Knowledge",
+   "yil": 2023,
+   "gerekce": "The first widely used benchmark for measuring how much telecom knowledge LLMs have."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2404.15939",
+   "arxiv_id": "2404.15939",
+   "doi": null,
+   "baslik": "Telco-RAG: Navigating the Challenges of Retrieval-Augmented Language Models for Telecommunications",
+   "yil": 2024,
+   "gerekce": "Addresses grounding LLMs in standards documents such as 3GPP through retrieval-augmented generation."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2406.14440",
+   "arxiv_id": "2406.14440",
+   "doi": null,
+   "baslik": "LLM4CP: Adapting Large Language Models for Channel Prediction",
+   "yil": 2024,
+   "gerekce": "Shows that a pretrained LLM can be adapted to a physical-layer task (channel prediction) for MIMO-OFDM."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2407.20840",
+   "arxiv_id": "2407.20840",
+   "doi": null,
+   "baslik": "Large Language Model (LLM)-enabled Graphs in Dynamic Networking",
+   "yil": 2024,
+   "gerekce": "Proposes a two-stage LLM+GNN design in which the LLM produces the UAV trajectory and a GNN allocates the communication resources."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2405.01745",
+   "arxiv_id": "2405.01745",
+   "doi": null,
+   "baslik": "Large Language Models for UAVs: Current State and Pathways to the Future",
+   "yil": 2024,
+   "gerekce": "Reviews LLM use for UAV autonomy, trajectory planning and communication, along with the open problems."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2404.09134",
+   "arxiv_id": "2404.09134",
+   "doi": null,
+   "baslik": "Generative AI Agents with Large Language Model for Satellite Networks via a Mixture of Experts Transmission",
+   "yil": 2024,
+   "gerekce": "Uses LLM agents to model and optimize satellite communication transmission strategies."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2404.08878",
+   "arxiv_id": "2404.08878",
+   "doi": null,
+   "baslik": "Generative AI Agent for Next-Generation MIMO Design: Fundamentals, Challenges, and Vision",
+   "yil": 2024,
+   "gerekce": "Proposes an LLM-based agent for MIMO system design and performance analysis."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2408.03920",
+   "arxiv_id": "2408.03920",
+   "doi": null,
+   "baslik": "Large Language Model as a Catalyst: A Paradigm Shift in Base Station Siting Optimization",
+   "yil": 2024,
+   "gerekce": "Shows how LLMs and prompt optimization can be used to solve the base-station siting problem."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2409.07964",
+   "arxiv_id": "2409.07964",
+   "doi": null,
+   "baslik": "WirelessAgent: Large Language Model Agents for Intelligent Wireless Networks",
+   "yil": 2024,
+   "gerekce": "Presents an LLM agent framework with perception, memory, planning and action modules for tasks such as network slicing."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2411.04136",
+   "arxiv_id": "2411.04136",
+   "doi": null,
+   "baslik": "Large Language Models for Wireless Networks: An Overview from the Prompt Engineering Perspective",
+   "yil": 2024,
+   "gerekce": "Organizes prompt-engineering methods for wireless network optimization, including iterative prompting."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2411.06490",
+   "arxiv_id": "2411.06490",
+   "doi": null,
+   "baslik": "Hermes: A Large Language Model Framework on the Journey to Autonomous Networks",
+   "yil": 2024,
+   "gerekce": "Proposes autonomous network management in which LLM agent chains build network digital-twin blueprints."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2404.00282",
+   "arxiv_id": "2404.00282",
+   "doi": null,
+   "baslik": "Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods",
+   "yil": 2024,
+   "gerekce": "A taxonomy of LLM-enhanced RL approaches that underpins hybrid LLM+DRL resource allocation methods in wireless."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2506.06526",
+   "arxiv_id": "2506.06526",
+   "doi": null,
+   "baslik": "Prompting Wireless Networks: Reinforced In-Context Learning for Power Control",
+   "yil": 2025,
+   "gerekce": "Combines reinforced in-context learning with power control and reports performance comparable to DRL."
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2504.11696",
+   "arxiv_id": "2504.11696",
+   "doi": null,
+   "baslik": "A New Paradigm of User-Centric Wireless Communication Driven by Large Language Models",
+   "yil": 2025,
+   "gerekce": "Proposes user-centric wireless management in which the LLM formulates and solves power allocation as an optimization problem."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2504.18062",
+   "arxiv_id": "2504.18062",
+   "doi": null,
+   "baslik": "LLM-Guided Open RAN: Empowering Hierarchical RAN Intelligent Control",
+   "yil": 2025,
+   "gerekce": "Proposes a hierarchical O-RAN controller in which the LLM gives strategic guidance and RL makes the low-latency decisions."
+  }
+ ]
+}

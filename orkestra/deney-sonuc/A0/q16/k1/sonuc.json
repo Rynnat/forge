@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-190425-26e2af",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Katı hal sürücülerinde (SSD) ölçeklenebilirlik, dayanıklılık, gecikme ve güvenlik için cihaz düzeyinde optimizasyon teknikleri üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-06-10",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.1282,
+ "sure_s": 56.0,
+ "web_arama": 0,
+ "token": {
+  "in": 2,
+  "out": 5808,
+  "cache_read": 3532,
+  "cache_write": 1416
+ },
+ "son_rapor_token_tahmini": 2736,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 18,
+ "istem": "Research question: Katı hal sürücülerinde (SSD) ölçeklenebilirlik, dayanıklılık, gecikme ve güvenlik için cihaz düzeyinde optimizasyon teknikleri üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2025-06-10. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Design Tradeoffs for SSD Performance",
+   "yil": 2008,
+   "gerekce": "This early work set out the basic SSD design space: parallelism, mapping granularity, over-provisioning and wear leveling."
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1145/1508244.1508270",
+   "arxiv_id": null,
+   "doi": "10.1145/1508244.1508270",
+   "baslik": "DFTL: A Flash Translation Layer Employing Demand-based Selective Caching of Page-level Address Mappings",
+   "yil": 2009,
+   "gerekce": "It made page-level FTL mapping scale under limited DRAM, and it became the standard reference for FTL design."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:1706.08642",
+   "arxiv_id": "1706.08642",
+   "doi": "10.1109/JPROC.2017.2713127",
+   "baslik": "Error Characterization, Mitigation, and Recovery in Flash-Memory-Based Solid-State Drives",
+   "yil": 2017,
+   "gerekce": "This is the broadest survey of NAND error mechanisms and of device-level methods for improving reliability and endurance."
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1145/1555349.1555371",
+   "arxiv_id": null,
+   "doi": "10.1145/1555349.1555371",
+   "baslik": "Understanding Intrinsic Characteristics and System Implications of Flash Memory based Solid State Drives",
+   "yil": 2009,
+   "gerekce": "It was the first systematic measurement of how real SSDs behave on latency and internal parallelism."
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1145/2745844.2745848",
+   "arxiv_id": null,
+   "doi": "10.1145/2745844.2745848",
+   "baslik": "A Large-Scale Study of Flash Memory Failures in the Field",
+   "yil": 2015,
+   "gerekce": "Using Facebook's fleet data, it showed how SSD failures actually happen in production."
+  },
+  {
+   "sira": 6,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Flash Reliability in Production: The Expected and the Unexpected",
+   "yil": 2016,
+   "gerekce": "Google's multi-year field data overturned common assumptions about P/E cycles and the RBER–UBER relationship."
+  },
+  {
+   "sira": 7,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "ZNS: Avoiding the Block Interface Tax for Flash-based SSDs",
+   "yil": 2021,
+   "gerekce": "It made the case for zoned namespaces, which remove device-side GC and over-provisioning costs and reduce write amplification."
+  },
+  {
+   "sira": 8,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "LightNVM: The Linux Open-Channel SSD Subsystem",
+   "yil": 2017,
+   "gerekce": "It provided host-managed FTL control over open-channel SSDs, enabling predictable latency and isolation."
+  },
+  {
+   "sira": 9,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "MQSim: A Framework for Enabling Realistic Studies of Modern Multi-Queue SSD Devices",
+   "yil": 2018,
+   "gerekce": "It became the standard simulator for multi-queue NVMe SSDs and exposed inter-flow interference."
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1109/isca.2018.00042",
+   "arxiv_id": null,
+   "doi": "10.1109/ISCA.2018.00042",
+   "baslik": "FLIN: Enabling Fairness and Enhancing Performance in Modern NVMe Solid State Drives",
+   "yil": 2018,
+   "gerekce": "It introduced a device-level scheduler for fairness and performance isolation between applications."
+  },
+  {
+   "sira": 11,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Tiny-Tail Flash: Near-Perfect Elimination of Garbage Collection Tail Latencies in NAND SSDs",
+   "yil": 2017,
+   "gerekce": "It used RAIN-based GC management to nearly eliminate GC-induced tail latency."
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1145/3064176.3064187",
+   "arxiv_id": null,
+   "doi": "10.1145/3064176.3064187",
+   "baslik": "The Unwritten Contract of Solid State Drives",
+   "yil": 2017,
+   "gerekce": "It set out the access-pattern rules a host must follow to get good SSD performance."
+  },
+  {
+   "sira": 13,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Reliably Erasing Data from Flash-Based Solid State Drives",
+   "yil": 2011,
+   "gerekce": "It showed that SSD sanitization commands are unreliable, which opened the field of secure deletion on SSDs."
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1145/3373376.3378490",
+   "arxiv_id": null,
+   "doi": "10.1145/3373376.3378490",
+   "baslik": "Evanesco: Architectural Support for Efficient Data Sanitization in Modern Flash-Based Storage Systems",
+   "yil": 2020,
+   "gerekce": "It proposed chip-level lock mechanisms that make secure data sanitization cheap."
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1145/3133956.3134035",
+   "arxiv_id": null,
+   "doi": "10.1145/3133956.3134035",
+   "baslik": "FlashGuard: Leveraging Intrinsic Flash Properties to Defend Against Encryption Ransomware",
+   "yil": 2017,
+   "gerekce": "It showed that the SSD's out-of-place update behavior can be used inside the firmware to defend against ransomware."
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1109/hpca.2017.61",
+   "arxiv_id": null,
+   "doi": "10.1109/HPCA.2017.61",
+   "baslik": "Vulnerabilities in MLC NAND Flash Memory Programming: Experimental Analysis, Exploits, and Mitigation Techniques",
+   "yil": 2017,
+   "gerekce": "It exposed security and reliability vulnerabilities in two-step programming and proposed mitigations."
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1109/dsn.2015.49",
+   "arxiv_id": null,
+   "doi": "10.1109/DSN.2015.49",
+   "baslik": "Read Disturb Errors in MLC NAND Flash Memory: Characterization, Mitigation, and Recovery",
+   "yil": 2015,
+   "gerekce": "It characterized read disturb errors and offered device-level ways to mitigate and recover from them."
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1109/hpca.2015.7056062",
+   "arxiv_id": null,
+   "doi": "10.1109/HPCA.2015.7056062",
+   "baslik": "Data Retention in MLC NAND Flash Memory: Characterization, Optimization, and Recovery",
+   "yil": 2015,
+   "gerekce": "It introduced retention-error modeling and read-reference voltage optimization."
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.1109/iccd.2012.6378623",
+   "arxiv_id": null,
+   "doi": "10.1109/ICCD.2012.6378623",
+   "baslik": "Flash Correct-and-Refresh: Retention-Aware Error Management for Increased Flash Memory Lifetime",
+   "yil": 2012,
+   "gerekce": "Its periodic refresh scheme greatly extended flash lifetime."
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1109/date.2012.6176524",
+   "arxiv_id": null,
+   "doi": "10.1109/DATE.2012.6176524",
+   "baslik": "Error Patterns in MLC NAND Flash Memory: Measurement, Characterization, and Analysis",
+   "yil": 2012,
+   "gerekce": "It was the first comprehensive experimental characterization of MLC NAND error patterns."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2104.09611",
+   "arxiv_id": "2104.09611",
+   "doi": "10.1145/3445814.3446719",
+   "baslik": "Reducing Solid-State Drive Read Latency by Optimizing Read-Retry",
+   "yil": 2021,
+   "gerekce": "It tackled the read-retry overhead that drives read latency up in modern 3D NAND."
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1145/1534530.1534544",
+   "arxiv_id": null,
+   "doi": "10.1145/1534530.1534544",
+   "baslik": "Write Amplification Analysis in Flash-Based Solid State Drives",
+   "yil": 2009,
+   "gerekce": "It gave the foundational analytical model of write amplification and the effect of over-provisioning on endurance."
+  },
+  {
+   "sira": 23,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "CAFTL: A Content-Aware Flash Translation Layer Enhancing the Lifespan of Flash Memory based Solid State Drives",
+   "yil": 2011,
+   "gerekce": "It showed that in-device deduplication can extend SSD lifetime."
+  },
+  {
+   "sira": 24,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "The Multi-streamed Solid-State Drive",
+   "yil": 2014,
+   "gerekce": "It separated data by lifetime into streams to cut GC cost and write amplification, and the idea went into the NVMe standard."
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1145/2541940.2541959",
+   "arxiv_id": null,
+   "doi": "10.1145/2541940.2541959",
+   "baslik": "SDF: Software-Defined Flash for Web-Scale Internet Storage Systems",
+   "yil": 2014,
+   "gerekce": "It showed at Baidu scale how exposing internal channels to the host improves bandwidth and capacity use."
+  },
+  {
+   "sira": 26,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "FlashBlox: Achieving Both Performance Isolation and Uniform Lifetime for Virtualized SSDs",
+   "yil": 2017,
+   "gerekce": "It used hardware-level isolation by channel and die, with lifetime balancing, for multi-tenant SSDs."
+  },
+  {
+   "sira": 27,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "The Tail at Store: A Revelation from Millions of Hours of Disk and SSD Deployments",
+   "yil": 2016,
+   "gerekce": "It measured tail latency in SSDs at scale and documented the slowdown problem."
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.1145/3582016.3582051",
+   "arxiv_id": null,
+   "doi": "10.1145/3582016.3582051",
+   "baslik": "LeaFTL: A Learning-Based Flash Translation Layer for Solid-State Drives",
+   "yil": 2023,
+   "gerekce": "It cut mapping-table memory with learned index segments, a new route to FTL scalability."
+  },
+  {
+   "sira": 29,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Don't Stack Your Log On My Log",
+   "yil": 2014,
+   "gerekce": "It showed that stacking a log-structured layer on top of a log-structured FTL causes inefficiency, which motivated cross-layer design."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:1711.11427",
+   "arxiv_id": "1711.11427",
+   "doi": null,
+   "baslik": "Errors in Flash-Memory-Based Solid-State Drives: Analysis, Mitigation, and Recovery",
+   "yil": 2018,
+   "gerekce": "It brings together the open problems in 3D NAND reliability and device-level error management."
+  }
+ ]
+}

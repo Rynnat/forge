@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-190014-327972",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Konuşma ve bağlamdan beden ve yüz hareketi üretimi için kullanılan veri kümeleri, değerlendirme ölçütleri ve üretken yöntemler üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-11-09",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.1317,
+ "sure_s": 55.1,
+ "web_arama": 0,
+ "token": {
+  "in": 2,
+  "out": 5986,
+  "cache_read": 3532,
+  "cache_write": 1408
+ },
+ "son_rapor_token_tahmini": 2847,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: Konuşma ve bağlamdan beden ve yüz hareketi üretimi için kullanılan veri kümeleri, değerlendirme ölçütleri ve üretken yöntemler üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2025-11-09. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2301.05339",
+   "arxiv_id": "2301.05339",
+   "doi": "10.1111/cgf.14776",
+   "baslik": "A Comprehensive Review of Data-Driven Co-Speech Gesture Generation",
+   "yil": 2023,
+   "gerekce": "This broad survey covers datasets, evaluation metrics, generative methods and open problems in co-speech gesture generation."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:1906.04160",
+   "arxiv_id": "1906.04160",
+   "doi": null,
+   "baslik": "Learning Individual Styles of Conversational Gesture",
+   "yil": 2019,
+   "gerekce": "It introduced a large speaker-specific video dataset and audio-to-pose generation with adversarial training, which shaped later data-driven work."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2009.02119",
+   "arxiv_id": "2009.02119",
+   "doi": "10.1145/3414685.3417838",
+   "baslik": "Speech Gesture Generation from the Trimodal Context of Text, Audio, and Speaker Identity",
+   "yil": 2020,
+   "gerekce": "It conditions on text, audio and speaker identity together and introduced the Fréchet Gesture Distance (FGD), now a standard metric."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2203.05297",
+   "arxiv_id": "2203.05297",
+   "doi": null,
+   "baslik": "BEAT: A Large-Scale Semantic and Emotional Multi-Modal Dataset for Conversational Gestures Synthesis",
+   "yil": 2022,
+   "gerekce": "This large motion-capture dataset has semantic and emotion annotations, and the paper also proposed the Semantic-Relevant Gesture Recall (SRGR) metric."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2401.00374",
+   "arxiv_id": "2401.00374",
+   "doi": null,
+   "baslik": "EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Masked Audio Gesture Modeling",
+   "yil": 2024,
+   "gerekce": "It released the BEAT2 dataset and a masked-modeling method that generates face, body, hands and global motion together."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2212.04420",
+   "arxiv_id": "2212.04420",
+   "doi": null,
+   "baslik": "Generating Holistic 3D Human Motion from Speech",
+   "yil": 2023,
+   "gerekce": "TalkSHOW released the SHOW dataset and generates SMPL-X face and body motion from speech."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2102.11617",
+   "arxiv_id": "2102.11617",
+   "doi": "10.1145/3397481.3450692",
+   "baslik": "A large, crowdsourced evaluation of gesture generation systems on common data: The GENEA Challenge 2020",
+   "yil": 2021,
+   "gerekce": "This was the first large standardized human evaluation of gesture generation on shared data."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2303.08737",
+   "arxiv_id": "2303.08737",
+   "doi": null,
+   "baslik": "Evaluating gesture generation in a large-scale open challenge: The GENEA Challenge 2022",
+   "yil": 2024,
+   "gerekce": "Its large-scale user studies showed that objective metrics correlate poorly with human judgments, highlighting an open evaluation problem."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2211.09707",
+   "arxiv_id": "2211.09707",
+   "doi": "10.1145/3592458",
+   "baslik": "Listen, Denoise, Action! Audio-Driven Motion Synthesis with Diffusion Models",
+   "yil": 2023,
+   "gerekce": "This is a pioneering diffusion model for audio-driven gesture and dance generation with style control."
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1111/cgf.13946",
+   "arxiv_id": null,
+   "doi": "10.1111/cgf.13946",
+   "baslik": "Style-Controllable Speech-Driven Gesture Synthesis Using Normalising Flows",
+   "yil": 2020,
+   "gerekce": "MoGlow-based probabilistic gesture generation with style control showed the importance of stochastic models."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2303.14613",
+   "arxiv_id": "2303.14613",
+   "doi": "10.1145/3592097",
+   "baslik": "GestureDiffuCLIP: Gesture Diffusion Model with CLIP Latents",
+   "yil": 2023,
+   "gerekce": "It adds style control to gesture diffusion through multimodal prompts such as text, video and motion."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2210.01448",
+   "arxiv_id": "2210.01448",
+   "doi": "10.1145/3550454.3555435",
+   "baslik": "Rhythmic Gesticulator: Rhythm-Aware Co-Speech Gesture Synthesis with Hierarchical Neural Embeddings",
+   "yil": 2022,
+   "gerekce": "It addresses the rhythm and semantics of gestures explicitly through hierarchical embeddings."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2303.09119",
+   "arxiv_id": "2303.09119",
+   "doi": null,
+   "baslik": "Taming Diffusion Models for Audio-Driven Co-Speech Gesture Generation",
+   "yil": 2023,
+   "gerekce": "DiffGesture is an early and influential diffusion-based co-speech gesture method."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2001.09326",
+   "arxiv_id": "2001.09326",
+   "doi": "10.1145/3382507.3418815",
+   "baslik": "Gesticulator: A framework for semantically-aware speech-driven gesture generation",
+   "yil": 2020,
+   "gerekce": "It was one of the first models to combine audio and text for semantically meaningful gestures."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:1810.12541",
+   "arxiv_id": "1810.12541",
+   "doi": null,
+   "baslik": "Robots Learn Social Skills: End-to-End Learning of Co-Speech Gesture Generation for Humanoid Robots",
+   "yil": 2019,
+   "gerekce": "It introduced the TED Gesture dataset and pioneered text-driven end-to-end gesture generation."
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1109/iccv.2019.00085",
+   "arxiv_id": null,
+   "doi": "10.1109/ICCV.2019.00085",
+   "baslik": "Talking With Hands 16.2M: A Large-Scale Dataset of Synchronized Body-Finger Motion and Audio for Conversational Motion Analysis and Synthesis",
+   "yil": 2019,
+   "gerekce": "This large dyadic conversation mocap dataset includes finger motion and is the basis of the GENEA 2022 data."
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1145/3267851.3267898",
+   "arxiv_id": null,
+   "doi": "10.1145/3267851.3267898",
+   "baslik": "Investigating the use of recurrent motion modelling for speech gesture generation",
+   "yil": 2018,
+   "gerekce": "It introduced the Trinity Speech-Gesture dataset, an early basic resource used in GENEA 2020."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2007.12553",
+   "arxiv_id": "2007.12553",
+   "doi": null,
+   "baslik": "Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional-Mixture Approach",
+   "yil": 2020,
+   "gerekce": "It introduced the multi-speaker PATS dataset and a method for transferring gesture style between speakers."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2203.13161",
+   "arxiv_id": "2203.13161",
+   "doi": null,
+   "baslik": "Learning Hierarchical Cross-Modal Association for Co-Speech Gesture Generation",
+   "yil": 2022,
+   "gerekce": "HA2G improved quality on TED-based benchmarks through hierarchical audio–pose association."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2209.07556",
+   "arxiv_id": "2209.07556",
+   "doi": "10.1111/cgf.14734",
+   "baslik": "ZeroEGGS: Zero-shot Example-based Gesture Generation from Speech",
+   "yil": 2023,
+   "gerekce": "It does zero-shot style control from a single example motion and released a stylized gesture dataset."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2305.04919",
+   "arxiv_id": "2305.04919",
+   "doi": null,
+   "baslik": "DiffuseStyleGesture: Stylized Audio-Driven Co-Speech Gesture Generation with Diffusion Models",
+   "yil": 2023,
+   "gerekce": "This style-controllable diffusion model was among the strong systems in GENEA 2023."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2401.01885",
+   "arxiv_id": "2401.01885",
+   "doi": null,
+   "baslik": "From Audio to Photoreal Embodiment: Synthesizing Humans in Conversations",
+   "yil": 2024,
+   "gerekce": "It generates photorealistic face and body motion for dyadic conversation and released a new conversation dataset."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2401.04747",
+   "arxiv_id": "2401.04747",
+   "doi": null,
+   "baslik": "DiffSHEG: A Diffusion-Based Approach for Real-Time Speech-driven Holistic 3D Expression and Gesture Generation",
+   "yil": 2024,
+   "gerekce": "It generates facial expressions and gestures jointly and coherently in real time."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2102.06837",
+   "arxiv_id": "2102.06837",
+   "doi": null,
+   "baslik": "Learning Speech-driven 3D Conversational Gestures from Video",
+   "yil": 2021,
+   "gerekce": "It learns 3D face and body gestures jointly from monocular video data."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2101.03769",
+   "arxiv_id": "2101.03769",
+   "doi": "10.1109/THMS.2022.3149173",
+   "baslik": "A Review of Evaluating Practices of Gesture Generation in Embodied Conversational Agents",
+   "yil": 2022,
+   "gerekce": "It systematically reviews evaluation practices and identifies standardization problems."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2405.09814",
+   "arxiv_id": "2405.09814",
+   "doi": null,
+   "baslik": "Semantic Gesticulator: Semantics-Aware Co-Speech Gesture Synthesis",
+   "yil": 2024,
+   "gerekce": "It tackles the open problem of semantic gestures with LLM-based retrieval and a semantic gesture dataset."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2312.04466",
+   "arxiv_id": "2312.04466",
+   "doi": null,
+   "baslik": "AMUSE: Emotional Speech-driven 3D Body Animation via Disentangled Latent Diffusion",
+   "yil": 2024,
+   "gerekce": "It uses disentangled latent diffusion to separate content, emotion and style in speech-driven body motion."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2403.17936",
+   "arxiv_id": "2403.17936",
+   "doi": null,
+   "baslik": "ConvoFusion: Multi-Modal Conversational Diffusion for Co-Speech Gesture Synthesis",
+   "yil": 2024,
+   "gerekce": "It brings multimodal control and the DnD Group Gesture dataset for multi-party conversation."
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2212.02350",
+   "arxiv_id": "2212.02350",
+   "doi": null,
+   "baslik": "Audio-Driven Co-Speech Gesture Video Generation",
+   "yil": 2022,
+   "gerekce": "ANGIE carries gesture generation from the skeleton level to video generation."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2404.00368",
+   "arxiv_id": "2404.00368",
+   "doi": null,
+   "baslik": "Towards Variable and Coordinated Holistic Co-Speech Motion Generation",
+   "yil": 2024,
+   "gerekce": "ProbTalk improves the variety and coordination of holistic face and body motion."
+  }
+ ]
+}

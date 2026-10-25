@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-185900-52205c",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Veri görselleştirmelerinde metin ile görselin birlikte kullanımı (veri anlatımı, açıklama, ek metin) üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-02-01",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.2056,
+ "sure_s": 73.8,
+ "web_arama": 1,
+ "token": {
+  "in": 14284,
+  "out": 7599,
+  "cache_read": 8457,
+  "cache_write": 6253
+ },
+ "son_rapor_token_tahmini": 2735,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 29,
+ "istem": "Research question: Veri görselleştirmelerinde metin ile görselin birlikte kullanımı (veri anlatımı, açıklama, ek metin) üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-02-01. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1109/tvcg.2010.179",
+   "arxiv_id": null,
+   "doi": "10.1109/TVCG.2010.179",
+   "baslik": "Narrative Visualization: Telling Stories with Data",
+   "yil": 2010,
+   "gerekce": "This paper defined narrative visualization and its design space, including how text and annotation guide readers."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2208.01780",
+   "arxiv_id": "2208.01780",
+   "doi": "10.1109/TVCG.2022.3209383",
+   "baslik": "Striking a Balance: Reader Takeaways and Preferences when Integrating Text and Charts",
+   "yil": 2022,
+   "gerekce": "This is a key empirical study of how the amount, type and placement of text affect what readers take away from a chart and what they prefer."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2110.04406",
+   "arxiv_id": "2110.04406",
+   "doi": "10.1109/TVCG.2021.3114770",
+   "baslik": "Accessible Visualization via Natural Language Descriptions: A Four-Level Model of Semantic Content",
+   "yil": 2021,
+   "gerekce": "It gives a four-level model of what chart descriptions and alt text can say, and this model now underpins captioning research."
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1109/tvcg.2011.255",
+   "arxiv_id": null,
+   "doi": "10.1109/TVCG.2011.255",
+   "baslik": "Visualization Rhetoric: Framing Effects in Narrative Visualization",
+   "yil": 2011,
+   "gerekce": "It explains how text and design choices frame the way people interpret a visualization."
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1145/3173574.3174012",
+   "arxiv_id": null,
+   "doi": "10.1145/3173574.3174012",
+   "baslik": "Frames and Slants in Titles of Visualizations on Controversial Topics",
+   "yil": 2018,
+   "gerekce": "It showed experimentally that a chart's title strongly shapes how readers remember the message."
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1145/3411764.3445443",
+   "arxiv_id": null,
+   "doi": "10.1145/3411764.3445443",
+   "baslik": "Towards Understanding How Readers Integrate Charts and Captions: A Case Study with Line Charts",
+   "yil": 2021,
+   "gerekce": "It examines how captions and visual salience interact in reader takeaways."
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1145/3290605.3300576",
+   "arxiv_id": null,
+   "doi": "10.1145/3290605.3300576",
+   "baslik": "Trust and Recall of Information across Varying Degrees of Title-Visualization Misalignment",
+   "yil": 2019,
+   "gerekce": "It tests what happens to trust and recall when a title contradicts its chart."
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1109/pacificvis.2017.8031599",
+   "arxiv_id": null,
+   "doi": "10.1109/PACIFICVIS.2017.8031599",
+   "baslik": "ChartAccent: Annotation for Data-Driven Storytelling",
+   "yil": 2017,
+   "gerekce": "It set out a design space for chart annotation and a data-driven tool for adding annotations."
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.1145/2470654.2470724",
+   "arxiv_id": null,
+   "doi": "10.1145/2470654.2470724",
+   "baslik": "Contextifier: Automatic Generation of Annotated Stock Visualizations",
+   "yil": 2013,
+   "gerekce": "This was a pioneering system that automatically adds news-based text annotations to charts."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2108.04203",
+   "arxiv_id": "2108.04203",
+   "doi": "10.1109/TVCG.2021.3114802",
+   "baslik": "Kori: Interactive Synthesis of Text and Charts in Data Documents",
+   "yil": 2022,
+   "gerekce": "It supports creating interactive links between text and charts in data documents."
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1145/3411764.3445354",
+   "arxiv_id": null,
+   "doi": "10.1145/3411764.3445354",
+   "baslik": "Leveraging Text-Chart Links to Support Authoring of Data-Driven Articles with VizFlow",
+   "yil": 2021,
+   "gerekce": "It is an authoring tool for text-chart links in data-driven articles."
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1145/3242587.3242617",
+   "arxiv_id": null,
+   "doi": "10.1145/3242587.3242617",
+   "baslik": "Facilitating Document Reading by Linking Text and Tables",
+   "yil": 2018,
+   "gerekce": "It automatically links sentences in a document to the matching table cells."
+  },
+  {
+   "sira": 13,
+   "id": "doi:10.1111/cgf.13719",
+   "arxiv_id": null,
+   "doi": "10.1111/cgf.13719",
+   "baslik": "Linking and Layout: Exploring the Integration of Text and Visualization in Storytelling",
+   "yil": 2019,
+   "gerekce": "It measures how the layout of text and visualization, and the links between them, affect comprehension."
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1145/3313831.3376443",
+   "arxiv_id": null,
+   "doi": "10.1145/3313831.3376443",
+   "baslik": "Automatic Annotation Synchronizing with Textual Description for Visualization",
+   "yil": 2020,
+   "gerekce": "It automatically generates chart annotations that stay in sync with the accompanying text."
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1109/tvcg.2018.2865119",
+   "arxiv_id": null,
+   "doi": "10.1109/TVCG.2018.2865119",
+   "baslik": "Elastic Documents: Coupling Text and Tables through Contextual Visualizations for Enhanced Document Reading",
+   "yil": 2019,
+   "gerekce": "It generates visualizations from the text being read, in context."
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1145/3172944.3173007",
+   "arxiv_id": null,
+   "doi": "10.1145/3172944.3173007",
+   "baslik": "Coupling Story to Visualization: Using Textual Analysis as a Bridge Between Data and Interpretation",
+   "yil": 2018,
+   "gerekce": "It uses text analysis to bind a narrative to visualizations automatically."
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1109/tvcg.2018.2865145",
+   "arxiv_id": null,
+   "doi": "10.1109/TVCG.2018.2865145",
+   "baslik": "Augmenting Visualizations with Interactive Data Facts to Facilitate Interpretation and Communication",
+   "yil": 2019,
+   "gerekce": "It pairs charts with automatically generated text data facts."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2203.06486",
+   "arxiv_id": "2203.06486",
+   "doi": "10.18653/v1/2022.acl-long.277",
+   "baslik": "Chart-to-Text: A Large-Scale Benchmark for Chart Summarization",
+   "yil": 2022,
+   "gerekce": "It is the main large-scale benchmark for generating text summaries of charts."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2307.05356",
+   "arxiv_id": "2307.05356",
+   "doi": "10.18653/v1/2023.acl-long.401",
+   "baslik": "VisText: A Benchmark for Semantically Rich Chart Captioning",
+   "yil": 2023,
+   "gerekce": "It provides a benchmark for producing semantically rich captions at multiple levels."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2010.09142",
+   "arxiv_id": "2010.09142",
+   "doi": null,
+   "baslik": "Chart-to-Text: Generating Natural Language Descriptions for Charts by Adapting the Transformer Model",
+   "yil": 2020,
+   "gerekce": "It was an early neural model for describing charts in natural language."
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1162/coli_a_00091",
+   "arxiv_id": null,
+   "doi": "10.1162/COLI_a_00091",
+   "baslik": "Summarizing Information Graphics Textually",
+   "yil": 2012,
+   "gerekce": "It is a foundational NLG study on summarizing information graphics in text for visually impaired users."
+  },
+  {
+   "sira": 22,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Describing Complex Charts in Natural Language: A Caption Generation System",
+   "yil": 1998,
+   "gerekce": "It was the first major system for automatically generating chart captions."
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1109/tvcg.2021.3114846",
+   "arxiv_id": null,
+   "doi": "10.1109/TVCG.2021.3114846",
+   "baslik": "Communicating Visualizations without Visuals: Investigation of Visualization Alternative Text for People with Visual Impairments",
+   "yil": 2022,
+   "gerekce": "It offers empirical guidelines for writing visualization alt text."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2010.09975",
+   "arxiv_id": "2010.09975",
+   "doi": "10.1109/TVCG.2020.3030403",
+   "baslik": "Calliope: Automatic Visual Data Story Generation from a Spreadsheet",
+   "yil": 2021,
+   "gerekce": "It automatically generates data stories that combine charts with text."
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1109/tvcg.2019.2934398",
+   "arxiv_id": null,
+   "doi": "10.1109/TVCG.2019.2934398",
+   "baslik": "DataShot: Automatic Generation of Fact Sheets from Tabular Data",
+   "yil": 2020,
+   "gerekce": "It generates fact sheets that combine visualizations with text from tabular data."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:1907.09091",
+   "arxiv_id": "1907.09091",
+   "doi": "10.1109/TVCG.2019.2934785",
+   "baslik": "Text-to-Viz: Automatic Generation of Infographics from Proportion-Related Natural Language Statements",
+   "yil": 2020,
+   "gerekce": "It turns natural language statements into infographics."
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1109/tvcg.2016.2598876",
+   "arxiv_id": null,
+   "doi": "10.1109/TVCG.2016.2598876",
+   "baslik": "Temporal Summary Images: An Approach to Narrative Visualization via Interactive Annotation Generation and Placement",
+   "yil": 2017,
+   "gerekce": "It covers generating and placing annotations automatically in narrative visualization."
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.1109/tvcg.2015.2467732",
+   "arxiv_id": null,
+   "doi": "10.1109/TVCG.2015.2467732",
+   "baslik": "Beyond Memorability: Visualization Recognition and Recall",
+   "yil": 2016,
+   "gerekce": "Its eye-tracking evidence shows that titles and text in a visualization are central to recall."
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1145/3593580",
+   "arxiv_id": null,
+   "doi": "10.1145/3593580",
+   "baslik": "Show It or Tell It? Text, Visualization, and Their Combination",
+   "yil": 2023,
+   "gerekce": "It is a synthesis paper on the open problems of combining text and visualization."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2205.03966",
+   "arxiv_id": "2205.03966",
+   "doi": "10.1111/cgf.14573",
+   "baslik": "Chart Question Answering: State of the Art and Future Directions",
+   "yil": 2022,
+   "gerekce": "It surveys chart question answering and natural language interaction with charts, and sets out the open problems."
+  }
+ ]
+}

@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-190317-98999b",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Bilişim eğitiminde üretken yapay zeka kullanımının zararları ve istenmeyen sonuçları (akademik dürüstlük, öğrenme kaybı, bağımlılık) üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-09-06",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.1577,
+ "sure_s": 67.8,
+ "web_arama": 0,
+ "token": {
+  "in": 2,
+  "out": 7286,
+  "cache_read": 3532,
+  "cache_write": 1414
+ },
+ "son_rapor_token_tahmini": 3075,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: Bilişim eğitiminde üretken yapay zeka kullanımının zararları ve istenmeyen sonuçları (akademik dürüstlük, öğrenme kaybı, bağımlılık) üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2025-09-06. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2405.17739",
+   "arxiv_id": "2405.17739",
+   "doi": "10.1145/3632620.3671116",
+   "baslik": "The Widening Gap: The Benefits and Harms of Generative AI for Novice Programmers",
+   "yil": 2024,
+   "gerekce": "Shows directly that GenAI helps strong novices but harms struggling ones through metacognitive problems and an illusion of competence."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2310.00658",
+   "arxiv_id": "2310.00658",
+   "doi": "10.1145/3623762.3633499",
+   "baslik": "The Robots Are Here: Navigating the Generative AI Revolution in Computing Education",
+   "yil": 2023,
+   "gerekce": "ITiCSE working group report that maps GenAI risks in computing education, covering integrity, over-reliance and assessment, along with instructor and student views."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2212.01020",
+   "arxiv_id": "2212.01020",
+   "doi": "10.1145/3545945.3569759",
+   "baslik": "Programming Is Hard - Or at Least It Used to Be: Educational Opportunities and Challenges of AI Code Generation",
+   "yil": 2023,
+   "gerekce": "Key position paper that set out the academic integrity, over-reliance and learning risks of code generators."
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1073/pnas.2422633122",
+   "arxiv_id": null,
+   "doi": "10.1073/pnas.2422633122",
+   "baslik": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+   "yil": 2025,
+   "gerekce": "Large field experiment showing that unrestricted GPT-4 access lowers performance once access is removed, which is direct evidence of learning loss."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2302.07427",
+   "arxiv_id": "2302.07427",
+   "doi": "10.1145/3544548.3580919",
+   "baslik": "Studying the effect of AI Code Generators on Supporting Novice Learners in Introductory Programming",
+   "yil": 2023,
+   "gerekce": "Controlled experiment on how code generators affect novice learning and retention."
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1145/3511861.3511863",
+   "arxiv_id": null,
+   "doi": "10.1145/3511861.3511863",
+   "baslik": "The Robots Are Coming: Exploring the Implications of OpenAI Codex on Introductory Programming",
+   "yil": 2022,
+   "gerekce": "First study to show Codex can solve CS1 exam problems, opening the debate over assessment and academic integrity."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2306.02608",
+   "arxiv_id": "2306.02608",
+   "doi": "10.1145/3624720",
+   "baslik": "Computing Education in the Era of Generative AI",
+   "yil": 2024,
+   "gerekce": "CACM overview of the opportunities and threats GenAI poses for computing education."
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1145/3568813.3600138",
+   "arxiv_id": null,
+   "doi": "10.1145/3568813.3600138",
+   "baslik": "From \"Ban It Till We Understand It\" to \"Resistance is Futile\": How University Programming Instructors Plan to Adapt as More Students Use AI Code Generation and Explanation Tools such as ChatGPT and GitHub Copilot",
+   "yil": 2023,
+   "gerekce": "Instructor interviews describing concerns about cheating and learning loss, and the strategies instructors plan to use."
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.1111/bjet.13544",
+   "arxiv_id": null,
+   "doi": "10.1111/bjet.13544",
+   "baslik": "Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and performance",
+   "yil": 2024,
+   "gerekce": "Experimental study that introduced the term \"metacognitive laziness\" for the dependence ChatGPT can create."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2506.08872",
+   "arxiv_id": "2506.08872",
+   "doi": null,
+   "baslik": "Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task",
+   "yil": 2025,
+   "gerekce": "EEG study that measured \"cognitive debt\" from LLM use and drew wide attention."
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1145/3706598.3713778",
+   "arxiv_id": null,
+   "doi": "10.1145/3706598.3713778",
+   "baslik": "The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers",
+   "yil": 2025,
+   "gerekce": "Large survey on how GenAI weakens critical thinking."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2306.10073",
+   "arxiv_id": "2306.10073",
+   "doi": "10.1145/3568813.3600142",
+   "baslik": "Thrilled by Your Progress! Large Language Models (GPT-4) No Longer Struggle to Pass Assessments in Higher Education Programming Courses",
+   "yil": 2023,
+   "gerekce": "Shows GPT-4 passes programming course assessments, making the threat to assessment integrity concrete."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2304.02491",
+   "arxiv_id": "2304.02491",
+   "doi": "10.1145/3617367",
+   "baslik": "\"It's Weird That it Knows What I Want\": Usability and Interactions with Copilot for Novice Programmers",
+   "yil": 2023,
+   "gerekce": "Documents how novices interact with Copilot and the cognitive and metacognitive difficulties it causes them."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2409.09047",
+   "arxiv_id": "2409.09047",
+   "doi": null,
+   "baslik": "AI Meets the Classroom: When Do Large Language Models Harm Learning?",
+   "yil": 2024,
+   "gerekce": "Causal evidence that LLMs harm learning when students use them as a substitute for their own work."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2304.02819",
+   "arxiv_id": "2304.02819",
+   "doi": "10.1016/j.patter.2023.100779",
+   "baslik": "GPT detectors are biased against non-native English writers",
+   "yil": 2023,
+   "gerekce": "Shows that AI detection tools used to enforce academic integrity treat non-native English writers unfairly."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2306.15666",
+   "arxiv_id": "2306.15666",
+   "doi": "10.1007/s40979-023-00146-z",
+   "baslik": "Testing of detection tools for AI-generated text",
+   "yil": 2023,
+   "gerekce": "Demonstrates that AI text detectors are unreliable, an open problem for enforcing academic integrity."
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1080/14703297.2023.2190148",
+   "arxiv_id": null,
+   "doi": "10.1080/14703297.2023.2190148",
+   "baslik": "Chatting and cheating: Ensuring academic integrity in the era of ChatGPT",
+   "yil": 2023,
+   "gerekce": "One of the most-cited early papers on ChatGPT and academic integrity."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2308.06921",
+   "arxiv_id": "2308.06921",
+   "doi": "10.1145/3631802.3631830",
+   "baslik": "CodeHelp: Using Large Language Models with Guardrails for Scalable Support in Programming Classes",
+   "yil": 2023,
+   "gerekce": "Proposes a guardrailed LLM assistant that withholds solutions, a design response to the over-reliance problem."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2401.11314",
+   "arxiv_id": "2401.11314",
+   "doi": "10.1145/3613904.3642773",
+   "baslik": "CodeAid: Evaluating a Classroom Deployment of an LLM-based Programming Assistant that Balances Student and Educator Needs",
+   "yil": 2024,
+   "gerekce": "Large classroom deployment that examines the tension between not handing out answers and being useful to students."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2309.14049",
+   "arxiv_id": "2309.14049",
+   "doi": "10.1145/3631802.3631806",
+   "baslik": "How Novices Use LLM-Based Code Generators to Solve CS1 Coding Tasks in a Self-Paced Learning Environment",
+   "yil": 2023,
+   "gerekce": "Describes novice usage patterns, including over-reliance behaviours such as delegating the whole task to the tool."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2412.14732",
+   "arxiv_id": "2412.14732",
+   "doi": "10.1145/3689187.3709614",
+   "baslik": "Beyond the Hype: A Comprehensive Review of Current Trends in Generative AI Research, Teaching Practices, and Tools",
+   "yil": 2025,
+   "gerekce": "Second ITiCSE working group report reviewing GenAI research and teaching practice in computing education and the open problems."
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1145/3649217.3653621",
+   "arxiv_id": null,
+   "doi": "10.1145/3649217.3653621",
+   "baslik": "Self-Regulation, Self-Efficacy, and Fear of Failure Interactions with How Novices Use LLMs to Solve Programming Problems",
+   "yil": 2024,
+   "gerekce": "Links LLM dependence to self-regulation and self-efficacy."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2401.02262",
+   "arxiv_id": "2401.02262",
+   "doi": "10.1145/3636243.3636248",
+   "baslik": "The Effects of Generative AI on Computing Students' Help-Seeking Preferences",
+   "yil": 2024,
+   "gerekce": "Shows how GenAI changes students' help-seeking behaviour, including the move away from human help."
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.3390/app14104115",
+   "arxiv_id": null,
+   "doi": "10.3390/app14104115",
+   "baslik": "The Impact of Large Language Models on Programming Education and Student Learning Outcomes",
+   "yil": 2024,
+   "gerekce": "Semester-long study finding a negative association between LLM use and programming grades."
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1145/3626252.3630826",
+   "arxiv_id": null,
+   "doi": "10.1145/3626252.3630826",
+   "baslik": "Detecting ChatGPT-Generated Code Submissions in a CS1 Course Using Machine Learning Models",
+   "yil": 2024,
+   "gerekce": "Studies detection of AI-generated code to address academic integrity in programming courses."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2307.07411",
+   "arxiv_id": "2307.07411",
+   "doi": null,
+   "baslik": "Detecting LLM-Generated Text in Computing Education: A Comparative Study for ChatGPT Cases",
+   "yil": 2023,
+   "gerekce": "Compares how well LLM detectors work in a computing education setting."
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1186/s40561-024-00316-7",
+   "arxiv_id": null,
+   "doi": "10.1186/s40561-024-00316-7",
+   "baslik": "The effects of over-reliance on AI dialogue systems on students' cognitive abilities: a systematic review",
+   "yil": 2024,
+   "gerekce": "Systematic review of how over-reliance on AI affects students' cognitive abilities."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2310.04631",
+   "arxiv_id": "2310.04631",
+   "doi": "10.1145/3626252.3630842",
+   "baslik": "Trust in Generative AI among Students: An exploratory study",
+   "yil": 2024,
+   "gerekce": "Examines how students' trust in GenAI relates to their dependence on it."
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2308.04309",
+   "arxiv_id": "2308.04309",
+   "doi": null,
+   "baslik": "Generative AI in Computing Education: Perspectives of Students and Instructors",
+   "yil": 2023,
+   "gerekce": "Interviews with students and instructors setting out concerns about integrity and over-reliance."
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.3390/soc15010006",
+   "arxiv_id": null,
+   "doi": "10.3390/soc15010006",
+   "baslik": "AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking",
+   "yil": 2025,
+   "gerekce": "Finds a negative relationship between AI use and critical thinking, mediated by cognitive offloading."
+  }
+ ]
+}

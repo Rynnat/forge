@@ -1,0 +1,936 @@
+{
+ "run_id": "20261025-182816-c4733d",
+ "soru": "Uç cihazlarda birlikte çalışan çoklu LLM ajanlarının sıfır güven mimarisiyle güvenliğinin sağlanması üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-07-27",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6581,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.10678399999999999,
+   "in": 1224,
+   "out": 4850,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.16379702,
+   "in": 551272,
+   "out": 42058,
+   "web_search": 9
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.23333899999999996,
+   "in": 274635,
+   "out": 356840,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.154172,
+   "in": 12520,
+   "out": 2701,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 41.0,
+  "toplama:openalex": 1.3,
+  "web_isci": 61.4,
+  "toplama:crossref": 77.6,
+  "toplama:dblp": 209.4,
+  "toplama:arxiv": 353.7,
+  "toplama": 353.7,
+  "tekil+kesim_1": 43.0,
+  "atif": 202.8,
+  "okuyucu": 432.8,
+  "damitma": 27.9,
+  "sef_final": 29.5,
+  "toplam": 1130.6
+ },
+ "ozet_token_tahmini": 3757,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Sıfır güven mimarisinin (ZTA) temel ilkeleri nelerdir, uç bilişim, IoT ve dağıtık sistemlere nasıl uyarlanmıştır?",
+    "sorgular": [
+     "\"zero trust architecture\" edge computing",
+     "\"zero trust\" IoT security survey",
+     "\"never trust always verify\" distributed systems",
+     "\"zero trust\" 6G network security",
+     "micro-segmentation continuous authentication edge"
+    ],
+    "yeterli": "NIST SP 800-207 tanımı ile uç, IoT ve 6G bağlamındaki ZTA uyarlamalarını özetleyen en az birkaç survey ve temel çalışma bulunduğunda kapsam yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "LLM tabanlı çoklu ajan sistemlerinin mimarileri ve işbirliği çerçeveleri nelerdir, hangi iletişim protokollerini (MCP, A2A vb.) kullanırlar?",
+    "sorgular": [
+     "\"LLM-based multi-agent systems\" survey",
+     "multi-agent conversation framework LLM",
+     "\"Model Context Protocol\" security",
+     "\"agent-to-agent\" protocol LLM",
+     "autonomous LLM agents survey"
+    ],
+    "yeterli": "Ana MAS çerçeveleri (AutoGen, MetaGPT, CAMEL vb.), ajan survey'leri ve MCP/A2A protokol analizleri kapsandığında yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Çoklu LLM ajan sistemlerine yönelik tehditler nelerdir: ajanlar arası prompt enjeksiyonu, bulaşıcı jailbreak, bellek zehirleme, kötü niyetli veya hatalı ajanlar?",
+    "sorgular": [
+     "\"indirect prompt injection\" LLM agents",
+     "LLM-to-LLM prompt injection multi-agent",
+     "infectious jailbreak multimodal agents",
+     "memory poisoning LLM agent RAG",
+     "malicious agent multi-agent LLM resilience"
+    ],
+    "yeterli": "Ajanlar arası yayılan saldırılar, dolaylı enjeksiyon, bellek/bilgi zehirleme ve hatalı ajan dayanıklılığına dair temel saldırı çalışmaları bulunduğunda yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Ajan ve çoklu ajan güvenliği için hangi savunma yöntemleri önerilmiştir: tasarım gereği yetki ayrımı, izleme/guardrail ajanları, topoloji tabanlı savunmalar, kimlik doğrulama?",
+    "sorgular": [
+     "prompt injection defense by design agents",
+     "LLM guardrail input-output safeguard",
+     "topology-guided defense multi-agent LLM",
+     "multi-agent jailbreak defense",
+     "\"least privilege\" LLM agent tool access"
+    ],
+    "yeterli": "CaMeL benzeri yetenek/ayrıcalık tabanlı tasarımlar, guardrail modelleri, çoklu ajan savunmaları ve ajan kimlik/erişim kontrolü önerileri kapsandığında yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Ajan güvenliğini değerlendirmek için hangi benchmark ve veri setleri mevcuttur?",
+    "sorgular": [
+     "AgentDojo prompt injection benchmark",
+     "InjecAgent tool-integrated agents",
+     "\"Agent Security Bench\"",
+     "LLM agent safety benchmark",
+     "multi-agent safety evaluation framework"
+    ],
+    "yeterli": "Önde gelen ajan güvenlik benchmark'ları ve çoklu ajan güvenlik değerlendirme çerçeveleri belirlendiğinde yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Uç cihazlarda LLM ve ajan dağıtımı (on-device LLM, mobil uç zekâ, split/federated çıkarım) hangi kaynak ve güvenlik kısıtlarını getirir?",
+    "sorgular": [
+     "on-device LLM edge deployment",
+     "\"mobile edge intelligence\" large language models",
+     "edge LLM agents collaborative inference",
+     "federated LLM edge security privacy",
+     "small language models on-device"
+    ],
+    "yeterli": "Uç LLM survey'leri, cihaz üstü küçük modeller ve TEE/gizlilik koruyucu uç çıkarım çalışmaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Ajan tabanlı yapay zekâ ve çoklu ajan güvenliğinde açık problemler ve tehdit modelleri nelerdir?",
+    "sorgular": [
+     "open challenges multi-agent security",
+     "agentic AI threat model",
+     "multi-agent risks advanced AI",
+     "trustworthy LLM agents survey threats",
+     "why multi-agent LLM systems fail"
+    ],
+    "yeterli": "Çoklu ajan riskleri, ajan tehdit taksonomileri ve açık araştırma yönlerini ele alan güncel survey ve pozisyon makaleleri belirlendiğinde yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Zero Trust Architecture",
+    "yil": 2020
+   },
+   {
+    "baslik": "A Survey on Zero Trust Architecture: Challenges and Future Trends",
+    "yil": 2022
+   },
+   {
+    "baslik": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+    "yil": 2023
+   },
+   {
+    "baslik": "A Survey on Large Language Model based Autonomous Agents",
+    "yil": 2023
+   },
+   {
+    "baslik": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+    "yil": 2023
+   },
+   {
+    "baslik": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+    "yil": 2023
+   },
+   {
+    "baslik": "Universal and Transferable Adversarial Attacks on Aligned Language Models",
+    "yil": 2023
+   },
+   {
+    "baslik": "Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations",
+    "yil": 2023
+   },
+   {
+    "baslik": "Identifying the Risks of LM Agents with an LM-Emulated Sandbox",
+    "yil": 2023
+   },
+   {
+    "baslik": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
+    "yil": 2024
+   },
+   {
+    "baslik": "Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast",
+    "yil": 2024
+   },
+   {
+    "baslik": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+    "yil": 2024
+   },
+   {
+    "baslik": "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents",
+    "yil": 2024
+   },
+   {
+    "baslik": "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents",
+    "yil": 2024
+   },
+   {
+    "baslik": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+    "yil": 2024
+   },
+   {
+    "baslik": "PsySafe: A Comprehensive Framework for Psychological-based Attack, Defense, and Evaluation of Multi-agent System Safety",
+    "yil": 2024
+   },
+   {
+    "baslik": "Flooding Spread of Manipulated Knowledge in LLM-Based Multi-Agent Communities",
+    "yil": 2024
+   },
+   {
+    "baslik": "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+    "yil": 2024
+   },
+   {
+    "baslik": "NetSafe: Exploring the Topological Safety of Multi-agent Networks",
+    "yil": 2024
+   },
+   {
+    "baslik": "AutoDefense: Multi-Agent LLM Defense against Jailbreak Attacks",
+    "yil": 2024
+   },
+   {
+    "baslik": "MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases",
+    "yil": 2024
+   },
+   {
+    "baslik": "Defeating Prompt Injections by Design",
+    "yil": 2025
+   },
+   {
+    "baslik": "G-Safeguard: A Topology-Guided Security Lens and Treatment on LLM-based Multi-agent Systems",
+    "yil": 2025
+   },
+   {
+    "baslik": "Open Challenges in Multi-Agent Security: Towards Secure Systems of Interacting AI Agents",
+    "yil": 2025
+   },
+   {
+    "baslik": "Multi-Agent Risks from Advanced AI",
+    "yil": 2025
+   }
+  ],
+  "web_odaklari": [
+   "awesome LLM agent security papers github",
+   "multi-agent LLM safety reading list",
+   "zero trust edge AI agents papers list"
+  ]
+ },
+ "tohumlar": [
+  "doi:10.1155/2022/6476274",
+  "arXiv:2403.02691",
+  "arXiv:2406.13352",
+  "doi:10.3390/e25121595",
+  "doi:10.30574/gscarr.2025.22.2.0036",
+  "arXiv:2407.18921",
+  "doi:10.1109/mnet.131.2200513",
+  "doi:10.3390/math13081239",
+  "arXiv:2302.12173",
+  "arXiv:2407.12784",
+  "arXiv:2402.08567",
+  "arXiv:2502.14143"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2505.02077",
+   "arxiv_id": "2505.02077",
+   "doi": null,
+   "baslik": "Open Challenges in Multi-Agent Security: Towards Secure Systems of Interacting AI Agents",
+   "yil": 2025,
+   "tarih": "2025-05-04",
+   "gerekce": "Etkileşen yapay zekâ ajanlarının çoklu ajan güvenliği alanını ve açık problemlerini tanımlar; ağ etkileriyle jailbreak ve zehirlemenin yayılmasını vurgular.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Network effects can rapidly spread privacy breaches, disinformation, jailbreaks, and data poisoning, while multi-agent dispersion and stealth optimization help adversaries evade oversight",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2410.07283",
+   "arxiv_id": "2410.07283",
+   "doi": null,
+   "baslik": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
+   "yil": 2024,
+   "tarih": "2024-10-09",
+   "gerekce": "Kötü niyetli promptların birbirine bağlı ajanlar arasında virüs gibi kendini çoğalttığı Prompt Infection saldırısını tanıtır; LLM Tagging savunmasını da içerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We introduce Prompt Infection, a novel attack where malicious prompts self-replicate across interconnected agents, behaving much like a computer virus.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2402.08567",
+   "arxiv_id": "2402.08567",
+   "doi": null,
+   "baslik": "Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast",
+   "yil": 2024,
+   "tarih": "2024-02-13",
+   "gerekce": "Tek bir görüntünün çoklu ajan ortamlarında bulaşıcı jailbreak'i üstel hızla yaymasını gösteren kritik bir saldırı çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we report an even more severe safety issue in multi-agent environments, referred to as infectious jailbreak.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2502.14143",
+   "arxiv_id": "2502.14143",
+   "doi": null,
+   "baslik": "Multi-Agent Risks from Advanced AI",
+   "yil": 2025,
+   "tarih": "2025-02-19",
+   "gerekce": "Gelişmiş yapay zekâda çoklu ajan risklerini yanlış koordinasyon, çatışma ve gizli işbirliği olmak üzere üç hata modu üzerinden yapılandırılmış bir taksonomiyle sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we provide a structured taxonomy of these risks by identifying three key failure modes (miscoordination, conflict, and collusion)",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2302.12173",
+   "arxiv_id": "2302.12173",
+   "doi": "10.1145/3605764.3623985",
+   "baslik": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+   "yil": 2023,
+   "tarih": "2023-02-23",
+   "gerekce": "Dolaylı prompt enjeksiyonunu tanımlayan çığır açıcı çalışmadır; LLM entegre uygulamaların uzaktan istismar edilmesini sağlayan yeni saldırı vektörlerini ortaya koyar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We reveal new attack vectors, using Indirect Prompt Injection, that enable adversaries to remotely (without a direct interface) exploit LLM-integrated applications",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 671,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2503.18813",
+   "arxiv_id": "2503.18813",
+   "doi": null,
+   "baslik": "Defeating Prompt Injections by Design",
+   "yil": 2025,
+   "tarih": "2025-03-24",
+   "gerekce": "CaMeL ile güvenilmeyen verinin program akışını hiçbir zaman etkileyemediği, tasarım gereği prompt enjeksiyonu savunması sunar; sıfır güven yaklaşımıyla uyumludur.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To operate, CaMeL explicitly extracts the control and data flows from the (trusted) query; therefore, the untrusted data retrieved by the LLM can never impact the program flow.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2502.11127",
+   "arxiv_id": "2502.11127",
+   "doi": "10.18653/v1/2025.acl-long.359",
+   "baslik": "G-Safeguard: A Topology-Guided Security Lens and Treatment on LLM-based Multi-agent Systems",
+   "yil": 2025,
+   "tarih": "2025-02-16",
+   "gerekce": "Çoklu ajan ifade grafiğinde grafik sinir ağlarıyla anomali tespit eden, topoloji güdümlü bir savunma olan G-Safeguard'ı önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we introduce G-Safeguard, a topology-guided security lens and treatment for robust LLM-MAS, which leverages graph neural networks to detect anomalies on the multi-agent utterance graph",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 13,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2406.13352",
+   "arxiv_id": "2406.13352",
+   "doi": "10.52202/079017-2636",
+   "baslik": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+   "yil": 2024,
+   "tarih": "2024-06-19",
+   "gerekce": "Güvenilmeyen veri üzerinde araç kullanan ajanlarda prompt enjeksiyonu saldırı ve savunmalarını değerlendiren dinamik bir çerçevedir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we introduce AgentDojo, an evaluation framework for agents that execute tools over untrusted data.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 165,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2410.02644",
+   "arxiv_id": "2410.02644",
+   "doi": null,
+   "baslik": "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents",
+   "yil": 2024,
+   "tarih": "2024-10-03",
+   "gerekce": "Prompt enjeksiyonu, bellek zehirleme ve arka kapı saldırılarını 11 savunmayla birlikte 13 LLM omurgası üzerinde biçimselleştirip kıyaslar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Based on ASB, we benchmark 10 prompt injection attacks, a memory poisoning attack, a novel Plan-of-Thought backdoor attack, 4 mixed attacks, and 11 corresponding defenses across 13 LLM backbones.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2407.12784",
+   "arxiv_id": "2407.12784",
+   "doi": "10.52202/079017-4136",
+   "baslik": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+   "yil": 2024,
+   "tarih": "2024-07-17",
+   "gerekce": "Uzun süreli belleği veya RAG bilgi tabanını zehirleyerek LLM ajanlarına yönelik ilk arka kapı saldırısını tanıtır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose a novel red teaming approach AgentPoison, the first backdoor attack targeting generic and RAG-based LLM agents by poisoning their long-term memory or RAG knowledge base.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 76,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2505.23847",
+   "arxiv_id": "2505.23847",
+   "doi": null,
+   "baslik": "Seven Security Challenges in Cross-domain Multi-agent LLM Systems",
+   "yil": 2025,
+   "tarih": "2025-05-28",
+   "gerekce": "Güvenilmeyen eşlerden mesaj alan ajanların sır sızdırabileceğini gösterir ve çapraz alan çoklu ajan sistemlerinde yedi güvenlik zorluğunu tanımlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "An agent benign in isolation may, when receiving messages from an untrusted peer, leak secrets or violate policy, producing risks driven by emergent multi-agent dynamics rather than classical software bugs.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2407.18921",
+   "arxiv_id": "2407.18921",
+   "doi": "10.36227/techrxiv.172115025.57884352/v1",
+   "baslik": "Mobile Edge Intelligence for Large Language Models: A Contemporary Survey",
+   "yil": 2024,
+   "tarih": "2024-07-09",
+   "gerekce": "Gizlilik, gecikme ve bant genişliği avantajları bağlamında uç cihazlarda LLM çalıştırmayı ele alan kapsamlı bir mobil uç zekâ anketidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "On-device large language models (LLMs), referring to running LLMs on edge devices, have raised considerable interest owing to their superior privacy, reduced latency, and bandwidth saving.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "web"
+   ],
+   "atif": 23,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2506.19676",
+   "arxiv_id": "2506.19676",
+   "doi": null,
+   "baslik": "A Survey of LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures",
+   "yil": 2025,
+   "tarih": "2025-06-24",
+   "gerekce": "MCP ve A2A gibi ajan iletişim protokollerini, bunların güvenlik risklerini ve savunma önlemlerini birlikte inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "many organizations have intensively begun to design related communication protocols (e.g., Anthropic's MCP and Google's A2A) within the past year.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2505.02279",
+   "arxiv_id": "2505.02279",
+   "doi": null,
+   "baslik": "A survey of agent interoperability protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)",
+   "yil": 2025,
+   "tarih": "2025-05-04",
+   "gerekce": "MCP, ACP, A2A ve ANP protokollerini karşılaştırır; A2A'nın yetenek tabanlı Agent Card'larla güvenli görev devrini nasıl desteklediğini açıklar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "A2A enables peer-to-peer task delegation using capability-based Agent Cards, supporting secure and scalable collaboration across enterprise agent workflows.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1002/cpe.7198",
+   "arxiv_id": null,
+   "doi": "10.1002/cpe.7198",
+   "baslik": "Identity authentication for edge devices based on zero‐trust architecture",
+   "yil": 2022,
+   "tarih": "2022-07-23",
+   "gerekce": "Uç bilişim güvenliğinin ilk savunma hattı olan cihaz kimlik doğrulamasını sıfır güven mimarisiyle doğrudan ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Device identity authentication is the first line of defense for edge computing security mechanisms.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 16,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1155/2022/6476274",
+   "arxiv_id": null,
+   "doi": "10.1155/2022/6476274",
+   "baslik": "A Survey on Zero Trust Architecture: Challenges and Future Trends",
+   "yil": 2022,
+   "tarih": "2022-01",
+   "gerekce": "'Asla güvenme, daima doğrula' ilkesine dayanan sıfır güven mimarisinin zorluklarını ve geleceğini inceleyen çok atıflı bir temel ankettir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Zero trust is a new type of network security model, which is based on the concept of never trust and always verify.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 239,
+   "rel": 2,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2403.02691",
+   "arxiv_id": "2403.02691",
+   "doi": "10.18653/v1/2024.findings-acl.624",
+   "baslik": "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents",
+   "yil": 2014,
+   "tarih": "2014",
+   "gerekce": "Araç entegre LLM ajanlarının dolaylı prompt enjeksiyonu saldırılarına karşı zafiyetini ölçen temel benchmark InjecAgent'ı sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this work, we introduce InjecAgent, a benchmark designed to assess the vulnerability of tool-integrated LLM agents to IPI attacks.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 149,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2503.00061",
+   "arxiv_id": "2503.00061",
+   "doi": "10.18653/v1/2025.findings-naacl.395",
+   "baslik": "Adaptive Attacks Break Defenses Against Indirect Prompt Injection Attacks on LLM Agents",
+   "yil": 2024,
+   "tarih": "2024",
+   "gerekce": "Dolaylı prompt enjeksiyonuna karşı sekiz savunmanın uyarlanabilir saldırılarla %50'nin üzerinde başarıyla aşıldığını gösterir; bu, önemli bir açık problemdir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, we evaluate eight different defenses and bypass all of them using adaptive attacks, consistently achieving an attack success rate of over 50%.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp"
+   ],
+   "atif": 32,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2504.19956",
+   "arxiv_id": "2504.19956",
+   "doi": null,
+   "baslik": "Securing Agentic AI: A Comprehensive Threat Model and Mitigation Framework for Generative AI Agents",
+   "yil": 2025,
+   "tarih": "2025-04-28",
+   "gerekce": "Otonomi, kalıcı bellek ve araç entegrasyonunun yarattığı riskler için üretken yapay zekâ ajanlarına özgü bir tehdit modeli ve azaltım çerçevesi sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This paper introduces a comprehensive threat model tailored specifically for GenAI agents, focusing on how their autonomy, persistent memory access, complex reasoning, and tool integration create novel risks.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2405.14371",
+   "arxiv_id": "2405.14371",
+   "doi": "10.1109/jiot.2024.3524255",
+   "baslik": "EdgeShard: Efficient LLM Inference via Collaborative Edge Computing",
+   "yil": 2024,
+   "tarih": "2024-05-23",
+   "gerekce": "LLM'i parçalara bölerek dağıtık uç cihazlara yerleştiren, çok atıflı bir işbirlikçi uç çıkarım çerçevesidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose a general framework to partition the LLM model into shards and deploy on distributed devices.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 227,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2412.21200",
+   "arxiv_id": "2412.21200",
+   "doi": null,
+   "baslik": "Distributed Mixture-of-Agents for Edge Inference with Large Language Models",
+   "yil": 2024,
+   "tarih": "2024-12-30",
+   "gerekce": "Her biri kendi uç cihazında çalışan LLM'lerden oluşan dağıtık Mixture-of-Agents mimarisini inceler; uçta çoklu LLM işbirliğiyle doğrudan ilişkilidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, we consider such an MoA architecture in a distributed setting, where LLMs operate on individual edge devices, each uniquely associated with a user and equipped with its own distributed computing power.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2401.07764",
+   "arxiv_id": "2401.07764",
+   "doi": null,
+   "baslik": "When Large Language Model Agents Meet 6G Networks: Perception, Grounding, and Alignment",
+   "yil": 2024,
+   "tarih": "2024-01-15",
+   "gerekce": "Farklı rollere sahip çoklu LLM'leri mobil cihazlar ve uç sunucular arasında dağıtan bölünmüş öğrenme tabanlı bir 6G ajan sistemi önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose a split learning system for LLM agents in 6G networks leveraging the collaboration between mobile devices and edge servers, where multiple LLMs with different roles are distributed across mobile devices and edge servers",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1007/s44336-024-00009-2",
+   "arxiv_id": null,
+   "doi": "10.1007/s44336-024-00009-2",
+   "baslik": "A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges",
+   "yil": 2024,
+   "tarih": "2024-10-08",
+   "gerekce": "Profil, algı, eylem, karşılıklı etkileşim ve evrim bileşenleriyle LLM tabanlı çoklu ajan sistemlerini sentezleyen çok atıflı bir derlemedir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we synthesize a general structure encompassing five key components: profile, perception, self-action, mutual interaction, and evolution.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 424,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2308.08155",
+   "arxiv_id": "2308.08155",
+   "doi": null,
+   "baslik": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+   "yil": 2023,
+   "tarih": "2023-08-16",
+   "gerekce": "LLM'leri, insan girdilerini ve araçları birleştiren, yaygın kullanılan bir çoklu ajan konuşma çerçevesi olan AutoGen'i tanıtır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "AutoGen agents are customizable, conversable, and can operate in various modes that employ combinations of LLMs, human inputs, and tools.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2410.15686",
+   "arxiv_id": "2410.15686",
+   "doi": null,
+   "baslik": "NetSafe: Exploring the Topological Safety of Multi-agent Networks",
+   "yil": 2024,
+   "tarih": "2024-10-21",
+   "gerekce": "Çoklu ajan ağlarında hangi topolojik özelliklerin güvenliği artırdığını araştırır; topoloji tabanlı savunmalara temel sağlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we focus on the safety of multi-agent networks from a topological perspective, investigating which topological properties contribute to safer networks.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2408.00989",
+   "arxiv_id": "2408.00989",
+   "doi": null,
+   "baslik": "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+   "yil": 2024,
+   "tarih": "2024-08-02",
+   "gerekce": "Hatalı veya kötü niyetli ajanların çoklu ajan işbirliğinin dayanıklılığı üzerindeki az incelenmiş etkisini analiz eder.",
+   "gerekce_kokeni": "sef",
+   "alinti": "the impact of clumsy or even malicious agents--those who frequently make errors in their tasks--on the overall performance of the system remains underexplored.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2505.03574",
+   "arxiv_id": "2505.03574",
+   "doi": null,
+   "baslik": "LlamaFirewall: An open source guardrail system for building secure AI agents",
+   "yil": 2025,
+   "tarih": "2025-05-06",
+   "gerekce": "Güvenli yapay zekâ ajanları için gerçek zamanlı, politika uygulayan ve son savunma katmanı işlevi gören açık kaynaklı bir guardrail sistemidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "there is a critical need for a real-time guardrail monitor to serve as a final layer of defense, and support system level, use case specific safety policy definition and enforcement.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2403.04783",
+   "arxiv_id": "2403.04783",
+   "doi": null,
+   "baslik": "AutoDefense: Multi-Agent LLM Defense against Jailbreak Attacks",
+   "yil": 2024,
+   "tarih": "2024-03-02",
+   "gerekce": "LLM ajanlarına farklı roller atayarak jailbreak saldırılarına karşı işbirlikçi bir çoklu ajan savunması sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "AutoDefense assigns different roles to LLM agents and employs them to complete the defense task collaboratively.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2501.03601",
+   "arxiv_id": "2501.03601",
+   "doi": null,
+   "baslik": "Dynamic Authentication and Granularized Authorization with a Cross-Domain Zero Trust Architecture for Federated Learning in Large-Scale IoT Networks",
+   "yil": 2025,
+   "tarih": "2025-01-07",
+   "gerekce": "Büyük ölçekli IoT'de federated learning için dinamik kimlik doğrulama ve ayrıntılı yetkilendirme sağlayan çapraz alan bir sıfır güven mimarisi önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Zero trust architecture (ZTA), an emerging network security architecture, offers a more granular and robust security environment for IoT systems.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.3390/math13081239",
+   "arxiv_id": null,
+   "doi": "10.3390/math13081239",
+   "baslik": "Zero-Trust Mechanisms for Securing Distributed Edge and Fog Computing in 6G Networks",
+   "yil": 2025,
+   "tarih": "2025-04-09",
+   "gerekce": "6G ağlarında dağıtık uç ve sis bilişim ortamlarını güvence altına almak için sıfır güven ilkelerini bütünleştiren ZTF-6G modelini önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose ZTF-6G (Zero-Trust Framework for 6G Networks), a novel model that integrates Zero-Trust principles to secure distributed edge and fog computing environments.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 18,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

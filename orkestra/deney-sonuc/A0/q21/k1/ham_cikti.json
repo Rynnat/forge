@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 73268,
+ "stop_reason": "end_turn",
+ "session_id": "f96b52b9-999e-41cc-b6aa-4383d96bfb3e",
+ "total_cost_usd": 0.19934039999999997,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 6194,
+  "cache_read_input_tokens": 17014,
+  "output_tokens": 6146,
+  "output_tokens_details": {
+   "thinking_tokens": 2635
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6194,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3475,
+    "cache_read_input_tokens": 8563,
+    "cache_creation_input_tokens": 1163,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1163
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 6146,
+   "cacheReadInputTokens": 17014,
+   "cacheCreationInputTokens": 6194,
+   "webSearchRequests": 0,
+   "costUSD": 0.17589879999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2635,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 25761,
+   "outputTokens": 1731,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.0234416,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 468,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [{\"sira\": 1, \"baslik\": \"Data Shapley: Equitable Valuation of Data for Machine Learning\", \"yil\": 2019, \"arxiv_id\": \"1904.02868\", \"doi\": null, \"gerekce\": \"This paper introduced the Shapley value as a principled, axiomatic measure of how much each data point is worth to an ML model.\"}, {\"sira\": 2, \"baslik\": \"Towards Efficient Data Valuation Based on the Shapley Value\", \"yil\": 2019, \"arxiv_id\": \"1902.10275\", \"doi\": null, \"gerekce\": \"It made Shapley-based data valuation scalable with efficient approximation algorithms and brought the problem of computational cost into focus.\"}, {\"sira\": 3, \"baslik\": \"Data Valuation in Machine Learning: \\\"Ingredients\\\", Strategies, and Open Challenges\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.24963/ijcai.2022/782\", \"gerekce\": \"This key survey sets out a taxonomy of data valuation methods and the main open problems.\"}, {\"sira\": 4, \"baslik\": \"A Review of Data Valuation Approaches and Building and Scoring a Data Valuation Model\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": \"10.1162/99608f92.c18db966\", \"gerekce\": \"It groups business data valuation approaches (market-based, economic, dimensional) and proposes a scored valuation model, while noting that no standard exists.\"}, {\"sira\": 5, \"baslik\": \"A Survey on Data Pricing: from Economics to Data Science\", \"yil\": 2020, \"arxiv_id\": \"2009.04462\", \"doi\": \"10.1109/TKDE.2020.3045927\", \"gerekce\": \"It brings together the principles, models and taxonomy of data pricing and monetization from both economics and data science.\"}, {\"sira\": 6, \"baslik\": \"Big data monetization throughout Big Data Value Chain: a comprehensive review\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1186/s40537-019-0281-5\", \"gerekce\": \"This comprehensive review classifies data monetization models along the stages of the big data value chain.\"}, {\"sira\": 7, \"baslik\": \"A Marketplace for Data: An Algorithmic Solution\", \"yil\": 2019, \"arxiv_id\": \"1805.08125\", \"doi\": \"10.1145/3328526.3329589\", \"gerekce\": \"It gave a foundational algorithmic framework for pricing data and splitting revenue in data markets.\"}, {\"sira\": 8, \"baslik\": \"Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning\", \"yil\": 2022, \"arxiv_id\": \"2110.14049\", \"doi\": null, \"gerekce\": \"It generalized Shapley by relaxing the efficiency axiom, which gives more robust value metrics based on semivalues.\"}, {\"sira\": 9, \"baslik\": \"Data Banzhaf: A Robust Data Valuation Framework for Machine Learning\", \"yil\": 2023, \"arxiv_id\": \"2205.15466\", \"doi\": null, \"gerekce\": \"It proposed the Banzhaf value as a measure that holds up under noise and defined a robustness criterion for valuation metrics.\"}, {\"sira\": 10, \"baslik\": \"Data Valuation using Reinforcement Learning\", \"yil\": 2020, \"arxiv_id\": \"1909.11671\", \"doi\": null, \"gerekce\": \"It introduced the learning-based data valuation (DVRL) approach, a distinct branch of the taxonomy.\"}, {\"sira\": 11, \"baslik\": \"Understanding Black-box Predictions via Influence Functions\", \"yil\": 2017, \"arxiv_id\": \"1703.04730\", \"doi\": null, \"gerekce\": \"It established the influence-function family that measures how much each training example contributes.\"}, {\"sira\": 12, \"baslik\": \"OpenDataVal: a Unified Benchmark for Data Valuation\", \"yil\": 2023, \"arxiv_id\": \"2306.10577\", \"doi\": null, \"gerekce\": \"It set standard tasks and benchmarks for comparing data valuation metrics.\"}, {\"sira\": 13, \"baslik\": \"Data-OOB: Out-of-bag Estimate as a Simple and Efficient Data Value\", \"yil\": 2023, \"arxiv_id\": \"2304.07718\", \"doi\": null, \"gerekce\": \"It offered an out-of-bag data value metric that is cheap to compute and scales well.\"}, {\"sira\": 14, \"baslik\": \"Efficient Task-Specific Data Valuation for Nearest Neighbor Algorithms\", \"yil\": 2019, \"arxiv_id\": \"1908.08619\", \"doi\": \"10.14778/3342263.3342637\", \"gerekce\": \"It made exact Shapley computation possible with KNN-Shapley, which became the practical baseline.\"}, {\"sira\": 15, \"baslik\": \"A Distributional Framework for Data Valuation\", \"yil\": 2020, \"arxiv_id\": \"2002.12334\", \"doi\": null, \"gerekce\": \"It defined data value with respect to a data distribution, which allows values to be compared and transferred across datasets.\"}, {\"sira\": 16, \"baslik\": \"LAVA: Data Valuation without Pre-Specified Learning Algorithms\", \"yil\": 2023, \"arxiv_id\": \"2305.00054\", \"doi\": null, \"gerekce\": \"It proposed a model-agnostic valuation metric based on optimal transport.\"}, {\"sira\": 17, \"baslik\": \"Training Data Influence Analysis and Estimation: A Survey\", \"yil\": 2022, \"arxiv_id\": \"2212.04612\", \"doi\": null, \"gerekce\": \"This comprehensive survey sorts influence and data valuation measures into a taxonomy.\"}, {\"sira\": 18, \"baslik\": \"Estimating Training Data Influence by Tracing Gradient Descent\", \"yil\": 2020, \"arxiv_id\": \"2002.08484\", \"doi\": null, \"gerekce\": \"TracIn introduced a training-trajectory-based influence metric that scales well.\"}, {\"sira\": 19, \"baslik\": \"Datamodels: Predicting Predictions from Training Data\", \"yil\": 2022, \"arxiv_id\": \"2202.00622\", \"doi\": null, \"gerekce\": \"It brought in the datamodels approach, which links subsets of training data to model behavior.\"}, {\"sira\": 20, \"baslik\": \"TRAK: Attributing Model Behavior at Scale\", \"yil\": 2023, \"arxiv_id\": \"2303.14186\", \"doi\": null, \"gerekce\": \"It made data attribution practical for large models.\"}, {\"sira\": 21, \"baslik\": \"Query-Based Data Pricing\", \"yil\": 2015, \"arxiv_id\": null, \"doi\": \"10.1145/2770870\", \"gerekce\": \"It is a foundational work on arbitrage-free, query-based data pricing for monetization.\"}, {\"sira\": 22, \"baslik\": \"Data Pricing in Machine Learning Pipelines\", \"yil\": 2022, \"arxiv_id\": \"2108.07915\", \"doi\": null, \"gerekce\": \"It surveys pricing mechanisms at each stage of the ML pipeline: raw data, collaborative training and model sales.\"}, {\"sira\": 23, \"baslik\": \"Advancing Data Monetization and the Creation of Data-based Business Models\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.17705/1CAIS.04702\", \"gerekce\": \"It structures the research agenda on data monetization and data-based business models in information systems.\"}, {\"sira\": 24, \"baslik\": \"A Systematic Survey of Data Value: Models, Metrics, Applications and Research Challenges\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"This systematic survey classifies data value models and metrics across organizational applications.\"}, {\"sira\": 25, \"baslik\": \"What is the value of data? A review of empirical methods\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It reviews empirical methods for measuring the economic value of data (cost-, market- and income-based).\"}, {\"sira\": 26, \"baslik\": \"What is Your Data Worth to GPT? LLM-Scale Data Valuation with Influence Functions\", \"yil\": 2024, \"arxiv_id\": \"2405.13954\", \"doi\": null, \"gerekce\": \"It made data valuation feasible at LLM scale, which matters for data royalties and monetization.\"}, {\"sira\": 27, \"baslik\": \"Data Shapley in One Training Run\", \"yil\": 2024, \"arxiv_id\": \"2406.11011\", \"doi\": null, \"gerekce\": \"It proposed computing Shapley values during a single training run (In-Run Data Shapley) for large-scale models.\"}, {\"sira\": 28, \"baslik\": \"Rethinking Data Shapley for Data Selection Tasks: Misleads and Merits\", \"yil\": 2024, \"arxiv_id\": \"2405.03875\", \"doi\": null, \"gerekce\": \"It shows the limits and failure modes of Shapley-based value metrics, an important open problem.\"}, {\"sira\": 29, \"baslik\": \"Collaborative Machine Learning with Incentive-Aware Model Rewards\", \"yil\": 2020, \"arxiv_id\": \"2010.12797\", \"doi\": null, \"gerekce\": \"It turned data valuation into incentive and reward mechanisms for collaborative learning.\"}, {\"sira\": 30, \"baslik\": \"DataInf: Efficiently Estimating Data Influence in LoRA-tuned LLMs and Diffusion Models\", \"yil\": 2023, \"arxiv_id\": \"2310.00902\", \"doi\": null, \"gerekce\": \"It made influence-based data value estimation efficient for fine-tuned large models.\"}]}",
+ "ttft_ms": 27948,
+ "type": "result",
+ "duration_ms": 73345,
+ "uuid": "39d3f433-0e27-4683-b9a2-573fe7b5914a",
+ "ttft_stream_ms": 1890,
+ "time_to_request_ms": 69,
+ "first_content_frame_ms": 1890,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

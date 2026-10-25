@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 107114,
+ "stop_reason": "end_turn",
+ "session_id": "edb6a5be-a92e-4794-a3eb-0d5532c71457",
+ "total_cost_usd": 0.2782217,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 9402,
+  "cache_read_input_tokens": 42520,
+  "output_tokens": 7870,
+  "output_tokens_details": {
+   "thinking_tokens": 3252
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9402,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3988,
+    "cache_read_input_tokens": 12601,
+    "cache_creation_input_tokens": 333,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 333
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 7870,
+   "cacheReadInputTokens": 42520,
+   "cacheCreationInputTokens": 9402,
+   "webSearchRequests": 0,
+   "costUSD": 0.24115999999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3252,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 52302,
+   "outputTokens": 3663,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.0370617,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1049,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"HotSpot: A compact thermal modeling methodology for early-stage VLSI design\", \"yil\": 2006, \"arxiv_id\": null, \"doi\": \"10.1109/TVLSI.2006.876103\", \"gerekce\": \"The reference compact RC thermal model. Most chip and package thermal simulators, including 2.5D/3D ones, build on it.\"},\n{\"sira\": 2, \"baslik\": \"3D-ICE: Fast compact transient thermal modeling for 3D ICs with inter-tier liquid cooling\", \"yil\": 2010, \"arxiv_id\": null, \"doi\": \"10.1109/ICCAD.2010.5654212\", \"gerekce\": \"Introduced the standard open-source compact transient thermal model for 3D stacks with inter-tier microchannel cooling.\"},\n{\"sira\": 3, \"baslik\": \"3D-ICE 4.0: Accurate and efficient thermal modeling for 2.5D/3D heterogeneous chiplet systems\", \"yil\": 2025, \"arxiv_id\": \"2512.05823\", \"doi\": null, \"gerekce\": \"Latest version of 3D-ICE. It gives efficient, detailed thermal maps for heterogeneous 2.5D/3D chiplet systems.\"},\n{\"sira\": 4, \"baslik\": \"MFIT: Multi-Fidelity Thermal Modeling for 2.5D and 3D Multi-Chiplet Architectures\", \"yil\": 2024, \"arxiv_id\": \"2410.09188\", \"doi\": null, \"gerekce\": \"Proposes a multi-fidelity framework that moves from FEM to compact models to ML models, cutting runtime for multi-chiplet systems from days to milliseconds.\"},\n{\"sira\": 5, \"baslik\": \"PACT: An Extensible Parallel Thermal Simulator for Emerging Integration and Cooling Technologies\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"Parallel, SPICE-based, netlist-extensible thermal simulator covering monolithic 3D, liquid cooling and 2.5D systems.\"},\n{\"sira\": 6, \"baslik\": \"DeepOHeat: Operator Learning-based Ultra-fast Thermal Simulation in 3D-IC Design\", \"yil\": 2023, \"arxiv_id\": \"2302.12949\", \"doi\": null, \"gerekce\": \"Pioneering physics-informed operator-learning thermal surrogate for 3D-IC that generalizes across design configurations.\"},\n{\"sira\": 7, \"baslik\": \"A Multiscale Workflow for Thermal Analysis of 3DI Chip Stacks\", \"yil\": 2026, \"arxiv_id\": \"2602.06999\", \"doi\": null, \"gerekce\": \"Multiscale workflow that addresses geometry spanning many orders of magnitude and material properties that deviate from bulk values in 3DI stacks.\"},\n{\"sira\": 8, \"baslik\": \"ATSim3D: Towards Accurate Thermal Simulator for Heterogeneous 3D-IC Systems Considering Nonlinear Leakage and Conductivity\", \"yil\": 2026, \"arxiv_id\": \"2601.11050\", \"doi\": null, \"gerekce\": \"Couples a global compact model with local finite-volume solves and handles nonlinear conductivity and leakage via a Kirchhoff transformation.\"},\n{\"sira\": 9, \"baslik\": \"ATSim3.5D: A Multiscale Thermal Simulator for 3.5D-IC Systems based on Nonlinear Multigrid Method\", \"yil\": 2026, \"arxiv_id\": \"2601.11053\", \"doi\": null, \"gerekce\": \"Multiscale nonlinear multigrid thermal simulation for 3.5D-IC (2.5D+3D) systems.\"},\n{\"sira\": 10, \"baslik\": \"3D-ICE 3.0: Efficient Nonlinear MPSoC Thermal Simulation With Pluggable Heat Sink Models\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.1109/TCAD.2021.3074613\", \"gerekce\": \"Added nonlinear material properties and pluggable heat-sink models, bringing package-level boundary conditions into the compact model.\"},\n{\"sira\": 11, \"baslik\": \"3D-ICE: A Compact Thermal Model for Early-Stage Design of Liquid-Cooled ICs\", \"yil\": 2014, \"arxiv_id\": null, \"doi\": \"10.1109/TC.2013.127\", \"gerekce\": \"Journal version of 3D-ICE with a detailed validation of the compact model for liquid-cooled 3D ICs.\"},\n{\"sira\": 12, \"baslik\": \"ISAC: Integrated Space-and-Time-Adaptive Chip-Package Thermal Analysis\", \"yil\": 2007, \"arxiv_id\": null, \"doi\": \"10.1109/TCAD.2006.882589\", \"gerekce\": \"Introduced spatially and temporally adaptive multiscale meshing for joint chip-package thermal analysis.\"},\n{\"sira\": 13, \"baslik\": \"Power Blurring: Fast Static and Transient Thermal Analysis Method for Packaged Integrated Circuits and Power Devices\", \"yil\": 2014, \"arxiv_id\": null, \"doi\": \"10.1109/TVLSI.2013.2293422\", \"gerekce\": \"Fast thermal analysis from the die to the package using FEM-derived thermal masks combined by convolution.\"},\n{\"sira\": 14, \"baslik\": \"High-Efficiency Green Function-Based Thermal Simulation Algorithms\", \"yil\": 2007, \"arxiv_id\": null, \"doi\": \"10.1109/TCAD.2007.895754\", \"gerekce\": \"Green's-function and DCT-based fast full-chip thermal solution for layered structures.\"},\n{\"sira\": 15, \"baslik\": \"Efficient full-chip thermal modeling and analysis\", \"yil\": 2004, \"arxiv_id\": null, \"doi\": \"10.1109/ICCAD.2004.1382640\", \"gerekce\": \"Early multigrid-based full-chip thermal analysis that combines fine-scale on-chip detail with package-level modeling.\"},\n{\"sira\": 16, \"baslik\": \"3D Thermal-ADI: A linear-time chip level transient thermal simulator\", \"yil\": 2002, \"arxiv_id\": null, \"doi\": \"10.1109/TCAD.2002.804385\", \"gerekce\": \"Linear-time ADI method for 3D chip-level transient thermal simulation.\"},\n{\"sira\": 17, \"baslik\": \"Thermal analysis of heterogeneous 3D ICs with various integration scenarios\", \"yil\": 2001, \"arxiv_id\": null, \"doi\": \"10.1109/IEDM.2001.979604\", \"gerekce\": \"Foundational analysis of heat removal in heterogeneous 3D integration scenarios.\"},\n{\"sira\": 18, \"baslik\": \"3-D ICs: A novel chip design for improving deep-submicrometer interconnect performance and systems-on-chip integration\", \"yil\": 2001, \"arxiv_id\": null, \"doi\": \"10.1109/5.929647\", \"gerekce\": \"Seminal 3D IC paper that framed heat as a central constraint of 3D integration.\"},\n{\"sira\": 19, \"baslik\": \"Temperature-aware microarchitecture\", \"yil\": 2003, \"arxiv_id\": null, \"doi\": \"10.1145/859618.859620\", \"gerekce\": \"Introduced the HotSpot approach and architecture-level thermal modeling.\"},\n{\"sira\": 20, \"baslik\": \"Compact thermal modeling for temperature-aware design\", \"yil\": 2004, \"arxiv_id\": null, \"doi\": \"10.1145/996566.996800\", \"gerekce\": \"Detailed and validated the HotSpot compact RC model, including the package.\"},\n{\"sira\": 21, \"baslik\": \"CoMeT: An Integrated Interval Thermal Simulation Toolchain for 2D, 2.5D, and 3D Processor-Memory Systems\", \"yil\": 2022, \"arxiv_id\": \"2109.12405\", \"doi\": null, \"gerekce\": \"Integrated performance-power-thermal toolchain for 2.5D/3D processor-memory systems.\"},\n{\"sira\": 22, \"baslik\": \"DeepOHeat-v1: Efficient Operator Learning for Fast and Trustworthy Thermal Simulation and Optimization in 3D-IC Design\", \"yil\": 2025, \"arxiv_id\": \"2504.03955\", \"doi\": null, \"gerekce\": \"Improves accuracy and reliability of the learned thermal surrogate using KAN trunk networks, and supports design optimization.\"},\n{\"sira\": 23, \"baslik\": \"TAP-2.5D: A Thermally-Aware Chiplet Placement Methodology for 2.5D Systems\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.23919/DATE51398.2021.9473977\", \"gerekce\": \"Ties fast thermal modeling to thermally aware chiplet placement in 2.5D systems.\"},\n{\"sira\": 24, \"baslik\": \"Leveraging Thermally-Aware Chiplet Organization in 2.5D Systems to Reclaim Dark Silicon\", \"yil\": 2018, \"arxiv_id\": null, \"doi\": \"10.23919/DATE.2018.8342194\", \"gerekce\": \"Showed the thermal effects of chiplet organization in 2.5D systems using a thermal model.\"},\n{\"sira\": 25, \"baslik\": \"HotGauge: A Methodology for Characterizing Advanced Hotspots in Modern and Next Generation Processors\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.1109/IISWC53511.2021.00026\", \"gerekce\": \"Methodology for characterizing fine-grained hotspots in advanced nodes and 3D-stacked processors.\"},\n{\"sira\": 26, \"baslik\": \"A thermal-driven floorplanning algorithm for 3D ICs\", \"yil\": 2004, \"arxiv_id\": null, \"doi\": \"10.1109/ICCAD.2004.1382651\", \"gerekce\": \"Early 3D floorplanning work that uses fast thermal models inside the optimization loop.\"},\n{\"sira\": 27, \"baslik\": \"A study of Through-Silicon-Via impact on the 3D stacked IC layout\", \"yil\": 2009, \"arxiv_id\": null, \"doi\": \"10.1145/1687399.1687529\", \"gerekce\": \"Analyzes how TSVs affect 3D layouts, including heat paths, which feeds into TSV-level thermal modeling.\"},\n{\"sira\": 28, \"baslik\": \"HotSpot 6.0: Validation, Acceleration and Extension\", \"yil\": 2015, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"Validation, acceleration and extension of HotSpot, including grid-model improvements for multilayer 3D stacks.\"},\n{\"sira\": 29, \"baslik\": \"Fast Thermal Analysis for Chiplet Design based on Graph Convolution Networks\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.1109/ASP-DAC52403.2022.9712583\", \"gerekce\": \"Early GCN-based thermal surrogate for 2.5D chiplet designs.\"},\n{\"sira\": 30, \"baslik\": \"Multiscale thermal estimation for 2.5D/3D chiplet-based server SoCs (Politecnico di Torino thesis)\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"Multiscale thermal estimation study for 2.5D/3D chiplet-based server SoCs; this is a lower-ranked master's thesis, and the title is approximate.\"}\n]}",
+ "ttft_ms": 37998,
+ "type": "result",
+ "duration_ms": 100828,
+ "uuid": "63f6d7c9-c643-4679-94b0-bd77b0a7c837",
+ "ttft_stream_ms": 2443,
+ "time_to_request_ms": 124,
+ "first_content_frame_ms": 2444,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-191312-a2902a",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Karmaşık bellek erişim örüntülerini tahmin eden akıllı veri önceden getirme (prefetching) teknikleri üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-05-08",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.1713,
+ "sure_s": 63.7,
+ "web_arama": 1,
+ "token": {
+  "in": 12945,
+  "out": 7072,
+  "cache_read": 8457,
+  "cache_write": 4820
+ },
+ "son_rapor_token_tahmini": 2877,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 29,
+ "istem": "Research question: Karmaşık bellek erişim örüntülerini tahmin eden akıllı veri önceden getirme (prefetching) teknikleri üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-05-08. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1803.02329",
+   "arxiv_id": "1803.02329",
+   "doi": null,
+   "baslik": "Learning Memory Access Patterns",
+   "yil": 2018,
+   "gerekce": "This paper first treated prefetching as a sequence-learning problem and applied LSTMs to it, and it started the whole line of work on ML-based prefetching."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2109.12021",
+   "arxiv_id": "2109.12021",
+   "doi": "10.1145/3466752.3480114",
+   "baslik": "Pythia: A Customizable Hardware Prefetching Framework Using Online Reinforcement Learning",
+   "yil": 2021,
+   "gerekce": "Pythia frames prefetching as online reinforcement learning, and it is practical in hardware because it takes system feedback such as bandwidth into account."
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1145/3445814.3446752",
+   "arxiv_id": null,
+   "doi": "10.1145/3445814.3446752",
+   "baslik": "A Hierarchical Neural Model of Data Prefetching",
+   "yil": 2021,
+   "gerekce": "Voyager models page and offset prediction hierarchically, which lets it learn irregular temporal patterns that earlier neural prefetchers handled poorly."
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1109/hpca.2019.00053",
+   "arxiv_id": null,
+   "doi": "10.1109/HPCA.2019.00053",
+   "baslik": "Bingo Spatial Data Prefetcher",
+   "yil": 2019,
+   "gerekce": "Bingo combines short and long events to match spatial footprints, and it is one of the strongest spatial prefetchers."
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1109/micro.2016.7783763",
+   "arxiv_id": null,
+   "doi": "10.1109/MICRO.2016.7783763",
+   "baslik": "Path Confidence Based Lookahead Prefetching",
+   "yil": 2016,
+   "gerekce": "The Signature Path Prefetcher (SPP) uses delta signatures and confidence-controlled lookahead to capture complex delta patterns."
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1109/hpca.2016.7446087",
+   "arxiv_id": null,
+   "doi": "10.1109/HPCA.2016.7446087",
+   "baslik": "Best-Offset Hardware Prefetching",
+   "yil": 2016,
+   "gerekce": "Best-Offset is a simple, timeliness-aware offset prefetcher that won the DPC-2 competition and became a standard baseline."
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1145/2540708.2540730",
+   "arxiv_id": null,
+   "doi": "10.1145/2540708.2540730",
+   "baslik": "Linearizing Irregular Memory Accesses for Improved Correlated Prefetching",
+   "yil": 2013,
+   "gerekce": "The ISB prefetcher maps irregular accesses into a structural address space so that temporal correlation can be exploited for pointer-chasing access patterns."
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1145/3307650.3322225",
+   "arxiv_id": null,
+   "doi": "10.1145/3307650.3322225",
+   "baslik": "Efficient Metadata Management for Irregular Data Prefetching",
+   "yil": 2019,
+   "gerekce": "MISB greatly reduces the cost of off-chip metadata for temporal prefetching, which addresses that technique's main scalability problem."
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.1145/3352460.3358300",
+   "arxiv_id": null,
+   "doi": "10.1145/3352460.3358300",
+   "baslik": "Temporal Prefetching Without the Off-Chip Metadata",
+   "yil": 2019,
+   "gerekce": "Triage keeps temporal prefetching metadata in part of the LLC, so it needs no off-chip storage."
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1109/hpca.2018.00021",
+   "arxiv_id": null,
+   "doi": "10.1109/HPCA.2018.00021",
+   "baslik": "Domino Temporal Data Prefetcher",
+   "yil": 2018,
+   "gerekce": "Domino improves the accuracy of temporal prefetching by looking up streams with multiple miss addresses."
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1109/hpca.2009.4798239",
+   "arxiv_id": null,
+   "doi": "10.1109/HPCA.2009.4798239",
+   "baslik": "Practical Off-chip Meta-data for Temporal Memory Streaming",
+   "yil": 2009,
+   "gerekce": "STMS made temporal streaming prefetching practical with metadata stored in main memory."
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1109/isca.2006.38",
+   "arxiv_id": null,
+   "doi": "10.1109/ISCA.2006.38",
+   "baslik": "Spatial Memory Streaming",
+   "yil": 2006,
+   "gerekce": "SMS introduced the foundational idea of learning spatial access footprints keyed by PC and offset."
+  },
+  {
+   "sira": 13,
+   "id": "doi:10.1145/264107.264207",
+   "arxiv_id": null,
+   "doi": "10.1145/264107.264207",
+   "baslik": "Prefetching Using Markov Predictors",
+   "yil": 1997,
+   "gerekce": "This classic work treats address-correlation prefetching as a Markov model, and it is the ancestor of temporal/correlation prefetching."
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1109/hpca.2004.10030",
+   "arxiv_id": null,
+   "doi": "10.1109/HPCA.2004.10030",
+   "baslik": "Data Cache Prefetching Using a Global History Buffer",
+   "yil": 2004,
+   "gerekce": "The GHB structure offers an efficient common history organization that supports many correlation and delta prefetchers."
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1109/hpca.2007.346185",
+   "arxiv_id": null,
+   "doi": "10.1109/HPCA.2007.346185",
+   "baslik": "Feedback Directed Prefetching: Improving the Performance and Bandwidth-Efficiency of Hardware Prefetchers",
+   "yil": 2007,
+   "gerekce": "This paper tunes prefetcher aggressiveness dynamically using accuracy, lateness and pollution feedback, and it laid the groundwork for adaptive prefetching."
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1145/3307650.3322207",
+   "arxiv_id": null,
+   "doi": "10.1145/3307650.3322207",
+   "baslik": "Perceptron-Based Prefetch Filtering",
+   "yil": 2019,
+   "gerekce": "PPF uses a perceptron-based filter to let an aggressive prefetcher such as SPP keep its coverage without losing accuracy."
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1145/2749469.2750399",
+   "arxiv_id": null,
+   "doi": "10.1145/2749469.2750399",
+   "baslik": "Semantic Locality and Context-based Prefetching Using Reinforcement Learning",
+   "yil": 2015,
+   "gerekce": "This early work introduced the concept of semantic locality and applied context-based reinforcement learning to prefetching."
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1145/3345000",
+   "arxiv_id": null,
+   "doi": "10.1145/3345000",
+   "baslik": "A Neural Network Prefetcher for Arbitrary Memory Access Patterns",
+   "yil": 2019,
+   "gerekce": "This paper proposes a neural prefetcher designed to learn arbitrary and irregular memory access patterns."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2401.06362",
+   "arxiv_id": "2401.06362",
+   "doi": null,
+   "baslik": "Attention, Distillation, and Tabularization: Towards Practical Neural Network-Based Prefetching",
+   "yil": 2024,
+   "gerekce": "DART turns attention models into table lookups through distillation, which addresses the latency and cost problem of neural prefetchers."
+  },
+  {
+   "sira": 20,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Fine-Grained Address Segmentation for Attention-Based Variable-Degree Prefetching",
+   "yil": 2022,
+   "gerekce": "TransFetch frames prefetching as multi-label classification with attention over address segments, which allows a variable prefetch degree."
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1109/isca45697.2020.00021",
+   "arxiv_id": null,
+   "doi": "10.1109/ISCA45697.2020.00021",
+   "baslik": "Bouquet of Instruction Pointers: Instruction Pointer Classifier-based Spatial Hardware Prefetching",
+   "yil": 2020,
+   "gerekce": "IPCP classifies instruction pointers by pattern type and reaches high performance at very low cost; it won DPC-3."
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1109/micro56248.2022.00072",
+   "arxiv_id": null,
+   "doi": "10.1109/MICRO56248.2022.00072",
+   "baslik": "Berti: an Accurate Local-Delta Data Prefetcher",
+   "yil": 2022,
+   "gerekce": "Berti learns timely local deltas per instruction pointer and achieves high accuracy."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2209.00188",
+   "arxiv_id": "2209.00188",
+   "doi": "10.1109/MICRO56248.2022.00015",
+   "baslik": "Hermes: Accelerating Long-Latency Load Requests via Perceptron-Based Off-Chip Load Prediction",
+   "yil": 2022,
+   "gerekce": "Hermes complements prefetching by predicting off-chip loads with a perceptron and hiding their latency."
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1145/3037697.3037701",
+   "arxiv_id": null,
+   "doi": "10.1145/3037697.3037701",
+   "baslik": "Kill the Program Counter: Reconstructing Program Behavior in the Processor Cache Hierarchy",
+   "yil": 2017,
+   "gerekce": "KPC shows how to build a prefetching and replacement design that works without the PC at lower cache levels."
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1145/2830772.2830807",
+   "arxiv_id": null,
+   "doi": "10.1145/2830772.2830807",
+   "baslik": "IMP: Indirect Memory Prefetcher",
+   "yil": 2015,
+   "gerekce": "IMP detects and prefetches indirect A[B[i]] patterns in hardware, which addresses a key class of irregular workloads."
+  },
+  {
+   "sira": 26,
+   "id": "doi:10.1145/2925426.2926254",
+   "arxiv_id": null,
+   "doi": "10.1145/2925426.2926254",
+   "baslik": "Graph Prefetching Using Data Structure Knowledge",
+   "yil": 2016,
+   "gerekce": "This paper prefetches the complex accesses of graph analytics using knowledge of the data structure."
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1109/hpca51647.2021.00061",
+   "arxiv_id": null,
+   "doi": "10.1109/HPCA51647.2021.00061",
+   "baslik": "Prodigy: Improving the Memory Latency of Data-Indirect Irregular Workloads Using Hardware-Software Co-Design",
+   "yil": 2021,
+   "gerekce": "Prodigy combines compiler hints with a hardware prefetcher to target data-indirect irregular access patterns."
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.1109/12.381947",
+   "arxiv_id": null,
+   "doi": "10.1109/12.381947",
+   "baslik": "Effective Hardware-Based Data Prefetching for High-Performance Processors",
+   "yil": 1995,
+   "gerekce": "This classic work introduced the PC-based stride prediction table (RPT), and many later prefetchers build on it."
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1145/2907071",
+   "arxiv_id": null,
+   "doi": "10.1145/2907071",
+   "baslik": "A Survey of Recent Prefetching Techniques for Processor Caches",
+   "yil": 2016,
+   "gerekce": "This comprehensive survey classifies prefetching techniques and discusses open problems."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2102.07952",
+   "arxiv_id": "2102.07952",
+   "doi": null,
+   "baslik": "A Survey of Machine Learning for Computer Architecture and Systems",
+   "yil": 2021,
+   "gerekce": "This survey reviews ML-based prefetching work and sets out open problems such as hardware cost, latency and generalization."
+  }
+ ]
+}

@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-190215-5fc905",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Uyarlamalı (adaptive) girdilere karşı dayanıklı eskiz (sketching) ve akan veri (streaming) algoritmaları üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-06-15",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.1419,
+ "sure_s": 62.2,
+ "web_arama": 0,
+ "token": {
+  "in": 2,
+  "out": 6498,
+  "cache_read": 3532,
+  "cache_write": 1399
+ },
+ "son_rapor_token_tahmini": 2544,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 29,
+ "istem": "Research question: Uyarlamalı (adaptive) girdilere karşı dayanıklı eskiz (sketching) ve akan veri (streaming) algoritmaları üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-06-15. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2003.14265",
+   "arxiv_id": "2003.14265",
+   "doi": "10.1145/3375395.3387658",
+   "baslik": "A Framework for Adversarially Robust Streaming Algorithms",
+   "yil": 2020,
+   "gerekce": "Introduced the adversarially robust streaming model and the generic sketch-switching and computation-paths techniques."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2004.05975",
+   "arxiv_id": "2004.05975",
+   "doi": null,
+   "baslik": "Adversarially Robust Streaming Algorithms via Differential Privacy",
+   "yil": 2020,
+   "gerekce": "Used differential privacy to protect a sketch's internal randomness, which gave a square-root improvement in the cost of robustness."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:1211.1056",
+   "arxiv_id": "1211.1056",
+   "doi": "10.1145/2488608.2488624",
+   "baslik": "How Robust are Linear Sketches to Adaptive Inputs?",
+   "yil": 2013,
+   "gerekce": "Foundational negative result: an adaptive adversary can break any linear sketch for norm estimation."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2011.07471",
+   "arxiv_id": "2011.07471",
+   "doi": null,
+   "baslik": "Tight Bounds for Adversarially Robust Streams and Sliding Windows via Difference Estimators",
+   "yil": 2021,
+   "gerekce": "Introduced difference estimators and obtained nearly tight space bounds for robust Fp estimation."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2101.10836",
+   "arxiv_id": "2101.10836",
+   "doi": null,
+   "baslik": "Separating Adaptive Streaming from Oblivious Streaming using the Bounded Storage Model",
+   "yil": 2021,
+   "gerekce": "Gave the first separation showing that adaptive streaming can be strictly harder than oblivious streaming."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2107.14527",
+   "arxiv_id": "2107.14527",
+   "doi": null,
+   "baslik": "A Framework for Adversarial Streaming via Differential Privacy and Difference Estimators",
+   "yil": 2023,
+   "gerekce": "Combined the DP and difference-estimator techniques into a framework with better robust bounds."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:1906.11327",
+   "arxiv_id": "1906.11327",
+   "doi": "10.1145/3375395.3387643",
+   "baslik": "The Adversarial Robustness of Sampling",
+   "yil": 2020,
+   "gerekce": "Showed that simple random sampling is robust to adaptive inputs, with sample sizes tied to VC and Littlestone dimension."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2101.09054",
+   "arxiv_id": "2101.09054",
+   "doi": null,
+   "baslik": "Adversarial Laws of Large Numbers and Optimal Regret in Online Classification",
+   "yil": 2021,
+   "gerekce": "Characterized adaptively robust sampling and uniform convergence using Littlestone dimension."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2202.13736",
+   "arxiv_id": "2202.13736",
+   "doi": null,
+   "baslik": "On the Robustness of CountSketch to Adaptive Inputs",
+   "yil": 2022,
+   "gerekce": "Gave attacks on CountSketch under adaptive inputs together with robust estimator variants."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2207.00956",
+   "arxiv_id": "2207.00956",
+   "doi": null,
+   "baslik": "Tricking the Hashing Trick: A Tight Lower Bound on the Robustness of CountSketch to Adaptive Inputs",
+   "yil": 2023,
+   "gerekce": "Proved a tight bound on how many adaptive queries CountSketch can withstand."
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1145/1374376.1374419",
+   "arxiv_id": null,
+   "doi": "10.1145/1374376.1374419",
+   "baslik": "Sketching in Adversarial Environments",
+   "yil": 2008,
+   "gerekce": "Early foundational work on sketching when the input is chosen adversarially."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2204.09136",
+   "arxiv_id": "2204.09136",
+   "doi": null,
+   "baslik": "The White-Box Adversarial Data Stream Model",
+   "yil": 2022,
+   "gerekce": "Defined a stronger white-box adversary that can see the algorithm's internal state, and gave algorithms and lower bounds."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2409.16153",
+   "arxiv_id": "2409.16153",
+   "doi": null,
+   "baslik": "A Strong Separation for Adversarially Robust l0 Estimation for Linear Sketches",
+   "yil": 2024,
+   "gerekce": "Gave a strong separation between robust and oblivious linear sketches for l0 estimation."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2503.19629",
+   "arxiv_id": "2503.19629",
+   "doi": null,
+   "baslik": "Lifting Linear Sketches: Optimal Bounds and Adversarial Robustness",
+   "yil": 2025,
+   "gerekce": "Gave optimal bounds on the adversarial robustness of linear sketches using a lifting technique."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2106.14952",
+   "arxiv_id": "2106.14952",
+   "doi": null,
+   "baslik": "Adversarial Robustness of Streaming Algorithms through Importance Sampling",
+   "yil": 2021,
+   "gerekce": "Showed that importance-sampling-based sketches are robust for regression, clustering and similar problems."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2109.11130",
+   "arxiv_id": "2109.11130",
+   "doi": null,
+   "baslik": "Adversarially Robust Coloring for Graph Streams",
+   "yil": 2022,
+   "gerekce": "Proved separations for graph coloring and extended adaptive robustness to graph streams."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2109.03785",
+   "arxiv_id": "2109.03785",
+   "doi": null,
+   "baslik": "Adversarially Robust Streaming via Dense-Sparse Trade-offs",
+   "yil": 2022,
+   "gerekce": "Improved robust bounds for insertion-deletion streams using dense-sparse trade-offs."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2211.05170",
+   "arxiv_id": "2211.05170",
+   "doi": null,
+   "baslik": "Streaming Algorithms for the Missing Item Finding Problem",
+   "yil": 2023,
+   "gerekce": "Gave a natural problem where adaptive and oblivious streaming have very different complexity."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2304.07413",
+   "arxiv_id": "2304.07413",
+   "doi": null,
+   "baslik": "Robust Algorithms on Adaptive Inputs from Bounded Adversaries",
+   "yil": 2023,
+   "gerekce": "Gave more efficient robust algorithms against adversaries with bounded computational power."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2010.11252",
+   "arxiv_id": "2010.11252",
+   "doi": null,
+   "baslik": "On Adaptive Distance Estimation",
+   "yil": 2020,
+   "gerekce": "Built distance-estimation data structures that stay correct under adaptive queries."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2405.17780",
+   "arxiv_id": "2405.17780",
+   "doi": null,
+   "baslik": "Unmasking Vulnerabilities: Cardinality Sketches under Adaptive Inputs",
+   "yil": 2024,
+   "gerekce": "Gave practical attacks on widely used cardinality sketches such as HyperLogLog."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:1412.8356",
+   "arxiv_id": "1412.8356",
+   "doi": null,
+   "baslik": "Bloom Filters in Adversarial Environments",
+   "yil": 2015,
+   "gerekce": "Analyzed robustness of approximate set-membership structures to adaptive queries."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2111.03980",
+   "arxiv_id": "2111.03980",
+   "doi": null,
+   "baslik": "Dynamic Algorithms Against an Adaptive Adversary: Generic Constructions and Lower Bounds",
+   "yil": 2022,
+   "gerekce": "Carried the DP-based robustness technique over to dynamic algorithms and proved lower bounds."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:1411.2664",
+   "arxiv_id": "1411.2664",
+   "doi": "10.1145/2746539.2746580",
+   "baslik": "Preserving Statistical Validity in Adaptive Data Analysis",
+   "yil": 2015,
+   "gerekce": "Introduced the connection between adaptive data analysis and differential privacy that robust streaming relies on."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:1511.02513",
+   "arxiv_id": "1511.02513",
+   "doi": null,
+   "baslik": "Algorithmic Stability for Adaptive Data Analysis",
+   "yil": 2016,
+   "gerekce": "Gave the tight generalization theorem behind the DP-based robustness technique."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:1408.1655",
+   "arxiv_id": "1408.1655",
+   "doi": null,
+   "baslik": "Preventing False Discovery in Interactive Data Analysis is Hard",
+   "yil": 2014,
+   "gerekce": "Gave fundamental lower bounds for answering adaptive queries."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:1410.1228",
+   "arxiv_id": "1410.1228",
+   "doi": null,
+   "baslik": "Interactive Fingerprinting Codes and the Hardness of Preventing False Discovery",
+   "yil": 2015,
+   "gerekce": "Introduced the fingerprinting-code attack technique that adaptive-adversary lower bounds use."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2107.03885",
+   "arxiv_id": "2107.03885",
+   "doi": null,
+   "baslik": "Keep That Card in Mind: Card Guessing with Limited Memory",
+   "yil": 2022,
+   "gerekce": "Studied adaptive-versus-oblivious separations in memory-limited adaptive games."
+  },
+  {
+   "sira": 29,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Improved Algorithms for White-Box Adversarial Streams",
+   "yil": 2023,
+   "gerekce": "Improved white-box robust streaming algorithms using cryptographic assumptions."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:1911.05545",
+   "arxiv_id": "1911.05545",
+   "doi": null,
+   "baslik": "Rounding Dynamic Matchings Against an Adaptive Adversary",
+   "yil": 2020,
+   "gerekce": "Key result on deterministic and adaptive-robust techniques in the closely related setting of dynamic algorithms."
+  }
+ ]
+}

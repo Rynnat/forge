@@ -1,0 +1,99 @@
+{
+ "duration_api_ms": 45939,
+ "stop_reason": "end_turn",
+ "session_id": "519725e4-4c3f-45cc-8c75-68b63b0d34c4",
+ "total_cost_usd": 0.11753439999999998,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1425,
+  "cache_read_input_tokens": 3532,
+  "output_tokens": 5271,
+  "output_tokens_details": {
+   "thinking_tokens": 1793
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1425,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 5271,
+    "cache_read_input_tokens": 3532,
+    "cache_creation_input_tokens": 1425,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1425
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 5271,
+   "cacheReadInputTokens": 3532,
+   "cacheCreationInputTokens": 1425,
+   "webSearchRequests": 0,
+   "costUSD": 0.11753439999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1793,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 1,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"Membership Inference Attacks against Machine Learning Models\", \"yil\": 2017, \"arxiv_id\": \"1610.05820\", \"doi\": \"10.1109/SP.2017.41\", \"gerekce\": \"This paper defined the membership inference attack and introduced the shadow-model method that all later work on detecting training data builds on.\"},\n{\"sira\": 2, \"baslik\": \"Extracting Training Data from Large Language Models\", \"yil\": 2021, \"arxiv_id\": \"2012.07805\", \"doi\": null, \"gerekce\": \"It showed that verbatim training data can be extracted from GPT-2 and used membership-inference signals to rank candidates, making LLM privacy risk concrete.\"},\n{\"sira\": 3, \"baslik\": \"Detecting Pretraining Data from Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2310.16789\", \"doi\": null, \"gerekce\": \"It introduced the Min-K% Prob method and the WikiMIA benchmark, which became the standard baseline for reference-free detection of pretraining data.\"},\n{\"sira\": 4, \"baslik\": \"Do Membership Inference Attacks Work on Large Language Models?\", \"yil\": 2024, \"arxiv_id\": \"2402.07841\", \"doi\": null, \"gerekce\": \"Its MIMIR benchmark showed that membership inference on LLMs often performs near chance when the train/test distributions are properly matched.\"},\n{\"sira\": 5, \"baslik\": \"Membership Inference Attacks From First Principles\", \"yil\": 2022, \"arxiv_id\": \"2112.03570\", \"doi\": \"10.1109/SP46214.2022.9833649\", \"gerekce\": \"It introduced the LiRA attack and evaluation by true-positive rate at low false-positive rates, which set the methodological standard for the field.\"},\n{\"sira\": 6, \"baslik\": \"Quantifying Memorization Across Neural Language Models\", \"yil\": 2022, \"arxiv_id\": \"2202.07646\", \"doi\": null, \"gerekce\": \"It showed that memorization grows log-linearly with model size, data duplication and context length.\"},\n{\"sira\": 7, \"baslik\": \"Proving Test Set Contamination in Black Box Language Models\", \"yil\": 2023, \"arxiv_id\": \"2310.17623\", \"doi\": null, \"gerekce\": \"It provides a black-box statistical test for test-set contamination, based on how likely the model finds the original ordering of benchmark examples.\"},\n{\"sira\": 8, \"baslik\": \"Blind Baselines Beat Membership Inference Attacks for Foundation Models\", \"yil\": 2024, \"arxiv_id\": \"2406.16201\", \"doi\": null, \"gerekce\": \"It showed that blind baselines that never query the model beat the published attacks, exposing distribution shift in the evaluation datasets.\"},\n{\"sira\": 9, \"baslik\": \"SoK: Membership Inference Attacks on LLMs are Rushing Nowhere (and How to Fix It)\", \"yil\": 2024, \"arxiv_id\": \"2406.17975\", \"doi\": null, \"gerekce\": \"It systematizes the flawed post-hoc evaluation setups in LLM membership inference and proposes randomized test designs.\"},\n{\"sira\": 10, \"baslik\": \"Time Travel in LLMs: Tracing Data Contamination in Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2308.08493\", \"doi\": null, \"gerekce\": \"It introduced guided-instruction prompting to detect contamination at the instance and partition level.\"},\n{\"sira\": 11, \"baslik\": \"NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark\", \"yil\": 2023, \"arxiv_id\": \"2310.18018\", \"doi\": null, \"gerekce\": \"This position paper made data contamination a central problem for reliable NLP evaluation.\"},\n{\"sira\": 12, \"baslik\": \"Membership Inference Attacks against Language Models via Neighbourhood Comparison\", \"yil\": 2023, \"arxiv_id\": \"2305.18462\", \"doi\": null, \"gerekce\": \"It proposed a reference-model-free attack that compares a text's loss with the losses of its neighbor texts.\"},\n{\"sira\": 13, \"baslik\": \"Min-K%++: Improved Baseline for Detecting Pre-Training Data from Large Language Models\", \"yil\": 2024, \"arxiv_id\": \"2404.02936\", \"doi\": null, \"gerekce\": \"It improved Min-K% with normalized token scores based on local-maximum detection, giving a stronger baseline.\"},\n{\"sira\": 14, \"baslik\": \"LLM Dataset Inference: Did you train on my dataset?\", \"yil\": 2024, \"arxiv_id\": \"2406.06443\", \"doi\": null, \"gerekce\": \"It moved the problem from single examples to whole datasets, enabling statistically significant detection for copyright claims.\"},\n{\"sira\": 15, \"baslik\": \"Scalable Extraction of Training Data from (Production) Language Models\", \"yil\": 2023, \"arxiv_id\": \"2311.17035\", \"doi\": null, \"gerekce\": \"It showed that large amounts of training data can be extracted even from aligned production models such as ChatGPT.\"},\n{\"sira\": 16, \"baslik\": \"Benchmark Data Contamination of Large Language Models: A Survey\", \"yil\": 2024, \"arxiv_id\": \"2406.04244\", \"doi\": null, \"gerekce\": \"It is a comprehensive survey of methods for detecting and mitigating benchmark contamination.\"},\n{\"sira\": 17, \"baslik\": \"Investigating Data Contamination in Modern Benchmarks for Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2311.09783\", \"doi\": null, \"gerekce\": \"Its TS-Guessing protocol found that models such as GPT-4 can guess hidden options in benchmarks like MMLU.\"},\n{\"sira\": 18, \"baslik\": \"Generalization or Memorization: Data Contamination and Trustworthy Evaluation for Large Language Models\", \"yil\": 2024, \"arxiv_id\": \"2402.15938\", \"doi\": null, \"gerekce\": \"It proposed CDD, which detects contamination from the output distribution alone, together with the TED trustworthy-evaluation method.\"},\n{\"sira\": 19, \"baslik\": \"A Careful Examination of Large Language Model Performance on Grade School Arithmetic\", \"yil\": 2024, \"arxiv_id\": \"2405.00332\", \"doi\": null, \"gerekce\": \"Using the new GSM1k set, it measured overfitting to GSM8K and the resulting drop in performance.\"},\n{\"sira\": 20, \"baslik\": \"Data Contamination: From Memorization to Exploitation\", \"yil\": 2022, \"arxiv_id\": \"2203.08242\", \"doi\": null, \"gerekce\": \"It was an early controlled study of how contamination in pretraining is exploited on downstream tasks.\"},\n{\"sira\": 21, \"baslik\": \"Did the Neurons Read your Book? Document-level Membership Inference for Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2310.15007\", \"doi\": null, \"gerekce\": \"It introduced document-level membership inference for copyrighted books and papers.\"},\n{\"sira\": 22, \"baslik\": \"DE-COP: Detecting Copyrighted Content in Language Models Training Data\", \"yil\": 2024, \"arxiv_id\": \"2402.09910\", \"doi\": null, \"gerekce\": \"It detects copyrighted content in training data with a multiple-choice test that asks the model to pick the verbatim passage among paraphrases.\"},\n{\"sira\": 23, \"baslik\": \"Copyright Traps for Large Language Models\", \"yil\": 2024, \"arxiv_id\": \"2402.09363\", \"doi\": null, \"gerekce\": \"It proposed injecting trap sequences into documents in advance so that their later use in training can be detected.\"},\n{\"sira\": 24, \"baslik\": \"Privacy Risk in Machine Learning: Analyzing the Connection to Overfitting\", \"yil\": 2018, \"arxiv_id\": \"1709.01604\", \"doi\": \"10.1109/CSF.2018.00027\", \"gerekce\": \"It formalized the link between membership inference and overfitting and introduced the loss-threshold attack.\"},\n{\"sira\": 25, \"baslik\": \"Deduplicating Training Data Mitigates Privacy Risks in Language Models\", \"yil\": 2022, \"arxiv_id\": \"2202.06539\", \"doi\": null, \"gerekce\": \"It showed that data duplication drives memorization and membership-inference success, and that deduplication is an effective defense.\"},\n{\"sira\": 26, \"baslik\": \"Membership Inference Attacks Cannot Prove that a Model Was Trained On Your Data\", \"yil\": 2024, \"arxiv_id\": \"2409.19798\", \"doi\": null, \"gerekce\": \"It showed that membership inference cannot provide legally sound proof of training-data use, and recommends data canaries and similar alternatives.\"},\n{\"sira\": 27, \"baslik\": \"LiveBench: A Challenging, Contamination-Free LLM Benchmark\", \"yil\": 2024, \"arxiv_id\": \"2406.19314\", \"doi\": null, \"gerekce\": \"It is a leading continuously updated benchmark designed to prevent contamination.\"},\n{\"sira\": 28, \"baslik\": \"LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code\", \"yil\": 2024, \"arxiv_id\": \"2403.07974\", \"doi\": null, \"gerekce\": \"It made contamination measurable for code by evaluating models on problems published after their training cutoff.\"},\n{\"sira\": 29, \"baslik\": \"Leak, Cheat, Repeat: Data Contamination and Evaluation Malpractices in Closed-Source LLMs\", \"yil\": 2024, \"arxiv_id\": \"2402.03927\", \"doi\": null, \"gerekce\": \"It documented indirect data leakage from closed-source models through user interactions, and related problems in evaluation practice.\"},\n{\"sira\": 30, \"baslik\": \"Scaling Up Membership Inference: When and How Attacks Succeed on Large Language Models\", \"yil\": 2024, \"arxiv_id\": \"2411.00154\", \"doi\": null, \"gerekce\": \"It showed that membership inference becomes effective when aggregated at the document and collection level.\"}\n]}",
+ "ttft_ms": 19681,
+ "type": "result",
+ "duration_ms": 46115,
+ "uuid": "0bc6c3fe-a8e7-4d2f-b92d-e1ea24113158",
+ "ttft_stream_ms": 1671,
+ "time_to_request_ms": 218,
+ "first_content_frame_ms": 1672,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

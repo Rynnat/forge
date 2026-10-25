@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 87025,
+ "stop_reason": "end_turn",
+ "session_id": "4e164b20-8932-44ba-b241-02589ec61fdc",
+ "total_cost_usd": 0.23188889999999998,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 7402,
+  "cache_read_input_tokens": 8457,
+  "output_tokens": 7383,
+  "output_tokens_details": {
+   "thinking_tokens": 3654
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7402,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3578,
+    "cache_read_input_tokens": 4925,
+    "cache_creation_input_tokens": 6009,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6009
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 7383,
+   "cacheReadInputTokens": 8457,
+   "cacheCreationInputTokens": 7402,
+   "webSearchRequests": 0,
+   "costUSD": 0.20858339999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3654,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 25875,
+   "outputTokens": 1436,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.0233055,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 395,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [{\"sira\": 1, \"baslik\": \"Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges\", \"yil\": 2023, \"arxiv_id\": \"2202.01032\", \"doi\": \"10.1109/COMST.2023.3239220\", \"gerekce\": \"This is the standard survey of O-RAN. It covers the architecture, the RICs, the interfaces, AI/ML algorithms, security and the main research challenges.\"}, {\"sira\": 2, \"baslik\": \"Intelligence and Learning in O-RAN for Data-driven NextG Cellular Networks\", \"yil\": 2021, \"arxiv_id\": \"2012.01263\", \"doi\": \"10.1109/MCOM.101.2001120\", \"gerekce\": \"It sets out how ML models in O-RAN are trained, deployed and run in closed-loop control, and what problems this raises.\"}, {\"sira\": 3, \"baslik\": \"Open, Programmable, and Virtualized 5G Networks: State-of-the-Art and the Road Ahead\", \"yil\": 2020, \"arxiv_id\": \"2005.10027\", \"doi\": \"10.1016/j.comnet.2020.107516\", \"gerekce\": \"It is a broad survey of open and programmable RAN and the open-source software ecosystem.\"}, {\"sira\": 4, \"baslik\": \"ColO-RAN: Developing Machine Learning-based xApps for Open RAN Closed-loop Control on Programmable Experimental Platforms\", \"yil\": 2022, \"arxiv_id\": \"2112.09559\", \"doi\": \"10.1109/TMC.2022.3188013\", \"gerekce\": \"It is the first large-scale framework for developing and testing DRL-based xApps on real-scale O-RAN systems.\"}, {\"sira\": 5, \"baslik\": \"OrchestRAN: Network Automation through Orchestrated Intelligence in the Open RAN\", \"yil\": 2022, \"arxiv_id\": \"2201.05632\", \"doi\": null, \"gerekce\": \"It addresses how ML models are orchestrated and placed in the RAN, and how they are tied to network automation.\"}, {\"sira\": 6, \"baslik\": \"dApps: Distributed Applications for Real-time Inference and Control in O-RAN\", \"yil\": 2022, \"arxiv_id\": \"2203.02370\", \"doi\": null, \"gerekce\": \"It proposes the dApp concept for real-time ML inference faster than the near-RT RIC allows.\"}, {\"sira\": 7, \"baslik\": \"O-RAN: Disrupting the Virtualized RAN Ecosystem\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.1109/MCOMSTD.101.2000014\", \"gerekce\": \"It explains O-RAN's standards structure and how it differs from virtualized RAN.\"}, {\"sira\": 8, \"baslik\": \"Explainable AI in 6G O-RAN: A Tutorial and Survey on Architecture, Use Cases, Challenges, and Future Research\", \"yil\": 2024, \"arxiv_id\": \"2307.00319\", \"doi\": null, \"gerekce\": \"It is a full survey of explainable AI for trustworthy ML in O-RAN.\"}, {\"sira\": 9, \"baslik\": \"Programmable and Customized Intelligence for Traffic Steering in 5G Networks Using Open RAN Architectures\", \"yil\": 2023, \"arxiv_id\": \"2209.14171\", \"doi\": null, \"gerekce\": \"It presents an RL-based traffic steering xApp and its evaluation with ns-O-RAN.\"}, {\"sira\": 10, \"baslik\": \"OpenRAN Gym: AI/ML Development, Data Collection, and Testing for O-RAN on PAWR Platforms\", \"yil\": 2023, \"arxiv_id\": \"2207.12362\", \"doi\": null, \"gerekce\": \"It provides an open toolbox for developing, collecting data for and testing O-RAN AI/ML.\"}, {\"sira\": 11, \"baslik\": \"Toward Next Generation Open Radio Access Networks: What O-RAN Can and Cannot Do!\", \"yil\": 2022, \"arxiv_id\": \"2111.13754\", \"doi\": null, \"gerekce\": \"It gives a critical analysis of O-RAN's limits and open problems.\"}, {\"sira\": 12, \"baslik\": \"Intelligent O-RAN for Beyond 5G and 6G Wireless Networks\", \"yil\": 2022, \"arxiv_id\": \"2005.08374\", \"doi\": null, \"gerekce\": \"It is an early study that shows the RIC's intelligence through ML use cases.\"}, {\"sira\": 13, \"baslik\": \"Empowering the 6G Cellular Architecture with Open RAN\", \"yil\": 2024, \"arxiv_id\": \"2312.02746\", \"doi\": null, \"gerekce\": \"It sets out the role of Open RAN and AI-native control in a 6G architecture.\"}, {\"sira\": 14, \"baslik\": \"Open RAN Security: Challenges and Opportunities\", \"yil\": 2023, \"arxiv_id\": \"2212.01510\", \"doi\": null, \"gerekce\": \"It surveys O-RAN security risks, including threats aimed at ML components.\"}, {\"sira\": 15, \"baslik\": \"Adversarial Machine Learning Threat Analysis and Remediation in Open Radio Access Network (O-RAN)\", \"yil\": 2022, \"arxiv_id\": \"2201.06093\", \"doi\": null, \"gerekce\": \"It analyzes adversarial ML attacks on xApps and rApps and proposes countermeasures.\"}, {\"sira\": 16, \"baslik\": \"Federated Deep Reinforcement Learning for Resource Allocation in O-RAN Slicing\", \"yil\": 2022, \"arxiv_id\": \"2208.01736\", \"doi\": null, \"gerekce\": \"It is a representative federated DRL study for slice resource allocation in O-RAN.\"}, {\"sira\": 17, \"baslik\": \"Team Learning-Based Resource Allocation for Open Radio Access Network (O-RAN)\", \"yil\": 2022, \"arxiv_id\": \"2201.07385\", \"doi\": null, \"gerekce\": \"It addresses multi-xApp coordination and cooperative learning.\"}, {\"sira\": 18, \"baslik\": \"A Comparative Analysis of Deep Reinforcement Learning-based xApps in O-RAN\", \"yil\": 2023, \"arxiv_id\": \"2309.05621\", \"doi\": null, \"gerekce\": \"It compares 12 DRL xApp designs and identifies reward and action-space design problems.\"}, {\"sira\": 19, \"baslik\": \"EXPLORA: AI/ML EXPLainability for the Open RAN\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": \"10.1145/3629141\", \"gerekce\": \"It presents a practical framework for explaining the decisions of DRL xApps.\"}, {\"sira\": 20, \"baslik\": \"ns-O-RAN: Simulating O-RAN 5G Systems in ns-3\", \"yil\": 2023, \"arxiv_id\": \"2305.06906\", \"doi\": null, \"gerekce\": \"It is an open simulation tool for training and testing ML xApps.\"}, {\"sira\": 21, \"baslik\": \"Colosseum: Large-Scale Wireless Experimentation Through Hardware-in-the-Loop Network Emulation\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It is the largest emulation testbed for O-RAN ML research and has a digital-twin role.\"}, {\"sira\": 22, \"baslik\": \"vrAIn: A Deep Learning Approach Tailoring Computing and Radio Resources in Virtualized RANs\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1145/3300061.3345431\", \"gerekce\": \"It is a pioneering deep learning study for jointly orchestrating computing and radio resources in vRAN.\"}, {\"sira\": 23, \"baslik\": \"Recent Advances in Machine Learning for Network Automation in the O-RAN\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": \"10.3390/s23218792\", \"gerekce\": \"It is a survey dedicated to ML-based network automation in O-RAN.\"}, {\"sira\": 24, \"baslik\": \"NexRAN: Closed-loop RAN Slicing in POWDER - A Top-to-Bottom Open-Source Open-RAN Use Case\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It is an open-source closed-loop slicing demonstration on a real testbed.\"}, {\"sira\": 25, \"baslik\": \"Hosting AI/ML Workflows on O-RAN RIC Platform\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It shows how AI/ML workflows are implemented on the RIC platform.\"}, {\"sira\": 26, \"baslik\": \"SCOPE: An Open and Softwarized Prototyping Platform for NextG Systems\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.1145/3458864.3466863\", \"gerekce\": \"It is a prototyping platform for data collection and ML-based control.\"}, {\"sira\": 27, \"baslik\": \"ORAN-Bench-13K: An Open Source Benchmark for Assessing LLMs in Open Radio Access Networks\", \"yil\": 2024, \"arxiv_id\": \"2407.06245\", \"doi\": null, \"gerekce\": \"It is the first benchmark for LLMs in O-RAN and reflects the emerging generative-AI direction.\"}, {\"sira\": 28, \"baslik\": \"Toward Integrating Intelligence and Programmability in Open Radio Access Networks: A Comprehensive Survey\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It surveys the combination of intelligence and programmability in O-RAN.\"}, {\"sira\": 29, \"baslik\": \"Conflict Management in the Near-RT-RIC of Open RAN: A Game Theoretic Approach\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It addresses conflicts between xApps, an important open problem.\"}, {\"sira\": 30, \"baslik\": \"O-RAN: Towards an Open and Smart RAN\", \"yil\": 2018, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It is the O-RAN Alliance's founding white paper and set out the AI-driven RIC vision.\"}]}",
+ "ttft_ms": 43361,
+ "type": "result",
+ "duration_ms": 79814,
+ "uuid": "bffa536f-5e91-4ddd-82f3-47d4d6b84b1e",
+ "ttft_stream_ms": 2141,
+ "time_to_request_ms": 136,
+ "first_content_frame_ms": 2142,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

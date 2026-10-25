@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-185343-09d668",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "LSM-ağacı tabanlı anahtar-değer depolarında sıkıştırma (compaction) kaynaklı performans dalgalanması ve optimizasyon teknikleri üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-06-13",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.1291,
+ "sure_s": 56.7,
+ "web_arama": 0,
+ "token": {
+  "in": 2,
+  "out": 5857,
+  "cache_read": 3532,
+  "cache_write": 1408
+ },
+ "son_rapor_token_tahmini": 2535,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 17,
+ "istem": "Research question: LSM-ağacı tabanlı anahtar-değer depolarında sıkıştırma (compaction) kaynaklı performans dalgalanması ve optimizasyon teknikleri üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2025-06-13. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1906.09667",
+   "arxiv_id": "1906.09667",
+   "doi": "10.14778/3372716.3372719",
+   "baslik": "On Performance Stability in LSM-based Storage Systems",
+   "yil": 2019,
+   "gerekce": "It is the main systematic study of write stalls and latency swings caused by merge/compaction scheduling, and it proposes stable scheduling policies."
+  },
+  {
+   "sira": 2,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "SILK: Preventing Latency Spikes in Log-Structured Merge Key-Value Stores",
+   "yil": 2019,
+   "gerekce": "It shows that compaction and flush competing for I/O causes tail-latency spikes, and it removes them with an I/O scheduler and compaction prioritization."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:1812.07527",
+   "arxiv_id": "1812.07527",
+   "doi": "10.1007/s00778-019-00555-y",
+   "baslik": "LSM-based storage techniques: a survey",
+   "yil": 2020,
+   "gerekce": "It is the standard survey of LSM optimizations, including compaction, and lists the field's open problems."
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1007/s002360050048",
+   "arxiv_id": null,
+   "doi": "10.1007/s002360050048",
+   "baslik": "The log-structured merge-tree (LSM-tree)",
+   "yil": 1996,
+   "gerekce": "It introduced the LSM-tree and the rolling merge (compaction) concept."
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1145/2213836.2213862",
+   "arxiv_id": null,
+   "doi": "10.1145/2213836.2213862",
+   "baslik": "bLSM: a general purpose log structured merge tree",
+   "yil": 2012,
+   "gerekce": "Its spring-and-gear merge scheduler is a pioneering way to bound write latency caused by merges."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2202.04522",
+   "arxiv_id": "2202.04522",
+   "doi": "10.14778/3476249.3476274",
+   "baslik": "Constructing and Analyzing the LSM Compaction Design Space",
+   "yil": 2021,
+   "gerekce": "It breaks compaction strategies into design primitives and benchmarks their effects on latency and amplification."
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1145/3183713.3196927",
+   "arxiv_id": null,
+   "doi": "10.1145/3183713.3196927",
+   "baslik": "Dostoevsky: Better Space-Time Trade-Offs for LSM-Tree Based Key-Value Stores via Adaptive Removal of Superfluous Merging",
+   "yil": 2018,
+   "gerekce": "Its lazy leveling and Fluid LSM remove unnecessary merging and improve the tiering/leveling trade-off."
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1145/3035918.3064054",
+   "arxiv_id": null,
+   "doi": "10.1145/3035918.3064054",
+   "baslik": "Monkey: Optimal Navigable Key-Value Store",
+   "yil": 2017,
+   "gerekce": "It analytically models the trade-offs between merge policy, size ratio and filter memory."
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.1145/3033273",
+   "arxiv_id": null,
+   "doi": "10.1145/3033273",
+   "baslik": "WiscKey: Separating Keys from Values in SSD-Conscious Storage",
+   "yil": 2017,
+   "gerekce": "Key-value separation sharply reduces compaction write amplification, and it led to many follow-up designs."
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1145/3132747.3132765",
+   "arxiv_id": null,
+   "doi": "10.1145/3132747.3132765",
+   "baslik": "PebblesDB: Building Key-Value Stores using Fragmented Log-Structured Merge Trees",
+   "yil": 2017,
+   "gerekce": "Its fragmented LSM structure avoids rewriting data during compaction and lowers write amplification."
+  },
+  {
+   "sira": 11,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "TRIAD: Creating Synergies Between Memory, Disk and Log in Log Structured Key-Value Stores",
+   "yil": 2017,
+   "gerekce": "It reduces compaction and flush overhead with hot-key handling and deferred compaction."
+  },
+  {
+   "sira": 12,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "MatrixKV: Reducing Write Stalls and Write Amplification in LSM-tree Based KV Stores with Matrix Container in NVM",
+   "yil": 2020,
+   "gerekce": "It targets write stalls caused by L0-L1 compaction directly, using fine-grained column compaction in NVM."
+  },
+  {
+   "sira": 13,
+   "id": "doi:10.14778/2757807.2757813",
+   "arxiv_id": null,
+   "doi": "10.14778/2757807.2757813",
+   "baslik": "Compaction management in distributed key-value datastores",
+   "yil": 2015,
+   "gerekce": "It addresses the performance drops from compaction in distributed stores with offloading and cache warm-up."
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1145/3299869.3319903",
+   "arxiv_id": null,
+   "doi": "10.1145/3299869.3319903",
+   "baslik": "The Log-Structured Merge-Bush & the Wacky Continuum",
+   "yil": 2019,
+   "gerekce": "It generalizes the merge-policy design continuum and lowers merge costs for write-heavy workloads."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2006.04777",
+   "arxiv_id": "2006.04777",
+   "doi": "10.1145/3318464.3389757",
+   "baslik": "Lethe: A Tunable Delete-Aware LSM Engine",
+   "yil": 2020,
+   "gerekce": "Its delete-aware compaction policy fixes delete persistence and the space/performance overhead of tombstones."
+  },
+  {
+   "sira": 16,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Optimizing Space Amplification in RocksDB",
+   "yil": 2017,
+   "gerekce": "It presents dynamic level sizing and RocksDB's industrial approach to leveled compaction."
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1145/3483840",
+   "arxiv_id": null,
+   "doi": "10.1145/3483840",
+   "baslik": "RocksDB: Evolution of Development Priorities in a Key-value Store Serving Large-scale Applications",
+   "yil": 2021,
+   "gerekce": "It documents production experience with compaction, write stalls and resource management."
+  },
+  {
+   "sira": 18,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "HashKV: Enabling Efficient Updates in KV Storage via Hashing",
+   "yil": 2018,
+   "gerekce": "It addresses the garbage-collection cost that key-value separation leaves behind."
+  },
+  {
+   "sira": 19,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "LSM-trie: An LSM-tree-based Ultra-Large Key-Value Store for Small Data",
+   "yil": 2015,
+   "gerekce": "Its trie-based tiered merging greatly reduces write amplification."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2007.10624",
+   "arxiv_id": "2007.10624",
+   "doi": null,
+   "baslik": "Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines",
+   "yil": 2020,
+   "gerekce": "It uses a learned prefetcher to counter the cache invalidation and read-latency swings that compaction causes."
+  },
+  {
+   "sira": 21,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "LSbM-tree: Re-Enabling Buffer Caching in Data Management for Mixed Reads and Writes",
+   "yil": 2017,
+   "gerekce": "It analyzes how compaction invalidates the buffer cache and proposes a way to fix it."
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1145/3299869.3314041",
+   "arxiv_id": null,
+   "doi": "10.1145/3299869.3314041",
+   "baslik": "X-Engine: An Optimized Storage Engine for Large-scale E-commerce Transaction Processing",
+   "yil": 2019,
+   "gerekce": "It shows how industry keeps performance stable at very large scale by offloading compaction to FPGA and using data reuse."
+  },
+  {
+   "sira": 23,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "FPGA-Accelerated Compactions for LSM-based Key-Value Store",
+   "yil": 2020,
+   "gerekce": "It moves compaction to hardware to free CPU resources and reduce interference."
+  },
+  {
+   "sira": 24,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "SplinterDB: Closing the Bandwidth Gap for NVMe Key-Value Stores",
+   "yil": 2020,
+   "gerekce": "Its STBε-tree design lowers compaction write amplification on fast NVMe devices."
+  },
+  {
+   "sira": 25,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "ADOC: Automatically Harmonizing Dataflow Between Components in Log-Structured Key-Value Stores for Improved Performance",
+   "yil": 2023,
+   "gerekce": "It analyzes the root causes of write stalls in the flush/compaction data flow and tunes them automatically."
+  },
+  {
+   "sira": 26,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Spooky: Granulating LSM-Tree Compactions Correctly",
+   "yil": 2022,
+   "gerekce": "It shows that compaction granularity determines write amplification and space overhead, and it proposes partitioned merging."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2110.13801",
+   "arxiv_id": "2110.13801",
+   "doi": null,
+   "baslik": "Endure: A Robust Tuning Paradigm for LSM Trees Under Workload Uncertainty",
+   "yil": 2022,
+   "gerekce": "It raises the open problem of robust compaction/structure tuning when the workload is uncertain."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2311.10005",
+   "arxiv_id": "2311.10005",
+   "doi": null,
+   "baslik": "Towards Flexibility and Robustness of LSM Trees",
+   "yil": 2024,
+   "gerekce": "It covers robust tuning of compaction parameters and flexible LSM structures."
+  },
+  {
+   "sira": 29,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Accordion: Better Memory Organization for LSM Key-Value Stores",
+   "yil": 2018,
+   "gerekce": "Its in-memory compaction reduces flush and disk compaction pressure."
+  },
+  {
+   "sira": 30,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Characterizing, Modeling, and Benchmarking RocksDB Key-Value Workloads at Facebook",
+   "yil": 2020,
+   "gerekce": "Its production workload characterization provides a realistic basis for evaluating compaction optimizations."
+  }
+ ]
+}

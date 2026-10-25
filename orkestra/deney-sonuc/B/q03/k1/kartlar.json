@@ -1,0 +1,1029 @@
+[
+ {
+  "id": "doi:10.1155/2022/6476274",
+  "baslik": "A Survey on Zero Trust Architecture: Challenges and Future Trends",
+  "yil": 2022,
+  "cites": 239,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Genel ZTA ilkeleri; uç/IoT uyarlaması yok",
+  "alinti": "Zero trust is a new type of network security model, which is based on the concept of never trust and always verify."
+ },
+ {
+  "id": "arXiv:2403.02691",
+  "baslik": "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents",
+  "yil": 2014,
+  "cites": 149,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ajan dolaylı prompt enjeksiyonu benchmarkı",
+  "alinti": "In this work, we introduce InjecAgent, a benchmark designed to assess the vulnerability of tool-integrated LLM agents to IPI attacks."
+ },
+ {
+  "id": "arXiv:2406.13352",
+  "baslik": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+  "yil": 2024,
+  "cites": 165,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Ajan saldırı/savunma değerlendirme ortamı",
+  "alinti": "we introduce AgentDojo, an evaluation framework for agents that execute tools over untrusted data."
+ },
+ {
+  "id": "arXiv:2407.18921",
+  "baslik": "Mobile Edge Intelligence for Large Language Models: A Contemporary Survey",
+  "yil": 2024,
+  "cites": 23,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Uç cihazda LLM ve mobil uç zekâ anketi",
+  "alinti": "On-device large language models (LLMs), referring to running LLMs on edge devices, have raised considerable interest owing to their superior privacy, reduced latency, and bandwidth saving."
+ },
+ {
+  "id": "doi:10.3390/e25121595",
+  "baslik": "Theory and Application of Zero Trust Security: A Brief Survey",
+  "yil": 2023,
+  "cites": 117,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Genel ZTA kavramı ve ilkeleri",
+  "alinti": "Zero trust is a novel paradigm for cybersecurity based on the core concept of “never trust, always verify”."
+ },
+ {
+  "id": "arXiv:2402.08567",
+  "baslik": "Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Çoklu ajanlarda bulaşıcı jailbreak",
+  "alinti": "we report an even more severe safety issue in multi-agent environments, referred to as infectious jailbreak."
+ },
+ {
+  "id": "arXiv:2407.12784",
+  "baslik": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+  "yil": 2024,
+  "cites": 76,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Ajan belleği/RAG zehirleme ve arka kapı saldırısı",
+  "alinti": "we propose a novel red teaming approach AgentPoison, the first backdoor attack targeting generic and RAG-based LLM agents by poisoning their long-term memory or RAG knowledge base."
+ },
+ {
+  "id": "arXiv:2302.12173",
+  "baslik": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+  "yil": 2023,
+  "cites": 671,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Dolaylı prompt enjeksiyonu; LLM uygulama saldırıları",
+  "alinti": "We reveal new attack vectors, using Indirect Prompt Injection, that enable adversaries to remotely (without a direct interface) exploit LLM-integrated applications"
+ },
+ {
+  "id": "arXiv:2410.02644",
+  "baslik": "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ajan saldırı ve savunma benchmarkı",
+  "alinti": "Based on ASB, we benchmark 10 prompt injection attacks, a memory poisoning attack, a novel Plan-of-Thought backdoor attack, 4 mixed attacks, and 11 corresponding defenses across 13 LLM backbones."
+ },
+ {
+  "id": "arXiv:2502.14143",
+  "baslik": "Multi-Agent Risks from Advanced AI",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Çoklu ajan riskleri taksonomisi ve açık problemler",
+  "alinti": "we provide a structured taxonomy of these risks by identifying three key failure modes (miscoordination, conflict, and collusion)"
+ },
+ {
+  "id": "doi:10.30574/gscarr.2025.22.2.0036",
+  "baslik": "A survey of security in zero trust network architectures",
+  "yil": 2025,
+  "cites": 11,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ZTNA güvenlik anketi; açık problemler dahil",
+  "alinti": "Finally, the survey identifies current research gaps, practical deployment challenges, and future directions to enhance security in ZTNA"
+ },
+ {
+  "id": "doi:10.3390/math13081239",
+  "baslik": "Zero-Trust Mechanisms for Securing Distributed Edge and Fog Computing in 6G Networks",
+  "yil": 2025,
+  "cites": 18,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Dağıtık uç/sis bilişim için ZTA çerçevesi",
+  "alinti": "we propose ZTF-6G (Zero-Trust Framework for 6G Networks), a novel model that integrates Zero-Trust principles to secure distributed edge and fog computing environments."
+ },
+ {
+  "id": "doi:10.55640/ijdsml-05-01-25",
+  "baslik": "A Review of Large Language Models in Edge Computing: Applications, Challenges, Benefits, and Deployment Strategies",
+  "yil": 2025,
+  "cites": 2,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Uç cihazlarda LLM kaynak kısıtları ve dağıtım",
+  "alinti": "We also look at some techniques and architectures that can overcome the limitations of edge devices, such as cloud-edge collaboration, federated learning, model compression, and on-device inference."
+ },
+ {
+  "id": "doi:10.1109/mnet.131.2200513",
+  "baslik": "Zero Trust Architecture Empowered Attack Detection Framework to Secure 6G Edge Computing",
+  "yil": 2024,
+  "cites": 78,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; 6G uç bilişimde ZTA saldırı tespiti",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2203.07716",
+  "baslik": "Zero Trust Architecture for 6G Security",
+  "yil": 2022,
+  "cites": 90,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "6G için yazılım tanımlı ZTA önerisi",
+  "alinti": "In this article, we propose a software-defined zero trust architecture (ZTA) for 6G networks, which is promising for establishing an elastic and scalable security regime."
+ },
+ {
+  "id": "arXiv:2410.07283",
+  "baslik": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Ajanlar arası bulaşıcı prompt enjeksiyonu; LLM Tagging savunması",
+  "alinti": "We introduce Prompt Infection, a novel attack where malicious prompts self-replicate across interconnected agents, behaving much like a computer virus."
+ },
+ {
+  "id": "doi:10.36227/techrxiv.172165641.12548858/v1",
+  "baslik": "Zero Trust Architecture: A Paradigm Shift in Network Security",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ZTA bileşenleri; IoT ve 6G'ye değinir",
+  "alinti": "This paper proposed a comprehensive flowchart implementation, demonstrating how crucial ZTA is in contemporary and future network infrastructures, including IoT and 6G networks."
+ },
+ {
+  "id": "arXiv:2401.11880",
+  "baslik": "PsySafe: A Comprehensive Framework for Psychological-based Attack, Defense, and Evaluation of Multi-agent System Safety",
+  "yil": 2024,
+  "cites": 18,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Çoklu ajan güvenliği: saldırı, savunma, değerlendirme",
+  "alinti": "we propose a comprehensive framework (PsySafe) grounded in agent psychology, focusing on three key areas"
+ },
+ {
+  "id": "doi:10.1016/j.iot.2024.101227",
+  "baslik": "Verify and trust: A multidimensional survey of zero-trust security in the age of IoT",
+  "yil": 2024,
+  "cites": 75,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; IoT'de zero-trust anketi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2405.14371",
+  "baslik": "EdgeShard: Efficient LLM Inference via Collaborative Edge Computing",
+  "yil": 2024,
+  "cites": 227,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Dağıtık uç cihazlarda LLM parçalama (split) çıkarımı",
+  "alinti": "We propose a general framework to partition the LLM model into shards and deploy on distributed devices."
+ },
+ {
+  "id": "arXiv:2505.02077",
+  "baslik": "Open Challenges in Multi-Agent Security: Towards Secure Systems of Interacting AI Agents",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Çoklu ajan güvenliği alanını ve açık problemleri tanımlar",
+  "alinti": "Network effects can rapidly spread privacy breaches, disinformation, jailbreaks, and data poisoning, while multi-agent dispersion and stealth optimization help adversaries evade oversight"
+ },
+ {
+  "id": "arXiv:2502.11127",
+  "baslik": "G-Safeguard: A Topology-Guided Security Lens and Treatment on LLM-based Multi-agent Systems",
+  "yil": 2025,
+  "cites": 13,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Topoloji tabanlı çoklu ajan savunması",
+  "alinti": "we introduce G-Safeguard, a topology-guided security lens and treatment for robust LLM-MAS, which leverages graph neural networks to detect anomalies on the multi-agent utterance graph"
+ },
+ {
+  "id": "arXiv:2504.19956",
+  "baslik": "Securing Agentic AI: A Comprehensive Threat Model and Mitigation Framework for Generative AI Agents",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Üretken AI ajanları için tehdit modeli ve azaltım",
+  "alinti": "This paper introduces a comprehensive threat model tailored specifically for GenAI agents, focusing on how their autonomy, persistent memory access, complex reasoning, and tool integration create novel risks."
+ },
+ {
+  "id": "doi:10.1007/s44336-024-00009-2",
+  "baslik": "A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges",
+  "yil": 2024,
+  "cites": 424,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM çoklu ajan sistem mimarisi ve iş akışı derlemesi",
+  "alinti": "we synthesize a general structure encompassing five key components: profile, perception, self-action, mutual interaction, and evolution."
+ },
+ {
+  "id": "doi:10.1002/cpe.7198",
+  "baslik": "Identity authentication for edge devices based on zero‐trust architecture",
+  "yil": 2022,
+  "cites": 16,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Uç cihazlarda ZTA ve kimlik doğrulama, doğrudan ilgili",
+  "alinti": "Device identity authentication is the first line of defense for edge computing security mechanisms."
+ },
+ {
+  "id": "doi:10.1109/tps-isa62245.2024.00053",
+  "baslik": "[Short Paper] Forensic Analysis of Indirect Prompt Injection Attacks on LLM Agents",
+  "yil": 2023,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; ajanlarda dolaylı prompt enjeksiyonu adli analizi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-1-4842-6702-8_3",
+  "baslik": "Zero Trust Architectures",
+  "yil": 2019,
+  "cites": 968,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; genel ZTA",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2506.01804",
+  "baslik": "A Study on the MCP x A2A Framework for Enhancing Interoperability of LLM-based Autonomous Agents",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "A2A ve MCP protokollerinin birlikte kullanımı",
+  "alinti": "A2A offers a standardized communication method that enables agents developed in heterogeneous environments to collaborate effectively, while MCP provides a structured I/O framework for agents to connect with external tools and resources."
+ },
+ {
+  "id": "arXiv:2506.04133",
+  "baslik": "TRiSM for Agentic AI: A Review of Trust, Risk, and Security Management in LLM-based Agentic Multi-Agent Systems",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Ajanik AI ve çoklu ajan için güven ve risk yönetimi",
+  "alinti": "A risk taxonomy is proposed to capture the unique threats and vulnerabilities of Agentic AI, ranging from coordination failures to prompt-based adversarial manipulation."
+ },
+ {
+  "id": "doi:10.30574/wjarr.2020.5.3.0031",
+  "baslik": "5G Edge computing and zero trust architecture: A secure synergy",
+  "yil": 2020,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "5G uç bilişim ve ZTA sinerjisi",
+  "alinti": "ZTA facilitates strict access checks based on trust assurance and partitioning of a network through a zero-trust strategy."
+ },
+ {
+  "id": "arXiv:2403.04783",
+  "baslik": "AutoDefense: Multi-Agent LLM Defense against Jailbreak Attacks",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Çoklu ajanla jailbreak savunması; doğrudan ilgili",
+  "alinti": "AutoDefense assigns different roles to LLM agents and employs them to complete the defense task collaboratively."
+ },
+ {
+  "id": "doi:10.20944/preprints202504.0245.v1",
+  "baslik": "A Survey of the Model Context Protocol (MCP): Standardizing Context to Enhance Large Language Models (LLMs)",
+  "yil": 2025,
+  "cites": 24,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "MCP mimarisi ve güvenlik mekanizmaları derlemesi",
+  "alinti": "This survey reviews the foundational architecture of MCP, including its client-server model, standardized messaging protocols, dynamic tool discovery, and security mechanisms, against the backdrop of current, fragmented API solutions."
+ },
+ {
+  "id": "arXiv:2505.03574",
+  "baslik": "LlamaFirewall: An open source guardrail system for building secure AI agents",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Ajanlar için gerçek zamanlı guardrail izleyici",
+  "alinti": "there is a critical need for a real-time guardrail monitor to serve as a final layer of defense, and support system level, use case specific safety policy definition and enforcement."
+ },
+ {
+  "id": "doi:10.1109/issc61953.2024.10603175",
+  "baslik": "Authentication and Authorization in Zero Trust IoT: A Survey",
+  "yil": 2024,
+  "cites": 18,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; ZT IoT kimlik doğrulama ve yetkilendirme",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2502.14321",
+  "baslik": "Beyond Self-Talk: A Communication-Centric Survey of LLM-Based Multi-Agent Systems",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "LLM çoklu ajan iletişimi derlemesi; güvenlik açıkları dahil",
+  "alinti": "In addition, we highlight current challenges, including communication efficiency, security vulnerabilities, inadequate benchmarking, and scalability issues"
+ },
+ {
+  "id": "arXiv:2503.00061",
+  "baslik": "Adaptive Attacks Break Defenses Against Indirect Prompt Injection Attacks on LLM Agents",
+  "yil": 2024,
+  "cites": 32,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Dolaylı prompt enjeksiyonu savunmalarının uyarlanabilir saldırıyla aşılması",
+  "alinti": "In this paper, we evaluate eight different defenses and bypass all of them using adaptive attacks, consistently achieving an attack success rate of over 50%."
+ },
+ {
+  "id": "doi:10.36227/techrxiv.173933211.18231232/v1",
+  "baslik": "Zero Trust Architecture: A Systematic Literature Review",
+  "yil": 2025,
+  "cites": 25,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ZTA sistematik literatür taraması",
+  "alinti": "This study applies the PRISMA framework to analyze 10 years of research (2016-2025) on ZTA, presenting a systematic literature review (SLR) that synthesizes its applications"
+ },
+ {
+  "id": "doi:10.1109/cybersa52016.2021.9478244",
+  "baslik": "Zero trust: Never trust, always verify",
+  "yil": 2021,
+  "cites": 48,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; genel zero-trust ilkesi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2505.02279",
+  "baslik": "A survey of agent interoperability protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP)",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "MCP, ACP, A2A, ANP protokollerinin karşılaştırmalı anketi",
+  "alinti": "A2A enables peer-to-peer task delegation using capability-based Agent Cards, supporting secure and scalable collaboration across enterprise agent workflows."
+ },
+ {
+  "id": "doi:10.1109/aiotc63215.2024.10748304",
+  "baslik": "A Survey of LLM-based Agents: Theories, Technologies, Applications and Suggestions",
+  "yil": 2024,
+  "cites": 22,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; LLM tabanlı ajan anketi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.cose.2021.102436",
+  "baslik": "Never trust, always verify: A multivocal literature review on current knowledge and research gaps of zero-trust",
+  "yil": 2021,
+  "cites": 220,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; zero-trust araştırma boşlukları",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2506.05364",
+  "baslik": "Survey of LLM Agent Communication with MCP: A Software Design Pattern Centric Review",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "MCP iletişim örüntüleri; ajan mimarisi ve protokol odaklı",
+  "alinti": "This survey investigates how classical software design patterns can enhance the reliability and scalability of communication in Large Language Model (LLM)-driven agentic AI systems, focusing particularly on the Model Context Protocol (MCP)."
+ },
+ {
+  "id": "arXiv:2308.08155",
+  "baslik": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Çoklu ajan konuşma çerçevesi AutoGen",
+  "alinti": "AutoGen agents are customizable, conversable, and can operate in various modes that employ combinations of LLMs, human inputs, and tools."
+ },
+ {
+  "id": "arXiv:2308.11432",
+  "baslik": "A Survey on Large Language Model based Autonomous Agents",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "LLM tabanlı otonom ajanların kapsamlı anketi",
+  "alinti": "we first discuss the construction of LLM-based autonomous agents, for which we propose a unified framework that encompasses a majority of the previous work."
+ },
+ {
+  "id": "doi:10.1109/satrends66715.2025.00006",
+  "baslik": "SALLMA: A Software Architecture for LLM-Based Multi-Agent Systems",
+  "yil": 2025,
+  "cites": 17,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; LLM çoklu ajan mimarisi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2412.16682",
+  "baslik": "The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents",
+  "yil": 2024,
+  "cites": 23,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Dolaylı prompt enjeksiyonuna karşı görev hizalama savunması",
+  "alinti": "In particular, indirect prompt injection attacks pose a critical threat, where malicious instructions embedded within external data sources can manipulate agents to deviate from user intentions."
+ },
+ {
+  "id": "doi:10.1109/icws62655.2024.00099",
+  "baslik": "Edge-LLM: A Collaborative Framework for Large Language Model Serving in Edge Computing",
+  "yil": 2024,
+  "cites": 62,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; uç bilişimde LLM sunumu",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2503.03704",
+  "baslik": "Memory Injection Attacks on LLM Agents via Query-Only Interaction",
+  "yil": 2025,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Ajan bellek zehirleme saldırısı, yalnızca sorgu üzerinden",
+  "alinti": "The attacker injects malicious records into the memory bank by only interacting with the agent via queries and output observations."
+ },
+ {
+  "id": "doi:10.54254/2755-2721/71/20241674",
+  "baslik": "Research on the role of LLM in multi-agent systems: A survey",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM'in çoklu ajan sistemlerdeki rolü anketi",
+  "alinti": "through collaboration among multiple agents, each undertaking specific tasks, complex problems can be efficiently managed through interaction and coordination."
+ },
+ {
+  "id": "arXiv:2407.07791",
+  "baslik": "Flooding Spread of Manipulated Knowledge in LLM-Based Multi-Agent Communities",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Çoklu ajanlarda manipüle bilginin yayılması saldırısı",
+  "alinti": "we propose a novel two-stage attack method involving Persuasiveness Injection and Manipulated Knowledge Injection to systematically explore the potential for manipulated knowledge"
+ },
+ {
+  "id": "doi:10.55640/ijns-02-01-02",
+  "baslik": "Implementing Zero Trust Architecture: Modern Approaches to Secure Enterprise Networks",
+  "yil": 2022,
+  "cites": 3,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ZTA uygulama ve sürekli doğrulama ilkeleri",
+  "alinti": "Within Zero Trust, the idea of trusting an internal network is eliminated and treated as all systems and users from within and outside the network must be authenticated, authorized, and continually monitored."
+ },
+ {
+  "id": "arXiv:2408.00989",
+  "baslik": "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Hatalı/kötü niyetli ajanlara karşı çoklu ajan dayanıklılığı",
+  "alinti": "the impact of clumsy or even malicious agents--those who frequently make errors in their tasks--on the overall performance of the system remains underexplored."
+ },
+ {
+  "id": "doi:10.1109/access.2022.3174679",
+  "baslik": "Zero Trust Architecture (ZTA): A Comprehensive Survey",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; kapsamlı ZTA anketi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2506.01245",
+  "baslik": "Comprehensive Vulnerability Analysis is Necessary for Trustworthy LLM-MAS",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM çoklu ajan sistemleri için zafiyet analizi ve açık sorunlar",
+  "alinti": "LLM-MAS introduces unique attack surfaces through inter-agent communication, trust relationships, and tool integration that remain significantly underexplored."
+ },
+ {
+  "id": "doi:10.1016/j.comnet.2024.110197",
+  "baslik": "Implementing zero trust security with dual fuzzy methodology for trust-aware authentication and task offloading in Multi-access Edge Computing",
+  "yil": 2024,
+  "cites": 38,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; MEC'te ZTA ve görev boşaltma",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2506.19676",
+  "baslik": "A Survey of LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "MCP/A2A iletişim protokolleri ve güvenlik tehditleri anketi",
+  "alinti": "many organizations have intensively begun to design related communication protocols (e.g., Anthropic's MCP and Google's A2A) within the past year."
+ },
+ {
+  "id": "arXiv:2401.07764",
+  "baslik": "When Large Language Model Agents Meet 6G Networks: Perception, Grounding, and Alignment",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "6G'de LLM ajanları bölünmüş öğrenme.",
+  "alinti": "we propose a split learning system for LLM agents in 6G networks leveraging the collaboration between mobile devices and edge servers, where multiple LLMs with different roles are distributed across mobile devices and edge servers"
+ },
+ {
+  "id": "arXiv:2503.09648",
+  "baslik": "A Survey on Trustworthy LLM Agents: Threats and Countermeasures",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Güvenilir ajan tehditleri, savunmaları ve değerlendirme anketi",
+  "alinti": "By thoroughly investigating and summarizing newly emerged attacks, defenses, and evaluation methods for agents and MAS, we extend the concept of Trustworthy LLM to the emerging paradigm of Trustworthy Agent."
+ },
+ {
+  "id": "arXiv:2505.04251",
+  "baslik": "Facilitating Trustworthy Human-Agent Collaboration in LLM-based Multi-Agent System oriented Software Engineering",
+  "yil": 2025,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LLM çoklu ajan sistemlerinde güven ve görev dağılımı",
+  "alinti": "One of the major challenges is the strategic allocation of tasks between humans and the LMA system in a trustworthy manner."
+ },
+ {
+  "id": "doi:10.71097/ijsat.v15.i1.1650",
+  "baslik": "Implementation and Challenges of Zero Trust Architecture in Network Security",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ZTA ilkeleri ve ağ güvenliği; ajan odağı yok",
+  "alinti": "Zero Trust Architecture (ZTA) represents a fundamental transformation from conventional perimeter-based security frameworks by implementing the principles of \"never trust, always verify.\""
+ },
+ {
+  "id": "arXiv:2503.18813",
+  "baslik": "Defeating Prompt Injections by Design",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Tasarım gereği prompt enjeksiyonu savunması, yetki politikaları",
+  "alinti": "To operate, CaMeL explicitly extracts the control and data flows from the (trusted) query; therefore, the untrusted data retrieved by the LLM can never impact the program flow."
+ },
+ {
+  "id": "arXiv:2410.11845",
+  "baslik": "A Review on Edge Large Language Models: Design, Execution, and Applications",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Uç LLM tasarımı, dağıtımı ve kısıtları üzerine anket",
+  "alinti": "deploying LLMs on resource-constrained edge devices presents significant challenges due to computational limitations, memory constraints, and edge hardware heterogeneity."
+ },
+ {
+  "id": "doi:10.47363/jaicc/2022(1)e215",
+  "baslik": "Never Trust, Always Verify: Zero Trust Security Testing Framework",
+  "yil": 2022,
+  "cites": 2,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ZT politikalarının test metodolojisi; ajan odağı yok",
+  "alinti": "Zero Trust Testing (ZTT) emerges as a sophisticated, purpose-built methodology designed to meticulously validate the seamless implementation and operational integrity of these principles across complex, distributed systems."
+ },
+ {
+  "id": "arXiv:2505.23847",
+  "baslik": "Seven Security Challenges in Cross-domain Multi-agent LLM Systems",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Çapraz alan çoklu ajan güvenlik zorlukları; merkezi.",
+  "alinti": "An agent benign in isolation may, when receiving messages from an untrusted peer, leak secrets or violate policy, producing risks driven by emergent multi-agent dynamics rather than classical software bugs."
+ },
+ {
+  "id": "arXiv:2406.02630",
+  "baslik": "AI Agents Under Threat: A Survey of Key Security Challenges and Future Pathways",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ajan güvenlik tehditleri anketi; merkezi.",
+  "alinti": "This survey delves into the emerging security threats faced by AI agents, categorizing them into four critical knowledge gaps: unpredictability of multi-step user inputs, complexity in internal executions"
+ },
+ {
+  "id": "arXiv:2410.15686",
+  "baslik": "NetSafe: Exploring the Topological Safety of Multi-agent Networks",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Çoklu ajan ağlarında topolojik güvenlik.",
+  "alinti": "we focus on the safety of multi-agent networks from a topological perspective, investigating which topological properties contribute to safer networks."
+ },
+ {
+  "id": "arXiv:2402.01680",
+  "baslik": "Large Language Model based Multi-Agents: A Survey of Progress and Challenges",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM tabanlı çoklu ajan anketi; zorluklar.",
+  "alinti": "Recently, based on the development of using one LLM as a single planning or decision-making agent, LLM-based multi-agent systems have achieved considerable progress in complex problem-solving and world simulation."
+ },
+ {
+  "id": "arXiv:2501.03601",
+  "baslik": "Dynamic Authentication and Granularized Authorization with a Cross-Domain Zero Trust Architecture for Federated Learning in Large-Scale IoT Networks",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "IoT'de ZTA ile federated learning; kimlik doğrulama ve yetki",
+  "alinti": "Zero trust architecture (ZTA), an emerging network security architecture, offers a more granular and robust security environment for IoT systems."
+ },
+ {
+  "id": "arXiv:2504.05485",
+  "baslik": "Towards Zero Trust Security in Connected Vehicles: A Comprehensive Survey",
+  "yil": 2024,
+  "cites": 49,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Bağlantılı araçlarda ZT derlemesi; ajan yok",
+  "alinti": "Zero Trust is the new cybersecurity model that challenges the traditional one by promoting continuous verification of users, devices, and applications, whatever their position or origin."
+ },
+ {
+  "id": "doi:10.65923/n251yj78",
+  "baslik": "Zero Trust Architectures: Reinventing Network Security for the Modern Enterprise",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Kurumsal ağlarda ZTA ilkeleri; ajan yok",
+  "alinti": "By continuously verifying the identity and trustworthiness of every user, device, and application requesting access to resources, ZTA provides a more robust defense against data breaches, insider threats, and external cyberattacks."
+ },
+ {
+  "id": "arXiv:2402.11208",
+  "baslik": "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents",
+  "yil": 2024,
+  "cites": 17,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ajanlarına arka kapı tehdidi.",
+  "alinti": "In this work, we take the first step to investigate one of the typical safety threats, backdoor attack, to LLM-based agents."
+ },
+ {
+  "id": "doi:10.1109/icce59016.2024.10444321",
+  "baslik": "Zero Trust+: A Trusted-based Zero Trust architecture for IoT at Scale",
+  "yil": 2024,
+  "cites": 15,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; IoT için ZT ölçeklenebilirliği",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2412.14470",
+  "baslik": "Agent-SafetyBench: Evaluating the Safety of LLM Agents",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Ajan güvenliği benchmarkı; doğrudan S5 kapsamında.",
+  "alinti": "Agent-SafetyBench encompasses 349 interaction environments and 2,000 test cases, evaluating 8 categories of safety risks and covering 10 common failure modes"
+ },
+ {
+  "id": "arXiv:2402.01586",
+  "baslik": "TrustAgent: Towards Safe and Trustworthy LLM-based Agents",
+  "yil": 2024,
+  "cites": 28,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Tek ajan güvenliği, planlama aşamasında korumalar",
+  "alinti": "This paper presents an Agent-Constitution-based agent framework, TrustAgent, with a particular focus on improving the LLM-based agent safety."
+ },
+ {
+  "id": "arXiv:2312.14197",
+  "baslik": "Benchmarking and Defending Against Indirect Prompt Injection Attacks on Large Language Models",
+  "yil": 2023,
+  "cites": 95,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Dolaylı prompt enjeksiyonu benchmark ve savunma.",
+  "alinti": "we introduce the first benchmark for indirect prompt injection attacks, named BIPIA, to assess the risk of such vulnerabilities."
+ },
+ {
+  "id": "doi:10.20944/preprints202410.1478.v1",
+  "baslik": "Zero Trust in Cloud Security: Panacea or Fool's Errand?",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Bulut ortamında ZTA; uç/ajan odağı zayıf",
+  "alinti": "The study finds that Zero Trust holds the potential to enhance cloud security significantly, but it is no silver bullet and demands careful implementation and further studies to understand its intricacies as well as pitfalls."
+ },
+ {
+  "id": "arXiv:2412.21200",
+  "baslik": "Distributed Mixture-of-Agents for Edge Inference with Large Language Models",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Uç cihazlarda dağıtık çoklu LLM işbirliği mimarisi.",
+  "alinti": "In this paper, we consider such an MoA architecture in a distributed setting, where LLMs operate on individual edge devices, each uniquely associated with a user and equipped with its own distributed computing power."
+ },
+ {
+  "id": "doi:10.1109/honet56683.2022.10019186",
+  "baslik": "Study of Zero Trust Architecture for Applications and Network Security",
+  "yil": 2022,
+  "cites": 28,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; ZTA uygulama ve ağ güvenliği",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.18653/v1/2025.emnlp-main.714",
+  "baslik": "ToolSafety: A Comprehensive Dataset For Enhancing Safety In LLM-Based Agent Tool Invocations",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Ajan araç çağrısı güvenliği veri seti, başlık",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.56127/ijst.v3i3.1958",
+  "baslik": "Efficient TinyML Architectures for On-Device Small Language Models: Privacy-Preserving Inference at the Edge",
+  "yil": 2024,
+  "cites": 7,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Uç cihazda SLM kısıtları ve gizlilik; ajan yok",
+  "alinti": "Deploying small language models (SLMs) on ultra-low-power edge devices requires careful optimization to meet strict memory, latency, and energy constraints while preserving privacy."
+ }
+]

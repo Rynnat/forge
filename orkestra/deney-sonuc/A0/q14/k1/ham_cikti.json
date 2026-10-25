@@ -1,0 +1,99 @@
+{
+ "duration_api_ms": 59946,
+ "stop_reason": "end_turn",
+ "session_id": "23af3a5c-9ad7-443f-95b1-a30a3e403bca",
+ "total_cost_usd": 0.14186640000000003,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1399,
+  "cache_read_input_tokens": 3532,
+  "output_tokens": 6498,
+  "output_tokens_details": {
+   "thinking_tokens": 3175
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1399,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 6498,
+    "cache_read_input_tokens": 3532,
+    "cache_creation_input_tokens": 1399,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1399
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 6498,
+   "cacheReadInputTokens": 3532,
+   "cacheCreationInputTokens": 1399,
+   "webSearchRequests": 0,
+   "costUSD": 0.14186640000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3175,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 1,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"A Framework for Adversarially Robust Streaming Algorithms\", \"yil\": 2020, \"arxiv_id\": \"2003.14265\", \"doi\": \"10.1145/3375395.3387658\", \"gerekce\": \"Introduced the adversarially robust streaming model and the generic sketch-switching and computation-paths techniques.\"},\n{\"sira\": 2, \"baslik\": \"Adversarially Robust Streaming Algorithms via Differential Privacy\", \"yil\": 2020, \"arxiv_id\": \"2004.05975\", \"doi\": null, \"gerekce\": \"Used differential privacy to protect a sketch's internal randomness, which gave a square-root improvement in the cost of robustness.\"},\n{\"sira\": 3, \"baslik\": \"How Robust are Linear Sketches to Adaptive Inputs?\", \"yil\": 2013, \"arxiv_id\": \"1211.1056\", \"doi\": \"10.1145/2488608.2488624\", \"gerekce\": \"Foundational negative result: an adaptive adversary can break any linear sketch for norm estimation.\"},\n{\"sira\": 4, \"baslik\": \"Tight Bounds for Adversarially Robust Streams and Sliding Windows via Difference Estimators\", \"yil\": 2021, \"arxiv_id\": \"2011.07471\", \"doi\": null, \"gerekce\": \"Introduced difference estimators and obtained nearly tight space bounds for robust Fp estimation.\"},\n{\"sira\": 5, \"baslik\": \"Separating Adaptive Streaming from Oblivious Streaming using the Bounded Storage Model\", \"yil\": 2021, \"arxiv_id\": \"2101.10836\", \"doi\": null, \"gerekce\": \"Gave the first separation showing that adaptive streaming can be strictly harder than oblivious streaming.\"},\n{\"sira\": 6, \"baslik\": \"A Framework for Adversarial Streaming via Differential Privacy and Difference Estimators\", \"yil\": 2023, \"arxiv_id\": \"2107.14527\", \"doi\": null, \"gerekce\": \"Combined the DP and difference-estimator techniques into a framework with better robust bounds.\"},\n{\"sira\": 7, \"baslik\": \"The Adversarial Robustness of Sampling\", \"yil\": 2020, \"arxiv_id\": \"1906.11327\", \"doi\": \"10.1145/3375395.3387643\", \"gerekce\": \"Showed that simple random sampling is robust to adaptive inputs, with sample sizes tied to VC and Littlestone dimension.\"},\n{\"sira\": 8, \"baslik\": \"Adversarial Laws of Large Numbers and Optimal Regret in Online Classification\", \"yil\": 2021, \"arxiv_id\": \"2101.09054\", \"doi\": null, \"gerekce\": \"Characterized adaptively robust sampling and uniform convergence using Littlestone dimension.\"},\n{\"sira\": 9, \"baslik\": \"On the Robustness of CountSketch to Adaptive Inputs\", \"yil\": 2022, \"arxiv_id\": \"2202.13736\", \"doi\": null, \"gerekce\": \"Gave attacks on CountSketch under adaptive inputs together with robust estimator variants.\"},\n{\"sira\": 10, \"baslik\": \"Tricking the Hashing Trick: A Tight Lower Bound on the Robustness of CountSketch to Adaptive Inputs\", \"yil\": 2023, \"arxiv_id\": \"2207.00956\", \"doi\": null, \"gerekce\": \"Proved a tight bound on how many adaptive queries CountSketch can withstand.\"},\n{\"sira\": 11, \"baslik\": \"Sketching in Adversarial Environments\", \"yil\": 2008, \"arxiv_id\": null, \"doi\": \"10.1145/1374376.1374419\", \"gerekce\": \"Early foundational work on sketching when the input is chosen adversarially.\"},\n{\"sira\": 12, \"baslik\": \"The White-Box Adversarial Data Stream Model\", \"yil\": 2022, \"arxiv_id\": \"2204.09136\", \"doi\": null, \"gerekce\": \"Defined a stronger white-box adversary that can see the algorithm's internal state, and gave algorithms and lower bounds.\"},\n{\"sira\": 13, \"baslik\": \"A Strong Separation for Adversarially Robust l0 Estimation for Linear Sketches\", \"yil\": 2024, \"arxiv_id\": \"2409.16153\", \"doi\": null, \"gerekce\": \"Gave a strong separation between robust and oblivious linear sketches for l0 estimation.\"},\n{\"sira\": 14, \"baslik\": \"Lifting Linear Sketches: Optimal Bounds and Adversarial Robustness\", \"yil\": 2025, \"arxiv_id\": \"2503.19629\", \"doi\": null, \"gerekce\": \"Gave optimal bounds on the adversarial robustness of linear sketches using a lifting technique.\"},\n{\"sira\": 15, \"baslik\": \"Adversarial Robustness of Streaming Algorithms through Importance Sampling\", \"yil\": 2021, \"arxiv_id\": \"2106.14952\", \"doi\": null, \"gerekce\": \"Showed that importance-sampling-based sketches are robust for regression, clustering and similar problems.\"},\n{\"sira\": 16, \"baslik\": \"Adversarially Robust Coloring for Graph Streams\", \"yil\": 2022, \"arxiv_id\": \"2109.11130\", \"doi\": null, \"gerekce\": \"Proved separations for graph coloring and extended adaptive robustness to graph streams.\"},\n{\"sira\": 17, \"baslik\": \"Adversarially Robust Streaming via Dense-Sparse Trade-offs\", \"yil\": 2022, \"arxiv_id\": \"2109.03785\", \"doi\": null, \"gerekce\": \"Improved robust bounds for insertion-deletion streams using dense-sparse trade-offs.\"},\n{\"sira\": 18, \"baslik\": \"Streaming Algorithms for the Missing Item Finding Problem\", \"yil\": 2023, \"arxiv_id\": \"2211.05170\", \"doi\": null, \"gerekce\": \"Gave a natural problem where adaptive and oblivious streaming have very different complexity.\"},\n{\"sira\": 19, \"baslik\": \"Robust Algorithms on Adaptive Inputs from Bounded Adversaries\", \"yil\": 2023, \"arxiv_id\": \"2304.07413\", \"doi\": null, \"gerekce\": \"Gave more efficient robust algorithms against adversaries with bounded computational power.\"},\n{\"sira\": 20, \"baslik\": \"On Adaptive Distance Estimation\", \"yil\": 2020, \"arxiv_id\": \"2010.11252\", \"doi\": null, \"gerekce\": \"Built distance-estimation data structures that stay correct under adaptive queries.\"},\n{\"sira\": 21, \"baslik\": \"Unmasking Vulnerabilities: Cardinality Sketches under Adaptive Inputs\", \"yil\": 2024, \"arxiv_id\": \"2405.17780\", \"doi\": null, \"gerekce\": \"Gave practical attacks on widely used cardinality sketches such as HyperLogLog.\"},\n{\"sira\": 22, \"baslik\": \"Bloom Filters in Adversarial Environments\", \"yil\": 2015, \"arxiv_id\": \"1412.8356\", \"doi\": null, \"gerekce\": \"Analyzed robustness of approximate set-membership structures to adaptive queries.\"},\n{\"sira\": 23, \"baslik\": \"Dynamic Algorithms Against an Adaptive Adversary: Generic Constructions and Lower Bounds\", \"yil\": 2022, \"arxiv_id\": \"2111.03980\", \"doi\": null, \"gerekce\": \"Carried the DP-based robustness technique over to dynamic algorithms and proved lower bounds.\"},\n{\"sira\": 24, \"baslik\": \"Preserving Statistical Validity in Adaptive Data Analysis\", \"yil\": 2015, \"arxiv_id\": \"1411.2664\", \"doi\": \"10.1145/2746539.2746580\", \"gerekce\": \"Introduced the connection between adaptive data analysis and differential privacy that robust streaming relies on.\"},\n{\"sira\": 25, \"baslik\": \"Algorithmic Stability for Adaptive Data Analysis\", \"yil\": 2016, \"arxiv_id\": \"1511.02513\", \"doi\": null, \"gerekce\": \"Gave the tight generalization theorem behind the DP-based robustness technique.\"},\n{\"sira\": 26, \"baslik\": \"Preventing False Discovery in Interactive Data Analysis is Hard\", \"yil\": 2014, \"arxiv_id\": \"1408.1655\", \"doi\": null, \"gerekce\": \"Gave fundamental lower bounds for answering adaptive queries.\"},\n{\"sira\": 27, \"baslik\": \"Interactive Fingerprinting Codes and the Hardness of Preventing False Discovery\", \"yil\": 2015, \"arxiv_id\": \"1410.1228\", \"doi\": null, \"gerekce\": \"Introduced the fingerprinting-code attack technique that adaptive-adversary lower bounds use.\"},\n{\"sira\": 28, \"baslik\": \"Keep That Card in Mind: Card Guessing with Limited Memory\", \"yil\": 2022, \"arxiv_id\": \"2107.03885\", \"doi\": null, \"gerekce\": \"Studied adaptive-versus-oblivious separations in memory-limited adaptive games.\"},\n{\"sira\": 29, \"baslik\": \"Improved Algorithms for White-Box Adversarial Streams\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"Improved white-box robust streaming algorithms using cryptographic assumptions.\"},\n{\"sira\": 30, \"baslik\": \"Rounding Dynamic Matchings Against an Adaptive Adversary\", \"yil\": 2020, \"arxiv_id\": \"1911.05545\", \"doi\": null, \"gerekce\": \"Key result on deterministic and adaptive-robust techniques in the closely related setting of dynamic algorithms.\"}\n]}",
+ "ttft_ms": 35741,
+ "type": "result",
+ "duration_ms": 60157,
+ "uuid": "269757ab-4053-41ed-91cd-03175db83269",
+ "ttft_stream_ms": 1428,
+ "time_to_request_ms": 203,
+ "first_content_frame_ms": 1429,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

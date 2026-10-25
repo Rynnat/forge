@@ -1,0 +1,292 @@
+[
+ {
+  "id": "q01",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1589,
+  "sure_s": 62.2,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q02",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1594,
+  "sure_s": 69.8,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 26,
+  "hata": ""
+ },
+ {
+  "id": "q03",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1713,
+  "sure_s": 63.2,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q04",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1446,
+  "sure_s": 60.0,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q05",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1237,
+  "sure_s": 53.9,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 29,
+  "hata": ""
+ },
+ {
+  "id": "q06",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1291,
+  "sure_s": 56.7,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 17,
+  "hata": ""
+ },
+ {
+  "id": "q07",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1286,
+  "sure_s": 57.3,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q08",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.2782,
+  "sure_s": 102.4,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 27,
+  "hata": ""
+ },
+ {
+  "id": "q09",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1343,
+  "sure_s": 59.0,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q10",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1088,
+  "sure_s": 41.8,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q11",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.2056,
+  "sure_s": 73.8,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 29,
+  "hata": ""
+ },
+ {
+  "id": "q12",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1317,
+  "sure_s": 55.1,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q13",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.2051,
+  "sure_s": 65.9,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q14",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1419,
+  "sure_s": 62.2,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 29,
+  "hata": ""
+ },
+ {
+  "id": "q15",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1577,
+  "sure_s": 67.8,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q16",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1282,
+  "sure_s": 56.0,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 18,
+  "hata": ""
+ },
+ {
+  "id": "q17",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1646,
+  "sure_s": 52.9,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 28,
+  "hata": ""
+ },
+ {
+  "id": "q18",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.2026,
+  "sure_s": 66.8,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q19",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1219,
+  "sure_s": 46.6,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q20",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1142,
+  "sure_s": 47.8,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 27,
+  "hata": ""
+ },
+ {
+  "id": "q21",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1993,
+  "sure_s": 74.6,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 28,
+  "hata": ""
+ },
+ {
+  "id": "q22",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.3051,
+  "sure_s": 100.0,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 23,
+  "hata": ""
+ },
+ {
+  "id": "q23",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.2319,
+  "sure_s": 82.0,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 24,
+  "hata": ""
+ },
+ {
+  "id": "q24",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1713,
+  "sure_s": 63.7,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 29,
+  "hata": ""
+ },
+ {
+  "id": "q25",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1175,
+  "sure_s": 48.2,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q26",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1304,
+  "sure_s": 52.7,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q27",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.2272,
+  "sure_s": 75.7,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 28,
+  "hata": ""
+ },
+ {
+  "id": "q28",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.1616,
+  "sure_s": 67.9,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 30,
+  "hata": ""
+ },
+ {
+  "id": "q29",
+  "k": 1,
+  "durum": "OK",
+  "maliyet_usd": 0.2497,
+  "sure_s": 87.7,
+  "n": 30,
+  "gecerli_gorunen_kimlik": 29,
+  "hata": ""
+ }
+]

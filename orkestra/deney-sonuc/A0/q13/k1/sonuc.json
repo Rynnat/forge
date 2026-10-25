@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-190109-769d2b",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Araç kullanan ve hafızası olan büyük dil modeli ajanlarında veri gizliliği tehditleri ve savunmaları üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-05-25",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.2051,
+ "sure_s": 65.9,
+ "web_arama": 3,
+ "token": {
+  "in": 39728,
+  "out": 8001,
+  "cache_read": 16106,
+  "cache_write": 6580
+ },
+ "son_rapor_token_tahmini": 2752,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: Araç kullanan ve hafızası olan büyük dil modeli ajanlarında veri gizliliği tehditleri ve savunmaları üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-05-25. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2302.12173",
+   "arxiv_id": "2302.12173",
+   "doi": "10.1145/3605764.3623985",
+   "baslik": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+   "yil": 2023,
+   "gerekce": "This paper introduced indirect prompt injection, the main way data is pulled out of tool-using agents."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2502.13172",
+   "arxiv_id": "2502.13172",
+   "doi": null,
+   "baslik": "Unveiling Privacy Risks in LLM Agent Memory",
+   "yil": 2025,
+   "gerekce": "It shows a black-box attack (MEXTRA) that pulls private records out of an agent's memory module."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2405.05175",
+   "arxiv_id": "2405.05175",
+   "doi": null,
+   "baslik": "AirGapAgent: Protecting Privacy-Conscious Conversational Agents",
+   "yil": 2024,
+   "gerekce": "It proposes a defense built on contextual integrity: the agent only gets the data a task needs, which protects it against context hijacking."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2406.13352",
+   "arxiv_id": "2406.13352",
+   "doi": null,
+   "baslik": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+   "yil": 2024,
+   "gerekce": "It is the standard dynamic benchmark for prompt injection attacks and defenses in tool-using agents."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2409.00138",
+   "arxiv_id": "2409.00138",
+   "doi": null,
+   "baslik": "PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action",
+   "yil": 2024,
+   "gerekce": "It measures privacy norm violations in agent actions (agent trajectories), not just in question-answering."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2310.17884",
+   "arxiv_id": "2310.17884",
+   "doi": null,
+   "baslik": "Can LLMs Keep a Secret? Testing Privacy Implications of Language Models via Contextual Integrity Theory",
+   "yil": 2023,
+   "gerekce": "Its ConfAIde benchmark founded the contextual-integrity-based evaluation of privacy at inference time."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2503.18813",
+   "arxiv_id": "2503.18813",
+   "doi": null,
+   "baslik": "Defeating Prompt Injections by Design",
+   "yil": 2025,
+   "gerekce": "CaMeL separates control flow from data flow and uses capabilities to give a system-level defense against data exfiltration."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2403.02691",
+   "arxiv_id": "2403.02691",
+   "doi": null,
+   "baslik": "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents",
+   "yil": 2024,
+   "gerekce": "It systematically benchmarks indirect injection attacks that aim at private-data theft in tool-integrated agents."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2407.12784",
+   "arxiv_id": "2407.12784",
+   "doi": null,
+   "baslik": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+   "yil": 2024,
+   "gerekce": "It shows backdoor attacks on agents carried out by poisoning their memory and knowledge bases."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2503.03704",
+   "arxiv_id": "2503.03704",
+   "doi": null,
+   "baslik": "Memory Injection Attacks on LLM Agents via Query-Only Interaction",
+   "yil": 2025,
+   "gerekce": "MINJA shows that an attacker can inject malicious records into an agent's memory with nothing but ordinary queries."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2503.09780",
+   "arxiv_id": "2503.09780",
+   "doi": null,
+   "baslik": "AgentDAM: Privacy Leakage Evaluation for Autonomous Web Agents",
+   "yil": 2025,
+   "gerekce": "It measures whether web agents follow the data minimization principle in realistic environments."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2409.11295",
+   "arxiv_id": "2409.11295",
+   "doi": null,
+   "baslik": "EIA: Environmental Injection Attack on Generalist Web Agents for Privacy Leakage",
+   "yil": 2024,
+   "gerekce": "It shows that hidden injections placed in web pages can make web agents leak users' personal data."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2309.15817",
+   "arxiv_id": "2309.15817",
+   "doi": null,
+   "baslik": "Identifying the Risks of LM Agents with an LM-Emulated Sandbox",
+   "yil": 2023,
+   "gerekce": "ToolEmu offers a scalable emulation framework for evaluating risky actions by tool-using agents, including privacy leaks."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2402.16893",
+   "arxiv_id": "2402.16893",
+   "doi": null,
+   "baslik": "The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG)",
+   "yil": 2024,
+   "gerekce": "It systematically studies private data leaking from retrieval databases, which act as an agent's external memory."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2505.23643",
+   "arxiv_id": "2505.23643",
+   "doi": null,
+   "baslik": "Securing AI Agents with Information-Flow Control",
+   "yil": 2025,
+   "gerekce": "FIDES offers deterministic confidentiality and integrity guarantees for agents by tracking information-flow labels."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2506.08837",
+   "arxiv_id": "2506.08837",
+   "doi": null,
+   "baslik": "Design Patterns for Securing LLM Agents against Prompt Injections",
+   "yil": 2025,
+   "gerekce": "It sets out architectural design patterns for agents with provable security against data exfiltration."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2310.12815",
+   "arxiv_id": "2310.12815",
+   "doi": null,
+   "baslik": "Formalizing and Benchmarking Prompt Injection Attacks and Defenses",
+   "yil": 2023,
+   "gerekce": "It gives a formal framework and systematic comparison of prompt injection attacks and defenses."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2502.01822",
+   "arxiv_id": "2502.01822",
+   "doi": null,
+   "baslik": "Firewalls to Secure Dynamic LLM Agentic Networks",
+   "yil": 2025,
+   "gerekce": "It proposes firewalls that limit data sharing in communication between agents."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2403.04960",
+   "arxiv_id": "2403.04960",
+   "doi": null,
+   "baslik": "IsolateGPT: An Execution Isolation Architecture for LLM-Based Agentic Systems",
+   "yil": 2024,
+   "gerekce": "It proposes an architecture that isolates applications and tools from each other to prevent data leaking between them."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2404.13208",
+   "arxiv_id": "2404.13208",
+   "doi": null,
+   "baslik": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+   "yil": 2024,
+   "gerekce": "It proposes a model-level defense that trains the model to rank instructions coming from tool outputs below privileged instructions."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2402.06363",
+   "arxiv_id": "2402.06363",
+   "doi": null,
+   "baslik": "StruQ: Defending Against Prompt Injection with Structured Queries",
+   "yil": 2024,
+   "gerekce": "It introduces the training-based defense that separates instructions from data through structured queries."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2410.05451",
+   "arxiv_id": "2410.05451",
+   "doi": null,
+   "baslik": "SecAlign: Defending Against Prompt Injection with Preference Optimization",
+   "yil": 2024,
+   "gerekce": "It markedly lowers injection success with a preference-optimization defense."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2403.14720",
+   "arxiv_id": "2403.14720",
+   "doi": null,
+   "baslik": "Defending Against Indirect Prompt Injection Attacks With Spotlighting",
+   "yil": 2024,
+   "gerekce": "It proposes a simple, practical prompt-level defense that marks the provenance of external data."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2410.02644",
+   "arxiv_id": "2410.02644",
+   "doi": null,
+   "baslik": "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents",
+   "yil": 2024,
+   "gerekce": "It is a broad benchmark covering memory poisoning and tool attacks together with their defenses."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2310.07298",
+   "arxiv_id": "2310.07298",
+   "doi": null,
+   "baslik": "Beyond Memorization: Violating Privacy Via Inference with Large Language Models",
+   "yil": 2023,
+   "gerekce": "It shows that LLMs can infer personal attributes from text, a threat that grows when agents have access to user data."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2410.14923",
+   "arxiv_id": "2410.14923",
+   "doi": null,
+   "baslik": "Imprompter: Tricking LLM Agents into Improper Tool Use",
+   "yil": 2024,
+   "gerekce": "It shows that optimized adversarial prompts can exfiltrate personal data through tool calls in real agent products."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2506.15674",
+   "arxiv_id": "2506.15674",
+   "doi": null,
+   "baslik": "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers",
+   "yil": 2025,
+   "gerekce": "It shows that the reasoning traces of reasoning-model agents leak private data, opening a new privacy surface."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2402.17840",
+   "arxiv_id": "2402.17840",
+   "doi": null,
+   "baslik": "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+   "yil": 2024,
+   "gerekce": "It shows that private data can be extracted at scale from retrieval-based memory through instruction following."
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2406.02630",
+   "arxiv_id": "2406.02630",
+   "doi": null,
+   "baslik": "AI Agents Under Threat: A Survey of Key Security Challenges and Future Pathways",
+   "yil": 2024,
+   "gerekce": "It surveys the security and privacy threats agents face and the open problems."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2401.05459",
+   "arxiv_id": "2401.05459",
+   "doi": null,
+   "baslik": "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security",
+   "yil": 2024,
+   "gerekce": "It surveys the privacy and security problems of personal agents that hold user data and memory."
+  }
+ ]
+}

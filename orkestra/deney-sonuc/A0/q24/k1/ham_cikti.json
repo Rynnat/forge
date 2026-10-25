@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 61560,
+ "stop_reason": "end_turn",
+ "session_id": "53837c6d-f254-4d6b-9643-89699c3cd567",
+ "total_cost_usd": 0.1712785,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4820,
+  "cache_read_input_tokens": 8457,
+  "output_tokens": 5958,
+  "output_tokens_details": {
+   "thinking_tokens": 2098
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4820,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3797,
+    "cache_read_input_tokens": 4925,
+    "cache_creation_input_tokens": 3427,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3427
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 5958,
+   "cacheReadInputTokens": 8457,
+   "cacheCreationInputTokens": 4820,
+   "webSearchRequests": 0,
+   "costUSD": 0.1594274,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2098,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 12941,
+   "outputTokens": 1114,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 1,
+   "costUSD": 0.0118511,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 261,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [{\"sira\": 1, \"baslik\": \"Learning Memory Access Patterns\", \"yil\": 2018, \"arxiv_id\": \"1803.02329\", \"doi\": null, \"gerekce\": \"This paper first treated prefetching as a sequence-learning problem and applied LSTMs to it, and it started the whole line of work on ML-based prefetching.\"}, {\"sira\": 2, \"baslik\": \"Pythia: A Customizable Hardware Prefetching Framework Using Online Reinforcement Learning\", \"yil\": 2021, \"arxiv_id\": \"2109.12021\", \"doi\": \"10.1145/3466752.3480114\", \"gerekce\": \"Pythia frames prefetching as online reinforcement learning, and it is practical in hardware because it takes system feedback such as bandwidth into account.\"}, {\"sira\": 3, \"baslik\": \"A Hierarchical Neural Model of Data Prefetching\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.1145/3445814.3446752\", \"gerekce\": \"Voyager models page and offset prediction hierarchically, which lets it learn irregular temporal patterns that earlier neural prefetchers handled poorly.\"}, {\"sira\": 4, \"baslik\": \"Bingo Spatial Data Prefetcher\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1109/HPCA.2019.00053\", \"gerekce\": \"Bingo combines short and long events to match spatial footprints, and it is one of the strongest spatial prefetchers.\"}, {\"sira\": 5, \"baslik\": \"Path Confidence Based Lookahead Prefetching\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": \"10.1109/MICRO.2016.7783763\", \"gerekce\": \"The Signature Path Prefetcher (SPP) uses delta signatures and confidence-controlled lookahead to capture complex delta patterns.\"}, {\"sira\": 6, \"baslik\": \"Best-Offset Hardware Prefetching\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": \"10.1109/HPCA.2016.7446087\", \"gerekce\": \"Best-Offset is a simple, timeliness-aware offset prefetcher that won the DPC-2 competition and became a standard baseline.\"}, {\"sira\": 7, \"baslik\": \"Linearizing Irregular Memory Accesses for Improved Correlated Prefetching\", \"yil\": 2013, \"arxiv_id\": null, \"doi\": \"10.1145/2540708.2540730\", \"gerekce\": \"The ISB prefetcher maps irregular accesses into a structural address space so that temporal correlation can be exploited for pointer-chasing access patterns.\"}, {\"sira\": 8, \"baslik\": \"Efficient Metadata Management for Irregular Data Prefetching\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1145/3307650.3322225\", \"gerekce\": \"MISB greatly reduces the cost of off-chip metadata for temporal prefetching, which addresses that technique's main scalability problem.\"}, {\"sira\": 9, \"baslik\": \"Temporal Prefetching Without the Off-Chip Metadata\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1145/3352460.3358300\", \"gerekce\": \"Triage keeps temporal prefetching metadata in part of the LLC, so it needs no off-chip storage.\"}, {\"sira\": 10, \"baslik\": \"Domino Temporal Data Prefetcher\", \"yil\": 2018, \"arxiv_id\": null, \"doi\": \"10.1109/HPCA.2018.00021\", \"gerekce\": \"Domino improves the accuracy of temporal prefetching by looking up streams with multiple miss addresses.\"}, {\"sira\": 11, \"baslik\": \"Practical Off-chip Meta-data for Temporal Memory Streaming\", \"yil\": 2009, \"arxiv_id\": null, \"doi\": \"10.1109/HPCA.2009.4798239\", \"gerekce\": \"STMS made temporal streaming prefetching practical with metadata stored in main memory.\"}, {\"sira\": 12, \"baslik\": \"Spatial Memory Streaming\", \"yil\": 2006, \"arxiv_id\": null, \"doi\": \"10.1109/ISCA.2006.38\", \"gerekce\": \"SMS introduced the foundational idea of learning spatial access footprints keyed by PC and offset.\"}, {\"sira\": 13, \"baslik\": \"Prefetching Using Markov Predictors\", \"yil\": 1997, \"arxiv_id\": null, \"doi\": \"10.1145/264107.264207\", \"gerekce\": \"This classic work treats address-correlation prefetching as a Markov model, and it is the ancestor of temporal/correlation prefetching.\"}, {\"sira\": 14, \"baslik\": \"Data Cache Prefetching Using a Global History Buffer\", \"yil\": 2004, \"arxiv_id\": null, \"doi\": \"10.1109/HPCA.2004.10030\", \"gerekce\": \"The GHB structure offers an efficient common history organization that supports many correlation and delta prefetchers.\"}, {\"sira\": 15, \"baslik\": \"Feedback Directed Prefetching: Improving the Performance and Bandwidth-Efficiency of Hardware Prefetchers\", \"yil\": 2007, \"arxiv_id\": null, \"doi\": \"10.1109/HPCA.2007.346185\", \"gerekce\": \"This paper tunes prefetcher aggressiveness dynamically using accuracy, lateness and pollution feedback, and it laid the groundwork for adaptive prefetching.\"}, {\"sira\": 16, \"baslik\": \"Perceptron-Based Prefetch Filtering\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1145/3307650.3322207\", \"gerekce\": \"PPF uses a perceptron-based filter to let an aggressive prefetcher such as SPP keep its coverage without losing accuracy.\"}, {\"sira\": 17, \"baslik\": \"Semantic Locality and Context-based Prefetching Using Reinforcement Learning\", \"yil\": 2015, \"arxiv_id\": null, \"doi\": \"10.1145/2749469.2750399\", \"gerekce\": \"This early work introduced the concept of semantic locality and applied context-based reinforcement learning to prefetching.\"}, {\"sira\": 18, \"baslik\": \"A Neural Network Prefetcher for Arbitrary Memory Access Patterns\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1145/3345000\", \"gerekce\": \"This paper proposes a neural prefetcher designed to learn arbitrary and irregular memory access patterns.\"}, {\"sira\": 19, \"baslik\": \"Attention, Distillation, and Tabularization: Towards Practical Neural Network-Based Prefetching\", \"yil\": 2024, \"arxiv_id\": \"2401.06362\", \"doi\": null, \"gerekce\": \"DART turns attention models into table lookups through distillation, which addresses the latency and cost problem of neural prefetchers.\"}, {\"sira\": 20, \"baslik\": \"Fine-Grained Address Segmentation for Attention-Based Variable-Degree Prefetching\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"TransFetch frames prefetching as multi-label classification with attention over address segments, which allows a variable prefetch degree.\"}, {\"sira\": 21, \"baslik\": \"Bouquet of Instruction Pointers: Instruction Pointer Classifier-based Spatial Hardware Prefetching\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1109/ISCA45697.2020.00021\", \"gerekce\": \"IPCP classifies instruction pointers by pattern type and reaches high performance at very low cost; it won DPC-3.\"}, {\"sira\": 22, \"baslik\": \"Berti: an Accurate Local-Delta Data Prefetcher\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.1109/MICRO56248.2022.00072\", \"gerekce\": \"Berti learns timely local deltas per instruction pointer and achieves high accuracy.\"}, {\"sira\": 23, \"baslik\": \"Hermes: Accelerating Long-Latency Load Requests via Perceptron-Based Off-Chip Load Prediction\", \"yil\": 2022, \"arxiv_id\": \"2209.00188\", \"doi\": \"10.1109/MICRO56248.2022.00015\", \"gerekce\": \"Hermes complements prefetching by predicting off-chip loads with a perceptron and hiding their latency.\"}, {\"sira\": 24, \"baslik\": \"Kill the Program Counter: Reconstructing Program Behavior in the Processor Cache Hierarchy\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1145/3037697.3037701\", \"gerekce\": \"KPC shows how to build a prefetching and replacement design that works without the PC at lower cache levels.\"}, {\"sira\": 25, \"baslik\": \"IMP: Indirect Memory Prefetcher\", \"yil\": 2015, \"arxiv_id\": null, \"doi\": \"10.1145/2830772.2830807\", \"gerekce\": \"IMP detects and prefetches indirect A[B[i]] patterns in hardware, which addresses a key class of irregular workloads.\"}, {\"sira\": 26, \"baslik\": \"Graph Prefetching Using Data Structure Knowledge\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": \"10.1145/2925426.2926254\", \"gerekce\": \"This paper prefetches the complex accesses of graph analytics using knowledge of the data structure.\"}, {\"sira\": 27, \"baslik\": \"Prodigy: Improving the Memory Latency of Data-Indirect Irregular Workloads Using Hardware-Software Co-Design\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.1109/HPCA51647.2021.00061\", \"gerekce\": \"Prodigy combines compiler hints with a hardware prefetcher to target data-indirect irregular access patterns.\"}, {\"sira\": 28, \"baslik\": \"Effective Hardware-Based Data Prefetching for High-Performance Processors\", \"yil\": 1995, \"arxiv_id\": null, \"doi\": \"10.1109/12.381947\", \"gerekce\": \"This classic work introduced the PC-based stride prediction table (RPT), and many later prefetchers build on it.\"}, {\"sira\": 29, \"baslik\": \"A Survey of Recent Prefetching Techniques for Processor Caches\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": \"10.1145/2907071\", \"gerekce\": \"This comprehensive survey classifies prefetching techniques and discusses open problems.\"}, {\"sira\": 30, \"baslik\": \"A Survey of Machine Learning for Computer Architecture and Systems\", \"yil\": 2021, \"arxiv_id\": \"2102.07952\", \"doi\": null, \"gerekce\": \"This survey reviews ML-based prefetching work and sets out open problems such as hardware cost, latency and generalization.\"}]}",
+ "ttft_ms": 24935,
+ "type": "result",
+ "duration_ms": 61742,
+ "uuid": "007c62ac-889c-48ea-a36e-207293cb6747",
+ "ttft_stream_ms": 2114,
+ "time_to_request_ms": 154,
+ "first_content_frame_ms": 2115,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

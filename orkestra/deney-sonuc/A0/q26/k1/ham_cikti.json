@@ -1,0 +1,99 @@
+{
+ "duration_api_ms": 51251,
+ "stop_reason": "end_turn",
+ "session_id": "691bb9e4-d9b7-4069-95e2-c8eb6f507a8a",
+ "total_cost_usd": 0.13040239999999997,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1401,
+  "cache_read_input_tokens": 3532,
+  "output_tokens": 5924,
+  "output_tokens_details": {
+   "thinking_tokens": 2307
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1401,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 5924,
+    "cache_read_input_tokens": 3532,
+    "cache_creation_input_tokens": 1401,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1401
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 5924,
+   "cacheReadInputTokens": 3532,
+   "cacheCreationInputTokens": 1401,
+   "webSearchRequests": 0,
+   "costUSD": 0.13040239999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2307,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 1,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [{\"sira\": 1, \"baslik\": \"Foundation models for generalist medical artificial intelligence\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": \"10.1038/s41586-023-05881-4\", \"gerekce\": \"This paper set out the generalist medical AI (GMAI) idea and its main open problems: validation, verification, bias and privacy.\"}, {\"sira\": 2, \"baslik\": \"Segment Anything in Medical Images\", \"yil\": 2024, \"arxiv_id\": \"2304.12306\", \"doi\": \"10.1038/s41467-024-44824-z\", \"gerekce\": \"MedSAM is a universal promptable segmentation foundation model trained on 1.5 million masks; it is the reference baseline for medical segmentation.\"}, {\"sira\": 3, \"baslik\": \"A foundation model for generalizable disease detection from retinal images\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": \"10.1038/s41586-023-06555-x\", \"gerekce\": \"RETFound showed that a self-supervised foundation model can classify ocular and systemic diseases with very little labelled data.\"}, {\"sira\": 4, \"baslik\": \"Towards Generalist Biomedical AI\", \"yil\": 2023, \"arxiv_id\": \"2307.14334\", \"doi\": \"10.1056/AIoa2300138\", \"gerekce\": \"Med-PaLM M handles classification, report generation and question answering in one multimodal model, and clinicians evaluated its radiology reports.\"}, {\"sira\": 5, \"baslik\": \"Segment Anything\", \"yil\": 2023, \"arxiv_id\": \"2304.02643\", \"doi\": null, \"gerekce\": \"SAM is the general-purpose promptable segmentation model that the whole line of medical SAM adaptations builds on.\"}, {\"sira\": 6, \"baslik\": \"Learning Transferable Visual Models From Natural Language Supervision\", \"yil\": 2021, \"arxiv_id\": \"2103.00020\", \"doi\": null, \"gerekce\": \"CLIP introduced the contrastive image-text pretraining approach that underlies medical vision-language foundation models.\"}, {\"sira\": 7, \"baslik\": \"Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.1038/s41551-022-00936-9\", \"gerekce\": \"CheXzero reached expert-level zero-shot chest X-ray classification using only image-report pairs.\"}, {\"sira\": 8, \"baslik\": \"Towards a general-purpose foundation model for computational pathology\", \"yil\": 2024, \"arxiv_id\": \"2308.15474\", \"doi\": \"10.1038/s41591-024-02857-3\", \"gerekce\": \"UNI is a self-supervised pathology foundation model trained on more than 100 million tiles and tested on 34 tasks.\"}, {\"sira\": 9, \"baslik\": \"A visual-language foundation model for computational pathology\", \"yil\": 2024, \"arxiv_id\": \"2307.12914\", \"doi\": \"10.1038/s41591-024-02856-4\", \"gerekce\": \"CONCH brought zero-shot classification, segmentation and retrieval to pathology through image-text pretraining.\"}, {\"sira\": 10, \"baslik\": \"A whole-slide foundation model for digital pathology from real-world data\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": \"10.1038/s41586-024-07441-w\", \"gerekce\": \"Prov-GigaPath models whole slides with real-world data at the scale of 1.3 billion tiles.\"}, {\"sira\": 11, \"baslik\": \"LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day\", \"yil\": 2023, \"arxiv_id\": \"2306.00890\", \"doi\": null, \"gerekce\": \"LLaVA-Med is the foundational work showing how to tune a conversational biomedical multimodal LLM cheaply.\"}, {\"sira\": 12, \"baslik\": \"BiomedCLIP: a multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs\", \"yil\": 2023, \"arxiv_id\": \"2303.00915\", \"doi\": null, \"gerekce\": \"BiomedCLIP is a widely used biomedical CLIP model trained on 15 million image-text pairs from PubMed Central.\"}, {\"sira\": 13, \"baslik\": \"A generalist vision-language foundation model for diverse biomedical tasks\", \"yil\": 2024, \"arxiv_id\": \"2305.17100\", \"doi\": \"10.1038/s41591-024-03185-2\", \"gerekce\": \"BiomedGPT is an open generalist model that covers classification, VQA and report generation together.\"}, {\"sira\": 14, \"baslik\": \"Consensus, dissensus and synergy between clinicians and specialist foundation models in radiology report generation\", \"yil\": 2024, \"arxiv_id\": \"2311.18260\", \"doi\": \"10.1038/s41591-024-03302-1\", \"gerekce\": \"This is a large clinician-evaluation study of foundation-model radiology reports, and it shows the gains from human-AI collaboration.\"}, {\"sira\": 15, \"baslik\": \"Towards Generalist Foundation Model for Radiology by Leveraging Web-scale 2D&3D Medical Data\", \"yil\": 2023, \"arxiv_id\": \"2308.02463\", \"doi\": null, \"gerekce\": \"RadFM is a generalist radiology model that handles 2D and 3D data together, released with the large MedMD dataset and a benchmark.\"}, {\"sira\": 16, \"baslik\": \"CheXagent: Towards a Foundation Model for Chest X-Ray Interpretation\", \"yil\": 2024, \"arxiv_id\": \"2401.12208\", \"doi\": null, \"gerekce\": \"CheXagent is a chest X-ray foundation model with an instruction dataset and the CheXbench evaluation benchmark.\"}, {\"sira\": 17, \"baslik\": \"MAIRA-1: A specialised large multimodal model for radiology report generation\", \"yil\": 2023, \"arxiv_id\": \"2311.13668\", \"doi\": null, \"gerekce\": \"MAIRA-1 is a strong large multimodal model built specifically for chest X-ray report generation.\"}, {\"sira\": 18, \"baslik\": \"Contrastive Learning of Medical Visual Representations from Paired Images and Text\", \"yil\": 2020, \"arxiv_id\": \"2010.00747\", \"doi\": null, \"gerekce\": \"ConVIRT pioneered medical image-report contrastive pretraining and was a precursor to CLIP.\"}, {\"sira\": 19, \"baslik\": \"GLoRIA: A Multimodal Global-Local Representation Learning Framework for Label-efficient Medical Image Recognition\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.1109/ICCV48922.2021.00391\", \"gerekce\": \"GLoRIA showed label-efficient recognition and segmentation through local alignment between image regions and report words.\"}, {\"sira\": 20, \"baslik\": \"Making the Most of Text Semantics to Improve Biomedical Vision-Language Processing\", \"yil\": 2022, \"arxiv_id\": \"2204.09817\", \"doi\": null, \"gerekce\": \"BioViL showed that domain-specific text modelling improves medical vision-language performance.\"}, {\"sira\": 21, \"baslik\": \"MedCLIP: Contrastive Learning from Unpaired Medical Images and Text\", \"yil\": 2022, \"arxiv_id\": \"2210.10163\", \"doi\": null, \"gerekce\": \"MedCLIP made data-efficient medical CLIP training possible with unpaired data and tackled the false-negative problem.\"}, {\"sira\": 22, \"baslik\": \"Knowledge-enhanced visual-language pre-training on chest radiology images\", \"yil\": 2023, \"arxiv_id\": \"2302.14042\", \"doi\": \"10.1038/s41467-023-40260-7\", \"gerekce\": \"KAD showed that adding medical knowledge graphs to pretraining improves zero-shot diagnosis.\"}, {\"sira\": 23, \"baslik\": \"Segment anything model for medical images?\", \"yil\": 2024, \"arxiv_id\": \"2304.14660\", \"doi\": null, \"gerekce\": \"This study systematically showed SAM's limits on medical data and established the evidence for why adaptation is needed.\"}, {\"sira\": 24, \"baslik\": \"Medical SAM Adapter: Adapting Segment Anything Model for Medical Image Segmentation\", \"yil\": 2023, \"arxiv_id\": \"2304.12620\", \"doi\": null, \"gerekce\": \"It introduced parameter-efficient adapter tuning of SAM for medical images, including 3D.\"}, {\"sira\": 25, \"baslik\": \"SAM-Med2D\", \"yil\": 2023, \"arxiv_id\": \"2308.16184\", \"doi\": null, \"gerekce\": \"SAM-Med2D fine-tuned SAM on about 20 million medical masks for 2D medical segmentation.\"}, {\"sira\": 26, \"baslik\": \"SAM-Med3D\", \"yil\": 2023, \"arxiv_id\": \"2310.15161\", \"doi\": null, \"gerekce\": \"SAM-Med3D is a fully 3D promptable segmentation model for volumetric medical images.\"}, {\"sira\": 27, \"baslik\": \"A foundation model for joint segmentation, detection and recognition of biomedical objects across nine modalities\", \"yil\": 2024, \"arxiv_id\": \"2405.12971\", \"doi\": \"10.1038/s41592-024-02499-w\", \"gerekce\": \"BiomedParse performs text-prompted segmentation, detection and recognition together across nine modalities.\"}, {\"sira\": 28, \"baslik\": \"CLIP-Driven Universal Model for Organ Segmentation and Tumor Detection\", \"yil\": 2023, \"arxiv_id\": \"2301.00785\", \"doi\": null, \"gerekce\": \"It brought text embeddings into a universal CT segmentation model that learns from many partially labelled datasets.\"}, {\"sira\": 29, \"baslik\": \"Foundation model for cancer imaging biomarkers\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": \"10.1038/s42256-024-00807-9\", \"gerekce\": \"This work showed that a self-supervised CT foundation model gives robust performance on imaging biomarkers with limited data.\"}, {\"sira\": 30, \"baslik\": \"Demographic Bias of Expert-Level Vision-Language Foundation Models in Medical Imaging\", \"yil\": 2024, \"arxiv_id\": \"2402.14815\", \"doi\": null, \"gerekce\": \"It documented that medical foundation models under-diagnose some demographic groups, a key open problem in fairness and safety.\"}]}",
+ "ttft_ms": 24839,
+ "type": "result",
+ "duration_ms": 51360,
+ "uuid": "4d84745c-6604-49cb-9e5d-6fb1e9319d5f",
+ "ttft_stream_ms": 1070,
+ "time_to_request_ms": 108,
+ "first_content_frame_ms": 1070,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

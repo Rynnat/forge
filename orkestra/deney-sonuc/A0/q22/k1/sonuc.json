@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-191010-847777",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "İçerik dağıtım ağlarında önbellekleme ile birleşen güvenli kodlanmış önbellekleme (gizlilik ve güvenlik garantileri) üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-02-11",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.3051,
+ "sure_s": 100.0,
+ "web_arama": 5,
+ "token": {
+  "in": 66776,
+  "out": 12196,
+  "cache_read": 29784,
+  "cache_write": 10333
+ },
+ "son_rapor_token_tahmini": 2531,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 23,
+ "istem": "Research question: İçerik dağıtım ağlarında önbellekleme ile birleşen güvenli kodlanmış önbellekleme (gizlilik ve güvenlik garantileri) üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-02-11. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1312.3961",
+   "arxiv_id": "1312.3961",
+   "doi": "10.1109/TIFS.2014.2375553",
+   "baslik": "Fundamental Limits of Caching With Secure Delivery",
+   "yil": 2015,
+   "gerekce": "This paper defined secure delivery in coded caching, where an eavesdropper on the shared link learns nothing, and gave a scheme based on key caching and its fundamental limits."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:1209.5807",
+   "arxiv_id": "1209.5807",
+   "doi": "10.1109/TIT.2014.2306938",
+   "baslik": "Fundamental Limits of Caching",
+   "yil": 2014,
+   "gerekce": "This is the founding coded caching paper; every secure and private variant builds on its placement and delivery framework."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:1605.01348",
+   "arxiv_id": "1605.01348",
+   "doi": null,
+   "baslik": "Private Coded Caching",
+   "yil": 2018,
+   "gerekce": "It introduced secretive coded caching, where users learn nothing about files they did not request, using secret sharing."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:1908.10821",
+   "arxiv_id": "1908.10821",
+   "doi": null,
+   "baslik": "On Coded Caching with Private Demands",
+   "yil": 2021,
+   "gerekce": "It formalized demand privacy against other users and proposed order-optimal private schemes using virtual users and MDS-based ideas."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:1909.03324",
+   "arxiv_id": "1909.03324",
+   "doi": null,
+   "baslik": "Demand Private Coded Caching",
+   "yil": 2019,
+   "gerekce": "Developed in parallel, it was the first order-optimal demand-private scheme (within a factor of 12) for every cache size."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2101.07127",
+   "arxiv_id": "2101.07127",
+   "doi": null,
+   "baslik": "Fundamental Limits of Demand-Private Coded Caching",
+   "yil": 2022,
+   "gerekce": "It reduces private schemes to non-private schemes with NK users, achieves a 3/8 gap, and gives the exact trade-off for N≥K=2."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2009.06000",
+   "arxiv_id": "2009.06000",
+   "doi": null,
+   "baslik": "Key Superposition Simultaneously Achieves Security and Privacy in Cache-Aided Linear Function Retrieval",
+   "yil": 2021,
+   "gerekce": "Using PDAs and superposed keys, it provides content security and demand privacy at the same time."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:1809.06844",
+   "arxiv_id": "1809.06844",
+   "doi": null,
+   "baslik": "Device-to-Device Secure Coded Caching",
+   "yil": 2020,
+   "gerekce": "It extended secure coded caching to D2D networks with secret sharing and one-time pads."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:1912.09985",
+   "arxiv_id": "1912.09985",
+   "doi": null,
+   "baslik": "On the Fundamental Limits of Device-to-Device Private Caching under Uncoded Cache Placement and User Collusion",
+   "yil": 2022,
+   "gerekce": "It gave constant-gap results for D2D demand privacy that hold against colluding users."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2008.03642",
+   "arxiv_id": "2008.03642",
+   "doi": null,
+   "baslik": "Fundamental Limits of Caching for Demand Privacy against Colluding Users",
+   "yil": 2021,
+   "gerekce": "It derived new achievability results and converse bounds for demand privacy against colluding users."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:1301.5848",
+   "arxiv_id": "1301.5848",
+   "doi": "10.1109/TNET.2014.2317316",
+   "baslik": "Decentralized Coded Caching Attains Order-Optimal Memory-Rate Tradeoff",
+   "yil": 2015,
+   "gerekce": "Its decentralized placement model is the basis for decentralized secure and private schemes, which matter in CDN practice."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:1609.07817",
+   "arxiv_id": "1609.07817",
+   "doi": null,
+   "baslik": "The Exact Rate-Memory Tradeoff for Caching With Uncoded Prefetching",
+   "yil": 2018,
+   "gerekce": "Private schemes built on virtual users borrow its YMA scheme and its optimality results."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:1510.05064",
+   "arxiv_id": "1510.05064",
+   "doi": "10.1109/TIT.2017.2725272",
+   "baslik": "On the Placement Delivery Array Design for Centralized Coded Caching Scheme",
+   "yil": 2017,
+   "gerekce": "Its PDA structure is the main tool for secure and private schemes with low subpacketization."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2404.06884",
+   "arxiv_id": "2404.06884",
+   "doi": null,
+   "baslik": "Demand Private Coded Caching: the Two-File Case",
+   "yil": 2024,
+   "gerekce": "It characterizes the exact optimal trade-off under demand privacy for the two-file case with any number of users."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2504.18242",
+   "arxiv_id": "2504.18242",
+   "doi": null,
+   "baslik": "Demand Private Coded Caching: Small Cache Size",
+   "yil": 2025,
+   "gerekce": "It gives the exact optimal trade-off in the small-cache regime and shows that the general problem is still open."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2301.07317",
+   "arxiv_id": "2301.07317",
+   "doi": null,
+   "baslik": "Security and Privacy in Cache-Aided Linear Function Retrieval for Multi-access Coded Caching",
+   "yil": 2023,
+   "gerekce": "It brings security and privacy guarantees to multi-access (shared-cache) topologies."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:1709.01056",
+   "arxiv_id": "1709.01056",
+   "doi": null,
+   "baslik": "Fundamental Limits of Cache-Aided Private Information Retrieval With Unknown and Uncoded Prefetching",
+   "yil": 2019,
+   "gerekce": "It is a key study on combining caching with private information retrieval (PIR)."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:1706.07035",
+   "arxiv_id": "1706.07035",
+   "doi": null,
+   "baslik": "The Capacity of Cache Aided Private Information Retrieval",
+   "yil": 2017,
+   "gerekce": "It was the first to find the capacity of cache-aided PIR."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:1602.09134",
+   "arxiv_id": "1602.09134",
+   "doi": null,
+   "baslik": "The Capacity of Private Information Retrieval",
+   "yil": 2017,
+   "gerekce": "It is the information-theoretic PIR basis for the converse techniques used in demand privacy."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2108.00026",
+   "arxiv_id": "2108.00026",
+   "doi": null,
+   "baslik": "Private Retrieval, Computing and Learning: Recent Progress and Future Challenges",
+   "yil": 2022,
+   "gerekce": "This survey summarizes open problems in cache-aided privacy and private retrieval."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2001.03577",
+   "arxiv_id": "2001.03577",
+   "doi": null,
+   "baslik": "On the Optimal Load-Memory Tradeoff of Cache-Aided Scalar Linear Function Retrieval",
+   "yil": 2021,
+   "gerekce": "It defined the linear function retrieval setting that later secure and private LFR work extends."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:1405.5336",
+   "arxiv_id": "1405.5336",
+   "doi": null,
+   "baslik": "Fundamental Limits of Caching in Wireless D2D Networks",
+   "yil": 2016,
+   "gerekce": "It is the basic D2D coded caching model that secure and private D2D schemes extend."
+  },
+  {
+   "sira": 23,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Coded Caching with Private Demands and Caches",
+   "yil": 2022,
+   "gerekce": "It adds privacy of cache contents to demand privacy, a stronger privacy model."
+  },
+  {
+   "sira": 24,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Combination Networks With or Without Secrecy Constraints: The Impact of Caching Relays",
+   "yil": 2018,
+   "gerekce": "It studied secure delivery and secretive caching in multi-hop combination networks with caching relays, a CDN-like setting."
+  },
+  {
+   "sira": 25,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Decentralized Caching with Secure Delivery",
+   "yil": 2014,
+   "gerekce": "It was the first scheme to provide secure delivery under decentralized placement."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2101.08745",
+   "arxiv_id": "2101.08745",
+   "doi": null,
+   "baslik": "Optimal Demand Private Coded Caching for Users with Small Buffers",
+   "yil": 2021,
+   "gerekce": "It gave optimality results for demand privacy when cache memory is small."
+  },
+  {
+   "sira": 27,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Lifting Constructions of PDAs for Coded Caching with Demand Privacy",
+   "yil": 2020,
+   "gerekce": "It addressed the subpacketization cost of demand privacy using PDA lifting constructions."
+  },
+  {
+   "sira": 28,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Multi-access Coded Caching with Demand Privacy",
+   "yil": 2022,
+   "gerekce": "It brought demand privacy to multi-access caching networks."
+  },
+  {
+   "sira": 29,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Demand Privacy in Hotplug Caching Systems",
+   "yil": 2023,
+   "gerekce": "It studied demand privacy when some users are offline, a practical scenario for CDNs."
+  },
+  {
+   "sira": 30,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Secretive Coded Caching from PDAs",
+   "yil": 2021,
+   "gerekce": "It made secretive coded caching practical with low subpacketization."
+  }
+ ]
+}

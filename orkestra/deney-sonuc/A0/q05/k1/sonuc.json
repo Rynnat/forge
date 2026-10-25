@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a0-20261025-185249-83ed85",
+ "sistem": "A-taban-a0",
+ "mod": "a0",
+ "soru": "Robot öğrenmesine fizik önbilgilerinin (fiziksel yasalar, simetriler, dinamik modeller) katılması üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-08-15",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 1.5,
+ "maliyet_usd": 0.1237,
+ "sure_s": 53.9,
+ "web_arama": 0,
+ "token": {
+  "in": 2,
+  "out": 5592,
+  "cache_read": 3532,
+  "cache_write": 1394
+ },
+ "son_rapor_token_tahmini": 2649,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 29,
+ "istem": "Research question: Robot öğrenmesine fizik önbilgilerinin (fiziksel yasalar, simetriler, dinamik modeller) katılması üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-08-15. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1907.04490",
+   "arxiv_id": "1907.04490",
+   "doi": null,
+   "baslik": "Deep Lagrangian Networks: Using Physics as Model Prior for Deep Learning",
+   "yil": 2019,
+   "gerekce": "It was the first work to build Euler-Lagrange equations into a neural network as a structural prior for learning robot dynamics and control, and it set the template for the field."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:1906.01563",
+   "arxiv_id": "1906.01563",
+   "doi": null,
+   "baslik": "Hamiltonian Neural Networks",
+   "yil": 2019,
+   "gerekce": "It learns energy-conserving dynamics by modelling a Hamiltonian, which made physics-structured networks widely adopted."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2003.04630",
+   "arxiv_id": "2003.04630",
+   "doi": null,
+   "baslik": "Lagrangian Neural Networks",
+   "yil": 2020,
+   "gerekce": "It learns general Lagrangians without needing canonical coordinates, so the energy-based prior applies to a wider range of systems."
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1016/j.jcp.2018.10.045",
+   "arxiv_id": null,
+   "doi": "10.1016/j.jcp.2018.10.045",
+   "baslik": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+   "yil": 2019,
+   "gerekce": "It established PINNs, the basic method for adding physical laws to training as loss terms."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:1909.12077",
+   "arxiv_id": "1909.12077",
+   "doi": null,
+   "baslik": "Symplectic ODE-Net: Learning Hamiltonian Dynamics with Control",
+   "yil": 2019,
+   "gerekce": "It extends Hamiltonian priors to systems with control inputs and uses the learned model for energy-based control."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2110.01894",
+   "arxiv_id": "2110.01894",
+   "doi": null,
+   "baslik": "Combining Physics and Deep Learning to learn Continuous-Time Dynamics Models",
+   "yil": 2023,
+   "gerekce": "It is a comprehensive IJRR study that systematically compares physics-informed and black-box dynamics models on real robots."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:1903.11239",
+   "arxiv_id": "1903.11239",
+   "doi": null,
+   "baslik": "TossingBot: Learning to Throw Arbitrary Objects with Residual Physics",
+   "yil": 2019,
+   "gerekce": "It showed in real-world manipulation how strong residual learning on top of an analytic physics controller can be."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:1812.03201",
+   "arxiv_id": "1812.03201",
+   "doi": null,
+   "baslik": "Residual Reinforcement Learning for Robot Control",
+   "yil": 2018,
+   "gerekce": "It established the residual approach of learning a policy correction on top of a classical model-based controller."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:1812.06298",
+   "arxiv_id": "1812.06298",
+   "doi": null,
+   "baslik": "Residual Policy Learning",
+   "yil": 2018,
+   "gerekce": "It showed that refining imperfect model-based controllers with RL improves sample efficiency and performance."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2002.09405",
+   "arxiv_id": "2002.09405",
+   "doi": null,
+   "baslik": "Learning to Simulate Complex Physics with Graph Networks",
+   "yil": 2020,
+   "gerekce": "It showed that graph-based learned simulators can model complex physics (fluids, deformable materials) accurately."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:1612.00222",
+   "arxiv_id": "1612.00222",
+   "doi": null,
+   "baslik": "Interaction Networks for Learning about Objects, Relations and Physics",
+   "yil": 2016,
+   "gerekce": "It started relational, object-based learning of physics models and inspired many later learned simulators."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:1806.01242",
+   "arxiv_id": "1806.01242",
+   "doi": null,
+   "baslik": "Graph Networks as Learnable Physics Engines for Inference and Control",
+   "yil": 2018,
+   "gerekce": "It applied graph networks with a body-joint structural prior to system identification and control of robot dynamics."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:1810.01566",
+   "arxiv_id": "1810.01566",
+   "doi": null,
+   "baslik": "Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids",
+   "yil": 2018,
+   "gerekce": "It used a particle-based physics prior for manipulation of rigid, deformable and fluid objects."
+  },
+  {
+   "sira": 14,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "End-to-End Differentiable Physics for Learning and Control",
+   "yil": 2018,
+   "gerekce": "It showed that a differentiable rigid-body physics engine can be embedded as a layer inside deep learning models."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:1910.00935",
+   "arxiv_id": "1910.00935",
+   "doi": null,
+   "baslik": "DiffTaichi: Differentiable Programming for Physical Simulation",
+   "yil": 2019,
+   "gerekce": "It provided an efficient infrastructure for gradient-based control and design optimization with differentiable simulators."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2106.13281",
+   "arxiv_id": "2106.13281",
+   "doi": null,
+   "baslik": "Brax - A Differentiable Physics Engine for Large Scale Rigid Body Simulation",
+   "yil": 2021,
+   "gerekce": "It made large-scale, accelerator-friendly differentiable physics simulation common in robot learning."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2103.16021",
+   "arxiv_id": "2103.16021",
+   "doi": null,
+   "baslik": "Fast and Feature-Complete Differentiable Physics for Articulated Rigid Bodies with Contact",
+   "yil": 2021,
+   "gerekce": "It worked on differentiable physics with contact for articulated robots, a central open problem for real-world system identification."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2102.06794",
+   "arxiv_id": "2102.06794",
+   "doi": null,
+   "baslik": "A Differentiable Contact Model to Extend Lagrangian and Hamiltonian Neural Networks for Modeling Hybrid Dynamics",
+   "yil": 2021,
+   "gerekce": "It addresses how to extend energy-based priors to contact and hybrid dynamics, a key open problem."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2012.02334",
+   "arxiv_id": "2012.02334",
+   "doi": null,
+   "baslik": "Benchmarking Energy-Conserving Neural Networks for Learning Dynamics from Data",
+   "yil": 2021,
+   "gerekce": "It compares physics-structured network variants systematically and shows their strengths and limits."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2010.13581",
+   "arxiv_id": "2010.13581",
+   "doi": null,
+   "baslik": "Simplifying Hamiltonian and Lagrangian Neural Networks via Explicit Constraints",
+   "yil": 2020,
+   "gerekce": "It showed that handling constrained mechanics in Cartesian coordinates makes learning much easier."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2106.12782",
+   "arxiv_id": "2106.12782",
+   "doi": null,
+   "baslik": "Hamiltonian-based Neural ODE Networks on the SE(3) Manifold For Dynamics Learning and Control",
+   "yil": 2021,
+   "gerekce": "It combines Lie-group geometry and Hamiltonian structure for learning and control of aerial and ground robot dynamics."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:1811.08027",
+   "arxiv_id": "1811.08027",
+   "doi": null,
+   "baslik": "Neural Lander: Stable Drone Landing Control using Learned Dynamics",
+   "yil": 2019,
+   "gerekce": "It showed how learning residual aerodynamics on top of a nominal physics model, with stability guarantees, works in real drone control."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2205.06908",
+   "arxiv_id": "2205.06908",
+   "doi": null,
+   "baslik": "Neural-Fly Enables Rapid Learning for Agile Flight in Strong Winds",
+   "yil": 2022,
+   "gerekce": "It successfully combined a physics-based controller with meta-learned residual dynamics for adaptive real-world flight."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:1901.08652",
+   "arxiv_id": "1901.08652",
+   "doi": null,
+   "baslik": "Learning agile and dynamic motor skills for legged robots",
+   "yil": 2019,
+   "gerekce": "It closed the sim-to-real gap for legged locomotion by adding a learned actuator model to a rigid-body simulator."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2203.04439",
+   "arxiv_id": "2203.04439",
+   "doi": null,
+   "baslik": "SO(2)-Equivariant Reinforcement Learning",
+   "yil": 2022,
+   "gerekce": "It showed that building geometric symmetries into robot RL policies improves sample efficiency substantially."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2112.05124",
+   "arxiv_id": "2112.05124",
+   "doi": null,
+   "baslik": "Neural Descriptor Fields: SE(3)-Equivariant Object Representations for Manipulation",
+   "yil": 2021,
+   "gerekce": "It showed that an SE(3) symmetry prior lets manipulation skills generalize from very few demonstrations."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2407.01812",
+   "arxiv_id": "2407.01812",
+   "doi": null,
+   "baslik": "Equivariant Diffusion Policy",
+   "yil": 2024,
+   "gerekce": "It brought symmetry priors into modern diffusion-based imitation learning policies."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2006.16908",
+   "arxiv_id": "2006.16908",
+   "doi": null,
+   "baslik": "MDP Homomorphic Networks: Group Symmetries in Reinforcement Learning",
+   "yil": 2020,
+   "gerekce": "It laid the theoretical basis for building environment symmetries into policy networks as equivariance constraints."
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1038/s42254-021-00314-5",
+   "arxiv_id": null,
+   "doi": "10.1038/s42254-021-00314-5",
+   "baslik": "Physics-informed machine learning",
+   "yil": 2021,
+   "gerekce": "This review defines how physics priors are injected (data, architecture, loss) and the field's open problems."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2003.04919",
+   "arxiv_id": "2003.04919",
+   "doi": null,
+   "baslik": "Integrating Scientific Knowledge with Machine Learning for Engineering and Environmental Systems",
+   "yil": 2022,
+   "gerekce": "This broad survey categorizes hybrid physics-ML modelling approaches and outlines open research directions."
+  }
+ ]
+}

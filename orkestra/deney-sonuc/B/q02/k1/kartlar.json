@@ -1,0 +1,1096 @@
+[
+ {
+  "id": "arXiv:1309.7910",
+  "baslik": "A Simple Proof of Threshold Saturation for Coupled Vector Recursions",
+  "yil": 2012,
+  "cites": 61,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Potansiyel fonksiyonlarıyla basit eşik doygunluğu ispatı.",
+  "alinti": "Our results actually show that the fixed point of the coupled recursion is essentially determined by the minimum of the uncoupled potential function"
+ },
+ {
+  "id": "arXiv:1309.7543",
+  "baslik": "Threshold Saturation for Spatially-Coupled LDPC and LDGM Codes on BMS Channels",
+  "yil": 2013,
+  "cites": 78,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "BMS kanallarında evrensel kapasite kanıtını içerir.",
+  "alinti": "In particular, it was proven that spatially-coupled regular LDPC codes universally achieve capacity over the class of binary memoryless symmetric (BMS) channels under belief-propagation decoding."
+ },
+ {
+  "id": "arXiv:1001.1826",
+  "baslik": "Threshold Saturation via Spatial Coupling: Why Convolutional LDPC Ensembles Perform so well over the BEC",
+  "yil": 2010,
+  "cites": 543,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Eşik doygunluğu mekanizmasını temel alan kurucu çalışma.",
+  "alinti": "In essence, the spatial coupling of the individual code structure has the effect of increasing the belief-propagation (BP) threshold of the new ensemble to its maximum possible value"
+ },
+ {
+  "id": "doi:10.1109/tit.2010.2059490",
+  "baslik": "Iterative Decoding Threshold Analysis for LDPC Convolutional Codes",
+  "yil": 2010,
+  "cites": 326,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; eşik analizi LDPC evrişimli kodlar için.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1201.2999",
+  "baslik": "Spatially Coupled Ensembles Universally Achieve Capacity under Belief Propagation",
+  "yil": 2012,
+  "cites": 309,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "BMS kanallar için genel eşik doygunluğu sonucu.",
+  "alinti": "We show that the equivalent result holds true for transmission over general binary-input memoryless output-symmetric channels."
+ },
+ {
+  "id": "doi:10.1109/18.782171",
+  "baslik": "Time-varying periodic convolutional codes with low-density parity-check matrix",
+  "yil": 1999,
+  "cites": 629,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; zamanla değişen LDPC evrişimli kodlar.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1112.0708",
+  "baslik": "Information-Theoretically Optimal Compressed Sensing via Spatial Coupling and Approximate Message Passing",
+  "yil": 2011,
+  "cites": 143,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Bağlaşıklık fikrinin sıkıştırılmış algılamaya aktarımı.",
+  "alinti": "We study the compressed sensing reconstruction problem for a broad class of random, band-diagonal sensing matrices. This construction is inspired by the idea of spatial coupling in coding theory."
+ },
+ {
+  "id": "arXiv:1604.07315",
+  "baslik": "Half Spatially Coupled Turbo-Like Codes",
+  "yil": 2014,
+  "cites": 50,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "LDPC dışı turbo benzeri bağlaşık kod ailesi.",
+  "alinti": "In this paper, we introduce the concept of spatially coupled turbo-like codes (SC-TCs) as the spatial coupling of a number of turbo-like code ensembles."
+ },
+ {
+  "id": "arXiv:1404.5719",
+  "baslik": "A Scaling Law to Predict the Finite-Length Performance of Spatially-Coupled LDPC Codes",
+  "yil": 2014,
+  "cites": 53,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Sonlu uzunluk için ölçekleme yasası; BEC üzerinde.",
+  "alinti": "We propose a scaling law to predict the error probability of finite-length spatially-coupled ensembles when transmission takes place over the binary erasure channel."
+ },
+ {
+  "id": "arXiv:1010.6020",
+  "baslik": "The Effect of Spatial Coupling on Compressive Sensing",
+  "yil": 2010,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Bağlaşıklığın sıkıştırılmış algılamada etkisi.",
+  "alinti": "In this paper, we show that the effect of spatial coupling is not restricted to the realm of channel coding. The effect of coupling also manifests itself in compressed sensing."
+ },
+ {
+  "id": "doi:10.1109/isit44484.2020.9173961",
+  "baslik": "A Novel Design of Spatially Coupled LDPC Codes for Sliding Window Decoding",
+  "yil": 2020,
+  "cites": 17,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; kayan pencere çözme için SC-LDPC tasarımı.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1105.0785",
+  "baslik": "Coupled Graphical Models and Their Thresholds",
+  "yil": 2010,
+  "cites": 37,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "İstatistiksel fizik modellerine bağlaşık yapı uygulaması.",
+  "alinti": "We investigate the generality of this phenomenon beyond coding theory: we couple general graphical models into a one-dimensional chain of large individual systems."
+ },
+ {
+  "id": "doi:10.1109/gcwkshps52748.2021.9682064",
+  "baslik": "Modeling a Sliding Window Decoder for Spatially Coupled LDPC Codes",
+  "yil": 2021,
+  "cites": 4,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; kayan pencere çözücü modellemesi.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1004.3742",
+  "baslik": "Threshold Saturation on BMS Channels via Spatial Coupling",
+  "yil": 2010,
+  "cites": 65,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "BMS kanallarda eşik doygunluğu için deneysel kanıt.",
+  "alinti": "We report on empirical evidence which suggest that the same phenomenon also occurs when transmission takes place over a general binary memoryless symmetric channel."
+ },
+ {
+  "id": "arXiv:1303.1858",
+  "baslik": "On the Minimum Distance of Generalized Spatially Coupled LDPC Codes",
+  "yil": 2013,
+  "cites": 21,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Genelleştirilmiş SC-LDPC minimum uzaklık analizi.",
+  "alinti": "Here we show that, in addition to their excellent iterative decoding thresholds, ensembles of GSC-LDPC codes are asymptotically good and have large minimum distance growth rates."
+ },
+ {
+  "id": "arXiv:1010.4548",
+  "baslik": "Windowed Decoding of Protograph-based LDPC Convolutional Codes over Erasure Channels",
+  "yil": 2010,
+  "cites": 211,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Silme kanallarında pencereli çözme analizi.",
+  "alinti": "We consider a windowed decoding scheme for LDPC convolutional codes that is based on the belief-propagation (BP) algorithm."
+ },
+ {
+  "id": "arXiv:1407.5366",
+  "baslik": "Spatially Coupled LDPC Codes Constructed from Protographs",
+  "yil": 2014,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Protograf tabanlı SC-LDPC kurucu çalışması.",
+  "alinti": "We demonstrate that the resulting codes combine the best features of optimized irregular and regular codes in one design: capacity approaching iterative belief propagation (BP) decoding thresholds and linear growth of minimum distance with block length."
+ },
+ {
+  "id": "arXiv:1301.6111",
+  "baslik": "A Proof of Threshold Saturation for Spatially-Coupled LDPC Codes on BMS Channels",
+  "yil": 2012,
+  "cites": 15,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Düzensiz LDPC için BMS eşik doygunluğu ispatı.",
+  "alinti": "In this paper, that proof technique is generalized to BMS channels, thereby extending some results of [4] to irregular LDPC ensembles."
+ },
+ {
+  "id": "doi:10.1109/access.2021.3107584",
+  "baslik": "Optimizing Code Parameters of Finite-Length SC-LDPC Codes Using the Scaling Law",
+  "yil": 2021,
+  "cites": 3,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; ölçekleme yasasıyla kod parametre optimizasyonu.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/jsac.2015.2504279",
+  "baslik": "On the Waterfall Performance of Finite-Length SC-LDPC Codes Constructed From Protographs",
+  "yil": 2016,
+  "cites": 34,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; sonlu uzunluk şelale performansı.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1102.3061",
+  "baslik": "Improvement of BP-Based CDMA Multiuser Detection by Spatial Coupling",
+  "yil": 2011,
+  "cites": 28,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Çok kullanıcılı CDMA algılamasında bağlaşıklık uygulaması.",
+  "alinti": "In this paper, spatial coupling is applied to randomly-spread code-division multiple-access (CDMA) systems in order to improve the performance of BP-based multiuser detection (MUD)."
+ },
+ {
+  "id": "arXiv:2003.04421",
+  "baslik": "Finite-Length Scaling of Spatially Coupled LDPC Codes Under Window Decoding Over the BEC",
+  "yil": 2020,
+  "cites": 9,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Pencereli çözmede sonlu uzunluk ölçekleme analizi.",
+  "alinti": "We analyze the finite-length performance of spatially coupled low-density parity-check (SC-LDPC) codes under window decoding over the binary erasure channel."
+ },
+ {
+  "id": "arXiv:1310.3724",
+  "baslik": "Spatially Coupled Sparse Codes on Graphs - Theory and Practice",
+  "yil": 2013,
+  "cites": 71,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Review of SC-LDPC codes and their performance.",
+  "alinti": "we review a particularly exciting new class of low-density parity-check codes, called spatially-coupled codes, which promise excellent performance over a broad range of channel conditions"
+ },
+ {
+  "id": "doi:10.1109/tcomm.2020.3001029",
+  "baslik": "Designing Protograph-Based Quasi-Cyclic Spatially Coupled LDPC Codes With Large Girth",
+  "yil": 2020,
+  "cites": 28,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; protograph QC SC-LDPC, large girth.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1904.10410",
+  "baslik": "A Refined Scaling Law for Spatially Coupled LDPC Codes Over the Binary Erasure Channel",
+  "yil": 2019,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Refined finite-length scaling law for SC-LDPC on BEC.",
+  "alinti": "We propose a refined scaling law to predict the finite-length performance in the waterfall region of spatially coupled low-density parity-check codes over the binary erasure channel."
+ },
+ {
+  "id": "doi:10.1186/s13638-020-01773-7",
+  "baslik": "Spatially coupled turbo-coded continuous phase modulation: asymptotic analysis and optimization",
+  "yil": 2020,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SC turbo-CPM; threshold saturation in concatenated systems.",
+  "alinti": "For the case of low-density parity-check (LDPC) codes, it has been shown that, under some asymptotic assumptions, spatially coupled ensembles have BP thresholds that approach the bitwise maximum a posteriori (MAP) threshold"
+ },
+ {
+  "id": "doi:10.1109/ita.2016.7888150",
+  "baslik": "Some results on spatially coupled protograph LDPC codes",
+  "yil": 2016,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; SC protograph LDPC, central topic.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1802.06481",
+  "baslik": "Finite-Length Construction of High Performance Spatially-Coupled Codes via Optimized Partitioning and Lifting",
+  "yil": 2018,
+  "cites": 41,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Finite-length SC design; error floor optimization.",
+  "alinti": "In this paper, we first introduce a general approach for the enumeration of detrimental combinatorial objects in the graph of finite-length SC codes."
+ },
+ {
+  "id": "doi:10.1109/tcomm.2021.3126750",
+  "baslik": "Concatenated Spatially Coupled LDPC Codes With Sliding Window Decoding for Joint Source-Channel Coding",
+  "yil": 2022,
+  "cites": 32,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; kayan pencere çözme ve kaynak-kanal kodlama.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1307.3780",
+  "baslik": "On the Convergence Speed of Spatially Coupled LDPC Ensembles",
+  "yil": 2013,
+  "cites": 36,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Eşik üstü yakınsama hızı ve dalga yayılımı.",
+  "alinti": "We derive an upper bound on the propagation speed, only depending on the basic parameters of the spatially coupled code ensemble such as degree distribution and the coupling factor $w$."
+ },
+ {
+  "id": "doi:10.1109/itw.2011.6089581",
+  "baslik": "Coupled LDPC codes: Complexity aspects of threshold saturation",
+  "yil": 2011,
+  "cites": 7,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; coupled LDPC, threshold saturation complexity.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/jsait.2023.3312656",
+  "baslik": "Error Propagation Mitigation in Sliding Window Decoding of Spatially Coupled LDPC Codes",
+  "yil": 2023,
+  "cites": 11,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; pencereli çözmede hata yayılımı.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/lcomm.2019.2955450",
+  "baslik": "Spatially Coupled LDPC Codes With Small Constraint Length and Low Error Floor",
+  "yil": 2020,
+  "cites": 18,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; small constraint length, low error floor.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2002.07844",
+  "baslik": "Capacity-achieving Spatially Coupled Sparse Superposition Codes with AMP Decoding",
+  "yil": 2020,
+  "cites": 32,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SC sparse superposition codes with AMP; capacity proof.",
+  "alinti": "Applying this bound to a simple band-diagonal design matrix, we prove that spatially coupled SPARCs with AMP decoding achieve the capacity of the AWGN channel."
+ },
+ {
+  "id": "arXiv:1102.0406",
+  "baslik": "Threshold Saturation on Channels with Memory via Spatial Coupling",
+  "yil": 2011,
+  "cites": 24,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Bellekli kanallarda eşik doygunluğu deneysel bulgusu.",
+  "alinti": "In this work, we report on empirical evidence which suggests that the same phenomenon also occurs when transmission takes place over a class of channels with memory."
+ },
+ {
+  "id": "arXiv:1503.08040",
+  "baslik": "Approximate message-passing decoder and capacity-achieving sparse superposition codes",
+  "yil": 2015,
+  "cites": 97,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "AMP decoder for sparse superposition; spatial coupling solution.",
+  "alinti": "We consider two solutions to this problem, that both allow to reach the Shannon capacity: i) a power allocation strategy and ii) the use of spatial coupling, a novelty for these codes that appears to be promising."
+ },
+ {
+  "id": "arXiv:1102.2856",
+  "baslik": "Spatially Coupled Codes over the Multiple Access Channel",
+  "yil": 2011,
+  "cites": 45,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Çok erişimli kanal üzerinde bağlaşık kodlar.",
+  "alinti": "In this work we provide further evidence of the threshold saturation phenomena when transmitting over a class of multiple access channel."
+ },
+ {
+  "id": "doi:10.1002/9781119106319.ch10",
+  "baslik": "Convolutional LDPC Codes and Spatial Coupling",
+  "yil": 2015,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; convolutional LDPC and spatial coupling.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tcomm.2016.2633466",
+  "baslik": "Non-Uniform Window Decoding Schedules for Spatially Coupled LDPC Codes",
+  "yil": 2017,
+  "cites": 27,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; non-uniform window decoding for SC-LDPC.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.icte.2023.11.006",
+  "baslik": "Effective bi-directional overlapped sliding window decoding of SC-LDPC codes",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; bi-directional sliding window decoding of SC-LDPC.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1202.6095",
+  "baslik": "Approaching Capacity at High-Rates with Iterative Hard-Decision Decoding",
+  "yil": 2012,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "SC generalized LDPC codes; capacity via hard-decision decoding.",
+  "alinti": "Specifically, a class of spatially-coupled GLDPC codes with BCH component codes is considered, and it is observed that, in the high-rate regime, they can approach capacity under the proposed iterative HDD."
+ },
+ {
+  "id": "doi:10.1109/itw.2012.6404686",
+  "baslik": "Spatially coupled quantum LDPC codes",
+  "yil": 2012,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; quantum SC codes, relevant to S7.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/access.2018.2850925",
+  "baslik": "Design and Analysis of Punctured Terminated Spatially Coupled Protograph LDPC Codes With Small Coupling Lengths",
+  "yil": 2018,
+  "cites": 5,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; punctured terminated SC protograph LDPC.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1910.14110",
+  "baslik": "Spatially Coupled Generalized LDPC Codes: Asymptotic Analysis and Finite Length Scaling",
+  "yil": 2019,
+  "cites": 17,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bağlaşık GLDPC kodlarının asimptotik ve sonlu analizi.",
+  "alinti": "In this paper, we study spatially coupled generalized low-density parity-check (SC-GLDPC) codes and present a comprehensive analysis of these codes"
+ },
+ {
+  "id": "arXiv:1102.3056",
+  "baslik": "A Phenomenological Study on Threshold Improvement via Spatial Coupling",
+  "yil": 2011,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Phenomenological model of spatial-coupling threshold improvement.",
+  "alinti": "Kudekar et al. proved an interesting result in low-density parity-check (LDPC) convolutional codes: The belief-propagation (BP) threshold is boosted to the maximum-a-posteriori (MAP) threshold by spatial coupling."
+ },
+ {
+  "id": "doi:10.1109/wcsp68525.2025.1010573",
+  "baslik": "Efficient Shuffled Sliding Window Decoding of SC-LDPC Codes",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; shuffled sliding window decoding of SC-LDPC.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1004.5157",
+  "baslik": "On Deriving Good LDPC Convolutional Codes from QC LDPC Block Codes",
+  "yil": 2007,
+  "cites": 111,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "QC blok kodlardan evrişimli kod türetme yöntemleri.",
+  "alinti": "Some of the constructed convolutional codes significantly outperform the underlying LDPC block codes. We investigate some possible reasons for this"
+ },
+ {
+  "id": "doi:10.1109/isit.2017.8006816",
+  "baslik": "A protograph-based design of quasi-cyclic spatially coupled LDPC codes",
+  "yil": 2017,
+  "cites": 14,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; protograf tabanlı QC SC-LDPC tasarımı.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1411.4373",
+  "baslik": "Design of Spatially Coupled LDPC Codes Over GF $(q)$ for Windowed Decoding",
+  "yil": 2014,
+  "cites": 16,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Sonlu alanda pencereli çözme; düşük gecikme tasarımı.",
+  "alinti": "We show that WD of $q$-ary SC-LDPC codes provides significant threshold gains compared to corresponding (uncoupled) $q$-ary LDPC block code (LDPC-BC) ensembles when the window size $W$ is large enough"
+ },
+ {
+  "id": "arXiv:cs/0508030",
+  "baslik": "Terminated LDPC Convolutional Codes with Thresholds Close to Capacity",
+  "yil": 2005,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Terminated LDPC convolutional codes; near-capacity thresholds.",
+  "alinti": "We observe that the structured irregularity in the Tanner graph of the codes leads to significantly better thresholds when compared to corresponding LDPC block codes."
+ },
+ {
+  "id": "arXiv:1407.0516",
+  "baslik": "Spatially Coupled Turbo Codes: Principles and Finite Length Performance",
+  "yil": 2014,
+  "cites": 7,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Spatially coupled turbo codes; threshold saturation to MAP.",
+  "alinti": "it is shown that the BP threshold approaches the Shannon limit as the coupling memory increases."
+ },
+ {
+  "id": "arXiv:2309.08404",
+  "baslik": "Bayes-Optimal Estimation in Generalized Linear Models via Spatial Coupling",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Spatial coupling applied to GLM estimation via AMP.",
+  "alinti": "In this work, we address this issue by considering GLMs defined via spatially coupled sensing matrices."
+ },
+ {
+  "id": "arXiv:1603.01817",
+  "baslik": "Proof of Threshold Saturation for Spatially Coupled Sparse Superposition Codes",
+  "yil": 2016,
+  "cites": 30,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Threshold saturation proof for SC sparse superposition codes.",
+  "alinti": "In this note we prove that state evolution (which tracks message passing) indeed saturates the potential threshold of the underlying code ensemble, which approaches in a proper limit the optimal threshold."
+ },
+ {
+  "id": "arXiv:1510.04763",
+  "baslik": "Density Evolution Analysis of Spatially Coupled LDPC Codes Over BIAWGN Channel",
+  "yil": 2015,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Density evolution for SC-LDPC over BIAWGN.",
+  "alinti": "We show that the proposed techniques can closely predict the decoding threshold while offering reduced complexity compared to the existing multi-edge-type density evolution."
+ },
+ {
+  "id": "doi:10.3390/e25071041",
+  "baslik": "Finite-Length Analysis for Spatially Coupled LDPC Codes Based on Base Matrix",
+  "yil": 2023,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Baz matris tabanlı sonlu uzunluk analizi; merkezi.",
+  "alinti": "To evaluate the finite-length performance of SC-LDPC codes, a general and efficient finite-length analysis from the perspective of the base matrix is proposed."
+ },
+ {
+  "id": "doi:10.1109/iccc62479.2024.10681799",
+  "baslik": "Construction of Spatially Coupled GC-LDPC Code for NAND Flash Memory",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SC GC-LDPC construction for NAND flash",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icc.2016.7511553",
+  "baslik": "Fully parallel window decoder architecture for spatially-coupled LDPC codes",
+  "yil": 2016,
+  "cites": 14,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Tam paralel pencereli çözücü mimarisi, donanım gerçeklemesi",
+  "alinti": "Fully parallel window decoder architecture for spatially-coupled LDPC codes."
+ },
+ {
+  "id": "doi:10.2139/ssrn.4543168",
+  "baslik": "Improved Sliding Window Decoding Algorithm Based on Information Reserved for Spatially Coupled Ldpc Codes",
+  "yil": 2023,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; SC-LDPC için geliştirilmiş pencereli çözme.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/istc.2012.6325232",
+  "baslik": "Comparison of LDPC block and LDPC convolutional codes based on their decoding latency",
+  "yil": 2012,
+  "cites": 33,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; decoding latency of LDPC block vs convolutional.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/isit.2015.7282583",
+  "baslik": "Finite-length performance of multi-edge protograph-based spatially coupled LDPC codes",
+  "yil": 2015,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; çok kenarlı protograf SC-LDPC sonlu uzunluk.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/wcnc.2018.8377289",
+  "baslik": "On the construction of protograph based SC-LDPC codes for windowed decoding",
+  "yil": 2018,
+  "cites": 9,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; pencereli çözme için protograf tasarımı.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1211.5164",
+  "baslik": "State Evolution for General Approximate Message Passing Algorithms, with Applications to Spatial Coupling",
+  "yil": 2012,
+  "cites": 178,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "AMP state evolution with spatially coupled matrices.",
+  "alinti": "It covers --in particular-- the analysis of generalized AMP, introduced by Rangan, and of AMP reconstruction in compressed sensing with spatially coupled sensing matrices."
+ },
+ {
+  "id": "doi:10.1080/00018732.2016.1211393",
+  "baslik": "Statistical Physics Of Inference: Thresholds And Algorithms",
+  "yil": 2016,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "İstatistiksel fizik ve eşikler; komşu alan kaynağı",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1804.01706",
+  "baslik": "Spatially coupled turbo-like codes: a new trade-off between waterfall and error floor",
+  "yil": 2018,
+  "cites": 27,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bağlaşık turbo kodlar; hata tabanı ve ağırlık analizi.",
+  "alinti": "We investigate the effect of coupling on the error-floor performance of SC-TCs by establishing conditions under which spatial coupling either preserves or improves the minimum distance of TCs."
+ },
+ {
+  "id": "arXiv:1201.4106",
+  "baslik": "Staircase Codes: FEC for 100 Gb/s OTN",
+  "yil": 2012,
+  "cites": 298,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Optik OTN için staircase FEC kodları.",
+  "alinti": "Staircase codes, a new class of forward-error-correction (FEC) codes suitable for high-speed optical communications, are introduced."
+ },
+ {
+  "id": "arXiv:1804.05504",
+  "baslik": "A Channel-Aware Combinatorial Approach to Design High Performance Spatially-Coupled Codes for Magnetic Recording Systems",
+  "yil": 2018,
+  "cites": 18,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Manyetik kayıt için kanal farkında SC kod tasarımı",
+  "alinti": "Because of their capacity-approaching performance and their complexity/latency advantages, spatially-coupled (SC) codes are among the most attractive error-correcting codes for use in modern dense data storage systems."
+ },
+ {
+  "id": "doi:10.1109/eucnc/6gsummit51104.2021.9482457",
+  "baslik": "A 336 Gbit/s Full-Parallel Window Decoder for Spatially Coupled LDPC Codes",
+  "yil": 2021,
+  "cites": 13,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yüksek hızlı donanım pencereli çözücü, 336 Gbit/s",
+  "alinti": "A 336 Gbit/s Full-Parallel Window Decoder for Spatially Coupled LDPC Codes."
+ },
+ {
+  "id": "doi:10.1109/tcomm.2008.050519",
+  "baslik": "Implementation Aspects Of LDPC Convolutional Codes",
+  "yil": 2008,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; LDPC evrişimli kod gerçeklemesi.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/itwksps.2010.5503166",
+  "baslik": "Windowed erasure decoding of LDPC Convolutional Codes",
+  "yil": 2010,
+  "cites": 42,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Evrişimli LDPC kodlarında pencereli silme çözme",
+  "alinti": "Windowed erasure decoding of LDPC Convolutional Codes."
+ },
+ {
+  "id": "arXiv:1707.04203",
+  "baslik": "Universal Sparse Superposition Codes with Spatial Coupling and GAMP Decoding",
+  "yil": 2017,
+  "cites": 23,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Seyrek süperpozisyon; bağlaşım ve GAMP çözme.",
+  "alinti": "Here, we generalize the analysis of these codes to a much broader setting that includes all memoryless channels."
+ },
+ {
+  "id": "doi:10.1109/wcsp62071.2024.10827040",
+  "baslik": "Design of Spatially Coupled LDPC Codes with Girth at Least 8",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; girth ve SC-LDPC tasarımı.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/itw.2013.6691239",
+  "baslik": "A finite length performance analysis of LDPC codes constructed by connecting spatially coupled chains",
+  "yil": 2013,
+  "cites": 7,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; sonlu uzunluk performansı.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/access.2017.2771375",
+  "baslik": "Improving Windowed Decoding of SC LDPC Codes by Effective Decoding Termination, Message Reuse, and Amplification",
+  "yil": 2018,
+  "cites": 22,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Pencereli çözmede sonlandırma ve mesaj yeniden kullanımı",
+  "alinti": "Improving Windowed Decoding of SC LDPC Codes by Effective Decoding Termination, Message Reuse, and Amplification."
+ },
+ {
+  "id": "doi:10.1109/istc.2018.8625327",
+  "baslik": "Spatially Coupled Generalized LDPC Codes: Introduction and Overview",
+  "yil": 2018,
+  "cites": 6,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; genel bir bağlaşık GLDPC genel bakış.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/isit.2017.8007068",
+  "baslik": "Edge spreading design of high rate array-based SC-LDPC codes",
+  "yil": 2017,
+  "cites": 26,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Edge spreading design for array-based SC-LDPC",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tit.2015.2438870",
+  "baslik": "Wave-Like Solutions of General 1-D Spatially Coupled Systems",
+  "yil": 2015,
+  "cites": 28,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Bağlaşık sistemlerde dalga çözümleri; istatistiksel fizik bağlantısı.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tmag.2016.2609937",
+  "baslik": "Spatially Coupled Codes Optimized for Magnetic Recording Applications",
+  "yil": 2017,
+  "cites": 20,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Manyetik kayıt için optimize SC kodlar; başlık",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tmag.2018.2832252",
+  "baslik": "Reduced-complexity window decoding of spatially coupled LDPC codes for magnetic recording systems",
+  "yil": 2018,
+  "cites": 12,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Manyetik kayıt için indirgenmiş karmaşıklıklı pencereleme; başlık",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-319-01727-3_12",
+  "baslik": "LDPC Convolutional Codes",
+  "yil": 2014,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LDPC evrişimli kodlar temel başlık",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/istc49272.2021.9594120",
+  "baslik": "Design of Spatially Coupled Turbo Product Codes for Optical Communications",
+  "yil": 2021,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; optik iletişimde SC turbo çarpım.",
+  "alinti": ""
+ }
+]
