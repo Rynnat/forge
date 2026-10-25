@@ -53,6 +53,12 @@ Kullanıcının bilgisayarı yeniden başlatılacağı için iş yarıda kesildi
   fuzzing uygular") → tautolojik destek; "foundational / landmark" gibi etki ifadeleri denetlenmiyor.
   Asıl ölçümde denetçi raporu bu iki sınıfı ayrıca saymalı (eşik değişmez; betimsel not).
 
+- Hız ölçümü (kosu3, D2, yeni kod): 1148 → 752 s; atıf 213 → 112, okuyucu 448 → 199, tekil+kesim 66 → 42.
+  **Karşılaştırma temiz değil:** kosu3'te arXiv 429 ile EKSİK (790 kayıt; kosu2'de 4029). Sebep büyük olasılıkla aynı IP'den
+  eşzamanlı arXiv kullanan diğer işler (sadakat pilotu, özet yedeği ajanı). **Gerçek deneyde B koşuları tek başına,
+  aynı makinede arXiv'e giden başka iş yokken koşulmalı**; yoksa arXiv EKSİK olur ve B haksız zayıf ölçülür.
+- Altın set tamam (30/30, 4089 kaynak); hash ONKAYIT'ta (`b3c1fd7`).
+
 ## Kalan işler (ilk oturumdan; 1, 2, 5 bitti)
 1. D2'yi baştan koş: `python -m orkestra batch --sorular duman/sorular.json --out duman/kosu2`. Ya da yalnız D2'yi `run` ile koş.
 2. Duman sonuçlarını (maliyet, süre, funnel) README'nin "Duman testi" bölümüne yaz.

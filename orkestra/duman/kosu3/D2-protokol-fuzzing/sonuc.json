@@ -1,0 +1,906 @@
+{
+ "run_id": "20261025-172637-48457f",
+ "soru": "What are the most important works and open problems in fuzzing of network protocol implementations?",
+ "kesim": "2025-06-01",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "arxiv",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.5097,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.046541599999999995,
+   "in": 1170,
+   "out": 2315,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.17499834999999997,
+   "in": 479142,
+   "out": 36948,
+   "web_search": 11
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.17430670000000004,
+   "in": 172656,
+   "out": 279567,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.113888,
+   "in": 10012,
+   "out": 1690,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 23.8,
+  "toplama:openalex": 1.3,
+  "web_isci": 55.1,
+  "toplama:crossref": 130.2,
+  "toplama:dblp": 215.2,
+  "toplama:arxiv": 318.1,
+  "toplama": 343.7,
+  "tekil+kesim_1": 41.9,
+  "atif": 111.8,
+  "okuyucu": 198.9,
+  "damitma": 16.8,
+  "sef_final": 15.3,
+  "toplam": 752.1
+ },
+ "ozet_token_tahmini": 3792,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "What are the foundational and classic approaches to network protocol fuzzing (black-box, generation/grammar-based, block-based frameworks)?",
+    "sorgular": [
+     "network protocol fuzzing",
+     "\"black-box\" protocol fuzzer",
+     "generation-based protocol fuzzing grammar",
+     "PROTOS SNOOZE Peach Sulley fuzzing",
+     "block-based fuzzing network protocols"
+    ],
+    "yeterli": "Coverage is sufficient when early black-box, generation-based and block-based frameworks (e.g., PROTOS, SNOOZE, Peach, Sulley/boofuzz, KiF) and their design rationales are identified."
+   },
+   {
+    "id": "S2",
+    "soru": "How do greybox and coverage-guided stateful fuzzers infer and exploit protocol state (state-aware fuzzing)?",
+    "sorgular": [
+     "stateful greybox fuzzing protocol",
+     "\"state-aware\" coverage-guided fuzzing",
+     "AFLNet protocol state machine",
+     "state inference network server fuzzing",
+     "state coverage feedback fuzzing"
+    ],
+    "yeterli": "Sufficient when AFLNet and its successors (StateAFL, SGFuzz, NSFuzz, Nyx-Net, SnapFuzz, etc.) and their state-representation and feedback techniques are covered."
+   },
+   {
+    "id": "S3",
+    "soru": "How are protocol message formats and state machines inferred or learned to drive fuzzing (protocol reverse engineering, model learning, LLMs)?",
+    "sorgular": [
+     "protocol reverse engineering fuzzing",
+     "message format inference fuzzing",
+     "\"model learning\" protocol state machine",
+     "active automata learning TLS",
+     "large language model protocol fuzzing"
+    ],
+    "yeterli": "Sufficient when automata-learning/state-machine-inference works (e.g., TLS/SSH/DTLS state learning) and LLM-assisted fuzzers (e.g., ChatAFL) are identified alongside format-inference approaches."
+   },
+   {
+    "id": "S4",
+    "soru": "What benchmarks, datasets and evaluation methodologies are used to compare protocol fuzzers?",
+    "sorgular": [
+     "ProFuzzBench network protocol benchmark",
+     "fuzzer evaluation methodology",
+     "\"evaluating fuzz testing\"",
+     "fuzzing benchmark stateful protocols",
+     "protocol fuzzer comparison empirical study"
+    ],
+    "yeterli": "Sufficient when ProFuzzBench and related benchmarks plus general fuzzing-evaluation guidelines and empirical comparison studies are covered."
+   },
+   {
+    "id": "S5",
+    "soru": "How is fuzzing applied to specific protocol domains such as TLS/DTLS, IoT, industrial control systems, wireless (Bluetooth, Wi-Fi, LTE/5G), and QUIC?",
+    "sorgular": [
+     "TLS implementation fuzzing",
+     "IoT device protocol fuzzing",
+     "ICS Modbus fuzzing",
+     "Bluetooth Wi-Fi protocol fuzzing",
+     "LTE 5G protocol fuzzing"
+    ],
+    "yeterli": "Sufficient when representative domain-specific fuzzers for crypto protocols, IoT/firmware, ICS, wireless and cellular stacks are identified."
+   },
+   {
+    "id": "S6",
+    "soru": "Which adjacent techniques (differential testing, symbolic execution, firmware rehosting, emulation, snapshotting) are reused in protocol fuzzing?",
+    "sorgular": [
+     "differential testing protocol implementations",
+     "symbolic execution network protocol",
+     "firmware rehosting fuzzing",
+     "\"in-vivo\" fuzzing emulation network",
+     "concolic testing protocol parsers"
+    ],
+    "yeterli": "Sufficient when key differential-testing, symbolic/concolic, and emulation/rehosting works used with or for protocol fuzzing are covered."
+   },
+   {
+    "id": "S7",
+    "soru": "What are the open problems and surveys summarizing challenges in network protocol fuzzing?",
+    "sorgular": [
+     "network protocol fuzzing survey",
+     "protocol fuzzing challenges open problems",
+     "stateful fuzzing survey",
+     "fuzzing network services systematization",
+     "SoK protocol fuzzing"
+    ],
+    "yeterli": "Sufficient when recent surveys/SoKs on (stateful) protocol fuzzing and their enumerated open challenges (state explosion, throughput, oracles, multi-party protocols) are found."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "AFLNet: A Greybox Fuzzer for Network Protocols",
+    "yil": 2020
+   },
+   {
+    "baslik": "ProFuzzBench: A Benchmark for Stateful Protocol Fuzzing",
+    "yil": 2021
+   },
+   {
+    "baslik": "Large Language Model guided Protocol Fuzzing",
+    "yil": 2024
+   },
+   {
+    "baslik": "StateAFL: Greybox fuzzing for stateful network servers",
+    "yil": 2022
+   },
+   {
+    "baslik": "Stateful Greybox Fuzzing",
+    "yil": 2022
+   },
+   {
+    "baslik": "Nyx-Net: Network Fuzzing with Incremental Snapshots",
+    "yil": 2022
+   },
+   {
+    "baslik": "SnapFuzz: High-Throughput Fuzzing of Network Applications",
+    "yil": 2022
+   },
+   {
+    "baslik": "Protocol State Fuzzing of TLS Implementations",
+    "yil": 2015
+   },
+   {
+    "baslik": "Model Learning and Model Checking of SSH Implementations",
+    "yil": 2017
+   },
+   {
+    "baslik": "SNOOZE: Toward a Stateful NetwOrk prOtocol fuzZEr",
+    "yil": 2006
+   },
+   {
+    "baslik": "Evaluating Fuzz Testing",
+    "yil": 2018
+   },
+   {
+    "baslik": "Fuzzing: Challenges and Reflections",
+    "yil": 2021
+   },
+   {
+    "baslik": "IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing",
+    "yil": 2018
+   },
+   {
+    "baslik": "Polar: Function Code Aware Fuzz Testing of ICS Protocol",
+    "yil": 2019
+   },
+   {
+    "baslik": "Frankencerts: Using Syntactic Differential Testing to Find Bugs in SSL/TLS Implementations",
+    "yil": 2014
+   },
+   {
+    "baslik": "Analysis of DTLS Implementations Using Protocol State Fuzzing",
+    "yil": 2020
+   },
+   {
+    "baslik": "State Selection Algorithms and Their Impact on Performance of Stateful Network Protocol Fuzzing",
+    "yil": 2022
+   },
+   {
+    "baslik": "Fuzzing: A Survey for Roadmap",
+    "yil": 2022
+   },
+   {
+    "baslik": "BLEEM: Packet Sequence Oriented Fuzzing for Protocol Implementations",
+    "yil": 2023
+   }
+  ],
+  "web_odaklari": [
+   "awesome network protocol fuzzing papers github",
+   "stateful protocol fuzzing reading list",
+   "awesome fuzzing papers network protocols"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:2101.05102",
+  "arXiv:2112.15498",
+  "arXiv:2110.06253",
+  "doi:10.14722/ndss.2024.24556",
+  "arXiv:1808.09700",
+  "doi:10.1109/icst46399.2020.00062",
+  "arXiv:2412.20324",
+  "doi:10.1109/ms.2020.3016773",
+  "arXiv:2204.02545",
+  "doi:10.1007/11836810_25",
+  "doi:10.1145/3512345",
+  "arXiv:2201.04048"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1109/icst46399.2020.00062",
+   "arxiv_id": null,
+   "doi": "10.1109/icst46399.2020.00062",
+   "baslik": "AFLNET: A Greybox Fuzzer for Network Protocols",
+   "yil": 2020,
+   "tarih": "2020-10",
+   "gerekce": "AFLNET is a foundational greybox fuzzer for network protocols, anchoring the coverage-guided stateful fuzzing family.",
+   "gerekce_kokeni": "sef",
+   "alinti": "AFLNET: A Greybox Fuzzer for Network Protocols.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 326,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2101.05102",
+   "arxiv_id": "2101.05102",
+   "doi": "10.1145/3460319.3469077",
+   "baslik": "ProFuzzBench: A Benchmark for Stateful Protocol Fuzzing",
+   "yil": 2021,
+   "tarih": "2021-01-13",
+   "gerekce": "ProFuzzBench is a benchmark for stateful protocol fuzzing built from representative open-source network servers for popular protocols.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We present a new benchmark (ProFuzzBench) for stateful fuzzing of network protocols. The benchmark includes a suite of representative open-source network servers for popular protocols",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 100,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2110.06253",
+   "arxiv_id": "2110.06253",
+   "doi": "10.1007/s10664-022-10233-3",
+   "baslik": "StateAFL: Greybox Fuzzing for Stateful Network Servers",
+   "yil": 2021,
+   "tarih": "2021-10-12",
+   "gerekce": "StateAFL is a greybox fuzzer for stateful servers that instruments memory allocations and network I/O at compile time to infer state.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The proposed fuzzer instruments the target server at compile-time, to insert probes on memory allocations and network I/O operations",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 133,
+   "rel": 3,
+   "tohum_yakinligi": 7
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.14722/ndss.2024.24556",
+   "arxiv_id": null,
+   "doi": "10.14722/ndss.2024.24556",
+   "baslik": "Large Language Model guided Protocol Fuzzing",
+   "yil": 2024,
+   "tarih": "2024",
+   "gerekce": "Large Language Model guided Protocol Fuzzing is a highly cited work introducing LLM guidance into protocol fuzzing.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Large Language Model guided Protocol Fuzzing.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 254,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2401.01568",
+   "arxiv_id": "2401.01568",
+   "doi": "10.1145/3696788",
+   "baslik": "A Survey of Protocol Fuzzing",
+   "yil": 2024,
+   "tarih": "2024-01-03",
+   "gerekce": "A Survey of Protocol Fuzzing summarizes academic and industry work, including the specific challenges of protocol fuzzing.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we conducted a comprehensive investigation of related works from both academia and industry. Our study includes a detailed summary of the specific challenges in protocol fuzzing",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 34,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1145/3648468",
+   "arxiv_id": null,
+   "doi": "10.1145/3648468",
+   "baslik": "Fuzzers for Stateful Systems: Survey and Research Directions",
+   "yil": 2024,
+   "tarih": "2024-02-17",
+   "gerekce": "Presents the first taxonomy of fuzzers for stateful systems, with systematic comparison, classification and research directions.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we present the first taxonomy of fuzzers for stateful systems and provide a systematic comparison and classification of these fuzzers",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 30,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1007/11836810_25",
+   "arxiv_id": null,
+   "doi": "10.1007/11836810_25",
+   "baslik": "SNOOZE: Toward a Stateful NetwOrk prOtocol fuzZEr",
+   "yil": 2006,
+   "tarih": "2006",
+   "gerekce": "SNOOZE is an early, well-cited stateful network protocol fuzzer representing classic foundational approaches.",
+   "gerekce_kokeni": "sef",
+   "alinti": "SNOOZE: Toward a Stateful NetwOrk prOtocol fuzZEr.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 110,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1007/978-3-319-28865-9_18",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-319-28865-9_18",
+   "baslik": "Pulsar: Stateful Black-Box Fuzzing of Proprietary Network Protocols",
+   "yil": 2015,
+   "tarih": "2015",
+   "gerekce": "Pulsar performs stateful black-box fuzzing of proprietary network protocols, a key classic black-box approach.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Pulsar: Stateful Black-Box Fuzzing of Proprietary Network Protocols.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "dblp"
+   ],
+   "atif": 105,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2111.03013",
+   "arxiv_id": "2111.03013",
+   "doi": "10.1145/3492321.3519591",
+   "baslik": "Nyx-Net: Network Fuzzing with Incremental Snapshots",
+   "yil": 2021,
+   "tarih": "2021-11-04",
+   "gerekce": "Nyx-Net uses incremental snapshots for network fuzzing, an influential snapshot-based technique.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Nyx-Net: Network Fuzzing with Incremental Snapshots. Coverage-guided fuzz testing",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 78,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2412.20324",
+   "arxiv_id": "2412.20324",
+   "doi": "10.1109/tse.2025.3535925",
+   "baslik": "AFLNet Five Years Later: On Coverage-Guided Protocol Fuzzing",
+   "yil": 2024,
+   "tarih": "2024-12-29",
+   "gerekce": "A retrospective on AFLNet, the first code- and state-coverage-guided protocol fuzzer using response codes as state indicators.",
+   "gerekce_kokeni": "sef",
+   "alinti": "AFLNet was the first code- and state-coverage-guided protocol fuzzer; it used the response code as an indicator of the current protocol state",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 15,
+   "rel": 3,
+   "tohum_yakinligi": 7
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2112.15498",
+   "arxiv_id": "2112.15498",
+   "doi": "10.1109/saner53432.2022.00089",
+   "baslik": "State Selection Algorithms and Their Impact on The Performance of Stateful Network Protocol Fuzzing",
+   "yil": 2021,
+   "tarih": "2021-12-24",
+   "gerekce": "Evaluates many state selection algorithms on the AFLNet platform, clarifying how state choice affects stateful fuzzing performance.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we evaluate an extensive set of state selection algorithms on the same fuzzing platform that is AFLNet, a state-of-the-art fuzzer for network servers",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 44,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2204.02545",
+   "arxiv_id": "2204.02545",
+   "doi": null,
+   "baslik": "Stateful Greybox Fuzzing",
+   "yil": 2022,
+   "tarih": "2022-04-06",
+   "gerekce": "Stateful Greybox Fuzzing argues that state identification for protocol fuzzing can be done without manual annotations.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we posit that manual annotations for state identification can be avoided for stateful protocol fuzzing",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2201.04048",
+   "arxiv_id": "2201.04048",
+   "doi": "10.1145/3533767.3534376",
+   "baslik": "SnapFuzz: An Efficient Fuzzing Framework for Network Applications",
+   "yil": 2022,
+   "tarih": "2022-01-11",
+   "gerekce": "SnapFuzz makes slow asynchronous network communication synchronous and snapshots the target for efficient network application fuzzing.",
+   "gerekce_kokeni": "sef",
+   "alinti": "SnapFuzz offers a robust architecture that transforms slow asynchronous network communication into fast synchronous communication, snapshots the target",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 66,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2202.03643",
+   "arxiv_id": "2202.03643",
+   "doi": "10.1109/tifs.2022.3192991",
+   "baslik": "SNPSFuzzer: A Fast Greybox Fuzzer for Stateful Network Protocols using Snapshots",
+   "yil": 2022,
+   "tarih": "2022-02-08",
+   "gerekce": "SNPSFuzzer saves and restores program context at specific protocol states, using snapshots to speed up stateful greybox fuzzing.",
+   "gerekce_kokeni": "sef",
+   "alinti": "SNPSFuzzer dumps the context information when the network protocol program is under a specific state and restores it when the state needs to be fuzzed",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 73,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2105.05445",
+   "arxiv_id": "2105.05445",
+   "doi": "10.1145/3460120.3484543",
+   "baslik": "Snipuzz: Black-box Fuzzing of IoT Firmware via Message Snippet Inference",
+   "yil": 2021,
+   "tarih": "2021-05-12",
+   "gerekce": "Snipuzz black-box fuzzes IoT firmware by inferring message snippets for mutation from device responses.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Snipuzz runs as a client communicating with the devices and infers message snippets for mutation based on the responses.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 153,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2406.07071",
+   "arxiv_id": "2406.07071",
+   "doi": null,
+   "baslik": "Is Stateful Fuzzing Really Challenging?",
+   "yil": 2024,
+   "tarih": "2024-06-11",
+   "gerekce": "Discusses why stateful fuzzers are hard to devise and benchmark, directly addressing open problems.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this short paper, we discuss the reasons that make stateful fuzzers difficult to devise and benchmark.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1007/978-3-031-64626-3_11",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-031-64626-3_11",
+   "baslik": "Fuzzing for Stateful Protocol Implementations: Are We There Yet?",
+   "yil": 2024,
+   "tarih": "2024-07-14",
+   "gerekce": "Critically asks whether fuzzing of stateful protocol implementations is mature, highlighting open problems.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Fuzzing for Stateful Protocol Implementations: Are We There Yet?.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 4,
+   "rel": 3,
+   "tohum_yakinligi": 7
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1007/s12243-024-01058-w",
+   "arxiv_id": null,
+   "doi": "10.1007/s12243-024-01058-w",
+   "baslik": "On the (in)Efficiency of Fuzzing Network Protocols",
+   "yil": 2024,
+   "tarih": "2024-03-05",
+   "gerekce": "Analyzes root causes of inefficiency in network protocol fuzzing and strategies to avoid them.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This article analyzes the root causes behind the inefficiency of fuzzing network protocols and strategies to avoid them",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "dblp"
+   ],
+   "atif": 4,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:1808.09700",
+   "arxiv_id": "1808.09700",
+   "doi": "10.1145/3243734.3243804",
+   "baslik": "Evaluating Fuzz Testing",
+   "yil": 2018,
+   "tarih": "2018-01-15",
+   "gerekce": "Evaluating Fuzz Testing assesses experimental evaluations in 32 fuzzing papers, foundational for evaluation methodology.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We surveyed the recent research literature and assessed the experimental evaluations carried out by 32 fuzzing papers",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 545,
+   "rel": 2,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.3390/electronics12143010",
+   "arxiv_id": null,
+   "doi": "10.3390/electronics12143010",
+   "baslik": "IoTFuzzBench: A Pragmatic Benchmarking Framework for Evaluating IoT Black-Box Protocol Fuzzers",
+   "yil": 2023,
+   "tarih": "2023-07-09",
+   "gerekce": "IoTFuzzBench is a benchmarking framework for evaluating IoT black-box protocol fuzzers.",
+   "gerekce_kokeni": "sef",
+   "alinti": "IoTFuzzBench: A Pragmatic Benchmarking Framework for Evaluating IoT Black-Box Protocol Fuzzers.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 9,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1145/3658644.3670320",
+   "arxiv_id": null,
+   "doi": "10.1145/3658644.3670320",
+   "baslik": "RANsacked: A Domain-Informed Approach for Fuzzing LTE and 5G RAN-Core Interfaces",
+   "yil": 2024,
+   "tarih": "2024-12-02",
+   "gerekce": "RANsacked is a domain-informed approach to fuzzing LTE and 5G RAN-core interfaces.",
+   "gerekce_kokeni": "sef",
+   "alinti": "RANsacked: A Domain-Informed Approach for Fuzzing LTE and 5G RAN-Core Interfaces.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 21,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1007/978-3-031-06773-0_20",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-031-06773-0_20",
+   "baslik": "Stateful Black-Box Fuzzing of Bluetooth Devices Using Automata Learning",
+   "yil": 2022,
+   "tarih": "2022-05-20",
+   "gerekce": "Uses automata learning for stateful black-box fuzzing of Bluetooth devices, combining model learning with wireless protocol fuzzing.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 21,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2405.00393",
+   "arxiv_id": "2405.00393",
+   "doi": null,
+   "baslik": "Unleashing the Power of LLM to Infer State Machine from the Protocol Implementation",
+   "yil": 2024,
+   "tarih": "2024-05-01",
+   "gerekce": "Uses LLMs to infer state machines from protocol source code, noting coverage limits of dynamic and path explosion of static methods.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Traditional dynamic analysis methods often miss critical state transitions due to limited coverage, while static analysis faces path explosion issues.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2305.13483",
+   "arxiv_id": "2305.13483",
+   "doi": null,
+   "baslik": "Extracting Protocol Format as State Machine via Controlled Static Loop Analysis",
+   "yil": 2023,
+   "tarih": "2023-05-22",
+   "gerekce": "Extracts protocol formats as state machines by statically analyzing protocol parser implementations for high coverage.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To achieve high coverage, we choose to use static analysis to infer message formats from the implementation of protocol parsers.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:1903.04384",
+   "arxiv_id": "1903.04384",
+   "doi": null,
+   "baslik": "State machine inference of QUIC",
+   "yil": 2019,
+   "tarih": "2019-03-11",
+   "gerekce": "Applies state machine inference to automatically extract the QUIC protocol state machine from implementations.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, we show how state machine inference can be applied to automatically extract the state machine corresponding to the protocol from an implementation.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "doi:10.1016/j.comnet.2012.08.003",
+   "arxiv_id": null,
+   "doi": "10.1016/j.comnet.2012.08.003",
+   "baslik": "Automatic protocol reverse-engineering: Message format extraction and field semantics inference",
+   "yil": 2013,
+   "tarih": "2013-02",
+   "gerekce": "Automatic protocol reverse engineering covering message format extraction and field semantics inference, central to format inference.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 68,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:1910.07883",
+   "arxiv_id": "1910.07883",
+   "doi": "10.23919/ae.2017.8053600",
+   "baslik": "PropFuzz -- An IT-Security Fuzzing Framework for Proprietary ICS Protocols",
+   "yil": 2017,
+   "tarih": "2017-09",
+   "gerekce": "PropFuzz is a security fuzzing framework targeting proprietary industrial control system protocols.",
+   "gerekce_kokeni": "sef",
+   "alinti": "PropFuzz -- An IT-Security Fuzzing Framework for Proprietary ICS Protocols.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 23,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2504.13515",
+   "arxiv_id": "2504.13515",
+   "doi": "10.1109/spw67851.2025.00009",
+   "baslik": "Large Language Models for Validating Network Protocol Parsers",
+   "yil": 2025,
+   "tarih": "2025-04-18",
+   "gerekce": "Uses LLM agents to validate protocol parsers against standards, noting limits of model checking, fuzzing and differential testing.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Existing methods like model checking, fuzzing, and differential testing have been used to find parsing bugs, but they either require significant manual effort or ignore the protocol standards, limiting their ability to detect semantic violations.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 5,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1145/3092282.3092289",
+   "arxiv_id": null,
+   "doi": "10.1145/3092282.3092289",
+   "baslik": "Model learning and model checking of SSH implementations",
+   "yil": 2017,
+   "tarih": "2017-07-13",
+   "gerekce": "Applies model learning and model checking to SSH implementations, supporting protocol state inference.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 78,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1109/tse.2014.2323977",
+   "arxiv_id": null,
+   "doi": "10.1109/tse.2014.2323977",
+   "baslik": "&lt;sc&gt;SymbexNet&lt;/sc&gt;: Testing Network Protocol Implementations with Symbolic Execution and Rule-Based Specifications",
+   "yil": 2014,
+   "tarih": "2014-07-01",
+   "gerekce": "SymbexNet tests network protocol implementations with symbolic execution and rule-based specifications, an adjacent technique.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 36,
+   "rel": 2,
+   "tohum_yakinligi": 1
+  }
+ ]
+}
