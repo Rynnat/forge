@@ -1,0 +1,239 @@
+{
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "arxiv",
+  "s2_zenginlestirme"
+ ],
+ "dengeli": true,
+ "asamalar": [
+  {
+   "asama": "toplama:openalex",
+   "giren": 0,
+   "cikan": 0,
+   "dusen": {},
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "cozumleme:sef_capa",
+   "giren": 25,
+   "cikan": 23,
+   "dusen": {
+    "cozulemedi": 2
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "toplama:crossref",
+   "giren": 4000,
+   "cikan": 3532,
+   "dusen": {
+    "tur_disi:peer-review": 362,
+    "tur_disi:dataset": 100,
+    "tur_disi:component": 2,
+    "basliksiz": 4
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "toplama:arxiv",
+   "giren": 424,
+   "cikan": 424,
+   "dusen": {},
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "toplama:dblp",
+   "giren": 3,
+   "cikan": 3,
+   "dusen": {},
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "cozumleme:web",
+   "giren": 69,
+   "cikan": 29,
+   "dusen": {
+    "cozulemedi": 38,
+    "tekrar_baslik": 2
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "tekillestirme_1",
+   "giren": 4011,
+   "cikan": 3185,
+   "dusen": {
+    "birlesti": 826
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "kesim_1",
+   "giren": 3185,
+   "cikan": 2976,
+   "dusen": {
+    "kesim_sonrasi": 3,
+    "tarih_belirsiz": 206
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "toplama:atif",
+   "giren": 6533,
+   "cikan": 430,
+   "dusen": {
+    "atif_yapan_kesim_sonrasi": 1415,
+    "tavan_kesimi": 4678,
+    "meta_yok": 10
+   },
+   "ok": true,
+   "not": "12 tohum; OpenCitations referans + atıf yapan"
+  },
+  {
+   "asama": "tekillestirme_2",
+   "giren": 3406,
+   "cikan": 3349,
+   "dusen": {
+    "birlesti": 57
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "kesim_2",
+   "giren": 3349,
+   "cikan": 3332,
+   "dusen": {
+    "tarih_belirsiz": 17
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "okuyucu_kesimi",
+   "giren": 3332,
+   "cikan": 1200,
+   "dusen": {
+    "on_siralama_kesimi": 2132
+   },
+   "ok": true,
+   "not": "en çok 1200 aday okunur; düşenler dusenler_on_siralama.jsonl"
+  },
+  {
+   "asama": "okuyucu",
+   "giren": 1200,
+   "cikan": 970,
+   "dusen": {
+    "kesin_alakasiz": 230
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "damitma",
+   "giren": 970,
+   "cikan": 80,
+   "dusen": {
+    "ilk_kart_disi": 890
+   },
+   "ok": true,
+   "not": "hibrit skor + küme tavanı %35"
+  },
+  {
+   "asama": "sef_final",
+   "giren": 80,
+   "cikan": 30,
+   "dusen": {
+    "secilmedi": 50
+   },
+   "ok": true,
+   "not": ""
+  }
+ ],
+ "kaynaklar": {
+  "sef_plan": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 0,
+   "kayit": 8
+  },
+  "openalex": {
+   "durum": "EKSİK",
+   "sebep": "QuotaExhausted: Retry-After=42623s",
+   "istek": 0,
+   "kayit": 0,
+   "sorgu": 16
+  },
+  "crossref": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 40,
+   "kayit": 3532,
+   "sorgu": 40
+  },
+  "web": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 0,
+   "kayit": 69
+  },
+  "arxiv": {
+   "durum": "EKSİK",
+   "sebep": "QuotaExhausted: 5 denemede 429",
+   "istek": 4,
+   "kayit": 424,
+   "sorgu": 40
+  },
+  "dblp": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 8,
+   "kayit": 3,
+   "sorgu": 8
+  },
+  "s2_zenginlestirme": {
+   "durum": "EKSİK",
+   "sebep": "s2: HTTP 429: 3 denemede 429",
+   "istek": 0,
+   "kayit": 0
+  },
+  "atif": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 23,
+   "kayit": 430,
+   "tohum": 12
+  },
+  "sef_final": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 0,
+   "kayit": 30
+  }
+ },
+ "bilgi": {
+  "openalex.atlanan_sorgu(kota)": 16,
+  "arxiv.kademe.AND": 5,
+  "arxiv.kademe.MAJ": 3,
+  "arxiv.api_kesilen(havuza_girmedi)": 16116,
+  "dblp.basarisiz_sorgu": 7,
+  "arxiv.atlanan_sorgu(kota)": 36,
+  "embed.kesilen_metin(son)": 227,
+  "embed.backend=minilm": 1,
+  "okuyucu.alinti_UNVERIFIED": 2
+ },
+ "hatalar": {
+  "dblp:RequestFailed": 7,
+  "web:arxiv_id": 1,
+  "web:arxiv_title": 1
+ }
+}

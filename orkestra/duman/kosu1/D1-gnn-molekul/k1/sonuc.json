@@ -1,0 +1,928 @@
+{
+ "run_id": "20261025-150909-396fa9",
+ "soru": "What are the most important works and open problems in graph neural networks for molecular property prediction?",
+ "kesim": "2025-06-01",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "arxiv",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.5926,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.06520000000000001,
+   "in": 1171,
+   "out": 2792,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.17736724,
+   "in": 573130,
+   "out": 62038,
+   "web_search": 9
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.21417369999999994,
+   "in": 240466,
+   "out": 332177,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.135816,
+   "in": 10648,
+   "out": 2532,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 26.1,
+  "toplama:openalex": 1.7,
+  "toplama:crossref": 125.3,
+  "web_isci": 126.0,
+  "toplama:arxiv": 272.6,
+  "toplama:dblp": 297.0,
+  "toplama": 599.4,
+  "tekil+kesim_1": 99.9,
+  "atif": 263.5,
+  "okuyucu": 412.5,
+  "damitma": 16.4,
+  "sef_final": 23.1,
+  "toplam": 1441.1
+ },
+ "ozet_token_tahmini": 3982,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "What are the foundational graph neural network architectures and message passing frameworks used for molecules?",
+    "sorgular": [
+     "\"message passing neural network\" quantum chemistry",
+     "\"graph convolutional network\" molecular fingerprints",
+     "\"graph neural network\" molecules",
+     "\"graph isomorphism network\" expressive power",
+     "\"molecular graph\" convolution deep learning"
+    ],
+    "yeterli": "Coverage is sufficient when the seminal MPNN, neural fingerprint, GCN/GIN, and directed MPNN (D-MPNN/Chemprop) papers are included."
+   },
+   {
+    "id": "S2",
+    "soru": "How do geometric/3D and equivariant GNNs model molecular structure for property prediction?",
+    "sorgular": [
+     "SchNet continuous-filter convolution",
+     "\"equivariant graph neural network\" molecules",
+     "DimeNet directional message passing",
+     "\"E(3)-equivariant\" interatomic potentials",
+     "PaiNN equivariant message passing"
+    ],
+    "yeterli": "Coverage is sufficient when the main invariant (SchNet, DimeNet, GemNet) and equivariant (EGNN, PaiNN, NequIP, MACE, Equiformer) models are covered."
+   },
+   {
+    "id": "S3",
+    "soru": "What self-supervised pretraining and molecular foundation-model approaches exist for GNNs on molecules?",
+    "sorgular": [
+     "\"pre-training graph neural networks\" molecules",
+     "molecular contrastive learning graph",
+     "GROVER self-supervised molecular graph transformer",
+     "3D Infomax molecular pretraining",
+     "\"molecular representation learning\" self-supervised"
+    ],
+    "yeterli": "Coverage is sufficient when the key contrastive, masking/generative, 3D-aware pretraining methods and analyses of pretraining benefits are included."
+   },
+   {
+    "id": "S4",
+    "soru": "Which graph transformer and higher-expressivity architectures are applied to molecular property prediction?",
+    "sorgular": [
+     "Graphormer molecular graph transformer",
+     "\"graph transformer\" molecular property",
+     "GPS \"general powerful scalable\" graph transformer",
+     "\"positional encoding\" graph transformer molecules",
+     "higher-order Weisfeiler-Leman GNN expressivity"
+    ],
+    "yeterli": "Coverage is sufficient when Graphormer, GPS, and key work on expressivity beyond 1-WL and positional encodings are included."
+   },
+   {
+    "id": "S5",
+    "soru": "What datasets and benchmarks are standard for evaluating molecular property prediction models?",
+    "sorgular": [
+     "MoleculeNet benchmark molecular machine learning",
+     "QM9 dataset quantum chemistry",
+     "\"Open Graph Benchmark\" molecular",
+     "OC20 \"Open Catalyst\" dataset",
+     "Therapeutics Data Commons benchmark"
+    ],
+    "yeterli": "Coverage is sufficient when MoleculeNet, QM9, OGB/OGB-LSC, TDC, and OC20/MD17-type datasets are identified."
+   },
+   {
+    "id": "S6",
+    "soru": "What are the evaluation challenges such as data splits, out-of-distribution generalization, uncertainty, and comparisons with classical baselines?",
+    "sorgular": [
+     "scaffold split molecular property prediction",
+     "\"out-of-distribution\" molecular property benchmark",
+     "uncertainty quantification molecular property GNN",
+     "\"activity cliffs\" deep learning benchmark",
+     "fingerprints versus graph neural networks comparison"
+    ],
+    "yeterli": "Coverage is sufficient when works on splits, OOD benchmarks (e.g., DrugOOD), activity cliffs, uncertainty, and critical baseline comparisons are included."
+   },
+   {
+    "id": "S7",
+    "soru": "What applications (drug discovery, ADMET, materials, interatomic potentials) demonstrate GNNs for molecular property prediction?",
+    "sorgular": [
+     "deep learning antibiotic discovery graph",
+     "ADMET prediction graph neural network",
+     "\"crystal graph convolutional\" materials properties",
+     "\"machine learning interatomic potentials\" GNN",
+     "virtual screening graph neural network"
+    ],
+    "yeterli": "Coverage is sufficient when landmark applications in drug discovery, materials (CGCNN, MEGNet), and force-field learning are covered."
+   },
+   {
+    "id": "S8",
+    "soru": "What are the open problems including low-data learning, interpretability, oversmoothing, scaling laws, and LLM integration?",
+    "sorgular": [
+     "few-shot molecular property prediction",
+     "explainability graph neural network molecules",
+     "oversquashing oversmoothing graph neural networks",
+     "scaling laws molecular GNN",
+     "large language models molecular property prediction"
+    ],
+    "yeterli": "Coverage is sufficient when key works and surveys on data scarcity, interpretability, expressivity limits, scaling, and multimodal/LLM approaches are identified."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Neural Message Passing for Quantum Chemistry",
+    "yil": 2017
+   },
+   {
+    "baslik": "Convolutional Networks on Graphs for Learning Molecular Fingerprints",
+    "yil": 2015
+   },
+   {
+    "baslik": "Molecular graph convolutions: moving beyond fingerprints",
+    "yil": 2016
+   },
+   {
+    "baslik": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions",
+    "yil": 2017
+   },
+   {
+    "baslik": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+    "yil": 2018
+   },
+   {
+    "baslik": "Analyzing Learned Molecular Representations for Property Prediction",
+    "yil": 2019
+   },
+   {
+    "baslik": "How Powerful are Graph Neural Networks?",
+    "yil": 2019
+   },
+   {
+    "baslik": "Semi-Supervised Classification with Graph Convolutional Networks",
+    "yil": 2017
+   },
+   {
+    "baslik": "Strategies for Pre-training Graph Neural Networks",
+    "yil": 2020
+   },
+   {
+    "baslik": "Directional Message Passing for Molecular Graphs",
+    "yil": 2020
+   },
+   {
+    "baslik": "Open Graph Benchmark: Datasets for Machine Learning on Graphs",
+    "yil": 2020
+   },
+   {
+    "baslik": "A Deep Learning Approach to Antibiotic Discovery",
+    "yil": 2020
+   },
+   {
+    "baslik": "Self-Supervised Graph Transformer on Large-Scale Molecular Data",
+    "yil": 2020
+   },
+   {
+    "baslik": "E(n) Equivariant Graph Neural Networks",
+    "yil": 2021
+   },
+   {
+    "baslik": "Equivariant message passing for the prediction of tensorial properties and molecular spectra",
+    "yil": 2021
+   },
+   {
+    "baslik": "Do Transformers Really Perform Bad for Graph Representation?",
+    "yil": 2021
+   },
+   {
+    "baslik": "Pushing the Limits of Molecular Representation Learning: Molecular Contrastive Learning of Representations via Graph Neural Networks",
+    "yil": 2022
+   },
+   {
+    "baslik": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials",
+    "yil": 2022
+   },
+   {
+    "baslik": "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields",
+    "yil": 2022
+   },
+   {
+    "baslik": "Recipe for a General, Powerful, Scalable Graph Transformer",
+    "yil": 2022
+   },
+   {
+    "baslik": "3D Infomax improves GNNs for Molecular Property Prediction",
+    "yil": 2022
+   },
+   {
+    "baslik": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties",
+    "yil": 2018
+   },
+   {
+    "baslik": "Quantum chemistry structures and properties of 134 kilo molecules",
+    "yil": 2014
+   },
+   {
+    "baslik": "Therapeutics Data Commons: Machine Learning Datasets and Tasks for Drug Discovery and Development",
+    "yil": 2021
+   },
+   {
+    "baslik": "Equiformer: Equivariant Graph Attention Transformer for 3D Atomistic Graphs",
+    "yil": 2023
+   }
+  ],
+  "web_odaklari": [
+   "awesome graph neural networks molecular property prediction github",
+   "molecular representation learning papers reading list",
+   "awesome geometric deep learning drug discovery papers"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:1703.00564",
+  "arXiv:1904.01561",
+  "arXiv:2101.03164",
+  "arXiv:2205.12454",
+  "arXiv:2007.02835",
+  "arXiv:1710.10324",
+  "doi:10.1609/aaai.v36i4.20377",
+  "arXiv:2102.03150",
+  "arXiv:2110.04126",
+  "arXiv:2003.03123",
+  "arXiv:2005.00687",
+  "arXiv:2102.09548"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1704.01212",
+   "arxiv_id": "1704.01212",
+   "doi": null,
+   "baslik": "Neural Message Passing for Quantum Chemistry",
+   "yil": 2017,
+   "tarih": "2017-04-04",
+   "gerekce": "Unifies existing models into the Message Passing Neural Network (MPNN) framework, the foundational paradigm for GNN molecular property prediction.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we reformulate existing models into a single common framework we call Message Passing Neural Networks (MPNNs)",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:1703.00564",
+   "arxiv_id": "1703.00564",
+   "doi": "10.1039/c7sc02664a",
+   "baslik": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+   "yil": 2017,
+   "tarih": "2017-03-02",
+   "gerekce": "Canonical benchmark that curates public molecular datasets, sets evaluation metrics, and provides open-source implementations of featurization and learning algorithms.",
+   "gerekce_kokeni": "sef",
+   "alinti": "MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 2771,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:1706.08566",
+   "arxiv_id": "1706.08566",
+   "doi": null,
+   "baslik": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions",
+   "yil": 2017,
+   "tarih": "2017-06-26",
+   "gerekce": "SchNet introduces continuous-filter convolutional layers for modeling quantum interactions in molecules, a foundational geometric architecture.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We apply those layers in SchNet: a novel deep learning architecture modeling quantum interactions in molecules",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2003.03123",
+   "arxiv_id": "2003.03123",
+   "doi": null,
+   "baslik": "Directional Message Passing for Molecular Graphs",
+   "yil": 2020,
+   "tarih": "2020-03-06",
+   "gerekce": "DimeNet proposes directional message passing that embeds messages between atoms, advancing geometric molecular GNNs.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To alleviate this limitation we propose directional message passing, in which we embed the messages passed between atoms instead of the atoms themselves.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2101.03164",
+   "arxiv_id": "2101.03164",
+   "doi": "10.21203/rs.3.rs-244137/v1",
+   "baslik": "SE(3)-Equivariant Graph Neural Networks for Data-Efficient and Accurate Interatomic Potentials",
+   "yil": 2021,
+   "tarih": "2021-01-08",
+   "gerekce": "NequIP uses E(3)-equivariant convolutions on geometric tensors for data-efficient, accurate interatomic potentials, a landmark equivariant GNN.",
+   "gerekce_kokeni": "sef",
+   "alinti": "NequIP employs E(3)-equivariant convolutions for interactions of geometric tensors, resulting in a more information-rich and faithful representation of atomic environments.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 1945,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2206.07697",
+   "arxiv_id": "2206.07697",
+   "doi": "10.52202/068431-0830",
+   "baslik": "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields",
+   "yil": 2022,
+   "tarih": "2022-06-15",
+   "gerekce": "MACE uses higher-order equivariant messages; four-body messages reduce required message passing iterations to two for fast, accurate force fields.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we show that using four-body messages reduces the required number of message passing iterations to just two",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 484,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2102.03150",
+   "arxiv_id": "2102.03150",
+   "doi": null,
+   "baslik": "Equivariant message passing for the prediction of tensorial properties and molecular spectra",
+   "yil": 2021,
+   "tarih": "2021-02-05",
+   "gerekce": "Identifies limitations of invariant representations and extends message passing to rotationally equivariant representations for tensorial properties and spectra.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We identify limitations of invariant representations as a major reason and extend the message passing formulation to rotationally equivariant representations.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:1905.12265",
+   "arxiv_id": "1905.12265",
+   "doi": null,
+   "baslik": "Strategies for Pre-training Graph Neural Networks",
+   "yil": 2019,
+   "tarih": "2019-05-29",
+   "gerekce": "Foundational strategy for pre-training GNNs on data-abundant related tasks, then fine-tuning on downstream tasks.",
+   "gerekce_kokeni": "sef",
+   "alinti": "An effective approach to this challenge is to pre-train a model on related tasks where data is abundant, and then fine-tune it on a downstream task of interest.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2007.02835",
+   "arxiv_id": "2007.02835",
+   "doi": null,
+   "baslik": "Self-Supervised Graph Transformer on Large-Scale Molecular Data",
+   "yil": 2020,
+   "tarih": "2020-06-18",
+   "gerekce": "GROVER integrates message passing networks into a Transformer-style architecture with self-supervision on large-scale molecular data.",
+   "gerekce_kokeni": "sef",
+   "alinti": "GROVER integrates Message Passing Networks into the Transformer-style architecture to deliver a class of more expressive encoders of molecules.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2102.10056",
+   "arxiv_id": "2102.10056",
+   "doi": "10.1038/s42256-022-00447-x",
+   "baslik": "Molecular Contrastive Learning of Representations via Graph Neural Networks",
+   "yil": 2021,
+   "tarih": "2021-02-19",
+   "gerekce": "MolCLR establishes contrastive self-supervised pre-training of GNN encoders on molecule graphs.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In MolCLR pre-training, we build molecule graphs and develop GNN encoders to learn differentiable representations.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 877,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2110.04126",
+   "arxiv_id": "2110.04126",
+   "doi": null,
+   "baslik": "3D Infomax improves GNNs for Molecular Property Prediction",
+   "yil": 2021,
+   "tarih": "2021-10-08",
+   "gerekce": "3D Infomax pre-trains models to reason about molecular geometry given only 2D graphs, bridging 2D and 3D representations.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose pre-training a model to reason about the geometry of molecules given only their 2D molecular graphs.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.26434/chemrxiv-2022-jjm0j-v3",
+   "arxiv_id": null,
+   "doi": "10.26434/chemrxiv-2022-jjm0j-v3",
+   "baslik": "Uni-Mol: A Universal 3D Molecular Representation Learning Framework",
+   "yil": 2022,
+   "tarih": "2022-09-07",
+   "gerekce": "Uni-Mol is a universal 3D molecular representation learning framework combining a 3D transformer with large-scale molecular pretraining.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "YOK",
+   "alinti_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "web"
+   ],
+   "atif": 24,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2106.05234",
+   "arxiv_id": "2106.05234",
+   "doi": null,
+   "baslik": "Do Transformers Really Perform Bad for Graph Representation?",
+   "yil": 2021,
+   "tarih": "2021-06-09",
+   "gerekce": "Graphormer shows that transformers with simple structural encodings can model graph-structured data effectively, a central graph transformer.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose several simple yet effective structural encoding methods to help Graphormer better model graph-structured data",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2205.12454",
+   "arxiv_id": "2205.12454",
+   "doi": "10.52202/068431-1054",
+   "baslik": "Recipe for a General, Powerful, Scalable Graph Transformer",
+   "yil": 2022,
+   "tarih": "2022-05-25",
+   "gerekce": "GPS recipe builds general, powerful, scalable graph Transformers with linear complexity and state-of-the-art results across diverse benchmarks.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose a recipe on how to build a general, powerful, scalable (GPS) graph Transformer with linear complexity and state-of-the-art results on a diverse set of benchmarks.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 163,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:1810.00826",
+   "arxiv_id": "1810.00826",
+   "doi": null,
+   "baslik": "How Powerful are Graph Neural Networks?",
+   "yil": 2018,
+   "tarih": "2018-10-01",
+   "gerekce": "Characterizes discriminative power of popular GNN variants, showing they cannot distinguish certain simple graph structures; foundational expressivity theory.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our results characterize the discriminative power of popular GNN variants, such as Graph Convolutional Networks and GraphSAGE, and show that they cannot learn to distinguish certain simple graph structures.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:1810.02244",
+   "arxiv_id": "1810.02244",
+   "doi": "10.1609/aaai.v33i01.33014602",
+   "baslik": "Weisfeiler and Leman Go Neural: Higher-order Graph Neural Networks",
+   "yil": 2018,
+   "tarih": "2018-10-04",
+   "gerekce": "Shows GNNs match 1-WL expressiveness and proposes higher-order GNNs to go beyond that limit.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We show that GNNs have the same expressiveness as the $1$-WL in terms of distinguishing non-isomorphic (sub-)graphs.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 879,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:1904.01561",
+   "arxiv_id": "1904.01561",
+   "doi": "10.1021/acs.jcim.9b00237",
+   "baslik": "Analyzing Learned Molecular Representations for Property Prediction",
+   "yil": 2019,
+   "tarih": "2019-04-02",
+   "gerekce": "Extensive benchmark of learned molecular representations on 19 public and 16 proprietary industrial datasets across diverse chemical endpoints.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, we benchmark models extensively on 19 public and 16 proprietary industrial datasets spanning a wide variety of chemical endpoints.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 1887,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:1603.00856",
+   "arxiv_id": "1603.00856",
+   "doi": "10.1007/s10822-016-9938-8",
+   "baslik": "Molecular Graph Convolutions: Moving Beyond Fingerprints",
+   "yil": 2016,
+   "tarih": "2016-03-02",
+   "gerekce": "Early molecular graph convolutions, which do not outperform all fingerprint methods yet represent a new virtual screening paradigm.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Although graph convolutions do not outperform all fingerprint-based methods, they (along with other graph-based methods) represent a new paradigm in ligand-based virtual screening",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.1038/sdata.2014.22",
+   "arxiv_id": null,
+   "doi": "10.1038/sdata.2014.22",
+   "baslik": "Quantum chemistry structures and properties of 134 kilo molecules",
+   "yil": 2014,
+   "tarih": "2014-08-05",
+   "gerekce": "The QM9 dataset of quantum chemistry structures and properties for 134 kilo molecules is a standard molecular benchmark.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 1745,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2102.09548",
+   "arxiv_id": "2102.09548",
+   "doi": null,
+   "baslik": "Therapeutics Data Commons: Machine Learning Datasets and Tasks for Drug Discovery and Development",
+   "yil": 2021,
+   "tarih": "2021-02-18",
+   "gerekce": "Therapeutics Data Commons provides drug discovery datasets, meaningful data splits, and systematic model evaluation strategies.",
+   "gerekce_kokeni": "sef",
+   "alinti": "TDC also provides an ecosystem of tools and community resources, including 33 data functions and types of meaningful data splits, 23 strategies for systematic model evaluation",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2005.00687",
+   "arxiv_id": "2005.00687",
+   "doi": null,
+   "baslik": "Open Graph Benchmark: Datasets for Machine Learning on Graphs",
+   "yil": 2020,
+   "tarih": "2020-05-02",
+   "gerekce": "Open Graph Benchmark includes molecular graphs and highlights out-of-distribution generalization challenges under realistic data splits.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our experiments suggest that OGB datasets present significant challenges of scalability to large-scale graphs and out-of-distribution generalization under realistic data splits",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.26434/chemrxiv-2022-mfq52-v2",
+   "arxiv_id": null,
+   "doi": "10.26434/chemrxiv-2022-mfq52-v2",
+   "baslik": "Exposing the limitations of molecular machine learning with activity cliffs.",
+   "yil": 2022,
+   "tarih": "2022-03-28",
+   "gerekce": "Benchmarks 720 machine and deep learning models on activity cliff compounds across 30 targets, exposing limitations of molecular ML.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We benchmarked a total of 720 machine and deep learning models on curated bioactivity data from 30 macromolecular targets for their performance on activity cliff compounds.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 320,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.26434/chemrxiv-2025-g1vjf-v2",
+   "arxiv_id": null,
+   "doi": "10.26434/chemrxiv-2025-g1vjf-v2",
+   "baslik": "Evaluating Machine Learning Models for Molecular Property Prediction: Performance and Robustness on Out-of-Distribution Data",
+   "yil": 2025,
+   "tarih": "2025-02-28",
+   "gerekce": "Evaluates twelve models, including random forests and GNNs, for out-of-distribution performance and robustness in molecular property prediction.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we investigate and evaluate the performance of twelve machine learning models, including classical approaches like random forests, as well as graph neural network (GNN) methods",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "crossref",
+    "web"
+   ],
+   "atif": 55,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1021/acs.jcim.3c01774",
+   "arxiv_id": null,
+   "doi": "10.1021/acs.jcim.3c01774",
+   "baslik": "Real-World Molecular Out-Of-Distribution: Specification and Investigation",
+   "yil": 2023,
+   "tarih": "2023-06-05",
+   "gerekce": "Specifies real-world molecular distribution shifts, finding performance drops up to 60% and uncertainty calibration drops up to 40%.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We find that these shifts can cause performance to drop by up to 60% and uncertainty calibration by up to 40%.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 66,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1021/acs.jcim.0c00502",
+   "arxiv_id": null,
+   "doi": "10.1021/acs.jcim.0c00502",
+   "baslik": "Uncertainty Quantification Using Neural Networks for Molecular Property Prediction",
+   "yil": 2020,
+   "tarih": "2020-07-23",
+   "gerekce": "Compares uncertainty quantification methods for molecular property prediction; none is unequivocally superior or reliably ranks errors across datasets.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our experiments show that none of the methods we tested is unequivocally superior to all others, and none produces a particularly reliable ranking of errors across multiple data sets.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "crossref",
+    "web"
+   ],
+   "atif": 316,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:1710.10324",
+   "arxiv_id": "1710.10324",
+   "doi": "10.1103/physrevlett.120.145301",
+   "baslik": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties",
+   "yil": 2017,
+   "tarih": "2017-10-27",
+   "gerekce": "CGCNN learns material properties directly from atom connections in crystals, a seminal GNN application to materials.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we develop a crystal graph convolutional neural networks framework to directly learn material properties from the connection of atoms in the crystal",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 2669,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1007/s11704-025-41426-w",
+   "arxiv_id": null,
+   "doi": "10.1007/s11704-025-41426-w",
+   "baslik": "A survey of geometric graph neural networks: data structures, models and applications",
+   "yil": 2025,
+   "tarih": "2025-05-28",
+   "gerekce": "Surveys geometric GNNs, covering data structures, models, and applications for graphs with translation, rotation, and reflection symmetries.",
+   "gerekce_kokeni": "sef",
+   "alinti": "geometric graphs often exhibit physical symmetries of translations, rotations, and reflections, making them ineffectively processed",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 58,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.52202/075280-0072",
+   "arxiv_id": null,
+   "doi": "10.52202/075280-0072",
+   "baslik": "Uncovering Neural Scaling Laws in Molecular Representation Learning",
+   "yil": 2023,
+   "tarih": "2023",
+   "gerekce": "Addresses the open problem of neural scaling laws in molecular representation learning.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 3,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1186/s13321-024-00846-9",
+   "arxiv_id": null,
+   "doi": "10.1186/s13321-024-00846-9",
+   "baslik": "MolPROP: Molecular Property prediction with multimodal language and graph fusion",
+   "yil": 2024,
+   "tarih": "2024-05-22",
+   "gerekce": "MolPROP fuses language models and graphs for property prediction, benchmarked on seven scaffold-split MoleculeNet datasets, exemplifying LLM integration.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We benchmark the MolPROP suite of models on seven scaffold split MoleculeNet datasets and compare with state-of-the-art architectures",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 62,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1016/j.patter.2022.100628",
+   "arxiv_id": null,
+   "doi": "10.1016/j.patter.2022.100628",
+   "baslik": "Quantitative evaluation of explainable graph neural networks for molecular property prediction",
+   "yil": 2022,
+   "tarih": "2022-12",
+   "gerekce": "Provides quantitative evaluation of explainable GNNs for molecular property prediction, addressing the interpretability open problem.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 81,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

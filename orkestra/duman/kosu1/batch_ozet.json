@@ -1,0 +1,16 @@
+[
+ {
+  "id": "D1-gnn-molekul",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "arxiv",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.5926,
+  "sure_s": 1441.1,
+  "ozet_token": 3982,
+  "n": 30
+ }
+]

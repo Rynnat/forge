@@ -1,0 +1,1026 @@
+[
+ {
+  "id": "arXiv:1703.00564",
+  "baslik": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+  "yil": 2017,
+  "cites": 2771,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Canonical molecular ML benchmark and dataset collection",
+  "alinti": "MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms"
+ },
+ {
+  "id": "arXiv:2101.03164",
+  "baslik": "SE(3)-Equivariant Graph Neural Networks for Data-Efficient and Accurate Interatomic Potentials",
+  "yil": 2021,
+  "cites": 1945,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Equivariant GNN for interatomic potentials",
+  "alinti": "NequIP employs E(3)-equivariant convolutions for interactions of geometric tensors, resulting in a more information-rich and faithful representation of atomic environments."
+ },
+ {
+  "id": "arXiv:2007.02835",
+  "baslik": "Self-Supervised Graph Transformer on Large-Scale Molecular Data",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Self-supervised graph transformer for molecules",
+  "alinti": "GROVER integrates Message Passing Networks into the Transformer-style architecture to deliver a class of more expressive encoders of molecules."
+ },
+ {
+  "id": "arXiv:1904.01561",
+  "baslik": "Analyzing Learned Molecular Representations for Property Prediction",
+  "yil": 2019,
+  "cites": 1887,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Large benchmark of GNNs versus fingerprints, industrial setting",
+  "alinti": "In this paper, we benchmark models extensively on 19 public and 16 proprietary industrial datasets spanning a wide variety of chemical endpoints."
+ },
+ {
+  "id": "arXiv:2205.12454",
+  "baslik": "Recipe for a General, Powerful, Scalable Graph Transformer",
+  "yil": 2022,
+  "cites": 163,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "General graph transformer, not molecule-specific",
+  "alinti": "We propose a recipe on how to build a general, powerful, scalable (GPS) graph Transformer with linear complexity and state-of-the-art results on a diverse set of benchmarks."
+ },
+ {
+  "id": "arXiv:2102.10056",
+  "baslik": "Molecular Contrastive Learning of Representations via Graph Neural Networks",
+  "yil": 2021,
+  "cites": 877,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Contrastive self-supervised pretraining for molecular GNNs",
+  "alinti": "In MolCLR pre-training, we build molecule graphs and develop GNN encoders to learn differentiable representations."
+ },
+ {
+  "id": "arXiv:2110.04126",
+  "baslik": "3D Infomax improves GNNs for Molecular Property Prediction",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "3D-aware pretraining from 2D graphs",
+  "alinti": "We propose pre-training a model to reason about the geometry of molecules given only their 2D molecular graphs."
+ },
+ {
+  "id": "doi:10.26434/chemrxiv-2025-g1vjf-v2",
+  "baslik": "Evaluating Machine Learning Models for Molecular Property Prediction: Performance and Robustness on Out-of-Distribution Data",
+  "yil": 2025,
+  "cites": 55,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Key OOD evaluation against classical baselines",
+  "alinti": "we investigate and evaluate the performance of twelve machine learning models, including classical approaches like random forests, as well as graph neural network (GNN) methods"
+ },
+ {
+  "id": "arXiv:1710.10324",
+  "baslik": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties",
+  "yil": 2017,
+  "cites": 2669,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Crystal GNN for materials, not molecules",
+  "alinti": "we develop a crystal graph convolutional neural networks framework to directly learn material properties from the connection of atoms in the crystal"
+ },
+ {
+  "id": "arXiv:2102.09548",
+  "baslik": "Therapeutics Data Commons: Machine Learning Datasets and Tasks for Drug Discovery and Development",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Therapeutics dataset and evaluation platform",
+  "alinti": "TDC also provides an ecosystem of tools and community resources, including 33 data functions and types of meaningful data splits, 23 strategies for systematic model evaluation"
+ },
+ {
+  "id": "arXiv:2102.03150",
+  "baslik": "Equivariant message passing for the prediction of tensorial properties and molecular spectra",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Foundational equivariant message passing (PaiNN)",
+  "alinti": "We identify limitations of invariant representations as a major reason and extend the message passing formulation to rotationally equivariant representations."
+ },
+ {
+  "id": "arXiv:2003.03123",
+  "baslik": "Directional Message Passing for Molecular Graphs",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Directional, rotationally equivariant molecular GNN (DimeNet)",
+  "alinti": "To alleviate this limitation we propose directional message passing, in which we embed the messages passed between atoms instead of the atoms themselves."
+ },
+ {
+  "id": "arXiv:2208.04852",
+  "baslik": "Graph neural networks for the prediction of molecular structure-property relationships",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Foundational review of GNNs for structure-property",
+  "alinti": "GNNs allow to learn properties in an end-to-end fashion, thereby avoiding the need for informative descriptors as in QSPRs/QSARs."
+ },
+ {
+  "id": "doi:10.1016/j.ces.2023.119057",
+  "baslik": "A simple and efficient graph Transformer architecture for molecular properties prediction",
+  "yil": 2023,
+  "cites": 11,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; efficient graph transformer for molecules",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1038/sdata.2014.22",
+  "baslik": "Quantum chemistry structures and properties of 134 kilo molecules",
+  "yil": 2014,
+  "cites": 1745,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Title only; standard quantum chemistry molecular dataset",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s11704-025-41426-w",
+  "baslik": "A survey of geometric graph neural networks: data structures, models and applications",
+  "yil": 2025,
+  "cites": 58,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Survey of geometric GNNs with equivariance; central",
+  "alinti": "geometric graphs often exhibit physical symmetries of translations, rotations, and reflections, making them ineffectively processed"
+ },
+ {
+  "id": "arXiv:2206.07697",
+  "baslik": "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields",
+  "yil": 2022,
+  "cites": 484,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Higher-order equivariant MPNN for force fields",
+  "alinti": "we show that using four-body messages reduces the required number of message passing iterations to just two"
+ },
+ {
+  "id": "arXiv:2208.09481",
+  "baslik": "Graph neural networks for materials science and chemistry",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Review of GNNs, datasets, and chemistry applications",
+  "alinti": "In this review article, we provide an overview of the basic principles of GNNs, widely used datasets, and state-of-the-art architectures"
+ },
+ {
+  "id": "doi:10.1038/s41467-023-43720-2",
+  "baslik": "Enhancing geometric representations for molecules with equivariant vector-scalar interactive message passing",
+  "yil": 2024,
+  "cites": 116,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Equivariant geometric GNN with MD benchmarks",
+  "alinti": "Our proposed ViSNet outperforms state-of-the-art approaches on multiple MD benchmarks, including MD17, revised MD17 and MD22"
+ },
+ {
+  "id": "arXiv:1704.01212",
+  "baslik": "Neural Message Passing for Quantum Chemistry",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Foundational MPNN framework for molecular property prediction",
+  "alinti": "we reformulate existing models into a single common framework we call Message Passing Neural Networks (MPNNs)"
+ },
+ {
+  "id": "doi:10.1093/bib/bbae474",
+  "baslik": "DGCL: dual-graph neural networks contrastive learning for molecular property prediction",
+  "yil": 2024,
+  "cites": 31,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Contrastive pretraining of GNNs for molecules",
+  "alinti": "DGCL aggregates and enhances features of the same molecule by the Graph Isomorphism Network and the Graph Attention Network"
+ },
+ {
+  "id": "doi:10.1039/d4dd00088a",
+  "baslik": "Uncertainty quantification for molecular property predictions with graph neural architecture search",
+  "yil": 2024,
+  "cites": 37,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Uncertainty quantification via architecture search; abstract only",
+  "alinti": "AutoGNNUQ employs neural architecture search to enhance uncertainty quantification for molecular property prediction via graph neural networks."
+ },
+ {
+  "id": "arXiv:2106.05234",
+  "baslik": "Do Transformers Really Perform Bad for Graph Representation?",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Graph transformer with structural encodings; central",
+  "alinti": "we propose several simple yet effective structural encoding methods to help Graphormer better model graph-structured data"
+ },
+ {
+  "id": "doi:10.1609/aaai.v36i4.20377",
+  "baslik": "GeomGCL: Geometric Graph Contrastive Learning for Molecular Property Prediction",
+  "yil": 2022,
+  "cites": 102,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Geometry-aware contrastive pretraining for molecules",
+  "alinti": "we propose a novel graph contrastive learning method utilizing the geometry of the molecule across 2D and 3D views, which is named GeomGCL."
+ },
+ {
+  "id": "arXiv:2005.00687",
+  "baslik": "Open Graph Benchmark: Datasets for Machine Learning on Graphs",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "General graph benchmark, includes molecular graphs",
+  "alinti": "Our experiments suggest that OGB datasets present significant challenges of scalability to large-scale graphs and out-of-distribution generalization under realistic data splits"
+ },
+ {
+  "id": "doi:10.1002/qub2.23",
+  "baslik": "Advanced deep learning methods for molecular property prediction",
+  "yil": 2023,
+  "cites": 27,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Broad review covering GNNs, transformers, pretraining",
+  "alinti": "In this review, we summarize molecular representations and commonly used datasets in molecular property prediction models and present advanced deep learning methods for molecular property prediction"
+ },
+ {
+  "id": "doi:10.1145/3511808.3557085",
+  "baslik": "Graph Neural Networks Pretraining Through Inherent Supervision for Molecular Property Prediction",
+  "yil": 2022,
+  "cites": 6,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Self-supervised GNN pretraining for molecules; title only",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2209.05582",
+  "baslik": "Graph Neural Networks for Molecules",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Review of GNNs for molecules, including self-supervision",
+  "alinti": "GNNs rely on message-passing operations, a generic yet powerful framework, to update node features iteratively"
+ },
+ {
+  "id": "doi:10.1021/acs.jcim.9b00975",
+  "baslik": "Evaluating Scalable Uncertainty Estimation Methods for Deep Learning-Based Molecular Property Prediction",
+  "yil": 2020,
+  "cites": 263,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Scalable uncertainty estimation for molecular GNNs",
+  "alinti": "Therefore, establishing when and to what extent a prediction can be considered reliable is just as important as outputting accurate predictions, especially when out-of-domain molecules are targeted."
+ },
+ {
+  "id": "doi:10.3390/ijms25126583",
+  "baslik": "Composite Graph Neural Networks for Molecular Property Prediction",
+  "yil": 2024,
+  "cites": 14,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Heterogeneous-graph GNN architecture for molecules",
+  "alinti": "Composite graph neural networks process heterogeneous graphs with multiple-state-updating networks, each one dedicated to a particular node type"
+ },
+ {
+  "id": "arXiv:2008.12187",
+  "baslik": "Graph Neural Network Architecture Search for Molecular Property Prediction",
+  "yil": 2020,
+  "cites": 35,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Neural architecture search for molecular GNNs",
+  "alinti": "To that end, we develop an NAS approach to automate the design and development of GNNs for molecular property prediction."
+ },
+ {
+  "id": "doi:10.1038/s42004-023-00825-5",
+  "baslik": "Hierarchical Molecular Graph Self-Supervised Learning for property prediction",
+  "yil": 2023,
+  "cites": 174,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Hierarchical motif-based self-supervised pretraining",
+  "alinti": "First, we present a Hierarchical Molecular Graph Neural Network (HMGNN), which encodes motif structure and extracts node-motif-graph hierarchical molecular representations."
+ },
+ {
+  "id": "doi:10.1002/bkcs.12468",
+  "baslik": "A benchmark study of machine learning methods for molecular electronic transition: Tree‐based ensemble learning versus graph neural network",
+  "yil": 2022,
+  "cites": 13,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Tree ensembles versus GNNs for electronic properties",
+  "alinti": "From our benchmark, DimeNet++ was identified as the most accurate model to predict electronic transition properties."
+ },
+ {
+  "id": "doi:10.1038/s41524-024-01316-4",
+  "baslik": "Structure-based out-of-distribution (OOD) materials property prediction: a benchmark study",
+  "yil": 2024,
+  "cites": 75,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "OOD benchmark, materials rather than molecules",
+  "alinti": "Our extensive experiments show that current state-of-the-art GNN algorithms significantly underperform for the OOD property prediction tasks on average compared"
+ },
+ {
+  "id": "arXiv:1706.08566",
+  "baslik": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Foundational continuous-filter geometric model for molecules",
+  "alinti": "We apply those layers in SchNet: a novel deep learning architecture modeling quantum interactions in molecules"
+ },
+ {
+  "id": "doi:10.26434/chemrxiv.8214422.v1",
+  "baslik": "Path-Augmented Graph Transformer Network",
+  "yil": 2019,
+  "cites": 53,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Path-based graph transformer evaluated on MoleculeNet-style data",
+  "alinti": "We compare our PAGTN model against the GCN model and show that our model consistently outperforms GCNs on molecular property prediction datasets including quantum chemistry (QM7, QM8, QM9)"
+ },
+ {
+  "id": "doi:10.1093/bioinformatics/btae574",
+  "baslik": "Chain-aware graph neural networks for molecular property prediction",
+  "yil": 2024,
+  "cites": 18,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Expressivity limits via chain structures and feature squashing",
+  "alinti": "Such topological characteristics can induce feature squashing during message passing and thus impair the expressivity of conventional GNNs"
+ },
+ {
+  "id": "doi:10.1016/j.patter.2022.100628",
+  "baslik": "Quantitative evaluation of explainable graph neural networks for molecular property prediction",
+  "yil": 2022,
+  "cites": 81,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; explainability of molecular GNNs",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1186/s13321-024-00846-9",
+  "baslik": "MolPROP: Molecular Property prediction with multimodal language and graph fusion",
+  "yil": 2024,
+  "cites": 62,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Language-model and GNN fusion; scaffold-split benchmarks",
+  "alinti": "We benchmark the MolPROP suite of models on seven scaffold split MoleculeNet datasets and compare with state-of-the-art architectures"
+ },
+ {
+  "id": "arXiv:1603.00856",
+  "baslik": "Molecular Graph Convolutions: Moving Beyond Fingerprints",
+  "yil": 2016,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Foundational molecular graph convolution paper",
+  "alinti": "Although graph convolutions do not outperform all fingerprint-based methods, they (along with other graph-based methods) represent a new paradigm in ligand-based virtual screening"
+ },
+ {
+  "id": "doi:10.26434/chemrxiv-2022-mfq52-v2",
+  "baslik": "Exposing the limitations of molecular machine learning with activity cliffs.",
+  "yil": 2022,
+  "cites": 320,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Large benchmark of activity-cliff prediction; baseline comparisons.",
+  "alinti": "We benchmarked a total of 720 machine and deep learning models on curated bioactivity data from 30 macromolecular targets for their performance on activity cliff compounds."
+ },
+ {
+  "id": "doi:10.1021/acs.jcim.5c00577",
+  "baslik": "Effective and Explainable Molecular Property Prediction by Chain-of-Thought Enabled Large Language Models and Multi-Modal Molecular Information Fusion",
+  "yil": 2025,
+  "cites": 16,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM chain-of-thought with multimodal molecular fusion; title only",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1810.02244",
+  "baslik": "Weisfeiler and Leman Go Neural: Higher-order Graph Neural Networks",
+  "yil": 2018,
+  "cites": 879,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "",
+  "alinti": "We show that GNNs have the same expressiveness as the $1$-WL in terms of distinguishing non-isomorphic (sub-)graphs."
+ },
+ {
+  "id": "doi:10.1021/acs.jcim.3c01774",
+  "baslik": "Real-World Molecular Out-Of-Distribution: Specification and Investigation",
+  "yil": 2023,
+  "cites": 66,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "",
+  "alinti": "We find that these shifts can cause performance to drop by up to 60% and uncertainty calibration by up to 40%."
+ },
+ {
+  "id": "doi:10.26434/chemrxiv.12609899.v1",
+  "baslik": "The Photoswitch Dataset: A Molecular Machine Learning Benchmark for the Advancement of Synthetic Chemistry",
+  "yil": 2020,
+  "cites": 6,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "",
+  "alinti": "Focussing directly on the needs of the synthetic chemist, we introduce the Photoswitch Dataset, a new benchmark for molecular machine learning"
+ },
+ {
+  "id": "doi:10.1039/d3nr06468a",
+  "baslik": "Accelerating the prediction of inorganic surfaces with machine learning interatomic potentials",
+  "yil": 2024,
+  "cites": 23,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Interatomic potentials for surfaces; materials, not molecules",
+  "alinti": "This minireview summarizes recent applications of machine learning interatomic potentials for predicting the stability and structures of solid-state surfaces"
+ },
+ {
+  "id": "arXiv:2401.01626",
+  "baslik": "On the Expressive Power of Graph Neural Networks",
+  "yil": 2022,
+  "cites": 21,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "General GNN theory, not molecule-specific.",
+  "alinti": "a line of recent work has instead sought to find GNN architectures that have desirable theoretical properties - by studying their expressive power and designing architectures that maximize this expressiveness."
+ },
+ {
+  "id": "doi:10.29363/nanoge.ecocat.2020.018",
+  "baslik": "The Open Catalyst 2020 (OC20) Dataset and Community Challenges",
+  "yil": 2020,
+  "cites": 749,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Title only; catalysis dataset, marginal for molecules",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1103/physrevmaterials.4.063801",
+  "baslik": "Developing an improved crystal graph convolutional neural network framework for accelerated materials discovery",
+  "yil": 2020,
+  "cites": 280,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Crystal GNN for materials property prediction; title only",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-981-97-0316-6_4",
+  "baslik": "MolBench: A Benchmark Of AI Models For Molecular Property Prediction",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Benchmark for molecular property prediction models",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1186/s13321-022-00676-7",
+  "baslik": "Large-scale prediction of activity cliffs using machine and deep learning methods of increasing complexity",
+  "yil": 2023,
+  "cites": 36,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Large-scale activity-cliff prediction across ML and DL methods.",
+  "alinti": "Different from typical compound classification tasks, AC predictions must be carried out at the level of compound pairs representing ACs or nonACs."
+ },
+ {
+  "id": "arXiv:1810.00826",
+  "baslik": "How Powerful are Graph Neural Networks?",
+  "yil": 2018,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Foundational GIN expressivity theory; general graphs, not molecules",
+  "alinti": "Our results characterize the discriminative power of popular GNN variants, such as Graph Convolutional Networks and GraphSAGE, and show that they cannot learn to distinguish certain simple graph structures."
+ },
+ {
+  "id": "doi:10.1038/s41467-024-51886-6",
+  "baslik": "E(n)-Equivariant cartesian tensor message passing interatomic potential",
+  "yil": 2024,
+  "cites": 45,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; equivariant tensor message passing potential.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1063/5.0133528",
+  "baslik": "Materials property prediction with uncertainty quantification: A benchmark study",
+  "yil": 2023,
+  "cites": 42,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Materials (crystal) GNNs rather than molecules; UQ benchmark",
+  "alinti": "Here, we conduct a comprehensive evaluation on the UQ methods for graph neural network-based materials property prediction and evaluate how they truly reflect the uncertainty that we want"
+ },
+ {
+  "id": "doi:10.52202/075280-0072",
+  "baslik": "Uncovering Neural Scaling Laws in Molecular Representation Learning",
+  "yil": 2023,
+  "cites": 3,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Neural scaling laws for molecular representation learning; title only",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1038/s41597-022-01288-4",
+  "baslik": "GEOM, energy-annotated molecular conformations for property prediction and molecular generation",
+  "yil": 2022,
+  "cites": 254,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Key conformer-ensemble benchmark dataset for molecules",
+  "alinti": "The Geometric Ensemble Of Molecules (GEOM) dataset contains conformers for 133,000 species from QM9, and 317,000 species with experimental data related to biophysics, physiology, and physical chemistry."
+ },
+ {
+  "id": "arXiv:1905.12265",
+  "baslik": "Strategies for Pre-training Graph Neural Networks",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Foundational GNN pretraining strategy; not molecule-specific.",
+  "alinti": "An effective approach to this challenge is to pre-train a model on related tasks where data is abundant, and then fine-tune it on a downstream task of interest."
+ },
+ {
+  "id": "doi:10.26434/chemrxiv-2022-jgd2t",
+  "baslik": "Revising Message Passing Graph Neural Networks for Catalyst Design",
+  "yil": 2022,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Catalyst (OC20) application rather than drug-like molecules.",
+  "alinti": "We present several graph neural networks (GNNs) in our work, including convolutional and message passing architectures with physically informed node and edge attributes for atomistic systems."
+ },
+ {
+  "id": "doi:10.2139/ssrn.5028079",
+  "baslik": "Graphormer Revisited: A Detailed Analysis of Normalized Positional and Spatial Encoding Fields",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Graphormer graph transformer encoding analysis; central to S4",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s42235-024-00610-7",
+  "baslik": "Dual Self-attention Fusion Message Neural Network For Virtual Screening In Drug Discovery By Molecular Property Prediction",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Attention-based message network for molecular property prediction; title only",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.engappai.2023.106180",
+  "baslik": "Uncertainty quantification in molecular property prediction through spherical mixture density networks",
+  "yil": 2023,
+  "cites": 11,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; uncertainty quantification for molecular properties.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1021/acs.jpca.0c05969",
+  "baslik": "Machine Learning Prediction of Nine Molecular Properties Based on the SMILES Representation of the QM9 Quantum-Chemistry Dataset",
+  "yil": 2020,
+  "cites": 116,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "QM9 property prediction from SMILES; may not be GNN",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1039/d2dd00008c",
+  "baslik": "NewtonNet: A Newtonian Message Passing Network For Deep Learning Of Interatomic Potentials And Forces",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Title only; Newtonian message passing for interatomic potentials and forces.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.2139/ssrn.4990871",
+  "baslik": "3D Molecular Pretraining via Localized Geometric Generation",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "3D geometric self-supervised pretraining for molecules; central.",
+  "alinti": "Inspired by masked modeling, LEGO perturbs tetrahedral local structures and learns to reconstruct them in a self-supervised manner."
+ },
+ {
+  "id": "doi:10.1093/bib/bbad398",
+  "baslik": "FG-BERT: a generalized and self-supervised functional group-based molecular representation learning framework for properties prediction",
+  "yil": 2023,
+  "cites": 45,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Self-supervised molecular pretraining with interpretable attention",
+  "alinti": "we propose a self-supervised pretraining deep learning (DL) framework, called functional group bidirectional encoder representations from transformers (FG-BERT)"
+ },
+ {
+  "id": "arXiv:1609.02907",
+  "baslik": "Semi-Supervised Classification with Graph Convolutional Networks",
+  "yil": 2016,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Foundational GCN architecture; not molecule-specific but central.",
+  "alinti": "We motivate the choice of our convolutional architecture via a localized first-order approximation of spectral graph convolutions."
+ },
+ {
+  "id": "doi:10.3390/molecules28165982",
+  "baslik": "Employing Molecular Conformations for Ligand-Based Virtual Screening with Equivariant Graph Neural Network and Deep Multiple Instance Learning",
+  "yil": 2023,
+  "cites": 19,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Equivariant GNN on conformers for virtual screening; new benchmark.",
+  "alinti": "However, the 3D conformation of a molecule largely influences its bioactivity and physical properties, and has rarely been considered in previous deep learning-based LBVS methods."
+ },
+ {
+  "id": "doi:10.1021/acs.jcim.4c00747",
+  "baslik": "Transformers for Molecular Property Prediction: Lessons Learned from the Past Five Years",
+  "yil": 2024,
+  "cites": 68,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Transformer benchmarking review for molecular property prediction; central.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1002/adma.201902765",
+  "baslik": "Machine Learning Interatomic Potentials as Emerging Tools for Materials Science",
+  "yil": 2019,
+  "cites": 1058,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Materials-science review of ML interatomic potentials.",
+  "alinti": "ML‐based interatomic potentials give access to atomistic simulations that reach similar accuracy levels but are orders of magnitude faster."
+ },
+ {
+  "id": "doi:10.1515/ntrev-2025-0200",
+  "baslik": "Deep learning in-depth analysis of crystal graph convolutional neural networks: A new era in materials discovery and its applications",
+  "yil": 2025,
+  "cites": 12,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Crystal-focused review; includes benchmarking guidance.",
+  "alinti": "It emphasizes benchmarking protocols, best practices, and forward-looking strategies to bridge traditional physics-based methods and modern data-driven approaches."
+ },
+ {
+  "id": "arXiv:2106.07273",
+  "baslik": "Flexible dual-branched message passing neural network for quantum mechanical property prediction with molecular conformation",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Dual-branch MPNN using conformations for quantum properties.",
+  "alinti": "Message passing neural network provides an effective framework for capturing molecular geometric features with the perspective of a molecule as a graph."
+ },
+ {
+  "id": "doi:10.1038/s41597-023-02690-2",
+  "baslik": "MultiXC-QM9: Large dataset of molecular and reaction energies from multi-level quantum chemical methods",
+  "yil": 2023,
+  "cites": 30,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "QM9 extension; benchmark dataset resource.",
+  "alinti": "we introduce a new dataset with QM9 molecule energies estimated with 76 different DFT functionals and three different basis sets"
+ },
+ {
+  "id": "doi:10.1186/s13321-025-00989-3",
+  "baslik": "Enhancing molecular property prediction with quantized GNN models",
+  "yil": 2025,
+  "cites": 17,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; quantized GNNs for molecular property prediction.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.26434/chemrxiv-2022-jjm0j-v3",
+  "baslik": "Uni-Mol: A Universal 3D Molecular Representation Learning Framework",
+  "yil": 2022,
+  "cites": 24,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "3D equivariant transformer with large-scale molecular pretraining.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.24963/ijcai.2023/760",
+  "baslik": "A Systematic Survey of Chemical Pre-trained Models",
+  "yil": 2023,
+  "cites": 38,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Survey of chemical pretrained models; central to S3.",
+  "alinti": "Deep learning has achieved remarkable success in learning representations for molecules, which is crucial for various biochemical applications, ranging from property prediction to drug design."
+ },
+ {
+  "id": "doi:10.1016/j.commatsci.2021.110314",
+  "baslik": "Transfer learning for materials informatics using crystal graph convolutional neural network",
+  "yil": 2021,
+  "cites": 97,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; transfer learning for crystal GNNs.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s11030-024-11100-7",
+  "baslik": "A multiscale molecular structural neural network for molecular property prediction",
+  "yil": 2025,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; multiscale structural GNN for molecular property prediction.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1021/acs.jcim.0c00502",
+  "baslik": "Uncertainty Quantification Using Neural Networks for Molecular Property Prediction",
+  "yil": 2020,
+  "cites": 316,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "UQ comparison for molecular regression; not GNN-specific",
+  "alinti": "Our experiments show that none of the methods we tested is unequivocally superior to all others, and none produces a particularly reliable ranking of errors across multiple data sets."
+ },
+ {
+  "id": "doi:10.1021/acscatal.1c04408",
+  "baslik": "Correction to “The Open Catalyst 2020 (OC20) Dataset and Community Challenges”",
+  "yil": 2021,
+  "cites": 18,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "OC20 catalysis dataset correction notice; little content.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1021/acs.jcim.3c01468",
+  "baslik": "Molecular Contrastive Pretraining With Collaborative Featurizations",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Contrastive pretraining for molecular GNNs; central to S3.",
+  "alinti": ""
+ }
+]
