@@ -49,6 +49,7 @@ Her iş başlatılırken bekleyen işler bu listeye göre tek tek sınanır; "al
 7. **Regresyon:** kabul testi kalıcıdır.
 
 ## Yapı
+- `KURALLAR.md` — **tüm çalışma kuralları tek yerde** (yetki, kapsam, düzen, deney, dürüstlük, iletişim).
 - `KAYIT.md` — çalgıcı sicili.
 - `ONKAYIT-*.md` — ön kayıtlar.
 - `OLUM-KRITERI.md` — Forge'un kendi ölçütü.
