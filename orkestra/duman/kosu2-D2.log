@@ -1,0 +1,6 @@
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-25 16:50:05,363 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 4072.75it/s]
+[EKSİK] What are the most important works and open problems in fuzzing of network protoc | kesim 2025-06-01 | $0.560 | 1148 s | özet ~3792 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+  çıktı: C:\Users\LENOVO\Projeler\forge\orkestra\duman\kosu2\D2-protokol-fuzzing

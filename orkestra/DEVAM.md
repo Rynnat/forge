@@ -39,7 +39,14 @@ Kullanıcının bilgisayarı yeniden başlatılacağı için iş yarıda kesildi
 
 **D2 "network protocol fuzzing":** Koşu, toplama aşamasında kullanıcı isteğiyle durduruldu; sonuç yok. Kısmi LLM maliyeti (plan + 3 web işçisi, ~$0.22) `logs/maliyet.jsonl` dosyasında.
 
-## Kalan işler
+## 2026-10-25 (ikinci oturum)
+- D2 koşuldu: `duman/kosu2/`, $0.56, 1148 s, EKSİK (openalex, s2). Sonuçlar README "Duman testi"nde.
+- Hız (`9d51ba6`): tekilleştirme 33× (çıktı aynı), OpenCitations eşzamanlı 3, atıf tohumları paralel,
+  okuyucu 8 paralel. Etkisi henüz bir koşuda ölçülmedi.
+- Altın setin kalan 15'i ayrı bir ajana verildi (bu oturum forge-altin'i okumadı).
+- Açık: D2'de alıntılı çalışma 17/30 (D1 26/30); sebebi bakılmadı.
+
+## Kalan işler (ilk oturumdan; 1, 2, 5 bitti)
 1. D2'yi baştan koş: `python -m orkestra batch --sorular duman/sorular.json --out duman/kosu2`. Ya da yalnız D2'yi `run` ile koş.
 2. Duman sonuçlarını (maliyet, süre, funnel) README'nin "Duman testi" bölümüne yaz.
 3. Hız. Süre 24 dk, darboğazlar şunlar:

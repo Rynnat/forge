@@ -74,4 +74,18 @@ token'lar, `cost_usd` = CLI'nin `total_cost_usd`'u, liste fiyatı, teorik). mali
 - `python -m pytest -m live` — her kaynağa 1 küçük gerçek sorgu (kota/bot durumunda sebebiyle `skip`).
 
 ## Duman testi
-(aşağıda)
+Karar değil, çalışıyor mu kontrolü (n=2). Kesim 2025-06-01.
+
+| | D1 GNN-molekül (kosu1) | D2 protokol fuzzing (kosu2) |
+|---|---|---|
+| durum | EKSİK (openalex, arxiv, s2) | EKSİK (openalex, s2) |
+| maliyet | $0.593 | $0.560 (plan .06, web .18, okuyucu .20, final .12) |
+| süre | 1441 s | 1148 s (toplama 357, atıf 213, okuyucu 448) |
+| özet | ~3982 token | ~3792 token |
+| havuz → okuyucu → kart → liste | 2976 → 1200 → 80 → 30 | 4961 → 1200 → 80 → 30 |
+| alıntılı çalışma | 26/30 | 17/30 |
+| funnel dengeli | evet | evet |
+
+D2 eski kodla koştu (okuyucu 4 paralel, hızlandırma commit'i `9d51ba6` öncesi). OpenAlex ve S2
+anahtarsız ikisinde de kullanılamadı. D1'de web başlıklarının %55'i çözülemedi çünkü arXiv 429 ile
+kapalıydı (başlıklar yalnız Crossref'te arandı); D2'de arXiv açıkken çözülemeyen 29/67.
