@@ -13,3 +13,4 @@ cache/
 gapmine.toml
 orkestra.toml
 .pytest_tmp/
+.venv/

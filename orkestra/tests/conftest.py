@@ -15,7 +15,8 @@ from orkestra.records import new_record  # noqa: E402
 def cfg(tmp_path):
     return Config(data_dir=tmp_path / "data", log_dir=tmp_path / "logs", embed_backend="tfidf",
                   reader_batch=10, reader_parallel=2, chef_cards=20, final_n=8, snowball_seeds=2,
-                  web_workers=1, arxiv_ozet_k=0)  # arxiv_ozet_k=0: testler ağsız
+                  web_workers=1, arxiv_ozet_k=0,  # arxiv_ozet_k=0: testler ağsız
+                  arxiv_yerel_db=tmp_path / "yerel_yok.sqlite")  # gerçek yerel dizine dokunulmaz
 
 
 def rec(title, src="arxiv", **kw):

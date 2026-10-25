@@ -59,6 +59,14 @@ class Config:
     arxiv_majority_max: int = 100
     arxiv_or_max: int = 200
     arxiv_enough: int = 30  # bir kademe bu kadar toplam verirse sonraki kademeye geçilmez
+    # Yerel arXiv dizini (v1): SQLite FTS5, `python -m orkestra.arxiv_yerel_kur` ile kurulur.
+    # Dosya varsa arXiv araması + önbaskı özet yedeği + başlık çözümleme yereldir; canlı API
+    # yalnız by_ids (verilen id listesi) için kalır. arxiv_canli_zorla=True → v0 davranışı.
+    arxiv_yerel_db: Path = Path(r"C:\Users\LENOVO\Projeler\forge-veri\arxiv_yerel.sqlite")
+    arxiv_parquet_dir: Path = Path(r"C:\Users\LENOVO\Projeler\forge-veri\arxiv")
+    arxiv_canli_zorla: bool = False
+    # Yerel önbaskı özet yedeğinde tavan (0 = tavansız; canlıdaki arxiv_ozet_k=150 istek sınırıydı).
+    arxiv_yerel_ozet_tavan: int = 0
     crossref_rows: int = 100
     dblp_limit: int = 200
     openalex_per_page: int = 100

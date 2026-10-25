@@ -17,7 +17,7 @@ from orkestra.http import BotBlocked, Http, QuotaExhausted, RequestFailed
 from orkestra.llm import LLM, Ledger
 from orkestra.records import _conflict, cutoff_filter, dedup, earliest, fmt_date, public_id
 from orkestra.report import write_outputs
-from orkestra.sources import arxiv, crossref, dblp, openalex, opencitations, s2
+from orkestra.sources import arxiv, arxiv_yerel, crossref, dblp, openalex, opencitations, s2
 
 FATAL = (QuotaExhausted, BotBlocked)
 
@@ -26,7 +26,8 @@ class Ctx:
     def __init__(self, cfg: Config, soru: str, kesim: str, out_dir: Path, llm=None, http=None,
                  searchers: dict[str, Callable] | None = None, resolver: Callable | None = None,
                  enricher: Callable | None = None, snowballer: Callable | None = None,
-                 web_runner: Callable | None = None, preprinter: Callable | None = None):
+                 web_runner: Callable | None = None, preprinter: Callable | None = None,
+                 arxiv_dizin=None):
         self.cfg = cfg
         self.soru = soru
         self.kesim = kesim
@@ -40,10 +41,24 @@ class Ctx:
         self.funnel = Funnel()
         self.times: dict[str, float] = {}
         self.budget = openalex.Budget(cfg)
+        # Yerel arXiv dizini (v1): varsa arama + önbaskı özeti + başlık çözümleme yerel; canlı
+        # arXiv yalnız by_ids için. Testler `arxiv_dizin` ile sahte/küçük dizin verebilir.
+        self.arxiv_dizin = arxiv_dizin if arxiv_dizin is not None else arxiv_yerel.ac(cfg)
+        if self.arxiv_dizin is not None and "arxiv" in cfg.sources:
+            self.funnel.source("arxiv", OK, **arxiv_yerel.durum(self.arxiv_dizin))
+            if not self.arxiv_dizin.covers(self.cut):
+                self.funnel.source("arxiv", EKSIK, self.arxiv_dizin.uncovered_reason(self.cut))
         self.searchers = searchers if searchers is not None else default_searchers(self)
-        self.resolver = resolver or (lambda items, label: web.resolve(self.http, cfg, items, self.funnel, label))
+        titles_fn = ((lambda http, ts: arxiv_yerel.by_titles(self.arxiv_dizin, ts))
+                     if self.arxiv_dizin is not None else None)
+        self.resolver = resolver or (lambda items, label: web.resolve(self.http, cfg, items, self.funnel, label,
+                                                                      titles_fn=titles_fn))
         self.enricher = enricher or (lambda keys: s2.batch(self.http, keys))
-        self.preprinter = preprinter or (lambda titles: arxiv.by_titles(self.http, titles))
+        self.preprint_yerel = preprinter is None and self.arxiv_dizin is not None
+        if preprinter is None:
+            preprinter = ((lambda titles: arxiv_yerel.by_titles(self.arxiv_dizin, titles)) if self.preprint_yerel
+                          else (lambda titles: arxiv.by_titles(self.http, titles)))
+        self.preprinter = preprinter
         self.oc = snowballer or OCClient(self.http)
         self.web_runner = web_runner or (lambda plan: web.run_workers(self.llm, cfg, soru, kesim, plan, self.funnel))
 
@@ -66,8 +81,10 @@ class OCClient:
 
 def default_searchers(ctx: Ctx) -> dict[str, Callable]:
     cfg, http = ctx.cfg, ctx.http
+    dz = getattr(ctx, "arxiv_dizin", None)
     return {
-        "arxiv": lambda q: arxiv.search(http, q, ctx.cut, cfg, ctx.funnel),
+        "arxiv": ((lambda q: arxiv_yerel.search(dz, q, ctx.cut, cfg, ctx.funnel)) if dz is not None
+                  else (lambda q: arxiv.search(http, q, ctx.cut, cfg, ctx.funnel))),
         "crossref": lambda q: crossref.search(http, q, ctx.cut, cfg),
         "dblp": lambda q: dblp.search(http, q, ctx.cut, cfg),
         "openalex": lambda q: openalex.search(http, q, ctx.cut, cfg, ctx.budget),
@@ -163,16 +180,21 @@ def preprint_abstracts(ctx: Ctx, to_read: list[dict], pool_ids: set[str] | None 
     Kesim anlamı değişmez: yalnız zaten geçmiş kayıtlara dokunulur ve bulunan önbaskının tarihi
     `dates`e eklenir; `before_cutoff` 'en az biri kesin önce' dediğinden, kesim SONRASI tarihli
     bir önbaskı geçen çalışmayı düşüremez, kesim öncesi olan zaten geçmiştir.
-    Huni bilgisi: ozet_arxiv.{aday,denendi,bulundu,bulunamadi,atlandi_*}."""
+    Huni bilgisi: ozet_arxiv.{aday,denendi,bulundu,bulunamadi,atlandi_*}.
+    v1 yerel dizin (ctx.preprint_yerel): istek yok → tavan `arxiv_yerel_ozet_tavan` (0 = tavansız),
+    canlı kota durumu bakılmaz. `arxiv_ozet_k = 0` her iki kipte de özelliği kapatır."""
     f, cfg = ctx.funnel, ctx.cfg
     need = [r for r in to_read if not (r.get("abstract") or "").strip() and r.get("title")]
     if not need:
         return
     f.bump("ozet_arxiv.aday", len(need))
+    local = bool(getattr(ctx, "preprint_yerel", False))
     k = max(0, cfg.arxiv_ozet_k)
     if k == 0 or "arxiv" not in cfg.sources:
         f.bump("ozet_arxiv.atlandi_kapali", len(need))
         return
+    if local:
+        k = max(0, cfg.arxiv_yerel_ozet_tavan) or len(need)
     if len(need) > k:
         f.bump("ozet_arxiv.atlandi_tavan", len(need) - k)
     todo = need[:k]
@@ -180,7 +202,7 @@ def preprint_abstracts(ctx: Ctx, to_read: list[dict], pool_ids: set[str] | None 
     found = tried = 0
     skipped_quota = 0
     stop = ""
-    ex = getattr(ctx.http, "exhausted", None) or {}
+    ex = {} if local else (getattr(ctx.http, "exhausted", None) or {})
     if "arxiv" in ex:
         stop = f"arXiv bu koşuda zaten tükendi: {ex['arxiv']}"
     errors = 0
@@ -224,7 +246,8 @@ def preprint_abstracts(ctx: Ctx, to_read: list[dict], pool_ids: set[str] | None 
         f.bump("ozet_arxiv.atlandi_kota", skipped_quota)
         f.source("ozet_arxiv", EKSIK, stop)
     else:
-        f.source("ozet_arxiv", OK, istek=(tried + 5) // 6, kayit=found, istenen=len(todo))
+        f.source("ozet_arxiv", OK, istek=0 if local else (tried + 5) // 6, kayit=found, istenen=len(todo),
+                 **({"mod": "yerel"} if local else {}))
 
 
 def records_before(dates: list, cut) -> bool | None:

@@ -1,0 +1,27 @@
+  train-00000-of-00011.parquet: toplam 292302 kayıt, 58 s
+  train-00001-of-00011.parquet: toplam 584605 kayıt, 122 s
+  train-00002-of-00011.parquet: toplam 876903 kayıt, 192 s
+  train-00003-of-00011.parquet: toplam 1169200 kayıt, 278 s
+  train-00004-of-00011.parquet: toplam 1461503 kayıt, 343 s
+  train-00005-of-00011.parquet: toplam 1753806 kayıt, 401 s
+  train-00006-of-00011.parquet: toplam 2046108 kayıt, 461 s
+  train-00007-of-00011.parquet: toplam 2338404 kayıt, 522 s
+  train-00008-of-00011.parquet: toplam 2630706 kayıt, 563 s
+  train-00009-of-00011.parquet: toplam 2922996 kayıt, 600 s
+  train-00010-of-00011.parquet: toplam 3215242 kayıt, 633 s
+{
+ "kayit_sayisi": "3215242",
+ "atlanan_bos": "0",
+ "tekrar_id": "93",
+ "en_yeni_v1": "2026-10-15",
+ "en_yeni_update_date": "2026-10-16",
+ "kurulum_tarihi": "2026-10-25T19:10:07",
+ "kurulum_s": "659.4",
+ "satir_s": "632.5",
+ "dizin_s": "8.4",
+ "kaynak": "librarian-bots/arxiv-metadata-snapshot",
+ "kaynak_dosyalar": "[\"train-00000-of-00011.parquet\", \"train-00001-of-00011.parquet\", \"train-00002-of-00011.parquet\", \"train-00003-of-00011.parquet\", \"train-00004-of-00011.parquet\", \"train-00005-of-00011.parquet\", \"train-00006-of-00011.parquet\", \"train-00007-of-00011.parquet\", \"train-00008-of-00011.parquet\", \"train-00009-of-00011.parquet\", \"train-00010-of-00011.parquet\"]",
+ "tokenizer": "porter unicode61",
+ "sema_surum": "2",
+ "boyut_mb": "5158"
+}

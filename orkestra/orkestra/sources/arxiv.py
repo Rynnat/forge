@@ -50,23 +50,36 @@ def date_clause(cut: dt.date) -> str:
     return f"submittedDate:[199101010000 TO {last:%Y%m%d}2359]"
 
 
-def tier_queries(q: str) -> list[tuple[str, str]]:
-    """[(kademe, search_query_without_date)]"""
+def tier_groups(q: str) -> list[tuple[str, list[tuple[str, ...]]]]:
+    """[(kademe, [AND'lenen terim grubu, ...])] — grupların OR'u. Canlı ve yerel arama
+    (sources/arxiv_yerel.py) aynı kademe/kombinasyon seçimini buradan alır."""
     ts = terms(q)
     if not ts:
         return []
-    out = [("AND", " AND ".join(_t(t) for t in ts))]
+    out = [("AND", [tuple(ts)])]
     n = len(ts)
     if n >= 3:
         k = max(2, math.ceil(n * 0.6))
         if k < n:
             combos = list(itertools.combinations(ts, k))
             if len(combos) > 12:  # kayan pencere: ardışık k-terim grupları + baş/son karışımı
-                combos = [tuple(ts[i:i + k]) for i in range(n - k + 1)] + \
-                         [tuple(ts[:k - 1] + [ts[-1]])]
-            out.append(("MAJ", " OR ".join("(" + " AND ".join(_t(t) for t in c) + ")" for c in combos)))
+                combos = [tuple(ts[i:i + k]) for i in range(n - k + 1)] +                          [tuple(ts[:k - 1] + [ts[-1]])]
+            out.append(("MAJ", combos))
     if n >= 2:
-        out.append(("OR", " OR ".join(_t(t) for t in ts)))
+        out.append(("OR", [(t,) for t in ts]))
+    return out
+
+
+def tier_queries(q: str) -> list[tuple[str, str]]:
+    """[(kademe, search_query_without_date)]"""
+    out = []
+    for tier, groups in tier_groups(q):
+        if tier == "AND":
+            out.append((tier, " AND ".join(_t(t) for t in groups[0])))
+        elif tier == "MAJ":
+            out.append((tier, " OR ".join("(" + " AND ".join(_t(t) for t in c) + ")" for c in groups)))
+        else:
+            out.append((tier, " OR ".join(_t(g[0]) for g in groups)))
     return out
 
 

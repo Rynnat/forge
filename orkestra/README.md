@@ -40,6 +40,16 @@ temkinli token tahmini `ceil(karakter/3)` ≤ 4000; aşarsa alıntı/gerekçe k�
 `funnel.json`, `kartlar.json` (şefin gördüğü 80 kart), `dusenler_on_siralama.jsonl` (okuyucuya
 hiç gitmeyen adaylar, adıyla).
 
+## v1: yerel arXiv dizini
+- Kurulum: `python -m orkestra.arxiv_yerel_kur` → HF `librarian-bots/arxiv-metadata-snapshot`
+  parquet'leri (`arxiv_parquet_dir`) → SQLite FTS5 `arxiv_yerel_db` (tek iş parçacığı, ~20 dk, ~6 GB).
+- Dosya varsa arXiv araması (`sources/arxiv_yerel.py`, aynı kademeler/sayaçlar), önbaskı özet yedeği
+  (tavansız; `arxiv_yerel_ozet_tavan`) ve şef/web başlık çözümlemesi yereldir. Canlı arXiv yalnız
+  `by_ids`. `arxiv_canli_zorla = true` → v0 davranışı.
+- Kesim SQL'de (`v1_tarih < kesim`). Kesim anlık görüntünün en yeni v1 gününden sonraysa arXiv
+  EKSİK ("yerel dizin kesimi kapsamıyor"). Kaynak satırında `mod=yerel`, anlık tarih, kayıt sayısı.
+- Eşdeğerlik ölçümü: `gelistirme/ESDEGERLIK-arxiv-yerel.md`.
+
 ## Dürüst durum
 - Her aşama `giren = çıkan + Σ düşen(sebep)`; tutmazsa `UNACCOUNTED` yazılır ve `funnel_dengeli=false`.
 - Kaynak durumu: `OK` / `EKSİK` / `KAPALI`. EKSİK yapışkandır; bir kaynak EKSİK ise koşu `EKSİK`.

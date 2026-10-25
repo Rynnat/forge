@@ -75,8 +75,10 @@ def _best(title: str, cands: list[dict]) -> tuple[dict | None, float]:
     return best, bs
 
 
-def resolve(http, cfg, items: list[dict], funnel, label: str) -> tuple[list[dict], dict[str, int]]:
-    """items: [{baslik, yil, arxiv, doi, koken}] → (kayıtlar, düşen sayaçları)."""
+def resolve(http, cfg, items: list[dict], funnel, label: str,
+            titles_fn=None) -> tuple[list[dict], dict[str, int]]:
+    """items: [{baslik, yil, arxiv, doi, koken}] → (kayıtlar, düşen sayaçları).
+    titles_fn(http, başlıklar): arXiv başlık araması (v1: yerel dizin); yoksa canlı by_titles."""
     out: list[dict] = []
     drop = {"cozulemedi": 0, "kaynak_hatasi": 0}
     seen: set[str] = set()
@@ -117,7 +119,7 @@ def resolve(http, cfg, items: list[dict], funnel, label: str) -> tuple[list[dict
     # 2) arXiv başlık araması
     still = []
     try:
-        cands = arxiv.by_titles(http, [it["baslik"] for it in pending]) if pending else []
+        cands = (titles_fn or arxiv.by_titles)(http, [it["baslik"] for it in pending]) if pending else []
     except (QuotaExhausted, RequestFailed, BotBlocked, ValueError):
         funnel.error(f"{label}:arxiv_title")
         cands = []
