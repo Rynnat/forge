@@ -51,3 +51,12 @@ Geniş kapsamlı bir literatür araştırmasında Forge orkestrası (Opus şef +
 
 ## Altın set hash
 (Altın set oluşturulunca buraya eklenecek.)
+
+## Açıklama eki — 2026-10-25 (hiçbir deney koşusundan ve altın set görülmeden ÖNCE)
+Puanlayıcı yazılırken iki belirsizlik çıktı. Eşikler değişmedi; yalnız okunuşları sabitlendi.
+1. **Sadakat eşiği:** bağlayıcı ölçüt sayıdır: **≥ 28/30 destekleniyor**. Parantezdeki Wilson değeri
+   betimseldir: z = 1,96 ile 28/30 → 0,787 (≈ 0,79). Wilson alt sınırı raporlanır ama ayrı bir eşik değildir.
+   Kontrol edilemeyen iddia "desteklenmiyor" sayılır.
+2. **Eşleme sırası:** önce arXiv id, sonra DOI, sonra başlık (≥ 0,90). Başlık eşleşmesi, sayı / roma rakamı /
+   farklı arXiv id çakışmasında reddedilir ("Part I" ≠ "Part II"). Her altın ve her liste öğesi en çok bir kez eşleşir.
+   Altını boş soru eşli istatistikten çıkarılır; işaret testinde eşitlik = fark tam 0.
