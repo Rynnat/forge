@@ -30,8 +30,13 @@ def altin_yukle(yol) -> list[dict]:
     veri = _oku(yol)
     if isinstance(veri, dict):  # {"calismalar": [...]} gibi sarmalayıcıyı da kabul et
         veri = veri.get("calismalar") or veri.get("altin") or []
-    return [{"arxiv_id": g.get("arxiv_id"), "doi": g.get("doi"), "baslik": g.get("baslik") or g.get("title")}
-            for g in veri]
+    return [altin_kayit(g) for g in veri]
+
+
+def altin_kayit(g: dict) -> dict:
+    """Tek altın öğesi. forge-altin `arxiv` anahtarını kullanır; `arxiv_id` de kabul edilir."""
+    return {"arxiv_id": g.get("arxiv_id") or g.get("arxiv"), "doi": g.get("doi"),
+            "baslik": g.get("baslik") or g.get("title")}
 
 
 def sistem_yukle(yol) -> list[dict]:

@@ -87,3 +87,16 @@ def test_esli_ve_cli(tmp_path, capsys):
     assert P._cli(["esli", "--manifest", str(tmp_path / "m.json")]) == 0
     o = json.loads(capsys.readouterr().out)
     assert o["ortalama_fark"] == 0.5 and o["isaret"]["p"] == 0.5
+
+
+def test_forge_altin_bicimi_arxiv_anahtari(tmp_path):
+    # forge-altin/altin.json biçimi: [{id, alan, altin: [{baslik, yil, arxiv, doi}]}] (yapay içerik)
+    import json
+    from orkestra.deney import puanla as P
+    f = tmp_path / "a.json"
+    f.write_text(json.dumps({"altin": [{"baslik": "Zzz Yapay Bir Baslik Ornegi", "yil": 2020, "arxiv": "2001.01234", "doi": None}]}),
+                 encoding="utf-8")
+    g = P.altin_yukle(f)
+    assert g[0]["arxiv_id"] == "2001.01234"
+    r = P.recall_at_k([{"arxiv_id": "2001.01234v2", "doi": None, "baslik": "baska baslik tamamen"}], g)
+    assert (r["recall"] if isinstance(r, dict) else r) == 1.0
