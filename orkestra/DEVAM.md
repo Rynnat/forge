@@ -92,3 +92,13 @@ Kullanıcının bilgisayarı yeniden başlatılacağı için iş yarıda kesildi
   - `araclar/maliyet-sayaci/maliyet_sayaci.py` → `GAPMINE_RAPORLAR` (Windows yolu).
   - Duman testi gapmine'ın `.venv\Scripts\python` yorumlayıcısıyla koşuldu. Linux'ta kendi venv'inizi kurun.
 - **Kopyalanmayan dizinler:** `data/` (HTTP önbelleği sqlite + OpenAlex bütçe sayacı) gitignore'da, yeniden oluşur.
+
+## DENEY KOŞUSU (2026-10-25 gece başladı)
+- Kod donduruldu: etiket `orkestra-v0-donmus` (commit bc0f62b). orkestra/ ve deney/ kodu artık DEĞİŞMEZ.
+- Kullanıcı "başla" dedi (aşamalı: önce B). Anahtarsız koşuluyor (OpenAlex/S2 yok, arXiv önbaskı yedeği açık) — raporda yazılacak.
+- B: `python -m orkestra batch --sorular ../../forge-altin/sorular.json --out deney-sonuc/B` (log: deney-sonuc/B.log).
+  Yarıda kalırsa: tamamlanan soru dizinlerini atlayarak aynı komutla devam (önce batch'in atlama yapıp yapmadığını kontrol et).
+- Sonra sırayla (aynı anda arXiv'e giden iş YOK): A1 (`python -m deney.taban batch --mod a1 --sorular ../../forge-altin/sorular.json --out deney-sonuc/A1 --tavan 3`),
+  A0 (`--mod a0 --out deney-sonuc/A0`), B kararlılık (rastgele 10 soru k=3), sadakat (n=30), puanlama (`orkestra.deney.puanla esli`).
+- Ara durdurma kuralı: ilk 10 soruda ortalama(B − A1) ≤ −10 puan → RED, kalan koşulmaz (tek bakış).
+- Bu oturum `forge-altin/altin.json`'u yalnız puanlayıcı üzerinden okur; içeriğini bağlama dökmez.
