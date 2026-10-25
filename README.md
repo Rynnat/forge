@@ -24,6 +24,21 @@ Kapsam kaydı: kullanıcı kararı, 2026-10-25. Önceki dar kapsam ("akademik ar
 - **Kanıt doğrulanabilir.** Alıntılar kaynakta kodla kontrol edilir.
 - **Genişlik kalite değildir.** Kalite, insan yapımı altın setlerle ölçülür.
 
+## Çalışma düzeni: paralel varsayılan (kullanıcı kararı, 2026-10-25)
+Hedef her zaman en yüksek verim. Bir iş ancak şu iki sebepten biriyle sırada bekler:
+1. **Veri bağımlılığı:** girdisi başka bir işin çıktısı (ör. rapor ← tüm koşular).
+2. **Paylaşılan kaynak çakışması:** aynı anda koşarsa birini bozar.
+
+Bilinen çakışan kaynaklar:
+- **arXiv (IP başına hız sınırı):** `export.arxiv.org` API'si ve `arxiv.org` sayfaları. Claude CLI'nin WebFetch'i de bu bilgisayardan gider.
+  Ölçülen: tek başına 4029 kayıt, başka işlerle aynı anda 790 (D2). Bu kaynağı kullanan işler tek başına koşar.
+- **OpenAlex / S2 anahtarsız havuzları:** IP başına günlük bütçe.
+- **Ölçülen süre:** bir deneyin süresi eşikse, CPU-yoğun işler aynı anda koşmaz.
+- **Abonelik limiti:** paralellik toplam harcamayı değiştirmez ama limite daha hızlı yaklaştırır; >$10 kuralı geçerli.
+
+Çakışma varsa önce yolu değiştir, sonra beklet: ayrı venv, git worktree, ağsız iş, başka kaynaktan veri (ör. arXiv yerine HF anlık görüntüsü).
+Her iş başlatılırken bekleyen işler bu listeye göre tek tek sınanır; "alışkanlık" sıralama sebebi değildir.
+
 ## Kabul protokolü (v3)
 1. **Ön kayıt:** `ONKAYIT-<deney>.md` dosyası (metrik, eşik, n, k, öldürme kriteri) ilk kod ya da koşu commit'inden ÖNCE commit edilir.
 2. **İstatistik:** eşik "Wilson alt sınırı" ya da "eşli fark + işaret testi" biçimindedir. n < 30 ise sonuç "pilot, karar yok" olur. Stokastik sistemde k ≥ 3.
