@@ -203,7 +203,7 @@ class Reader:
         if status != "OK" or not isinstance(obj, dict):
             return {"kaynak": None, "_note": f"kart adımı {status}", "_terms": []}
         terms = [t for t in (obj.get("search_terms") or []) if isinstance(t, str)][:12]
-        ids = [i for i in (obj.get("item_ids") or []) if i in by_id]
+        ids = list(dict.fromkeys(i for i in (obj.get("item_ids") or []) if isinstance(i, str) and i in by_id))
         if obj.get("answerable") and ids and obj.get("answer"):
             cites = [{"id": i, "text": by_id[i]["text"], "quote": by_id[i].get("quote"),
                       "page": by_id[i].get("page"), "check": by_id[i]["check"]} for i in ids]
