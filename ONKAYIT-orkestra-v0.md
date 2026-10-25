@@ -60,3 +60,15 @@ Puanlayıcı yazılırken iki belirsizlik çıktı. Eşikler değişmedi; yalnı
 2. **Eşleme sırası:** önce arXiv id, sonra DOI, sonra başlık (≥ 0,90). Başlık eşleşmesi, sayı / roma rakamı /
    farklı arXiv id çakışmasında reddedilir ("Part I" ≠ "Part II"). Her altın ve her liste öğesi en çok bir kez eşleşir.
    Altını boş soru eşli istatistikten çıkarılır; işaret testinde eşitlik = fark tam 0.
+
+## Değişiklik eki — 2026-10-25: taban çizgisi A1 + A0 (kullanıcı kararı; altın set görülmeden, deney koşusundan önce)
+**Gerekçe:** Ön kayıttaki standart istemle (D2'de tek deneme) Opus **hiç web araması yapmadı**: 30 çalışmayı hafızadan
+yazdı, $0,16 / 68 s. Ön kayıt ise A'yı "Claude'un bugünkü yöntemi, araştırma yapan tek bir Opus ajanı" olarak tanımlıyor
+ve bütçeyi ~$1,3/soru varsayıyordu. Hafızadan cevaplayan bir A'ya karşı maliyet eşiği (≤ %50) ölçtüğü şeyi kaybediyordu.
+- **A1 — birincil (KABUL / RED buna göre):** aynı soru ve kesim metni + "web araması ZORUNLU, her çalışmanın başlığını,
+  tarihini ve kimliğini web'de doğrula" + B şefinin kullandığı "kesimden hemen sonra yayımlanacak dikkatli bir uzman
+  survey'inin atıf yapacağı türden" çerçevesi (iki sistem aynı hedef tanımını alsın diye). İstem: `orkestra/deney/taban.py` → `PROMPT_A1`.
+- **A0 — ek, betimsel:** ön kayıttaki istem aynen (`PROMPT`). Karar vermez; raporlanır. "Orkestra, hafızadan cevaplayan
+  Opus'u recall'da geçebiliyor mu?" sorusuna cevap verir.
+- Eşikler, n, metrikler, altın set **değişmedi**. Tek model/araç: `claude -p --model opus`, yalnız WebSearch + WebFetch.
+- Bütçe: A1 ~30 × (deneme ile ölçülecek) + A0 ~30 × $0,16 ≈ $5. Toplam > $10 olduğu için koşu yine kullanıcı onayına bağlı.

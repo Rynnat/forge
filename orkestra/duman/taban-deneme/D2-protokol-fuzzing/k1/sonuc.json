@@ -1,0 +1,296 @@
+{
+ "run_id": "taban-20261025-172908-5e10b8",
+ "sistem": "A-taban",
+ "soru": "What are the most important works and open problems in fuzzing of network protocol implementations?",
+ "kesim": "2025-06-01",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 2.5,
+ "maliyet_usd": 0.1626,
+ "sure_s": 68.0,
+ "web_arama": 0,
+ "token": {
+  "in": 2,
+  "out": 6834,
+  "cache_read": 1807,
+  "cache_write": 3191
+ },
+ "son_rapor_token_tahmini": 2668,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 18,
+ "istem": "Research question: What are the most important works and open problems in fuzzing of network protocol implementations?\n\nCutoff date: 2025-06-01. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first), each with its arXiv id and/or DOI. You may search the web.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1109/icst46399.2020.00062",
+   "arxiv_id": null,
+   "doi": "10.1109/ICST46399.2020.00062",
+   "baslik": "AFLNet: A Greybox Fuzzer for Network Protocols",
+   "yil": 2020,
+   "gerekce": "This was the first widely adopted coverage-guided greybox fuzzer for stateful protocols, using response codes as state feedback, and most later work builds on it or compares against it."
+  },
+  {
+   "sira": 2,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Protocol State Fuzzing of TLS Implementations",
+   "yil": 2015,
+   "gerekce": "It introduced protocol state fuzzing through automata learning and found state machine bugs in major TLS libraries."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2101.05102",
+   "arxiv_id": "2101.05102",
+   "doi": "10.1145/3460319.3469077",
+   "baslik": "ProFuzzBench: A Benchmark for Stateful Protocol Fuzzing",
+   "yil": 2021,
+   "gerekce": "It became the standard benchmark for evaluating network protocol fuzzers, which made fair comparison between tools possible."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2111.03013",
+   "arxiv_id": "2111.03013",
+   "doi": "10.1145/3492321.3519591",
+   "baslik": "Nyx-Net: Network Fuzzing with Incremental Snapshots",
+   "yil": 2022,
+   "gerekce": "It used hypervisor-based incremental snapshots to address the speed and reset problem in network fuzzing, with orders-of-magnitude higher throughput."
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.14722/ndss.2024.24556",
+   "arxiv_id": null,
+   "doi": "10.14722/ndss.2024.24556",
+   "baslik": "Large Language Model guided Protocol Fuzzing",
+   "yil": 2024,
+   "gerekce": "ChatAFL was the first to use LLMs to extract protocol grammars and states from RFCs and to guide mutations, which opened the LLM-based protocol fuzzing direction."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2204.02545",
+   "arxiv_id": "2204.02545",
+   "doi": null,
+   "baslik": "Stateful Greybox Fuzzing",
+   "yil": 2022,
+   "gerekce": "SGFuzz identifies state variables automatically and builds a state transition tree as feedback, giving a general way to infer protocol state."
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1007/s10664-022-10233-3",
+   "arxiv_id": null,
+   "doi": "10.1007/s10664-022-10233-3",
+   "baslik": "StateAFL: Greybox fuzzing for stateful network servers",
+   "yil": 2022,
+   "gerekce": "It infers protocol states from memory snapshots at run time, so it does not depend on response codes."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2201.04048",
+   "arxiv_id": "2201.04048",
+   "doi": "10.1145/3533767.3534376",
+   "baslik": "SnapFuzz: High-Throughput Fuzzing of Network Applications",
+   "yil": 2022,
+   "gerekce": "It speeds up network fuzzing greatly by rewriting socket communication to in-memory channels and removing sleeps and delays."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2301.02490",
+   "arxiv_id": "2301.02490",
+   "doi": "10.1145/3648468",
+   "baslik": "Fuzzers for Stateful Systems: Survey and Research Directions",
+   "yil": 2024,
+   "gerekce": "This survey systematically classifies stateful system fuzzers and lays out the open problems."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2401.01568",
+   "arxiv_id": "2401.01568",
+   "doi": null,
+   "baslik": "A Survey of Protocol Fuzzing",
+   "yil": 2024,
+   "gerekce": "It is a comprehensive survey of the protocol fuzzing literature and its challenges."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2412.20324",
+   "arxiv_id": "2412.20324",
+   "doi": null,
+   "baslik": "AFLNet Five Years Later: On Coverage-Guided Protocol Fuzzing",
+   "yil": 2024,
+   "gerekce": "It looks back on AFLNet's impact, evaluates its design choices, and sets out open problems in the field."
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1145/2976749.2978411",
+   "arxiv_id": null,
+   "doi": "10.1145/2976749.2978411",
+   "baslik": "Systematic Fuzzing and Testing of TLS Libraries",
+   "yil": 2016,
+   "gerekce": "TLS-Attacker is a foundational framework for systematically fuzzing TLS implementations."
+  },
+  {
+   "sira": 13,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Analysis of DTLS Implementations Using Protocol State Fuzzing",
+   "yil": 2020,
+   "gerekce": "It extended the model-learning approach to state fuzzing of datagram protocols and found serious bugs."
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.14722/ndss.2018.23159",
+   "arxiv_id": null,
+   "doi": "10.14722/ndss.2018.23159",
+   "baslik": "IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing",
+   "yil": 2018,
+   "gerekce": "It introduced black-box network fuzzing of IoT devices that reuses protocol logic from their companion apps."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2105.05445",
+   "arxiv_id": "2105.05445",
+   "doi": "10.1145/3460120.3484543",
+   "baslik": "Snipuzz: Black-box Fuzzing of IoT Firmware via Message Snippet Inference",
+   "yil": 2021,
+   "gerekce": "It infers message structure from responses, which makes black-box fuzzing of IoT network services more effective."
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1007/978-3-319-28865-9_18",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-319-28865-9_18",
+   "baslik": "Pulsar: Stateful Black-Box Fuzzing of Proprietary Network Protocols",
+   "yil": 2015,
+   "gerekce": "It combines learning a protocol model from traffic with stateful fuzzing for proprietary protocols."
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1109/sp40000.2020.00117",
+   "arxiv_id": null,
+   "doi": "10.1109/SP40000.2020.00117",
+   "baslik": "Ijon: Exploring Deep State Spaces via Fuzzing",
+   "yil": 2020,
+   "gerekce": "It introduced state-aware feedback through annotations, an approach that later protocol fuzzers drew on."
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1145/3580598",
+   "arxiv_id": null,
+   "doi": "10.1145/3580598",
+   "baslik": "NSFuzz: Towards Efficient and State-Aware Network Service Fuzzing",
+   "yil": 2023,
+   "gerekce": "It improves network service fuzzing with state variable inference and synchronization at the event loop."
+  },
+  {
+   "sira": 19,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "TCP-Fuzz: Detecting Memory and Semantic Bugs in TCP Stacks with Fuzzing",
+   "yil": 2021,
+   "gerekce": "It is a dedicated fuzzer for TCP stacks that finds both memory bugs and semantic bugs through differential checking."
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1109/sp.2019.00038",
+   "arxiv_id": null,
+   "doi": "10.1109/SP.2019.00038",
+   "baslik": "LTEFuzz: Touching the Untouchables: Dynamic Security Analysis of the LTE Control Plane",
+   "yil": 2019,
+   "gerekce": "It brought systematic fuzzing to cellular network protocols and found many vulnerabilities."
+  },
+  {
+   "sira": 21,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "BLEEM: Packet Sequence Oriented Fuzzing for Protocol Implementations",
+   "yil": 2023,
+   "gerekce": "It proposes a black-box fuzzing approach guided by packet sequences and the state space."
+  },
+  {
+   "sira": 22,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "DY Fuzzing: Formal Dolev-Yao Models Meet Cryptographic Protocol Fuzz Testing",
+   "yil": 2024,
+   "gerekce": "tlspuffin combines formal attacker models with fuzzing to find logic bugs in cryptographic protocols."
+  },
+  {
+   "sira": 23,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "State Selection Algorithms and Their Impact on the Performance of Stateful Network Protocol Fuzzing",
+   "yil": 2022,
+   "gerekce": "It evaluates state selection strategies empirically and shows they are an open problem."
+  },
+  {
+   "sira": 24,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Model Learning and Model Checking of SSH Implementations",
+   "yil": 2017,
+   "gerekce": "It brought together model learning and model checking for SSH protocol state analysis."
+  },
+  {
+   "sira": 25,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "LLMIF: Augmented Large Language Model for Fuzzing IoT Devices",
+   "yil": 2024,
+   "gerekce": "It uses LLMs to extract protocol specifications and to fuzz IoT devices."
+  },
+  {
+   "sira": 26,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Tango: Extracting Higher-Order Feedback through State Inference",
+   "yil": 2024,
+   "gerekce": "It proposes a general framework for state inference and higher-order feedback in protocol fuzzing."
+  },
+  {
+   "sira": 27,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "EPF: An Evolutionary, Protocol-Aware, and Coverage-Guided Network Fuzzing Framework",
+   "yil": 2021,
+   "gerekce": "It combines protocol-aware evolutionary fuzzing with coverage guidance for industrial protocols."
+  },
+  {
+   "sira": 28,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "DoLTEst: In-depth Downlink Negative Testing Framework for LTE Devices",
+   "yil": 2022,
+   "gerekce": "It performs systematic negative testing of the LTE downlink on the device side."
+  },
+  {
+   "sira": 29,
+   "id": null,
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "PROTOS: Systematic Approach to Eliminate Software Vulnerabilities",
+   "yil": 2002,
+   "gerekce": "It is the historic origin of grammar-based black-box protocol test suites."
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1109/sp54263.2024.00137",
+   "arxiv_id": null,
+   "doi": "10.1109/SP54263.2024.00137",
+   "baslik": "SoK: Prudent Evaluation Practices for Fuzzing",
+   "yil": 2024,
+   "gerekce": "It examines evaluation problems in the fuzzing literature, including protocol fuzzers, and recommends better practices."
+  }
+ ]
+}
