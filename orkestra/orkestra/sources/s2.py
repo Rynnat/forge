@@ -30,23 +30,30 @@ def parse_paper(p: dict | None) -> dict | None:
                       s2_id=p.get("paperId"))
 
 
+def _hdrs(http) -> dict | None:
+    key = getattr(getattr(http, "cfg", None), "s2_api_key", "")
+    return {"x-api-key": key} if key else None
+
+
 def batch(http, keys: list[str]) -> list[dict | None]:
     """keys ile aynı sırada kayıt (bulunamayan → None)."""
     out: list[dict | None] = []
     for i in range(0, len(keys), 500):
         chunk = keys[i:i + 500]
         r = http.request("s2", f"{API}/paper/batch", method="POST", params={"fields": FIELDS},
-                         json_body={"ids": chunk})
+                         json_body={"ids": chunk}, headers=_hdrs(http))
         data = r.json()
         out.extend(parse_paper(p) for p in data)
     return out
 
 
 def references(http, key: str, n: int) -> list[dict]:
-    r = http.get("s2", f"{API}/paper/{key}/references", params={"fields": FIELDS, "limit": min(n, 1000)})
+    r = http.get("s2", f"{API}/paper/{key}/references", params={"fields": FIELDS, "limit": min(n, 1000)},
+                 headers=_hdrs(http))
     return [parse_paper(e.get("citedPaper")) or {"_drop": "bos_kayit"} for e in r.json().get("data") or []]
 
 
 def citations(http, key: str, n: int) -> list[dict]:
-    r = http.get("s2", f"{API}/paper/{key}/citations", params={"fields": FIELDS, "limit": min(n, 1000)})
+    r = http.get("s2", f"{API}/paper/{key}/citations", params={"fields": FIELDS, "limit": min(n, 1000)},
+                 headers=_hdrs(http))
     return [parse_paper(e.get("citingPaper")) or {"_drop": "bos_kayit"} for e in r.json().get("data") or []]

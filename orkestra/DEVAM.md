@@ -44,7 +44,9 @@ Kullanıcının bilgisayarı yeniden başlatılacağı için iş yarıda kesildi
 - Hız (`9d51ba6`): tekilleştirme 33× (çıktı aynı), OpenCitations eşzamanlı 3, atıf tohumları paralel,
   okuyucu 8 paralel. Etkisi henüz bir koşuda ölçülmedi.
 - Altın setin kalan 15'i ayrı bir ajana verildi (bu oturum forge-altin'i okumadı).
-- Açık: D2'de alıntılı çalışma 17/30 (D1 26/30); sebebi bakılmadı.
+- D2 alıntı 17/30 kök nedeni: eksik 13'ün 13'ü `OZET_YOK`, hepsi yalnız-DOI (IEEE/ACM/Springer/NDSS).
+  Crossref bu yayıncıların özetini taşımıyor; S2 zenginleştirmesi 429. Okuyucu bunları yalnız başlıktan
+  yargıladı. Çözüm: S2 ve OpenAlex anahtarı. `s2_api_key` / `S2_API_KEY` desteği eklendi (42 test).
 
 ## Kalan işler (ilk oturumdan; 1, 2, 5 bitti)
 1. D2'yi baştan koş: `python -m orkestra batch --sorular duman/sorular.json --out duman/kosu2`. Ya da yalnız D2'yi `run` ile koş.

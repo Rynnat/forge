@@ -1,6 +1,7 @@
 """Yapılandırma: varsayılanlar + isteğe bağlı `orkestra.toml` + ortam değişkenleri.
 
 OpenAlex anahtarı: `orkestra.toml` içindeki `openalex_api_key` ya da `OPENALEX_API_KEY`.
+S2 anahtarı: `s2_api_key` ya da `S2_API_KEY`.
 Anahtar yoksa OpenAlex yalnız günlük istek bütçesiyle (dosyada kalıcı sayaç) kullanılır;
 bütçe biterse kaynak EKSİK işaretlenir.
 """
@@ -48,6 +49,7 @@ class Config:
     # kaynaklar
     sources: tuple[str, ...] = ("arxiv", "crossref", "dblp", "openalex", "web", "atif")
     openalex_api_key: str = ""
+    s2_api_key: str = ""  # Semantic Scholar (ücretsiz başvuru); yoksa anahtarsız paylaşımlı havuz
     openalex_mailto: str = ""
     crossref_mailto: str = ""
     openalex_nokey_daily_budget: int = 80  # anahtarsız günlük istek (IP paylaşımlı)
@@ -111,6 +113,8 @@ def load_config(path: str | Path | None = None, **overrides) -> Config:
                 setattr(cfg, k, v)
     if os.environ.get("OPENALEX_API_KEY"):
         cfg.openalex_api_key = os.environ["OPENALEX_API_KEY"]
+    if os.environ.get("S2_API_KEY"):
+        cfg.s2_api_key = os.environ["S2_API_KEY"]
     for k, v in overrides.items():
         setattr(cfg, k, v)
     return cfg

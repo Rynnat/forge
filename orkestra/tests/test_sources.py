@@ -180,3 +180,12 @@ def test_concurrent_source_overlaps_serial_does_not(cfg):
 
     assert run(1) == 1
     assert 1 < run(3) <= 3
+
+
+def test_s2_key_header_only_when_configured(cfg):
+    for key, want in (("", None), ("abc", "abc")):
+        cfg.s2_api_key = key
+        sess = Sess([R(200, b"[]")])
+        h = Http(cfg, session=sess, sleep=lambda s: None, cache_path=None)
+        s2.batch(h, ["DOI:10.1/x"])
+        assert sess.calls[0][2]["headers"].get("x-api-key") == want
