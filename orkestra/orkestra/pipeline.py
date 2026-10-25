@@ -15,7 +15,7 @@ from orkestra.config import Config
 from orkestra.funnel import EKSIK, KAPALI, OK, Funnel
 from orkestra.http import BotBlocked, Http, QuotaExhausted, RequestFailed
 from orkestra.llm import LLM, Ledger
-from orkestra.records import cutoff_filter, dedup, earliest, fmt_date, public_id
+from orkestra.records import _conflict, cutoff_filter, dedup, earliest, fmt_date, public_id
 from orkestra.report import write_outputs
 from orkestra.sources import arxiv, crossref, dblp, openalex, opencitations, s2
 
@@ -26,7 +26,7 @@ class Ctx:
     def __init__(self, cfg: Config, soru: str, kesim: str, out_dir: Path, llm=None, http=None,
                  searchers: dict[str, Callable] | None = None, resolver: Callable | None = None,
                  enricher: Callable | None = None, snowballer: Callable | None = None,
-                 web_runner: Callable | None = None):
+                 web_runner: Callable | None = None, preprinter: Callable | None = None):
         self.cfg = cfg
         self.soru = soru
         self.kesim = kesim
@@ -43,6 +43,7 @@ class Ctx:
         self.searchers = searchers if searchers is not None else default_searchers(self)
         self.resolver = resolver or (lambda items, label: web.resolve(self.http, cfg, items, self.funnel, label))
         self.enricher = enricher or (lambda keys: s2.batch(self.http, keys))
+        self.preprinter = preprinter or (lambda titles: arxiv.by_titles(self.http, titles))
         self.oc = snowballer or OCClient(self.http)
         self.web_runner = web_runner or (lambda plan: web.run_workers(self.llm, cfg, soru, kesim, plan, self.funnel))
 
@@ -153,6 +154,83 @@ def enrich(ctx: Ctx, recs: list[dict]) -> None:
         r["dates"] = r.get("dates", []) + [d for d in e.get("dates") or [] if d not in r.get("dates", [])]
         r["s2_id"] = r.get("s2_id") or e.get("s2_id")
     ctx.funnel.source("s2_zenginlestirme", OK, istek=1, kayit=n, istenen=len(need))
+
+
+def preprint_abstracts(ctx: Ctx, to_read: list[dict], pool_ids: set[str] | None = None) -> None:
+    """Okuyucuya gidecek özetsiz kayıtlar için arXiv önbaskısını başlıkla bulup özetini kopyalar
+    (anahtarsız yedek; S2 429 verince Crossref'siz DOI kayıtları yalnız başlıkla yargılanıyordu).
+    `to_read` kesimden ve ön sıralamadan geçmiş, skora göre sıralı listedir: tavan = ilk K özetsiz.
+    Kesim anlamı değişmez: yalnız zaten geçmiş kayıtlara dokunulur ve bulunan önbaskının tarihi
+    `dates`e eklenir; `before_cutoff` 'en az biri kesin önce' dediğinden, kesim SONRASI tarihli
+    bir önbaskı geçen çalışmayı düşüremez, kesim öncesi olan zaten geçmiştir.
+    Huni bilgisi: ozet_arxiv.{aday,denendi,bulundu,bulunamadi,atlandi_*}."""
+    f, cfg = ctx.funnel, ctx.cfg
+    need = [r for r in to_read if not (r.get("abstract") or "").strip() and r.get("title")]
+    if not need:
+        return
+    f.bump("ozet_arxiv.aday", len(need))
+    k = max(0, cfg.arxiv_ozet_k)
+    if k == 0 or "arxiv" not in cfg.sources:
+        f.bump("ozet_arxiv.atlandi_kapali", len(need))
+        return
+    if len(need) > k:
+        f.bump("ozet_arxiv.atlandi_tavan", len(need) - k)
+    todo = need[:k]
+    used = set(pool_ids or ())
+    found = tried = 0
+    skipped_quota = 0
+    stop = ""
+    ex = getattr(ctx.http, "exhausted", None) or {}
+    if "arxiv" in ex:
+        stop = f"arXiv bu koşuda zaten tükendi: {ex['arxiv']}"
+    errors = 0
+    for i in range(0, len(todo), 6):
+        chunk = todo[i:i + 6]
+        if stop:
+            skipped_quota += len(chunk)
+            continue
+        try:
+            cands = ctx.preprinter([r["title"] for r in chunk])
+        except FATAL as exc:
+            stop = f"{type(exc).__name__}: {exc.detail}"[:200]
+            skipped_quota += len(chunk)
+            continue
+        except (RequestFailed, ValueError, KeyError) as exc:
+            f.error(f"ozet_arxiv:{type(exc).__name__}")
+            errors += len(chunk)
+            continue
+        tried += len(chunk)
+        for r in chunk:
+            c, s = web._best(r["title"], [x for x in cands if (x.get("abstract") or "").strip()])
+            if not c or s < 0.90 or _conflict(r, c):
+                continue
+            found += 1
+            r["abstract"] = c["abstract"]
+            r["ozet_kaynagi"] = "arxiv_onbaski"
+            r["onbaski_arxiv_id"] = c.get("arxiv_id")
+            ds = [list(d) for d in c.get("dates") or []]
+            r["dates"] = list(r.get("dates") or []) + [d for d in ds if d not in (r.get("dates") or [])]
+            if ds and ctx.cut and records_before(ds, ctx.cut) is False:
+                f.bump("ozet_arxiv.onbaski_kesim_sonrasi")
+            if not r.get("arxiv_id") and c.get("arxiv_id") and c["arxiv_id"] not in used:
+                r["arxiv_id"] = c["arxiv_id"]
+                used.add(c["arxiv_id"])
+    f.bump("ozet_arxiv.denendi", tried)
+    f.bump("ozet_arxiv.bulundu", found)
+    f.bump("ozet_arxiv.bulunamadi", tried - found)
+    if errors:
+        f.bump("ozet_arxiv.atlandi_hata", errors)
+    if skipped_quota:
+        f.bump("ozet_arxiv.atlandi_kota", skipped_quota)
+        f.source("ozet_arxiv", EKSIK, stop)
+    else:
+        f.source("ozet_arxiv", OK, istek=(tried + 5) // 6, kayit=found, istenen=len(todo))
+
+
+def records_before(dates: list, cut) -> bool | None:
+    """Tarih listesi için 'en az biri kesin önce' kararı (kesim süzgeciyle aynı kural)."""
+    from orkestra.records import before_cutoff
+    return before_cutoff({"dates": dates}, cut)
 
 
 def snowball(ctx: Ctx, pool: list[dict]) -> list[dict]:
@@ -315,6 +393,7 @@ def run(soru: str, kesim: str, out_dir: str | Path, cfg: Config | None = None, *
         for r in cut_off:
             fh.write(json.dumps({"id": public_id(r), "baslik": r["title"], "skor": round(r["skor"], 4)},
                                 ensure_ascii=False) + "\n")
+    preprint_abstracts(ctx, to_read, {r["arxiv_id"] for r in kept if r.get("arxiv_id")})
     reader.screen(ctx.llm, cfg, soru, subs, to_read, f)
     read_kept, n_irrel = reader.drop_certain(to_read)
     f.stage("okuyucu", len(to_read), len(read_kept), {"kesin_alakasiz": n_irrel})
@@ -388,6 +467,7 @@ def finalize(ctx: Ctx, recs: list[dict], cards: list[dict]) -> list[dict]:
             "alinti": r.get("alinti") or "",
             "alinti_durum": "VERIFIED" if r.get("alinti") else ("OZET_YOK" if not r.get("abstract") else "YOK"),
             "alinti_kaynagi": r.get("alinti_kaynagi") or "",
+            "ozet_kaynagi": r.get("ozet_kaynagi") or "",
             "kaynaklar": r.get("sources"), "atif": r.get("citations"), "rel": r.get("rel"),
             "tohum_yakinligi": len(r.get("seed_of") or []),
         })

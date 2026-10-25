@@ -76,6 +76,10 @@ class Config:
     reader_batch: int = 30
     reader_parallel: int = 8
     abstract_words_reader: int = 140
+    # Özetsiz adaylar için anahtarsız arXiv önbaskı yedeği: okuyucuya gidecek özetsiz kayıtlardan
+    # ön sıralamada en üstteki bu kadarı başlıkla aranır (arXiv 3.1 sn aralığı; 6 başlık/istek).
+    # 0 = kapalı. Eşleşme: başlık benzerliği >= 0.90 ve çakışma yok.
+    arxiv_ozet_k: int = 150
     # damıtıcı
     embed_model: str = "sentence-transformers/all-MiniLM-L6-v2"
     hf_cache: str = r"C:\Users\LENOVO\Projeler\akademik-bosluk\gapmine\data\hf_cache"
