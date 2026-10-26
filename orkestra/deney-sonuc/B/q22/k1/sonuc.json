@@ -1,0 +1,980 @@
+{
+ "run_id": "20261026-034013-f4a0cd",
+ "soru": "İçerik dağıtım ağlarında önbellekleme ile birleşen güvenli kodlanmış önbellekleme (gizlilik ve güvenlik garantileri) üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-02-11",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6105,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.103784,
+   "in": 1229,
+   "out": 4698,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.14822578,
+   "in": 498120,
+   "out": 40094,
+   "web_search": 8
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.22275430000000002,
+   "in": 248909,
+   "out": 345961,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.1357,
+   "in": 11561,
+   "out": 2161,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 45.1,
+  "toplama:openalex": 0.0,
+  "web_isci": 65.6,
+  "toplama:crossref": 126.0,
+  "toplama:dblp": 230.6,
+  "toplama:arxiv": 398.5,
+  "toplama": 398.5,
+  "tekil+kesim_1": 42.8,
+  "atif": 174.0,
+  "okuyucu": 421.4,
+  "damitma": 31.3,
+  "sef_final": 21.3,
+  "toplam": 1134.3
+ },
+ "ozet_token_tahmini": 3860,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Kodlanmış önbelleklemenin temel kuramı nedir: Maddah-Ali–Niesen modeli, merkezi/merkezi olmayan yerleştirme, kesin hız-bellek ödünleşimi ve PDA tabanlı tasarımlar?",
+    "sorgular": [
+     "\"coded caching\" fundamental limits",
+     "\"rate-memory tradeoff\" caching uncoded prefetching",
+     "decentralized \"coded caching\" order-optimal",
+     "\"placement delivery array\" coded caching",
+     "\"index coding\" caching broadcast"
+    ],
+    "yeterli": "Maddah-Ali–Niesen ve takip eden kesin optimallik ile alt sınır çalışmaları, merkezi olmayan şemalar ve PDA/alt paketleme sorunu ele alındığında yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "Güvenli teslimat (secure delivery) ve gizli (secretive) kodlanmış önbellekleme nasıl tanımlanır; hangi bilgi-kuramsal güvenlik garantileri ve şemalar (gizli anahtarlar, gizli paylaşım) önerilmiştir?",
+    "sorgular": [
+     "\"secure delivery\" coded caching",
+     "\"secretive coded caching\"",
+     "caching eavesdropper wiretap \"information-theoretic security\"",
+     "coded caching \"secret sharing\" keys",
+     "\"secure caching\" broadcast wiretap channel"
+    ],
+    "yeterli": "Sengupta–Tandon–Clancy güvenli teslimat modeli, gizli önbellekleme (Ravindrakumar ve ark.) ve dinleyiciye karşı wiretap tarzı sonuçlar kapsandığında yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Talep gizliliği (demand privacy) içeren kodlanmış önbellekleme alanında temel sonuçlar nelerdir: sanal kullanıcılar, işbirlikçi (colluding) kullanıcılar ve düşük bellek rejiminde optimallik?",
+    "sorgular": [
+     "\"demand privacy\" coded caching",
+     "\"private demands\" coded caching",
+     "\"demand-private\" caching colluding users",
+     "privacy-preserving coded caching virtual users",
+     "coded caching user privacy leakage"
+    ],
+    "yeterli": "Wan–Caire, Kamath, Gurjarpadhye ve ark., Yan–Tuninetti çalışmaları ile talep gizliliği için başarılabilirlik ve ters sonuç sınırları özetlendiğinde yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Önbellek destekli özel bilgi erişimi (PIR) ve fonksiyon erişimi, güvenli ve özel önbelleklemeyle nasıl birleşir?",
+    "sorgular": [
+     "\"cache-aided private information retrieval\"",
+     "\"private information retrieval\" capacity",
+     "\"cache-aided\" \"linear function retrieval\" privacy security",
+     "PIR side information prefetching",
+     "\"key superposition\" security privacy caching"
+    ],
+    "yeterli": "PIR kapasite sonuçları, önbellek destekli PIR ve güvenlik ile gizliliği birlikte sağlayan fonksiyon erişimi çalışmaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Güvenli ve özel kodlanmış önbellekleme; D2D, hiyerarşik, kombinasyon ağları, çoklu erişim ve kablosuz/femto önbellekleme gibi ağ topolojilerine nasıl genişletilmiştir?",
+    "sorgular": [
+     "\"device-to-device\" coded caching secure",
+     "\"combination networks\" caching secrecy relays",
+     "\"hierarchical coded caching\"",
+     "\"multi-access coded caching\" security privacy",
+     "femtocaching wireless content delivery helpers"
+    ],
+    "yeterli": "En az D2D, hiyerarşik, kombinasyon ve çoklu erişim topolojilerindeki güvenli veya özel şemalar ile kablosuz uç önbellekleme bağlamı ele alındığında yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "İçerik dağıtım ağları (CDN) ve uç önbelleklemede uygulamaya yönelik güvenlik ve gizlilik konuları nelerdir: önbellek yan kanal saldırıları, şifreli içerik önbellekleme ve ICN/NDN gizliliği?",
+    "sorgular": [
+     "content delivery network caching privacy attacks",
+     "\"information-centric networking\" cache privacy",
+     "\"edge caching\" security privacy survey",
+     "encrypted content caching CDN",
+     "cache timing attack NDN"
+    ],
+    "yeterli": "Pratik CDN/ICN önbellek gizliliği saldırıları ve savunmaları ile uç önbellekleme güvenlik anketleri, bilgi-kuramsal çalışmalarla ilişkilendirildiğinde yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Açık problemler nelerdir: alt paketleme karmaşıklığı, eşzamanlı güvenlik ve gizlilik için sıkı sınırlar, heterojen ve dinamik ağlar, pratik uygulama ve kriptografik/hesaplamalı güvenlik ile bilgi-kuramsal güvenlik arasındaki boşluk?",
+    "sorgular": [
+     "coded caching \"subpacketization\" practical challenges",
+     "secure private coded caching open problems",
+     "coded caching survey challenges",
+     "\"coding for caching\" practical",
+     "coded caching implementation testbed"
+    ],
+    "yeterli": "Anket/inceleme makaleleri ve son çalışmalardaki açık problem bölümleri birleştirilip sıkı sınırlar, alt paketleme ve pratiklik başlıkları altında listelendiğinde yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Fundamental Limits of Caching",
+    "yil": 2014
+   },
+   {
+    "baslik": "Decentralized Coded Caching Attains Order-Optimal Memory-Rate Tradeoff",
+    "yil": 2015
+   },
+   {
+    "baslik": "The Exact Rate-Memory Tradeoff for Caching With Uncoded Prefetching",
+    "yil": 2018
+   },
+   {
+    "baslik": "On the Placement Delivery Array Design for Centralized Coded Caching Scheme",
+    "yil": 2017
+   },
+   {
+    "baslik": "Coding for Caching: Fundamental Limits and Practical Challenges",
+    "yil": 2016
+   },
+   {
+    "baslik": "Fundamental Limits of Caching With Secure Delivery",
+    "yil": 2015
+   },
+   {
+    "baslik": "Private Coded Caching",
+    "yil": 2018
+   },
+   {
+    "baslik": "Fundamental Limits of Secretive Coded Caching",
+    "yil": 2016
+   },
+   {
+    "baslik": "On Coded Caching With Private Demands",
+    "yil": 2021
+   },
+   {
+    "baslik": "Demand Private Coded Caching",
+    "yil": 2019
+   },
+   {
+    "baslik": "Fundamental Limits of Demand-Private Coded Caching",
+    "yil": 2022
+   },
+   {
+    "baslik": "Fundamental Limits of Caching for Demand Privacy against Colluding Users",
+    "yil": 2021
+   },
+   {
+    "baslik": "Key Superposition Simultaneously Achieves Security and Privacy in Cache-Aided Linear Function Retrieval",
+    "yil": 2021
+   },
+   {
+    "baslik": "On the Optimal Load-Memory Tradeoff of Cache-Aided Scalar Linear Function Retrieval",
+    "yil": 2021
+   },
+   {
+    "baslik": "Combination Networks With or Without Secrecy Constraints: The Impact of Caching Relays",
+    "yil": 2018
+   },
+   {
+    "baslik": "Fundamental Limits of Caching in Wireless D2D Networks",
+    "yil": 2016
+   },
+   {
+    "baslik": "Hierarchical Coded Caching",
+    "yil": 2016
+   },
+   {
+    "baslik": "FemtoCaching: Wireless Content Delivery Through Distributed Caching Helpers",
+    "yil": 2013
+   },
+   {
+    "baslik": "The Capacity of Private Information Retrieval",
+    "yil": 2017
+   },
+   {
+    "baslik": "Private Information Retrieval",
+    "yil": 1998
+   },
+   {
+    "baslik": "The Capacity of Cache Aided Private Information Retrieval",
+    "yil": 2017
+   },
+   {
+    "baslik": "Fundamental Limits of Cache-Aided Private Information Retrieval With Unknown and Uncoded Prefetching",
+    "yil": 2019
+   },
+   {
+    "baslik": "How to Share a Secret",
+    "yil": 1979
+   }
+  ],
+  "web_odaklari": [
+   "awesome coded caching papers github",
+   "secure and private coded caching survey reading list",
+   "demand privacy coded caching literature list"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:2001.04810",
+  "arXiv:1510.05064",
+  "doi:10.1109/mcom.2016.7537173",
+  "arXiv:1704.07901",
+  "arXiv:2101.07127",
+  "arXiv:1709.01056",
+  "arXiv:2009.06000",
+  "arXiv:1903.02408",
+  "arXiv:1605.01348",
+  "arXiv:1209.5807",
+  "arXiv:1109.4179",
+  "arXiv:1609.07817"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1209.5807",
+   "arxiv_id": "1209.5807",
+   "doi": "10.1109/tit.2014.2306938",
+   "baslik": "Fundamental Limits of Caching",
+   "yil": 2012,
+   "tarih": "2012-09-26",
+   "gerekce": "Kodlanmış önbelleklemenin temel bilgi-kuramsal çerçevesi; geleneksel şemaların kullanmadığı küresel önbellek kazancını tanıtır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we introduce and exploit a second, global, caching gain not utilized by conventional caching schemes",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 1498,
+   "rel": 2,
+   "tohum_yakinligi": 10
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:1312.3961",
+   "arxiv_id": "1312.3961",
+   "doi": "10.1109/iccw.2014.6881293",
+   "baslik": "Fundamental Limits of Caching with Secure Delivery",
+   "yil": 2013,
+   "tarih": "2013-12-13",
+   "gerekce": "Güvenli teslimatı tanımlar; harici dinleyiciye bilgi sızıntısını en aza indirmeyi hedefleyen güvenli önbellekleme problemini ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we consider the secure caching problem with the additional goal of minimizing information leakage to an external wiretapper",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 135,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:1605.01348",
+   "arxiv_id": "1605.01348",
+   "doi": "10.1109/tifs.2017.2765503",
+   "baslik": "Fundamental limits of secretive coded caching",
+   "yil": 2016,
+   "tarih": "2016-05-04",
+   "gerekce": "Gizli kodlanmış önbellekleme problemini tanıtır ve kullanıcının istemediği içerikten hiçbir şey öğrenememesi kısıtını getirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we introduce the problem of secretive coded caching where we impose the additional constraint that a user should not be able to learn anything",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 48,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:1908.10821",
+   "arxiv_id": "1908.10821",
+   "doi": "10.1109/tit.2020.3036313",
+   "baslik": "On Coded Caching with Private Demands",
+   "yil": 2019,
+   "tarih": "2019-08-28",
+   "gerekce": "MAN şemasının kullanıcılara başkalarının talepleri hakkında bilgi sızdırdığını gösterir ve özel talep modelini başlatır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "each user can obtain the information about the demands of other users, i.e., the MAN coded caching scheme is inherently prone to tampering and spying",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 60,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2101.07127",
+   "arxiv_id": "2101.07127",
+   "doi": "10.1109/tit.2022.3150336",
+   "baslik": "Fundamental Limits of Demand-Private Coded Caching",
+   "yil": 2021,
+   "tarih": "2021-01-18",
+   "gerekce": "Talep gizliliği için temel sınırlar sunar; gizli olmayan şemadan talep-gizli şema türetmeyi gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We first show that a demand-private scheme for $N$ files and $K$ users can be obtained from a non-private scheme",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 16,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2009.06000",
+   "arxiv_id": "2009.06000",
+   "doi": "10.1109/tifs.2021.3127018",
+   "baslik": "Key Superposition Simultaneously Achieves Security and Privacy in Cache-Aided Linear Function Retrieval",
+   "yil": 2020,
+   "tarih": "2020-09-13",
+   "gerekce": "Güvenlik ve gizlilik anahtarlarının süperpozisyonuyla içerik güvenliği ve talep gizliliğini doğrusal fonksiyon erişiminde eşzamanlı sağlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This procedure uses the superposition of security keys and privacy keys in both the cache placement and transmitted signal to guarantee content security and demand privacy, respectively",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 14,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:1301.5848",
+   "arxiv_id": "1301.5848",
+   "doi": "10.1109/tnet.2014.2317316",
+   "baslik": "Decentralized Coded Caching Attains Order-Optimal Memory-Rate Tradeoff",
+   "yil": 2013,
+   "tarih": "2013-01-24",
+   "gerekce": "Merkezi olmayan yerleştirmeyle düzene-göre optimal hız-bellek ödünleşimine ulaşan, MAN'ın temel genişlemesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, we propose an efficient caching scheme, in which the content placement is performed",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 490,
+   "rel": 3,
+   "tohum_yakinligi": 10
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:1609.07817",
+   "arxiv_id": "1609.07817",
+   "doi": "10.1109/isit.2017.8006802",
+   "baslik": "The Exact Rate-Memory Tradeoff for Caching with Uncoded Prefetching",
+   "yil": 2016,
+   "tarih": "2016-09-25",
+   "gerekce": "Düz ön getirmeli önbellekleme için hız-bellek ödünleşiminin kesin karakterizasyonunu sağlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We provide the exact characterization of the rate-memory tradeoff for this problem",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 285,
+   "rel": 3,
+   "tohum_yakinligi": 7
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:1510.05064",
+   "arxiv_id": "1510.05064",
+   "doi": "10.1109/tit.2017.2725272",
+   "baslik": "On the Placement Delivery Array Design for Centralized Coded Caching Scheme",
+   "yil": 2015,
+   "tarih": "2015-10-17",
+   "gerekce": "PDA tasarım problemini ilk kez formüle eder; yerleştirme ve teslimatı tek dizide karakterize eder.",
+   "gerekce_kokeni": "sef",
+   "alinti": "the placement delivery array (PDA) design problem is firstly formulated to characterize the placement issue and the delivery issue with a single array",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 228,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2008.03642",
+   "arxiv_id": "2008.03642",
+   "doi": "10.1109/jsait.2021.3053372",
+   "baslik": "Fundamental Limits of Caching for Demand Privacy against Colluding Users",
+   "yil": 2020,
+   "tarih": "2020-08-09",
+   "gerekce": "Paylaşımlı bağlantı sistemlerinde işbirlikçi kullanıcılara karşı talep gizliliğinin temel sınırlarını inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This work investigates the problem of demand privacy against colluding users for shared-link coded caching systems",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 42,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:1706.07035",
+   "arxiv_id": "1706.07035",
+   "doi": "10.1109/allerton.2017.8262857",
+   "baslik": "The Capacity of Cache Aided Private Information Retrieval",
+   "yil": 2017,
+   "tarih": "2017-06-21",
+   "gerekce": "Önbellek destekli PIR kapasitesinin tam karakterizasyonunu verir; S4 için temel sonuç.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The main contribution of this work is the exact characterization of the capacity of cache aided PIR",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 127,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:1709.01056",
+   "arxiv_id": "1709.01056",
+   "doi": "10.1109/tit.2018.2883302",
+   "baslik": "Fundamental Limits of Cache-Aided Private Information Retrieval with Unknown and Uncoded Prefetching",
+   "yil": 2017,
+   "tarih": "2017-09-04",
+   "gerekce": "Bilinmeyen düz ön getirmeli önbellekli kullanıcı için replike veritabanlarından PIR'ın temel sınırlarını belirler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We consider the problem of private information retrieval (PIR) from $N$ non-colluding and replicated databases when the user is equipped with a cache",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "dblp",
+    "sef"
+   ],
+   "atif": 90,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2107.00399",
+   "arxiv_id": "2107.00399",
+   "doi": "10.1109/pimrc50174.2021.9569455",
+   "baslik": "Secretive Coded Caching from PDAs",
+   "yil": 2021,
+   "tarih": "2021-07-01",
+   "gerekce": "Merkezi ortamda PDA kullanarak düşük alt paketlemeli gizli kodlanmış önbellekleme şeması önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose a secretive coded caching scheme with low subpacketization using PDA, for users with dedicated caches in the centralized setting",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 9,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:1909.10471",
+   "arxiv_id": "1909.10471",
+   "doi": "10.1109/ncc48643.2020.9055996",
+   "baslik": "Subpacketization in Coded Caching with Demand Privacy",
+   "yil": 2019,
+   "tarih": "2019-09-23",
+   "gerekce": "Talep gizliliği sağlayan şemalarda alt paketleme azaltımına odaklanır; açık problemlerle doğrudan ilgili.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we consider coded caching schemes that assure privacy for user demands with a particular focus on reducing subpacketization",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "web"
+   ],
+   "atif": 21,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2007.07475",
+   "arxiv_id": "2007.07475",
+   "doi": "10.1109/tcomm.2022.3216641",
+   "baslik": "Coded Caching with Demand Privacy: Constructions for Lower Subpacketization and Generalizations",
+   "yil": 2020,
+   "tarih": "2020-07-15",
+   "gerekce": "Talep gizliliği için yükseltme yoluyla düşük alt paketlemeli verimli PDA yapıları önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this work, we propose several constructions of efficient PDAs through lifting, where a base PDA is expanded by replacing each entry by another PDA",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp"
+   ],
+   "atif": 23,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2101.08745",
+   "arxiv_id": "2101.08745",
+   "doi": "10.1109/isit45174.2021.9518070",
+   "baslik": "Optimal Demand Private Coded Caching for Users with Small Buffers",
+   "yil": 2021,
+   "tarih": "2021-01-21",
+   "gerekce": "Küçük önbellekli kullanıcılar için talep-gizli kodlanmış önbelleklemenin kesin hız-bellek ödünleşimini karakterize eder.",
+   "gerekce_kokeni": "sef",
+   "alinti": "By memory sharing this characterizes the exact rate-memory trade-off for the demand private coded caching scheme for cache memory",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "web"
+   ],
+   "atif": 8,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:1911.06995",
+   "arxiv_id": "1911.06995",
+   "doi": "10.1109/ncc48643.2020.9056026",
+   "baslik": "Demand-Private Coded Caching and the Exact Trade-off for N=K=2",
+   "yil": 2019,
+   "tarih": "2019-11-16",
+   "gerekce": "N=K=2 için bilgi-kuramsal talep gizliliği altında kesin ödünleşimi verir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, we consider the coded caching problem under the constraint that the demands of the other users remain information theoretically secret from each user",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 16,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2201.11539",
+   "arxiv_id": "2201.11539",
+   "doi": "10.1109/tit.2023.3336792",
+   "baslik": "Coded Caching with Private Demands and Caches",
+   "yil": 2022,
+   "tarih": "2022-01-27",
+   "gerekce": "MAN'ın talep sızıntısına karşı hem önbellekleri hem talepleri gizleyen iki sunuculu PIR tabanlı şema.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Recently it was shown that the seminal Maddah-Ali and Niesen (MAN) coded caching scheme leaks the demand information of each user to the others",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "web"
+   ],
+   "atif": 6,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.1109/acssc.2016.7869609",
+   "arxiv_id": null,
+   "doi": "10.1109/acssc.2016.7869609",
+   "baslik": "Fundamental limits of secure device-to-device coded caching",
+   "yil": 2016,
+   "tarih": "2016-11",
+   "gerekce": "Güvenli D2D kodlanmış önbelleklemenin temel sınırlarını ele alır; S5 için doğrudan ilgili.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "dblp",
+    "web"
+   ],
+   "atif": 13,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:1712.04930",
+   "arxiv_id": "1712.04930",
+   "doi": "10.1109/jsac.2018.2844941",
+   "baslik": "Combination Networks with or without Secrecy Constraints: The Impact of Caching Relays",
+   "yil": 2017,
+   "tarih": "2017-12-13",
+   "gerekce": "Gizlilik kısıtlı ve kısıtsız kombinasyon ağlarında önbellekli rölelerin etkisini inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This paper considers a two-hop network architecture known as a combination network, where a layer of relay nodes connects a server to a set of end users.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 33,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2107.00226",
+   "arxiv_id": "2107.00226",
+   "doi": "10.1109/wcnc51071.2022.9771663",
+   "baslik": "Multi-Access Coded Caching with Demand Privacy",
+   "yil": 2021,
+   "tarih": "2021-07-01",
+   "gerekce": "Çoklu erişimli kodlanmış önbelleklemeyi, kullanıcıların diğerlerinin talepleri hakkında bilgi edinmemesi kısıtıyla genişletir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The additional constraint imposed is that one user should not get any information regarding the demands of the remaining users.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "dblp"
+   ],
+   "atif": 13,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1109/isit50566.2022.9834824",
+   "arxiv_id": null,
+   "doi": "10.1109/isit50566.2022.9834824",
+   "baslik": "A Secretive Coded Caching for Shared Cache Systems using Placement Delivery Arrays",
+   "yil": 2022,
+   "tarih": "2022-06-26",
+   "gerekce": "Paylaşımlı önbellek sistemleri için PDA tabanlı gizli kodlanmış önbellekleme; topoloji genişlemesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "dblp",
+    "web"
+   ],
+   "atif": 8,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1109/itw61385.2024.10806957",
+   "arxiv_id": null,
+   "doi": "10.1109/itw61385.2024.10806957",
+   "baslik": "Security, Privacy and Linear Function Retrieval in Multi-Access Combinatorial Topology with Private Cache",
+   "yil": 2024,
+   "tarih": "2024-11-24",
+   "gerekce": "Çoklu erişimli kombinatoryal topolojide güvenlik, gizlilik ve doğrusal fonksiyon erişimini birleştirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 2,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2010.06492",
+   "arxiv_id": "2010.06492",
+   "doi": "10.1109/tcomm.2021.3091612",
+   "baslik": "On the Fundamental Limits of Cache-aided Multiuser Private Information Retrieval",
+   "yil": 2020,
+   "tarih": "2020-10-13",
+   "gerekce": "Önbellekli çok kullanıcılı PIR'ın temel sınırlarını inceler; her kullanıcı mesajı özel olarak erişmek ister.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In MuPIR, each of the $K_{\\rm u}$ cache-equipped users wishes to privately retrieve a message out of $K$ messages from $N$ databases each having access to the entire message library.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 12,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1109/jsac.2022.3142360",
+   "arxiv_id": null,
+   "doi": "10.1109/jsac.2022.3142360",
+   "baslik": "Robust, Private and Secure Cache-Aided Scalar Linear Function Retrieval From Coded Servers",
+   "yil": 2022,
+   "tarih": "2022-03",
+   "gerekce": "Kodlanmış sunuculardan sağlam, özel ve güvenli önbellek destekli skaler doğrusal fonksiyon erişimi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 9,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2012.03165",
+   "arxiv_id": "2012.03165",
+   "doi": "10.1109/mwc.001.2000329",
+   "baslik": "Security and Privacy for Mobile Edge Caching: Challenges and Solutions",
+   "yil": 2020,
+   "tarih": "2020-12-06",
+   "gerekce": "Mobil uç önbelleklemede önbellek zehirleme, kirletme, yan kanal ve aldatma saldırılarını inceleyen derleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Then, we examine the potential cyber threats, including cache poisoning attacks, cache pollution attacks, cache side-channel attacks, and cache deception attacks",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 67,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2405.01844",
+   "arxiv_id": "2405.01844",
+   "doi": "10.1145/3706630",
+   "baslik": "A Survey on Privacy-Preserving Caching at Network Edge: Classification, Solutions, and Challenges",
+   "yil": 2024,
+   "tarih": "2024-05-03",
+   "gerekce": "Ağ ucunda gizliliği koruyan önbellekleme üzerine sınıflandırma, çözümler ve zorluklar sunan güncel derleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "On the one hand, the multi-access open edge network provides an ideal entrance or interface for external attackers to obtain private data from edge caches by extracting sensitive information.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 22,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:1603.03409",
+   "arxiv_id": "1603.03409",
+   "doi": null,
+   "baslik": "Security, Privacy, and Access Control in Information-Centric Networking: A Survey",
+   "yil": 2016,
+   "tarih": "2016-03-10",
+   "gerekce": "ICN'de güvenlik, gizlilik ve erişim kontrolü literatürünü inceleyen derleme; S6 için temel.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this article, we survey the existing literature in security and privacy research sub-space in ICN.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1007/978-3-319-94421-0_3",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-319-94421-0_3",
+   "baslik": "Identifying Previously Requested Content by Side-Channel Timing Attack in NDN",
+   "yil": 2018,
+   "tarih": "2018-06-16",
+   "gerekce": "NDN'de zamanlama yan kanal saldırısıyla önceden istenen içeriğin belirlenmesini ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 10,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:1907.11717",
+   "arxiv_id": "1907.11717",
+   "doi": "10.1109/jsyst.2019.2931813",
+   "baslik": "Secure Distribution of Protected Content in Information-Centric Networking",
+   "yil": 2019,
+   "tarih": "2019-07-26",
+   "gerekce": "ICN'de şifreli içeriğin etkin önbelleklenmesi için yalnızca doğrulanmış tüketicilerin erişebildiği güvenli dağıtım şeması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "For effective caching of encrypted contents in ICN, we propose a secure distribution of protected content (SDPC) scheme, which ensures that only authenticated consumers can access the content.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

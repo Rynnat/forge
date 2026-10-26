@@ -1,0 +1,1064 @@
+[
+ {
+  "id": "arXiv:2502.04878",
+  "baslik": "Sparse Autoencoders Do Not Find Canonical Units of Analysis",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "SAE kanonikliği ve atomiklik eleştirisi",
+  "alinti": "We cast doubt on this belief using two novel techniques: SAE stitching to show they are incomplete, and meta-SAEs to show they are not atomic."
+ },
+ {
+  "id": "arXiv:2406.04093",
+  "baslik": "Scaling and evaluating sparse autoencoders",
+  "yil": 2024,
+  "cites": 21,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "TopK SAE ölçekleme yasaları ve değerlendirme metrikleri",
+  "alinti": "We propose using k-sparse autoencoders [Makhzani and Frey, 2013] to directly control sparsity, simplifying tuning and improving the reconstruction-sparsity frontier."
+ },
+ {
+  "id": "arXiv:2503.09532",
+  "baslik": "SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "SAEBench: kapsamlı SAE benchmark'ı",
+  "alinti": "Our evaluation reveals that gains on proxy metrics do not reliably translate to better practical performance."
+ },
+ {
+  "id": "arXiv:2408.05147",
+  "baslik": "Gemma Scope: Open Sparse Autoencoders Everywhere All At Once on Gemma 2",
+  "yil": 2024,
+  "cites": 43,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Gemma Scope: açık JumpReLU SAE paketi",
+  "alinti": "an open suite of JumpReLU SAEs trained on all layers and sub-layers of Gemma 2 2B and 9B"
+ },
+ {
+  "id": "arXiv:2409.14507",
+  "baslik": "A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Feature absorption: temel açık problem",
+  "alinti": "We coin this phenomenon feature absorption, and show that it is caused by optimizing for sparsity in SAEs whenever the underlying features form a hierarchy."
+ },
+ {
+  "id": "arXiv:2407.14435",
+  "baslik": "Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "JumpReLU mimarisi, yeniden yapılandırma iyileşmesi",
+  "alinti": "JumpReLU SAEs are a simple modification of vanilla (ReLU) SAEs -- where we replace the ReLU with a discontinuous JumpReLU activation function"
+ },
+ {
+  "id": "arXiv:2410.13928",
+  "baslik": "Automatically Interpreting Millions of Features in Large Language Models",
+  "yil": 2024,
+  "cites": 3,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Otomatik açıklama ve puanlama yöntemleri",
+  "alinti": "We introduce five new techniques to score the quality of explanations that are cheaper to run than the previous state of the art."
+ },
+ {
+  "id": "arXiv:2501.17148",
+  "baslik": "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "AxBench: SAE'ler steering'de yetersiz kalıyor",
+  "alinti": "For steering, we find that prompting outperforms all existing methods, followed by finetuning. For concept detection, representation-based methods such as difference-in-means, perform the best."
+ },
+ {
+  "id": "arXiv:2404.16014",
+  "baslik": "Improving Dictionary Learning with Gated Sparse Autoencoders",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "dblp",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Gated SAE: shrinkage sorununa çözüm",
+  "alinti": "The key insight of Gated SAEs is to separate the functionality of (a) determining which directions to use and (b) estimating the magnitudes of those directions"
+ },
+ {
+  "id": "arXiv:2410.14670",
+  "baslik": "Decomposing The Dark Matter of Sparse Autoencoders",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Dark matter: SAE hata vektörü analizi",
+  "alinti": "much of SAE dark matter -- about half of the error vector itself and >90% of its norm -- can be linearly predicted from the initial activation vector."
+ },
+ {
+  "id": "arXiv:2402.17700",
+  "baslik": "RAVEL: Evaluating Interpretability Methods on Disentangling Language Model Representations",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Nedensel ayrıştırma; SAE dışı alternatif, RAVEL benchmark",
+  "alinti": "We use the resulting conceptual framework to define the new method of Multi-task Distributed Alignment Search (MDAS)"
+ },
+ {
+  "id": "arXiv:2103.15949",
+  "baslik": "Transformer visualization via dictionary learning: contextualized embedding as a linear superposition of transformer factors",
+  "yil": 2021,
+  "cites": 32,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Sözlük öğrenimiyle transformer ayrıştırma; temel kavram",
+  "alinti": "Through visualization, we demonstrate the hierarchical semantic structures captured by the transformer factors, e.g., word-level polysemy disambiguation"
+ },
+ {
+  "id": "arXiv:2503.05613",
+  "baslik": "A Survey on Sparse Autoencoders: Interpreting the Internal Mechanisms of Large Language Models",
+  "yil": 2025,
+  "cites": 19,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "SAE derlemesi: mimari, açıklama, değerlendirme, uygulama",
+  "alinti": "discussing evaluation methods for assessing SAE performance, covering both structural and functional metrics; and (4) investigating real-world applications of SAEs"
+ },
+ {
+  "id": "arXiv:2501.18823",
+  "baslik": "Transcoders Beat Sparse Autoencoders for Interpretability",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Transcoder vs SAE yorumlanabilirlik karşılaştırması",
+  "alinti": "Transcoders are similar to SAEs, but they are trained to reconstruct the output of a component of a deep network given its input."
+ },
+ {
+  "id": "arXiv:2410.20526",
+  "baslik": "Llama Scope: Extracting Millions of Features from Llama-3.1-8B with Sparse Autoencoders",
+  "yil": 2024,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Llama Scope: Llama-3.1-8B için açık SAE paketi",
+  "alinti": "We introduce a suite of 256 SAEs, trained on each layer and sublayer of the Llama-3.1-8B-Base model, with 32K and 128K features."
+ },
+ {
+  "id": "arXiv:2309.08600",
+  "baslik": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
+  "yil": 2023,
+  "cites": 59,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Temel SAE çalışması: süperpozisyon ve tek-anlamlılık",
+  "alinti": "These autoencoders learn sets of sparsely activating features that are more interpretable and monosemantic than directions identified by alternative approaches"
+ },
+ {
+  "id": "arXiv:2301.04709",
+  "baslik": "Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Nedensel soyutlama kuramsal çerçevesi",
+  "alinti": "unifying a variety of mechanistic interpretability methods in the common language of causal abstraction, namely, activation and path patching, causal mediation analysis"
+ },
+ {
+  "id": "arXiv:2403.19647",
+  "baslik": "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "dblp",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Seyrek özellik devreleri ve SHIFT uygulaması",
+  "alinti": "We introduce SHIFT, where we improve the generalization of a classifier by ablating features that a human judges to be task-irrelevant."
+ },
+ {
+  "id": "arXiv:2605.29358",
+  "baslik": "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Claude 3 Sonnet üzerinde ölçekli SAE çalışması",
+  "alinti": "We trained sparse autoencoders with up to 34 million features on the model's middle layer residual stream, using scaling laws to guide hyperparameter selection."
+ },
+ {
+  "id": "arXiv:2406.11944",
+  "baslik": "Transcoders Find Interpretable LLM Feature Circuits",
+  "yil": 2024,
+  "cites": 16,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Transcoder tabanlı devre analizi",
+  "alinti": "We introduce a novel method for using transcoders to perform weights-based circuit analysis through MLP sublayers."
+ },
+ {
+  "id": "arXiv:2501.06254",
+  "baslik": "Rethinking Evaluation of Sparse Autoencoders through the Representation of Polysemous Words",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Çok anlamlı kelimelerle SAE değerlendirme yeniden düşünülmesi",
+  "alinti": "Our findings reveal that SAEs developed to improve the MSE-L0 Pareto frontier may confuse interpretability, which does not necessarily enhance the extraction of"
+ },
+ {
+  "id": "arXiv:2501.17727",
+  "baslik": "Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Rastgele model kontrolü; otomatik metrikler yetersiz",
+  "alinti": "we find that, in many settings, SAEs trained on randomly initialized transformers produce auto-interpretability scores and reconstruction metrics that are similar to those from trained models."
+ },
+ {
+  "id": "doi:10.18653/v1/2026.acl-long.99",
+  "baslik": "Mechanistic Interpretability Should Prioritize Feature Consistency in Sparse Autoencoders",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Eğitimler arası özellik tutarlılığı metriği",
+  "alinti": "We study run-to-run feature consistency in SAEs and argue that it should be reported as a standard evaluation axis alongside reconstruction and sparsity."
+ },
+ {
+  "id": "arXiv:2605.18229",
+  "baslik": "Are Sparse Autoencoder Benchmarks Reliable?",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "SAEBench metriklerinin güvenilirlik denetimi",
+  "alinti": "We find that two of these metrics, Targeted Probe Perturbation (TPP) and Spurious Correlation Removal (SCR), fail multiple lenses at their canonical settings and should not be used to evaluate SAEs."
+ },
+ {
+  "id": "arXiv:2501.16496",
+  "baslik": "Open Problems in Mechanistic Interpretability",
+  "yil": 2025,
+  "cites": 11,
+  "kaynaklar": [
+   "arxiv",
+   "dblp",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Genel MI açık problemler incelemesi",
+  "alinti": "Our methods require both conceptual and practical improvements to reveal deeper insights; we must figure out how best to apply our methods in pursuit of specific goals"
+ },
+ {
+  "id": "arXiv:2507.08802",
+  "baslik": "The Non-Linear Representation Dilemma: Is Causal Abstraction Enough for Mechanistic Interpretability?",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Doğrusal olmayan hizalama; nedensel soyutlama eleştirisi",
+  "alinti": "we prove that under reasonable assumptions, any neural network can be mapped to any algorithm, rendering this unrestricted notion of causal abstraction trivial and uninformative."
+ },
+ {
+  "id": "arXiv:2311.03658",
+  "baslik": "The Linear Representation Hypothesis and the Geometry of Large Language Models",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Doğrusal temsil hipotezi; probing ve steering bağlantısı",
+  "alinti": "Informally, the 'linear representation hypothesis' is the idea that high-level concepts are represented linearly as directions in some representation space."
+ },
+ {
+  "id": "arXiv:2411.18895",
+  "baslik": "Evaluating Sparse Autoencoders on Targeted Concept Erasure Tasks",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "SAE değerlendirme metriği; kavram silme görevi",
+  "alinti": "We adapt SHIFT into an automated metric of SAE quality; this involves replacing the human annotator with an LLM."
+ },
+ {
+  "id": "arXiv:2508.16560",
+  "baslik": "Sparse but Wrong: Incorrect L0 Leads to Incorrect Features in Sparse Autoencoders",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "L0 yanlış ayarlanırsa SAE özellikleri bozulur",
+  "alinti": "Existing work compares SAE algorithms using sparsity-reconstruction tradeoff plots, implying L0 is a free parameter with no inherently correct value aside from its effect on reconstruction."
+ },
+ {
+  "id": "arXiv:1601.03764",
+  "baslik": "Linear Algebraic Structure of Word Senses, with Applications to Polysemy",
+  "yil": 2016,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Süperpozisyon ve çok anlamlılık için temel çalışma",
+  "alinti": "multiple word senses reside in linear superposition within the word embedding and simple sparse coding can recover vectors that approximately capture the senses"
+ },
+ {
+  "id": "arXiv:2602.14111",
+  "baslik": "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Rastgele tabanlarla SAE'lerin gerçek özellik kurtarımı sorgulanıyor",
+  "alinti": "we introduce three baselines that constrain SAE feature directions or their activation patterns to random values"
+ },
+ {
+  "id": "arXiv:2605.31183",
+  "baslik": "Steering LLMs? Actually, Sparse Autoencoders can outperform simple baselines",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "AxBench'te SAE yönlendirme; basit tabanlara karşı yeniden değerlendirme",
+  "alinti": "We find that Sparse Autoencoders can, in fact, perform close to on par with the reference LoRA performance on the AxBench benchmark, when features are selected and labelled with our supervised pipeline."
+ },
+ {
+  "id": "arXiv:2503.24277",
+  "baslik": "Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "k-seyreklik hiperparametresi için teorik temel ve değerlendirme",
+  "alinti": "the state-of-the-art method of using $k$-sparse autoencoders lacks a theoretical grounding for selecting the hyperparameter $k$ that represents the number of nonzero activations"
+ },
+ {
+  "id": "arXiv:2405.12241",
+  "baslik": "Identifying Functionally Important Features with End-to-End Sparse Dictionary Learning",
+  "yil": 2024,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Uçtan uca SAE eğitimi; işlevsel önem için KL kaybı",
+  "alinti": "We propose end-to-end (e2e) sparse dictionary learning, a method for training SAEs that ensures the features learned are functionally important by minimizing the KL divergence"
+ },
+ {
+  "id": "arXiv:2509.00691",
+  "baslik": "CE-Bench: Towards a Reliable Contrastive Evaluation Benchmark of Interpretability of Sparse Autoencoders",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Karşıtlı değerlendirme; LLM hakemi gerektirmiyor",
+  "alinti": "CE-Bench reliably measures the interpretability of sparse autoencoders and aligns well with existing benchmarks without requiring an external LLM judge"
+ },
+ {
+  "id": "arXiv:2504.13151",
+  "baslik": "MIB: A Mechanistic Interpretability Benchmark",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Mekanistik yorumlanabilirlik benchmark'ı (MIB)",
+  "alinti": "The causal variable localization track compares methods that featurize a hidden vector, e.g., sparse autoencoders (SAEs) or distributed alignment search (DAS)"
+ },
+ {
+  "id": "doi:10.52202/085713-3551",
+  "baslik": "Overcoming Sparsity Artifacts in Crosscoders to Interpret Chat-Tuning",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Crosscoder varyantı; model karşılaştırma ve kısıt bulguları",
+  "alinti": "Crosscoders are a recent model diffing method that learns a shared dictionary of interpretable concepts represented as latent directions in both the base and fine-tuned models"
+ },
+ {
+  "id": "arXiv:2608.13337",
+  "baslik": "Where You Measure Decides What You Measure: Position Selection in Ablation-Based SAE Evaluation",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Ablasyon değerlendirmesinde konum seçimi eleştirisi",
+  "alinti": "The convention is to measure where the latent fires hardest. That choice is almost never reported, and it is not made by the experimenter"
+ },
+ {
+  "id": "arXiv:2501.16615",
+  "baslik": "Sparse Autoencoders Trained on the Same Data Learn Different Features",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "SAE özelliklerinin tohum-bağımlılığı; kararlılık sorunu",
+  "alinti": "SAEs trained on the same model and data, differing only in the random seed used to initialize their weights, identify different sets of features"
+ },
+ {
+  "id": "arXiv:2505.11756",
+  "baslik": "Feature Hedging: Correlated Features Break Narrow Sparse Autoencoders",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "SAE eksiklik/özellik birleşmesi; kritik eleştiri",
+  "alinti": "we find that if an SAE is more narrow than the number of underlying \"true features\" on which it is trained"
+ },
+ {
+  "id": "arXiv:2503.17547",
+  "baslik": "Learning Multi-Level Features with Matryoshka Sparse Autoencoders",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "İç içe sözlüklerle hiyerarşik SAE varyantı",
+  "alinti": "We introduce Matryoshka SAEs, a novel variant that addresses these issues by simultaneously training multiple nested dictionaries of increasing size"
+ },
+ {
+  "id": "arXiv:2603.28744",
+  "baslik": "Stop Probing, Start Coding: Why Linear Probes and Sparse Autoencoders Fail at Compositional Generalisation",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "SAE ve lineer probe'ların kompozisyonel genelleme başarısızlığı",
+  "alinti": "Sparse autoencoders (SAEs), on the other hand, amortise sparse inference into a fixed encoder, introducing a systematic gap"
+ },
+ {
+  "id": "arXiv:2511.13981",
+  "baslik": "Data Whitening Improves Sparse Autoencoder Learning",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "PCA beyazlatma ile SAE eğitimi iyileştirmesi",
+  "alinti": "We demonstrate that applying PCA Whitening to input activations -- a standard preprocessing technique in classical sparse coding -- improves SAE performance across multiple metrics."
+ },
+ {
+  "id": "doi:10.32388/r3sz5u",
+  "baslik": "Robustly Identifying Concepts Introduced During Chat Fine-Tuning Using Crosscoders",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Crosscoder ile sohbet ince ayarı kavram tespiti",
+  "alinti": "Crosscoders[1] are a recent model diffing method that learns a shared dictionary of interpretable concepts represented as latent directions in both the base and fine-tuned models"
+ },
+ {
+  "id": "arXiv:2410.11179",
+  "baslik": "Interpretability as Compression: Reconsidering SAE Explanations of Neural Activations with MDL-SAEs",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "MDL çerçevesi: SAE'leri sıkıştırma olarak yorumlama",
+  "alinti": "naively optimising SAEs for reconstruction loss and sparsity results in a preference for SAEs that are extremely wide and sparse."
+ },
+ {
+  "id": "arXiv:2411.13117",
+  "baslik": "Compute Optimal Inference and Provable Amortisation Gap in Sparse Autoencoders",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Kodlayıcı sınırlılığı ve amortisasyon boşluğu üzerine teori",
+  "alinti": "we prove that an SAE encoder is inherently insufficient for accurate sparse inference, even in solvable cases."
+ },
+ {
+  "id": "arXiv:2410.08201",
+  "baslik": "Efficient Dictionary Learning with Switch Sparse Autoencoders",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Switch SAE mimari varyantı; ölçeklenme ve eğitim maliyeti",
+  "alinti": "Inspired by sparse mixture of experts models, Switch SAEs route activation vectors between smaller \"expert\" SAEs, enabling SAEs to efficiently scale to many more features."
+ },
+ {
+  "id": "arXiv:2505.11836",
+  "baslik": "SplInterp: Improving our Understanding and Training of Sparse Autoencoders",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "SAE'lerin teorik temeli; TopK geometrisi ve eğitim algoritması",
+  "alinti": "we discover that SAEs generalise ``$k$-means autoencoders'' to be piecewise affine, but sacrifice accuracy for interpretability"
+ },
+ {
+  "id": "arXiv:2605.22462",
+  "baslik": "From Correlation to Cause: A Five-Stage Methodology for Feature Analysis in Transformer Language Models",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "IOI'de SAE özelliklerinin kısmi nedensellik sınırı",
+  "alinti": "Causal validation finds these features specifically but only partially causal: ablating fifteen of them leaves the model accurate on 98% of prompts."
+ },
+ {
+  "id": "arXiv:2510.03659",
+  "baslik": "Does higher interpretability imply better utility? A Pairwise Analysis on Sparse Autoencoders",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Yorumlanabilirlik ile steering faydası arasında zayıf ilişki",
+  "alinti": "Our analysis reveals only a relatively weak positive association (tau b approx 0.298), indicating that interpretability is an insufficient proxy for steering performance."
+ },
+ {
+  "id": "arXiv:2504.02821",
+  "baslik": "Sparse Autoencoders Learn Monosemantic Features in Vision-Language Models",
+  "yil": 2025,
+  "cites": 11,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "VLM'lerde SAE; tekdüzelik değerlendirmesi ve yönlendirme",
+  "alinti": "Our experimental results reveal that SAEs trained on VLMs significantly enhance the monosemanticity of individual neurons, with sparsity and wide latents being the most influential factors."
+ },
+ {
+  "id": "arXiv:2411.08790",
+  "baslik": "Can sparse autoencoders be used to decompose and interpret steering vectors?",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "SAE'lerin steering vektörlerini ayrıştırmada sınırları",
+  "alinti": "This paper investigates why directly applying SAEs to steering vectors yields misleading decompositions, identifying two reasons:"
+ },
+ {
+  "id": "arXiv:2411.00743",
+  "baslik": "Decoding Dark Matter: Specialized Sparse Autoencoders for Interpreting Rare Concepts in Foundation Models",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Dark matter kavramları için özelleşmiş SAE; nadir kavramlar",
+  "alinti": "We introduce Specialized Sparse Autoencoders (SSAEs), designed to illuminate these elusive dark matter features by focusing on specific subdomains."
+ },
+ {
+  "id": "arXiv:2412.06410",
+  "baslik": "BatchTopK Sparse Autoencoders",
+  "yil": 2024,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "TopK SAE'nin toplu-seviye gevşetilmiş varyantı",
+  "alinti": "We introduce BatchTopK SAEs, a training method that improves upon TopK SAEs by relaxing the top-k constraint to the batch-level"
+ },
+ {
+  "id": "arXiv:2607.17770",
+  "baslik": "Measuring Monosemanticity in Sparse Autoencoders via Latent Activation Coherence",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Teksemantiklik için etiketsiz değerlendirme metriği",
+  "alinti": "We introduce the Tversky Monosemanticity Score (TMS), a label-free metric that operationalizes monosemanticity as activation-set coherence of binarized SAE latents"
+ },
+ {
+  "id": "arXiv:2410.07456",
+  "baslik": "SAGE: Scalable Ground Truth Evaluations for Large Sparse Autoencoders",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Büyük SAE'ler için ground-truth değerlendirme çerçevesi",
+  "alinti": "We introduce SAGE: Scalable Autoencoder Ground-truth Evaluation, a ground truth evaluation framework for SAEs that scales to large state-of-the-art SAEs and models."
+ },
+ {
+  "id": "arXiv:2605.31245",
+  "baslik": "Toward Identifiable Sparse Autoencoders",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "TopK SAE'nin kararsızlığı ve kimlik sorunu; iSAE varyantı",
+  "alinti": "we also show theoretically that SAEs are highly unstable: different training runs are likely to produce different concept dictionaries and sparse codes."
+ },
+ {
+  "id": "arXiv:2607.08843",
+  "baslik": "How are linear representations learned? Exact solutions to the dynamics of abstraction",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Doğrusal temsil hipotezi; probing ve yönlendirmenin temeli",
+  "alinti": "In deep learning, this idea is known as the linear representation hypothesis and underpins many interpretability and control methods based on linear probes, from concept detection to activation steering."
+ },
+ {
+  "id": "arXiv:2405.13868",
+  "baslik": "Automatically Identifying Local and Global Circuits with Linear Computation Graphs",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "SAE ve transcoder ile devre keşfi; doğrusal hesaplama grafiği",
+  "alinti": "With these two modules inserted into the model, the model's computation graph with respect to OV and MLP circuits becomes strictly linear."
+ },
+ {
+  "id": "arXiv:2604.07615",
+  "baslik": "ADAG: Automatically Describing Attribution Graphs",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Devre izleme grafiklerinin otomatik açıklaması",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2209.10652",
+  "baslik": "Governance Architecture for Neural Network Superposition: A Structural Solution to Hallucination via Routing and Interference Filtering",
+  "yil": 2022,
+  "cites": 50,
+  "kaynaklar": [
+   "arxiv",
+   "dblp",
+   "openalex",
+   "sef"
+  ],
+  "rel": 1,
+  "not": "Süperpozisyon-halüsinasyon; oyuncak model, SAE dışı",
+  "alinti": "Demonstrates that hallucination in neural networks is a structural consequence of ungoverned superposition. Introduces a governance filter operating on the Gram matrix of the weight matrix"
+ },
+ {
+  "id": "arXiv:2609.06862",
+  "baslik": "Feature Superposition in Neural Networks: From Theory to Practice",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Süperpozisyon teorisi ve pratikte özellik kurtarma",
+  "alinti": "It was proposed to explain polysemantic neurons, which respond to several features, and also other phenomena"
+ },
+ {
+  "id": "arXiv:2304.09707",
+  "baslik": "Disentangling Neuron Representations with Concept Vectors",
+  "yil": 2023,
+  "cites": 10,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Çok anlamlı nöronları kavram vektörlerine ayırma",
+  "alinti": "The main contribution of this paper is a method to disentangle polysemantic neurons into concept vectors encapsulating distinct features."
+ },
+ {
+  "id": "arXiv:2605.09887",
+  "baslik": "The Geometric Wall: Manifold Structure Predicts Layerwise Sparse Autoencoder Scaling Laws",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "SAE ölçekleme yasaları ve manifold geometrisi",
+  "alinti": "We conduct the first cross-layer SAE scaling study, fitting and regressing on 844 residual-stream Gemma Scope SAE checkpoints across 68 layers of Gemma 2 2B and 9B."
+ },
+ {
+  "id": "arXiv:2606.14990",
+  "baslik": "Rational Sparse Autoencoder",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Yeni SAE mimarisi; ReLU/JumpReLU/TopK yerine rasyonel aktivasyon",
+  "alinti": "We introduce the Rational Sparse Autoencoder (RSAE), which replaces the fixed encoder activation with a trainable rational function."
+ },
+ {
+  "id": "arXiv:2501.14926",
+  "baslik": "Interpretability in Parameter Space: Minimizing Mechanistic Description Length with Attribution-based Parameter Decomposition",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Parametre uzayı ayrıştırması; alternatif yaklaşım",
+  "alinti": "a method that directly decomposes a neural network's parameters into components that (i) are faithful to the parameters of the original network"
+ },
+ {
+  "id": "arXiv:2605.06610",
+  "baslik": "SoftSAE: Dynamic Top-K Selection for Adaptive Sparse Autoencoders",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "TopK SAE için dinamik K seçimi",
+  "alinti": "They enforce the same number of active features (K) across all inputs, ignoring the varying complexity of real-world data."
+ },
+ {
+  "id": "arXiv:2411.01220",
+  "baslik": "Enhancing Neural Network Interpretability with Feature-Aligned Sparse Autoencoders",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "SAE eğitimi için Mutual Feature Regularization yöntemi",
+  "alinti": "a regularization technique for improving feature learning by encouraging SAEs trained in parallel to learn similar features."
+ },
+ {
+  "id": "doi:10.52202/085713-2122",
+  "baslik": "Revising and Falsifying Sparse Autoencoder Feature Explanations",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "SAE özellik açıklamalarının revizyonu ve yanlışlanması",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2607.01799",
+  "baslik": "Expander Sparse Autoencoders: Parameter-Efficient Dictionaries for Mechanistic Interpretability",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Parametre verimli SAE sözlük mimarisi",
+  "alinti": "Sparse autoencoders (SAEs) decompose internal activations of neural networks into sparse linear combinations of learned features by fitting an overcomplete dictionary"
+ },
+ {
+  "id": "arXiv:2608.02632",
+  "baslik": "LLMs Can Annotate Attribution Graphs",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Devre keşfinde otomatik özellik gruplama",
+  "alinti": "We present a simple pipeline for automating this step: directly presenting feature descriptions to a language model that groups them into supernodes"
+ },
+ {
+  "id": "doi:10.1109/ijcnn.2015.7280568",
+  "baslik": "An empirical analysis of different sparse penalties for autoencoder in unsupervised feature learning",
+  "yil": 2015,
+  "cites": 23,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Genel seyrek otokodlayıcı cezaları; LLM yorumlanabilirliği yok",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2502.16385",
+  "baslik": "Toward a Flexible Framework for Linear Representation Hypothesis Using Maximum Likelihood Estimation",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Doğrusal temsil hipotezi; yönlendirme vektörleri",
+  "alinti": "We introduce a new notion of binary concepts as unit vectors in a canonical representation space, and utilize LLMs' (neural) activation differences"
+ },
+ {
+  "id": "arXiv:2504.08192",
+  "baslik": "SAEs Can Improve Unlearning: Dynamic Sparse Autoencoder Guardrails for Precision Unlearning in LLMs",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Dinamik SAE koruyucuları ile unlearning",
+  "alinti": "This work demonstrates that, contrary to these earlier findings, SAEs can significantly improve unlearning when employed dynamically."
+ },
+ {
+  "id": "doi:10.1109/ccdc.2015.7162335",
+  "baslik": "The effect of different hidden unit number of sparse autoencoder",
+  "yil": 2015,
+  "cites": 10,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "SAE gizli birim sayısının etkisi; yalnızca başlık",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2409.04478",
+  "baslik": "Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Nedensel değerlendirme; nöron ve DAS tabanlarıyla karşılaştırma",
+  "alinti": "We evaluate four open-source SAEs for GPT-2 small against each other, with neurons serving as a baseline, and linear features learned via distributed alignment search (DAS) serving as a skyline."
+ },
+ {
+  "id": "doi:10.3390/sym18061043",
+  "baslik": "Active Circuit Discovery: A Multi-Action POMDP Agent for Causal Feature Identification in Transformer Attribution Graphs",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Transcoder tabanlı devre keşfi; aktif-çıkarım ajanı",
+  "alinti": "ACD uses Anthropic's circuit-tracer library as its attributiongraph backend, applying Edge Attribution Patching with transcoders to identify the active transcoder features for each prompt."
+ },
+ {
+  "id": "arXiv:2606.07007",
+  "baslik": "A Geometric View for Understanding Concept Learning and Neuron Interpretation in Sparse Autoencoders",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "SAE kavram öğrenimi için geometrik ve küme-teorik çerçeve",
+  "alinti": "It also provides a set-theoretic account for common SAE phenomena, including feature splitting, feature absorption, feature families, and hierarchical concepts."
+ },
+ {
+  "id": "arXiv:2512.05534",
+  "baslik": "A Unified Theory of Sparse Dictionary Learning in Mechanistic Interpretability: Piecewise Biconvexity and Spurious Minima",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "SDL'nin teorik analizi; absorption ve ölü nöron sorunları",
+  "alinti": "in practice they consistently produce polysemantic features, feature absorption, and dead neurons, with very limited theoretical understanding of why these phenomena occur"
+ },
+ {
+  "id": "arXiv:2601.22594",
+  "baslik": "Language Model Circuits Are Sparse in the Neuron Basis",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "MLP nöron devre keşfi; SAE alternatifi, sparse temel karşılaştırması",
+  "alinti": "we empirically show that MLP neurons are as sparse a feature basis as SAEs"
+ }
+]

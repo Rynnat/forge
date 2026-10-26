@@ -1,0 +1,1075 @@
+[
+ {
+  "id": "arXiv:2207.12362",
+  "baslik": "OpenRAN Gym: AI/ML Development, Data Collection, and Testing for O-RAN on PAWR Platforms",
+  "yil": 2022,
+  "cites": 79,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "OpenRAN Gym araç seti; PAWR platformları",
+  "alinti": "we present OpenRAN Gym, a unified, open, and O-RAN-compliant experimental toolbox for data collection, design, prototyping and testing of end-to-end data-driven control solutions for next generation Open RAN systems"
+ },
+ {
+  "id": "arXiv:2210.04604",
+  "baslik": "Actor-Critic Network for O-RAN Resource Allocation: xApp Design, Deployment, and Analysis",
+  "yil": 2022,
+  "cites": 40,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Actor-Critic RL xApp; uçtan uca tasarım ve değerlendirme",
+  "alinti": "xApps are the applications which will take this responsibility by leveraging machine learning (ML) algorithms and acting in near-real time"
+ },
+ {
+  "id": "arXiv:2209.14171",
+  "baslik": "Programmable and Customized Intelligence for Traffic Steering in 5G Networks Using Open RAN Architectures",
+  "yil": 2022,
+  "cites": 128,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "ns-O-RAN sandbox; trafik yönlendirme xApp'leri",
+  "alinti": "the research community lacks a sandbox to build data-driven xApps, and create large-scale datasets for effective AI training"
+ },
+ {
+  "id": "arXiv:2112.09559",
+  "baslik": "ColO-RAN: Developing Machine Learning-based xApps for Open RAN Closed-loop Control on Programmable Experimental Platforms",
+  "yil": 2021,
+  "cites": 226,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "ColO-RAN; DRL xApp'leri, Colosseum test ortamı",
+  "alinti": "Building on the scale and computational capabilities of the Colosseum wireless network emulator, ColO-RAN enables ML research at scale using O-RAN components"
+ },
+ {
+  "id": "arXiv:2202.10318",
+  "baslik": "OpenRAN Gym: An Open Toolbox for Data Collection and Experimentation with AI in O-RAN",
+  "yil": 2022,
+  "cites": 57,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "OpenRAN Gym; veri toplama ve deney araç seti",
+  "alinti": "To facilitate these tasks, in this paper we propose OpenRAN Gym, a practical, open, experimental toolbox that provides end-to-end design, data collection, and testing workflows for intelligent control in next generation Open RAN systems"
+ },
+ {
+  "id": "arXiv:2309.03844",
+  "baslik": "Experimental Study of Adversarial Attacks on ML-based xApps in O-RAN",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "ML xApp'lerine karşı adversarial saldırı deneyi",
+  "alinti": "due to the openness of the O-RAN architecture, such AI models are inherently vulnerable to various adversarial machine learning (ML) attacks"
+ },
+ {
+  "id": "arXiv:2404.17317",
+  "baslik": "Colosseum: The Open RAN Digital Twin",
+  "yil": 2024,
+  "cites": 72,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Colosseum dijital ikiz; ML test altyapısı",
+  "alinti": "This paper poses itself as a tutorial on how Colosseum - the world's largest wireless network emulator with hardware in the loop - can provide the research"
+ },
+ {
+  "id": "arXiv:2208.01736",
+  "baslik": "Federated Deep Reinforcement Learning for Resource Allocation in O-RAN Slicing",
+  "yil": 2022,
+  "cites": 78,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Federe DRL ile dilimleme kaynak tahsisi",
+  "alinti": "we propose a federated deep reinforcement learning algorithm to coordinate multiple independent xAPPs in O-RAN for network slicing"
+ },
+ {
+  "id": "arXiv:2012.01263",
+  "baslik": "Intelligence and Learning in O-RAN for Data-driven NextG Cellular Networks",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "O-RAN veri güdümlü NextG; Colosseum entegrasyonu",
+  "alinti": "We also present the first large-scale integration of O-RAN-compliant software components with an open-source full-stack softwarized cellular network"
+ },
+ {
+  "id": "arXiv:2510.18160",
+  "baslik": "Black-Box Evasion Attacks on Data-Driven Open RAN Apps: Tailored Design and Experimental Evaluation",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "RAN verisi üzerinden kara kutu kaçınma saldırısı",
+  "alinti": "there is an increasing recognition that RAN data access to apps could become a source of vulnerability and be exploited by malicious actors"
+ },
+ {
+  "id": "arXiv:2402.06846",
+  "baslik": "System-level Analysis of Adversarial Attacks and Defenses on Intelligence in O-RAN based Cellular Networks",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "xApp'lere sistem düzeyi saldırı ve savunma",
+  "alinti": "we conduct a thorough system-level investigation of cyber threats, with a specific focus on machine learning (ML) intelligence components known as xApps"
+ },
+ {
+  "id": "arXiv:2405.03891",
+  "baslik": "Enhancing O-RAN Security: Evasion Attacks and Robust Defenses for Graph Reinforcement Learning-based Connection Management",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "GNN+DRL bağlantı yönetimi xApp'ine kaçınma saldırısı",
+  "alinti": "We then formulate and demonstrate evasion attacks that degrade the coverage rates by as much as 50% through injecting bounded noise at different threat surfaces"
+ },
+ {
+  "id": "arXiv:2403.01180",
+  "baslik": "Misconfiguration in O-RAN: Analysis of the impact of AI/ML",
+  "yil": 2024,
+  "cites": 37,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "O-RAN yanlış yapılandırma; ML etkisi analizi",
+  "alinti": "However, due to the open nature of O-RAN and its support for heterogeneous systems, the possibility of misconfiguration problems becomes critical"
+ },
+ {
+  "id": "arXiv:2201.06093",
+  "baslik": "Adversarial Machine Learning Threat Analysis and Remediation in Open Radio Access Network (O-RAN)",
+  "yil": 2022,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "O-RAN için sistematik AML tehdit analizi",
+  "alinti": "We start by reviewing relevant ML use cases and analyzing the different ML workflow deployment scenarios in O-RAN"
+ },
+ {
+  "id": "arXiv:2110.07525",
+  "baslik": "Connection Management xAPP for O-RAN RIC: A Graph Neural Network and Reinforcement Learning Approach",
+  "yil": 2021,
+  "cites": 60,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "GNN+RL bağlantı yönetimi ve yük dengeleme",
+  "alinti": "we consider intelligent connection management based on the O-RAN network architecture to optimize user association and load balancing in the network"
+ },
+ {
+  "id": "arXiv:2202.01032",
+  "baslik": "Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "O-RAN mimari, arayüz ve güvenlik kapsamlı eğitim",
+  "alinti": "We provide a deep dive of the O-RAN specifications, describing its architecture, design principles, and the O-RAN interfaces"
+ },
+ {
+  "id": "arXiv:2111.13754",
+  "baslik": "Toward Next Generation Open Radio Access Networks: What O-RAN Can And Cannot Do!",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "O-RAN'ın 6G'de yapabilecekleri ve sınırları",
+  "alinti": "We recognize end-to-end security, deterministic latency, physical layer real-time control, and testing of AI-based RAN control applications as the critical features to enable"
+ },
+ {
+  "id": "arXiv:2401.07643",
+  "baslik": "Machine Learning-based xApp for Dynamic Resource Allocation in O-RAN Networks",
+  "yil": 2024,
+  "cites": 38,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Random Forest xApp ile PRB dinamik tahsisi",
+  "alinti": "The proposed ML model effectively selects the best allocation policy for each base station and enhances the performance of scheduler functionality in O-RAN - Distributed Unit (O-DU)"
+ },
+ {
+  "id": "arXiv:2407.09619",
+  "baslik": "Managing O-RAN Networks: xApp Development from Zero to Hero",
+  "yil": 2024,
+  "cites": 25,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "xApp geliştirme eğitimi; Near-RT RIC mimarisi",
+  "alinti": "We provide a thorough theoretical foundation of the O-RAN architecture and detail the functionality offered by Near Real-Time RAN Intelligent Controller (Near-RT RIC) components"
+ },
+ {
+  "id": "arXiv:2305.06906",
+  "baslik": "ns-O-RAN: Simulating O-RAN 5G Systems in ns-3",
+  "yil": 2023,
+  "cites": 48,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "O-RAN simülasyon aracı ns-O-RAN",
+  "alinti": "availability of Open RAN simulation and experimental tools for the research and development communities. To address this, we introduce ns-O-RAN"
+ },
+ {
+  "id": "doi:10.1109/fnwf58287.2023.10520642",
+  "baslik": "OpenAI dApp: An Open AI Platform for Distributed Federated Reinforcement Learning Apps in O-RAN",
+  "yil": 2023,
+  "cites": 7,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "O-RAN'da federe pekiştirmeli öğrenme dApp platformu",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2310.13667",
+  "baslik": "EXPLORA: AI/ML EXPLainability for the Open RAN",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "DRL tabanlı O-RAN kontrolü için açıklanabilirlik",
+  "alinti": "However, DRL -based solutions are inherently hard to explain, which hinders their deployment and use in practice"
+ },
+ {
+  "id": "doi:10.1109/ojcoms.2025.3546760",
+  "baslik": "Anomaly Detection for Mitigating xApp and E2 Interface Threats in O-RAN Near-RT RIC",
+  "yil": 2025,
+  "cites": 19,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "xApp ve E2 arayüzü tehditlerinin anomali tespiti",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2407.03068",
+  "baslik": "Xapp Distillation: Ai-Based Conflict Mitigation in B5g Open Ran",
+  "yil": 2024,
+  "cites": 12,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "xApp çatışmalarını damıtma ile azaltma",
+  "alinti": "To prevent such conflicts, we proposed the xApp distillation method that distills knowledge from multiple xApps, then uses this knowledge to train a single model"
+ },
+ {
+  "id": "arXiv:2309.05621",
+  "baslik": "A Comparative Analysis of Deep Reinforcement Learning-based xApps in O-RAN",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "DRL xApp'lerinde çatışma ve adalet sorunu",
+  "alinti": "how to design these solutions in a way that does not create conflicts and unfair resource allocation policies is still an open challenge"
+ },
+ {
+  "id": "doi:10.3390/s22145375",
+  "baslik": "Multi-Agent Team Learning in Virtualized Open Radio Access Networks (O-RAN)",
+  "yil": 2022,
+  "cites": 37,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "vRAN/O-RAN'da çok ajanlı takım öğrenmesi",
+  "alinti": "One unique aspect that motivates this paper is the availability of new opportunities that arise from using machine learning, more specifically multi-agent team learning (MATL), to optimize the RAN in a closed-loop"
+ },
+ {
+  "id": "doi:10.3390/fi17060233",
+  "baslik": "Secure and Trustworthy Open Radio Access Network (O-RAN) Optimization: A Zero-Trust and Federated Learning Framework for 6G Networks",
+  "yil": 2025,
+  "cites": 27,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Sıfır güven ve federe öğrenme ile O-RAN güvenliği",
+  "alinti": "we design a Zero-Trust Architecture (ZTA) enforcing continuous authentication and micro-segmentation for RIC components, coupled with an FL framework"
+ },
+ {
+  "id": "arXiv:2409.19807",
+  "baslik": "Energy Saving and Traffic Steering Use Case and Testing by O-RAN RIC xApp/rApp Multi-vendor Interoperability",
+  "yil": 2024,
+  "cites": 11,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Enerji tasarrufu ve trafik yönlendirme; çoklu satıcı testi",
+  "alinti": "This paper discusses the use case of energy saving and traffic steering in O-RAN, the mechanism of multi-vendor interoperability to make it work and depict its test methodology"
+ },
+ {
+  "id": "arXiv:2203.02370",
+  "baslik": "dApps: Distributed Applications for Real-time Inference and Control in O-RAN",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "dApp kavramı ve gerçek zamanlı kontrol döngüleri",
+  "alinti": "we propose the notion of dApps, distributed applications that complement existing xApps/rApps by allowing operators to implement fine-grained data-driven management and control in real-time at the Central Units"
+ },
+ {
+  "id": "arXiv:2201.07385",
+  "baslik": "Team Learning-Based Resource Allocation for Open Radio Access Network (O-RAN)",
+  "yil": 2022,
+  "cites": 74,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "xApp'ler arası çatışmayı azaltan takım öğrenmesi",
+  "alinti": "In particular, we propose a team learning algorithm to enhance the performance of the network by increasing cooperation between xAPPs"
+ },
+ {
+  "id": "arXiv:2504.09187",
+  "baslik": "RSLAQ -- A Robust SLA-driven 6G O-RAN QoS xApp using deep reinforcement learning",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "SLA odaklı DRL QoS xApp'i",
+  "alinti": "they have not considered the critical integration of Service Level Agreements (SLAs) into the ML learning process"
+ },
+ {
+  "id": "doi:10.1109/iccworkshops67674.2025.11162211",
+  "baslik": "ML-Driven xApp for Network Slicing and Resource Optimization in 6G O-RAN Architecture",
+  "yil": 2025,
+  "cites": 3,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "ML tabanlı xApp ile ağ dilimleme ve kaynak optimizasyonu",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2407.06245",
+  "baslik": "ORAN-Bench-13K: An Open Source Benchmark for Assessing LLMs in Open Radio Access Networks",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "O-RAN için LLM benchmark'ı ve RAG tabanlı pipeline",
+  "alinti": "Our benchmark consists of 13,952 meticulously curated multiple-choice questions generated from 116 O-RAN specification documents."
+ },
+ {
+  "id": "arXiv:2201.05632",
+  "baslik": "OrchestRAN: Network Automation through Orchestrated Intelligence in the Open RAN",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Non-RT RIC'te ML tabanlı ağ orkestrasyonu",
+  "alinti": "OrchestRAN has been designed to execute in the non-real-time RAN Intelligent Controller (RIC) and allows Network Operators (NOs) to specify high-level control/inference objectives"
+ },
+ {
+  "id": "arXiv:2409.16754",
+  "baslik": "xDevSM: Streamlining xApp Development With a Flexible Framework for O-RAN E2 Service Models",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "E2 servis modelleri için xApp geliştirme çerçevesi",
+  "alinti": "This is primarily caused by the complexity of the protocol of the E2 interface, which enables communication between the RIC and the RAN"
+ },
+ {
+  "id": "doi:10.36227/techrxiv.176471864.44115969/v1",
+  "baslik": "AI in Open RAN Security: Enabler and Threat - A Comprehensive Survey and Future Perspectives",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "O-RAN'da AI güvenliği: tehdit ve savunma anketi",
+  "alinti": "Artificial Intelligence (AI) and Machine Learning (ML) technologies are set to play a prominent role in O-RAN, fostering transformative advancements"
+ },
+ {
+  "id": "arXiv:2212.01510",
+  "baslik": "Open RAN Security: Challenges and Opportunities",
+  "yil": 2022,
+  "cites": 149,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Open RAN güvenlik ve gizlilik riskleri",
+  "alinti": "As Open RAN offers an entirely different RAN configuration than what exists today, it could lead to severe security and privacy issues if mismanaged"
+ },
+ {
+  "id": "arXiv:2601.13769",
+  "baslik": "Interoperable rApp/xApp Control over O-RAN for Mobility-aware Dynamic Spectrum Allocation",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "rApp/xApp tabanlı dinamik spektrum tahsisi",
+  "alinti": "This paper proposes an interoperable rApp/xApp-driven dynamic spectrum allocation (DSA) framework for O-RAN, based on a graph-theoretic formulation of physical resource block (PRB) assignment"
+ },
+ {
+  "id": "arXiv:2508.08029",
+  "baslik": "Robust Anomaly Detection in O-RAN: Leveraging LLMs against Data Manipulation Attacks",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM tabanlı anomali tespiti, veri manipülasyonu saldırısına karşı savunma",
+  "alinti": "We investigate the use of Large Language Models (LLMs) for anomaly detection within the O-RAN architecture to address this challenge."
+ },
+ {
+  "id": "doi:10.1016/j.icte.2024.02.001",
+  "baslik": "RAN Intelligent Controller (RIC): From open-source implementation to real-world validation",
+  "yil": 2024,
+  "cites": 38,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Açık kaynak RIC uygulamasından gerçek dünya doğrulamasına",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.3390/s23218792",
+  "baslik": "Recent Advances in Machine Learning for Network Automation in the O-RAN",
+  "yil": 2023,
+  "cites": 36,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "O-RAN'da ML ile ağ otomasyonu anketi",
+  "alinti": "This paper presents a comprehensive survey of the current research efforts on network automation usingML in O-RAN"
+ },
+ {
+  "id": "doi:10.1145/3592149.3592157",
+  "baslik": "O-RAN with Machine Learning in ns-3",
+  "yil": 2023,
+  "cites": 20,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ns-3 simülasyonunda O-RAN ve makine öğrenmesi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2411.07128",
+  "baslik": "ZT-RIC: A Zero Trust RIC Framework For Ensuring Data Privacy And Confidentiality In Open RAN",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "RIC için sıfır güven ve şifreli veri koruma",
+  "alinti": "ZT-RIC employs Inner Product Functional Encryption (IPFE) to encrypt RAN/UE data at the base station, preventing leaks through the E2 interface and shared database"
+ },
+ {
+  "id": "arXiv:2305.07117",
+  "baslik": "Conflict Mitigation Framework and Conflict Detection in O-RAN Near-RT RIC",
+  "yil": 2023,
+  "cites": 58,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Near-RT RIC'te xApp çatışma tespit ve çözümü",
+  "alinti": "This article defines a conflict mitigation framework (CMF) built into the existing O-RAN architecture; it enables the Conflict Mitigation component"
+ },
+ {
+  "id": "arXiv:2403.10808",
+  "baslik": "Transformer-Based Wireless Traffic Prediction and Network Optimization in O-RAN",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Transformer trafik tahmini ve hücre uyku rApp'i",
+  "alinti": "This paper introduces an innovative method for predicting wireless network traffic in concise temporal intervals for Open Radio Access Networks (O-RAN) using a transformer architecture"
+ },
+ {
+  "id": "arXiv:2409.20391",
+  "baslik": "Machine Learning-enabled Traffic Steering in O-RAN: A Case Study on Hierarchical Learning Approach",
+  "yil": 2024,
+  "cites": 9,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ML tabanlı trafik yönlendirme anketi ve h-DQN",
+  "alinti": "we first introduce the background of traffic steering in O-RAN and overview relevant state-of-the-art ML techniques and their applications"
+ },
+ {
+  "id": "arXiv:2307.00319",
+  "baslik": "Explainable AI in 6G O-RAN: A Tutorial and Survey on Architecture, Use Cases, Challenges, and Future Research",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "O-RAN'da açıklanabilir yapay zeka anketi",
+  "alinti": "the adoption of such smart and autonomous systems is limited by the current inability of human operators to understand the decision process of such AI/ML solutions"
+ },
+ {
+  "id": "doi:10.1109/icc45041.2023.10278921",
+  "baslik": "xApp for Traffic Steering and Load Balancing in the O-RAN Architecture",
+  "yil": 2023,
+  "cites": 20,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; trafik yönlendirme xApp'i",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2409.15098",
+  "baslik": "Energy Saving in 6G O-RAN Using DQN-based xApp",
+  "yil": 2024,
+  "cites": 12,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "DQN tabanlı enerji tasarrufu xApp'i",
+  "alinti": "This paper proposes using Reinforcement Learning (RL), a subset of Machine Learning (ML), to improve ES"
+ },
+ {
+  "id": "arXiv:2506.12812",
+  "baslik": "Federated Neuroevolution O-RAN: Enhancing the Robustness of Deep Reinforcement Learning xApps",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Neuroevolution ile DRL xApp'lerinin güvenilirliği",
+  "alinti": "We therefore introduce Federated O-RAN enabled Neuroevolution (NE)-enhanced DRL (F-ONRL) that deploys an NE-based optimizer xApp in parallel to the RAN controller xApps"
+ },
+ {
+  "id": "doi:10.1109/hpsr62440.2024.10635962",
+  "baslik": "Enabling Reusable and Comparable xApps in the Machine Learning-Driven Open RAN",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yeniden kullanılabilir ML xApp'leri ve karşılaştırma; merkezi",
+  "alinti": "Enabling Reusable and Comparable xApps in the Machine Learning-Driven Open RAN."
+ },
+ {
+  "id": "doi:10.1145/3643833.3656118",
+  "baslik": "Security Testing The O-RAN Near-Real Time RIC &amp; A1 Interface",
+  "yil": 2024,
+  "cites": 28,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Yalnızca başlık; ML bağlantısı belirsiz",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2302.01864",
+  "baslik": "Machine Learning-based Early Attack Detection Using Open RAN Intelligent Controller",
+  "yil": 2023,
+  "cites": 20,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Near-RT RIC'te DoS tespiti ML ile; güvenlik uygulaması",
+  "alinti": "We design and demonstrate a method for early detection of Denial-of-Service attacks"
+ },
+ {
+  "id": "doi:10.23919/ifipnetworking62109.2024.10619796",
+  "baslik": "Enabling Online Reinforcement Learning Training For Open RAN",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Online RL eğitimi O-RAN; başlıktan belirgin",
+  "alinti": "Enabling Online Reinforcement Learning Training For Open RAN."
+ },
+ {
+  "id": "doi:10.14722/futureg.2025.23057",
+  "baslik": "LLM-xApp: A Large Language Model Empowered Radio Resource Management xApp for 5G O-RAN",
+  "yil": 2025,
+  "cites": 24,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM destekli radyo kaynak yönetimi xApp'i",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2602.14117",
+  "baslik": "Toward Autonomous O-RAN: A Multi-Scale Agentic AI Framework for Real-Time Network Control and Management",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "O-RAN için çok ölçekli agentic AI ve LLM/SLM ajanları",
+  "alinti": "This article proposes a multi-scale agentic AI framework for O-RAN that organizes RAN intelligence as a coordinated hierarchy across the Non-Real-Time (Non-RT), Near-Real-Time (Near-RT), and Real-Time (RT) control loops"
+ },
+ {
+  "id": "doi:10.1109/sin63213.2024.10871665",
+  "baslik": "Adversarial Attack Vectors Against Near-Real-Time AI xApps in the Open RAN",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Near-RT xApp'lere karşı saldırılar; doğrudan güvenlik",
+  "alinti": "Adversarial Attack Vectors Against Near-Real-Time AI xApps in the Open RAN."
+ },
+ {
+  "id": "arXiv:2401.05042",
+  "baslik": "DRL-based Latency-Aware Network Slicing in O-RAN with Time-Varying SLAs",
+  "yil": 2024,
+  "cites": 35,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Değişken SLA'lı DRL tabanlı gecikme duyarlı dilimleme",
+  "alinti": "To address these challenges, in this paper we propose a novel Deep Reinforcement Learning (DRL) agent design for O-RAN applications"
+ },
+ {
+  "id": "doi:10.1109/mcomstd.101.2000014",
+  "baslik": "O-RAN: Disrupting the Virtualized RAN Ecosystem",
+  "yil": 2021,
+  "cites": 205,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 1,
+  "not": "Yalnızca başlık; ML içeriği belirsiz",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2502.02886",
+  "baslik": "Advancements in Mobile Edge Computing and Open RAN: Leveraging Artificial Intelligence and Machine Learning for Wireless Systems",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "MEC ve O-RAN'da ML derlemesi; çok ilgili",
+  "alinti": "In ORAN, AI/ML is used to develop intelligent xApps for network slicing, scheduling, and online training"
+ },
+ {
+  "id": "arXiv:2401.09204",
+  "baslik": "Cross-Domain AI for Early Attack Detection and Defense Against Malicious Flows in O-RAN",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "O-RAN'da çapraz alan AI ile erken saldırı tespiti",
+  "alinti": "we deployed an end-to-end O-RAN network, that was used to collect data from the RAN and the transport network."
+ },
+ {
+  "id": "arXiv:2504.18062",
+  "baslik": "LLM-hRIC: LLM-empowered Hierarchical RAN Intelligent Control for O-RAN",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM destekli hiyerarşik RIC kontrolü",
+  "alinti": "The LLM-empowered non-real-time RIC (non-RT RIC) acts as a guider, offering a strategic guidance to the near-real-time RIC (near-RT RIC) using global network information"
+ },
+ {
+  "id": "arXiv:2507.09124",
+  "baslik": "Proactive AI-and-RAN Workload Orchestration in O-RAN Architectures for 6G Networks",
+  "yil": 2025,
+  "cites": 16,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "AI-RAN yakınsaması, 6G vizyonu, SAC ve Y1 arayüzü",
+  "alinti": "we propose a Converged AI-and-ORAN Architectural (CAORA) framework based on O-RAN specifications"
+ },
+ {
+  "id": "arXiv:2501.05879",
+  "baslik": "A Practical Demonstration of DRL-Based Dynamic Resource Allocation xApp Using OpenAirInterface",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "OpenAirInterface üzerinde DRL tabanlı kaynak tahsisi xApp",
+  "alinti": "This paper presents a deep reinforcement learning (DRL) approach for allocating radio resources to slices, where the objective is to meet the latency requirement"
+ },
+ {
+  "id": "doi:10.1109/wcnc51071.2022.9771700",
+  "baslik": "Joint Selection of Local Trainers and Resource Allocation for Federated Learning in Open RAN Intelligent Controllers",
+  "yil": 2022,
+  "cites": 33,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Federe öğrenme, RIC'te kaynak tahsisi; doğrudan ilgili",
+  "alinti": "Joint Selection of Local Trainers and Resource Allocation for Federated Learning in Open RAN Intelligent Controllers"
+ },
+ {
+  "id": "doi:10.1109/ojcoms.2024.3364840",
+  "baslik": "Security Threats to xApps Access Control and E2 Interface in O-RAN",
+  "yil": 2024,
+  "cites": 48,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "xApp erişim kontrolü ve E2 arayüzü güvenlik tehditleri",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2405.08577",
+  "baslik": "Intelligent Control in 6G Open RAN: Security Risk or Opportunity?",
+  "yil": 2024,
+  "cites": 35,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "RIC güvenliği derlemesi; 6G vizyonu da var",
+  "alinti": "This survey combines a comprehensive analysis of RAN security, tracing its evolution from 2G to 5G, with an in-depth exploration of RIC security"
+ },
+ {
+  "id": "doi:10.1109/mic.2021.3062487",
+  "baslik": "RIC: A RAN Intelligent Controller Platform for AI-Enabled Cellular Networks",
+  "yil": 2021,
+  "cites": 106,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "RIC platformu, AI destekli ağlar; temel mimari çalışma",
+  "alinti": "RIC: A RAN Intelligent Controller Platform for AI-Enabled Cellular Networks"
+ },
+ {
+  "id": "doi:10.1109/access.2024.3412758",
+  "baslik": "Energy Consumption of Machine Learning Enhanced Open RAN: A Comprehensive Review",
+  "yil": 2024,
+  "cites": 49,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ML destekli Open RAN'ın enerji tüketimi incelemesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.52783/cana.v32.6716",
+  "baslik": "AI-Enhanced Service Management and Orchestration for rApp and xApp Lifecycle Automation in Open RAN",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "rApp/xApp yaşam döngüsü için AI tabanlı SMO",
+  "alinti": "The framework uses machine learning models for analyzing network telemetry data which helps identify performance problems"
+ },
+ {
+  "id": "arXiv:2405.07324",
+  "baslik": "QACM: QoS-Aware xApp Conflict Mitigation in Open RAN",
+  "yil": 2024,
+  "cites": 27,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "xApp çatışma yönetimi, QoS odaklı yapılandırma optimizasyonu",
+  "alinti": "A QoS-Aware Conflict Mitigation (QACM) method is proposed that finds the optimal configuration of conflicting parameters while maximizing the number of xApps that have their Quality of Service (QoS) requirements met."
+ },
+ {
+  "id": "arXiv:2110.10617",
+  "baslik": "Colosseum: Large-Scale Wireless Experimentation Through Hardware-in-the-Loop Network Emulation",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Genel kablosuz test yatağı, O-RAN deneylerinde kullanılıyor",
+  "alinti": "Colosseum is an open-access and publicly-available large-scale wireless testbed for experimental research via virtualized and softwarized waveforms"
+ },
+ {
+  "id": "arXiv:2311.17482",
+  "baslik": "Challenges for Conflict Mitigation in O-RAN's RAN Intelligent Controllers",
+  "yil": 2023,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "O-RAN RIC'lerinde çatışma yönetimi zorlukları",
+  "alinti": "In this article, we identify key challenges for conflict mitigation in O-RAN networks, including reliable conflict detection, efficient maintenance of conflict mitigation configuration, optimal conflict resolution logic"
+ },
+ {
+  "id": "doi:10.1109/eucnc/6gsummit63408.2025.11037045",
+  "baslik": "An Open RAN Development Framework With Network Energy Saving rApp Implementation",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Enerji tasarrufu rApp'i içeren Open RAN geliştirme çerçevesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ojcoms.2025.3644132",
+  "baslik": "Integrating Zero Trust Architecture in O-RAN: A Comprehensive Survey and Analysis",
+  "yil": 2025,
+  "cites": 11,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "O-RAN için Zero Trust mimarisi derlemesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/mnet.2023.3320933",
+  "baslik": "Open AI Cellular (OAIC): An Open Source 5G O-RAN Testbed for Design and Testing of AI-Based RAN Management Algorithms",
+  "yil": 2023,
+  "cites": 45,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "AI tabanlı RAN yönetimi için açık kaynak 5G O-RAN test ortamı",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2401.07960",
+  "baslik": "ADMIn: Attacks on Dataset, Model and Input. A Threat Model for AI Based Software",
+  "yil": 2024,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Genel AI yazılımı tehdit modeli, O-RAN'a özgü değil",
+  "alinti": "In this paper, we present a threat model that can be used to systematically uncover threats to AI based software"
+ },
+ {
+  "id": "doi:10.1109/access.2023.3311888",
+  "baslik": "Resource Allocation Based on Radio Intelligence Controller for Open RAN Toward 6G",
+  "yil": 2023,
+  "cites": 41,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "RIC tabanlı kaynak tahsisi, 6G için Open RAN",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2405.04395",
+  "baslik": "PACIFISTA: Conflict Evaluation and Management in Open RAN",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "rApp/xApp çatışma değerlendirme ve yönetim çerçevesi",
+  "alinti": "O-RAN introduced the RAN Intelligent Controllers (RICs) to enable dynamic control of cellular networks via data-driven applications referred to as rApps and xApps."
+ },
+ {
+  "id": "doi:10.1109/tccn.2024.3524641",
+  "baslik": "Resource Allocation for Network Slicing in Open RAN: A Hierarchical Learning Approach",
+  "yil": 2025,
+  "cites": 57,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Open RAN'da dilimleme için hiyerarşik öğrenme kaynak tahsisi",
+  "alinti": ""
+ }
+]

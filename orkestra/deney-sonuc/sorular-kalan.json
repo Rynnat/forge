@@ -1,0 +1,132 @@
+[
+ {
+  "id": "q05",
+  "soru": "Robot öğrenmesine fizik önbilgilerinin (fiziksel yasalar, simetriler, dinamik modeller) katılması üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-08-15"
+ },
+ {
+  "id": "q06",
+  "soru": "LSM-ağacı tabanlı anahtar-değer depolarında sıkıştırma (compaction) kaynaklı performans dalgalanması ve optimizasyon teknikleri üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2025-06-13"
+ },
+ {
+  "id": "q07",
+  "soru": "Kalıcı homoloji (persistent homology) tabanlı topolojik optimizasyon, makine öğrenmesinde topolojik düzenlileştirme ve ilgili algoritmik yöntemler üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-02-24"
+ },
+ {
+  "id": "q08",
+  "soru": "Heterojen 2.5D/3D entegre devrelerde ve paketlerde çok ölçekli ısıl modelleme yöntemleri üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-02-26"
+ },
+ {
+  "id": "q09",
+  "soru": "SMT tabanlı sınırlı model denetimi ile C/C++ yazılımının biçimsel doğrulanması ve bu alandaki araçların gelişimi üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-04-25"
+ },
+ {
+  "id": "q10",
+  "soru": "Büyük dil modellerinde halüsinasyonların nedenleri, tespiti, azaltılması ve önlenmesi üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-06-20"
+ },
+ {
+  "id": "q11",
+  "soru": "Veri görselleştirmelerinde metin ile görselin birlikte kullanımı (veri anlatımı, açıklama, ek metin) üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-02-01"
+ },
+ {
+  "id": "q12",
+  "soru": "Konuşma ve bağlamdan beden ve yüz hareketi üretimi için kullanılan veri kümeleri, değerlendirme ölçütleri ve üretken yöntemler üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2025-11-09"
+ },
+ {
+  "id": "q13",
+  "soru": "Araç kullanan ve hafızası olan büyük dil modeli ajanlarında veri gizliliği tehditleri ve savunmaları üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-05-25"
+ },
+ {
+  "id": "q14",
+  "soru": "Uyarlamalı (adaptive) girdilere karşı dayanıklı eskiz (sketching) ve akan veri (streaming) algoritmaları üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-06-15"
+ },
+ {
+  "id": "q15",
+  "soru": "Bilişim eğitiminde üretken yapay zeka kullanımının zararları ve istenmeyen sonuçları (akademik dürüstlük, öğrenme kaybı, bağımlılık) üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2025-09-06"
+ },
+ {
+  "id": "q16",
+  "soru": "Katı hal sürücülerinde (SSD) ölçeklenebilirlik, dayanıklılık, gecikme ve güvenlik için cihaz düzeyinde optimizasyon teknikleri üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2025-06-10"
+ },
+ {
+  "id": "q17",
+  "soru": "Çok kipli büyük dil modelleriyle çalışan çoklu robot ağlarında algılama, haberleşme ve hesaplamanın birlikte ele alınması üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-02-28"
+ },
+ {
+  "id": "q18",
+  "soru": "6G kablosuz ağ yönetiminde (kaynak tahsisi, yörünge tasarımı, optimizasyon) büyük dil modellerinin kullanımı üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2025-08-07"
+ },
+ {
+  "id": "q19",
+  "soru": "Grafik ve çizelge anlama için çok kipli büyük dil modelleri üzerine en önemli çalışmalar, sınırlılıklar ve açık problemler neler?",
+  "kesim": "2026-01-08"
+ },
+ {
+  "id": "q20",
+  "soru": "Dil modellerinin iç aktivasyonlarını yorumlanabilir özelliklere ayıran seyrek otokodlayıcı yöntemleri üzerine en önemli çalışmalar, değerlendirme yaklaşımları ve açık problemler neler?",
+  "kesim": "2026-09-14"
+ },
+ {
+  "id": "q21",
+  "soru": "Veri değerleme ve veri paraya çevirme için ölçütler, KPI'lar ve taksonomiler üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2025-07-25"
+ },
+ {
+  "id": "q22",
+  "soru": "İçerik dağıtım ağlarında önbellekleme ile birleşen güvenli kodlanmış önbellekleme (gizlilik ve güvenlik garantileri) üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-02-11"
+ },
+ {
+  "id": "q23",
+  "soru": "Açık radyo erişim ağlarında (O-RAN) makine öğrenmesi kullanımı, mimariler ve zorluklar üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-02-27"
+ },
+ {
+  "id": "q24",
+  "soru": "Karmaşık bellek erişim örüntülerini tahmin eden akıllı veri önceden getirme (prefetching) teknikleri üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-05-08"
+ },
+ {
+  "id": "q25",
+  "soru": "Büyük dil modellerinin eğitim verisinde belirli bir metnin yer alıp almadığını tespit etme (üyelik çıkarımı) ve test verisi kirlenmesi üzerine en önemli çalışmalar, güvenlik sonuçları ve açık problemler neler?",
+  "kesim": "2026-04-21"
+ },
+ {
+  "id": "q26",
+  "soru": "Tıbbi görüntü analizinde (segmentasyon, sınıflandırma, rapor üretimi) temel modellerin kullanımı üzerine en önemli çalışmalar, kanıtlar ve açık problemler neler?",
+  "kesim": "2025-09-19"
+ },
+ {
+  "id": "q27",
+  "soru": "Bulut hizmetlerinde olay yönetimi için kök neden analizi (hata konumlandırma, nedensellik çıkarımı) yöntemleri üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2025-09-22"
+ },
+ {
+  "id": "q28",
+  "soru": "Makine öğrenmesi hatlarında farklı saldırganların birlikte hareket ederek güvenlik, gizlilik ve adalet risklerini güçlendirmesi üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-05-08"
+ },
+ {
+  "id": "q29",
+  "soru": "Okul öncesi ve erken çocukluk eğitiminde artırılmış/sanal gerçeklik kullanımının pedagojik, sağlık, etik ve gizlilik boyutları üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-01-13"
+ },
+ {
+  "id": "q30",
+  "soru": "Uzaktan kumandalı dört bacaklı robotların iletişim ve kontrol altyapısına yönelik siber güvenlik zafiyetleri, tehditler ve savunmalar üzerine en önemli çalışmalar ve açık problemler neler?",
+  "kesim": "2026-01-26"
+ }
+]

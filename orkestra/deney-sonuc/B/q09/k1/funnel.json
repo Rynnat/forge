@@ -1,0 +1,248 @@
+{
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "dengeli": true,
+ "asamalar": [
+  {
+   "asama": "toplama:openalex",
+   "giren": 0,
+   "cikan": 0,
+   "dusen": {},
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "cozumleme:sef_capa",
+   "giren": 23,
+   "cikan": 17,
+   "dusen": {
+    "cozulemedi": 6
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "toplama:crossref",
+   "giren": 3500,
+   "cikan": 3404,
+   "dusen": {
+    "tur_disi:dataset": 20,
+    "tur_disi:proceedings": 8,
+    "tur_disi:peer-review": 42,
+    "basliksiz": 26
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "cozumleme:web",
+   "giren": 33,
+   "cikan": 26,
+   "dusen": {
+    "cozulemedi": 6,
+    "tekrar_baslik": 1
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "toplama:dblp",
+   "giren": 458,
+   "cikan": 458,
+   "dusen": {},
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "toplama:arxiv",
+   "giren": 3989,
+   "cikan": 3989,
+   "dusen": {},
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "tekillestirme_1",
+   "giren": 7894,
+   "cikan": 5620,
+   "dusen": {
+    "birlesti": 2274
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "kesim_1",
+   "giren": 5620,
+   "cikan": 5524,
+   "dusen": {
+    "tarih_belirsiz": 96
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "toplama:atif",
+   "giren": 6144,
+   "cikan": 492,
+   "dusen": {
+    "tavan_kesimi": 5639,
+    "meta_yok": 13
+   },
+   "ok": true,
+   "not": "12 tohum; OpenCitations referans + atıf yapan"
+  },
+  {
+   "asama": "tekillestirme_2",
+   "giren": 6016,
+   "cikan": 5891,
+   "dusen": {
+    "birlesti": 125
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "kesim_2",
+   "giren": 5891,
+   "cikan": 5888,
+   "dusen": {
+    "tarih_yok": 3
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "okuyucu_kesimi",
+   "giren": 5888,
+   "cikan": 1200,
+   "dusen": {
+    "on_siralama_kesimi": 4688
+   },
+   "ok": true,
+   "not": "en çok 1200 aday okunur; düşenler dusenler_on_siralama.jsonl"
+  },
+  {
+   "asama": "okuyucu",
+   "giren": 1200,
+   "cikan": 1077,
+   "dusen": {
+    "kesin_alakasiz": 123
+   },
+   "ok": true,
+   "not": ""
+  },
+  {
+   "asama": "damitma",
+   "giren": 1077,
+   "cikan": 80,
+   "dusen": {
+    "ilk_kart_disi": 997
+   },
+   "ok": true,
+   "not": "hibrit skor + küme tavanı %35"
+  },
+  {
+   "asama": "sef_final",
+   "giren": 80,
+   "cikan": 30,
+   "dusen": {
+    "secilmedi": 50
+   },
+   "ok": true,
+   "not": ""
+  }
+ ],
+ "kaynaklar": {
+  "sef_plan": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 0,
+   "kayit": 7
+  },
+  "openalex": {
+   "durum": "EKSİK",
+   "sebep": "QuotaExhausted: Retry-After=18298s",
+   "istek": 0,
+   "kayit": 0,
+   "sorgu": 14
+  },
+  "web": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 0,
+   "kayit": 33
+  },
+  "crossref": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 35,
+   "kayit": 3404,
+   "sorgu": 35
+  },
+  "dblp": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 7,
+   "kayit": 458,
+   "sorgu": 7
+  },
+  "arxiv": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 35,
+   "kayit": 3989,
+   "sorgu": 35
+  },
+  "s2_zenginlestirme": {
+   "durum": "EKSİK",
+   "sebep": "s2: HTTP 429: 3 denemede 429",
+   "istek": 0,
+   "kayit": 0
+  },
+  "atif": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 26,
+   "kayit": 492,
+   "tohum": 12
+  },
+  "ozet_arxiv": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 25,
+   "kayit": 0,
+   "istenen": 150
+  },
+  "sef_final": {
+   "durum": "OK",
+   "sebep": "",
+   "istek": 0,
+   "kayit": 30
+  }
+ },
+ "bilgi": {
+  "openalex.atlanan_sorgu(kota)": 14,
+  "arxiv.kademe.AND": 35,
+  "arxiv.kademe.OR": 5,
+  "arxiv.api_kesilen(havuza_girmedi)": 722043,
+  "arxiv.kademe.AND=0": 7,
+  "arxiv.kademe.MAJ": 29,
+  "dblp.basarisiz_sorgu": 4,
+  "embed.kesilen_metin(son)": 116,
+  "embed.backend=minilm": 1,
+  "ozet_arxiv.aday": 894,
+  "ozet_arxiv.atlandi_tavan": 744,
+  "ozet_arxiv.denendi": 150,
+  "ozet_arxiv.bulundu": 0,
+  "ozet_arxiv.bulunamadi": 150,
+  "okuyucu.alinti_UNVERIFIED": 3,
+  "okuyucu.alinti_TOO_SHORT": 2
+ },
+ "hatalar": {
+  "dblp:RequestFailed": 4
+ }
+}

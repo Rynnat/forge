@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a1-20261026-064841-02526b",
+ "sistem": "A-taban-a1",
+ "mod": "a1",
+ "soru": "Veri ve yapay zeka ekosistemlerini yöneten LLM tabanlı veri ajanları (otonomi seviyeleri, sorgu ve veri analizi görevleri) üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-09-27",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 3.0,
+ "maliyet_usd": 0.4938,
+ "sure_s": 103.1,
+ "web_arama": 14,
+ "token": {
+  "in": 173383,
+  "out": 17779,
+  "cache_read": 70985,
+  "cache_write": 22254
+ },
+ "son_rapor_token_tahmini": 2504,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: Veri ve yapay zeka ekosistemlerini yöneten LLM tabanlı veri ajanları (otonomi seviyeleri, sorgu ve veri analizi görevleri) üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2025-09-27. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first) — the kind a careful expert survey published right after the cutoff would cite. Give each with its arXiv id and/or DOI.\n\nYou MUST research this with web search rather than answer from memory: search for the important works, and verify each listed work's title, publication date and identifier on the web (e.g. arxiv.org, doi.org, the publisher or DBLP page) before including it.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2507.01599",
+   "arxiv_id": "2507.01599",
+   "doi": null,
+   "baslik": "Data Agent: A Holistic Architecture for Orchestrating Data+AI Ecosystems",
+   "yil": 2025,
+   "gerekce": "This paper lays out the data agent architecture for orchestrating Data+AI ecosystems, covering understanding, pipeline orchestration, execution and self-reflection, and it lists the main open challenges."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2402.18679",
+   "arxiv_id": "2402.18679",
+   "doi": null,
+   "baslik": "Data Interpreter: An LLM Agent For Data Science",
+   "yil": 2024,
+   "gerekce": "It is an influential end-to-end data science agent that plans with hierarchical graphs and refines its code dynamically."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2411.07763",
+   "arxiv_id": "2411.07763",
+   "doi": null,
+   "baslik": "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+   "yil": 2024,
+   "gerekce": "This benchmark of agentic SQL workflows over real enterprise databases showed that current models still fall well short."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2305.03111",
+   "arxiv_id": "2305.03111",
+   "doi": null,
+   "baslik": "Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs",
+   "yil": 2023,
+   "gerekce": "BIRD became the standard benchmark for LLM-based querying over realistic, large and noisy databases."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2402.17453",
+   "arxiv_id": "2402.17453",
+   "doi": null,
+   "baslik": "DS-Agent: Automated Data Science by Empowering Large Language Models with Case-Based Reasoning",
+   "yil": 2024,
+   "gerekce": "It automates data science by combining case-based reasoning with an LLM agent."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2312.01454",
+   "arxiv_id": "2312.01454",
+   "doi": null,
+   "baslik": "D-Bot: Database Diagnosis System using Large Language Models",
+   "yil": 2023,
+   "gerekce": "This is the leading LLM DBA agent for database diagnosis and root-cause analysis (VLDB 2024)."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2308.05481",
+   "arxiv_id": "2308.05481",
+   "doi": null,
+   "baslik": "LLM As DBA",
+   "yil": 2023,
+   "gerekce": "It first proposed the vision of an LLM acting as a database administrator."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2408.14717",
+   "arxiv_id": "2408.14717",
+   "doi": null,
+   "baslik": "Text2SQL is Not Enough: Unifying AI and Databases with TAG",
+   "yil": 2024,
+   "gerekce": "It introduced the Table-Augmented Generation paradigm, which combines AI and database querying to go beyond Text2SQL and RAG."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2407.11418",
+   "arxiv_id": "2407.11418",
+   "doi": null,
+   "baslik": "Semantic Operators: A Declarative Model for Rich, AI-based Data Processing",
+   "yil": 2024,
+   "gerekce": "Through LOTUS it formalized semantic operators and their optimization for LLM-powered analytics."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2410.12189",
+   "arxiv_id": "2410.12189",
+   "doi": null,
+   "baslik": "DocETL: Agentic Query Rewriting and Evaluation for Complex Document Processing",
+   "yil": 2024,
+   "gerekce": "It optimizes unstructured document analysis pipelines through agentic query rewriting."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2304.11015",
+   "arxiv_id": "2304.11015",
+   "doi": null,
+   "baslik": "DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction",
+   "yil": 2023,
+   "gerekce": "It established task decomposition and self-correction for LLM-based text-to-SQL."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2308.15363",
+   "arxiv_id": "2308.15363",
+   "doi": null,
+   "baslik": "Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation",
+   "yil": 2023,
+   "gerekce": "DAIL-SQL systematically evaluated prompt engineering for LLM text-to-SQL."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2410.01943",
+   "arxiv_id": "2410.01943",
+   "doi": null,
+   "baslik": "CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL",
+   "yil": 2024,
+   "gerekce": "It reached top BIRD results by combining multi-path candidate generation with candidate selection."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2312.11242",
+   "arxiv_id": "2312.11242",
+   "doi": null,
+   "baslik": "MAC-SQL: A Multi-Agent Collaborative Framework for Text-to-SQL",
+   "yil": 2023,
+   "gerekce": "It is a foundational multi-agent collaborative design for text-to-SQL."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2410.07331",
+   "arxiv_id": "2410.07331",
+   "doi": "10.18653/v1/2024.emnlp-main.748",
+   "baslik": "DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models",
+   "yil": 2024,
+   "gerekce": "It is a benchmark of agentic data science tasks covering data wrangling, machine learning and EDA."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2409.07703",
+   "arxiv_id": "2409.07703",
+   "doi": null,
+   "baslik": "DSBench: How Far Are Data Science Agents to Becoming Data Science Experts?",
+   "yil": 2024,
+   "gerekce": "It measured the gap between data science agents and human experts on realistic analysis and modeling tasks."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2401.05507",
+   "arxiv_id": "2401.05507",
+   "doi": null,
+   "baslik": "InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks",
+   "yil": 2024,
+   "gerekce": "It was one of the first systematic benchmarks of LLM agents on data analysis tasks."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2410.07095",
+   "arxiv_id": "2410.07095",
+   "doi": null,
+   "baslik": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+   "yil": 2024,
+   "gerekce": "It became the standard evaluation for ML engineering agents, built on Kaggle competitions."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2502.13138",
+   "arxiv_id": "2502.13138",
+   "doi": null,
+   "baslik": "AIDE: AI-Driven Exploration in the Space of Code",
+   "yil": 2025,
+   "gerekce": "It is a strong agent that frames ML engineering as tree search over the space of code solutions."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2410.20424",
+   "arxiv_id": "2410.20424",
+   "doi": null,
+   "baslik": "AutoKaggle: A Multi-Agent Framework for Autonomous Data Science Competitions",
+   "yil": 2024,
+   "gerekce": "It is a phased multi-agent framework for autonomous data science that supports human intervention at each phase."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2410.02958",
+   "arxiv_id": "2410.02958",
+   "doi": null,
+   "baslik": "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+   "yil": 2024,
+   "gerekce": "It is a multi-agent AutoML system that covers the full pipeline, from data retrieval to model deployment (ICML 2025)."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2412.02205",
+   "arxiv_id": "2412.02205",
+   "doi": null,
+   "baslik": "DataLab: A Unified Platform for LLM-Powered Business Intelligence",
+   "yil": 2024,
+   "gerekce": "It is an enterprise-scale, one-stop LLM agent platform for BI tasks (ICDE 2025)."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2407.17535",
+   "arxiv_id": "2407.17535",
+   "doi": null,
+   "baslik": "LAMBDA: A Large Model Based Data Agent",
+   "yil": 2024,
+   "gerekce": "It is a code-free data analysis agent built on programmer and inspector agent roles."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2412.10422",
+   "arxiv_id": "2412.10422",
+   "doi": null,
+   "baslik": "AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework",
+   "yil": 2024,
+   "gerekce": "It is a multi-agent framework for question-aware data preparation in tabular question answering."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2205.09911",
+   "arxiv_id": "2205.09911",
+   "doi": null,
+   "baslik": "Can Foundation Models Wrangle Your Data?",
+   "yil": 2022,
+   "gerekce": "This pioneering work showed that foundation models can perform data cleaning and integration tasks."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2405.14696",
+   "arxiv_id": "2405.14696",
+   "doi": null,
+   "baslik": "Palimpzest: Optimizing AI-Powered Analytics with Declarative Query Processing",
+   "yil": 2024,
+   "gerekce": "It is a declarative system that optimizes LLM-based analytics pipelines for cost and quality."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2311.03157",
+   "arxiv_id": "2311.03157",
+   "doi": null,
+   "baslik": "GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization",
+   "yil": 2023,
+   "gerekce": "It is a leading example of using LLMs for database knob tuning."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2508.02744",
+   "arxiv_id": "2508.02744",
+   "doi": null,
+   "baslik": "Large Language Model-based Data Science Agent: A Survey",
+   "yil": 2025,
+   "gerekce": "This recent survey classifies data science agents by design principles and workflow stages."
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2412.14222",
+   "arxiv_id": "2412.14222",
+   "doi": null,
+   "baslik": "A Survey on Large Language Model-based Agents for Statistics and Data Science",
+   "yil": 2024,
+   "gerekce": "This survey covers the planning, reflection and multi-agent collaboration capabilities of statistics and data science agents."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2210.03629",
+   "arxiv_id": "2210.03629",
+   "doi": null,
+   "baslik": "ReAct: Synergizing Reasoning and Acting in Language Models",
+   "yil": 2022,
+   "gerekce": "Its reasoning-plus-action loop is the paradigm that most tool-using data agents are built on."
+  }
+ ]
+}

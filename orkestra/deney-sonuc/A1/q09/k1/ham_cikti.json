@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 330481,
+ "stop_reason": "end_turn",
+ "session_id": "633eb1ab-71c9-490e-9fa8-409a040772f0",
+ "total_cost_usd": 1.1474254000000002,
+ "usage": {
+  "input_tokens": 26,
+  "cache_creation_input_tokens": 48722,
+  "cache_read_input_tokens": 397609,
+  "output_tokens": 15048,
+  "output_tokens_details": {
+   "thinking_tokens": 5798
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 48722,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4579,
+    "cache_read_input_tokens": 51574,
+    "cache_creation_input_tokens": 680,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 680
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 26,
+   "outputTokens": 15048,
+   "cacheReadInputTokens": 397609,
+   "cacheCreationInputTokens": 48722,
+   "webSearchRequests": 0,
+   "costUSD": 0.7703617999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 5798,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 532351,
+   "outputTokens": 27657,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 31,
+   "costUSD": 0.37706359999999994,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 8442,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 47,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "```json\n{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"Symbolic Model Checking without BDDs\", \"yil\": 1999, \"arxiv_id\": null, \"doi\": \"10.1007/3-540-49059-0_14\", \"gerekce\": \"This paper introduced bounded model checking by reducing the check to propositional satisfiability (SAT), and every later SAT/SMT-based BMC tool for C/C++ builds on it.\"},\n{\"sira\": 2, \"baslik\": \"A Tool for Checking ANSI-C Programs\", \"yil\": 2004, \"arxiv_id\": null, \"doi\": \"10.1007/978-3-540-24730-2_15\", \"gerekce\": \"It presented CBMC, the first widely used bit-precise bounded model checker for C, and it set the standard way of unrolling loops and encoding programs as formulas.\"},\n{\"sira\": 3, \"baslik\": \"SMT-Based Bounded Model Checking for Embedded ANSI-C Software\", \"yil\": 2009, \"arxiv_id\": \"0907.2072\", \"doi\": \"10.1109/ASE.2009.63\", \"gerekce\": \"This ASE 2009 paper introduced ESBMC and showed that SMT solvers (bit-vectors, arrays) handle embedded C verification better than plain SAT encodings.\"},\n{\"sira\": 4, \"baslik\": \"Bounded model checking of software using SMT solvers instead of SAT solvers\", \"yil\": 2009, \"arxiv_id\": null, \"doi\": \"10.1007/s10009-008-0091-0\", \"gerekce\": \"It was the earliest systematic proposal to replace CBMC-style SAT encodings with SMT theories, which give more compact formulas for software BMC.\"},\n{\"sira\": 5, \"baslik\": \"Bounded Model Checking\", \"yil\": 2003, \"arxiv_id\": null, \"doi\": \"10.1016/S0065-2458(03)58003-2\", \"gerekce\": \"This is the standard survey of the theory of BMC, including completeness thresholds and encodings, and it is the main reference for the field.\"},\n{\"sira\": 6, \"baslik\": \"SMT-Based Bounded Model Checking for Embedded ANSI-C Software\", \"yil\": 2012, \"arxiv_id\": null, \"doi\": \"10.1109/TSE.2011.59\", \"gerekce\": \"The extended IEEE TSE version gives the full account of how ESBMC encodes C semantics (pointers, unions, arithmetic) into SMT theories and compares several solvers.\"},\n{\"sira\": 7, \"baslik\": \"LLBMC: Bounded Model Checking of C and C++ Programs Using a Compiler IR\", \"yil\": 2012, \"arxiv_id\": null, \"doi\": \"10.1007/978-3-642-27705-4_12\", \"gerekce\": \"It showed SMT-based BMC of C and C++ working on the LLVM intermediate representation, which avoids parsing the full source languages.\"},\n{\"sira\": 8, \"baslik\": \"Verifying multi-threaded software using SMT-based context-bounded model checking\", \"yil\": 2011, \"arxiv_id\": null, \"doi\": \"10.1145/1985793.1985839\", \"gerekce\": \"This was the first work to systematically compare lazy, schedule-recording and underapproximation-widening encodings for SMT-based context-bounded verification of multithreaded C.\"},\n{\"sira\": 9, \"baslik\": \"CBMC – C Bounded Model Checker\", \"yil\": 2014, \"arxiv_id\": null, \"doi\": \"10.1007/978-3-642-54862-8_26\", \"gerekce\": \"This SV-COMP tool paper documents the mature CBMC architecture and is the standard citation for CBMC in competition results.\"},\n{\"sira\": 10, \"baslik\": \"ESBMC 5.0: An Industrial-Strength C Model Checker\", \"yil\": 2018, \"arxiv_id\": null, \"doi\": \"10.1145/3238147.3240481\", \"gerekce\": \"It describes the redesigned ESBMC with its SMT backends and k-induction, and it marks the tool's move toward industrial-scale use.\"},\n{\"sira\": 11, \"baslik\": \"Software Verification Using k-Induction\", \"yil\": 2011, \"arxiv_id\": null, \"doi\": \"10.1007/978-3-642-23702-7_26\", \"gerekce\": \"It brought k-induction to C software verification (K-Inductor, built on CBMC), giving BMC a way to prove properties over unbounded loops.\"},\n{\"sira\": 12, \"baslik\": \"Handling loops in bounded model checking of C programs via k-induction\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1007/s10009-015-0407-9\", \"gerekce\": \"It combined k-induction with SMT-based BMC in ESBMC and partly addresses BMC's main limitation: it cannot prove programs with unbounded loops correct.\"},\n{\"sira\": 13, \"baslik\": \"Partial Orders for Efficient Bounded Model Checking of Concurrent Software\", \"yil\": 2013, \"arxiv_id\": \"1301.1629\", \"doi\": \"10.1007/978-3-642-39799-8_9\", \"gerekce\": \"Its partial-order encoding made BMC of concurrent C scale and supports weak memory models (x86, Power).\"},\n{\"sira\": 14, \"baslik\": \"Bounded Model Checking of Multi-threaded C Programs via Lazy Sequentialization\", \"yil\": 2014, \"arxiv_id\": null, \"doi\": \"10.1007/978-3-319-08867-9_39\", \"gerekce\": \"Lazy-CSeq turns concurrent C into sequential programs that existing BMC tools can check, and it dominated the SV-COMP concurrency category.\"},\n{\"sira\": 15, \"baslik\": \"Code-level model checking in the software development workflow\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1145/3377813.3381347\", \"gerekce\": \"It reports on AWS's industrial use of CBMC with continuous-integration proofs and highlights practical open problems such as proof maintenance and writing specifications.\"},\n{\"sira\": 16, \"baslik\": \"Model checking C++ programs\", \"yil\": 2022, \"arxiv_id\": \"2107.01093\", \"doi\": \"10.1002/stvr.1793\", \"gerekce\": \"It is the most comprehensive SMT-based BMC treatment of C++ features (templates, inheritance, polymorphism, exceptions, STL models).\"},\n{\"sira\": 17, \"baslik\": \"SMT-Based Bounded Model Checking of C++ Programs\", \"yil\": 2013, \"arxiv_id\": null, \"doi\": \"10.1109/ECBS.2013.15\", \"gerekce\": \"It introduced ESBMC++ and verifies C++ through an operational model of the standard libraries.\"},\n{\"sira\": 18, \"baslik\": \"Z3: An Efficient SMT Solver\", \"yil\": 2008, \"arxiv_id\": null, \"doi\": \"10.1007/978-3-540-78800-3_24\", \"gerekce\": \"Z3 is the SMT backend most widely used by software BMC tools, so its performance directly limits how far these verifiers scale.\"},\n{\"sira\": 19, \"baslik\": \"CBMC: The C Bounded Model Checker\", \"yil\": 2023, \"arxiv_id\": \"2302.02384\", \"doi\": null, \"gerekce\": \"This up-to-date overview covers CBMC's architecture, how to use it, and how its performance has developed over a decade.\"},\n{\"sira\": 20, \"baslik\": \"Safety Verification and Refutation by k-Invariants and k-Induction\", \"yil\": 2015, \"arxiv_id\": \"1506.05671\", \"doi\": \"10.1007/978-3-662-48288-9_9\", \"gerekce\": \"Its kIkI algorithm combines abstract interpretation, BMC and k-induction in one framework (implemented in 2LS).\"},\n{\"sira\": 21, \"baslik\": \"Incremental bounded model checking for embedded software\", \"yil\": 2017, \"arxiv_id\": \"1409.5872\", \"doi\": \"10.1007/s00165-017-0419-1\", \"gerekce\": \"It showed that incremental SAT-based BMC cuts runtimes by about an order of magnitude on industrial automotive C code.\"},\n{\"sira\": 22, \"baslik\": \"ESBMC v6.0: Verifying C Programs Using k-Induction and Invariant Inference\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1007/978-3-030-17502-3_15\", \"gerekce\": \"It strengthened k-induction with interval invariant inference, a step forward in proving correctness of C programs, not just finding bugs.\"},\n{\"sira\": 23, \"baslik\": \"ESBMC v7.4: Harnessing the Power of Intervals\", \"yil\": 2024, \"arxiv_id\": \"2312.14746\", \"doi\": \"10.1007/978-3-031-57256-2_24\", \"gerekce\": \"It adds interval analysis and contractors to SMT-based BMC and represents the current state of the tool.\"},\n{\"sira\": 24, \"baslik\": \"State of the Art in Software Verification and Witness Validation: SV-COMP 2024\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": \"10.1007/978-3-031-57256-2_15\", \"gerekce\": \"This competition report gives a comparative assessment of BMC-based C verifiers and witness validation.\"},\n{\"sira\": 25, \"baslik\": \"LLM-Generated Invariants for Bounded Model Checking Without Loop Unrolling\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": \"10.1145/3691620.3695512\", \"gerekce\": \"It uses LLM-generated loop invariants to remove loop unrolling from BMC, and it received an ACM SIGSOFT Distinguished Paper Award at ASE 2024.\"},\n{\"sira\": 26, \"baslik\": \"A New Era in Software Security: Towards Self-Healing Software via Large Language Models and Formal Verification\", \"yil\": 2023, \"arxiv_id\": \"2305.14752\", \"doi\": null, \"gerekce\": \"Its ESBMC-AI loop feeds BMC counterexamples to an LLM to repair C vulnerabilities, opening the LLM+BMC line of research.\"},\n{\"sira\": 27, \"baslik\": \"The FormAI Dataset: Generative AI in Software Security Through the Lens of Formal Verification\", \"yil\": 2023, \"arxiv_id\": \"2307.02192\", \"doi\": \"10.1145/3617555.3617874\", \"gerekce\": \"It labeled about 112,000 AI-generated C programs with ESBMC, creating a large benchmark that uses BMC to assess the security of LLM-generated code.\"},\n{\"sira\": 28, \"baslik\": \"ESBMC v7.3: Model Checking C++ Programs Using Clang AST\", \"yil\": 2023, \"arxiv_id\": \"2308.05649\", \"doi\": null, \"gerekce\": \"It moved C++ BMC to a Clang-based front end, addressing the open problem of supporting modern C++ standards.\"},\n{\"sira\": 29, \"baslik\": \"Bitwuzla\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": \"10.1007/978-3-031-37703-7_1\", \"gerekce\": \"It is a leading bit-vector/floating-point SMT solver, directly relevant to bit-precise C verification, and won a CAV Distinguished Paper Award.\"},\n{\"sira\": 30, \"baslik\": \"F-Soft: Software Verification Platform\", \"yil\": 2005, \"arxiv_id\": null, \"doi\": \"10.1007/11513988_31\", \"gerekce\": \"It was an early industrial SAT-based BMC platform for C (NEC) that combined BMC with static analysis and abstraction.\"}\n]}\n```",
+ "ttft_ms": 32797,
+ "type": "result",
+ "duration_ms": 189376,
+ "uuid": "a5bc486c-03a5-4391-827c-35c53ae6828e",
+ "ttft_stream_ms": 1160,
+ "time_to_request_ms": 61,
+ "first_content_frame_ms": 1160,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

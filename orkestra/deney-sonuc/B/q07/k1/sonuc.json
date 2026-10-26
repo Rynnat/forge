@@ -1,0 +1,939 @@
+{
+ "run_id": "20261025-211717-1f3967",
+ "soru": "Kalıcı homoloji (persistent homology) tabanlı topolojik optimizasyon, makine öğrenmesinde topolojik düzenlileştirme ve ilgili algoritmik yöntemler üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-02-24",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6288,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.064512,
+   "in": 1240,
+   "out": 2730,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.17477636000000002,
+   "in": 504294,
+   "out": 33176,
+   "web_search": 11
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.23257800000000003,
+   "in": 277440,
+   "out": 354196,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.156972,
+   "in": 11570,
+   "out": 3221,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 27.9,
+  "toplama:openalex": 1.0,
+  "web_isci": 59.1,
+  "toplama:crossref": 71.1,
+  "toplama:dblp": 233.5,
+  "toplama:arxiv": 329.2,
+  "toplama": 329.2,
+  "tekil+kesim_1": 42.3,
+  "atif": 166.8,
+  "okuyucu": 405.5,
+  "damitma": 17.8,
+  "sef_final": 30.2,
+  "toplam": 1019.7
+ },
+ "ozet_token_tahmini": 3907,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Kalıcı homolojinin temelleri, kararlılık teoremleri ve kalıcılık diyagramlarının türevlenebilirliği (diferansiyel yapı) nelerdir?",
+    "sorgular": [
+     "\"persistent homology\" foundations stability",
+     "\"persistence diagrams\" stability theorem",
+     "differentiability persistence diagrams",
+     "\"topological persistence\" simplification",
+     "persistence-based functions differential calculus"
+    ],
+    "yeterli": "Edelsbrunner, Zomorodian–Carlsson, Cohen-Steiner kararlılık teoremi ve Leygonie/Carrière türevlenebilirlik sonuçları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "Kalıcı homoloji tabanlı fonksiyonlar üzerinde gradyan tabanlı optimizasyon algoritmaları (alt gradyan, yakınsama, stratifiye yöntemler, diyagram terimleri) nelerdir?",
+    "sorgular": [
+     "\"topological optimization\" persistent homology gradient",
+     "optimizing persistent homology convergence",
+     "stochastic subgradient persistence diagrams",
+     "\"big step\" gradient persistence",
+     "\"topology layer\" differentiable"
+    ],
+    "yeterli": "Carrière et al. 2021 yakınsama analizi, Gameiro/Nigmetov büyük adım yöntemleri, Leygonie stratifiye gradyan ve seyrek gradyan sorununa çözümler kapsandığında yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Derin öğrenmede topolojik düzenlileştirme ve topoloji-farkında kayıp fonksiyonları (segmentasyon, sınıflandırıcı karar sınırı, latent uzay) nasıl tasarlanmıştır?",
+    "sorgular": [
+     "\"topological regularization\" deep learning",
+     "topology-preserving loss segmentation",
+     "\"topological autoencoders\"",
+     "clDice centerline topology loss",
+     "\"Betti matching\" segmentation"
+    ],
+    "yeterli": "Hu et al. TopoLoss, clDice, Betti matching, topolojik autoencoder ve sınıflandırıcı düzenlileştirmesi çalışmaları bulunduğunda yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Kalıcılık diyagramlarının makine öğrenmesine vektörleştirilmesi ve öğrenilebilir topolojik katmanlar (vektörleştirme, çekirdekler, sinir ağı katmanları) nelerdir?",
+    "sorgular": [
+     "\"persistence images\" vectorization",
+     "\"persistence landscapes\" statistics",
+     "\"PersLay\" persistence diagrams neural network",
+     "persistence kernel scale-space",
+     "\"deep learning with topological signatures\""
+    ],
+    "yeterli": "Persistence landscapes/images, çekirdekler, PersLay, Hofer et al. ve TOGL gibi öğrenilebilir filtrasyon katmanları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Kalıcı homolojinin hesaplanması ve diferansiyellenebilir uygulamalar için yazılım ve algoritmalar (Ripser, GUDHI, verimli hesaplama, GPU) nelerdir?",
+    "sorgular": [
+     "Ripser Vietoris-Rips persistence computation",
+     "GUDHI library topological data analysis",
+     "efficient persistent homology computation GPU",
+     "\"Wasserstein distance\" persistence diagrams computation",
+     "persistent homology software benchmark"
+    ],
+    "yeterli": "Ripser, GUDHI, Otter et al. yol haritası ve diyagramlar arası mesafe hesaplama (Hera vb.) yöntemleri bulunduğunda yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Topolojik optimizasyonun uygulamaları (görüntü segmentasyonu, şekil yeniden yapılandırma, nokta bulutları, üretici modeller, grafik öğrenme) ve kullanılan veri setleri nelerdir?",
+    "sorgular": [
+     "persistent homology medical image segmentation topology",
+     "topological prior 3D reconstruction",
+     "topology generative adversarial network persistence",
+     "persistent homology graph neural networks",
+     "topological loss point cloud"
+    ],
+    "yeterli": "Tıbbi/yol/damar segmentasyonu, GAN/üretici model, şekil/nokta bulutu ve grafik öğrenme uygulamaları ve benchmark veri setleri belirlendiğinde yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Değerlendirme ölçütleri, kuramsal genelleme bağlantıları ve açık problemler (ölçeklenebilirlik, çok parametreli kalıcılık, genelleme sınırları) nelerdir?",
+    "sorgular": [
+     "topological metrics Betti error evaluation",
+     "persistent homology generalization neural networks",
+     "\"multiparameter persistence\" machine learning",
+     "topological data analysis open problems survey",
+     "\"topological deep learning\" position paper"
+    ],
+    "yeterli": "Betti hatası gibi ölçütler, genelleme-topoloji ilişkisi, çok parametreli kalıcılık ve TDL açık problemlerini derleyen anket/pozisyon çalışmaları bulunduğunda yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Topological Persistence and Simplification",
+    "yil": 2002
+   },
+   {
+    "baslik": "Computing Persistent Homology",
+    "yil": 2005
+   },
+   {
+    "baslik": "Stability of Persistence Diagrams",
+    "yil": 2007
+   },
+   {
+    "baslik": "Topology and Data",
+    "yil": 2009
+   },
+   {
+    "baslik": "Statistical Topological Data Analysis using Persistence Landscapes",
+    "yil": 2015
+   },
+   {
+    "baslik": "Persistence Images: A Stable Vector Representation of Persistent Homology",
+    "yil": 2017
+   },
+   {
+    "baslik": "Deep Learning with Topological Signatures",
+    "yil": 2017
+   },
+   {
+    "baslik": "A roadmap for the computation of persistent homology",
+    "yil": 2017
+   },
+   {
+    "baslik": "Ripser: efficient computation of Vietoris-Rips persistence barcodes",
+    "yil": 2021
+   },
+   {
+    "baslik": "A Framework for Differential Calculus on Persistence Barcodes",
+    "yil": 2022
+   },
+   {
+    "baslik": "Optimizing persistent homology based functions",
+    "yil": 2021
+   },
+   {
+    "baslik": "A Topology Layer for Machine Learning",
+    "yil": 2020
+   },
+   {
+    "baslik": "Topology-Preserving Deep Image Segmentation",
+    "yil": 2019
+   },
+   {
+    "baslik": "clDice - a Novel Topology-Preserving Loss Function for Tubular Structure Segmentation",
+    "yil": 2021
+   },
+   {
+    "baslik": "Topological Autoencoders",
+    "yil": 2020
+   },
+   {
+    "baslik": "A Topological Regularizer for Classifiers via Persistent Homology",
+    "yil": 2019
+   },
+   {
+    "baslik": "PersLay: A Neural Network Layer for Persistence Diagrams and New Graph Topological Signatures",
+    "yil": 2020
+   },
+   {
+    "baslik": "Topological Graph Neural Networks",
+    "yil": 2022
+   },
+   {
+    "baslik": "Connectivity-Optimized Representation Learning via Persistent Homology",
+    "yil": 2019
+   },
+   {
+    "baslik": "Topologically Densified Distributions",
+    "yil": 2020
+   },
+   {
+    "baslik": "Learning Topology-Preserving Data Representations",
+    "yil": 2023
+   },
+   {
+    "baslik": "Diffeomorphic interpolation for efficient persistence-based topological optimization",
+    "yil": 2024
+   },
+   {
+    "baslik": "Persistent homology for medical image segmentation",
+    "yil": 2022
+   }
+  ],
+  "web_odaklari": [
+   "awesome topological data analysis papers github",
+   "awesome topological deep learning persistent homology list",
+   "differentiable persistent homology topological loss reading list"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:1908.02518",
+  "arXiv:1904.09378",
+  "arXiv:2010.08356",
+  "arXiv:1506.08903",
+  "arXiv:1905.12200",
+  "arXiv:1707.04041",
+  "arXiv:2003.07311",
+  "arXiv:1910.01877",
+  "arXiv:1906.05404",
+  "doi:10.1145/1064092.1064133",
+  "doi:10.1145/997817.997870",
+  "arXiv:1906.00722"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1007/s00454-002-2885-2",
+   "arxiv_id": null,
+   "doi": "10.1007/s00454-002-2885-2",
+   "baslik": "Topological persistence and simplification",
+   "yil": 2002,
+   "tarih": "2002-11-01",
+   "gerekce": "Topolojik kalıcılık ve sadeleştirme üzerine temel referans; kalıcı homolojinin kuramsal başlangıç noktası olarak S1 için vazgeçilmez.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 1416,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1007/s00454-006-1276-5",
+   "arxiv_id": null,
+   "doi": "10.1007/s00454-006-1276-5",
+   "baslik": "Stability of persistence diagrams",
+   "yil": 2005,
+   "tarih": "2005-06-06",
+   "gerekce": "Kalıcılık diyagramlarının kararlılığını konu alan temel çalışma; S1'deki kararlılık teoremleri sorusunun merkezinde.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 946,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:1910.00960",
+   "arxiv_id": "1910.00960",
+   "doi": null,
+   "baslik": "A Framework for Differential Calculus on Persistence Barcodes",
+   "yil": 2019,
+   "tarih": "2019-10-02",
+   "gerekce": "Barkodlardan ve barkodlara türevlenebilirlik kavramlarını birleştirip zincir kuralı türeterek gradyan inişini mümkün kılan diferansiyel çerçeve sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The two derived notions of differentiability (respectively from and to the space of barcodes) combine together naturally to produce a chain rule that enables the use of gradient descent",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2010.08356",
+   "arxiv_id": "2010.08356",
+   "doi": null,
+   "baslik": "Optimizing persistent homology based functions",
+   "yil": 2020,
+   "tarih": "2020-10-16",
+   "gerekce": "Kalıcı homoloji tabanlı fonksiyonlar için stokastik alt gradyan yöntemlerinin yakınsaması adına basit ve açık bir yeterli koşul verir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We also provide a simple, explicit and sufficient condition for convergence of stochastic subgradient methods for such functions.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:1804.07795",
+   "arxiv_id": "1804.07795",
+   "doi": "10.1007/s10208-018-09409-5",
+   "baslik": "Stochastic Subgradient Method Converges on Tame Functions",
+   "yil": 2018,
+   "tarih": "2018-04-20",
+   "gerekce": "Yarı-cebirsel yerel Lipschitz fonksiyonlarda stokastik alt gradyan yönteminin birinci mertebe durağan noktalara ulaştığını kanıtlayan temel yakınsama kuramı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We prove that the stochastic subgradient method, on any semialgebraic locally Lipschitz function, produces limit points that are all first-order stationary.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "arxiv_onbaski",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 142,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:1905.12200",
+   "arxiv_id": "1905.12200",
+   "doi": null,
+   "baslik": "A Topology Layer for Machine Learning",
+   "yil": 2019,
+   "tarih": "2019-05-29",
+   "gerekce": "Seviye kümesi ve kenar tabanlı filtrasyonlarla kalıcı homoloji hesaplayan türevlenebilir topoloji katmanı; düzenlileştirme ve kayıp uygulamalarını kapsar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We present a differentiable topology layer that computes persistent homology based on level set filtrations and edge-based filtrations.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2203.16748",
+   "arxiv_id": "2203.16748",
+   "doi": "10.1007/s00454-023-00613-x",
+   "baslik": "Topological Optimization with Big Steps",
+   "yil": 2022,
+   "tarih": "2022-03-31",
+   "gerekce": "Gradyanların yalnızca belirli çiftlerdeki simplekslere aktarılması sınırlamasını ele alan, kalıcılık güdümlü optimizasyon için gradyan reçetesi önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Existing methods treat persistence calculation as a black box and backpropagate gradients only onto the simplices involved in particular pairs.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2405.18820",
+   "arxiv_id": "2405.18820",
+   "doi": "10.52202/079017-0857",
+   "baslik": "Diffeomorphic interpolation for efficient persistence-based topological optimization",
+   "yil": 2024,
+   "tarih": "2024-05-29",
+   "gerekce": "Nokta bulutlarında topolojik optimizasyonda seyrek gradyan sorununu difeomorfik interpolasyonla aşmayı önerir; güncel önemli ilerleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Focusing on the central case of topological optimization for point clouds, we propose in this work to overcome this limitation using diffeomorphic interpolation",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 1,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:1906.05404",
+   "arxiv_id": "1906.05404",
+   "doi": null,
+   "baslik": "Topology-Preserving Deep Image Segmentation",
+   "yil": 2019,
+   "tarih": "2019-06-12",
+   "gerekce": "Segmentasyonun gerçek etiketle aynı Betti sayılarına sahip olmasını zorlayan sürekli değerli topolojik kayıp; topoloji-farkında segmentasyonun öncüsü.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we design a continuous-valued loss function that enforces a segmentation to have the same topology as the ground truth, i.e., having the same Betti number.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:1910.01877",
+   "arxiv_id": "1910.01877",
+   "doi": "10.1109/tpami.2020.3013679",
+   "baslik": "A Topological Loss Function for Deep-Learning based Image Segmentation using Persistent Homology",
+   "yil": 2019,
+   "tarih": "2019-10-04",
+   "gerekce": "Kalıcı homolojinin türevlenebilirliğini kullanarak istenen topolojiyi Betti sayılarıyla belirten segmentasyon kaybı önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "By using the differentiable properties of persistent homology, a concept used in topological data analysis, we can specify the desired topology of segmented objects in terms of their Betti numbers",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:1806.10714",
+   "arxiv_id": "1806.10714",
+   "doi": null,
+   "baslik": "A Topological Regularizer for Classifiers via Persistent Homology",
+   "yil": 2018,
+   "tarih": "2018-06-27",
+   "gerekce": "Bileşenler ve tutamaçlar gibi topolojik özelliklerin önemini içeren, sınıflandırıcı karar sınırları için kalıcı homoloji tabanlı düzenlileştirici.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In particular, our measurement of topological complexity incorporates the importance of topological features (e.g., connected components, handles, and so on)",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:1906.00722",
+   "arxiv_id": "1906.00722",
+   "doi": null,
+   "baslik": "Topological Autoencoders",
+   "yil": 2019,
+   "tarih": "2019-06-03",
+   "gerekce": "Girdi ve gizli uzayın topolojik imzalarından kayıp terimi türeterek gizli uzay topolojisini koruyan otokodlayıcı; latent düzenlileştirmenin temel örneği.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Using persistent homology, a technique from topological data analysis, we calculate topological signatures of both the input and latent space to derive a topological loss term.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:1507.06217",
+   "arxiv_id": "1507.06217",
+   "doi": null,
+   "baslik": "Persistence Images: A Stable Vector Representation of Persistent Homology",
+   "yil": 2015,
+   "tarih": "2015-07-22",
+   "gerekce": "Kalıcılık diyagramlarını kararlılığı kanıtlanmış sonlu boyutlu vektörlere dönüştüren persistence image yöntemi; vektörleştirmenin merkezi çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We convert a PD to a finite-dimensional vector representation which we call a persistence image (PI), and prove the stability of this transformation",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:1707.04041",
+   "arxiv_id": "1707.04041",
+   "doi": null,
+   "baslik": "Deep Learning with Topological Signatures",
+   "yil": 2017,
+   "tarih": "2017-07-13",
+   "gerekce": "Topolojik imzaları derin ağlara girdi olarak verip eğitim sırasında göreve uygun temsil öğrenmeyi sağlayan öncü yöntem.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose a technique that enables us to input topological signatures to deep neural networks and learn a task-optimal representation during training",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:1904.09378",
+   "arxiv_id": "1904.09378",
+   "doi": null,
+   "baslik": "PersLay: A Neural Network Layer for Persistence Diagrams and New Graph Topological Signatures",
+   "yil": 2019,
+   "tarih": "2019-04-20",
+   "gerekce": "Çoğu vektörleştirme tekniğini kapsayan, kalıcılık diyagramlarının öğrenilebilir vektörleştirmesi için genel bir sinir ağı katmanı çerçevesi sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We then propose a general and versatile framework for learning vectorizations of persistence diagrams, which encompasses most of the vectorization techniques used in",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2102.07835",
+   "arxiv_id": "2102.07835",
+   "doi": null,
+   "baslik": "Topological Graph Neural Networks",
+   "yil": 2021,
+   "tarih": "2021-02-15",
+   "gerekce": "Kalıcı homoloji ile grafın küresel topolojik bilgisini içeren TOGL katmanı; grafik öğrenmede topolojik katmanların başlıca örneği.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We present TOGL, a novel layer that incorporates global topological information of a graph using persistent homology.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:1908.02518",
+   "arxiv_id": "1908.02518",
+   "doi": "10.1007/s41468-021-00071-5",
+   "baslik": "Ripser: efficient computation of Vietoris-Rips persistence barcodes",
+   "yil": 2019,
+   "tarih": "2019-08-07",
+   "gerekce": "Kobordaryum operatörünün örtük temsiliyle Vietoris-Rips barkodlarını verimli hesaplayan Ripser; temel yazılım ve algoritma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The method relies on implicit representations of the coboundary operator and the filtration order of the simplices, avoiding the explicit construction and storage of the filtration coboundary matrix.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 309,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1007/978-3-662-44199-2_28",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-662-44199-2_28",
+   "baslik": "The Gudhi Library: Simplicial Complexes and Persistent Homology",
+   "yil": 2014,
+   "tarih": "2014",
+   "gerekce": "Simpleks kompleksler ve kalıcı homoloji için yaygın kullanılan GUDHI kütüphanesi; S5'teki yazılım ekosisteminin temel parçası.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 179,
+   "rel": 2,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.1145/997817.997870",
+   "arxiv_id": null,
+   "doi": "10.1145/997817.997870",
+   "baslik": "Computing persistent homology",
+   "yil": 2004,
+   "tarih": "2004-06-08",
+   "gerekce": "Kalıcı homolojinin hesaplanmasını konu alan temel algoritmik referans; S5 için klasik başlangıç noktası.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 153,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:1506.08903",
+   "arxiv_id": "1506.08903",
+   "doi": "10.1140/epjds/s13688-017-0109-5",
+   "baslik": "A roadmap for the computation of persistent homology",
+   "yil": 2015,
+   "tarih": "2015-06-30",
+   "gerekce": "Uygulamaları gözeterek kalıcı homoloji hesaplama hattını tanıtan ve kıyaslamalar içeren yol haritası; hesaplama yöntemlerine kapsamlı giriş.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We give a friendly introduction to PH, navigate the pipeline for the computation of PH with an eye towards applications",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 634,
+   "rel": 2,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2003.07989",
+   "arxiv_id": "2003.07989",
+   "doi": null,
+   "baslik": "GPU-Accelerated Computation of Vietoris-Rips Persistence Barcodes",
+   "yil": 2020,
+   "tarih": "2020-03-17",
+   "gerekce": "Bağımsız işlenebilen çok sayıda simpleksi kullanan, Vietoris-Rips barkodları için GPU hızlandırmalı büyük paralel algoritmalar sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We also design massively parallel algorithms to take advantage of the very large number of simplices that can be processed independently of each other.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2403.11001",
+   "arxiv_id": "2403.11001",
+   "doi": "10.1007/978-3-031-72111-3_68",
+   "baslik": "Topologically Faithful Multi-class Segmentation in Medical Images",
+   "yil": 2024,
+   "tarih": "2024-03-16",
+   "gerekce": "Kalıcılık barkodlarının indüklenmiş eşleşmelerine dayanan Betti eşleştirmeyi çok sınıflı tıbbi segmentasyona genişleten genel kayıp fonksiyonu.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose a general loss function for topologically faithful multi-class segmentation extending the recent Betti matching concept, which is based on induced matchings of persistence barcodes.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2407.04683",
+   "arxiv_id": "2407.04683",
+   "doi": null,
+   "baslik": "Efficient Betti Matching Enables Topology-Aware 3D Segmentation via Persistent Homology",
+   "yil": 2024,
+   "tarih": "2024-07-05",
+   "gerekce": "Betti eşleştirme kaybını 3B segmentasyon eğitimine taşıyıp birden fazla veri setinde topolojik doğruluğu iyileştiren verimli uygulama.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We use Betti matching 3D to train segmentation networks with the Betti matching loss and demonstrate improved topological correctness of predicted segmentations across several datasets.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2003.07311",
+   "arxiv_id": "2003.07311",
+   "doi": "10.1109/cvpr46437.2021.01629",
+   "baslik": "clDice -- A Novel Topology-Preserving Loss Function for Tubular Structure Segmentation",
+   "yil": 2020,
+   "tarih": "2020-03-16",
+   "gerekce": "Segmentasyon maskeleri ve iskeletlerin kesişimine dayanan clDice; tübüler yapılar için yaygın kullanılan topoloji koruyan kayıp ve karşılaştırma ölçütü.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We introduce a novel similarity measure termed centerlineDice (short clDice), which is calculated on the intersection of the segmentation masks and their (morphological) skeleta.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 584,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2406.07224",
+   "arxiv_id": "2406.07224",
+   "doi": null,
+   "baslik": "Differentiability and Optimization of Multiparameter Persistent Homology",
+   "yil": 2024,
+   "tarih": "2024-06-11",
+   "gerekce": "Tekil tanımlayıcısı olmayan çok parametreli kalıcı homoloji için türevlenebilirlik ve gradyan tabanlı optimizasyon çerçevesi; açık problemlere yönelik.",
+   "gerekce_kokeni": "sef",
+   "alinti": "When optimizing a vector-valued function (the multiparameter setting), there is no unique choice of descriptor for multiparameter persistent homology, and many distinct descriptors have been proposed.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2304.04970",
+   "arxiv_id": "2304.04970",
+   "doi": null,
+   "baslik": "GRIL: A $2$-parameter Persistence Based Vectorization for Machine Learning",
+   "yil": 2023,
+   "tarih": "2023-04-11",
+   "gerekce": "İki parametreli kalıcılık için 1-Lipschitz kararlı ve filtrasyon fonksiyonlarına göre türevlenebilir, ML modellerine entegre edilebilir vektörleştirme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We show that this vector representation is $1$-Lipschitz stable and differentiable with respect to underlying filtration functions and can be easily integrated into machine learning models",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2203.12330",
+   "arxiv_id": "2203.12330",
+   "doi": null,
+   "baslik": "Predicting the generalization gap in neural networks using topological data analysis",
+   "yil": 2022,
+   "tarih": "2022-03-23",
+   "gerekce": "Nöron aktivasyon korelasyon graflarının kalıcılık diyagramlarıyla sinir ağlarının genelleme açığını tahmin eder; kuramsal genelleme bağlantısı için önemli.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we compute homological persistence diagrams of weighted graphs constructed from neuron activation correlations after a training phase",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2406.02234",
+   "arxiv_id": "2406.02234",
+   "doi": null,
+   "baslik": "On the Limitations of Fractal Dimension as a Measure of Generalization",
+   "yil": 2024,
+   "tarih": "2024-06-04",
+   "gerekce": "Kalıcı homoloji tabanlı genelleme ölçütlerini derin istatistiksel analizle ampirik olarak değerlendirip sınırlamalarını inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This paper performs an empirical evaluation of these persistent homology-based generalization measures, with an in-depth statistical analysis.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2402.08871",
+   "arxiv_id": "2402.08871",
+   "doi": null,
+   "baslik": "Position: Topological Deep Learning is the New Frontier for Relational Learning",
+   "yil": 2024,
+   "tarih": "2024-02-14",
+   "gerekce": "Pratik faydalardan kuramsal temellere uzanan topolojik derin öğrenmedeki açık problemleri tartışan konum makalesi; S7 için doğrudan ilgili.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To this end, this paper discusses open problems in TDL, ranging from practical benefits to theoretical foundations.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2302.03836",
+   "arxiv_id": "2302.03836",
+   "doi": "10.1007/s10462-024-10710-9",
+   "baslik": "Topological Deep Learning: A Review of an Emerging Paradigm",
+   "yil": 2023,
+   "tarih": "2023-02-08",
+   "gerekce": "TDA'nın temel kavramlarını yeniden ele alarak gelişen topolojik derin öğrenme alanını gözden geçiren merkezi inceleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we review the nascent field of topological deep learning by first revisiting the core concepts of TDA",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  }
+ ]
+}

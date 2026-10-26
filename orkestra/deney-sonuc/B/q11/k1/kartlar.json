@@ -1,0 +1,1128 @@
+[
+ {
+  "id": "arXiv:2110.04406",
+  "baslik": "Accessible Visualization via Natural Language Descriptions: A Four-Level Model of Semantic Content",
+  "yil": 2021,
+  "cites": 150,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Doğal dil açıklamalarının anlam içeriği modeli",
+  "alinti": "Natural language descriptions sometimes accompany visualizations to better communicate and contextualize their insights, and to improve their accessibility for readers with disabilities."
+ },
+ {
+  "id": "doi:10.1109/tvcg.2019.2934398",
+  "baslik": "DataShot: Automatic Generation of Fact Sheets from Tabular Data",
+  "yil": 2019,
+  "cites": 174,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Tablodan otomatik infografik ve olgu sayfası üretimi",
+  "alinti": "we present DataShot which, to the best of our knowledge, is the first automated system that creates fact sheets automatically from tabular data."
+ },
+ {
+  "id": "arXiv:2203.06486",
+  "baslik": "Chart-to-Text: A Large-Scale Benchmark for Chart Summarization",
+  "yil": 2022,
+  "cites": 91,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Grafik özetleme için büyük ölçekli kıyaslama veri kümesi",
+  "alinti": "Generating natural language summaries from charts can be very helpful for people in inferring key insights that would otherwise require a lot of cognitive and perceptual efforts."
+ },
+ {
+  "id": "arXiv:2010.09142",
+  "baslik": "Chart-to-Text: Generating Natural Language Descriptions for Charts by Adapting the Transformer Model",
+  "yil": 2020,
+  "cites": 104,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Transformer tabanlı grafik-metin üretimi ve veri kümesi",
+  "alinti": "In this work, we introduce a new dataset and present a neural model for automatically generating natural language summaries for charts."
+ },
+ {
+  "id": "arXiv:2010.09975",
+  "baslik": "Calliope: Automatic Visual Data Story Generation from a Spreadsheet",
+  "yil": 2020,
+  "cites": 179,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Elektronik tablodan otomatik görsel veri hikâyesi üretimi",
+  "alinti": "Visual data stories shown in the form of narrative visualizations such as a poster or a data video, are frequently used in data-oriented storytelling to facilitate the understanding and memorization of the story content."
+ },
+ {
+  "id": "doi:10.1109/tvcg.2018.2865145",
+  "baslik": "Augmenting Visualizations with Interactive Data Facts to Facilitate Interpretation and Communication",
+  "yil": 2018,
+  "cites": 201,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "NLG olgularının etkileşimli görsel bağlantısı",
+  "alinti": "With current systems, users are typically required to read the system-generated sentences and mentally map them back to the accompanying visualization."
+ },
+ {
+  "id": "doi:10.1145/3173574.3174012",
+  "baslik": "Frames and Slants in Titles of Visualizations on Controversial Topics",
+  "yil": 2018,
+  "cites": 123,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Başlıklarda çerçeveleme, önyargı ve hatırlama",
+  "alinti": "We study frames in visualization titles, and how the slanted framing of titles and the viewer's pre-existing attitude impact recall, perception of bias, and change of attitude."
+ },
+ {
+  "id": "arXiv:2308.04076",
+  "baslik": "DataTales: Investigating the use of Large Language Models for Authoring Data-Driven Articles",
+  "yil": 2023,
+  "cites": 51,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "LLM ile veri makalesi yazımı, nitel çalışma",
+  "alinti": "We designed a prototype system, DataTales, that leverages a LLM to generate textual narratives accompanying a given chart."
+ },
+ {
+  "id": "doi:10.1145/3411764.3445354",
+  "baslik": "Leveraging Text-Chart Links to Support Authoring of Data-Driven Articles with VizFlow",
+  "yil": 2021,
+  "cites": 61,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; metin-grafik bağlantısı yazımı",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2409.17494",
+  "baslik": "From Graphs to Words: A Computer-Assisted Framework for the Production of Accessible Text Descriptions",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Medya için erişilebilir grafik metin üretim çerçevesi",
+  "alinti": "To address this gap, we propose in this paper a framework designed to empower media content creators to transform charts into descriptive narratives."
+ },
+ {
+  "id": "arXiv:2302.07742",
+  "baslik": "SeeChart: Enabling Accessible Visualizations Through Interactive Natural Language Interface For People with Visual Impairments",
+  "yil": 2023,
+  "cites": 34,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Görme engelliler için etkileşimli grafik erişilebilirliği",
+  "alinti": "For many charts on the web, there are no accompanying alternative (alt) texts, and even if such texts exist they do not adequately describe important insights from charts."
+ },
+ {
+  "id": "arXiv:2209.13718",
+  "baslik": "A Dataset of Alt Texts from HCI Publications: Analyses and Uses Towards Producing More Descriptive Alt Texts of Data Visualizations in Scientific Papers",
+  "yil": 2022,
+  "cites": 32,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "HCI makalelerindeki alt metinlerin analizi ve veri kümesi",
+  "alinti": "We find that the capacity of author-written alt text to fulfill blind and low vision user needs is mixed;"
+ },
+ {
+  "id": "arXiv:2307.05356",
+  "baslik": "VisText: A Benchmark for Semantically Rich Chart Captioning",
+  "yil": 2023,
+  "cites": 58,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Anlamsal zengin grafik altyazı veri kümesi",
+  "alinti": "Captions that describe or explain charts help improve recall and comprehension of the depicted data and provide a more accessible medium for people with visual disabilities."
+ },
+ {
+  "id": "doi:10.1109/tvcg.2010.179",
+  "baslik": "Narrative Visualization: Telling Stories with Data",
+  "yil": 2010,
+  "cites": 1327,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Anlatısal görselleştirmenin temel tasarım çerçevesi",
+  "alinti": "Storytellers, especially online journalists, have increasingly been integrating visualizations into their narratives, in some cases allowing the visualization to function in place of a written story."
+ },
+ {
+  "id": "doi:10.1111/cgf.15099",
+  "baslik": "AutoVizuA11y: A Tool to Automate Screen Reader Accessibility in Charts",
+  "yil": 2024,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM ile otomatik ekran okuyucu erişilebilirliği",
+  "alinti": "It generates human‐like descriptions of the data using a large language model, calculates statistical insights from the data, and provides keyboard navigation between multiple charts and underlying elements."
+ },
+ {
+  "id": "arXiv:2208.01780",
+  "baslik": "Striking a Balance: Reader Takeaways and Preferences when Integrating Text and Charts",
+  "yil": 2022,
+  "cites": 54,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Grafikte metin miktarı ve okuyucu çıkarımları",
+  "alinti": "there is little experimental evidence to guide designers as to what is the right amount of text to show within a chart"
+ },
+ {
+  "id": "doi:10.1111/cgf.13719",
+  "baslik": "Linking and Layout: Exploring the Integration of Text and Visualization in Storytelling",
+  "yil": 2019,
+  "cites": 54,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Metin-görsel düzeni ve bağlantısının anlama etkisi",
+  "alinti": "Here, linking refers to a bidirectional interaction mode that explicitly highlights the explanatory visualization element when selecting narrative text and vice versa."
+ },
+ {
+  "id": "arXiv:2101.08235",
+  "baslik": "Towards Understanding How Readers Integrate Charts and Captions: A Case Study with Line Charts",
+  "yil": 2021,
+  "cites": 63,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Okuyucuların grafik ve altyazıyı bütünleştirmesi",
+  "alinti": "Through a crowdsourced study, we explore how readers gather takeaways when considering charts and captions together."
+ },
+ {
+  "id": "arXiv:2108.04203",
+  "baslik": "Kori: Interactive Synthesis of Text and Charts in Data Documents",
+  "yil": 2021,
+  "cites": 70,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Metin ve grafiklerin etkileşimli sentezi",
+  "alinti": "Charts go hand in hand with text to communicate complex data and are widely adopted in news articles, online blogs, and academic papers."
+ },
+ {
+  "id": "doi:10.1109/access.2025.3571626",
+  "baslik": "Chart Accessibility: A Review of Current Alt Text Generation",
+  "yil": 2025,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; grafik alt metni incelemesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/2556288.2557241",
+  "baslik": "Extracting references between text and charts via crowdsourcing",
+  "yil": 2014,
+  "cites": 75,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; metin-grafik referanslarının çıkarımı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tvcg.2011.255",
+  "baslik": "Visualization Rhetoric: Framing Effects in Narrative Visualization",
+  "yil": 2011,
+  "cites": 411,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; anlatıda çerçeveleme etkileri",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/pacificvis.2017.8031599",
+  "baslik": "ChartAccent: Annotation for data-driven storytelling",
+  "yil": 2017,
+  "cites": 115,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; veri hikâyeciliğinde açıklama aracı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/pacificvis52677.2021.00011",
+  "baslik": "Automatic Generation of Unit Visualization-based Scrollytelling for Impromptu Data Facts Delivery",
+  "yil": 2021,
+  "cites": 18,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Otomatik kaydırmalı hikâye ve metin üretimi",
+  "alinti": "The method first enumerates data facts of a given dataset, and scores and organizes them."
+ },
+ {
+  "id": "arXiv:2304.13620",
+  "baslik": "ChartSumm: A Comprehensive Benchmark for Automatic Chart Summarization of Long and Short Summaries",
+  "yil": 2023,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Grafik özetleme veri kümesi; halüsinasyon ve kıyas ölçütleri.",
+  "alinti": "they often face issues like suffering from hallucination, missing out important data points, in addition to incorrect explanation of complex trends in the charts."
+ },
+ {
+  "id": "arXiv:2409.19747",
+  "baslik": "Natural Language Generation for Visualizations: State of the Art, Challenges and Future Directions",
+  "yil": 2024,
+  "cites": 7,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Görselleştirmeler için DDD tabanlı NLG araştırma taksonomisi",
+  "alinti": "Thus, combining text with visualizations is a prevalent technique for effectively delivering the core message of the data."
+ },
+ {
+  "id": "arXiv:2205.04917",
+  "baslik": "Rich Screen Reader Experiences for Accessible Data Visualization",
+  "yil": 2022,
+  "cites": 93,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Zengin ekran okuyucu deneyimleri; yapı, gezinme ve açıklama boyutları.",
+  "alinti": "Current web accessibility guidelines ask visualization designers to support screen readers via basic non‐visual alternatives like textual descriptions and access to raw data tables."
+ },
+ {
+  "id": "arXiv:2503.17517",
+  "baslik": "Accessible Text Descriptions for UpSet Plots",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Karmaşık grafikler için otomatik erişilebilir metin",
+  "alinti": "Automatically generating text descriptions offers an enticing mechanism for democratizing access to the information held in complex scientific charts, yet appropriate procedures for generating those texts remain elusive."
+ },
+ {
+  "id": "doi:10.1145/3544548.3581091",
+  "baslik": "Charagraph: Interactive Generation of Charts for Realtime Annotation of Data-Rich Paragraphs",
+  "yil": 2023,
+  "cites": 35,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Metindeki sayıları etkileşimli grafiklerle bütünleştiren yazım sistemi.",
+  "alinti": "Three Charagraph characteristics are defined: leveraging related textual information about data; integrating textual and graphical representations; and interacting at different contexts."
+ },
+ {
+  "id": "arXiv:2201.05043",
+  "baslik": "ChartText: Linking Text with Charts in Documents",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Metin ile grafik öğelerini otomatik bağlayan yöntem; belge bağlantısı.",
+  "alinti": "Recent works show that interactive documents connecting text with visualizations facilitate reading comprehension. However, creating this type of content requires specialized knowledge."
+ },
+ {
+  "id": "arXiv:2408.01011",
+  "baslik": "DASH: A Bimodal Data Exploration Tool for Interactive Text and Visualizations",
+  "yil": 2024,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Metin ve grafik entegrasyonu; LLM ile veri anlatısı üretimi.",
+  "alinti": "Integrating textual content, such as titles, annotations, and captions, with visualizations facilitates comprehension and takeaways during data exploration."
+ },
+ {
+  "id": "arXiv:2307.13858",
+  "baslik": "EmphasisChecker: A Tool for Guiding Chart and Caption Emphasis",
+  "yil": 2023,
+  "cites": 12,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Grafik ve açıklama vurgu uyumsuzluğunu tespit eden araç.",
+  "alinti": "when there is a mismatch, readers rely on the chart to form takeaways and can miss information in the caption text."
+ },
+ {
+  "id": "doi:10.1007/978-3-030-58796-3_44",
+  "baslik": "AUDiaL: A Natural Language Interface to Make Statistical Charts Accessible to Blind Persons",
+  "yil": 2020,
+  "cites": 15,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Görme engelliler için doğal dil grafik arayüzü",
+  "alinti": "AUDiaL is a web-based, accessible natural language interface (NLI) prototype that allows blind persons to access statistical charts, such as bar and line charts"
+ },
+ {
+  "id": "arXiv:2403.12027",
+  "baslik": "From Pixels to Insights: A Survey on Automatic Chart Understanding in the Era of Large Foundation Models",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Temel modellerle grafik anlama üzerine kapsamlı derleme.",
+  "alinti": "Automatic chart understanding has witnessed significant advancements with the rise of large foundation models in recent years."
+ },
+ {
+  "id": "doi:10.1109/access.2023.3298050",
+  "baslik": "Automatic Chart Understanding: A Review",
+  "yil": 2023,
+  "cites": 26,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Grafik anlama ve otomatik açıklama üzerine kapsamlı derleme.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2203.10244",
+  "baslik": "ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning",
+  "yil": 2022,
+  "cites": 447,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 1,
+  "not": "Grafik soru-cevap kıyaslaması; dolaylı ilgili",
+  "alinti": "When exploring charts, people often ask a variety of complex reasoning questions that involve several logical and arithmetic operations."
+ },
+ {
+  "id": "arXiv:2502.07725",
+  "baslik": "Pluto: Authoring Semantically Aligned Text and Charts for Data-Driven Communication",
+  "yil": 2025,
+  "cites": 7,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Anlamsal hizalı metin ve grafik yazım sistemi; öneriler.",
+  "alinti": "Textual content (including titles, annotations, and captions) plays a central role in helping readers understand a visualization by emphasizing, contextualizing, or summarizing the depicted data."
+ },
+ {
+  "id": "doi:10.36227/techrxiv.176070670.04768024/v1",
+  "baslik": "LLM-Powered Chart Captioning and Insight Generation: Towards Trustworthy Visualization Narratives",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM grafik açıklamalarında olgusal doğrulama ve düzeltme çerçevesi.",
+  "alinti": "However, such models often produce factual inconsistencies, numerical errors, or misleading causal statements. This paper presents a lightweight verification framework that enhances the factual reliability of LLM-generated chart captions."
+ },
+ {
+  "id": "doi:10.1109/tvcg.2012.229",
+  "baslik": "Graphical Overlays: Using Layered Elements to Aid Chart Reading",
+  "yil": 2012,
+  "cites": 83,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 1,
+  "not": "Yalnızca başlık; katmanlı öğeler, belirsiz ilgi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2205.03966",
+  "baslik": "Chart Question Answering: State of the Art and Future Directions",
+  "yil": 2022,
+  "cites": 47,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 1,
+  "not": "Grafik soru-cevap sistemleri taraması; dolaylı",
+  "alinti": "Chart Question Answering (CQA) systems typically take a chart and a natural language question as input and automatically generate the answer to facilitate visual data analysis."
+ },
+ {
+  "id": "arXiv:2403.11236",
+  "baslik": "ChartThinker: A Contextual Chain-of-Thought Approach to Optimized Chart Summarization",
+  "yil": 2024,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Düşünce zinciriyle grafik özetleme; mantıksal tutarlılık ve doğruluk.",
+  "alinti": "However, there still are notable deficiencies in terms of visual-language matching and reasoning ability for existing approaches."
+ },
+ {
+  "id": "arXiv:2305.14761",
+  "baslik": "UniChart: A Universal Vision-language Pretrained Model for Chart Comprehension and Reasoning",
+  "yil": 2023,
+  "cites": 75,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Grafik anlama ve özetleme için önceden eğitilmiş model.",
+  "alinti": "To facilitate chart-based data analysis using natural language, several downstream tasks have been introduced recently such as chart question answering and chart summarization."
+ },
+ {
+  "id": "arXiv:2108.06897",
+  "baslik": "AutoChart: A Dataset for Chart-to-Text Generation Task",
+  "yil": 2021,
+  "cites": 11,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Grafikten analitik metin üretimi için veri kümesi.",
+  "alinti": ""
+ },
+ {
+  "id": "title:describing complex charts in natural language a caption gene",
+  "baslik": "Describing complex charts in natural language: a caption generation system",
+  "yil": 1998,
+  "cites": 88,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Karmaşık grafikler için doğal dil açıklama üreten klasik sistem.",
+  "alinti": "It uses a text planner to determine the content and structure of the captions based on"
+ },
+ {
+  "id": "arXiv:2412.20715",
+  "baslik": "ChartAdapter: Large Vision-Language Model for Chart Summarization",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Grafik özetleme için büyük görsel-dil modeli ve hizalama modülü.",
+  "alinti": "Traditional methods for chart understanding and summarization often rely on multi-stage pipelines, which may produce suboptimal semantic alignment between visual and textual information."
+ },
+ {
+  "id": "arXiv:2103.03996",
+  "baslik": "ChartStory: Automated Partitioning, Layout, and Captioning of Charts into Comic-Style Narratives",
+  "yil": 2021,
+  "cites": 49,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Görsel hikâye sistemi; metin-grafik bölümleme ve başlıklandırma.",
+  "alinti": "Visual data storytelling is gaining importance as a means of presenting data-driven information or analysis results, especially to the general public."
+ },
+ {
+  "id": "doi:10.5753/jbcs.2023.2301",
+  "baslik": "Accessible Bar Charts Through Textual Description Templates",
+  "yil": 2023,
+  "cites": 6,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Çubuk grafikler için standart metin şablonları; görme engelli kullanıcılar.",
+  "alinti": "To solve this problem, we proposed textual description templates for simple and grouped bar charts to inform the chart data in a standardized way to users, excluding the interpretation bias."
+ },
+ {
+  "id": "doi:10.1109/tvcg.2013.119",
+  "baslik": "A Deeper Understanding of Sequence in Narrative Visualization",
+  "yil": 2013,
+  "cites": 198,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; anlatısal görselleştirmede sıranın rolü.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2304.02173",
+  "baslik": "ChartReader: A Unified Framework for Chart Derendering and Comprehension without Heuristic Rules",
+  "yil": 2023,
+  "cites": 20,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Grafik türetme ve anlama için birleşik çerçeve; grafikten metne görevler.",
+  "alinti": "Existing chart comprehension methods suffer from either heuristic rules or an over-reliance on OCR systems, resulting in suboptimal performance."
+ },
+ {
+  "id": "doi:10.1111/cgf.14833",
+  "baslik": "Beyond Alternative Text and tables: Comparative Analysis of Visualization Tools and Accessibility Methods",
+  "yil": 2023,
+  "cites": 19,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Erişilebilirlik araçlarının karşılaştırmalı değerlendirmesi; sohbet tabanlı etkileşim.",
+  "alinti": "It is also unclear how they can improve chart content accessibility beyond conventional alternative text and data tables."
+ },
+ {
+  "id": "doi:10.1145/3290605.3300576",
+  "baslik": "Trust and Recall of Information across Varying Degrees of Title-Visualization Misalignment",
+  "yil": 2019,
+  "cites": 83,
+  "kaynaklar": [
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Başlık-görsel uyumsuzluğunun güven ve hatırlamaya etkisi.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2308.06441",
+  "baslik": "Calliope-Net: Automatic Generation of Graph Data Facts via Annotated Node-link Diagrams",
+  "yil": 2023,
+  "cites": 11,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Ağ verisinden otomatik veri olgusu ve açıklamalı grafik üretimi.",
+  "alinti": "It creates annotated node-link diagrams with facts automatically discovered and organized from network data. A novel layout algorithm is designed to present meaningful and visually appealing annotated graphs."
+ },
+ {
+  "id": "doi:10.1145/3399715.3399829",
+  "baslik": "Neural Data-Driven Captioning of Time-Series Line Charts",
+  "yil": 2020,
+  "cites": 23,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Çizgi grafikler için sinirsel açıklama üretimi.",
+  "alinti": "We propose a neural model which aims to generate text from the same data used to create a line chart."
+ },
+ {
+  "id": "doi:10.1109/vis55277.2024.00061",
+  "baslik": "Representing Charts as Text for Language Models: An In-Depth Study of Question Answering for Bar Charts",
+  "yil": 2024,
+  "cites": 6,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; grafikleri metne çevirip dil modeliyle soru yanıtlama.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2503.22946",
+  "baslik": "D ata W eaver : Authoring Data‐Driven Narratives through the Integrated Composition of Visualization and Text",
+  "yil": 2025,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Görselden metne ve metinden görsele yazım çerçevesi.",
+  "alinti": "However, the process of creating these stories remains challenging, often requiring the integration of effective visualizations with compelling narratives to form a cohesive, interactive presentation."
+ },
+ {
+  "id": "doi:10.1109/tvcg.2015.2467732",
+  "baslik": "Beyond Memorability: Visualization Recognition and Recall",
+  "yil": 2016,
+  "cites": 298,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 1,
+  "not": "Yalnızca başlık; görselleştirmede tanıma ve hatırlama.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2405.13580",
+  "baslik": "AltChart: Enhancing VLM-based Chart Summarization Through Multi-Pretext Tasks",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Görme engelliler için grafik özeti; halüsinasyon sorunu.",
+  "alinti": "Chart summarization is a crucial task for blind and visually impaired individuals as it is their primary means of accessing and interpreting graphical data."
+ },
+ {
+  "id": "arXiv:2412.06821",
+  "baslik": "FinFlier: Automating Graphical Overlays for Financial Visualizations with Knowledge-Grounding Large Language Model",
+  "yil": 2024,
+  "cites": 13,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM-based text-linked overlays for financial narrative charts",
+  "alinti": "Graphical overlays that layer visual elements onto charts, are effective to convey insights and context in financial narrative visualizations."
+ },
+ {
+  "id": "arXiv:2307.07922",
+  "baslik": "InkSight: Leveraging Sketch Interaction for Documenting Chart Findings in Computational Notebooks",
+  "yil": 2023,
+  "cites": 40,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Not defterlerinde grafik bulgularının metinle belgelenmesi.",
+  "alinti": "Effective documentation for explaining chart findings during the exploration process is essential as it helps recall and share data analysis."
+ },
+ {
+  "id": "arXiv:2407.14451",
+  "baslik": "From Instruction to Insight: Exploring the Functional and Semantic Roles of Text in Interactive Dashboards",
+  "yil": 2024,
+  "cites": 9,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Gösterge panellerinde metnin işlevsel ve anlamsal rolleri.",
+  "alinti": "There is increased interest in understanding the interplay between text and visuals in the field of data visualization."
+ },
+ {
+  "id": "arXiv:2305.14525",
+  "baslik": "The State of the Art in Creating Visualization Corpora for Automated Chart Analysis",
+  "yil": 2023,
+  "cites": 15,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Otomatik grafik analizinde veri kümelerinin kapsamlı incelemesi.",
+  "alinti": "We survey 56 papers that created or used a visualization corpus as the input of their research techniques or systems."
+ },
+ {
+  "id": "arXiv:2410.03268",
+  "baslik": "Narrative Player: Reviving Data Narratives with Visuals",
+  "yil": 2024,
+  "cites": 15,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ile metin paragraflarından görsel dizisi üretimi.",
+  "alinti": "However, a general limitation of these documents for reading is their reliance on text to convey data and facts."
+ },
+ {
+  "id": "doi:10.1145/3563657.3595986",
+  "baslik": "Making Data-Driven Articles more Accessible: An Active Preference Learning Approach to Data Fact Personalization",
+  "yil": 2023,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "BLV kullanıcılar için kişiselleştirilmiş veri olguları.",
+  "alinti": "We explore the possibility of dynamically generating data facts (texts describing data patterns in a chart) for BLV individuals based on their preferences to aid the reading of such articles."
+ },
+ {
+  "id": "doi:10.1145/3173574.3173612",
+  "baslik": "Design Patterns for Data Comics",
+  "yil": 2018,
+  "cites": 154,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Design patterns combining panels, narration, and layout",
+  "alinti": "Our patterns demonstrate how data comics allow an author to combine the best of both worlds: spatial layout and overview from infographics as well as linearity and narration from videos and presentations."
+ },
+ {
+  "id": "doi:10.1163/18784712-20240039",
+  "baslik": "Accessible Images: AI-Generated Alt Text in Educational Publishing",
+  "yil": 2025,
+  "cites": 6,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Eğitim yayıncılığında yapay zekâ ile alternatif metin üretimi.",
+  "alinti": "Alt texts improve data recall, comprehension, and accessibility for individuals with visual impairments. However, current automatic methods for generating alt texts face challenges in accurately conveying the distinctive aspects of images in educational publishing."
+ },
+ {
+  "id": "doi:10.1109/mcg.2015.99",
+  "baslik": "More Than Telling a Story: Transforming Data into Visually Shared Stories",
+  "yil": 2015,
+  "cites": 289,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Görsel veri hikâyeciliği süreci; temel çerçeve.",
+  "alinti": "The authors take a closer look at how the visualization community has discussed visual storytelling and present a visual data storytelling process"
+ },
+ {
+  "id": "arXiv:1712.02007",
+  "baslik": "Coupling Story to Visualization: Using Textual Analysis as a Bridge Between Data and Interpretation",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Metin ve görselin doğal dil işlemeyle otomatik bütünleşmesi.",
+  "alinti": "Online writers and journalism media are increasingly combining visualization (and other multimedia content) with narrative text to create narrative visualizations."
+ },
+ {
+  "id": "doi:10.1145/3544548.3581186",
+  "baslik": "Chart Reader: Accessible Visualization Experiences Designed with Screen Reader Users",
+  "yil": 2023,
+  "cites": 50,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; ekran okuyucu kullanıcıları için erişilebilir grafik.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.31219/osf.io/26jvr",
+  "baslik": "AltGosling: Automatic Generation of Text Descriptions for Accessible Genomics Data Visualization",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Genomik görselleştirmeler için otomatik erişilebilir metin açıklaması.",
+  "alinti": "Without appropriate descriptions, these visualizations are not accessible to all people with blindness and low vision, who often rely on screen reader accessibility technologies"
+ },
+ {
+  "id": "doi:10.3390/info9030065",
+  "baslik": "Storytelling and Visualization: An Extended Survey",
+  "yil": 2018,
+  "cites": 153,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Görselleştirmede hikâyeciliğin kapsamlı taraması.",
+  "alinti": "Our classification scheme highlights the open and unsolved problems in this field as well as the more mature storytelling sub-fields."
+ },
+ {
+  "id": "arXiv:2309.15723",
+  "baslik": "Where Are We So Far? Understanding Data Storytelling Tools from the Perspective of Human-AI Collaboration",
+  "yil": 2023,
+  "cites": 76,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Systematic review of AI-supported data storytelling tools",
+  "alinti": "Data storytelling is powerful for communicating data insights, but it requires diverse skills and considerable effort from human creators."
+ },
+ {
+  "id": "arXiv:2405.19094",
+  "baslik": "Faithful Chart Summarization with ChaTS-Pi",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Chart summarization faithfulness metric and pipeline; hallucination focus",
+  "alinti": "Multi-modal generative models have been used to produce fluent summaries, but they can suffer from factual and perceptual errors."
+ },
+ {
+  "id": "doi:10.14569/ijacsa.2025.01612117",
+  "baslik": "HCC: A Hierarchical Chart Captioning Model for Enhanced Accessibility of Chart Data for Visually Impaired Users",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Görme engelliler için hiyerarşik grafik açıklaması.",
+  "alinti": "The model utilizes spatial token features to generate captions at multiple levels, each offering varying degrees of detail and abstraction, mimicking human cognitive processing."
+ },
+ {
+  "id": "arXiv:2202.00047",
+  "baslik": "The Stories We Tell About Data: Surveying Data-Driven Storytelling Using Visualization",
+  "yil": 2022,
+  "cites": 26,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Taxonomy of media types for data-driven storytelling",
+  "alinti": "we propose a taxonomy focused specifically on media types for the purpose of widening the purview of data-driven storytelling"
+ },
+ {
+  "id": "doi:10.18653/v1/2023.findings-acl.85",
+  "baslik": "Enhanced Chart Understanding via Visual Language Pre-training on Plot Table Pairs",
+  "yil": 2023,
+  "cites": 13,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Chart table pretraining; evaluated on chart summarization",
+  "alinti": "We have conducted extensive experiments on chart question answering and chart summarization to verify the effectiveness of the proposed pre-training strategies."
+ },
+ {
+  "id": "doi:10.1111/cgf.12392",
+  "baslik": "Authoring Narrative Visualizations with Ellipsis",
+  "yil": 2014,
+  "cites": 131,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Authoring narrative visualizations with annotations; journalist-focused system",
+  "alinti": "we introduce a model of storytelling abstractions that includes state‐based scene structure, dynamic annotations and decoupled coordination of multiple visualization components"
+ },
+ {
+  "id": "arXiv:2503.20089",
+  "baslik": "MatplotAlt: A Python Library for Adding Alt Text to Matplotlib Figures in Computational Notebooks",
+  "yil": 2025,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Matplotlib alt metni; LLM olgusal hata sorunu.",
+  "alinti": "We find that state-of-the-art LLMs still struggle with factual errors when describing charts, and improve the accuracy of our descriptions by prompting GPT4-turbo"
+ },
+ {
+  "id": "arXiv:2501.09349",
+  "baslik": "ChartInsighter: An Approach for Mitigating Hallucination in Time-series Chart Summary Generation with A Benchmark Dataset",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Zaman serisi grafik özetlerinde halüsinasyon azaltma.",
+  "alinti": "Effective chart summary can significantly reduce the time and effort decision makers spend interpreting charts, enabling precise and efficient communication of data insights."
+ },
+ {
+  "id": "arXiv:2408.05346",
+  "baslik": "DataNarrative: Automated Data-Driven Storytelling with Visualizations and Texts",
+  "yil": 2024,
+  "cites": 17,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM multi-agent data story generation with charts and text",
+  "alinti": "These stories integrate visual aids, such as highlighted bars and lines in charts, along with textual annotations explaining insights."
+ },
+ {
+  "id": "arXiv:2405.19111",
+  "baslik": "Alt4Blind: A User Interface to Simplify Charts Alt-Text Creation",
+  "yil": 2024,
+  "cites": 10,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Chart alt-text authoring via retrieval and UI",
+  "alinti": "Recent trends have seen the use of AI for Alt-Text generation. However, existing models are susceptible to producing inaccurate or misleading information."
+ }
+]

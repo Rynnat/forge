@@ -1,0 +1,1107 @@
+[
+ {
+  "id": "arXiv:2302.07427",
+  "baslik": "Studying the effect of AI Code Generators on Supporting Novice Learners in Introductory Programming",
+  "yil": 2023,
+  "cites": 363,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Codex ile öğrenme ve bağımlılık üzerine deneysel kanıt.",
+  "alinti": "Our results show that using Codex significantly increased code-authoring performance (1.15x increased completion rate and 1.8x higher scores) while not decreasing performance on manual code-modification tasks."
+ },
+ {
+  "id": "arXiv:2401.11314",
+  "baslik": "CodeAid: Evaluating a Classroom Deployment of an LLM-based Programming Assistant that Balances Student and Educator Needs",
+  "yil": 2024,
+  "cites": 276,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Doğrudan cevap vermeyen asistan; sınıf dağıtımı.",
+  "alinti": "LLM-powered tools like ChatGPT offer instant support, but reveal direct answers with code, which may hinder deep conceptual engagement."
+ },
+ {
+  "id": "doi:10.1145/3568813.3600138",
+  "baslik": "From \"Ban It Till We Understand It\" to \"Resistance is Futile\": How University Programming Instructors Plan to Adapt as More Students Use AI Code Generation and Explanation Tools such as ChatGPT and GitHub Copilot",
+  "yil": 2023,
+  "cites": 241,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Eğitmenlerin AI araçlarına uyum planları; S5 doğrudan.",
+  "alinti": "how do university instructors plan to adapt their courses to ensure that students still learn well?"
+ },
+ {
+  "id": "arXiv:2308.06921",
+  "baslik": "CodeHelp: Using Large Language Models with Guardrails for Scalable Support in Programming Classes",
+  "yil": 2023,
+  "cites": 191,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Koruma bariyerli asistan; aşırı bağımlılık endişesi.",
+  "alinti": "In this paper, we introduce CodeHelp, a novel LLM-powered tool designed with guardrails to provide on-demand assistance to programming students without directly revealing solutions."
+ },
+ {
+  "id": "doi:10.1145/3511861.3511863",
+  "baslik": "The Robots Are Coming: Exploring the Implications of OpenAI Codex on Introductory Programming",
+  "yil": 2022,
+  "cites": 454,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Codex giriş programlama sınavlarında öğrencilerle karşılaştırma.",
+  "alinti": "We report its performance on real questions taken from introductory programming exams and compare it to results from students who took these same exams"
+ },
+ {
+  "id": "doi:10.1145/3576123.3576134",
+  "baslik": "My AI Wants to Know if This Will Be on the Exam: Testing OpenAI’s Codex on CS2 Programming Exercises",
+  "yil": 2023,
+  "cites": 182,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "CS2 sınavlarında Codex performansı; erken performans kanıtı.",
+  "alinti": "The introduction of OpenAI Codex sparked a surge of interest in the impact of generative AI models on computing education practices."
+ },
+ {
+  "id": "arXiv:2306.02608",
+  "baslik": "Computing Education in the Era of Generative AI",
+  "yil": 2023,
+  "cites": 313,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Üretken YZ'nin bilişim eğitimine etkileri; pozisyon makalesi.",
+  "alinti": "In this paper, we discuss the challenges and opportunities such models present to computing educators, with a focus on introductory programming classrooms."
+ },
+ {
+  "id": "arXiv:2310.00658",
+  "baslik": "The Robots are Here: Navigating the Generative AI Revolution in Computing Education",
+  "yil": 2023,
+  "cites": 392,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "71 makalelik derleme ve 20 ülke anketi; kapsamlı.",
+  "alinti": "we undertake a comprehensive exploration of LLMs in the context of computing education and make five significant contributions."
+ },
+ {
+  "id": "arXiv:2405.17739",
+  "baslik": "The Widening Gap: The Benefits and Harms of Generative AI for Novice Programmers",
+  "yil": 2024,
+  "cites": 201,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Novice metakognisyonu ve GenAI zararları; göz izleme.",
+  "alinti": "Its impact on novice metacognition has only started to be explored. Here we replicate a previous study that examined novice programming problem solving behavior and extend it by incorporating GenAI tools."
+ },
+ {
+  "id": "arXiv:2304.02491",
+  "baslik": "\"It's Weird That it Knows What I Want\": Usability and Interactions with Copilot for Novice Programmers",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Copilot ile novice etkileşimi; bilişsel ve üstbilişsel zorluklar.",
+  "alinti": "Through observations and interviews we explore student perceptions of the benefits and pitfalls of this technology for learning, present new observed interaction patterns, and discuss cognitive and metacognitive difficulties faced by students."
+ },
+ {
+  "id": "arXiv:2306.10073",
+  "baslik": "Thrilled by Your Progress! Large Language Models (GPT-4) No Longer Struggle to Pass Assessments in Higher Education Programming Courses",
+  "yil": 2023,
+  "cites": 141,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "GPT-4 programlama sınavlarını geçiyor; kopya riski.",
+  "alinti": "The emergence of ChatGPT resulted in heated debates of its potential uses (e.g., exercise generation, code explanation) as well as misuses in programming classes (e.g., cheating)."
+ },
+ {
+  "id": "arXiv:2311.05943",
+  "baslik": "Prompt Problems: A New Programming Exercise for the Generative AI Era",
+  "yil": 2023,
+  "cites": 186,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Yeni değerlendirme biçimi: istem tabanlı programlama problemleri.",
+  "alinti": "Prompt Problems are designed to help students learn how to write effective prompts for AI code generators."
+ },
+ {
+  "id": "arXiv:2401.03676",
+  "baslik": "Assessing AI Detectors in Identifying AI-Generated Code: Implications for Education",
+  "yil": 2024,
+  "cites": 66,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "YZ dedektörlerinin kod tespiti ve kaçınma; doğrudan konu.",
+  "alinti": "Educators are increasingly concerned about the usage of Large Language Models (LLMs) such as ChatGPT in programming education, particularly regarding the potential exploitation of imperfections in Artificial Intelligence Generated Content (AIGC) Detectors for academic misconduct."
+ },
+ {
+  "id": "doi:10.1186/s41239-024-00494-x",
+  "baslik": "Risk management strategy for generative AI in computing education: how to handle the strengths, weaknesses, opportunities, and threats?",
+  "yil": 2024,
+  "cites": 32,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "SWOT ve kapsam taraması, 129 makale; risk yönetimi.",
+  "alinti": "The aim of this study is to investigate the potential strengths, weaknesses, opportunities, and threats of generative AI in computing education"
+ },
+ {
+  "id": "arXiv:2308.04309",
+  "baslik": "Generative AI in Computing Education: Perspectives of Students and Instructors",
+  "yil": 2023,
+  "cites": 136,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Öğrenci ve eğitmen algıları; nitel görüşme çalışması.",
+  "alinti": "students and instructors also raised numerous concerns about how these models should be integrated to best support the needs"
+ },
+ {
+  "id": "doi:10.1109/fie61694.2024.10893117",
+  "baslik": "AI Generated Code Plagiarism Detection in Computer Science Courses: A Literature Mapping",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "AI kodu intihal tespiti literatür haritası; doğrudan konu.",
+  "alinti": "methods of plagiarism have evolved, however methods of detection may not be capable of accurately differentiating between code generated by human and artificial intelligence (AI)"
+ },
+ {
+  "id": "doi:10.4314/cajost.v7i2.4",
+  "baslik": "The Imparts and Pedagogical Challenges of AIGenerated Codes on Computer Programming Education at Introductory Level: Curriculum Design Recommendations",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Giriş düzeyi AI kodunun pedagojik zorlukları; müfredat önerileri.",
+  "alinti": "Researchers and teachers must prioritize academic integrity and fair assessment of students' programming skills in the era of Large Language Models (LLM) over viewing AI as a threat."
+ },
+ {
+  "id": "arXiv:2210.15157",
+  "baslik": "Conversing with Copilot: Exploring Prompt Engineering for Solving CS1 Problems Using Natural Language",
+  "yil": 2022,
+  "cites": 284,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Copilot CS1 problemleri; kısmi başarı ve kaygılar.",
+  "alinti": "Prior work exploring OpenAI Codex, the underlying model that powers Copilot, has shown it performs well on typical CS1 problems thus raising concerns about the impact it will have on how introductory programming courses are taught."
+ },
+ {
+  "id": "arXiv:2407.20792",
+  "baslik": "How Novice Programmers Use and Experience ChatGPT when Solving Programming Exercises in an Introductory Course",
+  "yil": 2024,
+  "cites": 35,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "dblp",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Öğrencilerin ChatGPT kullanım deneyimi ve örüntüleri.",
+  "alinti": "An increased understanding of students' use is mandatory for educators and higher education institutions, as GenAI is here to stay"
+ },
+ {
+  "id": "doi:10.1145/3626252.3630880",
+  "baslik": "Instructor Perceptions of AI Code Generation Tools - A Multi-Institutional Interview Study",
+  "yil": 2024,
+  "cites": 54,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Eğitmen görüşmeleri; kaygı ve planlanan uyarlamalar.",
+  "alinti": "In this paper, we report the results of an interview study involving 12 instructors from Australia, Finland and New Zealand, in which we investigate educators' current practices, concerns, and planned adaptations relating to these tools."
+ },
+ {
+  "id": "doi:10.1186/s40561-024-00316-7",
+  "baslik": "The effects of over-reliance on AI dialogue systems on students' cognitive abilities: a systematic review",
+  "yil": 2024,
+  "cites": 1532,
+  "kaynaklar": [
+   "crossref",
+   "dblp",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Aşırı güven ve bilişsel yetenekler üzerine sistematik derleme",
+  "alinti": "Overreliance on AI occurs when users accept AI-generated recommendations without question, leading to errors in task performance in the context of decision-making."
+ },
+ {
+  "id": "doi:10.1145/3545945.3569830",
+  "baslik": "Using GitHub Copilot to Solve Simple Programming Problems",
+  "yil": 2023,
+  "cites": 190,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Copilot basit problemler; akademik dürüstlük kaygısı.",
+  "alinti": "GitHub's version of Codex, Copilot, is freely available to students. This raises pedagogic and academic integrity concerns."
+ },
+ {
+  "id": "arXiv:2306.05715",
+  "baslik": "Exploring the Responses of Large Language Models to Beginner Programmers' Help Requests",
+  "yil": 2023,
+  "cites": 145,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "LLM'lerin öğrenci yardım isteklerine yanıtları; tehdit çerçevesi.",
+  "alinti": "In computing education, like in other walks of life, many opportunities and threats have emerged as a consequence."
+ },
+ {
+  "id": "arXiv:2501.10091",
+  "baslik": "How Do Programming Students Use Generative AI?",
+  "yil": 2025,
+  "cites": 43,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Öğrencilerin ChatGPT kullanım stratejileri; tam çözüm isteme",
+  "alinti": "While only 23 of the students actually opted to use the chatbot, the majority of those eventually prompted it to simply generate a full solution."
+ },
+ {
+  "id": "arXiv:2308.08572",
+  "baslik": "Large Language Models in Introductory Programming Education: ChatGPT's Performance and Implications for Assessments",
+  "yil": 2023,
+  "cites": 20,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "ChatGPT giriş programlama görevlerinde yüksek başarı",
+  "alinti": "The results show high scores of 94.4 to 95.8% correct responses and reliable availability of textual explanations and program code"
+ },
+ {
+  "id": "arXiv:2410.22281",
+  "baslik": "Analysis of Generative AI Policies in Computing Course Syllabi",
+  "yil": 2024,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Bilgisayar dersi GenAI politikaları; ders izlencesi analizi",
+  "alinti": "most instructions related to GenAI use were as part of the academic integrity policy for the course"
+ },
+ {
+  "id": "arXiv:2412.09315",
+  "baslik": "Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance",
+  "yil": 2024,
+  "cites": 804,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Üstbilişsel tembellik; deneysel çalışma, yazma görevi",
+  "alinti": "we conducted a randomised experimental study and compared learners' motivations, self‐regulated learning processes and learning performances on a writing task among"
+ },
+ {
+  "id": "doi:10.3390/math12050629",
+  "baslik": "Computer Science Education in ChatGPT Era: Experiences from an Experiment in a Programming Course for Novice Programmers",
+  "yil": 2024,
+  "cites": 98,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Kontrollü deney; performans üzerinde anlamlı etki yok",
+  "alinti": "The study results showed that the students’ performance is not influenced by ChatGPT usage (no statistical significance between groups with a p-value of 0.730)"
+ },
+ {
+  "id": "doi:10.70593/978-81-981271-1-2_1",
+  "baslik": "Artificial intelligence, ChatGPT, and the new cheating dilemma: Strategies for academic integrity",
+  "yil": 2024,
+  "cites": 28,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Genel yükseköğretim AI kopya ikilemi; programlama dışı.",
+  "alinti": "AI systems are becoming adept at producing human-like text in ways that present an entirely new array of dilemmas for higher education"
+ },
+ {
+  "id": "arXiv:2310.16984",
+  "baslik": "Patterns of Student Help-Seeking When Using a Large Language Model-Powered Programming Assistant",
+  "yil": 2023,
+  "cites": 75,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Çözüm vermeyen LLM asistanı; yardım arama örüntüleri",
+  "alinti": "Such tools can, in theory, provide on-demand help in large class settings and be configured with appropriate guardrails to prevent misuse and mitigate common concerns around learner over-reliance."
+ },
+ {
+  "id": "doi:10.1145/3719384.3719439",
+  "baslik": "Challenges and Limitations of Using Artificial Intelligence Generated Content (AIGC) with ChatGPT in Programming Curriculum: A Systematic Literature Review",
+  "yil": 2024,
+  "cites": 11,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Programlama müfredatında AIGC; sistematik derleme, intihal riski",
+  "alinti": "Key issues identified included increased plagiarism risk due to AI-generated unique code, accuracy and reliability concerns of AI outputs"
+ },
+ {
+  "id": "doi:10.1073/pnas.2422633122",
+  "baslik": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+  "yil": 2025,
+  "cites": 306,
+  "kaynaklar": [
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Korumasız GenAI öğrenmeyi zarar verebilir; lise matematiği deneyi",
+  "alinti": "Learning is critical to long-term productivity, especially since generative AI is fallible and users must check its outputs."
+ },
+ {
+  "id": "doi:10.35542/osf.io/mrz8h",
+  "baslik": "Chatting and Cheating. Ensuring academic integrity in the era of ChatGPT",
+  "yil": 2023,
+  "cites": 3047,
+  "kaynaklar": [
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "ChatGPT ile akademik dürüstlük; genel yükseköğretim.",
+  "alinti": "It also considers the potential for these tools to be used for academic dishonesty and the difficulties of detecting and preventing"
+ },
+ {
+  "id": "arXiv:2206.11861",
+  "baslik": "Automatic Generation of Programming Exercises and Code Explanations using Large Language Models",
+  "yil": 2022,
+  "cites": 494,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 1,
+  "not": "Ders materyali üretimi; zarar odaklı değil, marjinal.",
+  "alinti": "Our results suggest that the majority of the automatically generated content is both novel and sensible"
+ },
+ {
+  "id": "doi:10.2139/ssrn.4891302",
+  "baslik": "Computer Programming Education in the Age of Generative AI: Insights from Empirical Research",
+  "yil": 2024,
+  "cites": 14,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "2018-2023 sistematik derleme; 37 çalışma incelenmiş.",
+  "alinti": "Our analysis of 37 relevant studies indicates a predominant emphasis on higher education, constituting 81% of the reviewed literature."
+ },
+ {
+  "id": "doi:10.1145/3545945.3569759",
+  "baslik": "Programming Is Hard - Or at Least It Used to Be",
+  "yil": 2023,
+  "cites": 402,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Erken uyarı konum yazısı; programlama eğitimi",
+  "alinti": "In this position paper we argue that the community needs to act quickly in deciding what possible opportunities can and should be leveraged and how"
+ },
+ {
+  "id": "arXiv:2306.15666",
+  "baslik": "Testing of Detection Tools for AI-Generated Text",
+  "yil": 2023,
+  "cites": 577,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "AI metin tespit araçlarının güvenilirliği; intihal tespiti",
+  "alinti": "The researchers conclude that the available detection tools are neither accurate nor reliable and have a main bias towards classifying"
+ },
+ {
+  "id": "doi:10.1145/3626252.3630826",
+  "baslik": "Detecting ChatGPT-Generated Code Submissions in a CS1 Course Using Machine Learning Models",
+  "yil": 2024,
+  "cites": 59,
+  "kaynaklar": [
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "CS1'de ChatGPT kodunu makine öğrenmesiyle tespit",
+  "alinti": "However, ChatGPT generates code non-deterministically, and thus, traditional similarity detectors might not suffice to detect AI-created code."
+ },
+ {
+  "id": "doi:10.38124/ijisrt/25mar1427",
+  "baslik": "AI as a Cognitive Partner: A Systematic Review of the Influence of AI on Metacognition and Self-Reflection in Critical Thinking",
+  "yil": 2025,
+  "cites": 30,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Üstbilişsel tembellik ve aşırı bağımlılık kanıtı",
+  "alinti": "Evidence shows that AI supports learning assistance and self-regulation development, but overdependence on it results in lower problem-solving skills and decreased metacognitive thinking."
+ },
+ {
+  "id": "arXiv:2309.14049",
+  "baslik": "How Novices Use LLM-Based Code Generators to Solve CS1 Coding Tasks in a Self-Paced Learning Environment",
+  "yil": 2023,
+  "cites": 131,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Codex kullanımı; 10-17 yaş öğrencileri, tematik analiz",
+  "alinti": "As Large Language Models (LLMs) gain in popularity, it is important to understand how novice programmers use them and the effect they have on learning to code."
+ },
+ {
+  "id": "doi:10.1145/3587102.3588805",
+  "baslik": "Evaluating the Performance of Code Generation Models for Solving Parsons Problems With Small Prompt Variations",
+  "yil": 2023,
+  "cites": 56,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Codex performansı Parsons problemlerinde; bağımlılık riski",
+  "alinti": "Given the many complexities that students face when learning to write code, they may quickly become reliant on such tools without properly understanding the underlying concepts."
+ },
+ {
+  "id": "arXiv:2412.14732",
+  "baslik": "Beyond the Hype: A Comprehensive Review of Current Trends in Generative AI Research, Teaching Practices, and Tools",
+  "yil": 2024,
+  "cites": 97,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "GenAI eğitimi trendleri; genel kapsamlı derleme",
+  "alinti": "Researchers reported that these new tools are capable of solving most introductory programming tasks and are causing disruptions throughout the curriculum."
+ },
+ {
+  "id": "doi:10.1145/3719487.3719519",
+  "baslik": "A Systematic Literature Review of the Practical Applications of Artificial Intelligence-Generated Content (AIGC) Using OpenAI ChatGPT, Copilot, and Codex in Programming Education",
+  "yil": 2024,
+  "cites": 5,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Sistematik derleme; yalnızca başlık mevcut, özet yok.",
+  "alinti": "A Systematic Literature Review of the Practical Applications of Artificial Intelligence-Generated Content (AIGC) Using OpenAI ChatGPT, Copilot, and Codex in Programming Education."
+ },
+ {
+  "id": "doi:10.1007/s40593-025-00496-4",
+  "baslik": "Integrating Generative AI into Programming Education: Student Perceptions and the Challenge of Correcting AI Errors",
+  "yil": 2025,
+  "cites": 39,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Öğrenci algısı ve LLM hatalarını düzeltme performansı",
+  "alinti": "Students also expressed strong intentions to continue using GenAI tools in their studies, while reported concerns were relatively low and centered primarily on the risk of over-reliance."
+ },
+ {
+  "id": "arXiv:2407.13105",
+  "baslik": "Survey on Plagiarism Detection in Large Language Models: The Impact of ChatGPT and Gemini on Academic Integrity",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 2,
+  "not": "LLM ile akademik suistimal ve tespit; genel yükseköğretim.",
+  "alinti": "This has led to a surge in academic misconduct, as students present work generated by LLMs as their own, without putting in the effort required for learning."
+ },
+ {
+  "id": "arXiv:2410.06865",
+  "baslik": "Students' Perceptions and Use of Generative AI Tools for Programming Across Different Computing Courses",
+  "yil": 2024,
+  "cites": 30,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Öğrenci GenAI algısı ve kullanımı; dersler arası farklar.",
+  "alinti": "how students perceive and use GenAI tools can potentially depend on many factors, including their background knowledge, familiarity with the tools, and the learning goals and policies of the courses they are taking."
+ },
+ {
+  "id": "doi:10.1145/3639474.3640076",
+  "baslik": "Does ChatGPT Help With Introductory Programming?An Experiment of Students Using ChatGPT in CS1",
+  "yil": 2024,
+  "cites": 97,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "CS1 kontrollü deney; öğrenme sonuçlarına etkisi",
+  "alinti": "This paper presents a controlled experiment that explores ChatGPT's role in CS1 in a classroom setting."
+ },
+ {
+  "id": "arXiv:2212.01020",
+  "baslik": "Programming Is Hard -- Or at Least It Used to Be: Educational Opportunities And Challenges of AI Code Generation",
+  "yil": 2022,
+  "cites": 36,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Erken uyarı niteliğinde pozisyon makalesi; giriş programlama",
+  "alinti": "In this position paper we argue that the community needs to act quickly in deciding what possible opportunities can and should be leveraged"
+ },
+ {
+  "id": "doi:10.3390/educsci13040410",
+  "baslik": "What Is the Impact of ChatGPT on Education? A Rapid Review of the Literature",
+  "yil": 2023,
+  "cites": 2005,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "ChatGPT ilk üç ay hızlı derleme; alanlara göre performans",
+  "alinti": "ChatGPT’s performance varied across subject domains, ranging from outstanding (e.g., economics) and satisfactory (e.g., programming) to unsatisfactory (e.g., mathematics)."
+ },
+ {
+  "id": "doi:10.4018/979-8-3693-1351-0.ch008",
+  "baslik": "Challenges and Limitations of Generative AI in Education",
+  "yil": 2024,
+  "cites": 12,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Eğitimde GAI risk ve sınırlılıkları derlemesi",
+  "alinti": "The challenges and limitations of using GAI in education are grouped under five factors: ethics and safety; educational implementations; assessment and evaluation; equity and access; quality control and expertise."
+ },
+ {
+  "id": "arXiv:2503.15684",
+  "baslik": "Student's Use of Generative AI as a Support Tool in an Advanced Web Development Course",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Web geliştirme dersinde GenAI kullanımı; deneyim raporu",
+  "alinti": "they are concerned about over-reliance and incorrect solutions and want more training in prompting strategies"
+ },
+ {
+  "id": "doi:10.1145/3626252.3630958",
+  "baslik": "Use of AI-driven Code Generation Models in Teaching and Learning Programming: a Systematic Literature Review",
+  "yil": 2024,
+  "cites": 63,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Programlama eğitiminde LLM kod üretimi sistematik derlemesi",
+  "alinti": "We identified that the models exhibit accuracy limitations; generated content often contains minor errors that are manageable by instructors"
+ },
+ {
+  "id": "doi:10.3390/info16040296",
+  "baslik": "Generative AI and Academic Integrity in Higher Education: A Systematic Review and Research Agenda",
+  "yil": 2025,
+  "cites": 302,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "GenAI ve akademik dürüstlük; sistematik derleme",
+  "alinti": "The results indicate that while GenAI can enhance educational engagement and efficiency, it also poses significant risks of academic dishonesty."
+ },
+ {
+  "id": "arXiv:2405.14178",
+  "baslik": "Desirable Characteristics for AI Teaching Assistants in Programming Education",
+  "yil": 2024,
+  "cites": 96,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Doğrudan çözüm vermeyen AI asistan tasarımı",
+  "alinti": "as well as situations where TAs provide direct solutions without helping students to develop their own problem-solving skills."
+ },
+ {
+  "id": "doi:10.53761/1.20.02.07",
+  "baslik": "Academic Integrity considerations of AI Large Language Models in the post-pandemic era: ChatGPT and beyond",
+  "yil": 2023,
+  "cites": 831,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Akademik dürüstlük ve tespit kaçınma; yazı odaklı, programlama dışı.",
+  "alinti": "We describe and demonstrate the potential that these tools have in creating original, coherent text that can avoid detection by existing technological methods of detection and trained academic staff alike"
+ },
+ {
+  "id": "arXiv:2511.15768",
+  "baslik": "Navigating the Ethical and Societal Impacts of Generative AI in Higher Computing Education",
+  "yil": 2025,
+  "cites": 6,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Etik ve toplumsal etkiler; sistematik derleme ve çerçeve",
+  "alinti": "Generative AI (GenAI) presents societal and ethical challenges related to equity, academic integrity, bias, and data provenance."
+ },
+ {
+  "id": "doi:10.56975/ijsdr.v10i12.306335",
+  "baslik": "The Impact of Large Language Models on Novice Programming: A Mixed Methods Evaluation",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Yeni programcılarda LLM'in öğrenme kaybı etkisi",
+  "alinti": "The study evaluates how AI‑driven code generation influences learning outcomes, skill acquisition, and program comprehension among beginners"
+ },
+ {
+  "id": "doi:10.1145/3587103.3594206",
+  "baslik": "Transformed by Transformers: Navigating the AI Coding Revolution for Computing Education: An ITiCSE Working Group Conducted by Humans",
+  "yil": 2023,
+  "cites": 26,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Bilgisayar eğitimi için alan tanımlayıcı çalışma grubu raporu",
+  "alinti": "This working group seeks to document the state-of-the-art for code generation LLMs, detail current opportunities and challenges related to their use"
+ },
+ {
+  "id": "arXiv:2306.03289",
+  "baslik": "Exploring the Role of AI Assistants in Computer Science Education: Methods, Implications, and Instructor Perspectives",
+  "yil": 2023,
+  "cites": 59,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "187 problem; ödev tasarımı ve eğitmen görüşleri",
+  "alinti": "We then explored methods to modify these problems to adapt them to ChatGPT's capabilities to reduce potential misuse by students."
+ },
+ {
+  "id": "doi:10.28945/5240",
+  "baslik": "Potentials of ChatGPT in Computer Programming: Insights from Programming Instructors",
+  "yil": 2024,
+  "cites": 38,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Programlama eğitmenlerinin algısı ve olumsuz etkiler",
+  "alinti": "This study also aims to explore their experiences concerning the potential benefits and adverse impacts of such technology on students and instructors."
+ },
+ {
+  "id": "doi:10.1007/s44163-024-00203-7",
+  "baslik": "AI chatbots in programming education: guiding success or encouraging plagiarism",
+  "yil": 2024,
+  "cites": 27,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "AI asistanı sınav puanı ve yanlış bilgi kabulü",
+  "alinti": "AI generated incorrect answers to 36 students. Thirty-three of these students (92%) answered the question incorrectly."
+ },
+ {
+  "id": "arXiv:2410.08922",
+  "baslik": "Exploring the Design Space of Cognitive Engagement Techniques with AI-Generated Code for Enhanced Learning",
+  "yil": 2024,
+  "cites": 35,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Yüzeysel etkileşim ve öğrenme yanılsaması; bilişsel teknikler",
+  "alinti": "However, this interaction can lead to superficial engagement, giving learners an illusion of learning and hindering skill development."
+ },
+ {
+  "id": "arXiv:2412.11419",
+  "baslik": "From Automation to Cognition: Redefining the Roles of Educators and Generative AI in Computing Education",
+  "yil": 2024,
+  "cites": 19,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Ödev yeniden tasarımı; süreç odaklı değerlendirme önerisi",
+  "alinti": "educators have expressed concerns that students may over-rely on GenAI and use these tools to generate solutions without engaging in the learning process."
+ },
+ {
+  "id": "arXiv:2410.16349",
+  "baslik": "Large Language Models in Computer Science Education: A Systematic Literature Review",
+  "yil": 2024,
+  "cites": 103,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "BDS eğitiminde LLM'ler; sistematik derleme",
+  "alinti": "We analyze their effectiveness in enhancing the learning experience, supporting personalized education, and aiding educators in curriculum development."
+ },
+ {
+  "id": "arXiv:2403.15586",
+  "baslik": "Generative AI in Education: A Study of Educators' Awareness, Sentiments, and Influencing Factors",
+  "yil": 2024,
+  "cites": 88,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Eğitmenlerin farkındalık ve tutumları; anket ve görüşme",
+  "alinti": "investigate the level of awareness, overall sentiment towards adoption, and the factors influencing these attitudes"
+ },
+ {
+  "id": "doi:10.37394/23205.2024.23.26",
+  "baslik": "Directions for using Generative Artificial Intelligence in Introductory Programming",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Literature review of GenAI in intro programming; unresolved problems.",
+  "alinti": "The paper also contains a review of works that analyze the results achieved and unresolved problems."
+ },
+ {
+  "id": "doi:10.1007/s42979-025-04051-9",
+  "baslik": "Generative AI in Programming Education: Evaluating ChatGPT’s Effect on Computational Thinking",
+  "yil": 2025,
+  "cites": 16,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; effect on computational thinking",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.lindif.2023.102274",
+  "baslik": "ChatGPT for good? On opportunities and challenges of large language models for education",
+  "yil": 2023,
+  "cites": 7452,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Eğitimde LLM fırsat ve zorlukları; konumlandırma yazısı",
+  "alinti": "we argue that large language models in education require teachers and learners to develop sets of competencies and literacies necessary to both understand the technology as well as their limitations and unexpected brittleness of such systems."
+ },
+ {
+  "id": "doi:10.2139/ssrn.5082524",
+  "baslik": "AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking",
+  "yil": 2025,
+  "cites": 1162,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Bilişsel yük aktarımı; eğitim dışı örneklem ağırlıklı",
+  "alinti": "The findings revealed a significant negative correlation between frequent AI tool usage and critical thinking abilities, mediated by increased cognitive offloading."
+ },
+ {
+  "id": "arXiv:2403.09744",
+  "baslik": "Evaluating the Application of Large Language Models to Generate Feedback in Programming Education",
+  "yil": 2024,
+  "cites": 33,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Çözüm vermeden geri bildirim; halüsinasyon riski",
+  "alinti": "The results show that most of the feedback generated by GPT-4 effectively addressed code errors. However, challenges with incorrect suggestions and hallucinated issues indicate the need for further improvements."
+ },
+ {
+  "id": "arXiv:2504.09779",
+  "baslik": "\"All Roads Lead to ChatGPT\": How Generative AI is Eroding Social Interactions and Student Learning Communities",
+  "yil": 2025,
+  "cites": 37,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Sosyal etkileşim ve öğrenme topluluklarının aşınması",
+  "alinti": "Students also reported feeling increasingly isolated and demotivated as the social support systems they rely on begin to break down."
+ },
+ {
+  "id": "doi:10.3390/educsci14121302",
+  "baslik": "The Mediating Role of Generative AI Self-Regulation on Students’ Critical Thinking and Problem-Solving",
+  "yil": 2024,
+  "cites": 123,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Öz-düzenleme aracılık etkisi; yüksek öğrenim, nicel",
+  "alinti": "The results reveal that the ease of use of GenAI significantly enhances self-regulation, which in turn positively impacts both the critical thinking and problem-solving abilities of students."
+ },
+ {
+  "id": "doi:10.1080/0144929x.2024.2394886",
+  "baslik": "The promise and challenges of generative AI in education",
+  "yil": 2024,
+  "cites": 533,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "GenAI eğitimde fırsat ve zorluklar; görüş yazısı",
+  "alinti": "Nevertheless, we also highlight its limitations, potential disruptions, ethical consequences, and potential misuses."
+ },
+ {
+  "id": "doi:10.1109/csce60160.2023.00189",
+  "baslik": "Plagiarism in Entry-Level Computer Science Courses Using ChatGPT",
+  "yil": 2023,
+  "cites": 4,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Giriş düzeyi BT dersinde ChatGPT kopyası ve tespiti",
+  "alinti": "Results showed that 44% of ChatGPT-generated code did not compile in three or fewer manual fixes. Additionally, plagiarism detection software was not easily able to flag AI-generated code."
+ },
+ {
+  "id": "arXiv:2303.09325",
+  "baslik": "Can Generative Pre-trained Transformers (GPT) Pass Assessments in Higher Education Programming Courses?",
+  "yil": 2023,
+  "cites": 109,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Tests GPT on real programming course assessments; central evidence.",
+  "alinti": "We found that the current models are not capable of passing the full spectrum of assessments typically involved in"
+ },
+ {
+  "id": "doi:10.1109/access.2025.3554627",
+  "baslik": "A Bibliometric Exposition and Review on Leveraging LLMs for Programming Education",
+  "yil": 2025,
+  "cites": 11,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Programlama eğitiminde LLM bibliyometrik analizi",
+  "alinti": "careful consideration is needed to ensure their benefits outweigh their risks across various use cases"
+ },
+ {
+  "id": "arXiv:2302.04335",
+  "baslik": "Will ChatGPT get you caught? Rethinking of Plagiarism Detection",
+  "yil": 2023,
+  "cites": 259,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "ChatGPT denemelerinin intihal tespitini atlatması",
+  "alinti": "two popular plagiarism detection tools were used to evaluate the originality of 50 essays generated by ChatGPT on various topics."
+ },
+ {
+  "id": "doi:10.1111/1468-5973.12532",
+  "baslik": "Higher education crisis: Academic misconduct with generative AI",
+  "yil": 2024,
+  "cites": 96,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yükseköğretimde GenAI kaynaklı akademik dürüstlük krizi",
+  "alinti": "The widespread use of AI tools by college students has resulted in an increase in plagiarism and cheating"
+ },
+ {
+  "id": "doi:10.1145/3593342.3593349",
+  "baslik": "AI-Generated Code Not Considered Harmful",
+  "yil": 2023,
+  "cites": 13,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Position article framing early CS education challenges.",
+  "alinti": "Recent developments in AI-generated code are merely the latest in a series of challenges to traditional computer science education."
+ },
+ {
+  "id": "arXiv:2411.11166",
+  "baslik": "Early Adoption of Generative Artificial Intelligence in Computing Education: Emergent Student Use Cases and Perspectives in 2023",
+  "yil": 2024,
+  "cites": 31,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "2023 bilgisayar öğrencilerinin GenAI kullanımı ve algıları",
+  "alinti": "we capture a snapshot of student attitudes towards and uses of yet emerging GenAI, in a period of time before university policies had reacted to these technologies"
+ }
+]

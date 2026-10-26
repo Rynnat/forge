@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 335361,
+ "stop_reason": "end_turn",
+ "session_id": "418b9a43-a34f-4efe-9af1-9225c87f23a8",
+ "total_cost_usd": 1.1221595999999996,
+ "usage": {
+  "input_tokens": 18,
+  "cache_creation_input_tokens": 50109,
+  "cache_read_input_tokens": 225080,
+  "output_tokens": 13706,
+  "output_tokens_details": {
+   "thinking_tokens": 6156
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 50109,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4359,
+    "cache_read_input_tokens": 48093,
+    "cache_creation_input_tokens": 5548,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5548
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 18,
+   "outputTokens": 13706,
+   "cacheReadInputTokens": 225080,
+   "cacheCreationInputTokens": 50109,
+   "webSearchRequests": 0,
+   "costUSD": 0.72008,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 6156,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 492061,
+   "outputTokens": 25747,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 34,
+   "costUSD": 0.40207960000000015,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 7644,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 36,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"Narrative Visualization: Telling Stories with Data\", \"yil\": 2010, \"arxiv_id\": null, \"doi\": \"10.1109/TVCG.2010.179\", \"gerekce\": \"This founding paper on narrative visualization defined the genres and the balance between author-driven and reader-driven design, including the role of text such as headlines, annotations and captions in data stories.\"},\n{\"sira\": 2, \"baslik\": \"Visualization Rhetoric: Framing Effects in Narrative Visualization\", \"yil\": 2011, \"arxiv_id\": null, \"doi\": \"10.1109/TVCG.2011.255\", \"gerekce\": \"It gave a framework for the rhetorical and framing effects of design choices, including text and annotation, in narrative visualization.\"},\n{\"sira\": 3, \"baslik\": \"Frames and Slants in Titles of Visualizations on Controversial Topics\", \"yil\": 2018, \"arxiv_id\": null, \"doi\": \"10.1145/3173574.3174012\", \"gerekce\": \"It showed that a title's slant changes the main message readers take from a chart, which made text a key subject of study in visualization.\"},\n{\"sira\": 4, \"baslik\": \"Striking a Balance: Reader Takeaways and Preferences when Integrating Text and Charts\", \"yil\": 2022, \"arxiv_id\": \"2208.01780\", \"doi\": \"10.1109/TVCG.2022.3209383\", \"gerekce\": \"A large user study found that readers prefer charts with a lot of annotation and that the type and position of text shape their takeaways; the authors turned this into design guidelines.\"},\n{\"sira\": 5, \"baslik\": \"Towards Understanding How Readers Integrate Charts and Captions: A Case Study with Line Charts\", \"yil\": 2021, \"arxiv_id\": \"2101.08235\", \"doi\": \"10.1145/3411764.3445443\", \"gerekce\": \"It showed how agreement between a caption and the visually prominent features of a chart decides what readers take away.\"},\n{\"sira\": 6, \"baslik\": \"Accessible Visualization via Natural Language Descriptions: A Four-Level Model of Semantic Content\", \"yil\": 2022, \"arxiv_id\": \"2110.04406\", \"doi\": \"10.1109/TVCG.2021.3114770\", \"gerekce\": \"Its four-level semantic content model for chart descriptions became the standard framework for both caption generation and accessibility work.\"},\n{\"sira\": 7, \"baslik\": \"Show It or Tell It? Text, Visualization, and Their Combination\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": \"10.1145/3593580\", \"gerekce\": \"This position paper argues that language should be treated as an equal partner to visualization and calls for text-only baselines in studies.\"},\n{\"sira\": 8, \"baslik\": \"Trust and Recall of Information across Varying Degrees of Title-Visualization Misalignment\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1145/3290605.3300576\", \"gerekce\": \"It showed that when the title and the chart disagree, readers' recall follows the title, which bears directly on misinformation and trust.\"},\n{\"sira\": 9, \"baslik\": \"The Role of Text in Visualizations: How Annotations Shape Perceptions of Bias and Influence Predictions\", \"yil\": 2024, \"arxiv_id\": \"2401.04052\", \"doi\": \"10.1109/TVCG.2023.3338451\", \"gerekce\": \"Pre-registered studies found that the position, content and bias of annotations change how biased readers judge the author to be.\"},\n{\"sira\": 10, \"baslik\": \"Beyond Memorability: Visualization Recognition and Recall\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": \"10.1109/TVCG.2015.2467732\", \"gerekce\": \"Eye-tracking showed that titles and other text get the most attention and strongly affect how well a visualization's message is recalled.\"},\n{\"sira\": 11, \"baslik\": \"Linking and Layout: Exploring the Integration of Text and Visualization in Storytelling\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1111/cgf.13719\", \"gerekce\": \"It tested empirically how layout and linking between text and charts affect comprehension, recall and engagement.\"},\n{\"sira\": 12, \"baslik\": \"The Curious Case of Combining Text and Visualization\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.2312/evs.20191181\", \"gerekce\": \"Its eye-tracking evidence shows that people do not combine text and visuals well when both are shown, an important negative result.\"},\n{\"sira\": 13, \"baslik\": \"Kori: Interactive Synthesis of Text and Charts in Data Documents\", \"yil\": 2022, \"arxiv_id\": \"2108.04203\", \"doi\": \"10.1109/TVCG.2021.3114802\", \"gerekce\": \"It analysed text-chart references and introduced a mixed-initiative, NLP-assisted tool for authoring interactive text-chart links.\"},\n{\"sira\": 14, \"baslik\": \"Leveraging Text-Chart Links to Support Authoring of Data-Driven Articles with VizFlow\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.1145/3411764.3445354\", \"gerekce\": \"It developed and evaluated text-chart linking for authoring scrollytelling-style data articles.\"},\n{\"sira\": 15, \"baslik\": \"Contextifier: Automatic Generation of Annotated Stock Visualizations\", \"yil\": 2013, \"arxiv_id\": null, \"doi\": \"10.1145/2470654.2481374\", \"gerekce\": \"This early system automatically added contextual annotations drawn from news text to charts.\"},\n{\"sira\": 16, \"baslik\": \"Augmenting Visualizations with Interactive Data Facts to Facilitate Interpretation and Communication\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1109/TVCG.2018.2865145\", \"gerekce\": \"Voder linked automatically generated natural-language data facts interactively to visualizations.\"},\n{\"sira\": 17, \"baslik\": \"ChartAccent: Annotation for Data-Driven Storytelling\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1109/PACIFICVIS.2017.8031599\", \"gerekce\": \"It built a design space for chart annotation from news graphics and provided a tool for manual and data-driven annotation.\"},\n{\"sira\": 18, \"baslik\": \"Graphical Overlays: Using Layered Elements to Aid Chart Reading\", \"yil\": 2012, \"arxiv_id\": null, \"doi\": \"10.1109/TVCG.2012.229\", \"gerekce\": \"It classified overlay types, including annotations, that support chart reading, and added them automatically to existing charts.\"},\n{\"sira\": 19, \"baslik\": \"Declutter and Focus: Empirically Evaluating Design Guidelines for Effective Data Communication\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.1109/TVCG.2021.3068337\", \"gerekce\": \"It tested practitioners' guidelines on focused text annotation and decluttering, and found effects on memory and perceived clarity.\"},\n{\"sira\": 20, \"baslik\": \"A Qualitative Analysis of Common Practices in Annotations: A Taxonomy and Design Space\", \"yil\": 2024, \"arxiv_id\": \"2306.06043\", \"doi\": null, \"gerekce\": \"From more than 1,800 annotated charts, it built a taxonomy of annotation practice and a why/how/what design space.\"},\n{\"sira\": 21, \"baslik\": \"A Survey on Annotations in Information Visualization: Empirical Insights, Applications, and Challenges\", \"yil\": 2024, \"arxiv_id\": \"2410.05579\", \"doi\": null, \"gerekce\": \"This survey brings together empirical findings, applications and open problems on visualization annotation.\"},\n{\"sira\": 22, \"baslik\": \"An Analysis of Text Functions in Information Visualization\", \"yil\": 2025, \"arxiv_id\": \"2507.12334\", \"doi\": null, \"gerekce\": \"It analysed 804 text elements in 120 real-world visualizations, identifying ten text functions and four design strategies.\"},\n{\"sira\": 23, \"baslik\": \"From Instruction to Insight: Exploring the Functional and Semantic Roles of Text in Interactive Dashboards\", \"yil\": 2024, \"arxiv_id\": \"2407.14451\", \"doi\": null, \"gerekce\": \"Based on 190 dashboards and expert interviews, it describes the functional and semantic roles of text in dashboards and gives heuristics.\"},\n{\"sira\": 24, \"baslik\": \"Natural Language Generation for Visualizations: State of the Art, Challenges and Future Directions\", \"yil\": 2024, \"arxiv_id\": \"2409.19747\", \"doi\": \"10.1111/cgf.15266\", \"gerekce\": \"This state-of-the-art report surveys text generation for visualizations and sets out open problems.\"},\n{\"sira\": 25, \"baslik\": \"Automatic Annotation Synchronizing with Textual Description for Visualization\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1145/3313831.3376443\", \"gerekce\": \"It automatically matches sentences in descriptive text to the corresponding chart regions and turns them into annotations.\"},\n{\"sira\": 26, \"baslik\": \"Chart-to-Text: A Large-Scale Benchmark for Chart Summarization\", \"yil\": 2022, \"arxiv_id\": \"2203.06486\", \"doi\": null, \"gerekce\": \"A large chart-summarization benchmark that also documents the hallucination and factual-error problems of models.\"},\n{\"sira\": 27, \"baslik\": \"VisText: A Benchmark for Semantically Rich Chart Captioning\", \"yil\": 2023, \"arxiv_id\": \"2307.05356\", \"doi\": \"10.18653/v1/2023.acl-long.401\", \"gerekce\": \"A semantically rich chart-captioning benchmark that applies the four-level semantic model to generation and analyses model errors.\"},\n{\"sira\": 28, \"baslik\": \"DataTales: Investigating the use of Large Language Models for Authoring Data-Driven Articles\", \"yil\": 2023, \"arxiv_id\": \"2308.04076\", \"doi\": null, \"gerekce\": \"It examined the opportunities and risks of LLM-generated narrative text for charts in data articles.\"},\n{\"sira\": 29, \"baslik\": \"Pluto: Authoring Semantically Aligned Text and Charts for Data-Driven Communication\", \"yil\": 2025, \"arxiv_id\": \"2502.07725\", \"doi\": null, \"gerekce\": \"It introduced mixed-initiative authoring that keeps text and charts semantically aligned and raised open problems such as verification and bidirectional editing.\"},\n{\"sira\": 30, \"baslik\": \"Comparing Effectiveness and Engagement of Data Comics and Infographics\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1145/3290605.3300483\", \"gerekce\": \"It compared, with empirical data, how different text-visual combination formats affect understanding, recall and engagement.\"}\n]}",
+ "ttft_ms": 42595,
+ "type": "result",
+ "duration_ms": 185550,
+ "uuid": "ca6a82d7-8978-4c2b-a104-c2519c036345",
+ "ttft_stream_ms": 1503,
+ "time_to_request_ms": 64,
+ "first_content_frame_ms": 1503,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

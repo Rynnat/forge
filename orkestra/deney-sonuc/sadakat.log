@@ -1,0 +1,20 @@
+{
+  "seed": 20261025,
+  "n_istenen": 30,
+  "n": 30,
+  "havuz": 900,
+  "sayim": {
+    "DESTEKLENIYOR": 30,
+    "DESTEKLENMIYOR": 0,
+    "UYDURMA": 0,
+    "KONTROL_EDILEMEDI": 0
+  },
+  "destekleniyor": "30/30",
+  "wilson_alt_95": 0.886,
+  "uydurma": 0,
+  "muhafazakar_kural": "KONTROL_EDILEMEDI ve DESTEKLENMIYOR 'desteklenmiyor' sayilir; payda n'dir.",
+  "esik3": "n=30'da >=28 destekleniyor ve uydurma=0 (Wilson alt betimsel; ON KAYIT eki 2026-10-25)",
+  "sonuc": "GECTI",
+  "maliyet_usd": 0.8522,
+  "denetci_model": "sonnet"
+}

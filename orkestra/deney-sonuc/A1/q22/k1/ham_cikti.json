@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 308113,
+ "stop_reason": "end_turn",
+ "session_id": "2b1f9e34-eca2-4d19-99d5-f9cc32e70f90",
+ "total_cost_usd": 0.9330499000000003,
+ "usage": {
+  "input_tokens": 26,
+  "cache_creation_input_tokens": 39594,
+  "cache_read_input_tokens": 297966,
+  "output_tokens": 12788,
+  "output_tokens_details": {
+   "thinking_tokens": 5340
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 39594,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4588,
+    "cache_read_input_tokens": 39721,
+    "cache_creation_input_tokens": 3405,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3405
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 26,
+   "outputTokens": 12788,
+   "cacheReadInputTokens": 297966,
+   "cacheCreationInputTokens": 39594,
+   "webSearchRequests": 0,
+   "costUSD": 0.6322092000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 5340,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 377532,
+   "outputTokens": 26175,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 25,
+   "costUSD": 0.30084070000000007,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 9120,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 35,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"Fundamental Limits of Caching\", \"yil\": 2014, \"arxiv_id\": \"1209.5807\", \"doi\": \"10.1109/TIT.2014.2306938\", \"gerekce\": \"Introduced the Maddah-Ali–Niesen coded caching model and scheme; every later secure and private coded caching scheme builds on it.\"},\n{\"sira\": 2, \"baslik\": \"Fundamental Limits of Caching with Secure Delivery\", \"yil\": 2015, \"arxiv_id\": \"1312.3961\", \"doi\": \"10.1109/TIFS.2014.2375553\", \"gerekce\": \"First characterization of the memory-rate trade-off for coded caching with secure delivery against an external eavesdropper, using one-time-pad keys placed in caches.\"},\n{\"sira\": 3, \"baslik\": \"Private Coded Caching\", \"yil\": 2018, \"arxiv_id\": \"1605.01348\", \"doi\": null, \"gerekce\": \"Defined secretive/private coded caching, where users learn nothing about files they did not request, and gave an order-optimal scheme using secret sharing.\"},\n{\"sira\": 4, \"baslik\": \"On Coded Caching with Private Demands\", \"yil\": 2021, \"arxiv_id\": \"1908.10821\", \"doi\": null, \"gerekce\": \"Set up the information-theoretic demand-privacy model and introduced the virtual-users and MDS/privacy-key approaches that later work builds on.\"},\n{\"sira\": 5, \"baslik\": \"Fundamental Limits of Demand-Private Coded Caching\", \"yil\": 2022, \"arxiv_id\": \"2101.07127\", \"doi\": null, \"gerekce\": \"Main reference for demand privacy: general constructions from non-private schemes, order-optimality results, and the exact trade-off for N>=K=2.\"},\n{\"sira\": 6, \"baslik\": \"Key Superposition Simultaneously Achieves Security and Privacy in Cache-Aided Linear Function Retrieval\", \"yil\": 2021, \"arxiv_id\": \"2009.06000\", \"doi\": null, \"gerekce\": \"Shows that superposing security and privacy keys achieves content security and demand privacy together, with little added cost and near-optimal performance.\"},\n{\"sira\": 7, \"baslik\": \"Fundamental Limits of Caching for Demand Privacy against Colluding Users\", \"yil\": 2021, \"arxiv_id\": \"2008.03642\", \"doi\": null, \"gerekce\": \"Gives a privacy-key scheme and a new converse for demand privacy against any colluding set of users, within a constant gap of optimal in all regimes.\"},\n{\"sira\": 8, \"baslik\": \"Demand Private Coded Caching\", \"yil\": 2019, \"arxiv_id\": \"1909.03324\", \"doi\": null, \"gerekce\": \"Early paper on demand-private coded caching showing that a non-private scheme with NK users yields a private scheme with an order-optimality guarantee.\"},\n{\"sira\": 9, \"baslik\": \"Demand-Private Coded Caching and the Exact Trade-off for N=K=2\", \"yil\": 2020, \"arxiv_id\": \"1911.06995\", \"doi\": \"10.1109/NCC48643.2020.9056026\", \"gerekce\": \"First exact memory-rate trade-off under information-theoretic demand privacy (two users, two files), including a privacy-specific converse.\"},\n{\"sira\": 10, \"baslik\": \"Device-to-Device Secure Coded Caching\", \"yil\": 2020, \"arxiv_id\": \"1809.06844\", \"doi\": null, \"gerekce\": \"Extends secure delivery and secure caching to D2D networks using secret sharing and one-time pads, with bounds whose gap vanishes as memory grows.\"},\n{\"sira\": 11, \"baslik\": \"Combination Networks with or without Secrecy Constraints: The Impact of Caching Relays\", \"yil\": 2018, \"arxiv_id\": \"1712.04930\", \"doi\": null, \"gerekce\": \"Studies secure delivery and secure caching in two-hop combination networks with caching relays, showing how network topology affects secrecy-constrained performance.\"},\n{\"sira\": 12, \"baslik\": \"Secrecy Capacity-Memory Tradeoff of Erasure Broadcast Channels\", \"yil\": 2019, \"arxiv_id\": \"1801.00606\", \"doi\": null, \"gerekce\": \"Combines joint cache-channel coding with wiretap coding and shows receiver caches allow positive secrecy capacity even against a stronger eavesdropper.\"},\n{\"sira\": 13, \"baslik\": \"On the Fundamental Limits of Device-to-Device Private Caching under Uncoded Cache Placement and User Collusion\", \"yil\": 2022, \"arxiv_id\": \"1912.09985\", \"doi\": null, \"gerekce\": \"Gives order-optimal demand-private schemes and converses for D2D caching with colluding users.\"},\n{\"sira\": 14, \"baslik\": \"Coded Caching with Private Demands and Caches\", \"yil\": 2024, \"arxiv_id\": \"2201.11539\", \"doi\": null, \"gerekce\": \"Makes both demands and cache contents private, linking private coded caching to PIR and reducing subpacketization.\"},\n{\"sira\": 15, \"baslik\": \"On Secure Coded Caching via Combinatorial Method\", \"yil\": 2020, \"arxiv_id\": \"2005.01043\", \"doi\": null, \"gerekce\": \"Introduces secure placement delivery arrays, a combinatorial framework for low-subpacketization schemes with content security and demand privacy.\"},\n{\"sira\": 16, \"baslik\": \"Coded Caching in the Presence of a Wire and a Cache Tapping Adversary of Type II\", \"yil\": 2021, \"arxiv_id\": \"1808.02477\", \"doi\": null, \"gerekce\": \"Handles an adversary who can tap both the placement and delivery phases, and finds the strong secrecy capacity in the two-user, two-file case.\"},\n{\"sira\": 17, \"baslik\": \"The Wiretap Channel with a Cache\", \"yil\": 2018, \"arxiv_id\": null, \"doi\": \"10.1109/ISIT.2018.8437516\", \"gerekce\": \"Characterizes the wiretap channel with a receiver cache and shows a cache makes secure communication possible even over a degraded main channel.\"},\n{\"sira\": 18, \"baslik\": \"The Capacity of Cache Aided Private Information Retrieval\", \"yil\": 2017, \"arxiv_id\": \"1706.07035\", \"doi\": null, \"gerekce\": \"Finds the exact capacity of cache-aided PIR, connecting caching with privacy of user requests.\"},\n{\"sira\": 19, \"baslik\": \"Fundamental Limits of Cache-Aided Private Information Retrieval with Unknown and Uncoded Prefetching\", \"yil\": 2019, \"arxiv_id\": \"1709.01056\", \"doi\": null, \"gerekce\": \"Characterizes cache-aided PIR when the side information is uncoded and unknown to the databases, a key link between caching and PIR.\"},\n{\"sira\": 20, \"baslik\": \"Subpacketization in Coded Caching with Demand Privacy\", \"yil\": 2020, \"arxiv_id\": \"1909.10471\", \"doi\": null, \"gerekce\": \"First systematic study of subpacketization under demand privacy, using PDA-based lifting constructions and impossibility results.\"},\n{\"sira\": 21, \"baslik\": \"Optimal Demand Private Coded Caching for Users with Small Buffers\", \"yil\": 2021, \"arxiv_id\": \"2101.08745\", \"doi\": null, \"gerekce\": \"Gives the exact demand-private trade-off in the small-memory regime and points out that the general (K,N) case is still open.\"},\n{\"sira\": 22, \"baslik\": \"Multi-Access Coded Caching with Demand Privacy\", \"yil\": 2022, \"arxiv_id\": \"2107.00226\", \"doi\": null, \"gerekce\": \"Extends demand privacy to multi-access caching networks with cyclic wrap-around, using a lifting construction and privacy keys.\"},\n{\"sira\": 23, \"baslik\": \"Security and Privacy in Cache-Aided Linear Function Retrieval for Multi-access Coded Caching\", \"yil\": 2023, \"arxiv_id\": \"2301.07317\", \"doi\": null, \"gerekce\": \"Brings content security, demand privacy and linear function retrieval together in multi-access combinatorial topologies, generalizing key superposition.\"},\n{\"sira\": 24, \"baslik\": \"Secretive Coded Caching with Shared Caches\", \"yil\": 2021, \"arxiv_id\": \"2107.00241\", \"doi\": null, \"gerekce\": \"Extends secretive coded caching to shared-cache (helper) networks like edge or CDN caches, and shows each user needs a private cache.\"},\n{\"sira\": 25, \"baslik\": \"Secretive Coded Caching from PDAs\", \"yil\": 2021, \"arxiv_id\": \"2107.00399\", \"doi\": null, \"gerekce\": \"Cuts the exponential subpacketization of secretive coded caching by building schemes from placement delivery arrays.\"},\n{\"sira\": 26, \"baslik\": \"Secure Coded Caching with Colluding Users\", \"yil\": 2019, \"arxiv_id\": \"1910.08268\", \"doi\": null, \"gerekce\": \"Requires that coalitions of colluding users pooling their caches learn nothing about unrequested files, strengthening secretive caching.\"},\n{\"sira\": 27, \"baslik\": \"Demand Privacy in Hotplug Caching Systems\", \"yil\": 2023, \"arxiv_id\": \"2305.06518\", \"doi\": null, \"gerekce\": \"Adds demand privacy to hotplug systems where some users are offline during delivery, a practical CDN concern.\"},\n{\"sira\": 28, \"baslik\": \"On Coded Caching Systems with Offline Users, with and without Demand Privacy against Colluding Users\", \"yil\": 2024, \"arxiv_id\": \"2401.06894\", \"doi\": null, \"gerekce\": \"Develops achievability and converse results for offline-user systems with and without privacy against colluding users.\"},\n{\"sira\": 29, \"baslik\": \"Demand Private Coded Caching: Small Cache Size\", \"yil\": 2025, \"arxiv_id\": \"2504.18242\", \"doi\": null, \"gerekce\": \"Recent work giving new optimal demand-private trade-offs at small cache sizes, part of the push toward the open exact trade-off.\"},\n{\"sira\": 30, \"baslik\": \"A Secretive Coded Caching for Shared Cache Systems using PDAs\", \"yil\": 2021, \"arxiv_id\": \"2110.11110\", \"doi\": null, \"gerekce\": \"Gives low-subpacketization secretive schemes for shared-cache systems via PDAs, with a cut-set lower bound.\"}\n]}",
+ "ttft_ms": 31580,
+ "type": "result",
+ "duration_ms": 203601,
+ "uuid": "6c3659e4-8441-4276-9eb5-5735b9373dfb",
+ "ttft_stream_ms": 2282,
+ "time_to_request_ms": 58,
+ "first_content_frame_ms": 2282,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 128251,
+ "stop_reason": "end_turn",
+ "session_id": "c87dd792-6044-4794-8372-496c20f26326",
+ "total_cost_usd": 0.4493977,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 19051,
+  "cache_read_input_tokens": 57778,
+  "output_tokens": 6665,
+  "output_tokens_details": {
+   "thinking_tokens": 1715
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 19051,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3639,
+    "cache_read_input_tokens": 20035,
+    "cache_creation_input_tokens": 2548,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2548
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 6665,
+   "cacheReadInputTokens": 57778,
+   "cacheCreationInputTokens": 19051,
+   "webSearchRequests": 0,
+   "costUSD": 0.2973036,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1715,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 169596,
+   "outputTokens": 10269,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 13,
+   "costUSD": 0.1520941,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2746,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [{\"sira\": 1, \"baslik\": \"A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions\", \"yil\": 2023, \"arxiv_id\": \"2311.05232\", \"doi\": \"10.1145/3703155\", \"gerekce\": \"The main survey of LLM hallucination: it sets out the factuality vs. faithfulness taxonomy and covers causes, detection, benchmarks, mitigation and open problems.\"}, {\"sira\": 2, \"baslik\": \"Survey of Hallucination in Natural Language Generation\", \"yil\": 2022, \"arxiv_id\": \"2202.03629\", \"doi\": \"10.1145/3571730\", \"gerekce\": \"The founding survey that fixed the intrinsic/extrinsic hallucination distinction and reviewed metrics and mitigation across NLG tasks.\"}, {\"sira\": 3, \"baslik\": \"Why Language Models Hallucinate\", \"yil\": 2025, \"arxiv_id\": \"2509.04664\", \"doi\": null, \"gerekce\": \"Explains hallucination as a statistical consequence of pretraining and of benchmarks that reward guessing, and argues for changing how evaluations are scored.\"}, {\"sira\": 4, \"baslik\": \"Detecting hallucinations in large language models using semantic entropy\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": \"10.1038/s41586-024-07421-0\", \"gerekce\": \"A Nature paper that detects confabulations by measuring uncertainty over meanings, with no task-specific data needed.\"}, {\"sira\": 5, \"baslik\": \"TruthfulQA: Measuring How Models Mimic Human Falsehoods\", \"yil\": 2021, \"arxiv_id\": \"2109.07958\", \"doi\": \"10.18653/v1/2022.acl-long.229\", \"gerekce\": \"A standard truthfulness benchmark showing that larger models can repeat human misconceptions more often.\"}, {\"sira\": 6, \"baslik\": \"SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2303.08896\", \"doi\": null, \"gerekce\": \"The reference black-box detection method: it flags hallucinations by checking whether multiple samples agree.\"}, {\"sira\": 7, \"baslik\": \"FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation\", \"yil\": 2023, \"arxiv_id\": \"2305.14251\", \"doi\": null, \"gerekce\": \"Introduced the standard approach of scoring long-form factuality by verifying atomic facts.\"}, {\"sira\": 8, \"baslik\": \"Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation\", \"yil\": 2023, \"arxiv_id\": \"2302.09664\", \"doi\": null, \"gerekce\": \"The ICLR paper that introduced semantic entropy and set the basis for uncertainty-based hallucination detection.\"}, {\"sira\": 9, \"baslik\": \"Calibrated Language Models Must Hallucinate\", \"yil\": 2023, \"arxiv_id\": \"2311.14648\", \"doi\": null, \"gerekce\": \"Proves that calibrated models must hallucinate rare, arbitrary facts at a rate tied to the Good-Turing estimate.\"}, {\"sira\": 10, \"baslik\": \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\", \"yil\": 2020, \"arxiv_id\": \"2005.11401\", \"doi\": null, \"gerekce\": \"Introduced RAG, the most widely used architecture for grounding generation in external knowledge.\"}, {\"sira\": 11, \"baslik\": \"Chain-of-Verification Reduces Hallucination in Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2309.11495\", \"doi\": null, \"gerekce\": \"An influential self-verification method that reduces hallucination by having the model plan and answer its own fact-check questions.\"}, {\"sira\": 12, \"baslik\": \"Inference-Time Intervention: Eliciting Truthful Answers from a Language Model\", \"yil\": 2023, \"arxiv_id\": \"2306.03341\", \"doi\": null, \"gerekce\": \"Shows that steering activation directions at inference time can increase truthfulness.\"}, {\"sira\": 13, \"baslik\": \"DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2309.03883\", \"doi\": null, \"gerekce\": \"A widely cited factuality-improving decoding method that contrasts logits between layers, with no training or retrieval.\"}, {\"sira\": 14, \"baslik\": \"Language Models (Mostly) Know What They Know\", \"yil\": 2022, \"arxiv_id\": \"2207.05221\", \"doi\": null, \"gerekce\": \"Showed that LLMs are largely calibrated about their own knowledge and can self-evaluate (P(True), P(IK)).\"}, {\"sira\": 15, \"baslik\": \"Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?\", \"yil\": 2024, \"arxiv_id\": \"2405.05904\", \"doi\": \"10.18653/v1/2024.emnlp-main.444\", \"gerekce\": \"Shows in a controlled setting that fine-tuning on new knowledge increases hallucination, a key finding about causes.\"}, {\"sira\": 16, \"baslik\": \"HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2305.11747\", \"doi\": null, \"gerekce\": \"A large-scale benchmark that measures LLMs' ability to recognise hallucinations.\"}, {\"sira\": 17, \"baslik\": \"On Faithfulness and Factuality in Abstractive Summarization\", \"yil\": 2020, \"arxiv_id\": \"2005.00661\", \"doi\": \"10.18653/v1/2020.acl-main.173\", \"gerekce\": \"The early, foundational study of intrinsic/extrinsic hallucination in summarization, with human annotation.\"}, {\"sira\": 18, \"baslik\": \"The Internal State of an LLM Knows When It's Lying\", \"yil\": 2023, \"arxiv_id\": \"2304.13734\", \"doi\": null, \"gerekce\": \"Showed that a classifier on hidden activations (SAPLMA) can predict whether a statement is true.\"}, {\"sira\": 19, \"baslik\": \"LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations\", \"yil\": 2024, \"arxiv_id\": \"2410.02707\", \"doi\": null, \"gerekce\": \"Shows that truthfulness signals concentrate at specific tokens and that probe-based detectors generalise poorly across tasks.\"}, {\"sira\": 20, \"baslik\": \"Long-form factuality in large language models\", \"yil\": 2024, \"arxiv_id\": \"2403.18802\", \"doi\": null, \"gerekce\": \"Introduced LongFact, the search-based SAFE evaluator and the F1@K metric, automating long-form factuality evaluation.\"}, {\"sira\": 21, \"baslik\": \"Hallucination is Inevitable: An Innate Limitation of Large Language Models\", \"yil\": 2024, \"arxiv_id\": \"2401.11817\", \"doi\": null, \"gerekce\": \"Argues from computability and learning theory that hallucination cannot be fully eliminated.\"}, {\"sira\": 22, \"baslik\": \"Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2309.01219\", \"doi\": null, \"gerekce\": \"A widely cited early survey of LLM hallucination: its definitions, evaluation and mitigation.\"}, {\"sira\": 23, \"baslik\": \"Fine-tuning Language Models for Factuality\", \"yil\": 2023, \"arxiv_id\": \"2311.08401\", \"doi\": null, \"gerekce\": \"Showed that DPO on automatic factuality preferences, without human labels, substantially reduces factual errors.\"}, {\"sira\": 24, \"baslik\": \"Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection\", \"yil\": 2023, \"arxiv_id\": \"2310.11511\", \"doi\": null, \"gerekce\": \"Improved factuality and citation accuracy with a model that decides adaptively when to retrieve and critiques its own output.\"}, {\"sira\": 25, \"baslik\": \"Discovering Latent Knowledge in Language Models Without Supervision\", \"yil\": 2022, \"arxiv_id\": \"2212.03827\", \"doi\": null, \"gerekce\": \"Introduced the CCS method for finding truth directions in activations without supervision, a starting point for internal-state hallucination detection.\"}, {\"sira\": 26, \"baslik\": \"Measuring short-form factuality in large language models\", \"yil\": 2024, \"arxiv_id\": \"2411.04368\", \"doi\": null, \"gerekce\": \"The SimpleQA benchmark: a standard measure of short-answer factuality and of a model knowing when to abstain.\"}, {\"sira\": 27, \"baslik\": \"RARR: Researching and Revising What Language Models Say, Using Language Models\", \"yil\": 2022, \"arxiv_id\": \"2210.08726\", \"doi\": null, \"gerekce\": \"Introduced post-hoc revision that checks model output against search evidence and adds attribution.\"}, {\"sira\": 28, \"baslik\": \"When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories\", \"yil\": 2022, \"arxiv_id\": \"2212.10511\", \"doi\": null, \"gerekce\": \"Showed that hallucination concentrates on long-tail, low-popularity knowledge and proposed adaptive retrieval.\"}, {\"sira\": 29, \"baslik\": \"Retrieval Augmentation Reduces Hallucination in Conversation\", \"yil\": 2021, \"arxiv_id\": \"2104.07567\", \"doi\": null, \"gerekce\": \"Showed that retrieval augmentation substantially reduces hallucination in open-domain dialogue.\"}, {\"sira\": 30, \"baslik\": \"A Comprehensive Survey of Hallucination Mitigation Techniques in Large Language Models\", \"yil\": 2024, \"arxiv_id\": \"2401.01313\", \"doi\": null, \"gerekce\": \"A broad survey and taxonomy of more than 32 hallucination mitigation techniques.\"}]}",
+ "ttft_ms": 12851,
+ "type": "result",
+ "duration_ms": 80790,
+ "uuid": "21f2c07e-51b7-467b-99d6-851243880a69",
+ "ttft_stream_ms": 1232,
+ "time_to_request_ms": 61,
+ "first_content_frame_ms": 1232,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

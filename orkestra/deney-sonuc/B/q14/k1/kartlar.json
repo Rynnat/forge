@@ -1,0 +1,1105 @@
+[
+ {
+  "id": "arXiv:2004.05975",
+  "baslik": "Adversarially Robust Streaming Algorithms via Differential Privacy",
+  "yil": 2020,
+  "cites": 36,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "DP-based robust streaming framework, central",
+  "alinti": "We establish a connection between adversarial robustness of streaming algorithms and the notion of differential privacy"
+ },
+ {
+  "id": "arXiv:2003.14265",
+  "baslik": "A Framework for Adversarially Robust Streaming Algorithms",
+  "yil": 2020,
+  "cites": 40,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "General robust streaming framework, F_p and heavy hitters",
+  "alinti": "we show that the answer is positive for various important streaming problems in the insertion-only model, including distinct elements"
+ },
+ {
+  "id": "doi:10.1007/978-3-030-84252-9_4",
+  "baslik": "Separating Adaptive Streaming from Oblivious Streaming Using the Bounded Storage Model",
+  "yil": 2021,
+  "cites": 13,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Adaptive vs oblivious separation via bounded storage; only title",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1906.11327",
+  "baslik": "The Adversarial Robustness of Sampling",
+  "yil": 2019,
+  "cites": 38,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Adaptive robustness of sampling, Bernoulli and reservoir",
+  "alinti": "The adversary is fully adaptive in the sense that it knows the exact content of the sample at any given point along the stream"
+ },
+ {
+  "id": "arXiv:2409.16153",
+  "baslik": "A Strong Separation for Adversarially Robust ℓ<sub>0</sub> Estimation for Linear Sketches",
+  "yil": 2024,
+  "cites": 3,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Adaptive attack on linear sketches for l0 estimation",
+  "alinti": "we give the first known adaptive attack against linear sketches for the well-studied $\\ell_0$-estimation problem over turnstile, integer streams"
+ },
+ {
+  "id": "arXiv:2107.14527",
+  "baslik": "A Framework for Adversarial Streaming via Differential Privacy and Difference Estimators",
+  "yil": 2021,
+  "cites": 13,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Hybrid DP and difference estimator robust framework",
+  "alinti": "We propose a new framework for robust streaming that combines techniques from two recently suggested frameworks"
+ },
+ {
+  "id": "doi:10.1137/080733772",
+  "baslik": "Sketching in adversarial environments",
+  "yil": 2008,
+  "cites": 30,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Adversarial sketch model, multi-party hostile setting",
+  "alinti": "In the adversarial sketch model several parties are interested in computing a joint function in the presence of an adversary that dynamically chooses their inputs"
+ },
+ {
+  "id": "arXiv:2106.14952",
+  "baslik": "Adversarial Robustness of Streaming Algorithms through Importance Sampling",
+  "yil": 2021,
+  "cites": 15,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Importance sampling gives robustness for regression, clustering",
+  "alinti": "Our results are based on a simple, but powerful, observation that many importance sampling-based algorithms give rise to adversarial robustness"
+ },
+ {
+  "id": "arXiv:2204.09136",
+  "baslik": "The White-Box Adversarial Data Stream Model",
+  "yil": 2022,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "White-box adversary model, heavy hitters, crypto techniques",
+  "alinti": "We study streaming algorithms in the white-box adversarial model, where the stream is chosen adaptively by an adversary who observes the entire internal state of the algorithm at each time step"
+ },
+ {
+  "id": "arXiv:2111.03980",
+  "baslik": "Dynamic Algorithms Against an Adaptive Adversary: Generic Constructions and Lower Bounds",
+  "yil": 2021,
+  "cites": 13,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Dynamic algorithms vs adaptive adversary, oblivious separation",
+  "alinti": "We give a general reduction transforming a dynamic algorithm against an oblivious adversary to a dynamic algorithm robust against an adaptive adversary"
+ },
+ {
+  "id": "arXiv:2202.13736",
+  "baslik": "On the Robustness of CountSketch to Adaptive Inputs",
+  "yil": 2022,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "CountSketch heavy hitters attack, robust estimator",
+  "alinti": "We show that the classic estimator is not robust, and can be attacked with a number of queries of the order of the sketch size"
+ },
+ {
+  "id": "arXiv:1211.1056",
+  "baslik": "How Robust are Linear Sketches to Adaptive Inputs?",
+  "yil": 2012,
+  "cites": 26,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Linear sketches inherently non-robust to adaptive inputs",
+  "alinti": "We give a strong affirmative answer to this question. Specifically, we show that no linear sketch approximates the Euclidean norm of its input"
+ },
+ {
+  "id": "arXiv:2011.07471",
+  "baslik": "Tight Bounds for Adversarially Robust Streams and Sliding Windows via Difference Estimators",
+  "yil": 2020,
+  "cites": 25,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Zero-overhead robust streams, sliding windows, difference estimators",
+  "alinti": "We show how to bypass this impossibility result by developing data stream algorithms for a large class of streaming problems, with no overhead in the approximation factor"
+ },
+ {
+  "id": "arXiv:1511.02513",
+  "baslik": "Algorithmic Stability for Adaptive Data Analysis",
+  "yil": 2015,
+  "cites": 154,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Adaptive data analysis generalization, stability-based bounds",
+  "alinti": "Adaptivity is an important feature of data analysis---the choice of questions to ask about a dataset often depends on previous interactions with the same dataset"
+ },
+ {
+  "id": "arXiv:1411.2664",
+  "baslik": "Preserving Statistical Validity in Adaptive Data Analysis",
+  "yil": 2014,
+  "cites": 252,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Adaptive data analysis validity, reusable holdout line",
+  "alinti": "In this work we initiate a principled study of how to guarantee the validity of statistical inference in adaptive data analysis"
+ },
+ {
+  "id": "arXiv:2109.11130",
+  "baslik": "Adversarially Robust Coloring for Graph Streams",
+  "yil": 2021,
+  "cites": 7,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Robust graph stream coloring, lower bound on space",
+  "alinti": "We grow the burgeoning body of work on such algorithms in a new direction by studying robust algorithms for the problem of maintaining a valid vertex coloring"
+ },
+ {
+  "id": "arXiv:2207.00956",
+  "baslik": "Tricking the Hashing Trick: A Tight Lower Bound on the Robustness of CountSketch to Adaptive Inputs",
+  "yil": 2022,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Tight quadratic bound on CountSketch robustness",
+  "alinti": "We design an attack that after $O(\\ell^2)$ queries produces an adversarial input vector whose sketch is highly biased"
+ },
+ {
+  "id": "arXiv:2503.19629",
+  "baslik": "Lifting Linear Sketches: Optimal Bounds and Adversarial Robustness",
+  "yil": 2025,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Lifting lower bounds; no robust linear L_p sketch",
+  "alinti": "This shows that there is no linear sketch in a data stream with insertions and deletions that is adversarially robust for approximating any $L_p$ norm of the input"
+ },
+ {
+  "id": "doi:10.1007/978-3-540-24698-5_7",
+  "baslik": "An improved data stream summary: the count-min sketch and its applications",
+  "yil": 2004,
+  "cites": 1730,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Classic Count-Min sketch, foundational; title only",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1712.07196",
+  "baslik": "Calibrating Noise to Variance in Adaptive Data Analysis",
+  "yil": 2017,
+  "cites": 28,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Noise calibration for adaptive data analysis, variance-based",
+  "alinti": "A recent line of work studies the challenges that arise from such adaptive data reuse by considering the problem of answering a sequence of"
+ },
+ {
+  "id": "arXiv:2101.10836",
+  "baslik": "Separating Adaptive Streaming from Oblivious Streaming",
+  "yil": 2021,
+  "cites": 7,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "First separation of adaptive and oblivious streaming",
+  "alinti": "We present a streaming problem for which every adversarially-robust streaming algorithm must use polynomial space, while there exists a classical (oblivious) streaming algorithm"
+ },
+ {
+  "id": "arXiv:2301.09203",
+  "baslik": "Relaxed Models for Adversarial Streaming: The Advice Model and the Bounded Interruptions Model",
+  "yil": 2023,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Advice and bounded interruptions interpolation models",
+  "alinti": "Motivated by this, in this work we set out to explore intermediate models that allow us to interpolate between the oblivious and the adversarial models"
+ },
+ {
+  "id": "arXiv:2109.03785",
+  "baslik": "Adversarially Robust Streaming via Dense--Sparse Trade-offs",
+  "yil": 2021,
+  "cites": 13,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Turnstile F2 robust açık problem; DP ve sketch switching",
+  "alinti": "One of the main open questions in this area is whether efficient adversarially robust algorithms exist for moment estimation problems (e.g., F2-estimation) under the turnstile streaming model"
+ },
+ {
+  "id": "arXiv:2507.16345",
+  "baslik": "The Cost of Compression: Tight Quadratic Black-Box Attacks on Sketches for $\\ell_2$ Norm Estimation",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Black-box quadratic attack on any linear sketch",
+  "alinti": "We present a universal, nonadaptive attack that, using $\\tilde{O}(k^2)$ queries, either causes a failure in norm estimation"
+ },
+ {
+  "id": "arXiv:2412.05807",
+  "baslik": "Adversarially Robust Dense-Sparse Tradeoffs via Heavy-Hitters",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Yoğun-seyrek ödünleşim, ağır vuruşlar, Lp tahmini",
+  "alinti": "Ben-Eliezer, Eden, and Onak showed a dense-sparse trade-off technique that elegantly combined sparse recovery with known techniques using differential privacy and sketch switching"
+ },
+ {
+  "id": "arXiv:1505.00113",
+  "baslik": "The quantum complexity of approximating the frequency moments",
+  "yil": 1996,
+  "cites": 504,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 1,
+  "not": "Quantum frequency moment streaming; not adversarial",
+  "alinti": "In the multiple-pass streaming setting, we see the elements of the input one at a time"
+ },
+ {
+  "id": "arXiv:2307.03529",
+  "baslik": "Improved Algorithms for White-Box Adversarial Streams",
+  "yil": 2023,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Beyaz kutu saldırgan modeli, kriptografik varsayımlar",
+  "alinti": "the internal state of the streaming algorithm is revealed to an adversary who adaptively generates the stream updates"
+ },
+ {
+  "id": "doi:10.1126/science.aaa9375",
+  "baslik": "The reusable holdout: Preserving validity in adaptive data analysis",
+  "yil": 2015,
+  "cites": 303,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Reusable holdout via differential privacy insights",
+  "alinti": "We demonstrate a new approach for addressing the challenges of adaptivity based on insights from privacy-preserving data analysis"
+ },
+ {
+  "id": "arXiv:2405.17780",
+  "baslik": "Unmasking Vulnerabilities: Cardinality Sketches under Adaptive Inputs",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kardinalite eskizlerine (HLL) uyarlamalı saldırı",
+  "alinti": "We design an attack against the ``standard'' estimators that constructs an adversarial input by post-processing responses to a set of simple non-adaptive queries"
+ },
+ {
+  "id": "arXiv:2303.12921",
+  "baslik": "Stability is Stable: Connections between Replicability, Privacy, and Adaptive Generalization",
+  "yil": 2023,
+  "cites": 9,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Links replicability, DP and adaptive generalization",
+  "alinti": "In particular, we give sample-efficient algorithmic reductions between perfect generalization, approximate differential privacy, and replicability for a broad class of statistical problems"
+ },
+ {
+  "id": "arXiv:1408.1655",
+  "baslik": "Preventing False Discovery in Interactive Data Analysis is Hard",
+  "yil": 2014,
+  "cites": 20,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Computational hardness of adaptive statistical queries",
+  "alinti": "We show that, under a standard hardness assumption, there is no computationally efficient algorithm that given $n$ samples from an unknown distribution"
+ },
+ {
+  "id": "arXiv:1412.8356",
+  "baslik": "Bloom Filters in Adversarial Environments",
+  "yil": 2014,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Bloom filtre uyarlamalı model, kriptografi bağlantısı",
+  "alinti": "this model allows an adversary to choose inputs and queries adaptively according to previous responses"
+ },
+ {
+  "id": "arXiv:2212.10641",
+  "baslik": "Coloring in Graph Streams via Deterministic and Adversarially Robust Algorithms",
+  "yil": 2022,
+  "cites": 9,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Graf akışlarında dayanıklı renklendirme",
+  "alinti": "deterministic or even adversarially robust coloring algorithms (that work on streams whose updates may depend on the algorithm's past outputs) are considerably weaker"
+ },
+ {
+  "id": "arXiv:2511.01769",
+  "baslik": "Robust Streaming Against Low-Memory Adversaries",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Düşük bellekli saldırgan modeli, Fp turnstile",
+  "alinti": "the best known algorithm for turnstile F_p-estimation in the robust streaming setting is exponentially worse than in the oblivious setting"
+ },
+ {
+  "id": "doi:10.1145/3576915.3623216",
+  "baslik": "Compact Frequency Estimators in Adversarial Environments",
+  "yil": 2023,
+  "cites": 5,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Count-Min ve HeavyKeeper saldırıları; pratik değerlendirme",
+  "alinti": "Traditionally, probabilistic guarantees on the accuracy of frequency estimates are proved under the implicit assumption that stream elements do not depend upon the internal randomness"
+ },
+ {
+  "id": "arXiv:2601.21989",
+  "baslik": "Adaptively Robust Resettable Streaming",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Sıfırlanabilir akış; DP ile dayanıklı eskizler",
+  "alinti": "We show that all existing sketches for this model are vulnerable to adaptive adversarial attacks"
+ },
+ {
+  "id": "arXiv:1604.03336",
+  "baslik": "Typical Stability",
+  "yil": 2016,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Typical stability as alternative to DP for generalization",
+  "alinti": "Instead, typical stability requires the output of the query, when computed on a dataset drawn from the underlying distribution, to be concentrated around its expected value"
+ },
+ {
+  "id": "title:adversarially robust and sliding window streaming algorithms",
+  "baslik": "Adversarially Robust and Sliding Window Streaming Algorithms without the Overhead",
+  "yil": 2020,
+  "cites": 2,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Dayanıklı akış çerçevesi; kayan pencere, ek yük",
+  "alinti": "We show how to bypass this impossibility result by developing data stream algorithms for a large class of streaming problems, with no overhead in the approximation factor"
+ },
+ {
+  "id": "doi:10.1145/3051088",
+  "baslik": "Guilt-free data reuse",
+  "yil": 2017,
+  "cites": 19,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Temel çalışma: uyarlamalı veri analizinde DP yöntemleri",
+  "alinti": "Yet the practice of data analysis is an intrinsically interactive and adaptive process: new analyses and hypotheses are proposed after seeing the results of previous ones"
+ },
+ {
+  "id": "arXiv:2304.07413",
+  "baslik": "Robust Algorithms on Adaptive Inputs from Bounded Adversaries",
+  "yil": 2023,
+  "cites": 3,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Sınırlı saldırgan ve dinamik dayanıklı cebir çerçevesi",
+  "alinti": "We study dynamic algorithms robust to adaptive input generated from sources with bounded capabilities, such as sparsity or limited interaction."
+ },
+ {
+  "id": "arXiv:2406.06808",
+  "baslik": "Fast White-Box Adversarial Streaming Without a Random Oracle",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Beyaz kutu akış modeli; seyrek kurtarma, rastgele orakl yok",
+  "alinti": "In this work, we consider a strong white-box adversarial model (Ajtai et al. PODS 2022), in which the adversary has access to all past random coins and the parameters used by the streaming algorithm."
+ },
+ {
+  "id": "title:leveraging privacy in data analysis",
+  "baslik": "Leveraging Privacy In Data Analysis",
+  "yil": 2017,
+  "cites": 1,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Dissertation on DP and adaptive data analysis",
+  "alinti": "Following a line of work initiated from Dwork et al. [2015], we focus on extending the connection between differential privacy and adaptive data analysis"
+ },
+ {
+  "id": "doi:10.1145/3471485.3471487",
+  "baslik": "Technical Perspective: A Framework for Adversarially Robust Streaming Algorithms",
+  "yil": 2021,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Dayanıklı akış çerçevesinin teknik perspektifi",
+  "alinti": "Over the past two decades the data management community has devoted particular attention to handling data that arrives as a stream of updates."
+ },
+ {
+  "id": "arXiv:2101.09054",
+  "baslik": "Adversarial Laws of Large Numbers and Optimal Regret in Online Classification",
+  "yil": 2021,
+  "cites": 18,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 1,
+  "not": "Matchings and online regret; only weakly related",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3711896.3737152",
+  "baslik": "The Adaptive Use of Count-Min Sketch: What is Safe and What is Not?",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Count-Min eskizinin uyarlamalı kullanımı; temel çalışma",
+  "alinti": "The reason why the classic way of analyzing these types of algorithms does not provide satisfying guarantees is that it often assumes that the queries and updates are independent of the previously generated estimates."
+ },
+ {
+  "id": "arXiv:1306.6295",
+  "baslik": "Tight Lower Bound for Linear Sketches of Moments",
+  "yil": 2013,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Doğrusal eskizler için sıkı Fp alt sınırı",
+  "alinti": "The problem of estimating frequency moments of a data stream has attracted a lot of attention since the onset of streaming algorithms"
+ },
+ {
+  "id": "doi:10.1145/3511808.3557687",
+  "baslik": "Robustness of Sketched Linear Classifiers to Adversarial Attacks",
+  "yil": 2022,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Eskizli doğrusal sınıflandırıcılara FGSM saldırıları; pratik deneyler.",
+  "alinti": "In this paper, we propose novel Fast-Gradient-Sign Method (FGSM) attacks for sketched classifiers in full, partial, and black-box information settings"
+ },
+ {
+  "id": "arXiv:1706.05069",
+  "baslik": "Generalization for Adaptively-chosen Estimators via Stable Median",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 1,
+  "not": "İstatistiksel genelleme; sketch dışı",
+  "alinti": "can answer adaptively-chosen queries about that distribution"
+ },
+ {
+  "id": "arXiv:2302.05707",
+  "baslik": "On Differential Privacy and Adaptive Data Analysis with Bounded Space",
+  "yil": 2023,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "DP ve uyarlamalı analiz uzay karmaşıklığı; alt sınır",
+  "alinti": "there exists a problem P that requires exponentially more space to be solved efficiently with differential privacy"
+ },
+ {
+  "id": "arXiv:2010.11252",
+  "baslik": "On Adaptive Distance Estimation",
+  "yil": 2020,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Uyarlamalı mesafe tahmini, statik yapı; sayısal yöntemler",
+  "alinti": "The main novelty is our data structure's correctness guarantee holds even when the sequence of queries can be chosen adaptively"
+ },
+ {
+  "id": "arXiv:1911.11368",
+  "baslik": "Pseudo-deterministic Streaming.",
+  "yil": 2019,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Sözde-deterministik akış; saldırgan-dayanıklılık ilişkili",
+  "alinti": "Classic streaming algorithms, such as those for finding heavy hitters, approximate counting, $\\ell_2$ approximation, finding a nonzero entry in a vector (for turnstile algorithms) are not pseudo-deterministic"
+ },
+ {
+  "id": "arXiv:2603.11029",
+  "baslik": "Separating Oblivious and Adaptive Differential Privacy under Continual Observation",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Sürekli gözlemde kayıtsız/uyarlamalı DP ayrımı",
+  "alinti": "In the oblivious setting, privacy need only hold for data streams fixed in advance; in the adaptive setting, privacy is required even for streams that can be chosen adaptively"
+ },
+ {
+  "id": "doi:10.1109/eurosp53844.2022.00018",
+  "baslik": "HyperLogLog: Exponentially Bad In Adversarial Settings",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Central: HyperLogLog adversarial failure; abstract absent.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.52202/075280-3480",
+  "baslik": "On Robust Streaming for Learning with Experts: Algorithms and Lower Bounds",
+  "yil": 2023,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Robust streaming for experts; core adaptive streaming with lower bounds.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1905.02358",
+  "baslik": "Separations and Equivalences between Turnstile Streaming and Linear Sketching",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Turnstile akış ile doğrusal eskiz arasındaki ayrımlar",
+  "alinti": "any turnstile streaming algorithm can be implemented as a linear sketch (the reverse is trivially true)."
+ },
+ {
+  "id": "arXiv:2203.02432",
+  "baslik": "Improving \\textit{Tug-of-War} sketch using Control-Variates method",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "AMS (Tug-of-war) eskizinin varyans iyileştirmesi",
+  "alinti": "A fundamental problem in the streaming algorithm framework is that of computing the frequency moments of data streams."
+ },
+ {
+  "id": "arXiv:1909.03577",
+  "baslik": "A New Analysis of Differential Privacy's Generalization Guarantees",
+  "yil": 2019,
+  "cites": 20,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 1,
+  "not": "Uyarlamalı veri analizi genelleme; dolaylı ilişki",
+  "alinti": "We give a new proof of the \"transfer theorem\" underlying adaptive data analysis"
+ },
+ {
+  "id": "arXiv:2405.13375",
+  "baslik": "Adaptive Data Analysis for Growing Data",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Büyüyen veride uyarlamalı analiz genelleme sınırları",
+  "alinti": "Previous work has demonstrated that interacting with data via differentially private algorithms can mitigate overfitting, achieving worst-case generalization guarantees with asymptotically optimal data requirements."
+ },
+ {
+  "id": "arXiv:1706.00820",
+  "baslik": "Information, Privacy and Stability in Adaptive Data Analysis",
+  "yil": 2017,
+  "cites": 7,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 1,
+  "not": "Bilgi-teorik uyarlamalı veri analizi incelemesi",
+  "alinti": "limiting the information revealed by earlier stages of analysis controls the bias introduced in later stages by adaptivity"
+ },
+ {
+  "id": "arXiv:2312.01634",
+  "baslik": "Robust Streaming, Sampling, and a Perspective on Online Learning",
+  "yil": 2023,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Dayanıklı akış araştırmasına genel bakış; merkezi",
+  "alinti": "In this work we present an overview of statistical learning, followed by a survey of robust streaming techniques and challenges"
+ },
+ {
+  "id": "arXiv:1604.03924",
+  "baslik": "Max-Information, Differential Privacy, and Post-selection Hypothesis Testing",
+  "yil": 2016,
+  "cites": 42,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 1,
+  "not": "DP ve max-bilgi; uyarlamalı analiz bağlantısı dolaylı",
+  "alinti": "algorithms that satisfy (∈,δ)-differential privacy have bounded approximate max information when their inputs are drawn from a product distribution"
+ },
+ {
+  "id": "arXiv:2608.19575",
+  "baslik": "Program Analysis for Adaptive Data Analysis",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 1,
+  "not": "Uyarlamalı veri analizi; program analizi, sketch dışı",
+  "alinti": "An adaptive data analysis can be seen as a process composed by multiple queries interrogating some data"
+ },
+ {
+  "id": "arXiv:1911.00765",
+  "baslik": "Adaptive Statistical Learning with Bayesian Differential Privacy",
+  "yil": 2017,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Uyarlamalı holdout yeniden kullanımı ve genelleme",
+  "alinti": "the estimates tested on the holdout dataset are chosen adaptively based on the results of prior estimates"
+ },
+ {
+  "id": "arXiv:2207.07822",
+  "baslik": "Adaptive Sketches for Robust Regression with Importance Sampling",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Sketch-based regression; 'robust' means outliers, not adversaries.",
+  "alinti": "introduce data structures for solving robust regression through stochastic gradient descent (SGD) by sampling gradients with probability proportional to their norm"
+ },
+ {
+  "id": "arXiv:1602.04287",
+  "baslik": "A Minimax Theory for Adaptive Data Analysis",
+  "yil": 2016,
+  "cites": 10,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Uyarlamalı veri analizi minimax alt sınırı",
+  "alinti": "In adaptive data analysis, the user makes a sequence of queries on the data, where at each step the choice of query may depend on the results in previous steps."
+ },
+ {
+  "id": "doi:10.1109/ms.2011.127",
+  "baslik": "Approximating Data with the Count-Min Sketch",
+  "yil": 2012,
+  "cites": 41,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Klasik Count-Min eskizi; merkezi kaynak",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-642-27848-8_579-1",
+  "baslik": "Count-Min Sketch",
+  "yil": 2009,
+  "cites": 33,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Klasik eskiz; S1 için merkezi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2011.09462",
+  "baslik": "Post-selection inference via algorithmic stability",
+  "yil": 2020,
+  "cites": 15,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Algoritmik kararlılıkla seçim-sonrası çıkarım; DP bağlantısı",
+  "alinti": "Stability is achieved via randomization of selection and it serves as a quantitative measure that is sufficient to obtain nontrivial post-selection corrections"
+ },
+ {
+  "id": "arXiv:2106.10761",
+  "baslik": "Generalization in the Face of Adaptivity: A Bayesian Perspective",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Uyarlamalı analizde gürültü ekleme ve varyansa bağlı garantiler",
+  "alinti": "simple noise addition algorithms suffice to prevent this issue, and differential privacy-based analysis of these algorithms shows that they can handle an asymptotically optimal number of queries"
+ },
+ {
+  "id": "arXiv:2203.05154",
+  "baslik": "Practical Evaluation of Adversarial Robustness via Adaptive Auto Attack",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 1,
+  "not": "Uyarlamalı saldırı değerlendirmesi; ML bağlamı",
+  "alinti": "Specifically, by observing that adversarial examples to a specific defense model follow some regularities in their starting points, we design an Adaptive Direction Initialization strategy to speed up the evaluation."
+ },
+ {
+  "id": "doi:10.1016/b978-012722442-8/50048-3",
+  "baslik": "Finding Hierarchical Heavy Hitters in Data Streams",
+  "yil": 2003,
+  "cites": 117,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Akışta hiyerarşik ağır vuruşlar; dayanıklılık bilgisi yok (yalnızca başlık).",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tdsc.2021.3101280",
+  "baslik": "On the Security of the K Minimum Values (KMV) Sketch",
+  "yil": 2021,
+  "cites": 4,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "KMV eskizinin saldırıya karşı güvenliği; doğrudan merkezi",
+  "alinti": "an attacker may manipulate the data in such a way that the sketches produce an incorrect estimate."
+ },
+ {
+  "id": "arXiv:2302.08661",
+  "baslik": "Subsampling Suffices for Adaptive Data Analysis",
+  "yil": 2023,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Uyarlamalı veri analizi; altörnekleme tabanlı genelleme.",
+  "alinti": "The only requirements are that each query takes as input a random subsample and outputs few bits."
+ },
+ {
+  "id": "arXiv:1504.05800",
+  "baslik": "On the Generalization Properties of Differential Privacy",
+  "yil": 2015,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 1,
+  "not": "DP ile genelleme; uyarlamalı sorgu, sketch dışı",
+  "alinti": "This argument fails when the queries are chosen adaptively (and can hence depend on the sample)"
+ },
+ {
+  "id": "arXiv:1503.04843",
+  "baslik": "More General Queries and Less Generalization Error in Adaptive Data Analysis",
+  "yil": 2015,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Uyarlamalı veri analizi ve genelleme hatası; merkezi",
+  "alinti": "However, generalization error is typically bounded in a non-adaptive model, where all questions are specified before the dataset is drawn."
+ },
+ {
+  "id": "doi:10.1145/2591796.2591812",
+  "baslik": "Turnstile Streaming Algorithms Might As Well Be Linear Sketches",
+  "yil": 2014,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Central: linear sketch lower-bound theme for turnstile streams",
+  "alinti": "Turnstile Streaming Algorithms Might As Well Be Linear Sketches."
+ },
+ {
+  "id": "arXiv:1905.13399",
+  "baslik": "Real-Time Adversarial Attacks",
+  "yil": 2019,
+  "cites": 59,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 1,
+  "not": "Akış girdisine gerçek zamanlı saldırı; eskiz değil",
+  "alinti": "These attack approaches are not applicable to situations where the target model takes streaming input, i.e., an attacker is only able to observe past data points"
+ },
+ {
+  "id": "arXiv:2201.08704",
+  "baslik": "Adaptive Data Analysis with Correlated Observations",
+  "yil": 2022,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Uyarlamalı veri analizi; bağımlı gözlemler, eskiz değil.",
+  "alinti": "We embark on a systematic study of the possibilities of adaptive data analysis with correlated observations."
+ },
+ {
+  "id": "doi:10.1145/1536414.1536466",
+  "baslik": "Differential privacy and robust statistics",
+  "yil": 2009,
+  "cites": 361,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Yalnızca başlık; DP ve sağlamlık, olası ilgili",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1604.04618",
+  "baslik": "Make Up Your Mind: The Price of Online Queries in Differential Privacy",
+  "yil": 2016,
+  "cites": 3,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Diferansiyel gizlilikte çevrimiçi sorgular; dolaylı",
+  "alinti": "The queries may be chosen adversarially from a larger set Q of allowable queries"
+ }
+]

@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 142596,
+ "stop_reason": "end_turn",
+ "session_id": "42382433-5457-4779-a21b-73885ac76086",
+ "total_cost_usd": 0.4938141,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 22254,
+  "cache_read_input_tokens": 70985,
+  "output_tokens": 6939,
+  "output_tokens_details": {
+   "thinking_tokens": 2334
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 22254,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3957,
+    "cache_read_input_tokens": 21195,
+    "cache_creation_input_tokens": 2866,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2866
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 6939,
+   "cacheReadInputTokens": 70985,
+   "cacheCreationInputTokens": 22254,
+   "webSearchRequests": 0,
+   "costUSD": 0.331057,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2334,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 173371,
+   "outputTokens": 10840,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 14,
+   "costUSD": 0.1627571,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2361,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 13,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\":[{\"sira\":1,\"baslik\":\"Data Agent: A Holistic Architecture for Orchestrating Data+AI Ecosystems\",\"yil\":2025,\"arxiv_id\":\"2507.01599\",\"doi\":null,\"gerekce\":\"This paper lays out the data agent architecture for orchestrating Data+AI ecosystems, covering understanding, pipeline orchestration, execution and self-reflection, and it lists the main open challenges.\"},{\"sira\":2,\"baslik\":\"Data Interpreter: An LLM Agent For Data Science\",\"yil\":2024,\"arxiv_id\":\"2402.18679\",\"doi\":null,\"gerekce\":\"It is an influential end-to-end data science agent that plans with hierarchical graphs and refines its code dynamically.\"},{\"sira\":3,\"baslik\":\"Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows\",\"yil\":2024,\"arxiv_id\":\"2411.07763\",\"doi\":null,\"gerekce\":\"This benchmark of agentic SQL workflows over real enterprise databases showed that current models still fall well short.\"},{\"sira\":4,\"baslik\":\"Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs\",\"yil\":2023,\"arxiv_id\":\"2305.03111\",\"doi\":null,\"gerekce\":\"BIRD became the standard benchmark for LLM-based querying over realistic, large and noisy databases.\"},{\"sira\":5,\"baslik\":\"DS-Agent: Automated Data Science by Empowering Large Language Models with Case-Based Reasoning\",\"yil\":2024,\"arxiv_id\":\"2402.17453\",\"doi\":null,\"gerekce\":\"It automates data science by combining case-based reasoning with an LLM agent.\"},{\"sira\":6,\"baslik\":\"D-Bot: Database Diagnosis System using Large Language Models\",\"yil\":2023,\"arxiv_id\":\"2312.01454\",\"doi\":null,\"gerekce\":\"This is the leading LLM DBA agent for database diagnosis and root-cause analysis (VLDB 2024).\"},{\"sira\":7,\"baslik\":\"LLM As DBA\",\"yil\":2023,\"arxiv_id\":\"2308.05481\",\"doi\":null,\"gerekce\":\"It first proposed the vision of an LLM acting as a database administrator.\"},{\"sira\":8,\"baslik\":\"Text2SQL is Not Enough: Unifying AI and Databases with TAG\",\"yil\":2024,\"arxiv_id\":\"2408.14717\",\"doi\":null,\"gerekce\":\"It introduced the Table-Augmented Generation paradigm, which combines AI and database querying to go beyond Text2SQL and RAG.\"},{\"sira\":9,\"baslik\":\"Semantic Operators: A Declarative Model for Rich, AI-based Data Processing\",\"yil\":2024,\"arxiv_id\":\"2407.11418\",\"doi\":null,\"gerekce\":\"Through LOTUS it formalized semantic operators and their optimization for LLM-powered analytics.\"},{\"sira\":10,\"baslik\":\"DocETL: Agentic Query Rewriting and Evaluation for Complex Document Processing\",\"yil\":2024,\"arxiv_id\":\"2410.12189\",\"doi\":null,\"gerekce\":\"It optimizes unstructured document analysis pipelines through agentic query rewriting.\"},{\"sira\":11,\"baslik\":\"DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction\",\"yil\":2023,\"arxiv_id\":\"2304.11015\",\"doi\":null,\"gerekce\":\"It established task decomposition and self-correction for LLM-based text-to-SQL.\"},{\"sira\":12,\"baslik\":\"Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation\",\"yil\":2023,\"arxiv_id\":\"2308.15363\",\"doi\":null,\"gerekce\":\"DAIL-SQL systematically evaluated prompt engineering for LLM text-to-SQL.\"},{\"sira\":13,\"baslik\":\"CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL\",\"yil\":2024,\"arxiv_id\":\"2410.01943\",\"doi\":null,\"gerekce\":\"It reached top BIRD results by combining multi-path candidate generation with candidate selection.\"},{\"sira\":14,\"baslik\":\"MAC-SQL: A Multi-Agent Collaborative Framework for Text-to-SQL\",\"yil\":2023,\"arxiv_id\":\"2312.11242\",\"doi\":null,\"gerekce\":\"It is a foundational multi-agent collaborative design for text-to-SQL.\"},{\"sira\":15,\"baslik\":\"DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models\",\"yil\":2024,\"arxiv_id\":\"2410.07331\",\"doi\":\"10.18653/v1/2024.emnlp-main.748\",\"gerekce\":\"It is a benchmark of agentic data science tasks covering data wrangling, machine learning and EDA.\"},{\"sira\":16,\"baslik\":\"DSBench: How Far Are Data Science Agents to Becoming Data Science Experts?\",\"yil\":2024,\"arxiv_id\":\"2409.07703\",\"doi\":null,\"gerekce\":\"It measured the gap between data science agents and human experts on realistic analysis and modeling tasks.\"},{\"sira\":17,\"baslik\":\"InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks\",\"yil\":2024,\"arxiv_id\":\"2401.05507\",\"doi\":null,\"gerekce\":\"It was one of the first systematic benchmarks of LLM agents on data analysis tasks.\"},{\"sira\":18,\"baslik\":\"MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering\",\"yil\":2024,\"arxiv_id\":\"2410.07095\",\"doi\":null,\"gerekce\":\"It became the standard evaluation for ML engineering agents, built on Kaggle competitions.\"},{\"sira\":19,\"baslik\":\"AIDE: AI-Driven Exploration in the Space of Code\",\"yil\":2025,\"arxiv_id\":\"2502.13138\",\"doi\":null,\"gerekce\":\"It is a strong agent that frames ML engineering as tree search over the space of code solutions.\"},{\"sira\":20,\"baslik\":\"AutoKaggle: A Multi-Agent Framework for Autonomous Data Science Competitions\",\"yil\":2024,\"arxiv_id\":\"2410.20424\",\"doi\":null,\"gerekce\":\"It is a phased multi-agent framework for autonomous data science that supports human intervention at each phase.\"},{\"sira\":21,\"baslik\":\"AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML\",\"yil\":2024,\"arxiv_id\":\"2410.02958\",\"doi\":null,\"gerekce\":\"It is a multi-agent AutoML system that covers the full pipeline, from data retrieval to model deployment (ICML 2025).\"},{\"sira\":22,\"baslik\":\"DataLab: A Unified Platform for LLM-Powered Business Intelligence\",\"yil\":2024,\"arxiv_id\":\"2412.02205\",\"doi\":null,\"gerekce\":\"It is an enterprise-scale, one-stop LLM agent platform for BI tasks (ICDE 2025).\"},{\"sira\":23,\"baslik\":\"LAMBDA: A Large Model Based Data Agent\",\"yil\":2024,\"arxiv_id\":\"2407.17535\",\"doi\":null,\"gerekce\":\"It is a code-free data analysis agent built on programmer and inspector agent roles.\"},{\"sira\":24,\"baslik\":\"AutoPrep: Natural Language Question-Aware Data Preparation with a Multi-Agent Framework\",\"yil\":2024,\"arxiv_id\":\"2412.10422\",\"doi\":null,\"gerekce\":\"It is a multi-agent framework for question-aware data preparation in tabular question answering.\"},{\"sira\":25,\"baslik\":\"Can Foundation Models Wrangle Your Data?\",\"yil\":2022,\"arxiv_id\":\"2205.09911\",\"doi\":null,\"gerekce\":\"This pioneering work showed that foundation models can perform data cleaning and integration tasks.\"},{\"sira\":26,\"baslik\":\"Palimpzest: Optimizing AI-Powered Analytics with Declarative Query Processing\",\"yil\":2024,\"arxiv_id\":\"2405.14696\",\"doi\":null,\"gerekce\":\"It is a declarative system that optimizes LLM-based analytics pipelines for cost and quality.\"},{\"sira\":27,\"baslik\":\"GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization\",\"yil\":2023,\"arxiv_id\":\"2311.03157\",\"doi\":null,\"gerekce\":\"It is a leading example of using LLMs for database knob tuning.\"},{\"sira\":28,\"baslik\":\"Large Language Model-based Data Science Agent: A Survey\",\"yil\":2025,\"arxiv_id\":\"2508.02744\",\"doi\":null,\"gerekce\":\"This recent survey classifies data science agents by design principles and workflow stages.\"},{\"sira\":29,\"baslik\":\"A Survey on Large Language Model-based Agents for Statistics and Data Science\",\"yil\":2024,\"arxiv_id\":\"2412.14222\",\"doi\":null,\"gerekce\":\"This survey covers the planning, reflection and multi-agent collaboration capabilities of statistics and data science agents.\"},{\"sira\":30,\"baslik\":\"ReAct: Synergizing Reasoning and Acting in Language Models\",\"yil\":2022,\"arxiv_id\":\"2210.03629\",\"doi\":null,\"gerekce\":\"Its reasoning-plus-action loop is the paradigm that most tool-using data agents are built on.\"}]}",
+ "ttft_ms": 18455,
+ "type": "result",
+ "duration_ms": 101874,
+ "uuid": "d327b747-d010-4217-baf7-fcf3976fbd51",
+ "ttft_stream_ms": 1763,
+ "time_to_request_ms": 59,
+ "first_content_frame_ms": 1763,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

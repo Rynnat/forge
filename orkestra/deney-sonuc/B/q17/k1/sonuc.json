@@ -1,0 +1,969 @@
+{
+ "run_id": "20261026-014224-123b1e",
+ "soru": "Çok kipli büyük dil modelleriyle çalışan çoklu robot ağlarında algılama, haberleşme ve hesaplamanın birlikte ele alınması üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-02-28",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.7729,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.115296,
+   "in": 1228,
+   "out": 5274,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.20294107,
+   "in": 515801,
+   "out": 83175,
+   "web_search": 11
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.30124660000000003,
+   "in": 398178,
+   "out": 443238,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.15337599999999998,
+   "in": 13073,
+   "out": 2440,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 45.5,
+  "toplama:openalex": 20.2,
+  "web_isci": 84.7,
+  "toplama:crossref": 122.1,
+  "toplama:dblp": 244.3,
+  "toplama:arxiv": 437.9,
+  "toplama": 437.9,
+  "tekil+kesim_1": 47.4,
+  "atif": 342.0,
+  "okuyucu": 811.7,
+  "damitma": 44.8,
+  "sef_final": 24.7,
+  "toplam": 1754.0
+ },
+ "ozet_token_tahmini": 3682,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Bütünleşik algılama ve haberleşme (ISAC) ile bütünleşik algılama-haberleşme-hesaplama (ISCC) çerçevelerinin temelleri nelerdir ve bu çerçeveler çoklu robot/çoklu ajan sistemlerine nasıl uyarlanmıştır?",
+    "sorgular": [
+     "\"integrated sensing and communication\" ISAC 6G",
+     "\"integrated sensing, communication and computation\" ISCC",
+     "\"joint radar and communication\" dual-functional",
+     "ISAC multi-robot OR UAV swarm",
+     "\"over-the-air computation\" sensing edge AI"
+    ],
+    "yeterli": "ISAC/ISCC'nin temel survey'leri ve robot, İHA ya da araç ağlarına uyarlanmış en az birkaç ortak tasarım çalışması belirlendiğinde kapsam yeterli sayılır."
+   },
+   {
+    "id": "S2",
+    "soru": "Çok kipli büyük dil modelleri (MLLM) ve görme-dil-eylem (VLA) modelleri robot algılama ve kontrolünde nasıl kullanılmaktadır?",
+    "sorgular": [
+     "\"vision-language-action\" robot model",
+     "\"multimodal large language model\" robotics",
+     "\"embodied multimodal language model\"",
+     "LLM robot grounding affordances",
+     "\"foundation models\" robotics survey"
+    ],
+    "yeterli": "PaLM-E, RT-2 ve OpenVLA gibi temel modeller ile robotikte temel modeller üzerine en az bir kapsamlı survey belirlendiğinde kapsam yeterli sayılır."
+   },
+   {
+    "id": "S3",
+    "soru": "LLM tabanlı çoklu robot işbirliği, görev planlama ve dil aracılığıyla haberleşme nasıl gerçekleştirilmektedir? Merkezi ve dağıtık mimariler nasıl karşılaştırılmaktadır?",
+    "sorgular": [
+     "LLM multi-robot collaboration planning",
+     "\"multi-robot task planning\" \"large language models\"",
+     "\"cooperative embodied agents\" LLM",
+     "heterogeneous multi-robot LLM",
+     "\"LLM-based multi-agent\" survey"
+    ],
+    "yeterli": "RoCo, SMART-LLM, CoELA ve COHERENT gibi çalışmalar ile merkezi/dağıtık karşılaştırma çalışmaları ve LLM çoklu ajan survey'leri belirlendiğinde kapsam yeterli sayılır."
+   },
+   {
+    "id": "S4",
+    "soru": "Uç (edge) hesaplama, hesaplama aktarımı (offloading) ve bölünmüş çıkarım, büyük modellerin kaynak kısıtlı robotlarda çalıştırılması için nasıl kullanılmaktadır?",
+    "sorgular": [
+     "\"mobile edge computing\" offloading survey",
+     "\"edge intelligence\" large models",
+     "LLM 6G edge deployment inference",
+     "\"split inference\" OR \"split computing\" DNN",
+     "collaborative edge-cloud inference robots"
+    ],
+    "yeterli": "MEC ve edge AI'nin temel survey'leri, bulut-uç işbirlikçi çıkarım çalışmaları ve LLM'leri 6G ucuna taşıma vizyon makaleleri belirlendiğinde kapsam yeterli sayılır."
+   },
+   {
+    "id": "S5",
+    "soru": "Anlamsal ve görev odaklı haberleşme ile işbirlikçi algılama, çok ajanlı sistemlerde bant genişliği verimli bilgi paylaşımını nasıl sağlamaktadır?",
+    "sorgular": [
+     "\"semantic communication\" deep learning",
+     "\"task-oriented communication\" edge inference",
+     "\"collaborative perception\" communication-efficient",
+     "V2X cooperative perception feature sharing",
+     "\"goal-oriented communication\" multi-agent"
+    ],
+    "yeterli": "Anlamsal/görev odaklı haberleşmenin temel makaleleri ile Where2comm ve V2VNet gibi işbirlikçi algılama yöntemleri belirlendiğinde kapsam yeterli sayılır."
+   },
+   {
+    "id": "S6",
+    "soru": "Çok ajanlı öğrenmede haberleşmenin öğrenilmesi ve dağıtık/federe öğrenme, ortak algılama-haberleşme-hesaplama tasarımına hangi yöntemleri sağlamaktadır?",
+    "sorgular": [
+     "\"learning to communicate\" multi-agent reinforcement learning",
+     "MARL communication bandwidth-limited",
+     "\"federated learning\" robots wireless",
+     "\"communication-efficient\" distributed learning",
+     "multi-robot resource allocation deep reinforcement learning"
+    ],
+    "yeterli": "CommNet gibi temel MARL haberleşme çalışmaları, federe öğrenmenin kökeni ve robot/İHA kaynak tahsisi çalışmaları belirlendiğinde kapsam yeterli sayılır."
+   },
+   {
+    "id": "S7",
+    "soru": "Bu alanda hangi veri kümeleri, simülatörler ve kıyaslama ölçütleri kullanılmaktadır? Gecikme, enerji ve görev başarısı birlikte nasıl değerlendirilmektedir?",
+    "sorgular": [
+     "\"Open X-Embodiment\" dataset",
+     "multi-robot LLM benchmark simulator",
+     "collaborative perception dataset V2X OPV2V",
+     "embodied multi-agent benchmark household",
+     "latency energy evaluation edge LLM robots"
+    ],
+    "yeterli": "Robot öğrenme veri kümeleri, çoklu ajan somutlaşmış kıyaslamalar ve işbirlikçi algılama veri kümeleri ile ortak metrikler belirlendiğinde kapsam yeterli sayılır."
+   },
+   {
+    "id": "S8",
+    "soru": "Ölçeklenebilirlik, gerçek zamanlılık, güvenilirlik, güvenlik ve halüsinasyon gibi açık problemler ve gelecek yönelimler nelerdir?",
+    "sorgular": [
+     "embodied AI 6G open challenges",
+     "LLM wireless networks survey challenges",
+     "\"large AI models\" networked robotics",
+     "LLM robot safety hallucination real-time",
+     "\"agentic AI\" 6G multi-agent systems"
+    ],
+    "yeterli": "LLM/büyük AI modelleri ile kablosuz ağlar ve somutlaşmış AI üzerine açık problemleri sistematik olarak listeleyen birkaç güncel survey belirlendiğinde kapsam yeterli sayılır."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+    "yil": 2022
+   },
+   {
+    "baslik": "Joint Radar and Communication Design: Applications, State-of-the-Art, and the Road Ahead",
+    "yil": 2020
+   },
+   {
+    "baslik": "PaLM-E: An Embodied Multimodal Language Model",
+    "yil": 2023
+   },
+   {
+    "baslik": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+    "yil": 2023
+   },
+   {
+    "baslik": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+    "yil": 2022
+   },
+   {
+    "baslik": "OpenVLA: An Open-Source Vision-Language-Action Model",
+    "yil": 2024
+   },
+   {
+    "baslik": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+    "yil": 2023
+   },
+   {
+    "baslik": "RoCo: Dialectic Multi-Robot Collaboration with Large Language Models",
+    "yil": 2024
+   },
+   {
+    "baslik": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
+    "yil": 2024
+   },
+   {
+    "baslik": "Building Cooperative Embodied Agents Modularly with Large Language Models",
+    "yil": 2024
+   },
+   {
+    "baslik": "Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems?",
+    "yil": 2024
+   },
+   {
+    "baslik": "COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models",
+    "yil": 2025
+   },
+   {
+    "baslik": "Large Language Model based Multi-Agents: A Survey of Progress and Challenges",
+    "yil": 2024
+   },
+   {
+    "baslik": "Pushing Large Language Models to the 6G Edge: Vision, Challenges, and Opportunities",
+    "yil": 2024
+   },
+   {
+    "baslik": "A Survey on Mobile Edge Computing: The Communication Perspective",
+    "yil": 2017
+   },
+   {
+    "baslik": "Edge Intelligence: Paving the Last Mile of Artificial Intelligence With Edge Computing",
+    "yil": 2019
+   },
+   {
+    "baslik": "Neurosurgeon: Collaborative Intelligence Between the Cloud and Mobile Edge",
+    "yil": 2017
+   },
+   {
+    "baslik": "Beyond Transmitting Bits: Context, Semantics, and Task-Oriented Communications",
+    "yil": 2023
+   },
+   {
+    "baslik": "Deep Learning Enabled Semantic Communication Systems",
+    "yil": 2021
+   },
+   {
+    "baslik": "Where2comm: Communication-Efficient Collaborative Perception via Spatial Confidence Maps",
+    "yil": 2022
+   },
+   {
+    "baslik": "V2VNet: Vehicle-to-Vehicle Communication for Joint Perception and Prediction",
+    "yil": 2020
+   },
+   {
+    "baslik": "Learning Multiagent Communication with Backpropagation",
+    "yil": 2016
+   },
+   {
+    "baslik": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+    "yil": 2017
+   }
+  ],
+  "web_odaklari": [
+   "awesome LLM multi-robot collaboration papers github",
+   "awesome integrated sensing communication computation papers",
+   "large language models 6G edge embodied AI reading list"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:2309.10062",
+  "arXiv:2309.15943",
+  "arXiv:2409.15146",
+  "arXiv:2402.02716",
+  "arXiv:2307.04738",
+  "arXiv:2402.01680",
+  "arXiv:2207.00969",
+  "arXiv:2211.03345",
+  "arXiv:1905.10083",
+  "arXiv:2309.16739",
+  "arXiv:2108.07165",
+  "arXiv:1701.01090"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2211.02574",
+   "arxiv_id": "2211.02574",
+   "doi": "10.1007/s11432-022-3652-2",
+   "baslik": "Pushing AI to Wireless Network Edge: An Overview on Integrated Sensing, Communication, and Computation towards 6G",
+   "yil": 2022,
+   "tarih": "2022-11-04",
+   "gerekce": "ISCC'yi 6G uç zekâsı için temellendiren anket; algılama, haberleşme ve hesaplamanın kesintisiz bütünleşmesini ve kaynak tasarımını ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "seamless integrated sensing, communication, and computation",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 244,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2108.07165",
+   "arxiv_id": "2108.07165",
+   "doi": "10.1109/jsac.2022.3156632",
+   "baslik": "Integrated Sensing and Communications: Towards Dual-functional Wireless Networks for 6G and Beyond",
+   "yil": 2021,
+   "tarih": "2021-08-16",
+   "gerekce": "ISAC'ın temel çalışması; algılamanın 6G RAN'ın anahtar özelliği olarak çift işlevli kablosuz ağlara entegrasyonunu tanımlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The integration of sensing functionality is emerging as a key feature of the 6G Radio Access Network (RAN)",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef"
+   ],
+   "atif": 3839,
+   "rel": 2,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2309.16739",
+   "arxiv_id": "2309.16739",
+   "doi": null,
+   "baslik": "Pushing Large Language Models to the 6G Edge: Vision, Challenges, and Opportunities",
+   "yil": 2023,
+   "tarih": "2023-09-28",
+   "gerekce": "Robotik dahil çok kipli LLM uygulamalarını 6G uç ağlarına taşımanın vizyonunu, zorluklarını ve fırsatlarını doğrudan tartışır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We start by introducing killer applications powered by multimodal LLMs, including robotics and healthcare",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2309.15943",
+   "arxiv_id": "2309.15943",
+   "doi": "10.1109/icra57147.2024.10610676",
+   "baslik": "Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems?",
+   "yil": 2023,
+   "tarih": "2023-09-27",
+   "gerekce": "Merkezi, dağıtık ve hibrit LLM çoklu robot iletişim çerçevelerini görev başarısı ve token verimliliği açısından doğrudan karşılaştırır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "compare the task success rate and token efficiency of four multi-agent communication frameworks (centralized, decentralized, and two hybrid)",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 96,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2307.04738",
+   "arxiv_id": "2307.04738",
+   "doi": "10.1109/icra57147.2024.10610855",
+   "baslik": "RoCo: Dialectic Multi-Robot Collaboration with Large Language Models",
+   "yil": 2023,
+   "tarih": "2023-07-10",
+   "gerekce": "LLM donanımlı robotların dil aracılığıyla tartışıp ortak strateji ürettiği diyalektik çoklu robot işbirliğinin öncü çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Robots are equipped with LLMs to discuss and collectively reason task strategies",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 180,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2309.10062",
+   "arxiv_id": "2309.10062",
+   "doi": "10.1109/iros58592.2024.10802322",
+   "baslik": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
+   "yil": 2023,
+   "tarih": "2023-09-18",
+   "gerekce": "Yüksek seviyeli talimatları LLM ile çoklu robot görev planına dönüştüren, çok atıflı temel çalışma ve kıyaslama sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "harnesses the power of LLMs to convert high-level task instructions provided as input into a multi-robot task plan",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 199,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2408.08074",
+   "arxiv_id": "2408.08074",
+   "doi": "10.1109/comst.2024.3521498",
+   "baslik": "A Survey on Integrated Sensing, Communication, and Computation",
+   "yil": 2024,
+   "tarih": "2024-08-15",
+   "gerekce": "ISCC anketi; modüllerin birbirine bağımlılığının zaman, enerji ve bant genişliği için kaynak rekabeti yarattığını vurgular.",
+   "gerekce_kokeni": "sef",
+   "alinti": "However, the performance of these modules is interdependent, creating a resource competition for time, energy, and bandwidth.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "openalex",
+    "web"
+   ],
+   "atif": 240,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2307.15818",
+   "arxiv_id": "2307.15818",
+   "doi": null,
+   "baslik": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+   "yil": 2023,
+   "tarih": "2023-07-28",
+   "gerekce": "İnternet ölçekli görme-dil modellerini uçtan uca robot kontrolüne aktaran VLA paradigmasının temel çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "dblp",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 275,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2303.03378",
+   "arxiv_id": "2303.03378",
+   "doi": null,
+   "baslik": "PaLM-E: An Embodied Multimodal Language Model",
+   "yil": 2023,
+   "tarih": "2023-03-06",
+   "gerekce": "Sürekli sensör kiplerini doğrudan dil modellerine katarak kelimeler ile algılar arasında bağ kuran gömülü çok kipli model.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose embodied language models to directly incorporate real-world continuous sensor modalities into language models and thereby establish the link between words and percepts.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2209.12836",
+   "arxiv_id": "2209.12836",
+   "doi": "10.52202/068431-0352",
+   "baslik": "Where2comm: Communication-Efficient Collaborative Perception via Spatial Confidence Maps",
+   "yil": 2022,
+   "tarih": "2022-09-26",
+   "gerekce": "Uzamsal güven haritalarıyla bant genişliği verimli işbirlikçi algılama sağlayan merkezi yöntem; tamamlayıcı bilgi paylaşımını optimize eder.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Multi-agent collaborative perception could significantly upgrade the perception performance by enabling agents to share complementary information with each other through communication.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 149,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2207.09353",
+   "arxiv_id": "2207.09353",
+   "doi": "10.1109/jsac.2022.3223408",
+   "baslik": "Beyond Transmitting Bits: Context, Semantics, and Task-Oriented Communications",
+   "yil": 2022,
+   "tarih": "2022-07-19",
+   "gerekce": "Mesaj anlamını ve haberleşme amaçlarını sistem tasarımına katan anlamsal ve görev odaklı haberleşmenin temel eğitim çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Next generation systems, however, can be potentially enriched by folding message semantics and goals of communication into their design.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex",
+    "sef"
+   ],
+   "atif": 786,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2207.00969",
+   "arxiv_id": "2207.00969",
+   "doi": "10.1109/icc45041.2023.10279277",
+   "baslik": "Task-Oriented Sensing, Computation, and Communication Integration for Multi-Device Edge AI",
+   "yil": 2022,
+   "tarih": "2022-07-03",
+   "gerekce": "Model bölünmüş çıkarım ile ISAC'ı çok cihazlı uç yapay zekâ için görev odaklı biçimde birlikte ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "jointly exploits the AI model split inference and integrated sensing and communication (ISAC)",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 245,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2406.09246",
+   "arxiv_id": "2406.09246",
+   "doi": null,
+   "baslik": "OpenVLA: An Open-Source Vision-Language-Action Model",
+   "yil": 2024,
+   "tarih": "2024-06-13",
+   "gerekce": "Görsel-motor kontrol için ince ayarlanabilen açık kaynak VLA modeli; robot algılama ve kontrolünde yaygın temel sağlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we can fine-tune such vision-language-action (VLA) models to obtain robust, generalizable policies for visuomotor control",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 61,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2109.00172",
+   "arxiv_id": "2109.00172",
+   "doi": "10.1109/twc.2022.3191118",
+   "baslik": "Task-Oriented Communication for Multi-Device Cooperative Edge Inference",
+   "yil": 2021,
+   "tarih": "2021-09-01",
+   "gerekce": "Çok cihazlı işbirlikçi uç çıkarımda yerel öznitelik çıkarımı ve dağıtık kodlamayı görev odaklı optimize eden öğrenme tabanlı şema.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose a learning-based communication scheme that optimizes local feature extraction and distributed feature encoding in a task-oriented manner",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 217,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2307.02485",
+   "arxiv_id": "2307.02485",
+   "doi": null,
+   "baslik": "Building Cooperative Embodied Agents Modularly with Large Language Models",
+   "yil": 2023,
+   "tarih": "2023-07-05",
+   "gerekce": "Ücretsiz kanal veya merkezi denetleyici varsayımlarını sorgulayarak dağıtık iletişimli modüler LLM işbirlikçi gömülü ajanlar önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "While previous research either presupposes a cost-free communication channel or relies on a centralized controller with shared observations",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2202.08449",
+   "arxiv_id": "2202.08449",
+   "doi": "10.1109/lra.2022.3192802",
+   "baslik": "V2X-Sim: Multi-Agent Collaborative Perception Dataset and Benchmark for Autonomous Driving",
+   "yil": 2022,
+   "tarih": "2022-02-17",
+   "gerekce": "Otonom sürüşte çok ajanlı işbirlikçi algılama için veri kümesi ve kıyaslama sunar; değerlendirme altyapısı açısından kritik.",
+   "gerekce_kokeni": "sef",
+   "alinti": "V2X-Sim seeks to stimulate collaborative perception research for autonomous driving before realistic datasets become widely available.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 341,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:1605.06676",
+   "arxiv_id": "1605.06676",
+   "doi": null,
+   "baslik": "Learning to Communicate with Deep Multi-Agent Reinforcement Learning",
+   "yil": 2016,
+   "tarih": "2016-05-21",
+   "gerekce": "RIAL ve DIAL ile derin çok ajanlı pekiştirmeli öğrenmede haberleşmenin öğrenilmesini başlatan temel çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose two approaches for learning in these domains: Reinforced Inter-Agent Learning (RIAL) and Differentiable Inter-Agent Learning (DIAL).",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex"
+   ],
+   "atif": 1158,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1088/978-0-7503-5593-3ch1",
+   "arxiv_id": null,
+   "doi": "10.1088/978-0-7503-5593-3ch1",
+   "baslik": "Edge Intelligence",
+   "yil": 2018,
+   "tarih": "2018-08-01",
+   "gerekce": "Gerçek zamanlı DNN çıkarımı için hesaplamayı cihaz ile uç arasında uyarlamalı bölen bölünmüş çıkarım yaklaşımı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "DNN partitioning that adaptively partitions DNN computation between device and edge, in order to leverage hybrid computation resources in proximity for real-time DNN inference",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 385,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:1701.01090",
+   "arxiv_id": "1701.01090",
+   "doi": "10.1109/comst.2017.2745201",
+   "baslik": "A Survey on Mobile Edge Computing: The Communication Perspective",
+   "yil": 2017,
+   "tarih": "2017-01-01",
+   "gerekce": "Hesaplama, ağ denetimi ve depolamayı ağ kenarına iten MEC'i haberleşme perspektifiyle inceleyen çok atıflı temel anket.",
+   "gerekce_kokeni": "sef",
+   "alinti": "push mobile computing, network control and storage to the network edges",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef"
+   ],
+   "atif": 5592,
+   "rel": 2,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2409.15146",
+   "arxiv_id": "2409.15146",
+   "doi": "10.1109/icra55743.2025.11127808",
+   "baslik": "COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models",
+   "yil": 2024,
+   "tarih": "2024-09-23",
+   "gerekce": "Merkezi görev atayıcıyla karmaşık görevleri alt görevlere bölen heterojen çoklu robot LLM işbirliği çerçevesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "a centralized task assigner makes a task planning proposal to decompose the complex task into subtasks",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 25,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1109/jiot.2025.3579940",
+   "arxiv_id": null,
+   "doi": "10.1109/jiot.2025.3579940",
+   "baslik": "AI-Enabled Integrated Sensing, Communication, and Computation Survey: Techniques, Status, and Perspectives",
+   "yil": 2025,
+   "tarih": "2025-06-23",
+   "gerekce": "Yapay zekâ destekli ISCC tekniklerini, mevcut durumu ve gelecek perspektiflerini kapsamlı biçimde derleyen güncel anket.",
+   "gerekce_kokeni": "sef",
+   "alinti": "ISCC aims to integrate communication, sensing, and computation functions to enhance system performance",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 10,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2408.02549",
+   "arxiv_id": "2408.02549",
+   "doi": null,
+   "baslik": "Generative AI as a Service in 6G Edge-Cloud: Generation Task Offloading by In-context Learning",
+   "yil": 2024,
+   "tarih": "2024-08-05",
+   "gerekce": "Temel modellerin hizmet gecikmesini radyo kaynak tahsisi ve görev aktarımıyla en aza indiren 6G uç-bulut yaklaşımı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "it aims to minimize the service delay of foundation models by radio resource allocation and task offloading",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1109/icccas62034.2024.10652700",
+   "arxiv_id": null,
+   "doi": "10.1109/icccas62034.2024.10652700",
+   "baslik": "Joint Resource Allocation and Task Scheduling for UAV-Assisted ISCC Networks",
+   "yil": 2024,
+   "tarih": "2024-05-10",
+   "gerekce": "İHA destekli ISCC'de algılama verisinin yerel hesaplama ile uç sunucuya kısmi aktarım arasında zamanlanmasını ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "the UAV collects sensing data and determines the scheduling strategy for computing sensing tasks between local computation and partial offloading to edge server (ES)",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "openalex"
+   ],
+   "atif": 3,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2602.11583",
+   "arxiv_id": "2602.11583",
+   "doi": "10.36227/techrxiv.175760290.08279849/v1",
+   "baslik": "The Five Ws of Multi-Agent Communication: Who Talks to Whom, When, What, and Why -- A Survey from MARL to Emergent Language and LLMs",
+   "yil": 2025,
+   "tarih": "2025-09-11",
+   "gerekce": "MARL'den ortaya çıkan dile ve LLM'lere uzanan çok ajanlı iletişimi kim, kime, ne zaman, ne ve neden boyutlarıyla inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In dynamic and partially observable environments, effective communication is crucial for reducing uncertainty and enabling coordination.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex"
+   ],
+   "atif": 0,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2510.07077",
+   "arxiv_id": "2510.07077",
+   "doi": "10.1109/access.2025.3609980",
+   "baslik": "Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+   "yil": 2025,
+   "tarih": "2025-01-01",
+   "gerekce": "Gerçek dünya robotik dağıtımına yönelik tam kapsamlı VLA incelemesi; genelleme ve uygulama zorluklarını değerlendirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects, embodiments, and environments.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "dblp",
+    "openalex",
+    "web"
+   ],
+   "atif": 79,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2505.00820",
+   "arxiv_id": "2505.00820",
+   "doi": "10.1007/978-3-032-13562-9_12",
+   "baslik": "HMCF: A Human-in-the-loop Multi-Robot Collaboration Framework Based on Large Language Models",
+   "yil": 2025,
+   "tarih": "2025-05-01",
+   "gerekce": "Her robotta LLM ajanı bulunan, insan denetimiyle halüsinasyonu azaltan çoklu robot işbirliği çerçevesi; güvenilirlik sorununa değinir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Each robot is equipped with an LLM agent capable of understanding its capabilities",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex"
+   ],
+   "atif": 4,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1109/tccn.2021.3130993",
+   "arxiv_id": null,
+   "doi": "10.1109/tccn.2021.3130993",
+   "baslik": "Communication-Efficient and Federated Multi-Agent Reinforcement Learning",
+   "yil": 2021,
+   "tarih": "2021-11-26",
+   "gerekce": "Kablosuz kanalı ADMM formülasyonuna katan haberleşme verimli federe çok ajanlı pekiştirmeli öğrenme yöntemi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our algorithm incorporates the wireless channel into the formulation of the ADMM method, which enables agents to transmit each element of their updated models",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "openalex"
+   ],
+   "atif": 39,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.1007/s44336-024-00009-2",
+   "arxiv_id": null,
+   "doi": "10.1007/s44336-024-00009-2",
+   "baslik": "A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges",
+   "yil": 2024,
+   "tarih": "2024-10-08",
+   "gerekce": "LLM tabanlı çok ajanlı sistemlerin iş akışı, altyapısı ve zorluklarını ele alan çok atıflı kapsamlı anket.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Leveraging the exceptional reasoning and planning capabilities of large language models (LLMs), LLM-based agents have been proposed and have achieved remarkable success across a wide array of tasks.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 424,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1016/j.procir.2026.05.337",
+   "arxiv_id": null,
+   "doi": "10.1016/j.procir.2026.05.337",
+   "baslik": "A Hierarchical Framework of Central-Distributed LLM Negotiation and Specialized Model Orchestration for Multi-Robot Collaborative Assembly",
+   "yil": 2026,
+   "tarih": "2026-01-01",
+   "gerekce": "Merkezi LLM'in alt görevleri robotlara gömülü dağıtık LLM'lere yayınladığı hiyerarşik merkezi-dağıtık müzakere çerçevesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "a Central LLM is used to parse high-level task specifications into atomic subtask sequences using Chain-of-Thought prompting, and subtasks are broadcast to Distributed LLMs embedded in each robot",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "openalex"
+   ],
+   "atif": 1,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2511.21510",
+   "arxiv_id": "2511.21510",
+   "doi": null,
+   "baslik": "Tool-RoCo: An Agent-as-Tool Self-organization Large Language Model Benchmark in Multi-robot Cooperation",
+   "yil": 2025,
+   "tarih": "2025-11-26",
+   "gerekce": "Her ajanın kendi LLM'iyle yerel bilgiye dayalı araç çağırdığı dağıtık işbirliğini kıyaslayan çoklu robot LLM benchmark'ı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "decentralized cooperation, where each agent has its own LLM and calls tools based on local information",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

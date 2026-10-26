@@ -1,0 +1,990 @@
+{
+ "run_id": "20261025-221343-4c850f",
+ "soru": "Büyük dil modellerinde halüsinasyonların nedenleri, tespiti, azaltılması ve önlenmesi üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-06-20",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6989,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 2,
+   "failed": 1,
+   "cost_usd": 0.061149999999999996,
+   "in": 1212,
+   "out": 3045,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.20514464,
+   "in": 536196,
+   "out": 97987,
+   "web_search": 10
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.2761258,
+   "in": 380494,
+   "out": 400070,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.156528,
+   "in": 12602,
+   "out": 2786,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 3258.6,
+  "toplama:openalex": 18.4,
+  "toplama:crossref": 99.1,
+  "web_isci": 108.1,
+  "toplama:dblp": 201.0,
+  "toplama:arxiv": 283.5,
+  "toplama": 283.5,
+  "tekil+kesim_1": 48.9,
+  "atif": 371.0,
+  "okuyucu": 503.3,
+  "damitma": 48.2,
+  "sef_final": 27.1,
+  "toplam": 4540.8
+ },
+ "ozet_token_tahmini": 3840,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Büyük dil modellerinde halüsinasyon nedir, nasıl sınıflandırılır ve temel nedenleri (veri, eğitim, çözümleme/decoding, hizalama) nelerdir?",
+    "sorgular": [
+     "LLM hallucination survey taxonomy",
+     "\"hallucination\" natural language generation survey",
+     "causes of hallucination language models training data",
+     "\"exposure bias\" hallucination decoding",
+     "why language models hallucinate"
+    ],
+    "yeterli": "Halüsinasyon tanımları/taksonomileri ile veri, eğitim, hizalama ve çözümleme kaynaklı nedenleri açıklayan başlıca anket ve teorik çalışmalar bulunduğunda yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "Halüsinasyonlar nasıl tespit edilir (belirsizlik tahmini, öz-tutarlılık, iç temsiller, doğrulayıcı modeller)?",
+    "sorgular": [
+     "hallucination detection large language models",
+     "\"semantic entropy\" uncertainty LLM",
+     "SelfCheckGPT zero-resource black-box detection",
+     "uncertainty quantification LLM calibration",
+     "internal states probing truthfulness hallucination"
+    ],
+    "yeterli": "Kara kutu (öz-tutarlılık), belirsizlik tabanlı ve iç durum (probing) tabanlı tespit yöntemlerinin her birinden temel çalışmalar kapsandığında yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Erişimle zenginleştirilmiş üretim (RAG) ve dış bilgiyle temellendirme halüsinasyonları ne ölçüde azaltır ve hangi sınırlamaları vardır?",
+    "sorgular": [
+     "retrieval-augmented generation hallucination",
+     "\"retrieval augmented generation\" knowledge-intensive NLP",
+     "RAG faithfulness grounding attribution",
+     "Self-RAG retrieval critique reflection",
+     "citation generation attributed LLM"
+    ],
+    "yeterli": "Temel RAG mimarileri, uyarlanabilir/öz-yansıtmalı RAG ve RAG'a özgü halüsinasyon ile atıf sorunlarını ele alan çalışmalar bulunduğunda yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Eğitim, hizalama ve çözümleme düzeyinde halüsinasyonu azaltma ve önleme yöntemleri nelerdir (RLHF, factuality fine-tuning, contrastive decoding, chain-of-verification, düzenleme)?",
+    "sorgular": [
+     "hallucination mitigation LLM",
+     "factuality fine-tuning DPO hallucination",
+     "\"contrastive decoding\" factuality DoLa",
+     "\"chain-of-verification\" self-correction",
+     "inference-time intervention truthfulness"
+    ],
+    "yeterli": "Eğitim zamanı (fine-tuning/RLHF), çıkarım zamanı (decoding, müdahale) ve sonradan düzeltme (doğrulama, öz-düzeltme, çekimser kalma) ailelerinin her birinden öncü çalışmalar bulunduğunda yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Halüsinasyon ve olgusallığı ölçmek için hangi veri kümeleri, kıyaslamalar ve değerlendirme metrikleri kullanılır?",
+    "sorgular": [
+     "TruthfulQA benchmark",
+     "hallucination evaluation benchmark HaluEval",
+     "FActScore atomic fact precision",
+     "long-form factuality evaluation SAFE",
+     "factual consistency metrics summarization QAGS"
+    ],
+    "yeterli": "Yaygın kullanılan kıyaslamalar (TruthfulQA, HaluEval, FActScore, SimpleQA vb.) ve otomatik olgusallık/sadakat metrikleri kapsandığında yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Çok kipli modellerde (görsel-dil) ve özetleme/çeviri gibi komşu alanlarda halüsinasyon nasıl incelenir ve yöntemler nasıl aktarılır?",
+    "sorgular": [
+     "object hallucination vision-language models",
+     "LVLM hallucination POPE benchmark",
+     "faithfulness abstractive summarization hallucination",
+     "hallucination neural machine translation",
+     "multimodal hallucination mitigation"
+    ],
+    "yeterli": "Görsel-dil modellerindeki nesne halüsinasyonu ile özetleme ve makine çevirisindeki sadakat çalışmalarının temel kıyaslama ve yöntemleri bulunduğunda yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Halüsinasyon alanındaki açık problemler nelerdir (kaçınılmazlık teorisi, akıl yürütme modellerinde halüsinasyon, alan uygulamaları, değerlendirme güvenilirliği)?",
+    "sorgular": [
+     "hallucination is inevitable LLM theory",
+     "calibrated language models must hallucinate",
+     "reasoning models hallucination chain-of-thought",
+     "medical legal domain LLM hallucination",
+     "fine-tuning new knowledge hallucination"
+    ],
+    "yeterli": "Halüsinasyonun teorik kaçınılmazlığı, akıl yürütme modelleri ve yüksek riskli alanlarda (tıp, hukuk) halüsinasyon ile değerlendirme sorunlarını tartışan güncel çalışmalar bulunduğunda yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Survey of Hallucination in Natural Language Generation",
+    "yil": 2023
+   },
+   {
+    "baslik": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+    "yil": 2023
+   },
+   {
+    "baslik": "Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+    "yil": 2023
+   },
+   {
+    "baslik": "On Faithfulness and Factuality in Abstractive Summarization",
+    "yil": 2020
+   },
+   {
+    "baslik": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+    "yil": 2022
+   },
+   {
+    "baslik": "SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models",
+    "yil": 2023
+   },
+   {
+    "baslik": "Detecting hallucinations in large language models using semantic entropy",
+    "yil": 2024
+   },
+   {
+    "baslik": "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation",
+    "yil": 2023
+   },
+   {
+    "baslik": "Language Models (Mostly) Know What They Know",
+    "yil": 2022
+   },
+   {
+    "baslik": "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation",
+    "yil": 2023
+   },
+   {
+    "baslik": "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models",
+    "yil": 2023
+   },
+   {
+    "baslik": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "yil": 2020
+   },
+   {
+    "baslik": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "yil": 2023
+   },
+   {
+    "baslik": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+    "yil": 2023
+   },
+   {
+    "baslik": "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+    "yil": 2023
+   },
+   {
+    "baslik": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model",
+    "yil": 2023
+   },
+   {
+    "baslik": "Fine-tuning Language Models for Factuality",
+    "yil": 2023
+   },
+   {
+    "baslik": "Long-form factuality in large language models",
+    "yil": 2024
+   },
+   {
+    "baslik": "Hallucination is Inevitable: An Innate Limitation of Large Language Models",
+    "yil": 2024
+   },
+   {
+    "baslik": "Calibrated Language Models Must Hallucinate",
+    "yil": 2024
+   },
+   {
+    "baslik": "Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?",
+    "yil": 2024
+   },
+   {
+    "baslik": "Evaluating Object Hallucination in Large Vision-Language Models",
+    "yil": 2023
+   },
+   {
+    "baslik": "The Internal State of an LLM Knows When It's Lying",
+    "yil": 2023
+   },
+   {
+    "baslik": "Why Language Models Hallucinate",
+    "yil": 2025
+   },
+   {
+    "baslik": "Measuring short-form factuality in large language models",
+    "yil": 2024
+   }
+  ],
+  "web_odaklari": [
+   "awesome LLM hallucination papers github",
+   "hallucination detection mitigation large language models reading list",
+   "awesome multimodal hallucination papers github"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:2303.08896",
+  "arXiv:2305.14251",
+  "arXiv:2305.10355",
+  "arXiv:2406.15927",
+  "arXiv:2311.05232",
+  "arXiv:2403.18802",
+  "doi:10.1038/s41586-024-07421-0",
+  "arXiv:2202.03629",
+  "arXiv:2309.01219",
+  "arXiv:2306.03341",
+  "arXiv:2310.11511",
+  "arXiv:2401.11817"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2311.05232",
+   "arxiv_id": "2311.05232",
+   "doi": "10.1145/3703155",
+   "baslik": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+   "yil": 2023,
+   "tarih": "2023-11-09",
+   "gerekce": "LLM çağı için yenilikçi bir halüsinasyon sınıflandırması sunar; nedenleri, tespiti ve açık soruları ele alan temel derlemedir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we begin with an innovative taxonomy of hallucination in the era of LLM and then delve into the factors contributing to hallucinations",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef"
+   ],
+   "atif": 2485,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2202.03629",
+   "arxiv_id": "2202.03629",
+   "doi": "10.1145/3571730",
+   "baslik": "Survey of Hallucination in Natural Language Generation",
+   "yil": 2022,
+   "tarih": "2022-02-08",
+   "gerekce": "NLG'de halüsinasyon araştırmalarının ilerlemesine ve zorluklarına geniş bir genel bakış sunar; özetleme dahil temel derlemedir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we thus provide a broad overview of the research progress and challenges in the hallucination problem in NLG",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 4909,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2303.08896",
+   "arxiv_id": "2303.08896",
+   "doi": "10.18653/v1/2023.emnlp-main.557",
+   "baslik": "SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models",
+   "yil": 2023,
+   "tarih": "2023-01-01",
+   "gerekce": "Kara kutu modellerin yanıtlarını kaynaksız biçimde doğrulayan, örneklemeye dayalı ve etkili bir tespit yöntemi önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "a simple sampling-based approach that can be used to fact-check the responses of black-box models in a zero-resource fashion",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 543,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1038/s41586-024-07421-0",
+   "arxiv_id": null,
+   "doi": "10.1038/s41586-024-07421-0",
+   "baslik": "Detecting hallucinations in large language models using semantic entropy",
+   "yil": 2024,
+   "tarih": "2024-06-19",
+   "gerekce": "Halüsinasyonların bir alt kümesini tespit etmek için istatistiğe dayalı, entropi temelli belirsizlik tahmincileri geliştirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Here we develop new methods grounded in statistics, proposing entropy-based uncertainty estimators for LLMs to detect a subset of hallucinations",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex",
+    "sef"
+   ],
+   "atif": 1010,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2305.14251",
+   "arxiv_id": "2305.14251",
+   "doi": "10.18653/v1/2023.emnlp-main.741",
+   "baslik": "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation",
+   "yil": 2023,
+   "tarih": "2023-05-23",
+   "gerekce": "Üretimi atomik olgulara ayırır ve güvenilir kaynakça desteklenen olgu oranıyla uzun metin olgusallığını ölçer.",
+   "gerekce_kokeni": "sef",
+   "alinti": "breaks a generation into a series of atomic facts and computes the percentage of atomic facts supported by a reliable knowledge source",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 413,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2109.07958",
+   "arxiv_id": "2109.07958",
+   "doi": "10.18653/v1/2022.acl-long.229",
+   "baslik": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+   "yil": 2021,
+   "tarih": "2021-09-08",
+   "gerekce": "Modellerin insan yanlışlarını taklit edip etmediğini ölçen temel doğruluk kıyaslamasıdır; ölçeğe ilişkin bir bulgu da içerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 892,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2005.11401",
+   "arxiv_id": "2005.11401",
+   "doi": null,
+   "baslik": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+   "yil": 2020,
+   "tarih": "2020-05-22",
+   "gerekce": "Parametrik ve parametrik olmayan belleği birleştiren erişimle zenginleştirilmiş üretimin (RAG) temel çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex",
+    "sef"
+   ],
+   "atif": 1187,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2309.11495",
+   "arxiv_id": "2309.11495",
+   "doi": "10.18653/v1/2024.findings-acl.212",
+   "baslik": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+   "yil": 2023,
+   "tarih": "2023-09-20",
+   "gerekce": "Modelin taslağını doğrulama sorularıyla kontrol ettiği Chain-of-Verification yöntemiyle halüsinasyonu azaltır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We develop the Chain-of-Verification (CoVe) method whereby the model first (i) drafts an initial response; then (ii) plans verification questions to fact-check its draft",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 273,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2311.14648",
+   "arxiv_id": "2311.14648",
+   "doi": "10.1145/3618260.3649777",
+   "baslik": "Calibrated Language Models Must Hallucinate",
+   "yil": 2023,
+   "tarih": "2023-11-24",
+   "gerekce": "Önceden eğitilmiş modellerin belirli olgu türlerinde halüsinasyon oranı için içsel bir istatistiksel alt sınır olduğunu gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "there is an inherent statistical lower-bound on the rate that pretrained language models hallucinate certain types of facts",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "openalex",
+    "sef"
+   ],
+   "atif": 89,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2401.11817",
+   "arxiv_id": "2401.11817",
+   "doi": null,
+   "baslik": "Hallucination is Inevitable: An Innate Limitation of Large Language Models",
+   "yil": 2024,
+   "tarih": "2024-01-22",
+   "gerekce": "Sorunu biçimselleştirir ve LLM'lerde halüsinasyonu tamamen ortadan kaldırmanın imkânsız olduğunu kanıtlar; kaçınılmazlık tartışmasının merkezindedir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we formalize the problem and show that it is impossible to eliminate hallucination in LLMs",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex",
+    "sef"
+   ],
+   "atif": 178,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2509.04664",
+   "arxiv_id": "2509.04664",
+   "doi": null,
+   "baslik": "Why Language Models Hallucinate",
+   "yil": 2025,
+   "tarih": "2025-09-04",
+   "gerekce": "Eğitim ve değerlendirme süreçlerinin belirsizliği kabul etmek yerine tahmin yürütmeyi ödüllendirdiği için modellerin halüsinasyon ürettiğini savunur.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2405.05904",
+   "arxiv_id": "2405.05904",
+   "doi": "10.18653/v1/2024.emnlp-main.444",
+   "baslik": "Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?",
+   "yil": 2023,
+   "tarih": "2023",
+   "gerekce": "Yeni bilgi içeren ince ayar örneklerinin daha yavaş öğrenildiğini göstererek ince ayarı bir halüsinasyon nedeni olarak inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "fine-tuning examples that introduce new knowledge are learned significantly slower than those consistent with the model's knowledge",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "sef"
+   ],
+   "atif": 86,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2302.09664",
+   "arxiv_id": "2302.09664",
+   "doi": null,
+   "baslik": "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation",
+   "yil": 2023,
+   "tarih": "2023-02-19",
+   "gerekce": "Ortak anlamlardan doğan dilsel değişmezlikleri hesaba katan semantik entropiyi tanıtan temel belirsizlik çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we introduce semantic entropy -- an entropy which incorporates linguistic invariances created by shared meanings",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex",
+    "sef"
+   ],
+   "atif": 71,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2304.13734",
+   "arxiv_id": "2304.13734",
+   "doi": "10.18653/v1/2023.findings-emnlp.68",
+   "baslik": "The Internal State of an LLM Knows When It's Lying",
+   "yil": 2023,
+   "tarih": "2023-04-26",
+   "gerekce": "Gizli katman aktivasyonlarından bir ifadenin doğru olma olasılığını tahmin eden sınıflandırıcıyla iç temsillere dayalı tespit yapar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our approach is to train a classifier that outputs the probability that a statement is truthful, based on the hidden layer activations of the LLM as it reads or generates the statement.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2306.03341",
+   "arxiv_id": "2306.03341",
+   "doi": "10.52202/075280-1797",
+   "baslik": "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model",
+   "yil": 2023,
+   "tarih": "2023-01-01",
+   "gerekce": "Çıkarım sırasında sınırlı sayıda dikkat başlığında aktivasyonları kaydırarak modelden daha doğru yanıtlar elde eder.",
+   "gerekce_kokeni": "sef",
+   "alinti": "ITI operates by shifting model activations during inference, following a set of directions across a limited number of attention heads",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 114,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2309.03883",
+   "arxiv_id": "2309.03883",
+   "doi": null,
+   "baslik": "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+   "yil": 2023,
+   "tarih": "2023-09-07",
+   "gerekce": "Erişim veya ek ince ayar gerektirmeden, katmanlar arası kontrastlı çözümlemeyle halüsinasyonları azaltır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose a simple decoding strategy for reducing hallucinations with pretrained LLMs that does not require conditioning on retrieved external knowledge nor additional fine-tuning.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2310.11511",
+   "arxiv_id": "2310.11511",
+   "doi": null,
+   "baslik": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+   "yil": 2023,
+   "tarih": "2023-10-17",
+   "gerekce": "Erişim ve öz-yansıtma yoluyla LM kalitesini ve olgusallığını artıran Self-RAG çerçevesini sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We introduce a new framework called Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's quality and factuality through retrieval and self-reflection",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2305.11747",
+   "arxiv_id": "2305.11747",
+   "doi": "10.18653/v1/2023.emnlp-main.397",
+   "baslik": "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models",
+   "yil": 2023,
+   "tarih": "2023-01-01",
+   "gerekce": "Üretilmiş ve insanlarca işaretlenmiş halüsinasyonlu örneklerden oluşan büyük ölçekli bir değerlendirme kıyaslamasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we introduce the Hallucination Evaluation benchmark for Large Language Models (HaluEval), a large collection of generated and human-annotated hallucinated samples",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 335,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2403.18802",
+   "arxiv_id": "2403.18802",
+   "doi": "10.52202/079017-2567",
+   "baslik": "Long-form factuality in large language models",
+   "yil": 2024,
+   "tarih": "2024-03-27",
+   "gerekce": "Uzun biçimli olgusallık kıyaslaması ve LLM ajanlarını otomatik değerlendirici olarak kullanan SAFE yöntemini önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "propose that LLM agents can be used as automated evaluators for long-form factuality through a method which we call Search-Augmented Factuality Evaluator",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 26,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2406.15927",
+   "arxiv_id": "2406.15927",
+   "doi": null,
+   "baslik": "Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs",
+   "yil": 2024,
+   "tarih": "2024-06-22",
+   "gerekce": "Tek bir üretimin gizli durumlarından semantik entropiye doğrudan yaklaşarak ucuz ve sağlam bir tespit sağlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose SEPs, which directly approximate SE from the hidden states of a single generation",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex"
+   ],
+   "atif": 6,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2311.08401",
+   "arxiv_id": "2311.08401",
+   "doi": null,
+   "baslik": "Fine-tuning Language Models for Factuality",
+   "yil": 2023,
+   "tarih": "2023-11-14",
+   "gerekce": "İnsan etiketlemesi olmadan, açık uçlu üretimde dil modellerini daha olgusal olacak şekilde ince ayarlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we fine-tune language models to be more factual, without human labeling and targeting more open-ended generation settings than past work",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex",
+    "sef"
+   ],
+   "atif": 14,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2305.06983",
+   "arxiv_id": "2305.06983",
+   "doi": "10.18653/v1/2023.emnlp-main.495",
+   "baslik": "Active Retrieval Augmented Generation",
+   "yil": 2023,
+   "tarih": "2023-01-01",
+   "gerekce": "Gelecek cümle tahminini yinelemeli olarak kullanan aktif erişimli üretim yöntemi FLARE'i önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose Forward-Looking Active REtrieval augmented generation (FLARE), a generic method which iteratively uses a prediction of the upcoming sentence",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "web"
+   ],
+   "atif": 491,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2412.18004",
+   "arxiv_id": "2412.18004",
+   "doi": null,
+   "baslik": "Correctness is not Faithfulness in RAG Attributions",
+   "yil": 2024,
+   "tarih": "2024-12-23",
+   "gerekce": "RAG atıflarında doğruluk ile sadakati ayırır ve atıfların sonradan rasyonalizasyon olabileceğini gösterir; RAG sınırlamaları için önemlidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Faithfulness ensures that the model's reliance on cited documents is genuine, reflecting actual reference use rather than superficial alignment with prior beliefs, which we call post-rationalization.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2305.10355",
+   "arxiv_id": "2305.10355",
+   "doi": "10.18653/v1/2023.emnlp-main.20",
+   "baslik": "Evaluating Object Hallucination in Large Vision-Language Models",
+   "yil": 2023,
+   "tarih": "2023-01-01",
+   "gerekce": "LVLM'lerin hedef görüntüyle tutarsız nesneler üretme eğilimini sistematik olarak inceler; çok kipli halüsinasyon için temeldir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "they tend to generate objects that are inconsistent with the target images in the descriptions",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "sef"
+   ],
+   "atif": 690,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2005.00661",
+   "arxiv_id": "2005.00661",
+   "doi": "10.18653/v1/2020.acl-main.173",
+   "baslik": "On Faithfulness and Factuality in Abstractive Summarization",
+   "yil": 2020,
+   "tarih": "2020-05-02",
+   "gerekce": "Özetleme modellerinin girdi belgesine sadık olmayan içerik üretmeye çok yatkın olduğunu insan değerlendirmesiyle gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "these models are highly prone to hallucinate content that is unfaithful to the input document",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 750,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2311.16922",
+   "arxiv_id": "2311.16922",
+   "doi": "10.1109/cvpr52733.2024.01316",
+   "baslik": "Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding",
+   "yil": 2023,
+   "tarih": "2023-11-28",
+   "gerekce": "Özgün ve bozulmuş görsel girdilerden elde edilen çıktı dağılımlarını karşılaştıran, eğitimsiz Görsel Kontrastif Çözümleme yöntemini sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we introduce Visual Contrastive Decoding (VCD), a simple and training-free method that contrasts output distributions derived from original and distorted visual inputs",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex"
+   ],
+   "atif": 199,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2312.10997",
+   "arxiv_id": "2312.10997",
+   "doi": null,
+   "baslik": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+   "yil": 2023,
+   "tarih": "2023-12-18",
+   "gerekce": "Dış veritabanlarından bilgi ekleyen RAG'i umut verici bir çözüm olarak ele alan kapsamlı bir derlemedir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex"
+   ],
+   "atif": 875,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2310.14566",
+   "arxiv_id": "2310.14566",
+   "doi": "10.1109/cvpr52733.2024.01363",
+   "baslik": "HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models",
+   "yil": 2023,
+   "tarih": "2023-10-23",
+   "gerekce": "Uzmanlarca hazırlanmış 346 görüntü ve 1129 sorudan oluşan, çok kipli halüsinasyon için gelişmiş bir tanı kıyaslamasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The benchmark comprises 346 images paired with 1129 questions, all meticulously crafted by human experts.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "web"
+   ],
+   "atif": 207,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2504.17550",
+   "arxiv_id": "2504.17550",
+   "doi": "10.18653/v1/2025.acl-long.1176",
+   "baslik": "HalluLens: LLM Hallucination Benchmark",
+   "yil": 2024,
+   "tarih": "2024",
+   "gerekce": "Halüsinasyonu olgusallıktan ayırır ve dışsal/içsel halüsinasyonları ayıran net bir taksonomiyle bir kıyaslama sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We disentangle LLM hallucination from \"factuality,\" proposing a clear taxonomy that distinguishes between extrinsic and intrinsic hallucinations",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "web"
+   ],
+   "atif": 48,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2309.01219",
+   "arxiv_id": "2309.01219",
+   "doi": "10.1162/coli.a.16",
+   "baslik": "🧜Siren’s Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+   "yil": 2023,
+   "tarih": "2023-09-03",
+   "gerekce": "Halüsinasyon olguları ve değerlendirme kıyaslamaları için taksonomiler sunar, mevcut azaltma yaklaşımlarını analiz eder.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We present taxonomies of the LLM hallucination phenomena and evaluation benchmarks, analyze existing approaches aiming at mitigating LLM hallucination",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 529,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  }
+ ]
+}

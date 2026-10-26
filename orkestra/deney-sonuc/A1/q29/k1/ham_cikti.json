@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 396878,
+ "stop_reason": "end_turn",
+ "session_id": "244d1d36-b258-431b-9c26-f240554da844",
+ "total_cost_usd": 1.3037554,
+ "usage": {
+  "input_tokens": 26,
+  "cache_creation_input_tokens": 58877,
+  "cache_read_input_tokens": 395478,
+  "output_tokens": 15135,
+  "output_tokens_details": {
+   "thinking_tokens": 6997
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 58877,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4855,
+    "cache_read_input_tokens": 59657,
+    "cache_creation_input_tokens": 2752,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2752
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 26,
+   "outputTokens": 15135,
+   "cacheReadInputTokens": 395478,
+   "cacheCreationInputTokens": 58877,
+   "webSearchRequests": 0,
+   "costUSD": 0.8529156,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 6997,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 548908,
+   "outputTokens": 31898,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 38,
+   "costUSD": 0.4508397999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 8617,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 41,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "```json\n{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"Could virtual reality applications pose real risks to children and adolescents? A systematic review of ethical issues and concerns\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.1007/s10055-021-00563-w\", \"gerekce\": \"This is the main systematic review of the ethical, health and psychosocial risks of VR for minors, and it frames the ethics side of the field.\"},\n{\"sira\": 2, \"baslik\": \"Considering virtual reality in children's lives\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1080/17482798.2016.1268779\", \"gerekce\": \"A foundational agenda-setting paper linking immersive VR features such as embodiment, virtual characters and settings to child development.\"},\n{\"sira\": 3, \"baslik\": \"Learning from the real and the virtual worlds: Educational use of augmented reality in early childhood\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1016/j.ijcci.2019.06.002\", \"gerekce\": \"Grounds AR for young children in developmental psychology, covering transfer between screen and real world and the line between fantasy and reality, and gives design guidance.\"},\n{\"sira\": 4, \"baslik\": \"Augmented Reality for Early Language Learning: A Systematic Review of Augmented Reality Application Design, Instructional Strategies, and Evaluation Outcomes\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1177/0735633120927489\", \"gerekce\": \"A systematic review of 53 studies that maps AR design and teaching strategies for early literacy and language learning.\"},\n{\"sira\": 5, \"baslik\": \"Effects of immersive virtual reality headset viewing on young children: Visuomotor function, postural stability, and motion sickness\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1016/j.ajo.2019.07.020\", \"gerekce\": \"A key clinical study of headset safety in children aged 4–10, measuring vision, balance and motion sickness.\"},\n{\"sira\": 6, \"baslik\": \"Safety of virtual reality use in children: a systematic review\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": \"10.1007/s00431-024-05488-5\", \"gerekce\": \"Pulls together the paediatric safety evidence and identifies the open problems: little safety guidance for young children and no validated symptom measures.\"},\n{\"sira\": 7, \"baslik\": \"Virtual reality's effect on children's inhibitory control, social compliance, and sharing\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1016/j.appdev.2019.101052\", \"gerekce\": \"An experiment with 4–6-year-olds showing that immersive VR, compared with TV, weakens inhibitory control and changes social behaviour.\"},\n{\"sira\": 8, \"baslik\": \"Virtually true: Children's acquisition of false memories in virtual reality\", \"yil\": 2009, \"arxiv_id\": null, \"doi\": \"10.1080/15213260903287267\", \"gerekce\": \"Early evidence that VR can create false memories in preschoolers, which is a central developmental and ethical concern.\"},\n{\"sira\": 9, \"baslik\": \"Embedding immersive virtual reality in classrooms: Ethical, organisational and educational lessons in bridging research and practice\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1016/j.ijcci.2018.10.002\", \"gerekce\": \"A field-based account of the ethical, safety and organisational issues that come up when bringing immersive VR into schools.\"},\n{\"sira\": 10, \"baslik\": \"Educational magic toys developed with augmented reality technology for early childhood education\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": \"10.1016/j.chb.2015.07.040\", \"gerekce\": \"A highly cited AR study in preschool settings showing children like AR toys but do not reach high cognitive attainment with them.\"},\n{\"sira\": 11, \"baslik\": \"Are augmented reality picture books magic or real for preschool children aged five to six?\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1111/bjet.12452\", \"gerekce\": \"A key study of AR picture books, preschoolers' attitudes, story comprehension, and the sense that the books are 'magic'.\"},\n{\"sira\": 12, \"baslik\": \"Understanding Parents' Perceptions and Practices Toward Children's Security and Privacy in Virtual Reality\", \"yil\": 2024, \"arxiv_id\": \"2403.06172\", \"doi\": null, \"gerekce\": \"An IEEE S&P study showing parents underestimate VR data-collection risks to children and rarely use parental controls.\"},\n{\"sira\": 13, \"baslik\": \"Cyborg Children: A Systematic Literature Review on the Experience of Children Using Extended Reality\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": \"10.3390/children11080984\", \"gerekce\": \"A recent systematic review of children's XR experiences across developmental, social and wellbeing dimensions.\"},\n{\"sira\": 14, \"baslik\": \"The impact of fantasy on young children's recall: A virtual reality approach\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": \"10.1007/s10055-023-00911-y\", \"gerekce\": \"Preregistered experiments in which preschoolers using headsets recalled less than those using desktop VR, which raises the cognitive-load question for immersive VR.\"},\n{\"sira\": 15, \"baslik\": \"Immersive virtual reality interferes with default head–trunk coordination strategies in young children\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.1038/s41598-021-96866-8\", \"gerekce\": \"Shows that immersive VR changes postural and sensorimotor control in children, a developmental health concern.\"},\n{\"sira\": 16, \"baslik\": \"Children and parents' reading of an augmented reality picture book: Analyses of behavioral patterns and cognitive attainment\", \"yil\": 2014, \"arxiv_id\": null, \"doi\": \"10.1016/j.compedu.2013.12.003\", \"gerekce\": \"A foundational study of parent–child shared reading with AR books and how interaction patterns relate to learning.\"},\n{\"sira\": 17, \"baslik\": \"Augmented reality-based virtual manipulatives versus physical manipulatives for teaching geometric shapes to preschool children\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1111/bjet.12740\", \"gerekce\": \"A rare controlled comparison of AR and physical manipulatives for preschool maths.\"},\n{\"sira\": 18, \"baslik\": \"Advantages and challenges associated with augmented reality for education: A systematic review of the literature\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1016/j.edurev.2016.11.002\", \"gerekce\": \"The most cited general review of AR's benefits and challenges in education, used as a reference point by early childhood studies.\"},\n{\"sira\": 19, \"baslik\": \"Using Augmented Reality in early art education: a case study in Hong Kong kindergarten\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": \"10.1080/03004430.2015.1067888\", \"gerekce\": \"A design-based kindergarten study recording benefits along with concerns from teachers, principal and parents about AR side effects.\"},\n{\"sira\": 20, \"baslik\": \"Augmented reality for preschool children: An experience with educational contents\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.1111/bjet.13168\", \"gerekce\": \"A quasi-experimental study reporting gains in motivation, attention and concept skills among 4–5-year-olds.\"},\n{\"sira\": 21, \"baslik\": \"Integration of Augmented Reality in the Teaching of English as a Foreign Language in Early Childhood Education\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1007/s10643-019-00999-5\", \"gerekce\": \"A key study of AR for foreign-language teaching in early childhood classrooms.\"},\n{\"sira\": 22, \"baslik\": \"The Ethics of Realism in Virtual and Augmented Reality\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.3389/frvir.2020.00001\", \"gerekce\": \"An influential paper on the ethical risks of highly realistic VR/AR, including risks to vulnerable users such as children.\"},\n{\"sira\": 23, \"baslik\": \"Unique Identification of 50,000+ Virtual Reality Users from Head & Hand Motion Data\", \"yil\": 2023, \"arxiv_id\": \"2302.08927\", \"doi\": null, \"gerekce\": \"Shows that VR motion data can identify users and infer their traits, which underpins privacy concerns about children's XR data.\"},\n{\"sira\": 24, \"baslik\": \"Exploring the Perspectives of Social VR-Aware Non-Parent Adults and Parents on Children's Use of Social Virtual Reality\", \"yil\": 2024, \"arxiv_id\": \"2503.15100\", \"doi\": \"10.1145/3652867\", \"gerekce\": \"Documents abuse, age-inappropriate exposure, self-disclosure and supervision gaps for children in social VR.\"},\n{\"sira\": 25, \"baslik\": \"A Virtual Space for All: Exploring Children's Experience in Social Virtual Reality\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1145/3410404.3414268\", \"gerekce\": \"Pioneering empirical work on children's presence and safety issues in social VR.\"},\n{\"sira\": 26, \"baslik\": \"Asking ethical questions in research using immersive virtual and augmented reality technologies with children and youth\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1109/VR.2017.7892226\", \"gerekce\": \"Sets out procedural and in-practice ethics frameworks for XR research with children.\"},\n{\"sira\": 27, \"baslik\": \"How Real is Augmented Reality in Preschool? Examination of Young Children's AR Experiences\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.30831/akukeg.1098113\", \"gerekce\": \"A qualitative kindergarten study showing AR can both focus and distract young children.\"},\n{\"sira\": 28, \"baslik\": \"Real Virtuality: A Code of Ethical Conduct. Recommendations for Good Scientific Practice and the Consumers of VR-Technology\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": \"10.3389/frobt.2016.00003\", \"gerekce\": \"A foundational VR ethics code that flags long-term immersion risks and the special vulnerability of children.\"},\n{\"sira\": 29, \"baslik\": \"Meta-analysis of the impact of Augmented Reality on students' learning gains\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1016/j.edurev.2019.04.001\", \"gerekce\": \"A widely cited meta-analysis of AR learning effects across education levels, including early ones.\"},\n{\"sira\": 30, \"baslik\": \"Social Virtual Reality: Ethical Considerations and Future Directions for An Emerging Research Space\", \"yil\": 2021, \"arxiv_id\": \"2104.05030\", \"doi\": null, \"gerekce\": \"Sets out the ethical and privacy research agenda for social VR, including the protection of minors.\"}\n]}\n```",
+ "ttft_ms": 36219,
+ "type": "result",
+ "duration_ms": 240504,
+ "uuid": "95441b9e-8e5f-4cfb-b7a5-d0645c290732",
+ "ttft_stream_ms": 1691,
+ "time_to_request_ms": 60,
+ "first_content_frame_ms": 1691,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

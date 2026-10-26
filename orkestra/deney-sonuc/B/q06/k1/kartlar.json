@@ -1,0 +1,1042 @@
+[
+ {
+  "id": "arXiv:2202.04522",
+  "baslik": "Constructing and Analyzing the LSM Compaction Design Space (Updated Version)",
+  "yil": 2021,
+  "cites": 59,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Sıkıştırma tasarım uzayı; doğrudan merkezi",
+  "alinti": "Compactions fundamentally influence the performance of an LSM-engine in terms of write amplification, write throughput, point and range lookup performance, space amplification, and delete performance."
+ },
+ {
+  "id": "doi:10.1145/1807128.1807152",
+  "baslik": "Benchmarking cloud serving systems with YCSB",
+  "yil": 2010,
+  "cites": 3004,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "YCSB kıyaslama aracı; LSM'ye özgü değil",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1812.07527",
+  "baslik": "LSM-based Storage Techniques: A Survey",
+  "yil": 2018,
+  "cites": 191,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Geniş LSM araştırma taksonomisi anketi",
+  "alinti": "We provide a general taxonomy to classify the literature of LSM-trees, survey the efforts in detail, and discuss their strengths and trade-offs."
+ },
+ {
+  "id": "doi:10.1007/s002360050048",
+  "baslik": "The log-structured merge-tree (LSM-tree)",
+  "yil": 1996,
+  "cites": 1098,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "LSM-ağacı tanımı; temel kavram",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3588195.3592982",
+  "baslik": "Closing the Performance Gap between Leveling and Tiering Compaction via Bundle Compaction",
+  "yil": 2023,
+  "cites": 5,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Leveling/tiering arasındaki boşluğu kapatan birleştirme",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1906.09667",
+  "baslik": "On Performance Stability in LSM-based Storage Systems (Extended Version)",
+  "yil": 2019,
+  "cites": 35,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Yazma duraklaması ve performans dalgalanması ölçümü",
+  "alinti": "Despite the popularity of LSM-trees, they have been criticized for suffering from write stalls and large performance variances due to the inherent mismatch between their fast in-memory writes and slow background I/O operations."
+ },
+ {
+  "id": "doi:10.1109/icde55515.2023.00273",
+  "baslik": "The LSM Design Space and its Read Optimizations",
+  "yil": 2023,
+  "cites": 21,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LSM tasarım uzayı ve okuma optimizasyonları",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3514221.3522563",
+  "baslik": "Dissecting, Designing, and Optimizing LSM-based Data Stores",
+  "yil": 2022,
+  "cites": 26,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "LSM veri depolarının çözümlemesi ve optimizasyonu",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3340287",
+  "baslik": "Enabling Efficient Updates in KV Storage via Hashing",
+  "yil": 2019,
+  "cites": 12,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "KV ayrımı ile GC ve yazma büyütmesi",
+  "alinti": "KV separation mitigates I/O amplification by storing only keys in the LSM-tree and values in separate storage."
+ },
+ {
+  "id": "doi:10.1145/3318464.3389757",
+  "baslik": "Lethe: A Tunable Delete-Aware LSM Engine",
+  "yil": 2020,
+  "cites": 63,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Silme-farkında LSM motoru; silme iş yükü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3380905",
+  "baslik": "SILK+ Preventing Latency Spikes in Log-Structured Merge Key-Value Stores Running Heterogeneous Workloads",
+  "yil": 2018,
+  "cites": 19,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kuyruk gecikmesi spike'larını önleme; doğrudan ilgili",
+  "alinti": "We first document the fact that LSM KVs exhibit high tail latencies. The techniques that have been proposed for optimizing throughput do not address this issue"
+ },
+ {
+  "id": "doi:10.14778/3529337.3529345",
+  "baslik": "Endure",
+  "yil": 2022,
+  "cites": 24,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Belirsiz iş yükü için sağlam ayarlama",
+  "alinti": "Systems with static tuning discount the variability of such hybrid workloads and hence provide an inconsistent and overall suboptimal performance."
+ },
+ {
+  "id": "doi:10.1145/3299869.3319903",
+  "baslik": "The Log-Structured Merge-Bush &amp; the Wacky Continuum",
+  "yil": 2019,
+  "cites": 70,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "LSM tasarım sürekliliği ve birleştirme politikaları",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2104.01305",
+  "baslik": "Nova-LSM: A Distributed, Component-based LSM-tree Key-value Store",
+  "yil": 2021,
+  "cites": 48,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Ayrıştırılmış LSM; paralel sıkıştırma",
+  "alinti": "The cloud infrastructure motivates disaggregation of monolithic data stores into components that are assembled together based on an application's workload."
+ },
+ {
+  "id": "doi:10.1109/tpds.2022.3188268",
+  "baslik": "TriangleKV: Reducing Write Stalls and Write Amplification in LSM-Tree Based KV Stores With Triangle Container in NVM",
+  "yil": 2022,
+  "cites": 24,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "NVM ile yazma duraklaması ve büyütme azaltma",
+  "alinti": "Reducing Write Stalls and Write Amplification in LSM-Tree Based KV Stores With Triangle Container in NVM."
+ },
+ {
+  "id": "arXiv:2110.13801",
+  "baslik": "Endure: A Robust Tuning Paradigm for LSM Trees Under Workload Uncertainty",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Belirsizlik altında sağlam LSM ayarlama",
+  "alinti": "Specifically, we focus on the impact of the choice of compaction policies, size-ratio, and memory allocation on the overall performance."
+ },
+ {
+  "id": "doi:10.1145/3538643.3539743",
+  "baslik": "Compaction-aware zone allocation for LSM based key-value store on ZNS SSDs",
+  "yil": 2022,
+  "cites": 58,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ZNS SSD üzerinde sıkıştırma farkındalıklı bölge tahsisi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2311.10005",
+  "baslik": "Towards Flexibility and Robustness of LSM Trees",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Sağlam LSM ayarlama; belirsiz iş yükü",
+  "alinti": "Specifically, we focus on the impact of the choice of compaction policy, size ratio, and memory allocation on the overall performance."
+ },
+ {
+  "id": "doi:10.1145/3132747.3132765",
+  "baslik": "PebblesDB",
+  "yil": 2017,
+  "cites": 285,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık; parçalı LSM ile yazma büyütmesi azaltma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3538643.3539741",
+  "baslik": "Lifetime-leveling LSM-tree compaction for ZNS SSD",
+  "yil": 2022,
+  "cites": 51,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık; ZNS SSD üzerinde sıkıştırma stratejisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3183713.3196927",
+  "baslik": "Dostoevsky",
+  "yil": 2018,
+  "cites": 172,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık; LSM tasarım uzayı ve ödünleşimler",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3654927",
+  "baslik": "CaaS-LSM: Compaction-as-a-Service for LSM-based Key-Value Stores in Storage Disaggregated Infrastructure",
+  "yil": 2024,
+  "cites": 20,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ayrıştırılmış ortamda sıkıştırma hizmeti",
+  "alinti": "Most of the existing studies focus on offloading the compaction to the storage nodes to mitigate the performance penalties caused by heavy network traffic between computing and storage."
+ },
+ {
+  "id": "doi:10.1145/3035918.3064054",
+  "baslik": "Monkey",
+  "yil": 2017,
+  "cites": 220,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık; Monkey, Bloom filtre ve birleştirme ayarı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ipdps.2014.85",
+  "baslik": "Pipelined Compaction for the LSM-Tree",
+  "yil": 2014,
+  "cites": 42,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Başlık; boru hattı sıkıştırma, duraklama azaltma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tkde.2020.3019264",
+  "baslik": "Adaptive Lower-level Driven Compaction to Optimize LSM-Tree Key-Value Stores",
+  "yil": 2020,
+  "cites": 15,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık; uyarlanabilir alt seviye odaklı sıkıştırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3703323.3703707",
+  "baslik": "On Designing a Compaction Strategy for Enhanced LevelDB Read Performance",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık; LevelDB okuma performansı için sıkıştırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3276980",
+  "baslik": "Optimal Bloom Filters and Adaptive Merging for LSM-Trees",
+  "yil": 2018,
+  "cites": 60,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bloom filtre ve birleştirme ayarı; analitik optimizasyon",
+  "alinti": "We present Monkey, an LSM-tree based key-value store that strikes the optimal balance between the costs of updates and lookups with any given main memory budget."
+ },
+ {
+  "id": "doi:10.1007/978-3-030-85665-6_9",
+  "baslik": "Taming Tail Latency in Key-Value Stores: A Scheduling Perspective",
+  "yil": 2021,
+  "cites": 2,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Başlık; KV depolarında kuyruk gecikmesi, zamanlama",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icde48307.2020.00113",
+  "baslik": "FPGA-based Compaction Engine for Accelerating LSM-tree Key-Value Stores",
+  "yil": 2020,
+  "cites": 36,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Başlık; FPGA tabanlı sıkıştırma motoru",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3337821.3337855",
+  "baslik": "Near-Data Processing-Enabled and Time-Aware Compaction Optimization for LSM-tree-based Key-Value Stores",
+  "yil": 2019,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık; NDP ile zamana duyarlı sıkıştırma optimizasyonu",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3605573.3605633",
+  "baslik": "DComp: Efficient Offload of LSM-tree Compaction with Data Processing Units",
+  "yil": 2023,
+  "cites": 24,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "DPU'ya sıkıştırma boşaltma; dağıtık ortam.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/bigcomp60711.2024.00031",
+  "baslik": "ThanosKV: A Holistic Approach to Utilize NVM for LSM-tree based Key- Value Stores",
+  "yil": 2024,
+  "cites": 6,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık; NVM kullanımı için bütünsel yaklaşım",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.aei.2023.102224",
+  "baslik": "Time-tired compaction: An elastic compaction scheme for LSM-tree based time-series database",
+  "yil": 2024,
+  "cites": 14,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Zaman serisi iş yükünde esnek sıkıştırma şeması",
+  "alinti": "Time-tired compaction: An elastic compaction scheme for LSM-tree based time-series database."
+ },
+ {
+  "id": "doi:10.1007/s00778-020-00638-1",
+  "baslik": "Comparison and evaluation of state-of-the-art LSM merge policies",
+  "yil": 2021,
+  "cites": 11,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Sınırlı derinlikli birleştirme politikalarının karşılaştırması",
+  "alinti": "A merge policy (a.k.a. compaction policy) specifies when to do merges and which SSTables to combine."
+ },
+ {
+  "id": "doi:10.1145/3626736",
+  "baslik": "MirrorKV: An Efficient Key-Value Store on Hybrid Cloud Storage with Balanced Performance of Compaction and Querying",
+  "yil": 2023,
+  "cites": 6,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Hibrit bulut; sıkıştırma ve sorgu dengesi, merkezi",
+  "alinti": "MirrorKV vertically separates hot/cold data of different levels stored in different cloud storage with different compaction mechanisms."
+ },
+ {
+  "id": "doi:10.1145/3412841.3442073",
+  "baslik": "Reducing tail latency of LSM-tree based key-value store via limited compaction",
+  "yil": 2021,
+  "cites": 2,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık; sınırlı sıkıştırma ile kuyruk gecikmesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s11390-017-1704-4",
+  "baslik": "dCompaction: Speeding up Compaction of the LSM-Tree via Delayed Compaction",
+  "yil": 2017,
+  "cites": 33,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Başlık; geciktirilmiş sıkıştırma ile hızlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3588726",
+  "baslik": "SplinterDB and Maplets: Improving the Tradeoffs in Key-Value Store Compaction Policy",
+  "yil": 2023,
+  "cites": 21,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Sıkıştırma politikası ve filtre etkileşimi; maplet tabanlı çözüm.",
+  "alinti": "Aggressive compaction reduces the on-disk footprint of a key-value store and can improve query performance, but can reduce insertion throughput because it is I/O and CPU expensive."
+ },
+ {
+  "id": "doi:10.14778/3611479.3611495",
+  "baslik": "WALTZ: Leveraging Zone Append to Tighten the Tail Latency of LSM Tree on ZNS SSD",
+  "yil": 2023,
+  "cites": 31,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ZNS SSD ile kuyruk gecikmesi azaltma",
+  "alinti": "The long tail latency problem caused by the merging process of multiple parallel writes, called batch-group writes, is effectively addressed by the internal synchronization mechanism of ZNS SSD."
+ },
+ {
+  "id": "doi:10.1109/clusterworkshops61563.2024.00060",
+  "baslik": "Refining Compaction Offloading I/O Stack for LSM-Based Key-Value Stores with SPDK",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SPDK ile sıkıştırma boşaltma G/Ç yığını.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2407.15581",
+  "baslik": "vLSM: Low tail latency and I/O amplification in LSM-based KV stores",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Sıkıştırma zincirleri ve kuyruk gecikmesi",
+  "alinti": "In this paper, we introduce the notion of compaction chains and we analyse how they affect tail latency."
+ },
+ {
+  "id": "doi:10.1109/tcc.2023.3329646",
+  "baslik": "Improving LSM-Tree Based Key-Value Stores With Fine-Grained Compaction Mechanism",
+  "yil": 2023,
+  "cites": 16,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LSM'de ince taneli sıkıştırma mekanizması.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.14778/3415478.3415546",
+  "baslik": "MyRocks",
+  "yil": 2020,
+  "cites": 112,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "RocksDB tabanlı MyRocks dağıtım deneyimi",
+  "alinti": "To overcome these limitations, MyRocks, a new MySQL storage engine, was built on top of RocksDB by adding relational capabilities."
+ },
+ {
+  "id": "doi:10.1109/access.2021.3098736",
+  "baslik": "SFM: Mitigating Read/Write Amplification Problem of LSM-Tree-Based Key-Value Stores",
+  "yil": 2021,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık; okuma/yazma büyütmesi azaltma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/dac56929.2023.10247795",
+  "baslik": "Learning-based Data Separation for Write Amplification Reduction in Solid State Drives",
+  "yil": 2023,
+  "cites": 9,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Öğrenmeye dayalı veri ayırma; SSD yazma büyütmesi.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3605573.3605601",
+  "baslik": "RBC: A bandwidth controller to reduce write-stalls and tail latency",
+  "yil": 2023,
+  "cites": 3,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Doğrudan yazma duraklaması ve kuyruk gecikmesi azaltımı",
+  "alinti": "RBC: A bandwidth controller to reduce write-stalls and tail latency."
+ },
+ {
+  "id": "doi:10.1109/icde.2017.121",
+  "baslik": "On Log-Structured Merge for Solid-State Drives",
+  "yil": 2017,
+  "cites": 24,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SSD'ler için LSM; yazma büyütmesi.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.jksuci.2024.102156",
+  "baslik": "Efficient Wear-Leveling-Aware Data Placement for LSM-Tree based key-value store on ZNS SSDs",
+  "yil": 2024,
+  "cites": 5,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ZNS SSD üzerinde aşınma dengeli veri yerleşimi.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icde51399.2021.00094",
+  "baslik": "CruiseDB: An LSM-Tree Key-Value Store with Both Better Tail Throughput and Tail Latency",
+  "yil": 2021,
+  "cites": 18,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Kuyruk gecikmesi ve verimi birlikte iyileştiren LSM",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/2592798.2592804",
+  "baslik": "An efficient design and implementation of LSM-tree based key-value store on open-channel SSD",
+  "yil": 2014,
+  "cites": 149,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Açık kanal SSD üzerinde LSM tasarımı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icdcs47774.2020.00113",
+  "baslik": "Kill Two Birds with One Stone: Auto-tuning RocksDB for High Bandwidth and Low Latency",
+  "yil": 2020,
+  "cites": 7,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "RocksDB otomatik ayarlama; bant genişliği ve gecikme",
+  "alinti": "Kill Two Birds with One Stone: Auto-tuning RocksDB for High Bandwidth and Low Latency."
+ },
+ {
+  "id": "doi:10.14778/2757807.2757810",
+  "baslik": "Compaction management in distributed key-value datastores",
+  "yil": 2015,
+  "cites": 51,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Dağıtık KVS'de sıkıştırma yükü ve sunucu dışına taşıma.",
+  "alinti": "While compactions help keep read latencies in check over the long run, this comes at the cost of significantly degraded read performance over the course of the compaction itself."
+ },
+ {
+  "id": "doi:10.1109/icde.2019.00070",
+  "baslik": "LDC: A Lower-Level Driven Compaction Method to Optimize SSD-Oriented Key-Value Stores",
+  "yil": 2019,
+  "cites": 29,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SSD odaklı KV depoları için alt seviye güdümlü sıkıştırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/2213836.2213862",
+  "baslik": "bLSM",
+  "yil": 2012,
+  "cites": 256,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Başlık; birleştirme zamanlaması ve yazma duraklamaları",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/access.2018.2873579",
+  "baslik": "&lt;italic&gt;DStore&lt;/italic&gt;: A Holistic Key-Value Store Exploring Near-Data Processing and On-Demand Scheduling for Compaction Optimization",
+  "yil": 2018,
+  "cites": 13,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "NDP ve talep üzerine zamanlama ile sıkıştırma optimizasyonu",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3662165.3662765",
+  "baslik": "KVBench: A Key-Value Benchmarking Suite",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Anahtar-değer depolama kıyaslama paketi.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.11591/ijece.v8i6.pp5333-5341",
+  "baslik": "Performance Benchmarking of Key-Value Store NoSQL Databases",
+  "yil": 2018,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Redis/SSDB kıyaslaması; LSM odağı zayıf",
+  "alinti": "The aim of this research work is to benchmark both databases (Redis and SSDB) using the Yahoo Cloud Serving Benchmark (YCSB)."
+ },
+ {
+  "id": "doi:10.1109/icde55515.2023.00089",
+  "baslik": "Redesigning High-Performance LSM-based Key-Value Stores with Persistent CPU Caches",
+  "yil": 2023,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Kalıcı CPU önbelleği ile LSM yeniden tasarımı.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3662165.3662766",
+  "baslik": "Anatomy of the LSM Memory Buffer",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LSM bellek tamponu; başlık dışı içerik yok.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icpads.2016.0079",
+  "baslik": "Improving Write Performance of LSMT-Based Key-Value Store",
+  "yil": 2016,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LSM yazma performansı iyileştirme; içerik sınırlı.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/access.2023.3343455",
+  "baslik": "TATune: A RocksDB Knob Tuning System Based on Transformer",
+  "yil": 2023,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "RocksDB ayar parametreleri için transformer tabanlı otomatik ayarlama",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3655038.3665955",
+  "baslik": "Advocating for Key-Value Stores with Workload Pattern Aware Dynamic Compaction",
+  "yil": 2024,
+  "cites": 9,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "İş yükü desenine duyarlı dinamik sıkıştırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.3390/app112411842",
+  "baslik": "Efficient Key-Value Data Placement for ZNS SSD",
+  "yil": 2021,
+  "cites": 20,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ZNS SSD'de anahtar-değer veri yerleşimi.",
+  "alinti": "we propose a technique to minimize the space efficiency and garbage collection overhead of SSDs by arranging them according to the characteristics of key–value data."
+ },
+ {
+  "id": "doi:10.1109/iceca.2017.8212845",
+  "baslik": "YCSB+T: Benchmark for transactional databases and performance",
+  "yil": 2017,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Transaksiyonel veritabanı kıyaslaması; LSM'ye özgü değil.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2107.11607",
+  "baslik": "Tell-Tale Tail Latencies: Pitfalls and Perils in Database Benchmarking",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Kuyruk gecikmesi ölçüm tuzakları; LSM'ye özgü değil",
+  "alinti": "In particular, we demonstrate how Java-based benchmarking approaches can substantially distort tail latency observations, and discuss how"
+ },
+ {
+  "id": "doi:10.14778/3681954.3681977",
+  "baslik": "On Reducing Space Amplification With Multi-Column Compaction In Apache IoTDB",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Zaman serisi LSM'de alan büyütmesi ve birleştirme",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/iccd56317.2022.00052",
+  "baslik": "InDeF: An Advanced Defragmenter Supporting Migration Offloading on ZNS SSD",
+  "yil": 2022,
+  "cites": 13,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ZNS SSD'de parçalanma giderme ve göç boşaltma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3696410.3714681",
+  "baslik": "ShapeShifter: Workload-Aware Adaptive Evolving Index Structures Based on Learned Models",
+  "yil": 2025,
+  "cites": 3,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Öğrenilmiş dizin yapıları; LSM'e doğrudan bağlı değil",
+  "alinti": "ShapeShifter: Workload-Aware Adaptive Evolving Index Structures Based on Learned Models."
+ },
+ {
+  "id": "doi:10.1109/hpcc/smartcity/dss.2019.00287",
+  "baslik": "Exploring Cascaded Write Amplification in LSM-Tree Based Key-Value Stores with Solid-State Disks",
+  "yil": 2019,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Doğrudan SSD üzerinde LSM yazma büyütmesi çalışması",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icde55515.2023.00217",
+  "baslik": "dLSM: An LSM-Based Index for Memory Disaggregation",
+  "yil": 2023,
+  "cites": 29,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bellek ayrıştırması için LSM tabanlı dizin.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.ipm.2023.103567",
+  "baslik": "K2vTune: A workload-aware configuration tuning for RocksDB",
+  "yil": 2024,
+  "cites": 10,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "RocksDB için iş yüküne duyarlı yapılandırma ayarı.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3033273",
+  "baslik": "WiscKey",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Anahtar-değer ayrımı ile yazma büyütmesini azaltan klasik çalışma.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icufn.2019.8806187",
+  "baslik": "CLeveldb: Coalesced Leveldb for Small Data",
+  "yil": 2019,
+  "cites": 6,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Küçük veri için birleştirme; LevelDB sıkıştırma varyantı",
+  "alinti": "CLeveldb: Coalesced Leveldb for Small Data."
+ },
+ {
+  "id": "doi:10.7236/jiibc.2016.16.4.15",
+  "baslik": "NVM-based Write Amplification Reduction to Avoid Performance Fluctuation of Flash Storage",
+  "yil": 2016,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "NVM ile yazma büyütmesi azaltma; dalgalanma odaklı",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1707.05354",
+  "baslik": "GPU LSM: A Dynamic Dictionary Data Structure for the GPU",
+  "yil": 2017,
+  "cites": 12,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "GPU üzerinde LSM tabanlı dinamik sözlük yapısı",
+  "alinti": "We develop a dynamic dictionary data structure for the GPU, supporting fast insertions and deletions, based on the Log Structured Merge tree (LSM)."
+ },
+ {
+  "id": "doi:10.1109/bigcomp51126.2021.00013",
+  "baslik": "Partial Tiering: A Hybrid Merge Policy for Log Structured Key-Value Stores",
+  "yil": 2021,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; LSM birleştirme politikası, yazma büyütmesi ilgili",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-981-96-0579-8_18",
+  "baslik": "REXIO: Indexing For Low Write Amplification By Reducing Extra I/Os In Key-Value Store Under Mixed Read/Write Workloads",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Düşük yazma büyütmesi için ek G/Ç azaltma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3452846",
+  "baslik": "Design of LSM-tree-based Key-value SSDs with Bounded Tails",
+  "yil": 2021,
+  "cites": 12,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "KV-SSD üzerinde LSM; kuyruk gecikmesi iyileştirmesi.",
+  "alinti": "reduces 99th percentile tail latency by 73%, improves average read latency by 42%, and shows 37% higher throughput."
+ },
+ {
+  "id": "doi:10.17706/jcp.11.6.504-512",
+  "baslik": "Research on Cassandra Data Compaction Strategies for Time-Series Data",
+  "yil": 2016,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Cassandra sıkıştırma stratejileri, zaman serisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tpds.2022.3149003",
+  "baslik": "FenceKV: Enabling Efficient Range Query for Key-Value Separation",
+  "yil": 2022,
+  "cites": 44,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Anahtar-değer ayrıştırmalı LSM'de aralık sorgusu",
+  "alinti": ""
+ }
+]

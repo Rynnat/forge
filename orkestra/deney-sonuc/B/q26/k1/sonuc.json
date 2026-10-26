@@ -1,0 +1,963 @@
+{
+ "run_id": "20261026-051835-b3bd30",
+ "soru": "Tıbbi görüntü analizinde (segmentasyon, sınıflandırma, rapor üretimi) temel modellerin kullanımı üzerine en önemli çalışmalar, kanıtlar ve açık problemler neler?",
+ "kesim": "2025-09-19",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "arxiv",
+  "s2_zenginlestirme",
+  "ozet_arxiv"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6307,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.074832,
+   "in": 1225,
+   "out": 3252,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.15087905000000001,
+   "in": 415998,
+   "out": 61679,
+   "web_search": 8
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.24405609999999997,
+   "in": 274798,
+   "out": 378209,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.16094,
+   "in": 12271,
+   "out": 3139,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 30.9,
+  "toplama:openalex": 0.0,
+  "web_isci": 67.3,
+  "toplama:crossref": 91.5,
+  "toplama:dblp": 236.8,
+  "toplama:arxiv": 530.1,
+  "toplama": 530.1,
+  "tekil+kesim_1": 42.3,
+  "atif": 197.0,
+  "okuyucu": 301.5,
+  "damitma": 23.9,
+  "sef_final": 29.7,
+  "toplam": 1155.5
+ },
+ "ozet_token_tahmini": 3879,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Tıbbi görüntü analizinde temel modellere giden temeller nelerdir: klasik derin öğrenme yöntemleri (U-Net, nnU-Net), transfer öğrenme ve öz-denetimli ön eğitim?",
+    "sorgular": [
+     "U-Net biomedical image segmentation",
+     "nnU-Net self-configuring segmentation",
+     "self-supervised pretraining medical imaging",
+     "transfer learning ImageNet medical images",
+     "contrastive learning chest X-ray"
+    ],
+    "yeterli": "U-Net/nnU-Net, ImageNet transferi ve tıbbi öz-denetimli ön eğitim (MoCo/SimCLR/MAE uyarlamaları) üzerine temel çalışmalar kapsandığında yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "Tıbbi görüntü segmentasyonu için temel modeller (SAM ve türevleri, istem tabanlı ve evrensel segmentasyon modelleri) nelerdir ve ne kadar başarılıdır?",
+    "sorgular": [
+     "\"Segment Anything\" medical images",
+     "MedSAM universal segmentation",
+     "SAM 2 medical video 3D segmentation",
+     "promptable segmentation foundation model",
+     "universal medical image segmentation"
+    ],
+    "yeterli": "SAM, MedSAM, SAM-Med2D/3D, SAM 2 uyarlamaları ve evrensel segmentasyon modellerinin (ör. UniverSeg, SAT, BiomedParse) karşılaştırmalı değerlendirmeleri kapsandığında yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Görüntü-metin (vision-language) temel modelleri ve sınıflandırma: CLIP tarzı kontrastif ön eğitim, sıfır-atış teşhis ve alan özel modeller (radyoloji, patoloji, oftalmoloji, dermatoloji) nelerdir?",
+    "sorgular": [
+     "vision-language pretraining radiology reports",
+     "CLIP medical zero-shot classification",
+     "pathology foundation model whole slide image",
+     "retinal foundation model RETFound",
+     "BiomedCLIP PMC-15M"
+    ],
+    "yeterli": "ConVIRT, GLoRIA, MedCLIP, CheXzero, BiomedCLIP, UNI, CONCH, Virchow, Prov-GigaPath, RETFound gibi ana modeller ve sıfır-atış/az-örnek sonuçları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Radyoloji rapor üretimi ve tıbbi görsel soru-cevaplamada çok kipli büyük dil modelleri (generalist medical AI) nasıl kullanılıyor?",
+    "sorgular": [
+     "radiology report generation large language model",
+     "multimodal LLM medical imaging",
+     "generalist medical AI Med-PaLM M",
+     "LLaVA-Med visual instruction tuning",
+     "chest X-ray report generation MAIRA"
+    ],
+    "yeterli": "R2Gen gibi klasik rapor üretim modellerinden Med-PaLM M, LLaVA-Med, MAIRA, RadFM, CheXagent, Med-Gemini gibi çok kipli LLM'lere uzanan ana çizgi kapsandığında yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Tıbbi temel modeller için hangi veri kümeleri ve benchmark'lar kullanılıyor?",
+    "sorgular": [
+     "MIMIC-CXR dataset",
+     "CheXpert large chest radiograph dataset",
+     "Medical Segmentation Decathlon",
+     "TotalSegmentator CT",
+     "medical multimodal benchmark VQA-RAD"
+    ],
+    "yeterli": "MIMIC-CXR, CheXpert, MSD, TotalSegmentator, PMC-OA/ROCO, VQA-RAD/SLAKE ve büyük ölçekli çok kipli benchmark'lar (ör. GMAI-MMBench, OmniMedVQA) kapsandığında yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Tıbbi temel modeller nasıl değerlendiriliyor: rapor üretimi metrikleri, klinik doğruluk, sağlamlık, kalibrasyon ve dağılım kayması?",
+    "sorgular": [
+     "radiology report generation evaluation metric",
+     "RadGraph clinical efficacy metric",
+     "GREEN RadCliQ report evaluation",
+     "foundation model robustness distribution shift medical",
+     "benchmarking medical foundation models"
+    ],
+    "yeterli": "RadGraph F1, CheXbert, RadCliQ, GREEN gibi metrikler ile sağlamlık, genelleme ve halüsinasyon analizleri yapan sistematik değerlendirme çalışmaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Açık problemler nelerdir: önyargı ve adillik, gizlilik ve federe öğrenme, 3B/hacimsel veri, düzenleyici ve klinik doğrulama, verimli ince ayar?",
+    "sorgular": [
+     "foundation models medicine opportunities risks",
+     "fairness bias medical imaging AI",
+     "parameter-efficient fine-tuning medical foundation model",
+     "federated learning medical imaging",
+     "3D medical foundation model CT"
+    ],
+    "yeterli": "Temel modellerin önyargı, güvenilirlik, düzenleme, verimli uyarlama ve 3B genelleme sorunlarını tartışan görüş/inceleme makaleleri ve ampirik çalışmalar kapsandığında yeterlidir."
+   },
+   {
+    "id": "S8",
+    "soru": "Komşu alanlardan yeniden kullanılan yöntemler nelerdir (genel bilgisayarlı görü ve NLP temel modelleri: ViT, CLIP, MAE, DINOv2, LLaVA)?",
+    "sorgular": [
+     "vision transformer image recognition",
+     "CLIP contrastive language-image pretraining",
+     "masked autoencoders scalable vision learners",
+     "DINOv2 self-supervised visual features",
+     "visual instruction tuning LLaVA"
+    ],
+    "yeterli": "Tıbbi uyarlamaların dayandığı ViT, CLIP, MAE, DINOv2, SAM ve LLaVA gibi temel genel-amaçlı modeller kapsandığında yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+    "yil": 2015
+   },
+   {
+    "baslik": "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation",
+    "yil": 2021
+   },
+   {
+    "baslik": "On the Opportunities and Risks of Foundation Models",
+    "yil": 2021
+   },
+   {
+    "baslik": "Learning Transferable Visual Models From Natural Language Supervision",
+    "yil": 2021
+   },
+   {
+    "baslik": "Segment Anything",
+    "yil": 2023
+   },
+   {
+    "baslik": "Segment anything in medical images",
+    "yil": 2024
+   },
+   {
+    "baslik": "Foundation models for generalist medical artificial intelligence",
+    "yil": 2023
+   },
+   {
+    "baslik": "Towards Generalist Biomedical AI",
+    "yil": 2024
+   },
+   {
+    "baslik": "LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day",
+    "yil": 2023
+   },
+   {
+    "baslik": "A foundation model for generalizable disease detection from retinal images",
+    "yil": 2023
+   },
+   {
+    "baslik": "Towards a general-purpose foundation model for computational pathology",
+    "yil": 2024
+   },
+   {
+    "baslik": "A visual-language foundation model for computational pathology",
+    "yil": 2024
+   },
+   {
+    "baslik": "A whole-slide foundation model for digital pathology from real-world data",
+    "yil": 2024
+   },
+   {
+    "baslik": "Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning",
+    "yil": 2022
+   },
+   {
+    "baslik": "Contrastive Learning of Medical Visual Representations from Paired Images and Text",
+    "yil": 2022
+   },
+   {
+    "baslik": "GLoRIA: A Multimodal Global-Local Representation Learning Framework for Label-efficient Medical Image Recognition",
+    "yil": 2021
+   },
+   {
+    "baslik": "MedCLIP: Contrastive Learning from Unpaired Medical Images and Text",
+    "yil": 2022
+   },
+   {
+    "baslik": "Generating Radiology Reports via Memory-driven Transformer",
+    "yil": 2020
+   },
+   {
+    "baslik": "Large language models encode clinical knowledge",
+    "yil": 2023
+   },
+   {
+    "baslik": "MIMIC-CXR, a de-identified publicly available database of chest radiographs with free-text reports",
+    "yil": 2019
+   },
+   {
+    "baslik": "CheXpert: A Large Chest Radiograph Dataset with Uncertainty Labels and Expert Comparison",
+    "yil": 2019
+   },
+   {
+    "baslik": "The Medical Segmentation Decathlon",
+    "yil": 2022
+   },
+   {
+    "baslik": "TotalSegmentator: Robust Segmentation of 104 Anatomic Structures in CT Images",
+    "yil": 2023
+   },
+   {
+    "baslik": "Masked Autoencoders Are Scalable Vision Learners",
+    "yil": 2022
+   },
+   {
+    "baslik": "Visual Instruction Tuning",
+    "yil": 2023
+   }
+  ],
+  "web_odaklari": [
+   "awesome medical foundation models papers github",
+   "awesome medical vision-language models report generation github",
+   "Segment Anything medical imaging papers list github"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:2111.06377",
+  "arXiv:2304.08485",
+  "doi:10.1038/s41597-019-0322-0",
+  "arXiv:1904.08128",
+  "arXiv:2307.14334",
+  "doi:10.18653/v1/2024.bionlp-1.50",
+  "arXiv:2304.12306",
+  "doi:10.1109/tpami.2023.3336525",
+  "arXiv:1901.07031",
+  "arXiv:2208.05868",
+  "doi:10.1038/s41586-023-05881-4",
+  "doi:10.1038/s41551-022-00936-9"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1038/s41586-023-05881-4",
+   "arxiv_id": null,
+   "doi": "10.1038/s41586-023-05881-4",
+   "baslik": "Foundation models for generalist medical artificial intelligence",
+   "yil": 2023,
+   "tarih": "2023-04-12",
+   "gerekce": "Tıbbi genel amaçlı (generalist) yapay zekâ için temel modeller kavramını ortaya koyan temel makale.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Foundation models for generalist medical artificial intelligence.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 2073,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2304.12306",
+   "arxiv_id": "2304.12306",
+   "doi": "10.1038/s41467-024-44824-z",
+   "baslik": "Segment Anything in Medical Images",
+   "yil": 2023,
+   "tarih": "2023-04-24",
+   "gerekce": "Tıbbi görüntülere uyarlanmış SAM temel modelini (MedSAM) 1,5 milyon çiftlik veriyle sunan merkezi segmentasyon çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 3148,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:1904.08128",
+   "arxiv_id": "1904.08128",
+   "doi": "10.1038/s41592-020-01008-z",
+   "baslik": "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation",
+   "yil": 2019,
+   "tarih": "2019-04-17",
+   "gerekce": "Kendini yapılandıran nnU-Net, 19 uluslararası yarışmada uzman yöntemlerin çoğunu geçerek segmentasyonun güçlü klasik referansı oldu.",
+   "gerekce_kokeni": "sef",
+   "alinti": "nnU-Net surpasses most specialised deep learning pipelines in 19 public international competitions and sets a new state of the art",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 10465,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:1505.04597",
+   "arxiv_id": "1505.04597",
+   "doi": "10.1007/978-3-319-24574-4_28",
+   "baslik": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+   "yil": 2015,
+   "tarih": "2015-05-18",
+   "gerekce": "Tıbbi segmentasyonun temel mimarisi U-Net; az sayıda görüntüyle uçtan uca eğitilerek önceki en iyi yöntemi geçmiştir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We show that such a network can be trained end-to-end from very few images and outperforms the prior best method",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2304.02643",
+   "arxiv_id": "2304.02643",
+   "doi": "10.1109/iccv51070.2023.00371",
+   "baslik": "Segment Anything",
+   "yil": 2023,
+   "tarih": "2023-04-05",
+   "gerekce": "İstemle çalışan ve yeni dağılımlara sıfır-atış aktarılabilen SAM, tıbbi segmentasyon temel modellerinin kaynağıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The model is designed and trained to be promptable, so it can transfer zero-shot to new image distributions and tasks.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 2,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2307.14334",
+   "arxiv_id": "2307.14334",
+   "doi": null,
+   "baslik": "Towards Generalist Biomedical AI",
+   "yil": 2023,
+   "tarih": "2023-07-26",
+   "gerekce": "Metin, görüntü ve genomik gibi kipleri kapsayan genelci biyomedikal yapay zekâ (Med-PaLM M) yaklaşımını sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Towards Generalist Biomedical AI. Medicine is inherently multimodal, with rich data modalities spanning text, imaging, genomics",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1038/s41597-019-0322-0",
+   "arxiv_id": null,
+   "doi": "10.1038/s41597-019-0322-0",
+   "baslik": "MIMIC-CXR, a de-identified publicly available database of chest radiographs with free-text reports",
+   "yil": 2019,
+   "tarih": "2019-12-12",
+   "gerekce": "65.379 hastaya ait 227.835 çalışma ve serbest metin raporları içeren MIMIC-CXR, rapor üretiminin temel veri kümesidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "MIMIC-CXR, a large dataset of 227,835 imaging studies for 65,379 patients presenting to the Beth Israel Deaconess Medical Center Emergency Department",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 1767,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:1901.07031",
+   "arxiv_id": "1901.07031",
+   "doi": "10.1609/aaai.v33i01.3301590",
+   "baslik": "CheXpert: A Large Chest Radiograph Dataset with Uncertainty Labels and Expert Comparison",
+   "yil": 2019,
+   "tarih": "2019-01-21",
+   "gerekce": "224.316 göğüs röntgeni, belirsizlik etiketleri ve uzman karşılaştırması sunan CheXpert, temel sınıflandırma benchmark'ıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "CheXpert, a large dataset that contains 224,316 chest radiographs of 65,240 patients",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 2233,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2303.00915",
+   "arxiv_id": "2303.00915",
+   "doi": null,
+   "baslik": "BiomedCLIP: a multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs",
+   "yil": 2023,
+   "tarih": "2023-03-02",
+   "gerekce": "4,4 milyon makaleden 15 milyon görüntü-metin çifti (PMC-15M) ile eğitilmiş biyomedikal CLIP tarzı temel model.",
+   "gerekce_kokeni": "sef",
+   "alinti": "PMC-15M contains 15 million biomedical image-text pairs collected from 4.4 million scientific articles.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2304.10517",
+   "arxiv_id": "2304.10517",
+   "doi": "10.1016/j.media.2023.102918",
+   "baslik": "Segment Anything Model for Medical Image Analysis: an Experimental Study",
+   "yil": 2023,
+   "tarih": "2023-04-20",
+   "gerekce": "19 veri kümesinde SAM'in tek istemli başarısının IoU 0,11 ile 0,87 arasında büyük ölçüde değiştiğini gösteren merkezi kanıt.",
+   "gerekce_kokeni": "sef",
+   "alinti": "SAM's performance based on single prompts highly varies depending on the dataset and the task, from IoU=0.1135 for spine MRI to IoU=0.8650 for hip X-ray.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 795,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2108.07258",
+   "arxiv_id": "2108.07258",
+   "doi": null,
+   "baslik": "On the Opportunities and Risks of Foundation Models",
+   "yil": 2021,
+   "tarih": "2021-08-16",
+   "gerekce": "'Temel model' kavramını tanımlayan ve fırsat ile riskleri tartışan kavramsal temel rapor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We call these models foundation models to underscore their critically central yet incomplete character.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1016/j.media.2023.102996",
+   "arxiv_id": null,
+   "doi": "10.1016/j.media.2023.102996",
+   "baslik": "On the challenges and perspectives of foundation models for medical image analysis",
+   "yil": 2024,
+   "tarih": "2024-01",
+   "gerekce": "Tıbbi görüntü analizinde temel modellerin zorluklarını ve perspektiflerini ele alan, açık problemler için kilit derleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 278,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2504.03600",
+   "arxiv_id": "2504.03600",
+   "doi": null,
+   "baslik": "MedSAM2: Segment Anything in 3D Medical Images and Videos",
+   "yil": 2025,
+   "tarih": "2025-04-04",
+   "gerekce": "455.000'den fazla 3B görüntü-maske çifti ve 76.000 kareyle SAM 2'yi ince ayarlayarak 3B ve video segmentasyonuna genişletir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The model is developed by fine-tuning the Segment Anything Model 2 on a large medical dataset with over 455,000 3D image-mask pairs and 76,000 frames",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "dblp",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2308.02463",
+   "arxiv_id": "2308.02463",
+   "doi": "10.1038/s41467-025-62385-7",
+   "baslik": "Towards generalist foundation model for radiology by leveraging web-scale 2D&amp;3D medical data",
+   "yil": 2023,
+   "tarih": "2023-08-04",
+   "gerekce": "16 milyon 2B ve 3B tarama içeren MedMD veri kümesiyle radyoloji için genelci temel model geliştirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we construct a large-scale Medical Multi-modal Dataset, MedMD, which consists of 16M 2D and 3D medical scans",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 152,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1038/s41551-022-00936-9",
+   "arxiv_id": null,
+   "doi": "10.1038/s41551-022-00936-9",
+   "baslik": "Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning",
+   "yil": 2022,
+   "tarih": "2022-09-15",
+   "gerekce": "Açık etiket içermeyen göğüs röntgenleriyle eğitilen öz-denetimli modelin patoloji sınıflandırması yapabildiğini gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "a self-supervised model trained on chest X-ray images that lack explicit annotations performs pathology-classification tasks",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 459,
+   "rel": 2,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2111.06377",
+   "arxiv_id": "2111.06377",
+   "doi": "10.1109/cvpr52688.2022.01553",
+   "baslik": "Masked Autoencoders Are Scalable Vision Learners",
+   "yil": 2021,
+   "tarih": "2021-11-11",
+   "gerekce": "Rastgele yamaları maskeleyip pikselleri yeniden oluşturan MAE, tıbbi ön eğitimde yeniden kullanılan temel komşu alan yöntemidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our MAE approach is simple: we mask random patches of the input image and reconstruct the missing pixels.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 7864,
+   "rel": 2,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2304.12620",
+   "arxiv_id": "2304.12620",
+   "doi": "10.1016/j.media.2025.103547",
+   "baslik": "Medical SAM Adapter: Adapting Segment Anything Model for Medical Image Segmentation",
+   "yil": 2023,
+   "tarih": "2023-04-25",
+   "gerekce": "Tıbbi bilgi eksikliği nedeniyle zayıf kalan SAM'i adaptörle tıbbi segmentasyona uyarlayan etkili yöntem.",
+   "gerekce_kokeni": "sef",
+   "alinti": "However, recent studies and individual experiments have shown that SAM underperforms in medical image segmentation, since the lack of the medical specific knowledge.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "web"
+   ],
+   "atif": 532,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2411.19666",
+   "arxiv_id": "2411.19666",
+   "doi": null,
+   "baslik": "Multimodal Whole Slide Foundation Model for Pathology",
+   "yil": 2024,
+   "tarih": "2024-11-29",
+   "gerekce": "335.645 tam slayt görüntüsü ve patoloji raporlarıyla hizalanan çok kipli patoloji temel modeli TITAN.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose TITAN, a multimodal whole slide foundation model pretrained using 335,645 WSIs via visual self-supervised learning and vision-language alignment with corresponding pathology reports",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.52202/079017-3535",
+   "arxiv_id": null,
+   "doi": "10.52202/079017-3535",
+   "baslik": "FairMedFM: Fairness Benchmarking for Medical Imaging Foundation Models",
+   "yil": 2024,
+   "tarih": "2024",
+   "gerekce": "Tıbbi görüntüleme temel modelleri için adillik kıyaslaması sunarak önyargı açık problemine doğrudan yanıt verir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "FairMedFM: Fairness Benchmarking for Medical Imaging Foundation Models.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 23,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2311.18260",
+   "arxiv_id": "2311.18260",
+   "doi": null,
+   "baslik": "Consensus, dissensus and synergy between clinicians and specialist foundation models in radiology report generation",
+   "yil": 2023,
+   "tarih": "2023-11-30",
+   "gerekce": "16 radyoloğun yapay zekâ ve insan raporlarını ayrıntılı değerlendirdiği, rapor üretiminde klinik doğrulama kanıtı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To evaluate the quality of the AI-generated reports, a group of 16 certified radiologists provide detailed evaluations of AI-generated and human written reports for chest X-rays",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2304.08485",
+   "arxiv_id": "2304.08485",
+   "doi": "10.52202/075280-1516",
+   "baslik": "Visual Instruction Tuning",
+   "yil": 2023,
+   "tarih": "2023-04-17",
+   "gerekce": "Uçtan uca eğitilmiş büyük çok kipli model LLaVA, tıbbi MLLM'lerin yeniden kullandığı komşu alan yöntemidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "introduce LLaVA: Large Language and Vision Assistant, an end-to-end trained large multimodal model",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 2112,
+   "rel": 1,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1186/s12880-024-01253-0",
+   "arxiv_id": null,
+   "doi": "10.1186/s12880-024-01253-0",
+   "baslik": "A survey of the impact of self-supervised pretraining for diagnostic tasks in medical X-ray, CT, MRI, and ultrasound",
+   "yil": 2024,
+   "tarih": "2024-04-06",
+   "gerekce": "Öz-denetimli ön eğitimin, etiketsiz örnekler fazla olduğunda tam denetime göre performansı genellikle artırdığını gösteren sistematik derleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The most pertinent finding is that self-supervised pretraining generally improves downstream task performance compared to full supervision, most prominently when unlabelled examples greatly outnumber labelled examples",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 52,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2004.13175",
+   "arxiv_id": "2004.13175",
+   "doi": "10.1016/j.compbiomed.2020.104115",
+   "baslik": "A scoping review of transfer learning research on medical image analysis using ImageNet",
+   "yil": 2020,
+   "tarih": "2020-04-27",
+   "gerekce": "ImageNet ile önceden eğitilmiş CNN'lerin tıbbi görüntü analizine aktarımını inceleyen transfer öğrenme kapsam taraması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Employing transfer learning (TL) with convolutional neural networks (CNNs), well-trained on non-medical ImageNet dataset, has shown promising results for medical image analysis in recent years",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 479,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2309.08842",
+   "arxiv_id": "2309.08842",
+   "doi": "10.1016/j.media.2024.103310",
+   "baslik": "MA-SAM: Modality-agnostic SAM Adaptation for 3D Medical Image Segmentation",
+   "yil": 2023,
+   "tarih": "2023-09-16",
+   "gerekce": "Ağırlıkların küçük bir kısmını güncelleyen parametre-verimli stratejiyle SAM'i 3B tıbbi segmentasyona uyarlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our method roots in the parameter-efficient fine-tuning strategy to update only a small portion of weight increments while preserving the majority of SAM's pre-trained weights",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 246,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2306.13465",
+   "arxiv_id": "2306.13465",
+   "doi": "10.1016/j.media.2024.103324",
+   "baslik": "3DSAM-adapter: Holistic adaptation of SAM from 2D to 3D for promptable tumor segmentation",
+   "yil": 2023,
+   "tarih": "2023-06-23",
+   "gerekce": "Ön eğitilmiş parametrelerin çoğunu koruyarak SAM'i hacimsel girdilere ve istemli tümör segmentasyonuna aktarır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Through a holistically designed scheme for architecture modification, we transfer the SAM to support volumetric inputs while retaining the majority of its pre-trained parameters for reuse",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 134,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2311.18681",
+   "arxiv_id": "2311.18681",
+   "doi": null,
+   "baslik": "RaDialog: A Large Vision-Language Model for Radiology Report Generation and Conversational Assistance",
+   "yil": 2023,
+   "tarih": "2023-11-30",
+   "gerekce": "Görüntü özellikleri ve patoloji bulgularını LLM ile birleştirip parametre-verimli ince ayarla rapor üretimi ve diyalog sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "RaDialog effectively integrates visual image features and structured pathology findings with a large language model (LLM) while simultaneously adapting it to a specialized domain using parameter-efficient fine-tuning",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1101/2025.07.13.25331222",
+   "arxiv_id": null,
+   "doi": "10.1101/2025.07.13.25331222",
+   "baslik": "A Clinically-Informed Framework for Evaluating Vision-Language Models in Radiology Report Generation: Taxonomy of Errors and Risk-Aware Metric",
+   "yil": 2025,
+   "tarih": "2025-07-14",
+   "gerekce": "Rapor üretimi için hata taksonomisi ve klinik risk ağırlıklı CREST metriğini önererek klinik değerlendirme açığını ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We further introduce a risk-aware evaluation metric, the Clinical Risk-weighted Error Score for Text-generation (CREST)",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 5,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.3390/info16020136",
+   "arxiv_id": null,
+   "doi": "10.3390/info16020136",
+   "baslik": "A Survey on Multimodal Large Language Models in Radiology for Report Generation and Visual Question Answering",
+   "yil": 2025,
+   "tarih": "2025-02-12",
+   "gerekce": "Radyolojide MLLM'lerin rapor üretimi ve görsel soru-cevaplamadaki evrimini inceleyen güncel derleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This survey explores the evolution of MLLMs in radiology, focusing on radiology report generation (RRG) and radiology visual question answering (RVQA), where MLLMs leverage",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 38,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1109/iccv48922.2021.00391",
+   "arxiv_id": null,
+   "doi": "10.1109/iccv48922.2021.00391",
+   "baslik": "GLoRIA: A Multimodal Global-Local Representation Learning Framework for Label-efficient Medical Image Recognition",
+   "yil": 2021,
+   "tarih": "2021-10",
+   "gerekce": "Etiket-verimli tıbbi tanıma için global-lokal görüntü-metin temsil öğrenimi sunan GLoRIA, kontrastif ön eğitimin erken örneğidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "GLoRIA: A Multimodal Global-Local Representation Learning Framework for Label-efficient Medical Image Recognition.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 469,
+   "rel": 2,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1148/ryai.230136",
+   "arxiv_id": null,
+   "doi": "10.1148/ryai.230136",
+   "baslik": "The Role of Federated Learning Models in Medical Imaging",
+   "yil": 2023,
+   "tarih": "2023-05-01",
+   "gerekce": "Tıbbi görüntülemede federe öğrenmenin rolünü ele alır; gizlilik açık problemine doğrudan ilişkindir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The Role of Federated Learning Models in Medical Imaging.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 24,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

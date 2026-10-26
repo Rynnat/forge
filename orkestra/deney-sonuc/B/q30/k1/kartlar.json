@@ -1,0 +1,1006 @@
+[
+ {
+  "id": "doi:10.1145/3540250.3549164",
+  "baslik": "RoboFuzz: fuzzing robotic systems over robot operating system (ROS) for finding correctness bugs",
+  "yil": 2022,
+  "cites": 36,
+  "kaynaklar": [
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "ROS üzerinde fuzzing; doğruluk hatalarına odaklı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.14722/ndss.2021.24096",
+  "baslik": "PGFUZZ: Policy-Guided Fuzzing for Robotic Vehicles",
+  "yil": 2021,
+  "cites": 51,
+  "kaynaklar": [
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Robotik araçlar için politika yönlendirmeli fuzzing",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2208.02615",
+  "baslik": "SROS2: Usable Cyber Security Tools for ROS 2",
+  "yil": 2022,
+  "cites": 48,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "ROS 2 güvenlik araçları; DevSecOps yaklaşımı",
+  "alinti": "Built upon DDS as its default communication middleware and used in safety-critical scenarios, adding security to robots and ROS computational graphs is increasingly becoming a concern."
+ },
+ {
+  "id": "doi:10.1007/s10207-021-00545-8",
+  "baslik": "Robotics cyber security: vulnerabilities, attacks, countermeasures, and recommendations",
+  "yil": 2021,
+  "cites": 278,
+  "kaynaklar": [
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Robot siber güvenliğine genel bakış",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-030-20190-6_8",
+  "baslik": "Penetration Testing ROS",
+  "yil": 2019,
+  "cites": 30,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "ROS sızma testi; kısa başlık",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1002/rob.21513",
+  "baslik": "Unmanned Aircraft Capture and Control Via GPS Spoofing",
+  "yil": 2014,
+  "cites": 619,
+  "kaynaklar": [
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "İHA'nın GPS sahteciliğiyle ele geçirilmesi",
+  "alinti": "During post‐capture control, the spoofer manipulates the true state of the UAV, potentially resulting in the UAV flying far from its flight plan without raising alarms."
+ },
+ {
+  "id": "doi:10.1109/sp.2017.20",
+  "baslik": "An Experimental Security Analysis of an Industrial Robot Controller",
+  "yil": 2017,
+  "cites": 132,
+  "kaynaklar": [
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Endüstriyel robot kontrolcüsü güvenlik analizi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2410.13691",
+  "baslik": "Jailbreaking LLM-Controlled Robots",
+  "yil": 2024,
+  "cites": 21,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM kontrollü robotlara jailbreak saldırısı",
+  "alinti": "Unlike existing, textual attacks on LLM chatbots, RoboPAIR elicits harmful physical actions from LLM-controlled robots, a phenomenon we experimentally demonstrate in three scenarios"
+ },
+ {
+  "id": "doi:10.1109/iros.2016.7759659",
+  "baslik": "Application-level security for ROS-based applications",
+  "yil": 2016,
+  "cites": 62,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "ROS uygulamaları için uygulama katmanı güvenliği",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icara51699.2021.9376468",
+  "baslik": "Who Controls Your Robot? An Evaluation of ROS Security Mechanisms",
+  "yil": 2021,
+  "cites": 24,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ROS güvenlik mekanizmalarının değerlendirmesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-319-91590-6_11",
+  "baslik": "SROS1: Using and Developing Secure ROS1 Systems",
+  "yil": 2018,
+  "cites": 15,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "ROS1 için güvenli sistem geliştirme",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.cose.2024.104157",
+  "baslik": "Fuzzing Drones for Anomaly Detection: A Systematic Literature Review",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Dronlar için fuzzing ve anomali tespiti derlemesi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2205.04662",
+  "baslik": "SoK: Rethinking Sensor Spoofing Attacks against Robotic Vehicles from a Systematic View",
+  "yil": 2022,
+  "cites": 30,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Robotik araçlarda sensör sahteciliği SoK çalışması",
+  "alinti": "Robotic Vehicles (RVs) have gained great popularity over the past few years. Meanwhile, they are also demonstrated to be vulnerable to sensor spoofing attacks."
+ },
+ {
+  "id": "doi:10.1109/icra46639.2022.9811701",
+  "baslik": "ROZZ: Property-based Fuzzing for Robotic Programs in ROS",
+  "yil": 2022,
+  "cites": 15,
+  "kaynaklar": [
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "ROS robotik programları için özellik tabanlı fuzzing",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-030-30619-9_10",
+  "baslik": "Detection of GPS Spoofing Attack on Unmanned Aerial Vehicle System",
+  "yil": 2019,
+  "cites": 127,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "İHA sistemlerinde GPS sahteciliği tespiti",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icra.2019.8794451",
+  "baslik": "Scanning the Internet for ROS: A View of Security in Robotics Research",
+  "yil": 2019,
+  "cites": 69,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ROS'un internette açığa çıkma durumu taraması",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1049/icp.2022.2422",
+  "baslik": "Security in Robot Operating Systems (ROS): analytical review study",
+  "yil": 2022,
+  "cites": 4,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ROS güvenliğinin analitik incelemesi, doğrudan ilgili",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.14722/vehiclesec.2023.23066",
+  "baslik": "Cooperative Perception for Safe Control of Autonomous Vehicles under LiDAR Spoofing Attacks",
+  "yil": 2023,
+  "cites": 14,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LiDAR sahteciliği altında güvenli özerk araç kontrolü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.sysarc.2020.101838",
+  "baslik": "How To Secure Autonomous Mobile Robots? An Approach With Fuzzing, Detection And Mitigation",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Otonom mobil robotlarda fuzzing, tespit ve azaltma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.26636/jtit.2019.131019",
+  "baslik": "Cyber-security for Mobile Service Robots – Challenges for Cyber-physical System Safety",
+  "yil": 2019,
+  "cites": 16,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Siber-fiziksel robot tehditleri ve açık sorunlar incelemesi",
+  "alinti": "Based on the review of literature and own analyses, unresolved issues regarding the cyber-security of robot systems are presented and discussed."
+ },
+ {
+  "id": "doi:10.1016/j.robot.2017.09.017",
+  "baslik": "Security For The Robot Operating System",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "ROS için güvenlik, doğrudan ilgili",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1117/12.2016189",
+  "baslik": "A Preliminary Cyber-Physical Security Assessment Of The Robot Operating System (ROS)",
+  "yil": 2013,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "ROS siber-fiziksel güvenlik ön değerlendirmesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/lars/sbr/wre51543.2020.9307107",
+  "baslik": "Security on ROS: analyzing and exploiting vulnerabilities of ROS-based systems",
+  "yil": 2020,
+  "cites": 24,
+  "kaynaklar": [
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "ROS tabanlı sistemlerde zafiyet analizi ve istismarı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-031-64954-7_7",
+  "baslik": "The Security Analysis Of ROS2 Communication",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "ROS2 iletişiminin güvenlik analizi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3664476.3670442",
+  "baslik": "DDS Security+: Enhancing the Data Distribution Service With TPM-based Remote Attestation",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "DDS güvenliği ve TPM uzaktan doğrulama; ara katman güvenliği",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2103.05789",
+  "baslik": "Cybersecurity in Robotics: Challenges, Quantitative Modeling, and Practice",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Robotlar için nicel güvenlik modelleme ve zafiyet puanlama",
+  "alinti": "covering vulnerability scoring systems tailored to robotic systems, and accounting for the highly distributed nature of robots"
+ },
+ {
+  "id": "doi:10.1145/3634737.3656288",
+  "baslik": "A Formal Analysis of Data Distribution Service Security",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Formal analysis of DDS security; protocol verification.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2506.15343",
+  "baslik": "Offensive Robot Cybersecurity",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Robotlarda otomatik saldırgan güvenlik, zafiyet tespiti",
+  "alinti": "Offensive Robot Cybersecurity introduces a groundbreaking approach by advocating for offensive security methods empowered by means of automation."
+ },
+ {
+  "id": "doi:10.1007/978-981-13-3702-4_1",
+  "baslik": "Enhancing Security in ROS",
+  "yil": 2019,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "ROS güvenliğinin iyileştirilmesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icce53296.2022.9730540",
+  "baslik": "LiDAR Spoofing Attack Detection in Autonomous Vehicles",
+  "yil": 2022,
+  "cites": 16,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Özerk araçlarda LiDAR sahteciliği tespiti",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icra55743.2025.11127490",
+  "baslik": "Investigating Security Threats in Multi-Tenant ROS 2 Systems",
+  "yil": 2025,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Çok kiracılı ROS 2 sistemlerinde güvenlik tehditleri",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s10207-025-01041-z",
+  "baslik": "A Systematic Review On Cybersecurity Of Robotic Systems: Vulnerabilities Trends, Threats, Attacks, Challenges, And Proposed Framework",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Robotik siber güvenlik sistematik derlemesi; merkezi",
+  "alinti": "A Systematic Review On Cybersecurity Of Robotic Systems: Vulnerabilities Trends, Threats, Attacks, Challenges, And Proposed Framework"
+ },
+ {
+  "id": "doi:10.1145/3469261.3469406",
+  "baslik": "Temporal Consistency Checks to Detect LiDAR Spoofing Attacks on Autonomous Vehicle Perception",
+  "yil": 2021,
+  "cites": 30,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LiDAR sahteciliği için zamansal tutarlılık kontrolü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3620665.3640425",
+  "baslik": "Multi-Dimensional and Message-Guided Fuzzing for Robotic Programs in Robot Operating System",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "ROS robotik programları için mesaj tabanlı fuzzing",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/pst62714.2024.10788065",
+  "baslik": "Cybersecurity in Industry 5.0: Open Challenges and Future Directions",
+  "yil": 2024,
+  "cites": 25,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Endüstri 5.0 siber güvenlik açık sorunları, genel çerçeve",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/cogsima.2017.7929597",
+  "baslik": "Cybersecurity Issues In Robotics",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Robotik siber güvenlik sorunlarına genel bakış",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/lra.2023.3290509",
+  "baslik": "Learning Robust and Agile Legged Locomotion Using Adversarial Motion Priors",
+  "yil": 2023,
+  "cites": 106,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Adversarial terimi eğitim yöntemi; saldırı değil",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1201/9781351251389-20",
+  "baslik": "On the Security of Robotic Applications Using ROS",
+  "yil": 2018,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "ROS tabanlı robot uygulamalarının güvenliği",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/picc67314.2025.11291388",
+  "baslik": "Detection of LiDAR and Camera Sensor Spoofing in Autonomous Vehicles",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LiDAR ve kamera sahteciliği tespiti",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.cose.2024.104223",
+  "baslik": "FuzzAGG: A fuzzing-driven attack graph generation framework for industrial robot systems",
+  "yil": 2025,
+  "cites": 4,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Endüstriyel robot için fuzzing tabanlı saldırı grafiği",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3029798.3038437",
+  "baslik": "A Study On ROS Vulnerabilities And Countermeasure",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "ROS zafiyetleri ve karşı önlemler; doğrudan ilgili",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/syscon.2017.7934755",
+  "baslik": "Secure Communication For The Robot Operating System",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "ROS için güvenli iletişim; doğrudan ilgili",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.4018/978-1-5225-2154-9",
+  "baslik": "Detecting And Mitigating Robotic Cyber Security Risks",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Robotik siber güvenlik riskleri ve azaltma",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2407.20242",
+  "baslik": "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Jailbreaking embodied LLM robots; directly relevant to S6.",
+  "alinti": "In response, we introduce BadRobot, a novel attack paradigm aiming to make embodied LLMs violate safety and ethical constraints through typical voice-based user-system interactions."
+ },
+ {
+  "id": "doi:10.3390/s18051643",
+  "baslik": "Analyzing Cyber-Physical Threats On Robotic Platforms",
+  "yil": 2018,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Robotik platformlara yönelik siber-fiziksel tehditler",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3419474",
+  "baslik": "Stealthy Attacks against Robotic Vehicles Protected by Control-based Intrusion Detection Techniques",
+  "yil": 2021,
+  "cites": 36,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Stealthy attacks evading control-based intrusion detection in robotic vehicles.",
+  "alinti": "In this article, we demonstrate the vulnerabilities in control-based intrusion detection techniques and propose three kinds of stealthy attacks that evade detection and disrupt RV missions."
+ },
+ {
+  "id": "doi:10.1109/tits.2022.3197817",
+  "baslik": "A Sensor Fusion-Based GNSS Spoofing Attack Detection Framework for Autonomous Vehicles",
+  "yil": 2022,
+  "cites": 97,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Otonom araçlarda GNSS sahteciliği tespiti, sensör füzyonu",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3433210.3453106",
+  "baslik": "Robust Roadside Physical Adversarial Attack Against Deep Learning in Lidar Perception Modules",
+  "yil": 2021,
+  "cites": 39,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LiDAR algılamaya fiziksel çekişmeli saldırı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3672608.3707869",
+  "baslik": "Data Distribution and Redistribution - A formal and practical Analysis of the DDS Security Standard",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Formal analysis of DDS security standard; directly relevant.",
+  "alinti": "Data Distribution and Redistribution - A formal and practical Analysis of the DDS Security Standard."
+ },
+ {
+  "id": "doi:10.1016/j.micpro.2022.104726",
+  "baslik": "Intrusion, anomaly, and attack detection in smart vehicles",
+  "yil": 2023,
+  "cites": 41,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Akıllı araçlarda saldırı ve anomali tespiti",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s11277-020-07211-7",
+  "baslik": "Capture of UAVs Through GPS Spoofing Using Low-Cost SDR Platforms",
+  "yil": 2020,
+  "cites": 45,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Düşük maliyetli SDR ile İHA GPS sahteciliği",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ceect50755.2020.9298680",
+  "baslik": "Learning Locomotion For Legged Robots Based on Reinforcement Learning: A Survey",
+  "yil": 2020,
+  "cites": 8,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Bacaklı lokomosyon RL anketi; güvenlik odağı yok",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/gws.2018.8686727",
+  "baslik": "Capture of UAVs Through GPS Spoofing",
+  "yil": 2018,
+  "cites": 38,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "GPS sahteciliğiyle İHA ele geçirme",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.24963/ijcai.2017/525",
+  "baslik": "Tactics of Adversarial Attack on Deep Reinforcement Learning Agents",
+  "yil": 2017,
+  "cites": 216,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Adversarial timing attacks on deep RL agents; central to S6.",
+  "alinti": "In the strategically-timed attack, the adversary aims at minimizing the agent's reward by only attacking the agent at a small subset of time steps in an episode."
+ },
+ {
+  "id": "doi:10.1109/vtc2021-fall52928.2021.9625567",
+  "baslik": "GPS Location Spoofing Attack Detection for Enhancing the Security of Autonomous Vehicles",
+  "yil": 2021,
+  "cites": 35,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Otonom araçlarda GPS sahteciliği tespiti",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.2139/ssrn.4747893",
+  "baslik": "Image-Based Intrusion Detection System for Gps Spoofing Cyberattacks in Unmanned Aerial Vehicles",
+  "yil": 2024,
+  "cites": 32,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "İHA'da GPS sahteciliği için görüntü tabanlı saldırı tespiti",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/iscc.2013.6754976",
+  "baslik": "Data Distribution Service (DDS): A performance comparison of OpenSplice and RTI implementations",
+  "yil": 2013,
+  "cites": 39,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "DDS performans karşılaştırması; güvenlik odağı yok",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.18653/v1/2025.emnlp-main.1128",
+  "baslik": "DiffusionAttacker: Diffusion-Driven Prompt Manipulation for LLM Jailbreak",
+  "yil": 2025,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LLM jailbreak; genel, robot kontrolüne özgü değil",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s11633-018-1137-8",
+  "baslik": "A New Approach to Estimate True Position of Unmanned Aerial Vehicles in an INS/GPS Integration System in GPS Spoofing Attack Conditions",
+  "yil": 2018,
+  "cites": 14,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "İHA'da GPS sahteciliğine karşı sensör füzyonu",
+  "alinti": "A New Approach to Estimate True Position of Unmanned Aerial Vehicles in an INS/GPS Integration System in GPS Spoofing Attack Conditions"
+ },
+ {
+  "id": "doi:10.1109/icves.2015.7396919",
+  "baslik": "Survey on vehicular attacks - building a vulnerability database",
+  "yil": 2015,
+  "cites": 18,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Vehicle attacks; vulnerability database approach transferable to robots.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/urai.2018.8442201",
+  "baslik": "Automated Deep Reinforcement Learning Environment for Hardware of a Modular Legged Robot",
+  "yil": 2018,
+  "cites": 31,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Bacaklı robot RL ortamı; güvenlik odağı yok",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s12524-020-01225-1",
+  "baslik": "Unmanned Aerial Vehicle’s Vulnerability to GPS Spoofing a Review",
+  "yil": 2020,
+  "cites": 25,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "İHA'nın GPS sahteciliği zafiyetine dair derleme",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2405.12424",
+  "baslik": "Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Bacaklı lokomosyon denetleyicilerine karşı adversarial saldırılar",
+  "alinti": "Our research demonstrates that, even state-of-the-art robust controllers can fail significantly under well-designed, low-magnitude adversarial sequence."
+ },
+ {
+  "id": "doi:10.1109/jiot.2025.3605066",
+  "baslik": "Internet of Vehicles Security Threats, Countermeasures, Open Challenges With Future Research Directions",
+  "yil": 2025,
+  "cites": 23,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Araç interneti güvenliği; robot dışı, genel tehditler",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-031-42519-6_3",
+  "baslik": "Fuzzing Robotic Software Using HPC",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Robotik yazılımda HPC ile fuzzing",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icra48506.2021.9561627",
+  "baslik": "Fuzzing Mobile Robot Environments For Fast Automated Crash Detection",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Robot software fuzzing for crash detection.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/prdc.2018.00026",
+  "baslik": "Effects of GPS Spoofing on Unmanned Aerial Vehicles",
+  "yil": 2018,
+  "cites": 37,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "GPS sahteciliğinin İHA üzerindeki etkileri",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/acsac63791.2024.00085",
+  "baslik": "Assessing UAV Sensor Spoofing: More Than A GNSS Problem",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "İHA sensör sahteciliği; GNSS ötesi saldırı yüzeyi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3450267.3450537",
+  "baslik": "Query-based targeted action-space adversarial policies on deep reinforcement learning agents",
+  "yil": 2021,
+  "cites": 28,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "DRL ajanlarına karşı eylem uzayı düşmanca politikalar",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.engappai.2020.104021",
+  "baslik": "Learning adversarial attack policies through multi-objective reinforcement learning",
+  "yil": 2020,
+  "cites": 22,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Adversarial politika öğrenme; genel pekiştirmeli öğrenme",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icassp49660.2025.10889949",
+  "baslik": "Prompt Crossing: Evaluating Whether LLM Response Stem from Jailbreak or Normal Prompt",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LLM jailbreak tespiti; robotlara doğrudan değil, genel LLM.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.11003/jpnt.2015.4.2.057",
+  "baslik": "Effect of Spoofing on Unmanned Aerial Vehicle using Counterfeited GPS Signal",
+  "yil": 2015,
+  "cites": 72,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "İHA üzerinde sahte GPS sinyali etkisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.3390/jmse13122269",
+  "baslik": "Position Spoofing Attacks On Unmanned Surface Vehicles",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "GPS spoofing on unmanned surface vehicles.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/iwcmc51323.2021.9498734",
+  "baslik": "A Lightweight Security Technique For Unmanned Aerial Vehicles Against GPS Spoofing Attack",
+  "yil": 2021,
+  "cites": 14,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "İHA için GPS sahteciliği savunması",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/malware.2018.8659368",
+  "baslik": "Attacking OMG Data Distribution Service (DDS) Based Real-Time Mission Critical Distributed Systems",
+  "yil": 2018,
+  "cites": 22,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "DDS tabanlı sistemlere yönelik saldırılar; protokol güvenliği.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3460120.3485377",
+  "baslik": "Can We Use Arbitrary Objects to Attack LiDAR Perception in Autonomous Driving?",
+  "yil": 2021,
+  "cites": 81,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LiDAR algılama saldırısı; otonom araç bağlamı.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/jsen.2022.3212977",
+  "baslik": "Analytic Models of a Loosely Coupled GNSS/INS/LiDAR Kalman Filter Considering Update Frequency Under a Spoofing Attack",
+  "yil": 2022,
+  "cites": 20,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "GNSS/INS/LiDAR Kalman filter under spoofing attack.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/iscid.2014.131",
+  "baslik": "Civilian Unmanned Aerial Vehicle Vulnerability to GPS Spoofing Attacks",
+  "yil": 2014,
+  "cites": 15,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Sivil İHA'larda GPS sahteciliği zafiyeti",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/rasse64831.2025.11315464",
+  "baslik": "Resilience of Data Distribution Service (DDS) Under Simulated Cyber Threats in an Unmanned Systems Network",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "DDS dayanıklılığı, insansız sistem ağı; doğrudan ilgili",
+  "alinti": "Resilience of Data Distribution Service (DDS) Under Simulated Cyber Threats in an Unmanned Systems Network"
+ },
+ {
+  "id": "doi:10.1109/access.2025.3595598",
+  "baslik": "Security Design for Data Distribution Service Based on Secure Onboard Communication",
+  "yil": 2025,
+  "cites": 3,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "DDS güvenlik tasarımı; doğrudan ilgili",
+  "alinti": ""
+ }
+]

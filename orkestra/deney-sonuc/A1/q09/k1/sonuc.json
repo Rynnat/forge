@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a1-20261026-071015-9b414c",
+ "sistem": "A-taban-a1",
+ "mod": "a1",
+ "soru": "SMT tabanlı sınırlı model denetimi ile C/C++ yazılımının biçimsel doğrulanması ve bu alandaki araçların gelişimi üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-04-25",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 3.0,
+ "maliyet_usd": 1.1474,
+ "sure_s": 190.5,
+ "web_arama": 31,
+ "token": {
+  "in": 532377,
+  "out": 42705,
+  "cache_read": 397609,
+  "cache_write": 48722
+ },
+ "son_rapor_token_tahmini": 3008,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: SMT tabanlı sınırlı model denetimi ile C/C++ yazılımının biçimsel doğrulanması ve bu alandaki araçların gelişimi üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-04-25. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first) — the kind a careful expert survey published right after the cutoff would cite. Give each with its arXiv id and/or DOI.\n\nYou MUST research this with web search rather than answer from memory: search for the important works, and verify each listed work's title, publication date and identifier on the web (e.g. arxiv.org, doi.org, the publisher or DBLP page) before including it.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1007/3-540-49059-0_14",
+   "arxiv_id": null,
+   "doi": "10.1007/3-540-49059-0_14",
+   "baslik": "Symbolic Model Checking without BDDs",
+   "yil": 1999,
+   "gerekce": "This paper introduced bounded model checking by reducing the check to propositional satisfiability (SAT), and every later SAT/SMT-based BMC tool for C/C++ builds on it."
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1007/978-3-540-24730-2_15",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-540-24730-2_15",
+   "baslik": "A Tool for Checking ANSI-C Programs",
+   "yil": 2004,
+   "gerekce": "It presented CBMC, the first widely used bit-precise bounded model checker for C, and it set the standard way of unrolling loops and encoding programs as formulas."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:0907.2072",
+   "arxiv_id": "0907.2072",
+   "doi": "10.1109/ASE.2009.63",
+   "baslik": "SMT-Based Bounded Model Checking for Embedded ANSI-C Software",
+   "yil": 2009,
+   "gerekce": "This ASE 2009 paper introduced ESBMC and showed that SMT solvers (bit-vectors, arrays) handle embedded C verification better than plain SAT encodings."
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1007/s10009-008-0091-0",
+   "arxiv_id": null,
+   "doi": "10.1007/s10009-008-0091-0",
+   "baslik": "Bounded model checking of software using SMT solvers instead of SAT solvers",
+   "yil": 2009,
+   "gerekce": "It was the earliest systematic proposal to replace CBMC-style SAT encodings with SMT theories, which give more compact formulas for software BMC."
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1016/s0065-2458(03)58003-2",
+   "arxiv_id": null,
+   "doi": "10.1016/S0065-2458(03)58003-2",
+   "baslik": "Bounded Model Checking",
+   "yil": 2003,
+   "gerekce": "This is the standard survey of the theory of BMC, including completeness thresholds and encodings, and it is the main reference for the field."
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1109/tse.2011.59",
+   "arxiv_id": null,
+   "doi": "10.1109/TSE.2011.59",
+   "baslik": "SMT-Based Bounded Model Checking for Embedded ANSI-C Software",
+   "yil": 2012,
+   "gerekce": "The extended IEEE TSE version gives the full account of how ESBMC encodes C semantics (pointers, unions, arithmetic) into SMT theories and compares several solvers."
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1007/978-3-642-27705-4_12",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-642-27705-4_12",
+   "baslik": "LLBMC: Bounded Model Checking of C and C++ Programs Using a Compiler IR",
+   "yil": 2012,
+   "gerekce": "It showed SMT-based BMC of C and C++ working on the LLVM intermediate representation, which avoids parsing the full source languages."
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1145/1985793.1985839",
+   "arxiv_id": null,
+   "doi": "10.1145/1985793.1985839",
+   "baslik": "Verifying multi-threaded software using SMT-based context-bounded model checking",
+   "yil": 2011,
+   "gerekce": "This was the first work to systematically compare lazy, schedule-recording and underapproximation-widening encodings for SMT-based context-bounded verification of multithreaded C."
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.1007/978-3-642-54862-8_26",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-642-54862-8_26",
+   "baslik": "CBMC – C Bounded Model Checker",
+   "yil": 2014,
+   "gerekce": "This SV-COMP tool paper documents the mature CBMC architecture and is the standard citation for CBMC in competition results."
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1145/3238147.3240481",
+   "arxiv_id": null,
+   "doi": "10.1145/3238147.3240481",
+   "baslik": "ESBMC 5.0: An Industrial-Strength C Model Checker",
+   "yil": 2018,
+   "gerekce": "It describes the redesigned ESBMC with its SMT backends and k-induction, and it marks the tool's move toward industrial-scale use."
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1007/978-3-642-23702-7_26",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-642-23702-7_26",
+   "baslik": "Software Verification Using k-Induction",
+   "yil": 2011,
+   "gerekce": "It brought k-induction to C software verification (K-Inductor, built on CBMC), giving BMC a way to prove properties over unbounded loops."
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1007/s10009-015-0407-9",
+   "arxiv_id": null,
+   "doi": "10.1007/s10009-015-0407-9",
+   "baslik": "Handling loops in bounded model checking of C programs via k-induction",
+   "yil": 2017,
+   "gerekce": "It combined k-induction with SMT-based BMC in ESBMC and partly addresses BMC's main limitation: it cannot prove programs with unbounded loops correct."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:1301.1629",
+   "arxiv_id": "1301.1629",
+   "doi": "10.1007/978-3-642-39799-8_9",
+   "baslik": "Partial Orders for Efficient Bounded Model Checking of Concurrent Software",
+   "yil": 2013,
+   "gerekce": "Its partial-order encoding made BMC of concurrent C scale and supports weak memory models (x86, Power)."
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1007/978-3-319-08867-9_39",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-319-08867-9_39",
+   "baslik": "Bounded Model Checking of Multi-threaded C Programs via Lazy Sequentialization",
+   "yil": 2014,
+   "gerekce": "Lazy-CSeq turns concurrent C into sequential programs that existing BMC tools can check, and it dominated the SV-COMP concurrency category."
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1145/3377813.3381347",
+   "arxiv_id": null,
+   "doi": "10.1145/3377813.3381347",
+   "baslik": "Code-level model checking in the software development workflow",
+   "yil": 2020,
+   "gerekce": "It reports on AWS's industrial use of CBMC with continuous-integration proofs and highlights practical open problems such as proof maintenance and writing specifications."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2107.01093",
+   "arxiv_id": "2107.01093",
+   "doi": "10.1002/stvr.1793",
+   "baslik": "Model checking C++ programs",
+   "yil": 2022,
+   "gerekce": "It is the most comprehensive SMT-based BMC treatment of C++ features (templates, inheritance, polymorphism, exceptions, STL models)."
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1109/ecbs.2013.15",
+   "arxiv_id": null,
+   "doi": "10.1109/ECBS.2013.15",
+   "baslik": "SMT-Based Bounded Model Checking of C++ Programs",
+   "yil": 2013,
+   "gerekce": "It introduced ESBMC++ and verifies C++ through an operational model of the standard libraries."
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1007/978-3-540-78800-3_24",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-540-78800-3_24",
+   "baslik": "Z3: An Efficient SMT Solver",
+   "yil": 2008,
+   "gerekce": "Z3 is the SMT backend most widely used by software BMC tools, so its performance directly limits how far these verifiers scale."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2302.02384",
+   "arxiv_id": "2302.02384",
+   "doi": null,
+   "baslik": "CBMC: The C Bounded Model Checker",
+   "yil": 2023,
+   "gerekce": "This up-to-date overview covers CBMC's architecture, how to use it, and how its performance has developed over a decade."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:1506.05671",
+   "arxiv_id": "1506.05671",
+   "doi": "10.1007/978-3-662-48288-9_9",
+   "baslik": "Safety Verification and Refutation by k-Invariants and k-Induction",
+   "yil": 2015,
+   "gerekce": "Its kIkI algorithm combines abstract interpretation, BMC and k-induction in one framework (implemented in 2LS)."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:1409.5872",
+   "arxiv_id": "1409.5872",
+   "doi": "10.1007/s00165-017-0419-1",
+   "baslik": "Incremental bounded model checking for embedded software",
+   "yil": 2017,
+   "gerekce": "It showed that incremental SAT-based BMC cuts runtimes by about an order of magnitude on industrial automotive C code."
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1007/978-3-030-17502-3_15",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-030-17502-3_15",
+   "baslik": "ESBMC v6.0: Verifying C Programs Using k-Induction and Invariant Inference",
+   "yil": 2019,
+   "gerekce": "It strengthened k-induction with interval invariant inference, a step forward in proving correctness of C programs, not just finding bugs."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2312.14746",
+   "arxiv_id": "2312.14746",
+   "doi": "10.1007/978-3-031-57256-2_24",
+   "baslik": "ESBMC v7.4: Harnessing the Power of Intervals",
+   "yil": 2024,
+   "gerekce": "It adds interval analysis and contractors to SMT-based BMC and represents the current state of the tool."
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1007/978-3-031-57256-2_15",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-031-57256-2_15",
+   "baslik": "State of the Art in Software Verification and Witness Validation: SV-COMP 2024",
+   "yil": 2024,
+   "gerekce": "This competition report gives a comparative assessment of BMC-based C verifiers and witness validation."
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1145/3691620.3695512",
+   "arxiv_id": null,
+   "doi": "10.1145/3691620.3695512",
+   "baslik": "LLM-Generated Invariants for Bounded Model Checking Without Loop Unrolling",
+   "yil": 2024,
+   "gerekce": "It uses LLM-generated loop invariants to remove loop unrolling from BMC, and it received an ACM SIGSOFT Distinguished Paper Award at ASE 2024."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2305.14752",
+   "arxiv_id": "2305.14752",
+   "doi": null,
+   "baslik": "A New Era in Software Security: Towards Self-Healing Software via Large Language Models and Formal Verification",
+   "yil": 2023,
+   "gerekce": "Its ESBMC-AI loop feeds BMC counterexamples to an LLM to repair C vulnerabilities, opening the LLM+BMC line of research."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2307.02192",
+   "arxiv_id": "2307.02192",
+   "doi": "10.1145/3617555.3617874",
+   "baslik": "The FormAI Dataset: Generative AI in Software Security Through the Lens of Formal Verification",
+   "yil": 2023,
+   "gerekce": "It labeled about 112,000 AI-generated C programs with ESBMC, creating a large benchmark that uses BMC to assess the security of LLM-generated code."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2308.05649",
+   "arxiv_id": "2308.05649",
+   "doi": null,
+   "baslik": "ESBMC v7.3: Model Checking C++ Programs Using Clang AST",
+   "yil": 2023,
+   "gerekce": "It moved C++ BMC to a Clang-based front end, addressing the open problem of supporting modern C++ standards."
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1007/978-3-031-37703-7_1",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-031-37703-7_1",
+   "baslik": "Bitwuzla",
+   "yil": 2023,
+   "gerekce": "It is a leading bit-vector/floating-point SMT solver, directly relevant to bit-precise C verification, and won a CAV Distinguished Paper Award."
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1007/11513988_31",
+   "arxiv_id": null,
+   "doi": "10.1007/11513988_31",
+   "baslik": "F-Soft: Software Verification Platform",
+   "yil": 2005,
+   "gerekce": "It was an early industrial SAT-based BMC platform for C (NEC) that combined BMC with static analysis and abstraction."
+  }
+ ]
+}

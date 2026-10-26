@@ -1,0 +1,972 @@
+{
+ "run_id": "20261026-023816-a5347b",
+ "soru": "Grafik ve çizelge anlama için çok kipli büyük dil modelleri üzerine en önemli çalışmalar, sınırlılıklar ve açık problemler neler?",
+ "kesim": "2026-01-08",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.5969,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.07162,
+   "in": 1206,
+   "out": 3099,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.13236727,
+   "in": 556968,
+   "out": 37392,
+   "web_search": 6
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.23406269999999998,
+   "in": 289986,
+   "out": 352147,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.15882000000000002,
+   "in": 12066,
+   "out": 3115,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 30.3,
+  "toplama:openalex": 1.3,
+  "web_isci": 49.1,
+  "toplama:crossref": 128.2,
+  "toplama:dblp": 253.4,
+  "toplama:arxiv": 393.7,
+  "toplama": 393.7,
+  "tekil+kesim_1": 148.1,
+  "atif": 180.6,
+  "okuyucu": 393.8,
+  "damitma": 18.3,
+  "sef_final": 28.3,
+  "toplam": 1193.2
+ },
+ "ozet_token_tahmini": 3780,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Grafik ve çizelge anlamanın temelleri ve klasik yöntemler nelerdir (grafik soru-cevaplama, veri çıkarımı, ters görselleştirme)?",
+    "sorgular": [
+     "\"chart question answering\"",
+     "\"figure question answering\" reasoning",
+     "chart data extraction \"reverse engineering\" visualization",
+     "\"plot question answering\" dataset",
+     "chart parsing OCR pipeline"
+    ],
+    "yeterli": "FigureQA, DVQA, PlotQA, ChartQA gibi erken veri kümeleri ve OCR tabanlı boru hattı yöntemleri kapsandığında yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "Grafik anlama için ana yöntem aileleri nelerdir (grafik-tablo dönüşümü ile ön eğitim, OCR'sız belge modelleri, grafiğe özel çok kipli LLM'ler)?",
+    "sorgular": [
+     "chart-to-table pretraining \"plot-to-table\"",
+     "OCR-free document understanding chart",
+     "chart multimodal large language model instruction tuning",
+     "\"chart understanding\" MLLM vision-language model",
+     "screenshot parsing pretraining visual language"
+    ],
+    "yeterli": "Pix2Struct/MatCha/DePlot, UniChart, ChartLlama, ChartAssistant, ChartGemma, TinyChart gibi temsilci yöntemler incelendiğinde yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Grafik anlama için hangi veri kümeleri ve kıyaslama ölçütleri kullanılıyor ve bunlar nasıl gelişti?",
+    "sorgular": [
+     "chart understanding benchmark multimodal LLM",
+     "\"ChartQA\" \"ChartQAPro\" benchmark",
+     "chart reasoning benchmark realistic charts",
+     "scientific figure understanding benchmark",
+     "\"chart summarization\" dataset"
+    ],
+    "yeterli": "Klasik (ChartQA, PlotQA) ve yeni nesil (CharXiv, ChartBench, ChartX, MMC, ChartMimic, ChartQAPro) kıyaslamalar ve özellikleri listelendiğinde yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Grafik anlama yetenekleri nasıl değerlendiriliyor ve değerlendirmenin sınırlılıkları nelerdir (metrikler, veri kirliliği, ezber, kısa yol öğrenme)?",
+    "sorgular": [
+     "chart question answering evaluation metric relaxed accuracy",
+     "multimodal LLM chart evaluation robustness",
+     "chart hallucination vision language models",
+     "benchmark contamination chart understanding",
+     "chart numerical reasoning failure analysis"
+    ],
+    "yeterli": "Rahatlatılmış doğruluk, RMS-F1 gibi metrikler ve sağlamlık/halüsinasyon/kirlilik analizleri kapsandığında yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Grafiklerde akıl yürütme nasıl iyileştiriliyor (düşünce zinciri, program destekli akıl yürütme, pekiştirmeli öğrenme, sentetik veri)?",
+    "sorgular": [
+     "chart reasoning chain-of-thought multimodal",
+     "program-of-thought chart question answering",
+     "reinforcement learning chart reasoning vision language",
+     "synthetic chart data generation code instruction tuning",
+     "\"visual chain-of-thought\" chart"
+    ],
+    "yeterli": "Sentetik veri üretimi (ör. ECD, ReachQA), program/kod tabanlı akıl yürütme ve RL tabanlı (R1 tarzı) grafik akıl yürütme çalışmaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Grafik anlamanın uygulamaları ve komşu alanlar nelerdir (bilimsel şekiller, infografikler, belge anlama, tablo anlama, grafik üretimi)?",
+    "sorgular": [
+     "scientific figure captioning",
+     "infographic VQA document understanding",
+     "table understanding multimodal LLM",
+     "text-to-visualization LLM chart generation",
+     "chart captioning accessibility"
+    ],
+    "yeterli": "Chart-to-text, bilimsel şekil altyazılama, InfographicVQA/DocVQA ve görselleştirme üretimi gibi komşu alanlardan temel çalışmalar belirlendiğinde yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Açık problemler ve gelecek yönelimler nelerdir (karmaşık ve gerçekçi grafikler, sayısal hassasiyet, çok grafikli akıl yürütme, yanıltıcı grafikler, çok dillilik)?",
+    "sorgular": [
+     "chart understanding survey open challenges",
+     "misleading charts vision language models",
+     "multi-chart reasoning benchmark",
+     "multilingual chart question answering",
+     "chart understanding survey large language models"
+    ],
+    "yeterli": "Grafik anlama üzerine güncel derlemeler ve yanıltıcı grafik, çok grafik, çok dillilik ve sayısal kesinlik sınırlılıklarını ele alan çalışmalar bulunduğunda yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "FigureQA: An Annotated Figure Dataset for Visual Reasoning",
+    "yil": 2017
+   },
+   {
+    "baslik": "DVQA: Understanding Data Visualizations via Question Answering",
+    "yil": 2018
+   },
+   {
+    "baslik": "PlotQA: Reasoning over Scientific Plots",
+    "yil": 2020
+   },
+   {
+    "baslik": "ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning",
+    "yil": 2022
+   },
+   {
+    "baslik": "Chart-to-Text: A Large-Scale Benchmark for Chart Summarization",
+    "yil": 2022
+   },
+   {
+    "baslik": "Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding",
+    "yil": 2023
+   },
+   {
+    "baslik": "MatCha: Enhancing Visual Language Pretraining with Math Reasoning and Chart Derendering",
+    "yil": 2023
+   },
+   {
+    "baslik": "DePlot: One-shot visual language reasoning by plot-to-table translation",
+    "yil": 2023
+   },
+   {
+    "baslik": "UniChart: A Universal Vision-language Pretrained Model for Chart Comprehension and Reasoning",
+    "yil": 2023
+   },
+   {
+    "baslik": "ChartLlama: A Multimodal LLM for Chart Understanding and Generation",
+    "yil": 2023
+   },
+   {
+    "baslik": "MMC: Advancing Multimodal Chart Understanding with Large-scale Instruction Tuning",
+    "yil": 2024
+   },
+   {
+    "baslik": "ChartAssisstant: A Universal Chart Multimodal Language Model via Chart-to-Table Pre-training and Multitask Instruction Tuning",
+    "yil": 2024
+   },
+   {
+    "baslik": "ChartX & ChartVLM: A Versatile Benchmark and Foundation Model for Complicated Chart Reasoning",
+    "yil": 2024
+   },
+   {
+    "baslik": "ChartBench: A Benchmark for Complex Visual Reasoning in Charts",
+    "yil": 2023
+   },
+   {
+    "baslik": "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs",
+    "yil": 2024
+   },
+   {
+    "baslik": "ChartGemma: Visual Instruction-tuning for Chart Reasoning in the Wild",
+    "yil": 2024
+   },
+   {
+    "baslik": "TinyChart: Efficient Chart Understanding with Visual Token Merging and Program-of-Thoughts Learning",
+    "yil": 2024
+   },
+   {
+    "baslik": "ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation",
+    "yil": 2024
+   },
+   {
+    "baslik": "From Pixels to Insights: A Survey on Automatic Chart Understanding in the Era of Large Foundation Models",
+    "yil": 2024
+   },
+   {
+    "baslik": "InfographicVQA",
+    "yil": 2022
+   },
+   {
+    "baslik": "MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI",
+    "yil": 2023
+   },
+   {
+    "baslik": "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+    "yil": 2023
+   },
+   {
+    "baslik": "ChartQAPro: A More Diverse and Challenging Benchmark for Chart Question Answering",
+    "yil": 2025
+   },
+   {
+    "baslik": "OneChart: Purify the Chart Structural Extraction via One Auxiliary Token",
+    "yil": 2024
+   },
+   {
+    "baslik": "SciCap: Generating Captions for Scientific Figures",
+    "yil": 2021
+   }
+  ],
+  "web_odaklari": [
+   "awesome chart understanding papers github",
+   "chart question answering multimodal LLM reading list",
+   "awesome multimodal large language models chart document papers"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:2504.05506",
+  "arXiv:2401.02384",
+  "arXiv:2203.10244",
+  "arXiv:2410.14179",
+  "arXiv:2305.14761",
+  "arXiv:2402.12185",
+  "arXiv:2311.10774",
+  "arXiv:2507.11939",
+  "arXiv:2312.15915",
+  "arXiv:2407.04172",
+  "arXiv:2311.16483",
+  "arXiv:2404.16635"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2203.10244",
+   "arxiv_id": "2203.10244",
+   "doi": "10.18653/v1/2022.findings-acl.177",
+   "baslik": "ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning",
+   "yil": 2021,
+   "tarih": "2021",
+   "gerekce": "Temel grafik QA kıyaslaması; şablon tabanlı sorular ve sabit sözcük dağarcığı yerine karmaşık görsel ve mantıksal akıl yürütmeyi hedefler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "most existing datasets do not focus on such complex reasoning questions as their questions are template-based and answers come from a fixed-vocabulary",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 447,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2212.09662",
+   "arxiv_id": "2212.09662",
+   "doi": "10.18653/v1/2023.acl-long.714",
+   "baslik": "MatCha: Enhancing Visual Language Pretraining with Math Reasoning and Chart Derendering",
+   "yil": 2022,
+   "tarih": "2022-12-19",
+   "gerekce": "Matematik akıl yürütme ve grafik derendering ön eğitimiyle görsel dil modellerinin grafik ve dil verisini birlikte modellemesini güçlendirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose MatCha (Math reasoning and Chart derendering pretraining) to enhance visual language models' capabilities in jointly modeling charts/plots and language data",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2212.10505",
+   "arxiv_id": "2212.10505",
+   "doi": "10.18653/v1/2023.findings-acl.660",
+   "baslik": "DePlot: One-shot visual language reasoning by plot-to-table translation",
+   "yil": 2022,
+   "tarih": "2022-12-20",
+   "gerekce": "Grafiği tabloya çevirip çıktıyı önceden eğitilmiş LLM'e vererek az örnekli akıl yürütmeyi kullanan dönüşüm tabanlı yöntem ailesini başlatır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The output of DePlot can then be directly used to prompt a pretrained large language model (LLM), exploiting the few-shot reasoning capabilities of LLMs",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2210.03347",
+   "arxiv_id": "2210.03347",
+   "doi": null,
+   "baslik": "Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding",
+   "yil": 2022,
+   "tarih": "2022-10-07",
+   "gerekce": "Maskelenmiş web ekran görüntülerini basitleştirilmiş HTML'e ayrıştırma ön eğitimiyle OCR'sız görsel dil anlamanın ve grafik modellerinin temelini oluşturur.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Pix2Struct is pretrained by learning to parse masked screenshots of web pages into simplified HTML",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2305.14761",
+   "arxiv_id": "2305.14761",
+   "doi": "10.18653/v1/2023.emnlp-main.906",
+   "baslik": "UniChart: A Universal Vision-language Pretrained Model for Chart Comprehension and Reasoning",
+   "yil": 2023,
+   "tarih": "2023-05-24",
+   "gerekce": "Önceki yöntemlerin grafik yapısını açıkça modellemediğini vurgulayıp grafik anlama ve akıl yürütme için evrensel bir ön eğitim modeli sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "most of the methods that solve these tasks use pretraining on language or vision-language tasks that do not attempt to explicitly model the structure of the charts",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 75,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2403.12027",
+   "arxiv_id": "2403.12027",
+   "doi": "10.1109/tkde.2024.3513320",
+   "baslik": "From Pixels to Insights: A Survey on Automatic Chart Understanding in the Era of Large Foundation Models",
+   "yil": 2024,
+   "tarih": "2024-03-18",
+   "gerekce": "Büyük temel modeller çağında grafik anlamayı derler; sınıflandırma ve üretim tabanlı yaklaşımları ve araç destekli teknikleri inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Various modeling strategies are then examined, encompassing both classification-based and generation-based approaches, along with tool augmentation techniques that enhance chart understanding performance",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2406.18521",
+   "arxiv_id": "2406.18521",
+   "doi": null,
+   "baslik": "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs",
+   "yil": 2024,
+   "tarih": "2024-06-26",
+   "gerekce": "Bilimsel makalelerden alınan gerçekçi grafiklerle küçük değişikliklerin performansı %34,5'e kadar düşürdüğünü göstererek model kırılganlığını ortaya koyar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "a simple stress test with slightly different charts or questions can deteriorate performance by up to 34.5%",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:1801.08163",
+   "arxiv_id": "1801.08163",
+   "doi": "10.1109/cvpr.2018.00592",
+   "baslik": "DVQA: Understanding Data Visualizations via Question Answering",
+   "yil": 2018,
+   "tarih": "2018-01-24",
+   "gerekce": "Erken klasik çubuk grafik QA veri kümesi; her grafiğe özgü sözcük ve yanıtların işlenmesini gerektirmesiyle VQA'dan ayrılır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Unlike visual question answering (VQA), DVQA requires processing words and answers that are unique to a particular bar chart",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2205.03966",
+   "arxiv_id": "2205.03966",
+   "doi": "10.1111/cgf.14573",
+   "baslik": "Chart Question Answering: State of the Art and Future Directions",
+   "yil": 2022,
+   "tarih": "2022-05-08",
+   "gerekce": "Grafik soru-cevaplama alanında durum tespiti yapar; olası girdi ve çıktılar dahil problem alanının boyutlarına dair bir taksonomi sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We provide a taxonomy by identifying several important dimensions of the problem domain including possible inputs and outputs of the task",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "web"
+   ],
+   "atif": 47,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2311.16483",
+   "arxiv_id": "2311.16483",
+   "doi": null,
+   "baslik": "ChartLlama: A Multimodal LLM for Chart Understanding and Generation",
+   "yil": 2023,
+   "tarih": "2023-11-27",
+   "gerekce": "Tablo verisi, grafik ve talimat verisini ayrı adımlarda üreten çok adımlı sentetik veri süreciyle grafik anlama ve üretimi için model sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We develop a multi-step data generation process in which different steps are responsible for generating tabular data, creating chart figures, and designing instruction tuning data separately",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2404.16635",
+   "arxiv_id": "2404.16635",
+   "doi": null,
+   "baslik": "TinyChart: Efficient Chart Understanding with Visual Token Merging and Program-of-Thoughts Learning",
+   "yil": 2024,
+   "tarih": "2024-04-25",
+   "gerekce": "Sayısal hesaplamaları Python programları üreterek yapan Program-of-Thoughts öğrenimi ve görsel token birleştirme ile verimli grafik anlama sağlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "reduce the burden of learning numerical computations through a Program-of-Thoughts (PoT) learning strategy, which trains the model to generate Python programs for numerical calculations",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2407.04172",
+   "arxiv_id": "2407.04172",
+   "doi": null,
+   "baslik": "ChartGemma: Visual Instruction-tuning for Chart Reasoning in the Wild",
+   "yil": 2024,
+   "tarih": "2024-07-04",
+   "gerekce": "Veri tablolarından üretilen verinin görsel eğilimleri yok saydığını belirtip grafik görüntülerinden doğrudan talimat verisi üreterek akıl yürütmeyi iyileştirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "they are trained on data generated from underlying data tables of the charts, ignoring the visual trends and patterns in chart images",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2401.02384",
+   "arxiv_id": "2401.02384",
+   "doi": "10.18653/v1/2024.findings-acl.463",
+   "baslik": "ChartAssisstant: A Universal Chart Multimodal Language Model via Chart-to-Table Pre-training and Multitask Instruction Tuning",
+   "yil": 2024,
+   "tarih": "2024-01-04",
+   "gerekce": "Grafik-tablo ayrıştırma ön eğitimi ve ardından çok görevli talimat ince ayarından oluşan iki aşamalı eğitimle evrensel grafik modeli önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "It undergoes a two-stage training process, starting with pre-training on chart-to-table parsing to align chart and text, followed by multitask instruction-following fine-tuning",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "sef"
+   ],
+   "atif": 49,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2402.12185",
+   "arxiv_id": "2402.12185",
+   "doi": "10.1109/tip.2025.3607618",
+   "baslik": "ChartX and ChartVLM: A Versatile Benchmark and Foundation Model for Complicated Chart Reasoning",
+   "yil": 2024,
+   "tarih": "2024-02-19",
+   "gerekce": "18 grafik türü, 7 görev ve 22 disiplini kapsayan ChartX değerlendirme setini ve karmaşık grafik akıl yürütme için ChartVLM modelini sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we construct ChartX, a multi-modal evaluation set covering 18 chart types, 7 chart tasks, 22 disciplinary topics, and high-quality chart data",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 22,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2504.05506",
+   "arxiv_id": "2504.05506",
+   "doi": "10.18653/v1/2025.findings-acl.978",
+   "baslik": "ChartQAPro: A More Diverse and Challenging Benchmark for Chart Question Answering",
+   "yil": 2024,
+   "tarih": "2024",
+   "gerekce": "ChartQA'nın gerçek dünya çeşitliliğinden yoksun olduğunu ve modern LVLM'lerle doygunluğa ulaştığını gösterip daha çeşitli ve zorlu bir kıyaslama sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "existing benchmarks like ChartQA lack real-world diversity and have recently shown performance saturation with modern large vision-language models (LVLMs)",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 21,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2311.10774",
+   "arxiv_id": "2311.10774",
+   "doi": "10.18653/v1/2024.naacl-long.70",
+   "baslik": "MMC: Advancing Multimodal Chart Understanding with Large-scale Instruction Tuning",
+   "yil": 2023,
+   "tarih": "2023-11-15",
+   "gerekce": "Büyük ölçekli grafik talimat verisi sunar; MMC-Benchmark deneyleri mevcut LMM'lerin grafikleri doğru yorumlamadaki sınırlılıklarını ortaya koyar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Extensive experiments on MMC-Benchmark reveal the limitations of existing LMMs on correctly interpreting charts, even",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 31,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2312.15915",
+   "arxiv_id": "2312.15915",
+   "doi": null,
+   "baslik": "ChartBench: A Benchmark for Complex Visual Reasoning in Charts",
+   "yil": 2023,
+   "tarih": "2023-12-26",
+   "gerekce": "Veri noktası etiketi olmayan grafiklerde renk, lejant ve koordinat sistemiyle değer çıkarımını gerektiren karmaşık görsel akıl yürütme kıyaslaması sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "many charts lack data point annotations, which requires MLLMs to derive values similar to human understanding by leveraging inherent chart elements such as color, legends, and coordinate systems",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2410.14179",
+   "arxiv_id": "2410.14179",
+   "doi": "10.18653/v1/2025.naacl-long.566",
+   "baslik": "MultiChartQA: Benchmarking Vision-Language Models on Multi-Chart Problems",
+   "yil": 2024,
+   "tarih": "2024-10-18",
+   "gerekce": "Mevcut kıyaslamaların tek grafiğe odaklandığını belirtip birden çok grafikten bilgi birleştiren çok adımlı akıl yürütmeyi değerlendirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Current benchmarks primarily focus on single-chart tasks, neglecting the multi-hop reasoning required to extract and integrate information from multiple charts",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "web"
+   ],
+   "atif": 5,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2507.11939",
+   "arxiv_id": "2507.11939",
+   "doi": "10.18653/v1/2026.acl-long.2043",
+   "baslik": "POLYCHARTQA: Benchmarking Large Vision-Language Models with Multilingual Chart Question Answering",
+   "yil": 2025,
+   "tarih": "2025-07-16",
+   "gerekce": "Çok dilli grafik QA kıyaslaması; özellikle düşük kaynaklı dillerde İngilizceye göre belirgin performans açığını ortaya koyar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We systematically evaluate multilingual chart understanding with PolyChartQA on state-of-the-art LVLMs and reveal a significant performance gap between English and other languages, particularly low-resource ones",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "dblp"
+   ],
+   "atif": 2,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2503.18172",
+   "arxiv_id": "2503.18172",
+   "doi": "10.18653/v1/2025.emnlp-main.695",
+   "baslik": "Unmasking Deceptive Visuals: Benchmarking Multimodal Large Language Models on Misleading Chart Question Answering",
+   "yil": 2025,
+   "tarih": "2025-03-23",
+   "gerekce": "Grafik temsilini manipüle eden yanıltıcı görselleştirmeler üzerinde MLLM'leri değerlendiren kıyaslama ve bölge farkında akıl yürütme sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Misleading visualizations, which manipulate chart representations to support specific claims, can distort perception and lead to incorrect conclusions",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "dblp"
+   ],
+   "atif": 6,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2203.06486",
+   "arxiv_id": "2203.06486",
+   "doi": "10.18653/v1/2022.acl-long.277",
+   "baslik": "Chart-to-Text: A Large-Scale Benchmark for Chart Summarization",
+   "yil": 2021,
+   "tarih": "2021",
+   "gerekce": "Veri tablosunun mevcut olduğu ve görüntüden çıkarılması gereken iki senaryoyla büyük ölçekli grafik özetleme kıyaslaması sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "one assumes the underlying data table of the chart is available while the other needs to extract data from chart images",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 80,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2111.15664",
+   "arxiv_id": "2111.15664",
+   "doi": "10.1007/978-3-031-19815-1_29",
+   "baslik": "OCR-free Document Understanding Transformer",
+   "yil": 2021,
+   "tarih": "2021-11-30",
+   "gerekce": "Metin okumayı harici OCR motorlarına bırakan belge anlama yöntemlerine karşı OCR'sız yaklaşımı öneren etkili komşu alan çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Current Visual Document Understanding (VDU) methods outsource the task of reading text to off-the-shelf Optical Character Recognition (OCR) engines",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 447,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2407.11229",
+   "arxiv_id": "2407.11229",
+   "doi": "10.18653/v1/2024.findings-emnlp.973",
+   "baslik": "Unraveling the Truth: Do VLMs really Understand Charts? A Deep Dive into Consistency and Robustness",
+   "yil": 2024,
+   "tarih": "2024-07-15",
+   "gerekce": "VLM'lerin grafikleri gerçekten anlayıp anlamadığını tutarlılık ve sağlamlık açısından inceler; soru ve grafik türüne göre büyük performans farkları bulur.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our analysis reveals significant performance variations based on question and chart types, highlighting both strengths and weaknesses of current models",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1111/cgf.13193",
+   "arxiv_id": null,
+   "doi": "10.1111/cgf.13193",
+   "baslik": "Reverse‐Engineering Visualizations: Recovering Visual Encodings from Chart Images",
+   "yil": 2017,
+   "tarih": "2017-06",
+   "gerekce": "Bitmap grafik görüntüsünden görsel kodlama belirtimini çıkaran uçtan uca süreçle klasik ters görselleştirme çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We contribute an end‐to‐end pipeline which takes a bitmap image as input and returns a visual encoding specification as output.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 173,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2509.17481",
+   "arxiv_id": "2509.17481",
+   "doi": null,
+   "baslik": "ChartHal: A Fine-grained Framework Evaluating Hallucination of Large Vision Language Models in Chart Understanding",
+   "yil": 2025,
+   "tarih": "2025-09-22",
+   "gerekce": "Grafik anlamada halüsinasyonu ince taneli ölçer; GPT-5 ve o4-mini'nin yalnızca %34,46 ve %22,79 doğruluk elde ettiğini gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our evaluation shows that state-of-the-art LVLMs suffer from severe hallucinations on ChartHal, including proprietary models such as GPT-5 and o4-mini, which achieve only 34.46% and 22.79% accuracy, respectively.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2403.09028",
+   "arxiv_id": "2403.09028",
+   "doi": "10.18653/v1/2024.findings-acl.619",
+   "baslik": "ChartInstruct: Instruction Tuning for Chart Comprehension and Reasoning",
+   "yil": 2024,
+   "tarih": "2024-03-14",
+   "gerekce": "71 bin grafikten üretilmiş 191 bin talimatlık grafiğe özel görsel-dil talimat izleme veri kümesi sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we introduce ChartInstruct: a novel chart-specific vision-language Instruction-following dataset comprising 191K instructions generated with 71K charts",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "web"
+   ],
+   "atif": 28,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2407.20174",
+   "arxiv_id": "2407.20174",
+   "doi": "10.1109/tvcg.2024.3456159",
+   "baslik": "Advancing Multimodal Large Language Models in Chart Question Answering with Visualization-Referenced Instruction Tuning",
+   "yil": 2024,
+   "tarih": "2024-07-29",
+   "gerekce": "Mevcut veri sentezinin ince taneli görsel kodlamaları gözetmediğini belirtip görselleştirme odaklı talimat ayarı ve veri motoru önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "current data collection and synthesis focus on data volume and lack consideration of fine-grained visual encodings and QA tasks",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp"
+   ],
+   "atif": 26,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2502.11492",
+   "arxiv_id": "2502.11492",
+   "doi": "10.18653/v1/2025.findings-acl.249",
+   "baslik": "Why Vision Language Models Struggle with Visual Arithmetic? Towards Enhanced Chart and Geometry Understanding",
+   "yil": 2024,
+   "tarih": "2024",
+   "gerekce": "VLM'lerin nesne sayma ve uzunluk karşılaştırma gibi görsel aritmetikte zorlandığını ve bunun grafik anlamayı etkilediğini inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "they often struggle with visual arithmetic, seemingly simple capabilities like object counting or length comparison, which are essential for relevant complex tasks like chart understanding",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 7,
+   "rel": 2,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2407.09413",
+   "arxiv_id": "2407.09413",
+   "doi": "10.52202/079017-3773",
+   "baslik": "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+   "yil": 2024,
+   "tarih": "2024-07-12",
+   "gerekce": "Bilimsel makalelerdeki karmaşık şekil ve tabloları yorumlamak için tasarlanmış ilk büyük ölçekli QA veri kümesidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We introduce SPIQA (Scientific Paper Image Question Answering), the first large-scale QA dataset specifically designed to interpret complex figures and tables",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 20,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2411.03823",
+   "arxiv_id": "2411.03823",
+   "doi": null,
+   "baslik": "Both Text and Images Leaked! A Systematic Analysis of Data Contamination in Multimodal LLM",
+   "yil": 2024,
+   "tarih": "2024-11-06",
+   "gerekce": "On iki MLLM ve beş kıyaslamada, özellikle tescilli modellerde ve eski kıyaslamalarda belirgin veri kirliliği bulur; değerlendirme sınırlılığı açısından önemlidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Evaluations on twelve MLLMs and five benchmarks reveal significant contamination, particularly in proprietary models and older benchmarks.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

@@ -1,0 +1,1081 @@
+[
+ {
+  "id": "arXiv:2112.03570",
+  "baslik": "Membership Inference Attacks From First Principles",
+  "yil": 2021,
+  "cites": 508,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LiRA; düşük FPR'de TPR değerlendirmesi, temel çalışma",
+  "alinti": "We argue that attacks should instead be evaluated by computing their true-positive rate at low (e.g., <0.1%) false-positive rates"
+ },
+ {
+  "id": "arXiv:2310.16789",
+  "baslik": "Detecting Pretraining Data from Large Language Models",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ön-eğitim veri tespiti ve WikiMIA benchmark'ı",
+  "alinti": "we introduce a dynamic benchmark WIKIMIA that uses data created before and after model training to support gold truth detection"
+ },
+ {
+  "id": "arXiv:2402.09910",
+  "baslik": "DE-COP: Detecting Copyrighted Content in Language Models Training Data",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "DE-COP; telif materyali tespiti, çoktan seçmeli yaklaşım",
+  "alinti": "DE-COP's core approach is to probe an LLM with multiple-choice questions, whose options include both verbatim text and their paraphrases"
+ },
+ {
+  "id": "arXiv:2406.06443",
+  "baslik": "LLM Dataset Inference: Did you train on my dataset?",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Dağılım kayması nedeniyle MIA başarısının abartılması; kritik",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2402.07841",
+  "baslik": "Do Membership Inference Attacks Work on Large Language Models?",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Pile üzerinde LLM MIA'larının zayıf performansı",
+  "alinti": "We find that MIAs barely outperform random guessing for most settings across varying LLM sizes and domains"
+ },
+ {
+  "id": "arXiv:1610.05820",
+  "baslik": "Membership Inference Attacks against Machine Learning Models",
+  "yil": 2016,
+  "cites": 3740,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Shokri vd.; klasik gölge model üyelik çıkarımı temeli",
+  "alinti": "given a data record and black-box access to a model, determine if the record was in the model's training dataset"
+ },
+ {
+  "id": "arXiv:2406.17975",
+  "baslik": "SoK: Membership Inference Attacks on LLMs are Rushing Nowhere (and How to Fix It)",
+  "yil": 2024,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM MIA literatürünün SoK değerlendirmesi; metodolojik eleştiri",
+  "alinti": "Contrary to traditional MIAs which rely on fixed-but randomized-records or models, these methods are mostly trained and tested on datasets collected post-hoc"
+ },
+ {
+  "id": "arXiv:2308.08493",
+  "baslik": "Time Travel in LLMs: Tracing Data Contamination in Large Language Models",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kılavuzlu talimatla örnek ve bölüm düzeyinde kirlenme tespiti",
+  "alinti": "At its core, our approach starts by identifying potential contamination at the instance level; using this information, our approach then assesses wider contamination at the partition level"
+ },
+ {
+  "id": "arXiv:2202.07646",
+  "baslik": "Quantifying Memorization Across Neural Language Models",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ezberlemenin model boyutu ve tekrarla ilişkisi; temel çalışma",
+  "alinti": "Memorization significantly grows as we increase (1) the capacity of a model, (2) the number of times an example has been duplicated"
+ },
+ {
+  "id": "arXiv:2402.10892",
+  "baslik": "Proving membership in LLM pretraining data via data watermarks",
+  "yil": 2024,
+  "cites": 10,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Veri filigranı ile ön-eğitim üyeliğinin hipotez testi ile kanıtı",
+  "alinti": "This work proposes using data watermarks to enable principled detection with only black-box model access"
+ },
+ {
+  "id": "arXiv:2310.18018",
+  "baslik": "NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark",
+  "yil": 2023,
+  "cites": 82,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Pozisyon makalesi; benchmark başına kirlenme ölçümü çağrısı",
+  "alinti": "The worst kind of data contamination happens when a Large Language Model (LLM) is trained on the test split of a benchmark, and then evaluated in the same benchmark"
+ },
+ {
+  "id": "doi:10.1007/978-3-031-97144-0_14",
+  "baslik": "Pretraining Data Exposure in Large Language Models: A Survey of Membership Inference, Data Contamination, and Security Implications",
+  "yil": 2025,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık mevcut; kapsamlı derleme, özet yok",
+  "alinti": "Pretraining Data Exposure in Large Language Models: A Survey of Membership Inference, Data Contamination, and Security Implications"
+ },
+ {
+  "id": "arXiv:2402.15938",
+  "baslik": "Generalization or Memorization: Data Contamination and Trustworthy Evaluation for Large Language Models",
+  "yil": 2024,
+  "cites": 54,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "CDD kirlenme tespiti ve TED güvenilir değerlendirme",
+  "alinti": "CDD necessitates only the sampled texts to detect data contamination, by identifying the peakedness of LLM's output distribution"
+ },
+ {
+  "id": "arXiv:2305.18462",
+  "baslik": "Membership Inference Attacks against Language Models via Neighbourhood Comparison",
+  "yil": 2023,
+  "cites": 89,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Komşuluk karşılaştırma saldırısı; referans model gerekliliği eleştirisi",
+  "alinti": "simple thresholding of the model score in isolation tends to lead to high false-positive rates as it does not account for the intrinsic complexity of a sample"
+ },
+ {
+  "id": "arXiv:1709.01604",
+  "baslik": "Privacy Risk in Machine Learning: Analyzing the Connection to Overfitting",
+  "yil": 2017,
+  "cites": 753,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Aşırı öğrenme ile üyelik gizlilik riski ilişkisi",
+  "alinti": "This paper examines the effect that overfitting and influence have on the ability of an attacker to learn information about the training data"
+ },
+ {
+  "id": "arXiv:2404.02936",
+  "baslik": "Min-K%++: Improved Baseline for Detecting Pre-Training Data from Large Language Models",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Min-K%++; teorik temelli ön-eğitim veri tespiti",
+  "alinti": "we present a key insight that training samples tend to be local maxima of the modeled distribution along each input dimension through maximum likelihood training"
+ },
+ {
+  "id": "arXiv:2311.09783",
+  "baslik": "Investigating Data Contamination in Modern Benchmarks for Large Language Models",
+  "yil": 2023,
+  "cites": 41,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Test verisi kirlenmesi için TS-Guessing protokolü",
+  "alinti": "This approach entails masking a wrong answer in a multiple-choice question and prompting the model to fill in the gap"
+ },
+ {
+  "id": "arXiv:2405.00332",
+  "baslik": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Yeni benchmark ile GSM8k kirlenme ve aşırı uyum kanıtı.",
+  "alinti": "When evaluating leading open- and closed-source LLMs on GSM1k, we observe accuracy drops of up to 8%, with several families of models showing evidence of systematic overfitting"
+ },
+ {
+  "id": "arXiv:2402.09363",
+  "baslik": "Copyright Traps for Large Language Models",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kurgusal girdilerle telif tuzakları; ezber olmayan modeller için",
+  "alinti": "We here propose to use copyright traps, the inclusion of fictitious entries in original content, to detect the use of copyrighted materials in LLMs"
+ },
+ {
+  "id": "arXiv:2310.13771",
+  "baslik": "Copyright Violations and Large Language Models",
+  "yil": 2023,
+  "cites": 47,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "LLM'lerde telif ihlali ve birebir ezber yeniden üretimi",
+  "alinti": "Fair use exemptions to copyright laws typically allow for limited use of copyrighted material without permission from the copyright holder"
+ },
+ {
+  "id": "arXiv:2403.07974",
+  "baslik": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Zamanla yenilenen, kirlenmesiz kod değerlendirme benchmark'ı",
+  "alinti": "we propose LiveCodeBench, a comprehensive and contamination-free evaluation of LLMs for code, which continuously collects new problems over time"
+ },
+ {
+  "id": "arXiv:2406.16201",
+  "baslik": "Blind Baselines Beat Membership Inference Attacks for Foundation Models",
+  "yil": 2024,
+  "cites": 7,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Kör saldırılar MIA'ları yeniyor; değerlendirme sorunu",
+  "alinti": "For 8 published MI evaluation datasets, we show that blind attacks -- that distinguish the member and non-member distributions without looking at any trained model -- outperform state-of-the-art MI attacks"
+ },
+ {
+  "id": "arXiv:2412.13475",
+  "baslik": "A Statistical and Multi-Perspective Revisiting of the Membership Inference Attack in Large Language Models",
+  "yil": 2024,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM MIA'larının istatistiksel çoklu ortam yeniden incelemesi",
+  "alinti": "instead of a single setting, we statistically revisit MIA methods from various settings with thousands of experiments for each MIA method"
+ },
+ {
+  "id": "arXiv:2409.14781",
+  "baslik": "Pretraining Data Detection for Large Language Models: A Divergence-based Calibration Method",
+  "yil": 2024,
+  "cites": 9,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Min-K% Prob kalibrasyonu; doğrudan LLM ön-eğitim verisi tespiti.",
+  "alinti": "The Min-K\\% Prob method, which has achieved state-of-the-art results, assumes that a non-training example tends to contain a few outlier words with low token probabilities."
+ },
+ {
+  "id": "arXiv:2310.17623",
+  "baslik": "Proving Test Set Contamination in Black Box Language Models",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kapalı modellerde kanıtlanabilir test kirlenmesi tespiti; sıralama yöntemi.",
+  "alinti": "We show that it is possible to provide provable guarantees of test set contamination in language models without access to pretraining data or model weights."
+ },
+ {
+  "id": "arXiv:2210.17546",
+  "baslik": "Preventing Generation of Verbatim Memorization in Language Models Gives a False Sense of Privacy",
+  "yil": 2022,
+  "cites": 35,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Birebir ezber savunmalarının yanıltıcı güvenlik güvencesi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2411.00154",
+  "baslik": "Scaling Up Membership Inference: When and How Attacks Succeed on Large Language Models",
+  "yil": 2024,
+  "cites": 11,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM'lerde MIA'nın çoklu belge ölçeğinde işe yaradığını gösterir; merkezi.",
+  "alinti": "we argue that MIA still works on LLMs, but only when multiple documents are presented for testing."
+ },
+ {
+  "id": "doi:10.7717/peerj-cs.3269",
+  "baslik": "Optimizing membership inference attacks against low self-influence samples by distilled shadow models and inference models",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LiRA tabanlı, etiket gereksinimini azaltan gölge model yaklaşımı",
+  "alinti": "we propose Distilled Shadow Model and Inference Model to perform Membership Inference Attack (DSMIM-MIA)"
+ },
+ {
+  "id": "arXiv:1802.08232",
+  "baslik": "The Secret Sharer: Evaluating and Testing Unintended Memorization in Neural Networks",
+  "yil": 2018,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Secret Sharer; istemsiz ezberleme testi ve sızıntı",
+  "alinti": "This paper describes a testing methodology for quantitatively assessing the risk that rare or unique training-data sequences are unintentionally memorized"
+ },
+ {
+  "id": "arXiv:2407.17417",
+  "baslik": "Can Watermarking Large Language Models Prevent Copyrighted Text Generation and Hide Training Data?",
+  "yil": 2024,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Filigranın telif koruması ve MIA başarısına etkisi",
+  "alinti": "we find that watermarking adversely affects the success rate of MIAs, complicating the task of detecting copyrighted text in the pretraining dataset"
+ },
+ {
+  "id": "arXiv:2406.13236",
+  "baslik": "Data Contamination Can Cross Language Barriers",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Çapraz dil kirlenmesi; genelleme tabanlı tespit",
+  "alinti": "Existing contamination detection methods are typically based on the text overlap between training and evaluation data, which can be too superficial"
+ },
+ {
+  "id": "arXiv:2311.17035",
+  "baslik": "Scalable Extraction of Training Data from (Production) Language Models",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Üretim LLM'lerinden ölçeklenebilir eğitim verisi çıkarımı.",
+  "alinti": "Existing techniques from the literature suffice to attack unaligned models; in order to attack the aligned ChatGPT, we develop a new divergence attack"
+ },
+ {
+  "id": "arXiv:2410.16186",
+  "baslik": "Contamination Report for Multilingual Benchmarks",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Çok dilli benchmark kirlenme raporu; kara kutu testi",
+  "alinti": "Benchmark contamination refers to the presence of test datasets in Large Language Model (LLM) pre-training or post-training data."
+ },
+ {
+  "id": "arXiv:2501.08454",
+  "baslik": "Tag&amp;Tab: Pretraining Data Detection in Large Language Models Using Keyword-Based Membership Inference Attack",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Anahtar kelime tabanlı LLM ön-eğitim verisi tespiti.",
+  "alinti": "Recent studies on detecting pretraining data in LLMs have primarily focused on sentence- or paragraph-level membership inference attacks (MIAs)"
+ },
+ {
+  "id": "arXiv:2111.09679",
+  "baslik": "Enhanced Membership Inference Attacks against Machine Learning Models",
+  "yil": 2021,
+  "cites": 160,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Referans modelli MIA'lar için hipotez testi çerçevesi; klasik temel.",
+  "alinti": "that use reference models to achieve a significantly higher power (true positive rate) for any (false positive rate) error"
+ },
+ {
+  "id": "arXiv:2406.18326",
+  "baslik": "PaCoST: Paired Confidence Significance Testing for Benchmark Contamination Detection in Large Language Models",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "PaCoST ile benchmark kirlenmesi tespiti",
+  "alinti": "Following these proposed requirements, we introduce PaCoST, a Paired Confidence Significance Testing to effectively detect benchmark contamination in LLMs."
+ },
+ {
+  "id": "arXiv:2408.05968",
+  "baslik": "Nob-MIAs: Non-biased Membership Inference Attacks Assessment on Large Language Models with Ex-Post Dataset Construction",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM MIA değerlendirmesinde zaman kayması ve n-gram yanlılığı.",
+  "alinti": "Membership Inference Attacks (MIAs) aim to detect whether specific documents were used in a given LLM pretraining, but their effectiveness is undermined by biases such as time-shifts and n-gram overlaps."
+ },
+ {
+  "id": "arXiv:2012.07805",
+  "baslik": "Extracting Training Data from Large Language Models",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "GPT-2'de eğitim verisi çıkarımı; ezberleme ve gizlilik temeli.",
+  "alinti": "This paper demonstrates that in such settings, an adversary can perform a training data extraction attack to recover individual training examples by querying the language model."
+ },
+ {
+  "id": "arXiv:2411.01357",
+  "baslik": "WaKA: Data Attribution using K-Nearest Neighbors and Membership Privacy Principles",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LiRA ilkeli veri atfetme; MIA ve veri değeri köprüsü",
+  "alinti": "WaKA is versatile and can be used a posteriori as a membership inference attack (MIA) to assess privacy risks or a priori for privacy influence measurement"
+ },
+ {
+  "id": "arXiv:2406.16565",
+  "baslik": "Noisy Neighbors: Efficient membership inference attacks against LLMs",
+  "yil": 2024,
+  "cites": 7,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM'ler için gölge modelsiz, gömme uzayı gürültülü komşu yöntemi.",
+  "alinti": "Differently from traditional MIA approaches, often requiring computationally intensive training of additional models, this paper introduces an efficient methodology"
+ },
+ {
+  "id": "arXiv:2406.19234",
+  "baslik": "Generating Is Believing: Membership Inference Attacks against Retrieval-Augmented Generation",
+  "yil": 2024,
+  "cites": 15,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "RAG üyelik çıkarımı; harici veritabanı gizliliği",
+  "alinti": "Our basic idea is that if a sample is in the external database, it will exhibit a high degree of semantic similarity to the text generated by the RAG system."
+ },
+ {
+  "id": "arXiv:2409.03363",
+  "baslik": "Con-ReCall: Detecting Pre-training Data in LLMs via Contrastive Decoding",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Karşıtlaştırmalı kod çözme ile LLM ön-eğitim verisi tespiti.",
+  "alinti": "we propose Con-ReCall, a novel approach that leverages the asymmetric distributional shifts induced by member and non-member contexts through contrastive decoding"
+ },
+ {
+  "id": "arXiv:2410.18966",
+  "baslik": "Does Data Contamination Detection Work (Well) for LLMs? A Survey and Evaluation on Detection Assumptions",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kirlenme tespitinin varsayımları ve MIA ilişkisi",
+  "alinti": "Our case studies focus on detecting direct, instance-level data contamination, which is also referred to as Membership Inference Attacks (MIA)"
+ },
+ {
+  "id": "arXiv:2311.04850",
+  "baslik": "Rethinking Benchmark and Contamination for Language Models with Rephrased Samples",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Yeniden ifade edilmiş örneklerle kirlilik temizleme aşılıyor",
+  "alinti": "we show that these methods are insufficient, and simple variations of test data (e.g., paraphrasing, translation) can easily bypass these decontamination measures."
+ },
+ {
+  "id": "arXiv:2409.09927",
+  "baslik": "Towards Data Contamination Detection for Modern Large Language Models: Limitations, Inconsistencies, and Oracle Challenges",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Modern LLM'lerde kirlilik tespit yöntemlerinin sınırları",
+  "alinti": "Our analysis reveals that (1) Current methods have non-trivial limitations in their assumptions and practical applications;"
+ },
+ {
+  "id": "arXiv:2406.19314",
+  "baslik": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Kirlenmeye dayanıklı dinamik benchmark",
+  "alinti": "Test set contamination, wherein test data from a benchmark ends up in a newer model's training set, is a well-documented obstacle for fair LLM evaluation"
+ },
+ {
+  "id": "arXiv:1806.01246",
+  "baslik": "ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models",
+  "yil": 2018,
+  "cites": 534,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Klasik MIA varsayımlarını gevşetir; savunmalar da ele alınıyor.",
+  "alinti": "We relax all these key assumptions, thereby showing that such attacks are very broadly applicable at low cost"
+ },
+ {
+  "id": "arXiv:2411.03923",
+  "baslik": "Evaluation data contamination in LLMs: how do we measure it and (when) does it matter?",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Kirlenme ölçümü ve ConTAM metriği",
+  "alinti": "Hampering the interpretation of benchmark scores, evaluation data contamination has become a growing concern in the evaluation of LLMs"
+ },
+ {
+  "id": "doi:10.1145/3755881.3755901",
+  "baslik": "CodeCleaner: Mitigating Data Contamination For LLM Benchmarking",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık var; kirlenme azaltma, kıyaslama odaklı.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2412.15194",
+  "baslik": "MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark",
+  "yil": 2024,
+  "cites": 12,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Kirlenmeye dayanıklı MMLU alternatifi benchmark",
+  "alinti": "To avoid unintentional data leakage, we source data from a broader domain and design three decontamination rules."
+ },
+ {
+  "id": "arXiv:2502.14425",
+  "baslik": "A Survey on Data Contamination for Large Language Models",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Veri kirliliği anketi; dinamik ve kirlilik-dayanıklı değerlendirme",
+  "alinti": "This overlap has the potential to artificially inflate model performance, as LLMs are typically trained on extensive datasets scraped from publicly available sources."
+ },
+ {
+  "id": "arXiv:2401.00676",
+  "baslik": "Digger: Detecting Copyright Content Mis-usage in Large Language Model Training",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Telifli kitap içeriğinin eğitim verisinde tespiti",
+  "alinti": "In this paper, we introduce a detailed framework designed to detect and assess the presence of content from potentially copyrighted books within the training datasets of LLMs."
+ },
+ {
+  "id": "arXiv:2410.13088",
+  "baslik": "Self-Comparison for Dataset-Level Membership Inference in Large (Vision-)Language Models",
+  "yil": 2024,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Veri kümesi düzeyinde öz-karşılaştırma üyelik çıkarımı",
+  "alinti": "These methods face challenges when applied to LLMs and VLMs, such as the requirement for ground-truth member data or non-member data that shares the same distribution"
+ },
+ {
+  "id": "arXiv:2406.14644",
+  "baslik": "Unveiling the Spectrum of Data Contamination in Language Models: A Survey from Detection to Remediation",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Kirlenme tespiti ve iyileştirme üzerine kapsamlı derleme",
+  "alinti": "Data contamination has garnered increased attention in the era of large language models (LLMs) due to the reliance on extensive internet-derived training corpora"
+ },
+ {
+  "id": "arXiv:2311.01964",
+  "baslik": "Don't Make Your LLM an Evaluation Benchmark Cheater",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Benchmark sızıntısı ve uygun olmayan değerlendirme",
+  "alinti": "This phenomenon now becomes more common since pre-training data is often prepared ahead of model test."
+ },
+ {
+  "id": "arXiv:2410.20142",
+  "baslik": "Mask-based Membership Inference Attacks for Retrieval-Augmented Generation",
+  "yil": 2024,
+  "cites": 7,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "RAG için maske tabanlı üyelik çıkarımı; RAG senaryosu.",
+  "alinti": "This practice has raised concerns about Membership Inference Attacks (MIAs), which aim to detect if a specific target document is stored in the RAG system's knowledge database"
+ },
+ {
+  "id": "arXiv:2507.05578",
+  "baslik": "The Landscape of Memorization in LLMs: Mechanisms, Measurement, and Mitigation",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Ezberleme anketi; çıkarım, MIA, azaltım",
+  "alinti": "we examine methodologies such as prefix-based extraction, membership inference, and adversarial prompting, assessing their effectiveness in detecting and measuring memorized content"
+ },
+ {
+  "id": "arXiv:2405.18492",
+  "baslik": "LLMs and Memorization: On Quality and Specificity of Copyright Compliance",
+  "yil": 2024,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Telif uyumu ve ezberleme; 160 karakter eşiği, AB hukuku.",
+  "alinti": "LLMs have been shown to easily reproduce parts of their training data, including copyrighted work."
+ },
+ {
+  "id": "arXiv:2502.10673",
+  "baslik": "Dataset Protection via Watermarked Canaries in Retrieval-Augmented LLMs",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "RAG'de filigranlı canary belgeleriyle veri sahipliği koruması.",
+  "alinti": "Our approach preserves the original data completely unchanged while protecting it by inserting specifically designed canary documents into the IP dataset."
+ },
+ {
+  "id": "arXiv:2511.20623",
+  "baslik": "Copyright Detection in Large Language Models: An Ethical Approach to Generative AI Development",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Telif hakkı tespit platformu; DE-COP'a alternatif.",
+  "alinti": "Existing detection frameworks, such as DE-COP, are computationally intensive, and largely inaccessible to independent creators."
+ },
+ {
+  "id": "arXiv:2502.17259",
+  "baslik": "Detecting Benchmark Contamination Through Watermarking",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Filigranla kirlenme tespiti",
+  "alinti": "Benchmark contamination poses a significant challenge to the reliability of Large Language Models (LLMs) evaluations, as it is difficult to assert whether a model has been trained on a test set."
+ },
+ {
+  "id": "arXiv:2203.03929",
+  "baslik": "Quantifying Privacy Risks of Masked Language Models Using Membership Inference Attacks",
+  "yil": 2022,
+  "cites": 77,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Maskeli dil modelleri için LR tabanlı üyelik çıkarımı",
+  "alinti": "We devise a stronger membership inference attack based on likelihood ratio hypothesis testing that involves an additional reference MLM"
+ },
+ {
+  "id": "arXiv:2510.19773",
+  "baslik": "Estimating Model-Level Membership Inference Vulnerability Without Reference Models",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LiRA'yı referans modelsiz tahmin; S1 merkezi",
+  "alinti": "We present a novel approach for estimating model-level vulnerability to the Likelihood Ratio Attack (LiRA), the strongest available attack, directly from the train and test loss distributions"
+ },
+ {
+  "id": "arXiv:2310.17589",
+  "baslik": "An Open Source Data Contamination Report for Large Language Models",
+  "yil": 2023,
+  "cites": 16,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "15+ LLM için açık kaynak kirlilik raporu ve araç",
+  "alinti": "Therefore, contamination analysis has become an crucial part of reliable model evaluation to validate results."
+ },
+ {
+  "id": "arXiv:2408.08661",
+  "baslik": "MIA-Tuner: Adapting Large Language Models as Pre-training Text Detector",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Hizalanmış LLM için talimat tabanlı ön-eğitim veri tespiti",
+  "alinti": "This problem involves determining whether a given piece of text has been used during the pre-training phase of the target LLM."
+ },
+ {
+  "id": "arXiv:2406.15968",
+  "baslik": "ReCaLL: Membership Inference via Relative Conditional Log-Likelihoods",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Koşullu log-olabilirlik farkına dayalı LLM ön-eğitim verisi tespiti.",
+  "alinti": "We propose ReCaLL (Relative Conditional Log-Likelihood), a novel membership inference attack (MIA) to detect LLMs' pretraining data by leveraging their conditional language modeling capabilities."
+ },
+ {
+  "id": "arXiv:2502.16268",
+  "baslik": "ThinkBench: Dynamic Out-of-Distribution Evaluation for Robust LLM Reasoning",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Dinamik OOD değerlendirme; kirlenmeye karşı dayanıklılık",
+  "alinti": "By dynamically generating OOD datasets, ThinkBench effectively provides a reliable evaluation of LLMs and reduces the impact of data contamination."
+ },
+ {
+  "id": "arXiv:2402.10686",
+  "baslik": "On the Impact of Uncertainty and Calibration on Likelihood-Ratio Membership Inference Attacks",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LiRA'nın belirsizlik ve kalibrasyonla ilişkisi; bilgi-teorik analiz.",
+  "alinti": "In this paper, we analyze the performance of the likelihood ratio attack (LiRA) within an information-theoretical framework"
+ },
+ {
+  "id": "arXiv:2103.07853",
+  "baslik": "Membership Inference Attacks on Machine Learning: A Survey",
+  "yil": 2021,
+  "cites": 512,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "MIA genel anket; S1 temel çerçeve",
+  "alinti": "recent studies have shown that ML models are vulnerable to membership inference attacks (MIAs), which aim to infer whether a data record was used to train a target model or not"
+ },
+ {
+  "id": "arXiv:2509.06026",
+  "baslik": "<i>DCMI:</i> A Differential Calibration Membership Inference Attack Against Retrieval-Augmented Generation",
+  "yil": 2025,
+  "cites": 3,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "RAG veritabanlarına yönelik farksal kalibrasyon MIA",
+  "alinti": "While Retrieval-Augmented Generation (RAG) effectively reduces hallucinations by integrating external knowledge bases, it introduces vulnerabilities to membership inference attacks (MIAs)"
+ },
+ {
+  "id": "arXiv:2405.16281",
+  "baslik": "ConStat: Performance-Based Contamination Detection in Large Language Models",
+  "yil": 2024,
+  "cites": 7,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Performans tabanlı kirlenme tespiti",
+  "alinti": "we propose a novel definition of contamination as artificially inflated and non-generalizing benchmark performance instead of the inclusion of benchmark samples in the training data."
+ },
+ {
+  "id": "arXiv:2511.15192",
+  "baslik": "As If We've Met Before: LLMs Exhibit Certainty in Recognizing Seen Files",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM eğitim setinde telifli dosya tespiti, MIA",
+  "alinti": "We present COPYCHECK, a novel framework that leverages uncertainty signals to detect whether copyrighted content was used in LLM training sets."
+ },
+ {
+  "id": "arXiv:2412.17249",
+  "baslik": "EM-MIAs: Enhancing Membership Inference Attacks in Large Language Models through Ensemble Modeling",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LOSS, referans, min-k, zlib'in topluluk (ensemble) birleşimi.",
+  "alinti": "their effectiveness on large pre-trained language models often approaches random guessing, particularly in the context of large-scale datasets and single-epoch training"
+ },
+ {
+  "id": "arXiv:2407.06460",
+  "baslik": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Unlearning değerlendirme kıyaslaması; ezberleme ve gizlilik boyutları.",
+  "alinti": "We address this issue by proposing MUSE, a comprehensive machine unlearning evaluation benchmark that enumerates six diverse desirable properties"
+ },
+ {
+  "id": "arXiv:2603.07567",
+  "baslik": "Revisiting the LiRA Membership Inference Attack Under Realistic Assumptions",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LiRA'nın gerçekçi protokolde yeniden değerlendirilmesi; eleştirel çalışma.",
+  "alinti": "prior evaluations have often overstated the effectiveness of LiRA by attacking models overconfident on their training samples"
+ },
+ {
+  "id": "arXiv:2403.16139",
+  "baslik": "A Little Leak Will Sink a Great Ship: Survey of Transparency for Large Language Models from Start to Finish",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Sızıntı oranı ile tespit ve çıktı oranı ilişkisi",
+  "alinti": "we conduct an experimental survey to elucidate the relationship between the leakage rate and both the output rate and detection rate for personal information, copyrighted texts, and benchmark"
+ },
+ {
+  "id": "arXiv:2404.17143",
+  "baslik": "Quantifying Memorization and Detecting Training Data of Pre-trained Language Models using Japanese Newspaper",
+  "yil": 2024,
+  "cites": 3,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Japon gazetesiyle ezberleme ve ön-eğitim veri tespiti",
+  "alinti": "Experiments replicated the empirical finding that memorization of PLMs is related to the duplication in the training data, model size, and prompt length"
+ },
+ {
+  "id": "arXiv:2404.11262",
+  "baslik": "Sampling-based Pseudo-Likelihood for Membership Inference Attacks",
+  "yil": 2024,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Örnekleme tabanlı sözde-olabilirlik, kapalı modeller için",
+  "alinti": "the existing methods cannot be applied to some proprietary models like ChatGPT or Claude 3 because the likelihood is unavailable to the user."
+ },
+ {
+  "id": "arXiv:2509.23022",
+  "baslik": "Copyright Infringement Detection in Text-to-Image Diffusion Models via Differential Privacy",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Diffusion modellerinde DP tabanlı telif ihlali tespiti; LLM dışı.",
+  "alinti": "The widespread deployment of large vision models such as Stable Diffusion raises significant legal and ethical concerns, as these models can memorize and reproduce copyrighted content without authorization."
+ },
+ {
+  "id": "doi:10.1145/3779430",
+  "baslik": "Detecting Training Data For Large Language Models: A Survey",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; LLM eğitim verisi tespiti anketi",
+  "alinti": ""
+ }
+]

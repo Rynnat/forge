@@ -1,0 +1,970 @@
+{
+ "run_id": "20261026-031449-718f94",
+ "soru": "Veri değerleme ve veri paraya çevirme için ölçütler, KPI'lar ve taksonomiler üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-07-25",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6034,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.09773599999999999,
+   "in": 1208,
+   "out": 4404,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.13541765000000003,
+   "in": 341880,
+   "out": 47638,
+   "web_search": 8
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.23577530000000002,
+   "in": 262424,
+   "out": 366597,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.13442400000000002,
+   "in": 11369,
+   "out": 2174,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 41.2,
+  "toplama:openalex": 5.0,
+  "web_isci": 63.5,
+  "toplama:crossref": 78.6,
+  "toplama:dblp": 215.3,
+  "toplama:arxiv": 447.9,
+  "toplama": 447.9,
+  "tekil+kesim_1": 42.9,
+  "atif": 377.1,
+  "okuyucu": 567.9,
+  "damitma": 25.9,
+  "sef_final": 20.7,
+  "toplam": 1523.6
+ },
+ "ozet_token_tahmini": 3792,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Veri değerlemenin temelleri nelerdir: bilgiyi varlık olarak ele alan klasik yaklaşımlar (maliyet, piyasa ve gelir temelli değerleme), bilgi ekonomisi ve infonomics?",
+    "sorgular": [
+     "\"information as an asset\" valuation",
+     "\"value of information\" asset valuation approach",
+     "infonomics information valuation",
+     "data asset accounting valuation",
+     "\"data value\" economics intangible assets"
+    ],
+    "yeterli": "Bilgiyi varlık olarak değerleyen klasik ve ekonomik çerçeveler (Moody & Walsh, Laney/Infonomics, muhasebe ve maddi olmayan varlık yaklaşımları) ve bunların ölçütleri belirlenmiş olmalıdır."
+   },
+   {
+    "id": "S2",
+    "soru": "Makine öğreniminde veri değerlemenin ana yöntem aileleri nelerdir (Shapley, Banzhaf, semivalue, en yakın komşu, leave-one-out, pekiştirmeli öğrenme, out-of-bag tabanlı)?",
+    "sorgular": [
+     "\"Data Shapley\" machine learning",
+     "\"data valuation\" Shapley value",
+     "semivalue \"Banzhaf\" data valuation",
+     "\"data valuation\" reinforcement learning",
+     "out-of-bag data value"
+    ],
+    "yeterli": "Shapley, Beta Shapley, Data Banzhaf, KNN-Shapley, DVRL, Data-OOB ve LAVA gibi temel yöntemler ile hesaplama verimliliğine dair ana katkılar kapsanmış olmalıdır."
+   },
+   {
+    "id": "S3",
+    "soru": "Etki fonksiyonları ve veri atfı (data attribution) yöntemleri veri değerlemesinde nasıl kullanılıyor?",
+    "sorgular": [
+     "\"influence functions\" training data",
+     "\"data attribution\" model behavior",
+     "TracIn gradient tracing influence",
+     "datamodels predicting predictions training data",
+     "\"training data attribution\" large language models"
+    ],
+    "yeterli": "Influence functions, TracIn, Datamodels, TRAK gibi atıf yöntemleri ve bunların LLM/büyük model ölçeğine uyarlanması belirlenmiş olmalıdır."
+   },
+   {
+    "id": "S4",
+    "soru": "Veri paraya çevirme (data monetization) için iş modelleri, taksonomiler ve KPI'lar nelerdir?",
+    "sorgular": [
+     "\"data monetization\" business model taxonomy",
+     "\"data monetisation\" strategies",
+     "data monetization KPIs metrics",
+     "\"data-driven business models\" taxonomy",
+     "big data value chain monetization"
+    ],
+    "yeterli": "İç (süreç iyileştirme), dış (satma/takas) ve wrapping gibi paraya çevirme stratejileri, iş modeli taksonomileri ve performans göstergelerine dair başlıca yönetim/IS çalışmaları kapsanmış olmalıdır."
+   },
+   {
+    "id": "S5",
+    "soru": "Veri fiyatlandırma ve veri pazaryerleri (data marketplaces) için hangi mekanizmalar ve fiyatlandırma ölçütleri önerilmiştir?",
+    "sorgular": [
+     "\"data pricing\" survey",
+     "\"query-based pricing\" data",
+     "\"data marketplace\" algorithmic",
+     "data market platforms trading",
+     "\"model-based pricing\" machine learning"
+    ],
+    "yeterli": "Sorgu tabanlı ve model tabanlı fiyatlandırma, algoritmik veri pazaryerleri ve teşvik/ödül adaleti mekanizmalarına dair temel çalışmalar ile anketler belirlenmiş olmalıdır."
+   },
+   {
+    "id": "S6",
+    "soru": "Veri değerleme yöntemleri nasıl değerlendiriliyor; hangi benchmark'lar, görevler (gürültülü etiket tespiti, nokta çıkarma/ekleme) ve ölçütler kullanılıyor?",
+    "sorgular": [
+     "\"OpenDataVal\" benchmark",
+     "data valuation benchmark evaluation",
+     "noisy label detection data valuation",
+     "point removal experiment data value",
+     "data valuation robustness reproducibility"
+    ],
+    "yeterli": "OpenDataVal gibi benchmark'lar, standart değerlendirme protokolleri ve yöntemlerin tutarlılığı/güvenilirliğine dair eleştirel çalışmalar tanımlanmış olmalıdır."
+   },
+   {
+    "id": "S7",
+    "soru": "Federe öğrenme, veri kalitesi, gizlilik ve LLM eğitim verisi gibi komşu alanlarda veri değerleme nasıl uygulanıyor?",
+    "sorgular": [
+     "federated learning contribution evaluation Shapley",
+     "data quality assessment dimensions value",
+     "privacy-preserving data valuation",
+     "LLM training data valuation copyright compensation",
+     "data selection pretraining data value"
+    ],
+    "yeterli": "Federe öğrenmede katkı ölçümü, veri kalitesi boyutları, gizlilik ve üretken modellerde veri sahiplerine ödeme/atıf konularındaki ana uygulamalar kapsanmış olmalıdır."
+   },
+   {
+    "id": "S8",
+    "soru": "Alanın açık problemleri nelerdir (ölçeklenebilirlik, değerlerin göreve/modele bağımlılığı, iş KPI'larıyla ML değer ölçütleri arasındaki kopukluk, standart taksonomi eksikliği)?",
+    "sorgular": [
+     "\"data valuation\" survey open challenges",
+     "data valuation machine learning survey",
+     "data valuation limitations Shapley critique",
+     "data economy open problems valuation",
+     "data marketplace challenges survey"
+    ],
+    "yeterli": "Güncel anketlerde (2022-2025) ve eleştirel çalışmalarda dile getirilen açık problemler sistematik olarak listelenmiş olmalıdır."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Data Shapley: Equitable Valuation of Data for Machine Learning",
+    "yil": 2019
+   },
+   {
+    "baslik": "Towards Efficient Data Valuation Based on the Shapley Value",
+    "yil": 2019
+   },
+   {
+    "baslik": "Efficient Task-Specific Data Valuation for Nearest Neighbor Algorithms",
+    "yil": 2019
+   },
+   {
+    "baslik": "Understanding Black-box Predictions via Influence Functions",
+    "yil": 2017
+   },
+   {
+    "baslik": "Data Valuation using Reinforcement Learning",
+    "yil": 2020
+   },
+   {
+    "baslik": "A Distributional Framework for Data Valuation",
+    "yil": 2020
+   },
+   {
+    "baslik": "Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning",
+    "yil": 2022
+   },
+   {
+    "baslik": "Data Banzhaf: A Robust Data Valuation Framework for Machine Learning",
+    "yil": 2023
+   },
+   {
+    "baslik": "LAVA: Data Valuation without Pre-Specified Learning Algorithms",
+    "yil": 2023
+   },
+   {
+    "baslik": "Data-OOB: Out-of-bag Estimate as a Simple and Efficient Data Value",
+    "yil": 2023
+   },
+   {
+    "baslik": "OpenDataVal: a Unified Benchmark for Data Valuation",
+    "yil": 2023
+   },
+   {
+    "baslik": "Estimating Training Data Influence by Tracing Gradient Descent",
+    "yil": 2020
+   },
+   {
+    "baslik": "Datamodels: Predicting Predictions from Training Data",
+    "yil": 2022
+   },
+   {
+    "baslik": "TRAK: Attributing Model Behavior at Scale",
+    "yil": 2023
+   },
+   {
+    "baslik": "Data Valuation in Machine Learning: \"Ingredients\", Strategies, and Open Challenges",
+    "yil": 2022
+   },
+   {
+    "baslik": "A Survey on Data Pricing: from Economics to Data Science",
+    "yil": 2020
+   },
+   {
+    "baslik": "A Marketplace for Data: An Algorithmic Solution",
+    "yil": 2019
+   },
+   {
+    "baslik": "Query-Based Data Pricing",
+    "yil": 2015
+   },
+   {
+    "baslik": "Data Market Platforms: Trading Data Assets to Solve Data Problems",
+    "yil": 2020
+   },
+   {
+    "baslik": "A Survey on Big Data Market: Pricing, Trading and Protection",
+    "yil": 2018
+   },
+   {
+    "baslik": "Measuring the Value of Information: An Asset Valuation Approach",
+    "yil": 1999
+   },
+   {
+    "baslik": "Infonomics: How to Monetize, Manage, and Measure Information as an Asset for Competitive Advantage",
+    "yil": 2017
+   },
+   {
+    "baslik": "How to Monetize Your Data",
+    "yil": 2017
+   },
+   {
+    "baslik": "Data Monetization: Lessons from a Retailer's Journey",
+    "yil": 2013
+   },
+   {
+    "baslik": "Big Data Monetization throughout Big Data Value Chain: A Comprehensive Review",
+    "yil": 2020
+   }
+  ],
+  "web_odaklari": [
+   "awesome data valuation papers github",
+   "data monetization taxonomy literature review",
+   "data pricing data marketplace reading list"
+  ]
+ },
+ "tohumlar": [
+  "doi:10.24963/ijcai.2022/782",
+  "arXiv:2009.04462",
+  "doi:10.1186/s40537-019-0281-5",
+  "doi:10.1177/0266382108095039",
+  "arXiv:2205.15466",
+  "doi:10.1177/01655515030293003",
+  "arXiv:2303.04810",
+  "arXiv:2306.10577",
+  "doi:10.1109/access.2018.2806881",
+  "arXiv:2002.08484",
+  "arXiv:2303.14186",
+  "arXiv:2202.00622"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1904.02868",
+   "arxiv_id": "1904.02868",
+   "doi": null,
+   "baslik": "Data Shapley: Equitable Valuation of Data for Machine Learning",
+   "yil": 2019,
+   "tarih": "2019-04-05",
+   "gerekce": "Data Shapley, her eğitim verisinin tahmin performansına katkısını ölçen bir metrik olarak önerilen temel veri değerleme çerçevesidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose data Shapley as a metric to quantify the value of each training datum to the predictor performance.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:1703.04730",
+   "arxiv_id": "1703.04730",
+   "doi": null,
+   "baslik": "Understanding Black-box Predictions via Influence Functions",
+   "yil": 2017,
+   "tarih": "2017-03-14",
+   "gerekce": "Etki fonksiyonlarını kullanarak bir modelin tahminini öğrenme algoritması üzerinden eğitim verisine izleyen temel çalışmadır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we use influence functions -- a classic technique from robust statistics -- to trace a model's prediction through the learning algorithm and back to its training data",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.24963/ijcai.2022/782",
+   "arxiv_id": null,
+   "doi": "10.24963/ijcai.2022/782",
+   "baslik": "Data Valuation in Machine Learning: \"Ingredients\", Strategies, and Open Challenges",
+   "yil": 2022,
+   "tarih": "2022-07",
+   "gerekce": "ML'de veri değerleme anketi; yeni bileşenler, değerleme stratejileri ve maliyet azaltma için açık araştırma sorunlarını belirler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "identifies open research challenges for designing new ingredients, data valuation strategies, and cost reduction techniques.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 25,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2009.04462",
+   "arxiv_id": "2009.04462",
+   "doi": "10.1109/tkde.2020.3045927",
+   "baslik": "A Survey on Data Pricing: from Economics to Data Science",
+   "yil": 2020,
+   "tarih": "2020-09-09",
+   "gerekce": "Veri fiyatlandırmasının motivasyonlarını, ekonomisini ve fiyatlandırma modellerinin gelişimini temel ilkelerle inceleyen kapsamlı bir ankettir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We examine various motivations behind data pricing, understand the economics of data pricing and review the development and evolution of pricing models according to a series of fundamental principles.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 143,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2306.10577",
+   "arxiv_id": "2306.10577",
+   "doi": "10.52202/075280-1244",
+   "baslik": "OpenDataVal: a Unified Benchmark for Data Valuation",
+   "yil": 2023,
+   "tarih": "2023-06-18",
+   "gerekce": "OpenDataVal, çeşitli veri değerleme algoritmalarını uygulamak ve karşılaştırmak için birleşik bir benchmark çerçevesi sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we introduce OpenDataVal, an easy-to-use and unified benchmark framework that empowers researchers and practitioners to apply and compare various data valuation algorithms.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 14,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2303.04810",
+   "arxiv_id": "2303.04810",
+   "doi": "10.1109/tbdata.2023.3254152",
+   "baslik": "A Survey of Data Pricing for Data Marketplaces",
+   "yil": 2023,
+   "tarih": "2023-03-07",
+   "gerekce": "Veri fiyatlarını belirleyen farklı nitelikleri birleştiren yeni bir veri fiyatlandırma taksonomisi önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our key contribution lies in a new taxonomy of data pricing studies that unifies different attributes determining data prices.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "web"
+   ],
+   "atif": 73,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1108/ijopm-02-2014-0098",
+   "arxiv_id": null,
+   "doi": "10.1108/ijopm-02-2014-0098",
+   "baslik": "Capturing value from big data – a taxonomy of data-driven business models used by start-up firms",
+   "yil": 2016,
+   "tarih": "2016-10-03",
+   "gerekce": "100 startup'ın iş modeli tanımlarının kodlanmasıyla veri odaklı iş modelleri taksonomisi geliştirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To develop the taxonomy of DDBMs, business model descriptions of 100 randomly chosen start-up firms were coded using a DDBM framework derived from literature",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 322,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 8,
+   "id": "title:measuring the value of information an asset valuation approa",
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Measuring the Value Of Information - An Asset Valuation Approach.",
+   "yil": 1999,
+   "tarih": "1999-01-01",
+   "gerekce": "Kabul görmüş muhasebe ilkeleriyle tutarlı, pratik bir bilgi varlığı değerleme yaklaşımı geliştirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The objective of this paper is to develop an approach to valuing information which is both practical to apply and consistent with accepted accounting principles.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "openalex"
+   ],
+   "atif": 161,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2205.15466",
+   "arxiv_id": "2205.15466",
+   "doi": null,
+   "baslik": "Data Banzhaf: A Robust Data Valuation Framework for Machine Learning",
+   "yil": 2022,
+   "tarih": "2022-05-30",
+   "gerekce": "Banzhaf değerinin tüm semivalue'lar arasında en büyük güvenlik marjını sağladığını göstererek robust veri değerleme sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We show that the Banzhaf value, a famous value notion that originated from cooperative game theory literature, achieves the largest safety margin among all semivalues",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2303.14186",
+   "arxiv_id": "2303.14186",
+   "doi": null,
+   "baslik": "TRAK: Attributing Model Behavior at Scale",
+   "yil": 2023,
+   "tarih": "2023-03-24",
+   "gerekce": "TRAK, büyük ölçekli türevlenebilir modeller için hem etkili hem hesaplanabilir bir veri atfı yöntemidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this work, we introduce TRAK (Tracing with the Randomly-projected After Kernel), a data attribution method that is both effective and computationally tractable for large-scale, differentiable models.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2002.08484",
+   "arxiv_id": "2002.08484",
+   "doi": null,
+   "baslik": "Estimating Training Data Influence by Tracing Gradient Descent",
+   "yil": 2020,
+   "tarih": "2020-02-19",
+   "gerekce": "TracIn, bir eğitim örneğinin model tahmini üzerindeki etkisini gradyan inişini izleyerek hesaplar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We introduce a method called TracIn that computes the influence of a training example on a prediction made by the model.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2202.00622",
+   "arxiv_id": "2202.00622",
+   "doi": null,
+   "baslik": "Datamodels: Predicting Predictions from Training Data",
+   "yil": 2022,
+   "tarih": "2022-02-01",
+   "gerekce": "Datamodeling, bir model sınıfının davranışını eğitim verisi açısından analiz eden kavramsal bir çerçeve sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We present a conceptual framework, datamodeling, for analyzing the behavior of a model class in terms of the training data.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "doi:10.1186/s40537-019-0281-5",
+   "arxiv_id": null,
+   "doi": "10.1186/s40537-019-0281-5",
+   "baslik": "Big data monetization throughout Big Data Value Chain: a comprehensive review",
+   "yil": 2020,
+   "tarih": "2020-01-08",
+   "gerekce": "Büyük veri değer zinciri boyunca veri paraya çevirmeyi ele alan kapsamlı bir incelemedir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "These Big Data Value Chains describe the data flow within organizations which rely on Big Data to extract valuable insights.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 168,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1162/99608f92.c18db966",
+   "arxiv_id": null,
+   "doi": "10.1162/99608f92.c18db966",
+   "baslik": "A Review of Data Valuation Approaches and Building and Scoring a Data Valuation Model",
+   "yil": 2023,
+   "tarih": "2023-01-26",
+   "gerekce": "Veri değerini ölçmek için standart olmadığını vurgular; piyasa temelli, ekonomik modeller ve boyut temelli yaklaşımları karşılaştırır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Today, there is no standard to measure the value of data. Different approaches include market-based valuation, economic models, and applying dimensions to data.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "openalex"
+   ],
+   "atif": 55,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:1805.11450",
+   "arxiv_id": "1805.11450",
+   "doi": "10.1145/3299869.3300078",
+   "baslik": "Towards Model-based Pricing for Machine Learning in a Data Marketplace",
+   "yil": 2018,
+   "tarih": "2018-05-26",
+   "gerekce": "Veri yerine doğrudan ML model örneklerini fiyatlandıran model temelli fiyatlandırma çerçevesi önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this paper, we propose a model-based pricing (MBP) framework, which instead of pricing the data, directly prices ML model instances.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 112,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2110.14049",
+   "arxiv_id": "2110.14049",
+   "doi": null,
+   "baslik": "Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning",
+   "yil": 2021,
+   "tarih": "2021-10-26",
+   "gerekce": "Beta Shapley, hatalı etiketli veri tespiti gibi görevlerde mevcut veri değerleme yöntemlerini geride bırakır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We demonstrate that Beta Shapley outperforms state-of-the-art data valuation methods on several downstream ML tasks such as: 1) detecting mislabeled training data",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:1902.10275",
+   "arxiv_id": "1902.10275",
+   "doi": null,
+   "baslik": "Towards Efficient Data Valuation Based on the Shapley Value",
+   "yil": 2019,
+   "tarih": "2019-02-27",
+   "gerekce": "Shapley değerine dayalı verimli veri değerleme yöntemleri sunarak ölçeklenebilirlik sorununu ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The Shapley value defines a unique payoff scheme that satisfies many desiderata for the notion of data value.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2304.07718",
+   "arxiv_id": "2304.07718",
+   "doi": null,
+   "baslik": "Data-OOB: Out-of-bag Estimate as a Simple and Efficient Data Value",
+   "yil": 2023,
+   "tarih": "2023-04-16",
+   "gerekce": "Data-OOB, bagging modelleri için out-of-bag tahminine dayalı basit ve verimli bir veri değerleme yöntemidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose Data-OOB, a new data valuation method for a bagging model that utilizes the out-of-bag estimate.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:1909.11671",
+   "arxiv_id": "1909.11671",
+   "doi": null,
+   "baslik": "Data Valuation using Reinforcement Learning",
+   "yil": 2019,
+   "tarih": "2019-09-25",
+   "gerekce": "DVRL, küçük bir doğrulama kümesindeki ödülle veri değeri tahmincisini pekiştirmeli öğrenmeyle eğitir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We train the data value estimator using a reinforcement signal of the reward obtained on a small validation set that reflects performance on the target task.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:1908.08619",
+   "arxiv_id": "1908.08619",
+   "doi": "10.14778/3342263.3342637",
+   "baslik": "A Note on \"Efficient Task-Specific Data Valuation for Nearest Neighbor Algorithms\"",
+   "yil": 2019,
+   "tarih": "2019-07",
+   "gerekce": "En yakın komşu algoritmaları için Shapley tabanlı veri değerlemesini ele alır; adillik ve rasyonellik özelliklerini vurgular.",
+   "gerekce_kokeni": "sef",
+   "alinti": "as it uniquely possesses properties with appealing real-world interpretations, such as fairness, rationality and decentralizability",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2009.06192",
+   "arxiv_id": "2009.06192",
+   "doi": "10.1007/978-3-030-63076-8_11",
+   "baslik": "A Principled Approach to Data Valuation for Federated Learning",
+   "yil": 2020,
+   "tarih": "2020-09-14",
+   "gerekce": "Shapley değerini federe öğrenmeye uyarlayan ilkeli bir veri değerleme yaklaşımıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The Shapley value (SV) defines a unique payoff scheme that satisfies many desiderata for a data value notion.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2409.19998",
+   "arxiv_id": "2409.19998",
+   "doi": null,
+   "baslik": "Do Influence Functions Work on Large Language Models?",
+   "yil": 2024,
+   "tarih": "2024-09-30",
+   "gerekce": "Etki fonksiyonlarının LLM'lerde çoğu ortamda tutarlı biçimde kötü performans gösterdiğini bularak önemli bir açık problemi ortaya koyar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we evaluate influence functions across multiple tasks and find that they consistently perform poorly in most settings.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2405.13954",
+   "arxiv_id": "2405.13954",
+   "doi": null,
+   "baslik": "What is Your Data Worth to GPT? LLM-Scale Data Valuation with Influence Functions",
+   "yil": 2024,
+   "tarih": "2024-05-22",
+   "gerekce": "LLM ölçeğinde etki fonksiyonu tabanlı veri değerlemesi yaparak her verinin model çıktısına katkısını ölçer.",
+   "gerekce_kokeni": "sef",
+   "alinti": "data valuation (or data attribution), which quantifies the contribution or value of each data to the model output",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2212.04612",
+   "arxiv_id": "2212.04612",
+   "doi": "10.1007/s10994-023-06495-7",
+   "baslik": "Training Data Influence Analysis and Estimation: A Survey",
+   "yil": 2022,
+   "tarih": "2022-12-09",
+   "gerekce": "Her eğitim örneğinin nihai modeli ne kadar değiştirdiğini nicelleştiren etki analizi yöntemlerinin anketidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Influence analysis partially demystifies training's underlying interactions by quantifying the amount each training instance alters the final model.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "web"
+   ],
+   "atif": 69,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2108.07915",
+   "arxiv_id": "2108.07915",
+   "doi": "10.1007/s10115-022-01679-4",
+   "baslik": "Data Pricing in Machine Learning Pipelines",
+   "yil": 2021,
+   "tarih": "2021-08-18",
+   "gerekce": "Makine öğrenimi boru hatlarında veri fiyatlandırmasının ilkelerini ve son gelişmelerini inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this article, we survey the principles and the latest research development of data pricing in machine learning pipelines.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2306.04945",
+   "arxiv_id": "2306.04945",
+   "doi": null,
+   "baslik": "Modern Data Pricing Models: Taxonomy and Comprehensive Survey",
+   "yil": 2023,
+   "tarih": "2023-06-08",
+   "gerekce": "Veri fiyatlandırma çözümlerini üç ana strateji ve on üç modele ayıran bir taksonomi sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We divide the data pricing solutions into three major strategies and thirteen models, including query pricing strategy, feature-based data pricing strategy, and pricing strategy in machine learning.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "dblp",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1145/2213556.2213582",
+   "arxiv_id": null,
+   "doi": "10.1145/2213556.2213582",
+   "baslik": "Query-Based Data Pricing",
+   "yil": 2012,
+   "tarih": "2012-05-21",
+   "gerekce": "Birkaç görünümün fiyatından herhangi bir sorgunun fiyatını otomatik türeten sorgu tabanlı fiyatlandırma çerçevesidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this article, we propose a framework for pricing data on the Internet that, given the price of a few views, allows the price of any query to be derived automatically.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 111,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2305.00054",
+   "arxiv_id": "2305.00054",
+   "doi": null,
+   "baslik": "LAVA: Data Valuation without Pre-Specified Learning Algorithms",
+   "yil": 2023,
+   "tarih": "2023-04-28",
+   "gerekce": "LAVA, veri değerlerinin öğrenme algoritmasının tasarım seçimlerine bağımlılığı sorununu ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "As a result, the calculated data values depend on many design choices of the underlying learning algorithm.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.54097/mhwz3z95",
+   "arxiv_id": null,
+   "doi": "10.54097/mhwz3z95",
+   "baslik": "An Overview of Data Contribution Evaluation Methods for Federated Learning",
+   "yil": 2024,
+   "tarih": "2024-06-12",
+   "gerekce": "Federe öğrenmede veri katkısı değerlendirme yöntemlerini inceler, süregelen zorlukları ve gelecek yönleri tartışır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This paper reviews existing evaluation methods from the perspective of data contribution assessment in FL, discusses ongoing challenges in this area, and explores future research directions.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 1,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2002.12334",
+   "arxiv_id": "2002.12334",
+   "doi": null,
+   "baslik": "A Distributional Framework for Data Valuation",
+   "yil": 2020,
+   "tarih": "2020-02-27",
+   "gerekce": "Veri noktası değerlemesinin istatistiksel yönleri hesaba katmaması sorununu dağılımsal bir çerçeveyle ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "It does not account for statistical aspects of the data and does not give a way to reason about points outside the data set.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

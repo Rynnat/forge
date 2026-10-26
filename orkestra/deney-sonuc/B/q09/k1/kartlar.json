@@ -1,0 +1,1057 @@
+[
+ {
+  "id": "doi:10.1007/978-3-642-27705-4_12",
+  "baslik": "LLBMC: Bounded Model Checking of C and C++ Programs Using a Compiler IR",
+  "yil": 2012,
+  "cites": 85,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "C/C++ için LLVM IR tabanlı BMC aracı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-642-00768-2_16",
+  "baslik": "Boolector: An Efficient SMT Solver for Bit-Vectors and Arrays",
+  "yil": 2009,
+  "cites": 210,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "SMT çözücü; bit-vektör ve dizi teorileri",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:0907.2072",
+  "baslik": "SMT-Based Bounded Model Checking for Embedded ANSI-C Software",
+  "yil": 2009,
+  "cites": 141,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Gömülü ANSI-C için SMT tabanlı BMC; teori kodlamaları",
+  "alinti": "We have extended the encodings from previous SMT-based bounded model checkers to provide more accurate support for finite variables, bit-vector operations, arrays, structures, unions and pointers."
+ },
+ {
+  "id": "doi:10.1007/s10009-008-0091-0",
+  "baslik": "Bounded Model Checking of Software Using SMT Solvers Instead of SAT Solvers",
+  "yil": 2006,
+  "cites": 89,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "SAT yerine SMT kullanan BMC geçişi; temel çalışma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-031-37703-7_1",
+  "baslik": "Bitwuzla",
+  "yil": 2023,
+  "cites": 68,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Bit-vektör ve kayan nokta teorili SMT çözücü",
+  "alinti": "Bitwuzla is a new SMT solver for the quantifier-free and quantified theories of fixed-size bit-vectors, arrays, floating-point arithmetic, and uninterpreted functions."
+ },
+ {
+  "id": "doi:10.1007/978-3-642-36742-7_48",
+  "baslik": "LLBMC: Improved Bounded Model Checking of C Programs Using LLVM",
+  "yil": 2013,
+  "cites": 16,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLVM kullanan C BMC aracının geliştirilmiş sürümü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-031-30820-8_29",
+  "baslik": "Competition on Software Verification and Witness Validation: SV-COMP 2023",
+  "yil": 2023,
+  "cites": 68,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SV-COMP 2023 yarışması; karşılaştırma çerçevesi",
+  "alinti": "The competition consisted of 23 805 verification tasks for C programs and 586 verification tasks for Java programs."
+ },
+ {
+  "id": "doi:10.1007/978-3-540-24730-2_15",
+  "baslik": "A Tool for Checking ANSI-C Programs",
+  "yil": 2004,
+  "cites": 886,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "CBMC'nin özgün tanıtım makalesi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2302.02384",
+  "baslik": "CBMC: The C Bounded Model Checker",
+  "yil": 2014,
+  "cites": 274,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "CBMC aracının temel tanıtımı; bit-hassas çeviri",
+  "alinti": "CBMC implements a bit-precise translation of an input C program, annotated with assertions and with loops unrolled to a given depth, into a formula."
+ },
+ {
+  "id": "doi:10.1007/978-3-031-90660-2_9",
+  "baslik": "Improvements in Software Verification and Witness Validation: SV-COMP 2025",
+  "yil": 2025,
+  "cites": 46,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SV-COMP 2025; büyük ölçekli kıyaslama ve doğrulama",
+  "alinti": "The verification track of the competition was executed on a benchmark set of 33 353 verification tasks with C programs"
+ },
+ {
+  "id": "doi:10.1007/3-540-49059-0_14",
+  "baslik": "Symbolic Model Checking without BDDs",
+  "yil": 1999,
+  "cites": 834,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "SAT tabanlı sembolik model denetiminin temel makalesi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2107.01093",
+  "baslik": "Model Checking C++ Programs",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "ESBMC üzerinde C++ için SMT tabanlı BMC",
+  "alinti": "Here we describe and evaluate a novel verification approach based on bounded model checking (BMC) and satisfiability modulo theories (SMT) to verify C++ programs formally."
+ },
+ {
+  "id": "doi:10.1007/978-3-031-57256-2_15",
+  "baslik": "State of the Art in Software Verification and Witness Validation: SV-COMP 2024",
+  "yil": 2024,
+  "cites": 81,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SV-COMP 2024 yarışması; kıyaslama ve tanık doğrulama",
+  "alinti": "The competition was executed on a benchmark set with 30 300 verification tasks for C programs"
+ },
+ {
+  "id": "doi:10.1007/978-3-030-72013-1_24",
+  "baslik": "Software Verification: 10th Comparative Evaluation (SV-COMP 2021)",
+  "yil": 2021,
+  "cites": 54,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "SV-COMP 2021 yarışması; karşılaştırma çerçevesi",
+  "alinti": "The competition was based on 15 201 verification tasks for C programs and 473 verification tasks for Java programs."
+ },
+ {
+  "id": "doi:10.1007/s10009-015-0407-9",
+  "baslik": "Handling loops in bounded model checking of C programs via k-induction",
+  "yil": 2015,
+  "cites": 65,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "C döngüleri için k-tümevarım ile BMC",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-540-78800-3_24",
+  "baslik": "Z3: An Efficient SMT Solver",
+  "yil": 2008,
+  "cites": 4814,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Temel SMT çözücü; BMC'de yaygın kullanılır",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-030-99527-0_20",
+  "baslik": "Progress on Software Verification: SV-COMP 2022",
+  "yil": 2022,
+  "cites": 87,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "SV-COMP 2022 yarışması; karşılaştırma çerçevesi",
+  "alinti": "The competition consisted of 15 648 verification tasks for C programs and 586 verification tasks for Java programs."
+ },
+ {
+  "id": "doi:10.1007/978-3-642-28756-5_44",
+  "baslik": "LLBMC: A Bounded Model Checker for LLVM’s Intermediate Representation",
+  "yil": 2012,
+  "cites": 14,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLVM ara temsili üzerinde BMC aracı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ase.2013.6693138",
+  "baslik": "The bounded model checker LLBMC",
+  "yil": 2013,
+  "cites": 24,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLBMC aracının tanıtımı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3238147.3240481",
+  "baslik": "ESBMC 5.0: an industrial-strength C model checker",
+  "yil": 2018,
+  "cites": 89,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Endüstriyel C model denetleyicisi ESBMC",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ecbs.2013.15",
+  "baslik": "SMT-Based Bounded Model Checking of C++ Programs",
+  "yil": 2013,
+  "cites": 21,
+  "kaynaklar": [
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "SMT tabanlı BMC ile C++ doğrulaması",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-030-45237-7_21",
+  "baslik": "Advances in Automatic Software Verification: SV-COMP 2020",
+  "yil": 2020,
+  "cites": 43,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "SV-COMP 2020 yarışması; karşılaştırma çerçevesi",
+  "alinti": "The competition was based on 11 052 verification tasks for C programs and 416 verification tasks for Java programs."
+ },
+ {
+  "id": "doi:10.1007/s10009-017-0469-y",
+  "baslik": "Reliable benchmarking: requirements and solutions",
+  "yil": 2017,
+  "cites": 196,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Kıyaslama metodolojisi ve BenchExec çerçevesi",
+  "alinti": "Benchmarking is a widely used method in experimental computer science, in particular, for the comparative evaluation of tools and algorithms."
+ },
+ {
+  "id": "doi:10.1007/s10009-020-00571-2",
+  "baslik": "ESBMC 6.1: automated test case generation using bounded model checking",
+  "yil": 2020,
+  "cites": 14,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "BMC tabanlı otomatik test üretimi, ESBMC",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/sbesc.2015.24",
+  "baslik": "Model Checking Embedded C Software Using k-Induction and Invariants",
+  "yil": 2015,
+  "cites": 19,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Gömülü C yazılımında k-tümevarım ve değişmezler",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-032-22749-2_23",
+  "baslik": "Evaluating Software Verifiers for C, Java, and SV-LIB",
+  "yil": 2026,
+  "cites": 20,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SV-COMP 2026; güncel karşılaştırma ve SV-LIB",
+  "alinti": "The verification track of the competition was executed on a benchmark set of 36 402 verification tasks with C programs"
+ },
+ {
+  "id": "doi:10.1016/j.tcs.2008.03.013",
+  "baslik": "Efficient SAT-based bounded model checking for software verification",
+  "yil": 2004,
+  "cites": 61,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; SAT tabanlı BMC yazılım doğrulaması",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-319-08867-9_39",
+  "baslik": "Bounded Model Checking of Multi-threaded C Programs via Lazy Sequentialization",
+  "yil": 2014,
+  "cites": 68,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; çok iş parçacıklı C için tembel sıralama",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-662-49674-9_55",
+  "baslik": "Reliable and Reproducible Competition Results with BenchExec and Witnesses (Report on SV-COMP 2016)",
+  "yil": 2016,
+  "cites": 89,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Tekrarlanabilir SV-COMP sonuçları için kıyaslama altyapısı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/asew67777.2025.00036",
+  "baslik": "BMuzz: Combining Bounded Model Checking and Fuzzing to Enhance Code Coverage",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; BMC ile fuzzing birleşimi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s00165-017-0419-1",
+  "baslik": "Incremental bounded model checking for embedded software",
+  "yil": 2017,
+  "cites": 22,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Artımlı BMC, gömülü yazılım, endüstriyel araç entegrasyonu",
+  "alinti": "Existing industrial tools for embedded software use an off-the-shelf bounded model checker and apply it iteratively to verify the program with an increasing number of unwindings."
+ },
+ {
+  "id": "doi:10.1007/978-3-642-54862-8_29",
+  "baslik": "Lazy-CSeq: A Lazy Sequentialization Tool for C",
+  "yil": 2014,
+  "cites": 26,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; C için Lazy-CSeq aracı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-030-99524-9_24",
+  "baslik": "cvc5: A Versatile and Industrial-Strength SMT Solver",
+  "yil": 2022,
+  "cites": 456,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Endüstriyel güçlü SMT çözücü; CVC4 ardılı",
+  "alinti": "cvc5 is the latest SMT solver in the cooperating validity checker series and builds on the successful code base of CVC4"
+ },
+ {
+  "id": "arXiv:2305.14752",
+  "baslik": "A New Era in Software Security: Towards Self-Healing Software via Large Language Models and Formal Verification",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "BMC ile LLM tabanlı güvenlik açığı onarımı",
+  "alinti": "We present the ESBMC-AI framework as a proof of concept, leveraging the well-recognized and industry-adopted Efficient SMT-based Context-Bounded Model Checker (ESBMC) and a pre-trained transformer model"
+ },
+ {
+  "id": "doi:10.1002/stvr.1632",
+  "baslik": "Bounded model checking of C++ programs based on the Qt cross‐platform framework",
+  "yil": 2017,
+  "cites": 17,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Qt çerçevesi için ESBMC tabanlı doğrulama",
+  "alinti": "a simplified version of the Qt framework, which is integrated into a checker based on satisfiability modulo theories (SMT)"
+ },
+ {
+  "id": "doi:10.1007/978-3-540-73368-3_52",
+  "baslik": "A Decision Procedure For Bit-Vectors And Arrays",
+  "yil": 2007,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Bit-vektör ve dizi teorisi için karar prosedürü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-319-59647-1_20",
+  "baslik": "Concurrent Program Verification with Lazy Sequentialization and Interval Analysis",
+  "yil": 2017,
+  "cites": 4,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Tembel sıralama ve aralık analiziyle eşzamanlı doğrulama",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/309847.309942",
+  "baslik": "Symbolic model checking using SAT procedures instead of BDDs",
+  "yil": 1999,
+  "cites": 197,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; BDD yerine SAT ile sembolik MC (BMC kökeni)",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/3-540-63166-6_9",
+  "baslik": "An efficient decision procedure for the theory of fixed-sized bit-vectors",
+  "yil": 1997,
+  "cites": 24,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Sabit boyutlu bit-vektörleri için karar prosedürü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-031-90660-2_10",
+  "baslik": "SV-COMP’25 Reproduction Report (Competition Contribution)",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SV-COMP'25 tekrarlanabilirlik raporu",
+  "alinti": "We reproduced the verification and validation results of active participants, including score and ranking calculations for the verification track."
+ },
+ {
+  "id": "doi:10.1109/dac.2002.1012605",
+  "baslik": "Can BDDs compete with SAT solvers on Bounded Model Checking?",
+  "yil": 2002,
+  "cites": 12,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "BMC için BDD ve SAT karşılaştırması; tarihsel",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-319-46520-3_12",
+  "baslik": "Lazy Sequentialization for the Safety Verification of Unbounded Concurrent Programs",
+  "yil": 2016,
+  "cites": 15,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Tembel sıralama ile sınırsız eşzamanlı program doğrulaması",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2004.12699",
+  "baslik": "An Efficient Floating-Point Bit-Blasting API for Verifying C Programs",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "ESBMC'de kayan nokta bit-blasting kodlaması",
+  "alinti": "The new floating-point API is part of the SMT backend in ESBMC, a state-of-the-art bounded model checker for C and C++."
+ },
+ {
+  "id": "doi:10.1007/978-3-319-70848-5_7",
+  "baslik": "Encoding Floating-Point Numbers Using the SMT Theory in ESBMC: An Empirical Evaluation over the SV-COMP Benchmarks",
+  "yil": 2017,
+  "cites": 3,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ESBMC'de kayan nokta SMT kodlaması, SV-COMP değerlendirmesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-642-23702-7_26",
+  "baslik": "Software Verification Using k-Induction",
+  "yil": 2011,
+  "cites": 84,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; k-tümevarım ile yazılım doğrulama",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-642-02658-4_53",
+  "baslik": "Beaver: Engineering an Efficient SMT Solver for Bit-Vector Arithmetic",
+  "yil": 2009,
+  "cites": 37,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; bit-vektör aritmetiği için SMT çözücü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/2658982.2527288",
+  "baslik": "Bounded model checking of high-integrity software",
+  "yil": 2013,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yüksek bütünlüklü yazılımda CBMC; bit düzeyi semantik",
+  "alinti": "A key benefit of BMC-based software model checkers, such as CBMC [4], is that they are able to handle bit-level semantics of programs precisely."
+ },
+ {
+  "id": "arXiv:2406.04696",
+  "baslik": "PolySAT: Word-level Bit-vector Reasoning in Z3",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Z3'te kelime düzeyi bit-vektör çözümü",
+  "alinti": "PolySAT is integrated into the SMT solver Z3 and has potential applications in model checking and smart contract verification where bit-blasting techniques on multipliers/divisions do not scale."
+ },
+ {
+  "id": "doi:10.1145/1985793.1985839",
+  "baslik": "Verifying multi-threaded software using smt-based context-bounded model checking",
+  "yil": 2011,
+  "cites": 105,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; SMT tabanlı bağlam sınırlı BMC, çok iş parçacıklı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-030-81688-9_35",
+  "baslik": "An SMT Encoding of LLVM’s Memory Model for Bounded Translation Validation",
+  "yil": 2021,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "LLVM (C/C++ derleyici) için SMT bellek modeli kodlaması",
+  "alinti": "we present the first SMT encoding of LLVM’s memory model that 1) is sufficiently precise to validate all of LLVM’s intra-procedural memory optimizations"
+ },
+ {
+  "id": "arXiv:2012.11223",
+  "baslik": "FuSeBMC: A White-Box Fuzzer for Finding Security Vulnerabilities in C Programs",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Fuzzing + sembolik yürütme + BMC; güvenlik açığı",
+  "alinti": "We describe and evaluate a novel white-box fuzzer for C programs named FuSeBMC, which combines fuzzing and symbolic execution, and applies Bounded Model Checking (BMC) to find security vulnerabilities in C programs."
+ },
+ {
+  "id": "doi:10.1145/3478536",
+  "baslik": "Bounded Verification of Multi-threaded Programs via Lazy Sequentialization",
+  "yil": 2021,
+  "cites": 16,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Lazy sequentialization; eşzamanlılık için BMC",
+  "alinti": "We first translate the multi-threaded program into a nondeterministic sequential program that preserves reachability for all round-robin schedules with a given bound on the number of rounds."
+ },
+ {
+  "id": "doi:10.1007/978-3-662-46681-0_45",
+  "baslik": "Unbounded Lazy-CSeq: A Lazy Sequentialization Tool for C Programs with Unbounded Context Switches",
+  "yil": 2015,
+  "cites": 8,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Sınırsız bağlam anahtarlamalı tembel sıralama aracı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ase.2015.108",
+  "baslik": "Lazy-CSeq: A Context-Bounded Model Checking Tool for Multi-threaded C-Programs",
+  "yil": 2015,
+  "cites": 39,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; çok iş parçacıklı C için bağlam sınırlı MC",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.3233/978-1-58603-929-5-457",
+  "baslik": "Bounded Model Checking",
+  "yil": 2003,
+  "cites": 466,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "BMC temelleri; k-tümevarım ve interpolasyon bölümü",
+  "alinti": "In addition, a considerable part of this chapter discusses complete extensions, including k-induction and interpolation."
+ },
+ {
+  "id": "doi:10.1007/978-3-642-28756-5_42",
+  "baslik": "Context-Bounded Model Checking with ESBMC 1.17",
+  "yil": 2012,
+  "cites": 30,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ESBMC aracı, bağlam sınırlı doğrulama",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1809.03739",
+  "baslik": "Benchmarking of Java Verification Tools at the Software Verification Competition (SV-COMP)",
+  "yil": 2018,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "SV-COMP çerçevesi; Java araçları için uyarlama",
+  "alinti": "aims at standardization and reproducibility of benchmarking within the software verification community in an annual basis"
+ },
+ {
+  "id": "doi:10.1007/s10270-013-0366-0",
+  "baslik": "Model checking LTL properties over ANSI-C programs with bounded traces",
+  "yil": 2013,
+  "cites": 18,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; ANSI-C için sınırlı izlerle LTL denetimi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3551349.3559523",
+  "baslik": "CBMC-SSM: Bounded Model Checking of C Programs with Symbolic Shadow Memory",
+  "yil": 2022,
+  "cites": 2,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "C için gölge bellek modeliyle BMC, işaretçi teorisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-540-31980-1_7",
+  "baslik": "Context-Bounded Model Checking of Concurrent Software",
+  "yil": 2005,
+  "cites": 259,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Eşzamanlı yazılımın bağlam sınırlı BMC doğrulaması",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2303.06477",
+  "baslik": "Reproduction Report for SV-COMP 2023",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "SV-COMP 2023 yeniden üretim raporu",
+  "alinti": "The Competition on Software Verification (SV-COMP) is a large computational experiment benchmarking many different software verification tools on a vast collection of C and Java benchmarks."
+ },
+ {
+  "id": "doi:10.1007/11750321_58",
+  "baslik": "Improved SAT Based Bounded Model Checking",
+  "yil": 2006,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "SAT tabanlı BMC'nin iyileştirilmesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-662-54580-5_26",
+  "baslik": "Lazy-CSeq 2.0: Combining Lazy Sequentialization with Abstract Interpretation",
+  "yil": 2017,
+  "cites": 6,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Lazy sequentialization, eşzamanlılık BMC",
+  "alinti": "Lazy-CSeq 2.0: Combining Lazy Sequentialization with Abstract Interpretation"
+ },
+ {
+  "id": "doi:10.1145/776038.776040",
+  "baslik": "Learning from BDDs in SAT-based bounded model checking",
+  "yil": 2003,
+  "cites": 32,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; SAT tabanlı BMC'de BDD öğrenimi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-319-67425-4_8",
+  "baslik": "Borealis Bounded Model Checker: The Coming of Age Story",
+  "yil": 2017,
+  "cites": 5,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Borealis BMC aracının gelişim öyküsü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-642-39799-8_9",
+  "baslik": "Partial Orders for Efficient Bounded Model Checking of Concurrent Software",
+  "yil": 2013,
+  "cites": 109,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Eşzamanlı yazılımda kısmi sıra ile verimli BMC",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.3233/faia201002",
+  "baslik": "Chapter 18. Bounded Model Checking",
+  "yil": 2021,
+  "cites": 28,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yinelenen kayıt (item 10 ile aynı bölüm)",
+  "alinti": "In addition, a considerable part of this chapter discusses complete extensions, including k-induction and interpolation."
+ },
+ {
+  "id": "doi:10.1007/978-3-030-17502-3_13",
+  "baslik": "CBMC Path: A Symbolic Execution Retrofit of the C Bounded Model Checker",
+  "yil": 2019,
+  "cites": 3,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "CBMC'ye sembolik yürütme uyarlaması",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-540-30494-4_13",
+  "baslik": "Simple Yet Efficient Improvements of SAT Based Bounded Model Checking",
+  "yil": 2004,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "SAT tabanlı BMC için basit ve etkili iyileştirmeler",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tcad.2008.923410",
+  "baslik": "A Survey of Automated Techniques for Formal Software Verification",
+  "yil": 2008,
+  "cites": 287,
+  "kaynaklar": [
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; biçimsel doğrulama tekniklerine genel bakış",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-642-24690-6_21",
+  "baslik": "Context-Bounded Model Checking of LTL Properties for ANSI-C Software",
+  "yil": 2011,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "ANSI-C için LTL özelliklerinde bağlam sınırlı BMC",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-0-387-69167-1_5",
+  "baslik": "SAT-Based Bounded Model Checking",
+  "yil": 2007,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SAT tabanlı BMC temel kaynak",
+  "alinti": "SAT-Based Bounded Model Checking"
+ },
+ {
+  "id": "doi:10.1023/a:1011276507260",
+  "baslik": "Bounded Model Checking Using Satisfiability Solving",
+  "yil": 2001,
+  "cites": null,
+  "kaynaklar": [
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "BMC'nin temel SAT tabanlı makalesi",
+  "alinti": "Bounded Model Checking Using Satisfiability Solving"
+ },
+ {
+  "id": "doi:10.1145/1810295.1810396",
+  "baslik": "SMT-based bounded model checking for multi-threaded software in embedded systems",
+  "yil": 2010,
+  "cites": 15,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SMT BMC, çok iş parçacıklı gömülü yazılım",
+  "alinti": "SMT-based bounded model checking for multi-threaded software in embedded systems"
+ },
+ {
+  "id": "doi:10.1007/978-3-030-17502-3_9",
+  "baslik": "Automatic Verification of C and Java Programs: SV-COMP 2019",
+  "yil": 2019,
+  "cites": 66,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SV-COMP 2019 değerlendirmesi",
+  "alinti": "Automatic Verification of C and Java Programs: SV-COMP 2019"
+ },
+ {
+  "id": "doi:10.1007/978-3-642-28756-5_38",
+  "baslik": "Competition on Software Verification",
+  "yil": 2012,
+  "cites": 68,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SV-COMP yarışma tanımı",
+  "alinti": "Competition on Software Verification"
+ },
+ {
+  "id": "arXiv:1502.00096",
+  "baslik": "Combining k-Induction with Continuously-Refined Invariants",
+  "yil": 2015,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "k-tümevarım ile sürekli iyileştirilen değişmezler",
+  "alinti": "Bounded model checking (BMC) is a well-known and successful technique for finding bugs in software. k-induction is an approach to extend BMC-based approaches from falsification to verification."
+ },
+ {
+  "id": "doi:10.1007/s10703-020-00344-2",
+  "baslik": "Model checking boot code from AWS data centers",
+  "yil": 2020,
+  "cites": 12,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "AWS önyükleme kodunda CBMC endüstriyel uygulaması",
+  "alinti": "We have proved that the initial boot code running in data centers at Amazon Web Services is memory safe, an essential step in establishing the security of any data center."
+ },
+ {
+  "id": "doi:10.1007/s10009-020-00564-1",
+  "baslik": "Verification And Refutation Of C Programs Based On K-Induction And Invariant Inference",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "C programları için k-tümevarım ve değişmez çıkarımı",
+  "alinti": "Verification And Refutation Of C Programs Based On K-Induction And Invariant Inference"
+ },
+ {
+  "id": "doi:10.1007/978-3-642-36742-7_43",
+  "baslik": "Second Competition on Software Verification",
+  "yil": 2013,
+  "cites": 68,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SV-COMP ikinci yarışma",
+  "alinti": "Second Competition on Software Verification"
+ }
+]

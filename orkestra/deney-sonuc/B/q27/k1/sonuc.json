@@ -1,0 +1,972 @@
+{
+ "run_id": "20261026-053751-5636d5",
+ "soru": "Bulut hizmetlerinde olay yönetimi için kök neden analizi (hata konumlandırma, nedensellik çıkarımı) yöntemleri üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-09-22",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "dblp",
+  "arxiv",
+  "s2_zenginlestirme",
+  "ozet_arxiv"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6054,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.12024399999999999,
+   "in": 1224,
+   "out": 5523,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.18857134000000003,
+   "in": 584392,
+   "out": 80686,
+   "web_search": 9
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.176142,
+   "in": 172395,
+   "out": 283342,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.12048799999999998,
+   "in": 9887,
+   "out": 2070,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 50.4,
+  "toplama:openalex": 0.0,
+  "web_isci": 109.4,
+  "toplama:crossref": 148.1,
+  "toplama:dblp": 228.4,
+  "toplama:arxiv": 403.6,
+  "toplama": 615.6,
+  "tekil+kesim_1": 67.6,
+  "atif": 88.0,
+  "okuyucu": 193.9,
+  "damitma": 13.6,
+  "sef_final": 19.8,
+  "toplam": 1048.9
+ },
+ "ozet_token_tahmini": 3537,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Dağıtık sistemler ve bulut hizmetlerinde kök neden analizi ile hata konumlandırmanın temelleri ve klasik yöntemleri nelerdir? Bu başlık bağımlılık grafikleri, izleme (tracing) tabanlı teşhis, spektrum analizi ve çok boyutlu kök neden konumlandırmayı kapsar.",
+    "sorgular": [
+     "\"root cause analysis\" distributed systems",
+     "\"fault localization\" online service systems",
+     "\"problem determination\" internet services",
+     "\"performance diagnosis\" cloud",
+     "\"multi-dimensional root cause\" localization"
+    ],
+    "yeterli": "Pinpoint, CauseInfer, iDice ve Squeeze gibi klasik çalışmalar ile erken grafik ve izleme tabanlı yaklaşımlar kapsandığında bu alt soru yeterli sayılır."
+   },
+   {
+    "id": "S2",
+    "soru": "Mikroservis kök neden analizinde nedensellik çıkarımı ve nedensel keşif tabanlı yöntemler nelerdir? Bu başlık PC algoritması, Granger nedenselliği, müdahale tanıma ve rastgele yürüyüş (random walk) yöntemlerini kapsar.",
+    "sorgular": [
+     "\"causal inference\" root cause microservices",
+     "\"causal discovery\" root cause analysis",
+     "Granger causality root cause localization",
+     "\"causal graph\" random walk anomaly diagnosis",
+     "intervention recognition root cause"
+    ],
+    "yeterli": "CloudRanger, Microscope, MicroCause, CIRCA, RCD, RUN ve 'How Far Are We' değerlendirme çalışması gibi temel nedensel kök neden analizi çalışmaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Çok kaynaklı veya çok modlu gözlemlenebilirlik verisi (metrik, log, iz/trace) ile çalışan derin öğrenme ve grafik sinir ağı tabanlı kök neden analizi yöntemleri nelerdir?",
+    "sorgular": [
+     "multimodal observability root cause microservices",
+     "\"graph neural network\" fault localization microservice",
+     "trace-based root cause localization",
+     "logs metrics traces failure diagnosis",
+     "\"multi-source data\" troubleshooting microservices"
+    ],
+    "yeterli": "Eadro, Nezha, DejaVu, MicroRank, TraceRCA, Sage ve benzeri çok modlu ya da öğrenme tabanlı yöntemler kapsandığında yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Bulut olay yönetiminde (incident management) büyük dil modelleri ve ajan tabanlı kök neden analizi yöntemleri nelerdir?",
+    "sorgular": [
+     "\"large language models\" cloud incidents root cause",
+     "LLM agents root cause analysis",
+     "\"incident management\" LLM AIOps",
+     "tool-augmented LLM troubleshooting cloud",
+     "incident mitigation recommendation GPT"
+    ],
+    "yeterli": "Microsoft'un LLM tabanlı kök neden çalışmaları, RCACopilot, RCAgent ve OpenRCA gibi ajan ve kıyaslama (benchmark) çalışmaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Kök neden analizi için kullanılan veri kümeleri, kıyaslama sistemleri, hata enjeksiyonu ortamları ve değerlendirme metrikleri nelerdir?",
+    "sorgular": [
+     "root cause analysis benchmark microservices",
+     "TrainTicket fault injection benchmark",
+     "DeathStarBench microservices benchmark",
+     "RCA dataset telemetry evaluation",
+     "\"fault injection\" microservice dataset"
+    ],
+    "yeterli": "TrainTicket, DeathStarBench, PetShop, RCAEval ve OpenRCA ile bunların değerlendirme protokolleri kapsandığında yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Endüstriyel uygulamalar, ampirik olay çalışmaları ve AIOps kapsamında hata yönetimi üzerine yapılmış derleme (survey) çalışmaları nelerdir?",
+    "sorgular": [
+     "AIOps survey failure management",
+     "empirical study production incidents cloud",
+     "\"incident management\" large-scale cloud services",
+     "event graph root cause industrial",
+     "\"AIOps\" challenges research innovations"
+    ],
+    "yeterli": "Notaro ve arkadaşlarının derlemesi, olaylara ilişkin ampirik çalışmalar (ör. SoCC 2022) ve Groot gibi endüstriyel sistemler kapsandığında yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Açık problemler ve komşu alanlar nelerdir? Bu başlık değişim noktası tespiti, anomali tespiti, sağlamlık (robustness), ölçeklenebilirlik, açıklanabilirlik ve nedensel atıf yöntemlerinin yeniden kullanımını kapsar.",
+    "sorgular": [
+     "change point detection root cause microservices",
+     "robust root cause analysis open challenges",
+     "multivariate time series anomaly detection AIOps",
+     "causal attribution anomalies structural causal model",
+     "explainable root cause analysis cloud"
+    ],
+    "yeterli": "BARO, değerlendirme ve sınırlılık çalışmaları ile nedensel atıf ve anomali tespiti yöntemleri kapsandığında ve açık problemler listelendiğinde yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Pinpoint: Problem Determination in Large, Dynamic Internet Services",
+    "yil": 2002
+   },
+   {
+    "baslik": "CauseInfer: Automatic and Distributed Performance Diagnosis with Hierarchical Causality Graph in Large Distributed Systems",
+    "yil": 2014
+   },
+   {
+    "baslik": "iDice: Problem Identification for Emerging Issues",
+    "yil": 2016
+   },
+   {
+    "baslik": "CloudRanger: Root Cause Identification for Cloud Native Systems",
+    "yil": 2018
+   },
+   {
+    "baslik": "Microscope: Pinpoint Performance Issues with Causal Graphs in Micro-service Environments",
+    "yil": 2018
+   },
+   {
+    "baslik": "Fault Analysis and Debugging of Microservice Systems: Industrial Survey, Benchmark System, and Empirical Study",
+    "yil": 2018
+   },
+   {
+    "baslik": "An Open-Source Benchmark Suite for Microservices and Their Hardware-Software Implications for Cloud & Edge Systems",
+    "yil": 2019
+   },
+   {
+    "baslik": "Generic and Robust Localization of Multi-dimensional Root Causes",
+    "yil": 2019
+   },
+   {
+    "baslik": "MicroRCA: Root Cause Localization of Performance Issues in Microservices",
+    "yil": 2020
+   },
+   {
+    "baslik": "Localizing Failure Root Causes in a Microservice through Causality Inference",
+    "yil": 2020
+   },
+   {
+    "baslik": "Sage: Practical and Scalable ML-Driven Performance Debugging in Microservices",
+    "yil": 2021
+   },
+   {
+    "baslik": "MicroRank: End-to-End Latency Issue Localization with Extended Spectrum Analysis in Microservice Environments",
+    "yil": 2021
+   },
+   {
+    "baslik": "Groot: An Event-graph-based Approach for Root Cause Analysis in Industrial Settings",
+    "yil": 2021
+   },
+   {
+    "baslik": "A Survey of AIOps Methods for Failure Management",
+    "yil": 2021
+   },
+   {
+    "baslik": "Causal Inference-Based Root Cause Analysis for Online Service Systems with Intervention Recognition",
+    "yil": 2022
+   },
+   {
+    "baslik": "Root Cause Analysis of Failures in Microservices through Causal Discovery",
+    "yil": 2022
+   },
+   {
+    "baslik": "Actionable and Interpretable Fault Localization for Recurring Failures in Online Service Systems",
+    "yil": 2022
+   },
+   {
+    "baslik": "Eadro: An End-to-End Troubleshooting Framework for Microservices on Multi-source Data",
+    "yil": 2023
+   },
+   {
+    "baslik": "Nezha: Interpretable Fine-Grained Root Causes Analysis for Microservices on Multi-modal Observability Data",
+    "yil": 2023
+   },
+   {
+    "baslik": "Recommending Root-Cause and Mitigation Steps for Cloud Incidents using Large Language Models",
+    "yil": 2023
+   },
+   {
+    "baslik": "Automatic Root Cause Analysis via Large Language Models for Cloud Incidents",
+    "yil": 2024
+   },
+   {
+    "baslik": "RCAgent: Cloud Root Cause Analysis by Autonomous Agents with Tool-Augmented Large Language Models",
+    "yil": 2024
+   },
+   {
+    "baslik": "Root Cause Analysis for Microservice System based on Causal Inference: How Far Are We?",
+    "yil": 2024
+   },
+   {
+    "baslik": "BARO: Robust Root Cause Analysis for Microservices via Multivariate Bayesian Online Change Point Detection",
+    "yil": 2024
+   },
+   {
+    "baslik": "OpenRCA: Can Large Language Models Locate the Root Cause of Software Failures?",
+    "yil": 2025
+   }
+  ],
+  "web_odaklari": [
+   "awesome root cause analysis microservices papers github",
+   "awesome AIOps papers github",
+   "LLM incident management root cause analysis reading list"
+  ]
+ },
+ "tohumlar": [
+  "doi:10.1109/icse48619.2023.00149",
+  "doi:10.1145/3660805",
+  "doi:10.1145/3627703.3629553",
+  "doi:10.1145/3627673.3680016",
+  "doi:10.52202/068431-2259",
+  "doi:10.1145/3691620.3695065",
+  "doi:10.1109/tse.2018.2887384",
+  "doi:10.1145/3701716.3715290",
+  "arXiv:2206.05871",
+  "arXiv:2108.00344",
+  "doi:10.1109/icse48619.2023.00150",
+  "doi:10.1145/3611643.3616249"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1145/3627703.3629553",
+   "arxiv_id": null,
+   "doi": "10.1145/3627703.3629553",
+   "baslik": "Automatic Root Cause Analysis via Large Language Models for Cloud Incidents",
+   "yil": 2024,
+   "tarih": "2024-04-22",
+   "gerekce": "Bulut olayları için büyük dil modelleriyle otomatik kök neden analizi; kartlar arasında en çok atıf alan LLM tabanlı RCA çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 218,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1109/icse48619.2023.00149",
+   "arxiv_id": null,
+   "doi": "10.1109/icse48619.2023.00149",
+   "baslik": "Recommending Root-Cause and Mitigation Steps for Cloud Incidents using Large Language Models",
+   "yil": 2023,
+   "tarih": "2023-05",
+   "gerekce": "Bulut olaylarında kök neden ve azaltma adımlarını büyük dil modelleriyle önermeye yönelik öncü çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 156,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1109/tse.2018.2887384",
+   "arxiv_id": null,
+   "doi": "10.1109/tse.2018.2887384",
+   "baslik": "Fault Analysis and Debugging of Microservice Systems: Industrial Survey, Benchmark System, and Empirical Study",
+   "yil": 2021,
+   "tarih": "2021-02-01",
+   "gerekce": "Mikroservis arıza analizi için endüstriyel anket, kıyaslama sistemi ve ampirik çalışmayı tek çalışmada birleştiriyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 366,
+   "rel": 2,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1145/3501297",
+   "arxiv_id": null,
+   "doi": "10.1145/3501297",
+   "baslik": "Anomaly Detection and Failure Root Cause Analysis in (Micro) Service-Based Cloud Applications: A Survey",
+   "yil": 2022,
+   "tarih": "2022-02-03",
+   "gerekce": "Çok servisli uygulamalarda anomali tespiti ve kök neden analizi tekniklerine yapılandırılmış genel bakış ve nitel analiz sunan derleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The objective of this survey is to provide a structured overview and qualitative analysis of currently available techniques for anomaly detection and root cause analysis in modern multi-service applications.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 250,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1109/noms47738.2020.9110353",
+   "arxiv_id": null,
+   "doi": "10.1109/noms47738.2020.9110353",
+   "baslik": "MicroRCA: Root Cause Localization of Performance Issues in Microservices",
+   "yil": 2020,
+   "tarih": "2020-04",
+   "gerekce": "Mikroservislerde performans sorunlarının kök neden konumlandırması için yüksek atıflı temel yöntem.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 239,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2206.05871",
+   "arxiv_id": "2206.05871",
+   "doi": "10.1145/3534678.3539041",
+   "baslik": "Causal Inference-Based Root Cause Analysis for Online Service Systems with Intervention Recognition",
+   "yil": 2022,
+   "tarih": "2022-06-13",
+   "gerekce": "Bir izleme değişkeninin kök neden göstergesi olması için yeterli koşula dayanan, müdahale tanımalı nedensel çıkarım tabanlı RCA.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The core idea is a sufficient condition for a monitoring variable to be a root cause indicator",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 106,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1145/3691620.3695065",
+   "arxiv_id": null,
+   "doi": "10.1145/3691620.3695065",
+   "baslik": "Root Cause Analysis for Microservice System based on Causal Inference: How Far Are We?",
+   "yil": 2024,
+   "tarih": "2024-10-27",
+   "gerekce": "Nedensel çıkarım tabanlı mikroservis kök neden analizi yöntemlerinin mevcut durumunu ampirik olarak değerlendiriyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 43,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1145/3701716.3715290",
+   "arxiv_id": null,
+   "doi": "10.1145/3701716.3715290",
+   "baslik": "RCAEval: A Benchmark for Root Cause Analysis of Microservice Systems with Telemetry Data",
+   "yil": 2025,
+   "tarih": "2025-05-08",
+   "gerekce": "Telemetri verisiyle mikroservis kök neden analizi için kıyaslama sistemi sunuyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 46,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.1145/3627673.3680016",
+   "arxiv_id": null,
+   "doi": "10.1145/3627673.3680016",
+   "baslik": "RCAgent: Cloud Root Cause Analysis by Autonomous Agents with Tool-Augmented Large Language Models",
+   "yil": 2024,
+   "tarih": "2024-10-21",
+   "gerekce": "Araç destekli büyük dil modeli ajanlarıyla bulut kök neden analizi yapan otonom ajan yaklaşımı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 112,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2403.04123",
+   "arxiv_id": "2403.04123",
+   "doi": "10.1145/3663529.3663841",
+   "baslik": "Exploring LLM-based Agents for Root Cause Analysis",
+   "yil": 2024,
+   "tarih": "2024-03-07",
+   "gerekce": "Kök neden analizinde tanı bilgisini dinamik toplamak için LLM tabanlı ajanların kullanımını inceliyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this work, we explore the use of LLM based agents for RCA to address this limitation.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 125,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1007/978-3-030-03596-9_1",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-030-03596-9_1",
+   "baslik": "Microscope: Pinpoint Performance Issues with Causal Graphs in Micro-service Environments",
+   "yil": 2018,
+   "tarih": "2018-11-07",
+   "gerekce": "Mikroservis ortamlarında performans sorunlarını nedensel grafiklerle saptayan erken ve etkili yöntem.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 185,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1109/ccgrid.2018.00076",
+   "arxiv_id": null,
+   "doi": "10.1109/ccgrid.2018.00076",
+   "baslik": "CloudRanger: Root Cause Identification for Cloud Native Systems",
+   "yil": 2018,
+   "tarih": "2018-05",
+   "gerekce": "Bulut-yerel sistemlerde kök neden tanımlama için temel nedensellik grafiği tabanlı çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 164,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 13,
+   "id": "doi:10.1109/infocom.2014.6848128",
+   "arxiv_id": null,
+   "doi": "10.1109/infocom.2014.6848128",
+   "baslik": "CauseInfer: Automatic and distributed performance diagnosis with hierarchical causality graph in large distributed systems",
+   "yil": 2014,
+   "tarih": "2014-04",
+   "gerekce": "Büyük dağıtık sistemlerde hiyerarşik nedensellik grafiğiyle otomatik ve dağıtık performans teşhisi yapan klasik çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 129,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1145/3442381.3449905",
+   "arxiv_id": null,
+   "doi": "10.1145/3442381.3449905",
+   "baslik": "MicroRank: End-to-End Latency Issue Localization with Extended Spectrum Analysis in Microservice Environments",
+   "yil": 2021,
+   "tarih": "2021-04-19",
+   "gerekce": "Mikroservislerde uçtan uca gecikme sorunlarını genişletilmiş spektrum analiziyle konumlandırıyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 156,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1109/iwqos52092.2021.9521340",
+   "arxiv_id": null,
+   "doi": "10.1109/iwqos52092.2021.9521340",
+   "baslik": "Practical Root Cause Localization for Microservice Systems via Trace Analysis",
+   "yil": 2021,
+   "tarih": "2021-06-25",
+   "gerekce": "İz analizine dayalı pratik mikroservis kök neden konumlandırma yöntemi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 155,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1109/icse48619.2023.00150",
+   "arxiv_id": null,
+   "doi": "10.1109/icse48619.2023.00150",
+   "baslik": "Eadro: An End-to-End Troubleshooting Framework for Microservices on Multi-source Data",
+   "yil": 2023,
+   "tarih": "2023-05",
+   "gerekce": "Çok kaynaklı veri üzerinde mikroservisler için uçtan uca sorun giderme çerçevesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 151,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1145/3611643.3616249",
+   "arxiv_id": null,
+   "doi": "10.1145/3611643.3616249",
+   "baslik": "Nezha: Interpretable Fine-Grained Root Causes Analysis for Microservices on Multi-modal Observability Data",
+   "yil": 2023,
+   "tarih": "2023-11-30",
+   "gerekce": "Çok modlu gözlemlenebilirlik verisiyle yorumlanabilir, ince taneli mikroservis kök neden analizi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 147,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2108.00344",
+   "arxiv_id": "2108.00344",
+   "doi": "10.1109/ase51524.2021.9678708",
+   "baslik": "Groot: An Event-graph-based Approach for Root Cause Analysis in Industrial Settings",
+   "yil": 2021,
+   "tarih": "2021-08-01",
+   "gerekce": "Metrik, log ve sistem etkinliklerini özetleyen olaylardan gerçek zamanlı nedensellik grafiği kuran endüstriyel RCA yaklaşımı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Groot constructs a real-time causality graph based on events that summarize various types of metrics, logs, and activities in the system under analysis.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 94,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.1145/3660805",
+   "arxiv_id": null,
+   "doi": "10.1145/3660805",
+   "baslik": "BARO: Robust Root Cause Analysis for Microservices via Multivariate Bayesian Online Change Point Detection",
+   "yil": 2024,
+   "tarih": "2024-07-12",
+   "gerekce": "Çok değişkenli Bayesçi çevrimiçi değişim noktası tespitini sağlam mikroservis kök neden analiziyle birleştiriyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "BARO leverages the Multivariate Bayesian Online Change Point Detection technique to model the dependency within multivariate time-series metrics data",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 56,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1109/iwqos49365.2020.9213058",
+   "arxiv_id": null,
+   "doi": "10.1109/iwqos49365.2020.9213058",
+   "baslik": "Localizing Failure Root Causes in a Microservice through Causality Inference",
+   "yil": 2020,
+   "tarih": "2020-06",
+   "gerekce": "Bir mikroserviste arıza kök nedenlerini nedensellik çıkarımıyla konumlandıran etkili çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 154,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1109/icse-seip52600.2021.00043",
+   "arxiv_id": null,
+   "doi": "10.1109/icse-seip52600.2021.00043",
+   "baslik": "MicroHECL: High-Efficient Root Cause Localization in Large-Scale Microservice Systems",
+   "yil": 2021,
+   "tarih": "2021-05",
+   "gerekce": "Büyük ölçekli mikroservis sistemlerinde yüksek verimli kök neden konumlandırma; ölçeklenebilirlik konusunu ele alıyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 177,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1145/3483424",
+   "arxiv_id": null,
+   "doi": "10.1145/3483424",
+   "baslik": "A Survey of AIOps Methods for Failure Management",
+   "yil": 2021,
+   "tarih": "2021-11-30",
+   "gerekce": "AIOps arıza yönetimi katkılarını 5 kategori ve 14 alt kategoride sınıflandıran derleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this work, we focus on AIOps for Failure Management (FM), characterizing and describing 5 different categories and 14 subcategories of contributions",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 137,
+   "rel": 2,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1145/3746635",
+   "arxiv_id": null,
+   "doi": "10.1145/3746635",
+   "baslik": "A Survey of AIOps in the Era of Large Language Models",
+   "yil": 2025,
+   "tarih": "2025-09-09",
+   "gerekce": "2020-2024 arasındaki 183 makaleyi inceleyen, büyük dil modelleri çağında AIOps derlemesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We analyzed 183 research articles published between January 2020 and December 2024 to answer four key research questions (RQs).",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 55,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1145/3696630.3728619",
+   "arxiv_id": null,
+   "doi": "10.1145/3696630.3728619",
+   "baslik": "AIOpsLab In Action: An Open Platform For AIOps Research",
+   "yil": 2025,
+   "tarih": "2025-06-23",
+   "gerekce": "AIOps araştırması ve olay giderme kıyaslaması için açık platform.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1109/issre.2019.00015",
+   "arxiv_id": null,
+   "doi": "10.1109/issre.2019.00015",
+   "baslik": "Generic and Robust Localization of Multi-dimensional Root Causes",
+   "yil": 2019,
+   "tarih": "2019-10",
+   "gerekce": "Çok boyutlu kök nedenleri genel ve sağlam biçimde konumlandıran yöntem.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 40,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "doi:10.1145/3338906.3338961",
+   "arxiv_id": null,
+   "doi": "10.1145/3338906.3338961",
+   "baslik": "Latent error prediction and fault localization for microservice applications by learning from system trace logs",
+   "yil": 2019,
+   "tarih": "2019-08-12",
+   "gerekce": "Sistem iz günlüklerinden öğrenerek mikroservislerde gizli hata tahmini ve hata konumlandırma yapan yüksek atıflı çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Latent error prediction and fault localization for microservice applications by learning from system trace logs",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "web"
+   ],
+   "atif": 248,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1145/3701716.3715225",
+   "arxiv_id": null,
+   "doi": "10.1145/3701716.3715225",
+   "baslik": "Flow-of-Action: SOP Enhanced LLM-Based Multi-Agent System for Root Cause Analysis",
+   "yil": 2025,
+   "tarih": "2025-05-08",
+   "gerekce": "Standart işletim prosedürleriyle (SOP) güçlendirilmiş, LLM tabanlı çok ajanlı kök neden analizi sistemi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 41,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.1016/j.compchemeng.2023.108453",
+   "arxiv_id": null,
+   "doi": "10.1016/j.compchemeng.2023.108453",
+   "baslik": "Graph attention network with Granger causality map for fault detection and root cause diagnosis",
+   "yil": 2024,
+   "tarih": "2024-01",
+   "gerekce": "Granger nedensellik haritasını graf dikkat ağıyla birleştirerek arıza tespiti ve kök neden teşhisi yapıyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 75,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1145/3540250.3549092",
+   "arxiv_id": null,
+   "doi": "10.1145/3540250.3549092",
+   "baslik": "Actionable and interpretable fault localization for recurring failures in online service systems",
+   "yil": 2022,
+   "tarih": "2022-11-07",
+   "gerekce": "Çevrimiçi servis sistemlerinde tekrarlayan arızalar için eyleme dönük ve yorumlanabilir hata konumlandırma; açıklanabilirlik problemine katkı sağlıyor.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 76,
+   "rel": 2,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1145/3637528.3671530",
+   "arxiv_id": null,
+   "doi": "10.1145/3637528.3671530",
+   "baslik": "Microservice Root Cause Analysis With Limited Observability Through Intervention Recognition in the Latent Space",
+   "yil": 2024,
+   "tarih": "2024-08-24",
+   "gerekce": "Sınırlı gözlemlenebilirlik koşulunda gizli uzayda müdahale tanıma ile mikroservis kök neden analizi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 25,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  }
+ ]
+}

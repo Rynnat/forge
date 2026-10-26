@@ -1,0 +1,1069 @@
+[
+ {
+  "id": "arXiv:2406.14440",
+  "baslik": "LLM4CP: Adapting Large Language Models for Channel Prediction",
+  "yil": 2024,
+  "cites": 143,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ile kanal tahmini; fiziksel katman uyarlaması",
+  "alinti": "we propose a pre-trained LLM-empowered channel prediction (LLM4CP) method to predict the future downlink channel state information (CSI) sequence"
+ },
+ {
+  "id": "arXiv:2406.01768",
+  "baslik": "TSpec-LLM: An Open-source Dataset for LLM Understanding of 3GPP Specifications",
+  "yil": 2024,
+  "cites": 32,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "3GPP standartları için açık kaynak veri seti ve RAG",
+  "alinti": "an open-source comprehensive dataset covering all 3GPP documents from Release 8 to Release 19 (1999--2023)"
+ },
+ {
+  "id": "arXiv:2405.10825",
+  "baslik": "Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities",
+  "yil": 2024,
+  "cites": 250,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Telekomda LLM'ler için kapsamlı derleme",
+  "alinti": "we first present LLM fundamentals, including model architecture, pre-training, fine-tuning, inference and utilization, model evaluation, and telecom deployment"
+ },
+ {
+  "id": "arXiv:2407.09424",
+  "baslik": "TelecomGPT: A Framework To Build Telecom-Specific Large Language Models",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Telekom-özel LLM eğitim hattı ve değerlendirme kıyasları",
+  "alinti": "for the first time, we propose a pipeline to adapt any general purpose LLMs to a telecom-specific LLMs"
+ },
+ {
+  "id": "arXiv:2307.02779",
+  "baslik": "Large Language Models Empowered Autonomous Edge AI for Connected Intelligence",
+  "yil": 2023,
+  "cites": 168,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "LLM tabanlı otonom edge AI çerçevesi; ağ yönetimi odaklı",
+  "alinti": "This article presents a vision of autonomous edge AI systems that automatically organize, adapt, and optimize themselves to meet users' diverse requirements, leveraging the power of large language models (LLMs)"
+ },
+ {
+  "id": "arXiv:2312.07850",
+  "baslik": "Large Language Model Enhanced Multi-Agent Systems for 6G Communications",
+  "yil": 2023,
+  "cites": 153,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Haberleşme alanına özel çok ajanlı LLM sistemi",
+  "alinti": "we propose CommLLM, a multi-agent system with customized communication knowledge and tools for solving communication-related tasks using natural language"
+ },
+ {
+  "id": "arXiv:2310.15051",
+  "baslik": "TeleQnA: A Benchmark Dataset to Assess Large Language Models Telecommunications Knowledge",
+  "yil": 2023,
+  "cites": 56,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Telekom bilgisi için temel kıyas veri seti",
+  "alinti": "We introduce TeleQnA, the first benchmark dataset designed to evaluate the knowledge of Large Language Models (LLMs) in telecommunications"
+ },
+ {
+  "id": "arXiv:2408.08707",
+  "baslik": "Beam Prediction based on Large Language Models",
+  "yil": 2024,
+  "cites": 59,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ile ışın tahmini; komşu alan uyarlaması",
+  "alinti": "We formulate the millimeter wave (mmWave) beam prediction problem as a time series forecasting task"
+ },
+ {
+  "id": "arXiv:2403.02238",
+  "baslik": "Towards Intent-Based Network Management: Large Language Models for Intent Extraction in 5G Core Networks",
+  "yil": 2024,
+  "cites": 65,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Niyet tabanlı ağ için LLM; merkezi uygulama",
+  "alinti": "This paper presents the development of a custom Large Language Model (LLM) for 5G and next-generation intent-based networking"
+ },
+ {
+  "id": "arXiv:1904.11686",
+  "baslik": "The Roadmap to 6G -- AI Empowered Wireless Networks",
+  "yil": 2019,
+  "cites": 2048,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "6G için AI vizyonu; LLM odaklı değil",
+  "alinti": "AI will play a critical role in designing and optimizing 6G architectures, protocols, and operations"
+ },
+ {
+  "id": "arXiv:2402.01748",
+  "baslik": "Large Multi-Modal Models (LMMs) as Universal Foundation Models for AI-Native Wireless Systems",
+  "yil": 2024,
+  "cites": 64,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Kablosuz temel modeller ve AI-native vizyonu",
+  "alinti": "recent efforts on LLMs for wireless networks are limited to a direct application of existing language models that were designed for natural language processing (NLP) applications"
+ },
+ {
+  "id": "arXiv:1705.09412",
+  "baslik": "Learning to Optimize: Training Deep Neural Networks for Wireless Resource Management",
+  "yil": 2017,
+  "cites": 871,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Öğrenerek optimizasyon: kaynak tahsisi için DNN yaklaşımı",
+  "alinti": "The key idea is to treat the input and output of a resource allocation algorithm as an unknown non-linear mapping and use a deep neural network (DNN) to approximate it"
+ },
+ {
+  "id": "doi:10.1109/mnet.2024.3422309",
+  "baslik": "Enabling Mobile AI Agent in 6G Era: Architecture and Key Technologies",
+  "yil": 2024,
+  "cites": 36,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Mobil AI ajanları; ağ otomasyonu yalnızca bir kullanım durumu",
+  "alinti": "AI agent-based 6G network automation, handheld personalized agents, connected robotics and autonomous systems, and wearable AI agent"
+ },
+ {
+  "id": "arXiv:2402.02338",
+  "baslik": "NetLLM: Adapting Large Language Models for Networking",
+  "yil": 2024,
+  "cites": 181,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ağ görevleri için LLM uyarlaması; tahmin ve optimizasyon",
+  "alinti": "Motivated by the recent success of large language models (LLMs), this work studies the LLM adaptation for networking"
+ },
+ {
+  "id": "arXiv:2506.10674",
+  "baslik": "TeleMath: A Benchmark for Large Language Models in Telecom Mathematical Problem Solving",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Telekom matematik problemleri için LLM kıyası",
+  "alinti": "TeleMath, the first benchmark dataset specifically designed to evaluate LLM performance in solving mathematical problems with numerical solutions in the telecommunications domain"
+ },
+ {
+  "id": "arXiv:2408.00214",
+  "baslik": "Large Language Model (LLM)-enabled In-context Learning for Wireless Network Optimization: A Case Study of Power Control",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Güç kontrolü için LLM bağlamsal öğrenme; doğrudan optimizer",
+  "alinti": "Different from existing machine learning (ML) methods, our proposed in-context learning algorithm relies on LLM's inference capabilities"
+ },
+ {
+  "id": "arXiv:2404.15939",
+  "baslik": "Telco-RAG: Navigating the Challenges of Retrieval-Augmented Language Models for Telecommunications",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Telekom standartları için RAG çerçevesi",
+  "alinti": "The paper introduces Telco-RAG, an open-source RAG framework designed to handle the specific needs of telecommunications standards"
+ },
+ {
+  "id": "arXiv:2411.04136",
+  "baslik": "Large Language Models for Wireless Networks: An Overview from the Prompt Engineering Perspective",
+  "yil": 2024,
+  "cites": 43,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Kablosuz ağlarda LLM için prompt mühendisliği genel bakışı",
+  "alinti": "Compared with other LLM-driven methods, prompt engineering can better align with the demands of wireless network devices"
+ },
+ {
+  "id": "arXiv:2405.17053",
+  "baslik": "WirelessLLM: Empowering Large Language Models Towards Wireless Intelligence",
+  "yil": 2024,
+  "cites": 87,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Wireless-domain LLM adaptation framework; central to S2",
+  "alinti": "investigate the enabling technologies to build WirelessLLM, including prompt engineering, retrieval augmented generation, tool usage, multi-modal pre-training, and domain-specific fine-tuning"
+ },
+ {
+  "id": "arXiv:2308.06013",
+  "baslik": "Large Language Models for Telecom: Forthcoming Impact on the Industry",
+  "yil": 2023,
+  "cites": 87,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "LLMs for telecom overview with open research directions",
+  "alinti": "we delve into the inner workings of LLMs, providing insights into their current capabilities and limitations"
+ },
+ {
+  "id": "arXiv:2503.24245",
+  "baslik": "Enhancing Large Language Models (LLMs) for Telecommunications using Knowledge Graphs and Retrieval-Augmented Generation",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Telecom LLM via knowledge graph and RAG",
+  "alinti": "This paper presents a novel framework that combines knowledge graph (KG) and retrieval-augmented generation (RAG) techniques to enhance LLM performance in the telecom domain"
+ },
+ {
+  "id": "arXiv:2106.00574",
+  "baslik": "The Frontiers of Deep Reinforcement Learning for Resource Management in Future Wireless HetNets: Techniques, Challenges, and Research Directions",
+  "yil": 2021,
+  "cites": 72,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "DRL ile kaynak yönetimi derlemesi; LLM içermiyor",
+  "alinti": "we conduct a systematic in-depth, and comprehensive survey of the applications of DRL techniques in RRAM for next generation wireless networks"
+ },
+ {
+  "id": "arXiv:2407.04581",
+  "baslik": "Leveraging Large Language Models for Integrated Satellite-Aerial-Terrestrial Networks: Recent Advances and Future Directions",
+  "yil": 2024,
+  "cites": 61,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLMs for satellite-aerial-terrestrial networks; central to S4",
+  "alinti": "This paper explores the transformative potential of integrating Large Language Models (LLMs) into ISATNs"
+ },
+ {
+  "id": "arXiv:2404.09134",
+  "baslik": "Generative AI Agents with Large Language Model for Satellite Networks via a Mixture of Experts Transmission",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Uydu ağı için LLM ajanı, RAG ve MoE-PPO formülasyonu",
+  "alinti": "we leverage large language models (LLMs) to build an interactive modeling paradigm and utilize retrieval-augmented generation (RAG) to extract satellite expert knowledge"
+ },
+ {
+  "id": "arXiv:2501.13954",
+  "baslik": "Chat3GPP: An Open-Source Retrieval-Augmented Generation Framework for 3GPP Documents",
+  "yil": 2025,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Telecom RAG over 3GPP standards with evaluation datasets",
+  "alinti": "we propose Chat3GPP, an open-source retrieval-augmented generation (RAG) framework tailored for 3GPP specifications"
+ },
+ {
+  "id": "arXiv:2311.17474",
+  "baslik": "Large Language Models for Networking: Applications, Enabling Techniques, and Challenges",
+  "yil": 2023,
+  "cites": 107,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Domain-adapted network LLM with tool access; central",
+  "alinti": "we propose the ChatNet, a domain-adapted network LLM framework with access to various external network tools"
+ },
+ {
+  "id": "arXiv:2401.07764",
+  "baslik": "When Large Language Model Agents Meet 6G Networks: Perception, Grounding, and Alignment",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "LLM ajanları için bölünmüş öğrenme; ağ yönetimi dolaylı",
+  "alinti": "we propose a split learning system for LLM agents in 6G networks leveraging the collaboration between mobile devices and edge servers"
+ },
+ {
+  "id": "arXiv:2404.18373",
+  "baslik": "6G comprehensive intelligence: network operations and optimization based on Large Language Models",
+  "yil": 2024,
+  "cites": 68,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM tabanlı 6G ağ işletimi ve optimizasyon mimarisi",
+  "alinti": "This paper proposes a network performance optimization and intelligent operation network architecture based on Large Language Model (LLM)"
+ },
+ {
+  "id": "arXiv:2401.11391",
+  "baslik": "Interactive AI with Retrieval-Augmented Generation for Next Generation Networking",
+  "yil": 2024,
+  "cites": 164,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Etkileşimli AI ve RAG ile ağ yönetimi çerçevesi",
+  "alinti": "we propose an IAI-enabled network management and optimization framework, which consists of environment, perception, action, and brain units"
+ },
+ {
+  "id": "arXiv:2506.08532",
+  "baslik": "Safe and Economical UAV Trajectory Planning in Low-Altitude Airspace: A Hybrid DRL-LLM Approach with Compliance Awareness",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Hybrid DRL-LLM UAV trajectory planning in low-altitude airspace",
+  "alinti": "we propose a novel UAV trajectory planning framework that combines DRL with large language model (LLM) reasoning"
+ },
+ {
+  "id": "arXiv:2408.03631",
+  "baslik": "Large Language Model as a Catalyst: A Paradigm Shift in Base Station Siting Optimization",
+  "yil": 2024,
+  "cites": 12,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM agents with RAG for base station siting",
+  "alinti": "the deployment of autonomous agents as a communication bridge to seamlessly connect the machine language based LLMs with human users"
+ },
+ {
+  "id": "doi:10.1109/access.2024.3418900",
+  "baslik": "Advanced Deep Learning Models for 6G: Overview, Opportunities, and Challenges",
+  "yil": 2024,
+  "cites": 102,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "6G için derin öğrenme vizyonu; LLM yok",
+  "alinti": "we present a detailed vision for DL in 6G, emphasizing areas such as adaptive resource allocation, intelligent network management"
+ },
+ {
+  "id": "arXiv:2505.11856",
+  "baslik": "Telco-oRAG: Optimizing Retrieval-augmented Generation for Telecom Queries via Hybrid Retrieval and Neural Routing",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Telekom alanına özel RAG çerçevesi, 3GPP soruları",
+  "alinti": "This paper presents Telco-oRAG, an open-source Retrieval-Augmented Generation (RAG) framework optimized for answering technical questions in the telecommunications domain"
+ },
+ {
+  "id": "doi:10.1109/access.2023.3302250",
+  "baslik": "Machine Learning Empowered Emerging Wireless Networks in 6G: Recent Advancements, Challenges and Future Trends",
+  "yil": 2023,
+  "cites": 117,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "6G'de ML algoritmaları derlemesi; LLM odaklı değil",
+  "alinti": "This article provides a comprehensive review of state-of-the-art ML algorithms applied in 6G wireless networks"
+ },
+ {
+  "id": "arXiv:2407.00476",
+  "baslik": "Large Language Models for Power Scheduling: A User-Centric Approach",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "LLM agents map user requests to resource allocation; energy scheduling",
+  "alinti": "constructing three LLM agents to convert an arbitrary user's voice request (VRQ) into a resource allocation vector"
+ },
+ {
+  "id": "arXiv:2506.06526",
+  "baslik": "Prompting Wireless Networks: Reinforced In-Context Learning for Power Control",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM bağlam içi öğrenme ile güç kontrolü optimizasyonu",
+  "alinti": "this paper proposes ProWin, a novel framework that leverages reinforced in-context learning to design task-specific demonstration Prompts for Wireless Network optimization"
+ },
+ {
+  "id": "doi:10.1109/globecom52923.2024.10901784",
+  "baslik": "Large Language Models for Wireless Cellular Traffic Prediction: A Multi-timespan Approach",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; LLM ile hücresel trafik tahmini",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tce.2025.3553407",
+  "baslik": "Transfer Learning Applied to Deep Reinforcement Learning for 6G Resource Management in Intra- and Inter-Slice RAN-Edge Domains",
+  "yil": 2025,
+  "cites": 27,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "O-RAN'da transfer DRL kaynak tahsisi; LLM yok",
+  "alinti": "Our proposed algorithm achieves significant performance gains, providing a 14.28% and 10.67% improvement in throughput for eMBB slices"
+ },
+ {
+  "id": "arXiv:2502.04933",
+  "baslik": "Mobile Network-specialized Large Language Models for 6G: Architectures, Innovations, Challenges, and Future Trends",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "6G için telekoma özel LLM mimarileri ve zorlukları",
+  "alinti": "This paper investigates four possible architectural designs for integrated LLM and 6G networks, detailing the inherent technical intricacies, the merits and the limitations of each design"
+ },
+ {
+  "id": "arXiv:2408.02549",
+  "baslik": "Generative AI as a Service in 6G Edge-Cloud: Generation Task Offloading by In-context Learning",
+  "yil": 2024,
+  "cites": 29,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM görev boşaltma ve kaynak tahsisi; bağlam öğrenmeyle optimizasyon",
+  "alinti": "it aims to minimize the service delay of foundation models by radio resource allocation and task offloading"
+ },
+ {
+  "id": "doi:10.3390/fi16100365",
+  "baslik": "Large Language Models Meet Next-Generation Networking Technologies: A Review",
+  "yil": 2024,
+  "cites": 67,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM'lerin ağ mühendisliği derlemesi.",
+  "alinti": "This paper aims to provide a comprehensive review exploring the transformative role of LLMs in modern network engineering."
+ },
+ {
+  "id": "arXiv:2208.01880",
+  "baslik": "Joint Sensing and Communications for Deep Reinforcement Learning-based Beam Management in 6G",
+  "yil": 2022,
+  "cites": 17,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "DRL beam management and resource allocation; no LLM use",
+  "alinti": "investigate joint vision-aided sensing and communications using deep reinforcement learning-based beam management for future 6G networks"
+ },
+ {
+  "id": "doi:10.14722/futureg.2025.23057",
+  "baslik": "LLM-xApp: A Large Language Model Empowered Radio Resource Management xApp for 5G O-RAN",
+  "yil": 2025,
+  "cites": 19,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "O-RAN'da LLM ajanlarıyla kaynak yönetimi xApp'i",
+  "alinti": "This paper presents LLM-xApp, a novel large language model (LLM)-powered xApp framework for adaptive radio resource management in O-RAN systems"
+ },
+ {
+  "id": "arXiv:2307.02757",
+  "baslik": "Wireless Multi-Agent Generative AI: From Connected Intelligence to Collective Intelligence",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Kablosuz çok ajanlı LLM ve uç cihaz dağıtımı vizyonu",
+  "alinti": "where multi-agent LLMs are collaboratively planning and solving tasks to achieve a number of network goals"
+ },
+ {
+  "id": "arXiv:2408.02944",
+  "baslik": "LLM-Empowered Resource Allocation in Wireless Communications Systems",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM tabanlı kaynak tahsisi; güvenilirlik sınırlamaları tartışılıyor",
+  "alinti": "we formulate a simple resource allocation problem involving two transmit pairs and develop an LLM-based resource allocation approach that aims to maximize either energy efficiency or spectral efficiency"
+ },
+ {
+  "id": "arXiv:2408.11775",
+  "baslik": "Leveraging Fine-Tuned Retrieval-Augmented Generation with Long-Context Support: For 3GPP Standards",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "3GPP standartları için ince ayarlı RAG sistemi",
+  "alinti": "Recent studies show that large language models (LLMs) struggle with technical standards in telecommunications. We propose a fine-tuned retrieval-augmented generation (RAG) system based on the Phi-2 small language model (SLM)"
+ },
+ {
+  "id": "arXiv:2507.02689",
+  "baslik": "On the Convergence of Large Language Model Optimizer for Black-Box Network Management",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM optimizer, kara kutu ağ yönetimi; teorik temel.",
+  "alinti": "This framework utilizes natural language prompts describing the given optimization problems along with past solutions generated by LLMs themselves."
+ },
+ {
+  "id": "arXiv:2405.17439",
+  "baslik": "An Overview of Machine Learning-Enabled Optimization for Reconfigurable Intelligent Surfaces-Aided 6G Networks: From Reinforcement Learning to Large Language Models",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "RIS optimization survey covering RL and LLM combination",
+  "alinti": "this work further discusses how large language models (LLMs) can be combined with RL to handle network optimization problems"
+ },
+ {
+  "id": "arXiv:2410.03688",
+  "baslik": "LLM Agents as 6G Orchestrator: A Paradigm for Task-Oriented Physical-Layer Automation",
+  "yil": 2024,
+  "cites": 11,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM ajanı ile 6G ağ orkestrasyonu; doğrudan ilgili",
+  "alinti": "With the 6G-oriented agent, the base station could understand the transmission requirements of various dynamic upper-layer tasks, automatically orchestrate the optimal system workflow."
+ },
+ {
+  "id": "arXiv:2301.03377",
+  "baslik": "Machine Learning for Large-Scale Optimization in 6G Wireless Networks",
+  "yil": 2023,
+  "cites": 209,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Learning-to-optimize survey for 6G; pre-LLM baseline",
+  "alinti": "we systematically review the most representative \"learning to optimize\" techniques in diverse domains of 6G wireless networks"
+ },
+ {
+  "id": "arXiv:2412.09041",
+  "baslik": "Towards Wireless Native Big AI Model: The Mission and Approach Differ From Large Language Model",
+  "yil": 2024,
+  "cites": 17,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kablosuz BAIM derlemesi; LLM'den farklılıklar.",
+  "alinti": "This paper reviews recent research on BAIM for wireless systems and assesses the current state of the field."
+ },
+ {
+  "id": "arXiv:2502.18763",
+  "baslik": "CommGPT: A Graph and Retrieval-Augmented Multimodal Communication Foundation Model",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Telekom'a özel temel model; veri seti ve RAG birlikte",
+  "alinti": "First, we create high-quality pretraining and fine-tuning datasets tailored in communication, enabling the LLM to engage in further pretraining and fine-tuning with communication concepts and knowledge."
+ },
+ {
+  "id": "arXiv:2507.17695",
+  "baslik": "Symbiotic Agents: A Novel Paradigm for Trustworthy AGI-driven Networks",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM ajanları ve optimizasyon; RAN ve SLA.",
+  "alinti": "In this paper, we introduce a novel agentic paradigm that combines LLMs with real-time optimization algorithms towards Trustworthy AI, defined as symbiotic agents."
+ },
+ {
+  "id": "doi:10.64252/03ftxe24",
+  "baslik": "Artificial Intelligent-Based Resource Management In 6g Networks: A Review",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "6G kaynak yönetimi için AI incelemesi; LLM yok",
+  "alinti": "AI techniques such as machine learning (ML), deep learning (DL), and reinforcement learning (RL) can enable intelligent decision-making processes for dynamic spectrum allocation"
+ },
+ {
+  "id": "arXiv:2404.15869",
+  "baslik": "Semantic Routing for Enhanced Performance of LLM-Assisted Intent-Based 5G Core Network Management and Orchestration",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "LLM destekli niyet tabanlı 5G çekirdek ağ yönetimi",
+  "alinti": "This work establishes an end-to-end intent extraction framework and presents a diverse dataset of sample user intents"
+ },
+ {
+  "id": "arXiv:2409.00005",
+  "baslik": "Csi-LLM: A Novel Downlink Channel Prediction Method Aligned with LLM Pre-Training",
+  "yil": 2024,
+  "cites": 22,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "LLM tabanlı kanal tahmini; fiziksel katman uyarlaması.",
+  "alinti": "we introduce Csi-LLM, a novel LLM-powered downlink channel prediction technique that models variable-step historical sequences."
+ },
+ {
+  "id": "arXiv:2405.11002",
+  "baslik": "Large Language Models in Wireless Application Design: In-Context Learning-enhanced Automatic Network Intrusion Detection",
+  "yil": 2024,
+  "cites": 40,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "LLM ile saldırı tespiti; kaynak optimizasyonu değil",
+  "alinti": "In this paper, we propose a pre-trained LLM-empowered framework to perform fully automatic network intrusion detection"
+ },
+ {
+  "id": "arXiv:1812.07998",
+  "baslik": "LORM: Learning to Optimize for Resource Management in Wireless Networks with Few Training Samples",
+  "yil": 2018,
+  "cites": 134,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Kaynak yönetimi için öğrenerek optimizasyon (L2O), az örnekle",
+  "alinti": "Instead of the end-to-end learning approach adopted in previous studies, LORM learns the optimal pruning policy"
+ },
+ {
+  "id": "arXiv:2412.19811",
+  "baslik": "LINKs: Large Language Model Integrated Management for 6G Empowered Digital Twin NetworKs",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM ile dijital ikiz RRM ve optimizasyon.",
+  "alinti": "Based on the data retrieval plan, LLMs transform the retrieval task into an numerical optimization problem and utilizing solvers to build an optimal RRM, ensuring efficient communication across the network."
+ },
+ {
+  "id": "doi:10.1155/2022/1352985",
+  "baslik": "A Federated Deep Learning Empowered Resource Management Method to Optimize 5G and 6G Quality of Services (QoS)",
+  "yil": 2022,
+  "cites": 37,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Federe DL ile QoS odaklı kaynak yönetimi; LLM yok",
+  "alinti": "although different mathematical and computation methods have traditionally been used to optimize the allocation of resources"
+ },
+ {
+  "id": "arXiv:2310.18602",
+  "baslik": "Device-Edge Cooperative Fine-Tuning of Foundation Models as a 6G Service",
+  "yil": 2023,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "6G'de temel model ince ayarı; cihaz-kenar işbirliği.",
+  "alinti": "Its key feature is the exploitation of existing parameter-efficient fine-tuning (PEFT) techniques to tweak only a small fraction of model weights for a FoMo to become customized"
+ },
+ {
+  "id": "arXiv:2405.13356",
+  "baslik": "Large Language Models (LLMs) Assisted Wireless Network Deployment in Urban Settings",
+  "yil": 2024,
+  "cites": 26,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "RL ajanında LLM çekirdek; baz istasyonu yerleşimi.",
+  "alinti": "We introduce a novel Reinforcement Learning (RL) based framework that leverages LLMs for network deployment in wireless communications."
+ },
+ {
+  "id": "arXiv:2412.14538",
+  "baslik": "Overview of AI and communication for 6G network: fundamentals, challenges, and future research opportunities",
+  "yil": 2024,
+  "cites": 220,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Broad AI-6G overview; LLM role unclear from abstract",
+  "alinti": "This paper presents a comprehensive overview of AI and communication for 6G networks, with a focus on their foundational principles"
+ },
+ {
+  "id": "doi:10.1109/lwc.2024.3462556",
+  "baslik": "Large Language Model-Based Wireless Network Design",
+  "yil": 2024,
+  "cites": 31,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM tabanlı kombinatoryal optimizasyon; erişim noktası yerleşimi",
+  "alinti": "we present the Large Language Model-based combinatorial optimizer (LMCO) for wireless network optimization and planning tasks"
+ },
+ {
+  "id": "doi:10.3390/electronics14061148",
+  "baslik": "Deep Reinforcement Learning for Energy-Efficient 6G V2X Networks",
+  "yil": 2025,
+  "cites": 24,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "6G V2X için DRL kaynak tahsisi; LLM yok",
+  "alinti": "Optimal resource allocation using linear programming methods cannot be scaled to the required scenarios of 6G V2X communications"
+ },
+ {
+  "id": "arXiv:2408.13298",
+  "baslik": "Large Language Models for Zero Touch Network Configuration Management",
+  "yil": 2024,
+  "cites": 56,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM ile sıfır dokunuşlu ağ yapılandırması",
+  "alinti": "we introduce the Network ConFiguration Generator (LLM-NetCFG) that employs Large Language Model and architects ZSM configuration agents by Large Language Models."
+ },
+ {
+  "id": "arXiv:2505.02091",
+  "baslik": "LLM-OptiRA: LLM-Driven Optimization of Resource Allocation for Non-Convex Problems in Wireless Communications",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM ile kaynak tahsisi formülasyonu ve çözümü.",
+  "alinti": "we propose LLM-OptiRA, the first framework that leverages large language models (LLMs) to automatically detect and transform non-convex components into solvable forms"
+ },
+ {
+  "id": "arXiv:2506.07647",
+  "baslik": "Foundation Model Empowered Synesthesia of Machines (SoM): AI-native Intelligent Multi-Modal Sensing-Communication Integration",
+  "yil": 2025,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "6G temel modeller ve LLM sınıflandırması; merkezi",
+  "alinti": "dividing them into general-purpose FMs, specifically large language models (LLMs), and SoM domain-specific FMs, referred to as wireless foundation models."
+ },
+ {
+  "id": "arXiv:2505.12729",
+  "baslik": "Bridging the Modality Gap: Enhancing Channel Prediction with Semantically Aligned LLMs and Knowledge Distillation",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ile kanal tahmini, bilgi damıtma; doğrudan ilgili",
+  "alinti": "Nevertheless, a significant modality gap exists between the linguistic knowledge embedded in pretrained LLMs and the intrinsic characteristics of CSI"
+ },
+ {
+  "id": "doi:10.54254/2755-2721/102/20240966",
+  "baslik": "Application of machine learning algorithms in resource allocation for wireless communications",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Kaynak tahsisinde ML genel incelemesi; LLM yok",
+  "alinti": "The application of machine learning offers a number of significant advantages over traditional resource allocation algorithms"
+ },
+ {
+  "id": "doi:10.1109/inc465408.2025.11256439",
+  "baslik": "AI-Driven Resource Allocation In 6G Mobile Networks: A Deep Learning Approach",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; derin öğrenme tabanlı 6G kaynak tahsisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/bmsb65076.2025.11165679",
+  "baslik": "Next-Generation Networking: Enhancing Intent-Based Architectures with Large Language Models and Retrieval-Augmented Generation",
+  "yil": 2025,
+  "cites": 3,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM ve RAG ile niyet tabanlı ağ mimarisi; doğrudan ilgili.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1810.07862",
+  "baslik": "Applications of Deep Reinforcement Learning in Communications and Networking: A Survey",
+  "yil": 2018,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "DRL ağ iletişimi anketi; LLM dışı temel yöntem",
+  "alinti": "Reinforcement learning has been efficiently used to enable the network entities to obtain the optimal policy"
+ },
+ {
+  "id": "doi:10.2139/ssrn.4356702",
+  "baslik": "Ai-Based Dynamic Resource Provisioning for Network Slicing in 6g: A Deep Reinforcement Learning Approach",
+  "yil": 2023,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "6G dilimleme için DRL tabanlı kaynak tahsisi; LLM yok",
+  "alinti": "We came up with a Deep Reinforcement Learning-based Network Sub-Slicing Allocation and Optimization (NS-RAO) algorithm to solve the issue of resource allocation"
+ },
+ {
+  "id": "arXiv:2503.11933",
+  "baslik": "End-to-End Edge AI Service Provisioning Framework in 6G ORAN",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "O-RAN rApp olarak LLM ajanı; doğrudan ilgili.",
+  "alinti": "The LLM agent automates multiple tasks, including AI model selection from repositories (e.g., Hugging Face), service deployment, network adaptation, and real-time monitoring via xApps."
+ },
+ {
+  "id": "doi:10.1364/jocn.534909",
+  "baslik": "Intent-based control and management framework for optical transport networks supporting B5G services empowered by large language models [Invited]",
+  "yil": 2024,
+  "cites": 16,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM tabanlı niyet tabanlı B5G ağ yönetimi",
+  "alinti": "the present study relies on generative artificial intelligence (GenAI) and large language models (LLMs) to significantly simplify the interaction between different layers and domains through automated translation of configuration policies from one domain to another."
+ },
+ {
+  "id": "arXiv:2501.12983",
+  "baslik": "LLM4WM: Adapting LLM for Wireless Multi-Tasking",
+  "yil": 2025,
+  "cites": 28,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kanal görevleri için LLM ince ayarı; doğrudan merkezi",
+  "alinti": "LLM4WM is proposed--a large language model (LLM) multi-task fine-tuning framework specifically tailored for channel-associated tasks."
+ },
+ {
+  "id": "doi:10.3390/s22083031",
+  "baslik": "Deep Reinforcement Learning for Resource Management on Network Slicing: A Survey",
+  "yil": 2022,
+  "cites": 144,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Ağ dilimleme için DRL derlemesi; LLM yok",
+  "alinti": "This paper identifies the relevant phases for resource management in network slicing and analyzes approaches using reinforcement learning (RL) and DRL algorithms"
+ },
+ {
+  "id": "arXiv:2504.14100",
+  "baslik": "6G WavesFM: A Foundation Model for Sensing, Communication, and Localization",
+  "yil": 2025,
+  "cites": 17,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Kablosuz temel model; kanal tahmini ve konum",
+  "alinti": "This paper introduces WavesFM, a novel Wireless Foundation Model (WFM) framework, capable of supporting a wide array of communication, sensing, and localization tasks."
+ },
+ {
+  "id": "arXiv:2507.21696",
+  "baslik": "Edge Agentic AI Framework for Autonomous Network Optimisation in O-RAN",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "O-RAN'da LLM ajanı karşılaştırmalı; güvenlik vurgusu var.",
+  "alinti": "achieves zero network outages under high-stress conditions, compared to 8.4% for traditional fixed-power networks and 3.3% for large language model"
+ }
+]

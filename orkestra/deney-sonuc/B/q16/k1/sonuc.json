@@ -1,0 +1,959 @@
+{
+ "run_id": "20261026-011458-eb54f4",
+ "soru": "Katı hal sürücülerinde (SSD) ölçeklenebilirlik, dayanıklılık, gecikme ve güvenlik için cihaz düzeyinde optimizasyon teknikleri üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-06-10",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6468,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.11560399999999998,
+   "in": 1239,
+   "out": 5285,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.14379856,
+   "in": 311212,
+   "out": 45940,
+   "web_search": 9
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.2266468,
+   "in": 275579,
+   "out": 343078,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.160716,
+   "in": 11778,
+   "out": 3325,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 49.5,
+  "toplama:openalex": 17.6,
+  "web_isci": 64.4,
+  "toplama:crossref": 138.7,
+  "toplama:dblp": 309.0,
+  "toplama:arxiv": 548.7,
+  "toplama": 548.7,
+  "tekil+kesim_1": 46.0,
+  "atif": 317.1,
+  "okuyucu": 623.2,
+  "damitma": 28.4,
+  "sef_final": 32.7,
+  "toplam": 1645.6
+ },
+ "ozet_token_tahmini": 3979,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "SSD iç mimarisinin temelleri nelerdir: FTL adres eşleme, çöp toplama (GC), yazma büyütmesi ve aşınma dengeleme yöntemleri nasıl gelişti?",
+    "sorgular": [
+     "\"flash translation layer\" page-level mapping",
+     "SSD \"garbage collection\" policy",
+     "\"write amplification\" flash SSD analysis",
+     "\"wear leveling\" NAND flash",
+     "SSD design tradeoffs internal parallelism"
+    ],
+    "yeterli": "Klasik FTL şemaları (blok/hibrit/sayfa düzeyi, DFTL), GC ve yazma büyütmesi modelleri ile aşınma dengeleme yaklaşımlarının ana temsilcileri listelendiğinde yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "NAND flash güvenilirliği ve SSD dayanıklılığı (endurance) nasıl karakterize ediliyor; hata azaltma, ECC/LDPC, okuma bozulması ve veri saklama sorunlarına hangi cihaz düzeyi teknikler öneriliyor?",
+    "sorgular": [
+     "NAND flash error characterization mitigation",
+     "SSD endurance lifetime extension",
+     "\"read disturb\" \"data retention\" flash",
+     "LDPC soft decoding SSD reliability",
+     "3D NAND reliability characterization"
+    ],
+    "yeterli": "Hata mekanizmalarının deneysel karakterizasyonu, ECC/eşik voltaj ayarlama gibi azaltma teknikleri ve saha (üretim ortamı) arıza çalışmaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "SSD'lerde gecikme ve kuyruk gecikmesini (tail latency) azaltmak ile çok kiracılı ortamlarda performans izolasyonu sağlamak için hangi teknikler var?",
+    "sorgular": [
+     "SSD \"tail latency\" garbage collection",
+     "SSD performance isolation multi-tenant",
+     "NVMe low latency storage stack",
+     "\"ultra-low latency\" SSD firmware",
+     "read latency suspension program erase SSD"
+    ],
+    "yeterli": "GC kaynaklı kuyruk gecikmesi azaltma, I/O zamanlama/önceliklendirme, NVMe çok kuyruklu yığın ve kiracı izolasyonu yaklaşımlarının önemli örnekleri bulunduğunda yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Ölçeklenebilirlik için yeni arayüzler ve mimariler (Open-Channel SSD, Zoned Namespaces/ZNS, FDP, yüksek paralellik, CXL bağlantılı depolama) neler sunuyor?",
+    "sorgular": [
+     "\"open-channel SSD\" host-managed",
+     "\"zoned namespaces\" ZNS SSD",
+     "\"flexible data placement\" NVMe",
+     "multi-stream SSD data placement",
+     "software-defined flash host FTL"
+    ],
+    "yeterli": "LightNVM, ZNS, multi-stream ve FDP gibi blok arayüzü ötesi tasarımlar ile bunların performans/dayanıklılık etkileri değerlendirildiğinde yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "SSD güvenliği: güvenli silme, kendinden şifrelemeli sürücüler, fidye yazılımına karşı cihaz içi savunma ve flash düzeyi saldırılar nelerdir?",
+    "sorgular": [
+     "SSD \"secure deletion\" sanitization",
+     "\"self-encrypting drive\" vulnerabilities",
+     "ransomware defense SSD firmware",
+     "NAND flash program interference attack",
+     "SSD firmware security trusted storage"
+    ],
+    "yeterli": "Silme/sanitizasyon, SED zayıflıkları, cihaz içi fidye yazılımı tespiti/kurtarma ve donanım düzeyi saldırı-çalışmaları temsil edildiğinde yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "SSD araştırmasında hangi simülatörler, emülatörler, açık donanım platformları ve iş yükü izleri kıyaslama (benchmark) olarak kullanılıyor ve değerlendirme nasıl yapılıyor?",
+    "sorgular": [
+     "SSD simulator MQSim",
+     "FEMU flash emulator QEMU",
+     "SSD simulation framework FlashSim SimpleSSD",
+     "OpenSSD Cosmos platform",
+     "storage I/O traces SSD workload"
+    ],
+    "yeterli": "Yaygın simülatör/emülatör (MQSim, FEMU, SimpleSSD, FlashSim), donanım prototipleri ve iz setleri ile değerlendirme pratiklerine ilişkin eleştirel çalışmalar listelendiğinde yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Hesaplamalı depolama (computational storage, near-data processing) ve öğrenme tabanlı (ML) SSD yönetimi gibi komşu alanlardan hangi yöntemler cihaz düzeyi optimizasyona aktarılıyor?",
+    "sorgular": [
+     "\"computational storage\" SSD",
+     "\"near-data processing\" in-storage computing",
+     "programmable SSD smart storage",
+     "machine learning SSD firmware management",
+     "reinforcement learning garbage collection SSD"
+    ],
+    "yeterli": "In-storage computing çerçeveleri ve ML ile GC/yerleştirme/arıza tahmini yapan temsilci çalışmalar kapsandığında yeterlidir."
+   },
+   {
+    "id": "S8",
+    "soru": "Yüksek yoğunluklu flash (QLC/PLC, 3D NAND) ve yeni iş yükleri (yapay zekâ, büyük ölçekli veri merkezleri) bağlamında açık problemler ve gelecek araştırma yönleri nelerdir?",
+    "sorgular": [
+     "QLC SSD performance endurance challenges",
+     "SSD open problems survey",
+     "flash storage future directions datacenter",
+     "SSD AI training storage GPU direct",
+     "block interface tax SSD"
+    ],
+    "yeterli": "Güncel derlemeler ve pozisyon makaleleri ile QLC/3D NAND, ZNS benimsenmesi, AI iş yükleri ve sürdürülebilirlikle ilgili açık sorunları tanımlayan çalışmalar bulunduğunda yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Design Tradeoffs for SSD Performance",
+    "yil": 2008
+   },
+   {
+    "baslik": "DFTL: A Flash Translation Layer Employing Demand-based Selective Caching of Page-level Address Mappings",
+    "yil": 2009
+   },
+   {
+    "baslik": "Write Amplification Analysis in Flash-Based Solid State Drives",
+    "yil": 2009
+   },
+   {
+    "baslik": "Understanding Intrinsic Characteristics and System Implications of Flash Memory based Solid State Drives",
+    "yil": 2009
+   },
+   {
+    "baslik": "Reliably Erasing Data from Flash-Based Solid State Drives",
+    "yil": 2011
+   },
+   {
+    "baslik": "SFS: Random Write Considered Harmful in Solid State Drives",
+    "yil": 2012
+   },
+   {
+    "baslik": "Linux Block IO: Introducing Multi-queue SSD Access on Multi-core Systems",
+    "yil": 2013
+   },
+   {
+    "baslik": "Willow: A User-Programmable SSD",
+    "yil": 2014
+   },
+   {
+    "baslik": "A Large-Scale Study of Flash Memory Failures in the Field",
+    "yil": 2015
+   },
+   {
+    "baslik": "Flash Reliability in Production: The Expected and the Unexpected",
+    "yil": 2016
+   },
+   {
+    "baslik": "The Tail at Store: A Revelation from Millions of Hours of Disk and SSD Deployments",
+    "yil": 2016
+   },
+   {
+    "baslik": "Biscuit: A Framework for Near-Data Processing of Big Data Workloads",
+    "yil": 2016
+   },
+   {
+    "baslik": "LightNVM: The Linux Open-Channel SSD Subsystem",
+    "yil": 2017
+   },
+   {
+    "baslik": "The Unwritten Contract of Solid State Drives",
+    "yil": 2017
+   },
+   {
+    "baslik": "FlashBlox: Achieving Both Performance Isolation and Uniform Lifetime for Virtualized SSDs",
+    "yil": 2017
+   },
+   {
+    "baslik": "Tiny-Tail Flash: Near-Perfect Elimination of Garbage Collection Tail Latencies in NAND SSDs",
+    "yil": 2017
+   },
+   {
+    "baslik": "Error Characterization, Mitigation, and Recovery in Flash-Memory-Based Solid-State Drives",
+    "yil": 2017
+   },
+   {
+    "baslik": "Vulnerabilities in MLC NAND Flash Memory Programming: Experimental Analysis, Exploits, and Mitigation Techniques",
+    "yil": 2017
+   },
+   {
+    "baslik": "FlashGuard: Leveraging Intrinsic Flash Properties to Defend Against Encryption Ransomware",
+    "yil": 2017
+   },
+   {
+    "baslik": "MQSim: A Framework for Enabling Realistic Studies of Modern Multi-Queue SSD Devices",
+    "yil": 2018
+   },
+   {
+    "baslik": "The CASE of FEMU: Cheap, Accurate, Scalable and Extensible Flash Emulator",
+    "yil": 2018
+   },
+   {
+    "baslik": "FlashShare: Punching Through Server Storage Stack from Kernel to Firmware for Ultra-Low Latency SSDs",
+    "yil": 2018
+   },
+   {
+    "baslik": "Self-encrypting deception: weaknesses in the encryption of solid state drives",
+    "yil": 2019
+   },
+   {
+    "baslik": "Don't Be a Blockhead: Zoned Namespaces Make Work on Conventional SSDs Obsolete",
+    "yil": 2021
+   },
+   {
+    "baslik": "ZNS: Avoiding the Block Interface Tax for Flash-based SSDs",
+    "yil": 2021
+   }
+  ],
+  "web_odaklari": [
+   "awesome SSD flash storage papers github",
+   "solid state drive FTL research reading list",
+   "FAST conference flash storage best papers list"
+  ]
+ },
+ "tohumlar": [
+  "arXiv:1706.08642",
+  "doi:10.1145/1534530.1534544",
+  "doi:10.1109/access.2020.2978982",
+  "doi:10.1145/2492101.1555371",
+  "doi:10.1145/2796314.2745848",
+  "doi:10.1145/2482767.2482793",
+  "doi:10.1145/2741948.2741949",
+  "doi:10.1145/2905054",
+  "doi:10.1145/3064176.3064187",
+  "doi:10.1109/hpca.2017.61",
+  "doi:10.1109/sp.2019.00088",
+  "doi:10.1109/isca.2016.23"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1706.08642",
+   "arxiv_id": "1706.08642",
+   "doi": "10.1109/jproc.2017.2713127",
+   "baslik": "Error Characterization, Mitigation, and Recovery in Flash Memory Based Solid-State Drives",
+   "yil": 2017,
+   "tarih": "2017-06-27",
+   "gerekce": "SSD denetleyicilerinin gürültülü flash verisini doğru yorumlamak için kullandığı hata karakterizasyonu, azaltma ve kurtarma tekniklerini kapsamlı biçimde inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "As a result, flash memory controllers in solid-state drives (SSDs) have become much more sophisticated: they incorporate many effective techniques to ensure the correct interpretation of noisy data stored in flash memory cells.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "sef"
+   ],
+   "atif": 348,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1145/1508244.1508271",
+   "arxiv_id": null,
+   "doi": "10.1145/1508244.1508271",
+   "baslik": "DFTL",
+   "yil": 2009,
+   "tarih": "2009-03-07",
+   "gerekce": "DFTL, sanal-fiziksel adres çevirisini yapan FTL tasarımını kötü rastgele yazma performansının önemli nedeni olarak ele alır; sayfa düzeyi eşleme çözümüdür.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We examine one of the important causes of this poor performance: the design of the Flash Translation Layer (FTL), which performs the virtual-to-physical address translations and hides the erase-before-write characteristics of flash.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 735,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1145/1534530.1534544",
+   "arxiv_id": null,
+   "doi": "10.1145/1534530.1534544",
+   "baslik": "Write amplification analysis in flash-based solid state drives",
+   "yil": 2009,
+   "tarih": "2009-05-04",
+   "gerekce": "Yazma büyütmesini rastgele yazma performansını ve yazma dayanıklılığını sınırlayan kritik etken olarak analiz eden temel çalışmadır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Write amplification is a critical factor limiting the random write performance and write endurance in storage devices based on NAND-flash memories such as solid-state drives (SSD).",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex",
+    "sef"
+   ],
+   "atif": 319,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1145/2745844.2745848",
+   "arxiv_id": null,
+   "doi": "10.1145/2745844.2745848",
+   "baslik": "A Large-Scale Study of Flash Memory Failures in the Field",
+   "yil": 2015,
+   "tarih": "2015-06-08",
+   "gerekce": "Facebook veri merkezlerinde yaklaşık dört yıllık, milyonlarca çalışma saatlik SSD arıza verisini analiz eden büyük ölçekli saha çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We analyze data collected across a majority of flash-based solid state drives at Facebook data centers over nearly four years and many millions of operational hours",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 171,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1145/3121133",
+   "arxiv_id": null,
+   "doi": "10.1145/3121133",
+   "baslik": "Tiny-Tail Flash",
+   "yil": 2017,
+   "tarih": "2017-08-31",
+   "gerekce": "Flash performans dengesizliğinin ana nedeni olan çöp toplamanın yol açtığı uzun kuyruk gecikmesi sorununu hedefler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The core culprit of flash performance instability is the well-known garbage collection (GC) process, which causes long delays as the SSD cannot serve (blocks) incoming I/Os, which then induces the long tail latency problem.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 162,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1145/3458336.3465300",
+   "arxiv_id": null,
+   "doi": "10.1145/3458336.3465300",
+   "baslik": "Don't be a blockhead",
+   "yil": 2021,
+   "tarih": "2021-06-01",
+   "gerekce": "Endüstride standartlaşan ve benimsenen Zoned Namespaces (ZNS) arayüzüne geçişi savunan etkili bir çağrıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Industry, however, has standardized and is adopting Zoned Namespaces (ZNS) SSDs, which offer a new storage interface that dominates conventional SSDs.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "openalex"
+   ],
+   "atif": 55,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 7,
+   "id": "title:the case of femu cheap accurate scalable and extensible flas",
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "The case of FEMU: cheap, accurate, scalable and extensible flash emulator",
+   "yil": 2018,
+   "tarih": "2018-02-12",
+   "gerekce": "FEMU, tam yığın yazılım/donanım SSD araştırması için QEMU tabanlı ucuz, doğru ve ölçeklenebilir bir flash emülatörüdür.",
+   "gerekce_kokeni": "sef",
+   "alinti": "FEMU is a software (QEMU-based) flash emulator for fostering future full-stack software/ hardware SSD research.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "openalex"
+   ],
+   "atif": 91,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1109/dsn.2015.49",
+   "arxiv_id": null,
+   "doi": "10.1109/dsn.2015.49",
+   "baslik": "Read Disturb Errors in MLC NAND Flash Memory: Characterization, Mitigation, and Recovery",
+   "yil": 2015,
+   "tarih": "2015-06-01",
+   "gerekce": "MLC NAND'da bir satıra okumanın aynı bloktaki diğer hücrelerin eşik gerilimlerini etkilediği okuma bozulmasını karakterize eder, azaltma ve kurtarma önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "A key contributor to this reduced reliability is read disturb, where a read to one row of cells impacts the threshold voltages of unread flash cells in different rows of the same block.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 215,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.5555/2591272.2591298",
+   "arxiv_id": null,
+   "doi": "10.5555/2591272.2591298",
+   "baslik": "LDPC-in-SSD: making advanced error correction codes work effectively in solid state drives",
+   "yil": 2013,
+   "tarih": "2013-02-12",
+   "gerekce": "Kapasite arttıkça BCH kodlarının yetersizleştiği SSD'lerde LDPC gibi gelişmiş hata düzeltme kodlarını etkin kılmayı hedefler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Conventional error correction codes (ECCs), such as the commonly used BCH code, have become increasingly inadequate for solid state drives (SSDs) as the capacity of NAND flash memory continues to increase and its reliability continues to degrade.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "openalex"
+   ],
+   "atif": 237,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1109/iccd.2013.6657034",
+   "arxiv_id": null,
+   "doi": "10.1109/iccd.2013.6657034",
+   "baslik": "Program interference in MLC NAND flash memory: Characterization, modeling, and mitigation",
+   "yil": 2013,
+   "tarih": "2013-10-01",
+   "gerekce": "Programlama işleminin komşu hücrelerin eşik gerilimini etkilediği MLC program girişimini karakterize eder, modeller ve azaltma önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "when a flash cell is programmed to a value, the programming operation affects the threshold voltage of not only that cell, but also the other cells surrounding it.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 209,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1145/1176887.1176911",
+   "arxiv_id": null,
+   "doi": "10.1145/1176887.1176911",
+   "baslik": "A superblock-based flash translation layer for NAND flash memory",
+   "yil": 2006,
+   "tarih": "2006-01-01",
+   "gerekce": "İnce taneli çevirinin esnekliğini kaba taneli çevirinin düşük bellek yüküyle birleştiren süperblok tabanlı hibrit eşleme FTL şemasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This hybrid mapping technique has the flexibility provided by fine-grain address translation, while reducing the memory overhead to the level of coarse-grain address translation.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 312,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1109/sp.2019.00088",
+   "arxiv_id": null,
+   "doi": "10.1109/sp.2019.00088",
+   "baslik": "Self-Encrypting Deception: Weaknesses in the Encryption of Solid State Drives",
+   "yil": 2019,
+   "tarih": "2019-05-01",
+   "gerekce": "Birçok kendinden şifrelemeli SSD modelinde parola bilinmeden verilerin tamamen kurtarılmasına izin veren güvenlik zafiyetlerini ortaya koyar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "For many models, these security weaknesses allow for complete recovery of the data without knowledge of any secret (such as the password).",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "openalex",
+    "sef"
+   ],
+   "atif": 45,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:1807.05140",
+   "arxiv_id": "1807.05140",
+   "doi": "10.1145/3224432",
+   "baslik": "Improving 3D NAND Flash Memory Lifetime by Tolerating Early Retention Loss and Process Variation",
+   "yil": 2018,
+   "tarih": "2018-06-12",
+   "gerekce": "3D NAND'daki devre ve yapı değişikliklerinin hata kaynaklarını nasıl etkilediğini gösterir; erken saklama kaybı ve süreç varyasyonunu tolere ederek ömrü uzatır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The circuit-level and structural changes in 3D NAND flash memory significantly alter how different error sources affect the reliability of the memory.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex"
+   ],
+   "atif": 93,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2310.19094",
+   "arxiv_id": "2310.19094",
+   "doi": "10.1109/cluster52292.2023.00018",
+   "baslik": "Performance Characterization of NVMe Flash Devices with Zoned Namespaces (ZNS)",
+   "yil": 2023,
+   "tarih": "2023-10-29",
+   "gerekce": "Append-only bölgeler ve yeni G/Ç ile yönetim komutları sunan ZNS SSD'lerin performansını karakterize eder.",
+   "gerekce_kokeni": "sef",
+   "alinti": "ZNS SSDs introduce a new storage abstraction of append-only zones with a set of new I/O (i.e., append) and management (zone state machine transition) commands.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "openalex",
+    "web"
+   ],
+   "atif": 25,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2503.11665",
+   "arxiv_id": "2503.11665",
+   "doi": "10.1145/3689031.3696091",
+   "baslik": "Towards Efficient Flash Caches with Emerging NVMe Flexible Data Placement SSDs",
+   "yil": 2025,
+   "tarih": "2025-02-21",
+   "gerekce": "Yeni NVMe Flexible Data Placement SSD'lerle veri karışmasını ve cihaz yazma büyütmesini azaltan hedefli yerleştirmeyi flash önbellekler için inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Targeted data placement on Flash to minimize data intermixing and thus device write amplification shows promise for addressing this issue.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref"
+   ],
+   "atif": 19,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:1811.01544",
+   "arxiv_id": "1811.01544",
+   "doi": "10.1109/micro.2018.00045",
+   "baslik": "Amber: Enabling Precise Full-System Simulation with Detailed Modeling of All SSD Resources",
+   "yil": 2018,
+   "tarih": "2018-10-01",
+   "gerekce": "Gömülü CPU çekirdeklerini, DRAM'leri ve çeşitli flash teknolojilerini modelleyen tam sistem SSD simülasyon çerçevesi Amber'i (SimpleSSD 2.0) sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this work, we introduce a new SSD simulation framework, SimpleSSD 2.0, namely Amber, that models embedded CPU cores, DRAMs, and various flash technologies",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "web"
+   ],
+   "atif": 82,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1145/2512961",
+   "arxiv_id": null,
+   "doi": "10.1145/2512961",
+   "baslik": "A survey of address translation technologies for flash memories",
+   "yil": 2014,
+   "tarih": "2014-01",
+   "gerekce": "Flash belleklerde blok cihazı taklit eden FTL için adres çevirisi teknolojilerinin kapsamlı derlemesidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Flash Translation Layer (FTL) is a software layer built on raw flash memories that emulates a normal block device like magnetic disks.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 62,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1109/smartcomp.2014.7043841",
+   "arxiv_id": null,
+   "doi": "10.1109/smartcomp.2014.7043841",
+   "baslik": "Garbage collection and wear leveling for flash memory: Past and future",
+   "yil": 2014,
+   "tarih": "2014-11",
+   "gerekce": "Flash bellekte çöp toplama ve aşınma dengelemenin geçmişini ve geleceğini ele alan derleme niteliğinde çalışmadır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 82,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 19,
+   "id": "title:practical erase suspension for modern low latency ssds",
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "Practical erase suspension for modern low-latency SSDs",
+   "yil": 2019,
+   "tarih": "2019-07-10",
+   "gerekce": "Veri merkezi SSD'lerinde etkileşimli servisler için kritik olan düşük okuma kuyruk gecikmesini pratik erase askıya alma ile hedefler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "One of the main design goals for data-center SSDs is low read tail latency, which is crucial for interactive online services as a single query can generate thousands of disk accesses.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "openalex"
+   ],
+   "atif": 18,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1145/3669940.3707229",
+   "arxiv_id": null,
+   "doi": "10.1145/3669940.3707229",
+   "baslik": "FleetIO: Managing Multi-Tenant Cloud Storage with Multi-Agent Reinforcement Learning",
+   "yil": 2025,
+   "tarih": "2025-02-06",
+   "gerekce": "Çok kiracılı bulut depolamada zayıf izolasyonun kuyruk gecikmesi ile güçlü izolasyonun düşük kullanım arasındaki ödünleşimi çok etmenli pekiştirmeli öğrenmeyle yönetir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "They suffer from either long tail latency caused by weak isolation or low storage utilization caused by strong isolation.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "openalex"
+   ],
+   "atif": 5,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1109/lca.2018.2883431",
+   "arxiv_id": null,
+   "doi": "10.1109/lca.2018.2883431",
+   "baslik": "Amoeba: An Autonomous Backup and Recovery SSD for Ransomware Attack Defense",
+   "yil": 2018,
+   "tarih": "2018-07-01",
+   "gerekce": "Fidye yazılımı saldırılarına karşı otonom yedekleme ve kurtarma yapan cihaz içi SSD savunması önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 49,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1109/hpca.2017.61",
+   "arxiv_id": null,
+   "doi": "10.1109/hpca.2017.61",
+   "baslik": "Vulnerabilities in MLC NAND Flash Memory Programming: Experimental Analysis, Exploits, and Mitigation Techniques",
+   "yil": 2017,
+   "tarih": "2017-02",
+   "gerekce": "MLC NAND flash programlamadaki zafiyetleri deneysel olarak analiz eder, istismarları ve azaltma tekniklerini sunar; flash düzeyi saldırılarla ilgilidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 93,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1145/3599691.3603412",
+   "arxiv_id": null,
+   "doi": "10.1145/3599691.3603412",
+   "baslik": "Excessive SSD-Internal Parallelism Considered Harmful",
+   "yil": 2023,
+   "tarih": "2023-07-09",
+   "gerekce": "Aşırı SSD içi paralelliğin daha büyük alan geri kazanım birimi nedeniyle çöp toplama ek yükünü istemeden artırdığını gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we find that excessive parallelism inadvertently amplifies the garbage collection (GC) overhead due to the larger unit of space reclamation.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 16,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1109/iccd58817.2023.00052",
+   "arxiv_id": null,
+   "doi": "10.1109/iccd58817.2023.00052",
+   "baslik": "FlexZNS: Building High-Performance ZNS SSDs with Size-Flexible and Parity-Protected Zones",
+   "yil": 2023,
+   "tarih": "2023-11-06",
+   "gerekce": "Sabit boyutlu, sıralı yazılmak zorunda olan ZNS bölgelerine karşı boyutu esnek ve parite korumalı bölgelerle yüksek performanslı ZNS SSD'ler kurar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The ZNS interface divides the logical address space into size-fixed zones that must be written sequentially.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex",
+    "web"
+   ],
+   "atif": 14,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1007/s11227-025-07078-0",
+   "arxiv_id": null,
+   "doi": "10.1007/s11227-025-07078-0",
+   "baslik": "A Survey Of SSD Simulators And Emulators",
+   "yil": 2025,
+   "tarih": "2025-03-09",
+   "gerekce": "SSD simülatörleri ve emülatörlerine ilişkin bir derleme olup araştırmada kullanılan değerlendirme araçlarını özetler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:1610.02273",
+   "arxiv_id": "1610.02273",
+   "doi": null,
+   "baslik": "Near-Data Processing for Differentiable Machine Learning Models",
+   "yil": 2016,
+   "tarih": "2016-10-06",
+   "gerekce": "Makine öğrenimi iş yüklerinin depolama içi işlenmesini simüle eden yeni bir SSD platformuyla veri yakını işlemenin potansiyelini değerlendirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "we evaluate the potential of NDP for ML using a new SSD platform that allows us to simulate instorage processing (ISP) of ML workloads.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "title:the harey tortoise managing heterogeneous write performance ",
+   "arxiv_id": null,
+   "doi": null,
+   "baslik": "The harey tortoise: managing heterogeneous write performance in SSDs",
+   "yil": 2013,
+   "tarih": "2013-06-26",
+   "gerekce": "SSD'lerde heterojen yazma performansını yönetmeye ve çöp toplama hızını eşlemeye odaklanan gecikme çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "openalex"
+   ],
+   "atif": 51,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.1145/3585075",
+   "arxiv_id": null,
+   "doi": "10.1145/3585075",
+   "baslik": "Towards LDPC Read Performance of 3D Flash Memories with Layer-induced Error Characteristics",
+   "yil": 2023,
+   "tarih": "2023-02-27",
+   "gerekce": "Düzlemsel flash için tasarlanmış LDPC kodlarının 3D flash katman RBER özelliklerini dikkate almadığını gösterip okuma performansını iyileştirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Traditional LDPC codes designed for planar flash memories do not consider the layer RBER characteristics of 3D flash memories, which may induce sub-optimal read performance",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "openalex"
+   ],
+   "atif": 17,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1109/irps48203.2023.10118280",
+   "arxiv_id": null,
+   "doi": "10.1109/irps48203.2023.10118280",
+   "baslik": "Reliability of 3D NAND Flash for Future Storage Systems (Invited)",
+   "yil": 2023,
+   "tarih": "2023-03",
+   "gerekce": "Gelecek depolama sistemleri için 3D NAND flash güvenilirliğini ele alan davetli çalışmadır; yüksek yoğunluklu flash açık problemleriyle ilgilidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 13,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1109/irps45951.2020.9129620",
+   "arxiv_id": null,
+   "doi": "10.1109/irps45951.2020.9129620",
+   "baslik": "Open Block Characterization and Read Voltage Calibration of 3D QLC NAND Flash",
+   "yil": 2020,
+   "tarih": "2020-04",
+   "gerekce": "3D QLC NAND flash'ta açık blok karakterizasyonu ve okuma gerilimi kalibrasyonunu ele alır; yüksek yoğunluklu flash bağlamına katkı sağlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 22,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

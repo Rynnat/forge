@@ -1,0 +1,904 @@
+{
+ "run_id": "20261025-213417-b337b9",
+ "soru": "Heterojen 2.5D/3D entegre devrelerde ve paketlerde çok ölçekli ısıl modelleme yöntemleri üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-02-26",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6086,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.10617599999999999,
+   "in": 1218,
+   "out": 4822,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.16534992,
+   "in": 573045,
+   "out": 41729,
+   "web_search": 9
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.20454299999999995,
+   "in": 187325,
+   "out": 334172,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.13257999999999998,
+   "in": 10851,
+   "out": 2289,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 48.7,
+  "toplama:openalex": 1.2,
+  "web_isci": 52.9,
+  "toplama:crossref": 67.0,
+  "toplama:dblp": 241.6,
+  "toplama:arxiv": 439.6,
+  "toplama": 439.6,
+  "tekil+kesim_1": 87.1,
+  "atif": 192.6,
+  "okuyucu": 413.9,
+  "damitma": 11.1,
+  "sef_final": 22.3,
+  "toplam": 1215.2
+ },
+ "ozet_token_tahmini": 3604,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "IC ve paketler için kompakt ısıl modellemenin temelleri nelerdir? Bu soru RC ağ modellerini, HotSpot tarzı yaklaşımları ve sınır koşulundan bağımsız (DELPHI) kompakt modelleri kapsar.",
+    "sorgular": [
+     "\"compact thermal model\" VLSI",
+     "HotSpot thermal RC network",
+     "\"temperature-aware\" microarchitecture thermal modeling",
+     "DELPHI \"boundary condition independent\" compact thermal model",
+     "\"thermal modeling\" integrated circuits review"
+    ],
+    "yeterli": "HotSpot ailesi, DELPHI/BCI-CTM incelemeleri ve VLSI ısıl modelleme derlemeleri bulunmuşsa kapsam yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "3D yığınlı IC'lerde ısıl modelleme nasıl yapılır? Bu soru TSV'leri, katmanlar arası arayüzleri, sıvı/mikrokanal soğutmayı ve geçici (transient) analizi kapsar.",
+    "sorgular": [
+     "3D-ICE thermal simulation",
+     "\"3D IC\" thermal analysis TSV",
+     "\"through-silicon via\" thermal modeling",
+     "\"interlayer liquid cooling\" microchannel 3D stack",
+     "\"die stacking\" transient thermal simulation"
+    ],
+    "yeterli": "3D-ICE sürümleri, TSV ısıl modelleri, mikrokanal soğutma modelleri ve monolitik 3D ısıl çalışmaları bulunmuşsa kapsam yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "2.5D chiplet/interposer sistemleri ve heterojen paketlerde ısıl modelleme ve ısıl farkındalıklı tasarım nasıl ele alınır? Bu soru yerleşimi (placement), kat planlamayı (floorplanning) ve ko-tasarımı kapsar.",
+    "sorgular": [
+     "chiplet thermal-aware placement 2.5D",
+     "interposer thermal modeling heterogeneous integration",
+     "\"2.5D\" multi-chiplet thermal simulation",
+     "\"heterogeneous integration\" package thermal co-design",
+     "\"advanced packaging\" thermal analysis CoWoS"
+    ],
+    "yeterli": "TAP-2.5D benzeri yerleşim yöntemleri, çok-sadakatli chiplet modelleri ve paket–yonga ko-tasarımı çalışmaları bulunmuşsa kapsam yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Çok ölçekli ve hızlandırılmış sayısal yöntemler nelerdir? Bu soru model indirgemeyi (MOR), alt-modellemeyi, homojenizasyonu, power blurring yaklaşımını, GPU/paralel çözücüleri ve sonlu eleman/FVM yöntemlerini kapsar.",
+    "sorgular": [
+     "\"model order reduction\" thermal integrated circuits",
+     "\"multiscale thermal\" modeling electronics package chip",
+     "\"power blurring\" thermal analysis",
+     "\"effective thermal conductivity\" homogenization interconnect",
+     "parallel thermal simulator PACT"
+    ],
+    "yeterli": "MOR, Green fonksiyonu/power blurring, efektif iletkenlik homojenizasyonu ve paralel/SPICE tabanlı çözücüler (ör. PACT) temsil edilmişse kapsam yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Makine öğrenmesi ve fizik bilgili yöntemler ısıl modellemede nasıl kullanılır? Bu soru PINN'leri, operatör öğrenmeyi, GNN ve CNN tabanlı vekil (surrogate) modelleri kapsar.",
+    "sorgular": [
+     "DeepOHeat operator learning thermal",
+     "\"physics-informed neural network\" chip thermal",
+     "\"graph neural network\" thermal prediction IC",
+     "machine learning thermal surrogate 3D IC",
+     "\"neural operator\" heat conduction electronics"
+    ],
+    "yeterli": "DeepOHeat ve türevleri, GNN/CNN ısıl tahmin çalışmaları ve temel PINN/FNO yöntem makaleleri bulunmuşsa kapsam yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Isıl modeller nasıl doğrulanır, hangi kıyas setleri (benchmark) kullanılır ve ölçümle nasıl karşılaştırılır? Bu soru IR termografiyi, ısıl test çiplerini ve hotspot karakterizasyonunu kapsar.",
+    "sorgular": [
+     "thermal simulator validation infrared measurement chip",
+     "HotGauge hotspot characterization",
+     "\"thermal test chip\" 3D stack measurement",
+     "thermal benchmark chiplet systems",
+     "\"thermal sensor\" placement temperature estimation"
+    ],
+    "yeterli": "En az bir ölçüm tabanlı doğrulama çalışması, HotGauge benzeri metodolojiler ve yaygın kıyas yapılandırmaları bulunmuşsa kapsam yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Açık problemler ve komşu alanlar nelerdir? Bu soru elektro-termal-mekanik çoklu fiziği, ısıl gerilmeyi ve çarpılmayı (warpage), dinamik ısıl yönetimi (DTM), güç dağıtımı–ısıl etkileşimini ve nano ölçekli ısı iletimini (fonon, arayüz direnci) kapsar.",
+    "sorgular": [
+     "electro-thermal co-simulation 3D IC",
+     "thermo-mechanical stress warpage chiplet package",
+     "\"dynamic thermal management\" 3D multicore",
+     "\"thermal boundary resistance\" nanoscale interconnect",
+     "\"hybrid bonding\" thermal challenges"
+    ],
+    "yeterli": "Çoklu fizik ko-simülasyonu, ısıl-mekanik güvenilirlik, DTM ve nano ölçekli iletim konularında en az birer güncel çalışma veya yol haritası bulunmuşsa kapsam yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Temperature-aware microarchitecture",
+    "yil": 2003
+   },
+   {
+    "baslik": "Compact thermal modeling for temperature-aware design",
+    "yil": 2004
+   },
+   {
+    "baslik": "HotSpot: A compact thermal modeling methodology for early-stage VLSI design",
+    "yil": 2006
+   },
+   {
+    "baslik": "Thermal modeling, analysis, and management in VLSI circuits: principles and methods",
+    "yil": 2006
+   },
+   {
+    "baslik": "Ten years of boundary-condition-independent compact thermal modeling of electronic parts: a review",
+    "yil": 2008
+   },
+   {
+    "baslik": "3D-ICE: Fast compact transient thermal modeling for 3D ICs with inter-tier liquid cooling",
+    "yil": 2010
+   },
+   {
+    "baslik": "Power blurring: Fast static and transient thermal analysis method for packaged integrated circuits and power devices",
+    "yil": 2014
+   },
+   {
+    "baslik": "3D-ICE 3.0: Efficient Nonlinear MPSoC Thermal Simulation with Pluggable Heat Sink Models",
+    "yil": 2021
+   },
+   {
+    "baslik": "TAP-2.5D: A Thermally-Aware Chiplet Placement Methodology for 2.5D Systems",
+    "yil": 2021
+   },
+   {
+    "baslik": "HotGauge: A Methodology for Characterizing Advanced Hotspots in Modern and Next Generation Processors",
+    "yil": 2021
+   },
+   {
+    "baslik": "PACT: An Extensible Parallel Thermal Simulator for Emerging Integration and Cooling Technologies",
+    "yil": 2022
+   },
+   {
+    "baslik": "DeepOHeat: Operator Learning-based Ultra-fast Thermal Simulation in 3D-IC Design",
+    "yil": 2023
+   },
+   {
+    "baslik": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+    "yil": 2019
+   },
+   {
+    "baslik": "Fourier Neural Operator for Parametric Partial Differential Equations",
+    "yil": 2021
+   }
+  ],
+  "web_odaklari": [
+   "awesome chip thermal simulation papers github",
+   "3D IC chiplet thermal modeling reading list",
+   "machine learning thermal analysis EDA survey papers list"
+  ]
+ },
+ "tohumlar": [
+  "doi:10.1109/iccad.2010.5653749",
+  "arXiv:2302.12949",
+  "doi:10.1109/tvlsi.2006.876103",
+  "arXiv:2504.21140",
+  "doi:10.3390/eng6120373",
+  "doi:10.23919/date51398.2021.9474011",
+  "doi:10.1109/tvlsi.2013.2293422",
+  "doi:10.1109/tcad.2021.3079166",
+  "doi:10.1109/jproc.2006.879797",
+  "doi:10.1145/859618.859620",
+  "doi:10.1016/j.jcp.2018.10.045",
+  "doi:10.1080/01457630701673188"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1109/tvlsi.2006.876103",
+   "arxiv_id": null,
+   "doi": "10.1109/tvlsi.2006.876103",
+   "baslik": "HotSpot: a compact thermal modeling methodology for early-stage VLSI design",
+   "yil": 2006,
+   "tarih": "2006-05",
+   "gerekce": "Erken aşama VLSI tasarımı için kompakt ısıl modelleme metodolojisi HotSpot'u tanıtır; RC tabanlı yaklaşımların temel referansıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "dblp",
+    "sef"
+   ],
+   "atif": 925,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1145/871656.859620",
+   "arxiv_id": null,
+   "doi": "10.1145/871656.859620",
+   "baslik": "Temperature-aware microarchitecture",
+   "yil": 2003,
+   "tarih": "2003-05",
+   "gerekce": "Mikromimari bloklara karşılık gelen ısıl direnç-kapasite eşdeğer devresine dayalı hızlı model ve dinamik ısıl yönetimi önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "an accurate yet fast and practical model based on an equivalent circuit of thermal resistances and capacitances that correspond to microarchitecture blocks",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 624,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1109/iccad.2010.5653749",
+   "arxiv_id": null,
+   "doi": "10.1109/iccad.2010.5653749",
+   "baslik": "3D-ICE: Fast compact transient thermal modeling for 3D ICs with inter-tier liquid cooling",
+   "yil": 2010,
+   "tarih": "2010-11",
+   "gerekce": "Katmanlar arası sıvı soğutmalı 3B IC'ler için hızlı kompakt geçici ısıl modelleme sunan 3D-ICE çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "dblp",
+    "sef"
+   ],
+   "atif": 259,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1080/01457630701673188",
+   "arxiv_id": null,
+   "doi": "10.1080/01457630701673188",
+   "baslik": "Ten Years of Boundary-Condition- Independent Compact Thermal Modeling of Electronic Parts: A Review",
+   "yil": 2008,
+   "tarih": "2008-02",
+   "gerekce": "Elektronik parçalar için sınır koşulundan bağımsız kompakt ısıl modellemenin on yılını derleyen DELPHI yaklaşımı incelemesidir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 124,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1016/s0026-2714(97)87728-1",
+   "arxiv_id": null,
+   "doi": "10.1016/s0026-2714(97)87728-1",
+   "baslik": "Thermal characterization of electronic devices with boundary condition independent compact models",
+   "yil": 1995,
+   "tarih": "1995",
+   "gerekce": "Elektronik cihazların sınır koşulundan bağımsız kompakt modellerle ısıl karakterizasyonu; BCI kompakt modellemenin çekirdek çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 64,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1109/jproc.2006.879797",
+   "arxiv_id": null,
+   "doi": "10.1109/jproc.2006.879797",
+   "baslik": "Thermal Modeling, Analysis, and Management in VLSI Circuits: Principles and Methods",
+   "yil": 2006,
+   "tarih": "2006-08",
+   "gerekce": "VLSI devrelerde ısıl modelleme, analiz ve yönetimin ilke ve yöntemlerini ele alan kapsamlı bir kitaptır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 476,
+   "rel": 2,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1109/tcad.2002.804385",
+   "arxiv_id": null,
+   "doi": "10.1109/tcad.2002.804385",
+   "baslik": "3-D Thermal-ADI: a linear-time chip level transient thermal simulator",
+   "yil": 2002,
+   "tarih": "2002-12",
+   "gerekce": "Çip seviyesi doğrusal zamanlı geçici ısıl simülatör 3-D Thermal-ADI'yi sunar; hızlandırılmış sayısal yöntemler için temel eserdir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 161,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1109/tvlsi.2013.2293422",
+   "arxiv_id": null,
+   "doi": "10.1109/tvlsi.2013.2293422",
+   "baslik": "Power Blurring: Fast Static and Transient Thermal Analysis Method for Packaged Integrated Circuits and Power Devices",
+   "yil": 2014,
+   "tarih": "2014-11",
+   "gerekce": "Paketli IC'ler ve güç cihazları için hızlı statik ve geçici ısıl analiz sağlayan power blurring yöntemini tanıtır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 72,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.1109/ectc.2009.5074080",
+   "arxiv_id": null,
+   "doi": "10.1109/ectc.2009.5074080",
+   "baslik": "Thermal management of 3D IC integration with TSV (through silicon via)",
+   "yil": 2009,
+   "tarih": "2009-05",
+   "gerekce": "TSV'li 3D IC entegrasyonunun ısıl yönetimini ele alan, yüksek atıflı bir 3B yığın çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 161,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1109/tcad.2011.2144596",
+   "arxiv_id": null,
+   "doi": "10.1109/tcad.2011.2144596",
+   "baslik": "Thermal Modeling and Analysis for 3-D ICs With Integrated Microchannel Cooling",
+   "yil": 2011,
+   "tarih": "2011-09",
+   "gerekce": "Entegre mikrokanal soğutmalı 3-D IC'ler için ısıl modelleme ve analiz sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 49,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1109/tcad.2021.3079166",
+   "arxiv_id": null,
+   "doi": "10.1109/tcad.2021.3079166",
+   "baslik": "PACT: An Extensible Parallel Thermal Simulator for Emerging Integration and Cooling Technologies",
+   "yil": 2022,
+   "tarih": "2022-04",
+   "gerekce": "Yeni entegrasyon ve soğutma teknolojileri için genişletilebilir paralel ısıl simülatör PACT'ı sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 42,
+   "rel": 2,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.23919/date51398.2021.9474011",
+   "arxiv_id": null,
+   "doi": "10.23919/date51398.2021.9474011",
+   "baslik": "TAP-2.5D: A Thermally-Aware Chiplet Placement Methodology for 2.5D Systems",
+   "yil": 2021,
+   "tarih": "2021-02-01",
+   "gerekce": "2.5D sistemler için ısıl farkındalıklı chiplet yerleştirme metodolojisi TAP-2.5D'yi önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 63,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2302.12949",
+   "arxiv_id": "2302.12949",
+   "doi": "10.1109/dac56929.2023.10247998",
+   "baslik": "DeepOHeat: Operator Learning-based Ultra-fast Thermal Simulation in 3D-IC Design",
+   "yil": 2023,
+   "tarih": "2023-02-25",
+   "gerekce": "3D-IC'de operatör öğrenmeli hızlı ısıl simülasyon; mevcut çalışmaların yalnızca 2B alan çözdüğü veya genelleşemediği sorununu hedefler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "However, existing works either solve 2D temperature fields only or do not generalize well to new designs with unseen design configurations",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 56,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1109/tcpmt.2022.3174608",
+   "arxiv_id": null,
+   "doi": "10.1109/tcpmt.2022.3174608",
+   "baslik": "Thermal Modeling of a Chiplet-Based Packaging With a 2.5-D Through-Silicon Via Interposer",
+   "yil": 2022,
+   "tarih": "2022-06",
+   "gerekce": "2.5-D TSV interposer içeren chiplet tabanlı paketin ısıl modellemesini doğrudan ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 53,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1109/tvlsi.2023.3321933",
+   "arxiv_id": null,
+   "doi": "10.1109/tvlsi.2023.3321933",
+   "baslik": "A Multiscale Anisotropic Thermal Model of Chiplet Heterogeneous Integration System",
+   "yil": 2024,
+   "tarih": "2024-01",
+   "gerekce": "Chiplet heterojen entegrasyon sistemleri için çok ölçekli anizotropik ısıl model önerir; araştırma sorusunun merkezindedir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 40,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2410.09188",
+   "arxiv_id": "2410.09188",
+   "doi": "10.1145/3765905",
+   "baslik": "MFIT : Multi-FIdelity Thermal Modeling for 2.5D and 3D Multi-Chiplet Architectures",
+   "yil": 2024,
+   "tarih": "2024-10-11",
+   "gerekce": "2.5D ve 3D çoklu chiplet mimarileri için doğruluk ve hızı dengeleyen çok sadakatli ısıl modeller MFIT'i tanıtır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "this article introduces MFIT, a range of multi-fidelity thermal models that effectively balance accuracy and speed.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "web"
+   ],
+   "atif": 22,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1109/itherm54085.2022.9899649",
+   "arxiv_id": null,
+   "doi": "10.1109/itherm54085.2022.9899649",
+   "baslik": "From 2.5D to 3D Chiplet Systems: Investigation of Thermal Implications with HotSpot 7.0",
+   "yil": 2022,
+   "tarih": "2022-05-31",
+   "gerekce": "HotSpot 7.0 ile 2.5D'den 3D chiplet sistemlerine geçişin ısıl etkilerini inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 26,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1109/vts60656.2024.10538578",
+   "arxiv_id": null,
+   "doi": "10.1109/vts60656.2024.10538578",
+   "baslik": "Thermal Modeling and Management Challenges in Heterogenous Integration: 2.5D Chiplet Platforms and Beyond",
+   "yil": 2024,
+   "tarih": "2024-04-22",
+   "gerekce": "Heterojen entegrasyonda, 2.5D chiplet platformları ve ötesinde ısıl modelleme ve yönetim zorluklarını ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "web"
+   ],
+   "atif": 11,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.3390/eng6120373",
+   "arxiv_id": null,
+   "doi": "10.3390/eng6120373",
+   "baslik": "Thermal Management Challenges in 2.5D and 3D Chiplet Integration: A Review on Architecture–Cooling Co-Design",
+   "yil": 2025,
+   "tarih": "2025-12-17",
+   "gerekce": "Yaklaşımların duruma özgü kaldığını ve erken aşama ısıl uygulanabilirlik için genel metodoloji eksikliğini açık problem olarak vurgular.",
+   "gerekce_kokeni": "sef",
+   "alinti": "While these approaches provide valuable insights, most remain case-specific, focusing on isolated packages or single design variables, and lack a general methodology for assessing thermal feasibility at an early stage.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 14,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1109/asp-dac52403.2022.9712583",
+   "arxiv_id": null,
+   "doi": "10.1109/asp-dac52403.2022.9712583",
+   "baslik": "Fast Thermal Analysis for Chiplet Design based on Graph Convolution Networks",
+   "yil": 2022,
+   "tarih": "2022-01-17",
+   "gerekce": "Chiplet tasarımı için graf evrişim ağlarına dayalı hızlı ısıl analiz sunan GNN vekil model çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 43,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2504.03955",
+   "arxiv_id": "2504.03955",
+   "doi": "10.1109/tcpmt.2025.3619906",
+   "baslik": "DeepOHeat-v1: Efficient Operator Learning for Fast and Trustworthy Thermal Simulation and Optimization in 3D-IC Design",
+   "yil": 2025,
+   "tarih": "2025-04-04",
+   "gerekce": "3D-IC ısıl simülasyonu ve optimizasyonu için geliştirilmiş fizik bilgili operatör öğrenme çerçevesi DeepOHeat-v1'i sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This paper presents DeepOHeat-v1, an enhanced physics-informed operator learning framework that addresses these challenges through three key innovations.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 6,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1145/3676536.3676713",
+   "arxiv_id": null,
+   "doi": "10.1145/3676536.3676713",
+   "baslik": "ARO: Autoregressive Operator Learning for Transferable and Multi-fidelity 3D-IC Thermal Analysis With Active Learning",
+   "yil": 2024,
+   "tarih": "2024-10-27",
+   "gerekce": "Aktif öğrenmeli, aktarılabilir ve çok doğruluklu 3D-IC ısıl analizi için otoregresif operatör öğrenme önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 17,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1016/j.jcp.2018.10.045",
+   "arxiv_id": null,
+   "doi": "10.1016/j.jcp.2018.10.045",
+   "baslik": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+   "yil": 2019,
+   "tarih": "2019-02",
+   "gerekce": "İleri ve ters KDE problemleri için fizik bilgili sinir ağlarını tanıtan temel PINN çalışmasıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 20363,
+   "rel": 2,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1016/j.applthermaleng.2023.120609",
+   "arxiv_id": null,
+   "doi": "10.1016/j.applthermaleng.2023.120609",
+   "baslik": "Efficient transient thermal analysis of chiplet heterogeneous integration",
+   "yil": 2022,
+   "tarih": "2022",
+   "gerekce": "Chiplet heterojen entegrasyonu için verimli geçici ısıl analiz yöntemi sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 41,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1016/j.microrel.2018.03.030",
+   "arxiv_id": null,
+   "doi": "10.1016/j.microrel.2018.03.030",
+   "baslik": "Versatile MOR-based boundary condition independent compact thermal models with multiple heat sources",
+   "yil": 2018,
+   "tarih": "2018-08",
+   "gerekce": "Çoklu ısı kaynaklı, model indirgeme tabanlı sınır koşulundan bağımsız kompakt ısıl modeller geliştirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 20,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "doi:10.1109/ectc.2015.7159737",
+   "arxiv_id": null,
+   "doi": "10.1109/ectc.2015.7159737",
+   "baslik": "Experimental thermal characterization and thermal model validation of 3D packages using a programmable thermal test chip",
+   "yil": 2015,
+   "tarih": "2015-05",
+   "gerekce": "Programlanabilir ısıl test çipiyle 3B paketlerin deneysel ısıl karakterizasyonu ve model doğrulamasını sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 15,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1109/iiswc53511.2021.00025",
+   "arxiv_id": null,
+   "doi": "10.1109/iiswc53511.2021.00025",
+   "baslik": "HotGauge: A Methodology for Characterizing Advanced Hotspots in Modern and Next Generation Processors",
+   "yil": 2021,
+   "tarih": "2021-11",
+   "gerekce": "Modern ve yeni nesil işlemcilerde gelişmiş hotspot'ları karakterize etmek için HotGauge metodolojisini önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 16,
+   "rel": 2,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.1145/3309544",
+   "arxiv_id": null,
+   "doi": "10.1145/3309544",
+   "baslik": "A Survey Of Chip-level Thermal Simulators",
+   "yil": 2019,
+   "tarih": "2019-05-31",
+   "gerekce": "Çip seviyesi ısıl simülatörleri derleyen bir araştırmadır; araç ve kıyas karşılaştırmaları için yararlıdır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2504.21140",
+   "arxiv_id": "2504.21140",
+   "doi": "10.1109/iccd65941.2025.00029",
+   "baslik": "STAMP-2.5D: Structural and Thermal Aware Methodology for Placement in 2.5D Integration",
+   "yil": 2025,
+   "tarih": "2025-04-29",
+   "gerekce": "Sıkı chiplet yerleşiminin ısıl darboğaz ve CTE uyumsuzluğu yarattığını belirterek ısıl ve yapısal farkındalıklı 2.5D yerleşim önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "While conventional physical design for 2.5D heterogeneous systems typically prioritizes wirelength reduction through tight chiplet packing, this strategy creates thermal bottlenecks and intensifies coefficient of thermal expansion (CTE) mismatches",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "crossref",
+    "web"
+   ],
+   "atif": 5,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1109/tvlsi.2024.3430498",
+   "arxiv_id": null,
+   "doi": "10.1109/tvlsi.2024.3430498",
+   "baslik": "An Electrical-Thermal Co-Simulation Model of Chiplet Heterogeneous Integration Systems",
+   "yil": 2024,
+   "tarih": "2024-10",
+   "gerekce": "Chiplet heterojen entegrasyon sistemleri için elektrik-termal ortak simülasyon modeli sunar; çoklu fizik etkileşimini ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 31,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

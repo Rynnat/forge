@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 248379,
+ "stop_reason": "end_turn",
+ "session_id": "3cd79dc0-2040-429f-a705-a438971b8900",
+ "total_cost_usd": 0.7956176999999999,
+ "usage": {
+  "input_tokens": 20,
+  "cache_creation_input_tokens": 36228,
+  "cache_read_input_tokens": 170577,
+  "output_tokens": 9412,
+  "output_tokens_details": {
+   "thinking_tokens": 2610
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 36228,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3889,
+    "cache_read_input_tokens": 37849,
+    "cache_creation_input_tokens": 1911,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1911
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 20,
+   "outputTokens": 9412,
+   "cacheReadInputTokens": 170577,
+   "cacheCreationInputTokens": 36228,
+   "webSearchRequests": 0,
+   "costUSD": 0.5122593999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2610,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 409193,
+   "outputTokens": 24878,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 23,
+   "costUSD": 0.2833583,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 8798,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 27,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"Large Language Models for Multi-Robot Systems: A Survey\", \"yil\": 2025, \"arxiv_id\": \"2502.03814\", \"doi\": null, \"gerekce\": \"Presented as the first dedicated survey of LLMs in multi-robot systems; it sorts the field into task allocation, motion planning, action generation and human intervention, and covers open problems such as latency and hallucination.\"},\n{\"sira\": 2, \"baslik\": \"A Survey on Integrated Sensing, Communication, and Computation\", \"yil\": 2024, \"arxiv_id\": \"2408.08074\", \"doi\": null, \"gerekce\": \"The core survey on jointly designing sensing, communication and computation (ISCC), covering signal design and resource management; it underpins the network side of this question.\"},\n{\"sira\": 3, \"baslik\": \"RoCo: Dialectic Multi-Robot Collaboration with Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2307.04738\", \"doi\": null, \"gerekce\": \"Robots equipped with LLMs coordinate by talking to each other in natural language and plan both sub-tasks and paths; the paper also introduces the RoCoBench benchmark.\"},\n{\"sira\": 4, \"baslik\": \"PaLM-E: An Embodied Multimodal Language Model\", \"yil\": 2023, \"arxiv_id\": \"2303.03378\", \"doi\": null, \"gerekce\": \"Introduced the embodied multimodal LLM idea by feeding sensor observations directly into a language model's embedding space.\"},\n{\"sira\": 5, \"baslik\": \"Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems?\", \"yil\": 2023, \"arxiv_id\": \"2309.15943\", \"doi\": \"10.1109/ICRA57147.2024.10610676\", \"gerekce\": \"Compares centralized, decentralized and hybrid communication architectures for LLM-based multi-robot planning and shows how each trades off scalability against communication.\"},\n{\"sira\": 6, \"baslik\": \"SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2309.10062\", \"doi\": null, \"gerekce\": \"Uses LLMs for task decomposition, coalition formation and task allocation in multi-robot teams, with a benchmark.\"},\n{\"sira\": 7, \"baslik\": \"Building Cooperative Embodied Agents Modularly with Large Language Models\", \"yil\": 2023, \"arxiv_id\": \"2307.02485\", \"doi\": null, \"gerekce\": \"CoELA: a modular agent architecture with perception, memory, communication and planning modules, which showed that effective communication emerges among embodied LLM agents.\"},\n{\"sira\": 8, \"baslik\": \"Pushing Large Language Models to the 6G Edge: Vision, Challenges, and Opportunities\", \"yil\": 2023, \"arxiv_id\": \"2309.16739\", \"doi\": null, \"gerekce\": \"Sets out a 6G MEC vision for running LLMs through split inference, quantization and end-edge cooperation, which is central to the computation side of the question.\"},\n{\"sira\": 9, \"baslik\": \"Large Language Models Empowered Autonomous Edge AI for Connected Intelligence\", \"yil\": 2023, \"arxiv_id\": \"2307.02779\", \"doi\": null, \"gerekce\": \"Proposes a system in which LLMs coordinate edge AI models, combining task-oriented communication with federated learning.\"},\n{\"sira\": 10, \"baslik\": \"Integrated Sensing and Edge AI: Realizing Intelligent Perception in 6G\", \"yil\": 2025, \"arxiv_id\": \"2501.06726\", \"doi\": null, \"gerekce\": \"A survey of the task-oriented ISEA paradigm, which co-designs sensing, communication and AI computation at the edge.\"},\n{\"sira\": 11, \"baslik\": \"Large Language Model-Driven Distributed Integrated Multimodal Sensing and Semantic Communications\", \"yil\": 2025, \"arxiv_id\": \"2505.18194\", \"doi\": null, \"gerekce\": \"LLM-DiSAC: combines RF and camera fusion across distributed sensing devices with LLM-based semantic transmission, directly linking multimodal sensing, communication and computation.\"},\n{\"sira\": 12, \"baslik\": \"Mobile Edge Intelligence for Large Language Models: A Contemporary Survey\", \"yil\": 2024, \"arxiv_id\": \"2407.18921\", \"doi\": \"10.1109/COMST.2025.3527641\", \"gerekce\": \"A broad survey of caching, training and inference for LLMs at the edge.\"},\n{\"sira\": 13, \"baslik\": \"COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models\", \"yil\": 2024, \"arxiv_id\": \"2409.15146\", \"doi\": null, \"gerekce\": \"A hierarchical LLM planner for heterogeneous teams of quadrotors, robot dogs and robot arms, built on a proposal-execution-feedback-adjustment loop.\"},\n{\"sira\": 14, \"baslik\": \"Large AI Model Empowered Multimodal Semantic Communications\", \"yil\": 2023, \"arxiv_id\": \"2309.01249\", \"doi\": \"10.1109/MCOM.001.2300575\", \"gerekce\": \"LAM-MSC: a framework that uses multimodal large models for semantic extraction and recovery in communication.\"},\n{\"sira\": 15, \"baslik\": \"Large Multi-Modal Models (LMMs) as Universal Foundation Models for AI-Native Wireless Systems\", \"yil\": 2024, \"arxiv_id\": \"2402.01748\", \"doi\": null, \"gerekce\": \"A vision for wireless-specific LMMs that process multimodal sensing data and ground their outputs in real wireless systems.\"},\n{\"sira\": 16, \"baslik\": \"When Robotics Meets Wireless Communications: An Introductory Tutorial\", \"yil\": 2022, \"arxiv_id\": \"2209.02021\", \"doi\": \"10.1109/JPROC.2024.3380373\", \"gerekce\": \"The core tutorial connecting robotics and wireless communication through problems such as communication-aware trajectory planning.\"},\n{\"sira\": 17, \"baslik\": \"Do As I Can, Not As I Say: Grounding Language in Robotic Affordances\", \"yil\": 2022, \"arxiv_id\": \"2204.01691\", \"doi\": null, \"gerekce\": \"SayCan: grounds LLM plans in robot affordances and laid the groundwork for LLM-based robot planning.\"},\n{\"sira\": 18, \"baslik\": \"RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control\", \"yil\": 2023, \"arxiv_id\": \"2307.15818\", \"doi\": null, \"gerekce\": \"Introduced the vision-language-action (VLA) model paradigm and moved web-scale knowledge into robot control.\"},\n{\"sira\": 19, \"baslik\": \"OpenVLA: An Open-Source Vision-Language-Action Model\", \"yil\": 2024, \"arxiv_id\": \"2406.09246\", \"doi\": null, \"gerekce\": \"An open-source VLA model and a key reference point for deploying multimodal models on robots and edge hardware.\"},\n{\"sira\": 20, \"baslik\": \"Integrated Sensing and Communications: Towards Dual-functional Wireless Networks for 6G and Beyond\", \"yil\": 2021, \"arxiv_id\": \"2108.07165\", \"doi\": \"10.1109/JSAC.2022.3156632\", \"gerekce\": \"The foundational ISAC survey that underpins the joint sensing-communication design in robot networks.\"},\n{\"sira\": 21, \"baslik\": \"Deep Learning Enabled Semantic Communication Systems\", \"yil\": 2020, \"arxiv_id\": \"2006.10685\", \"doi\": \"10.1109/TSP.2021.3071210\", \"gerekce\": \"DeepSC: the foundational deep-learning semantic communication system, the basis for transmitting meaning between robots.\"},\n{\"sira\": 22, \"baslik\": \"Learning Task-Oriented Communication for Edge Inference: An Information Bottleneck Approach\", \"yil\": 2021, \"arxiv_id\": \"2102.04170\", \"doi\": \"10.1109/JSAC.2021.3126087\", \"gerekce\": \"Introduced task-oriented feature transmission for edge inference using an information bottleneck approach.\"},\n{\"sira\": 23, \"baslik\": \"Where2comm: Communication-Efficient Collaborative Perception via Spatial Confidence Maps\", \"yil\": 2022, \"arxiv_id\": \"2209.12836\", \"doi\": null, \"gerekce\": \"A landmark multi-agent collaborative perception method that optimizes the perception-bandwidth trade-off.\"},\n{\"sira\": 24, \"baslik\": \"EdgeShard: Efficient LLM Inference via Collaborative Edge Computing\", \"yil\": 2024, \"arxiv_id\": \"2405.14371\", \"doi\": null, \"gerekce\": \"Splits an LLM across distributed edge devices by jointly optimizing device selection and model partitioning.\"},\n{\"sira\": 25, \"baslik\": \"Embodied LLM Agents Learn to Cooperate in Organized Teams\", \"yil\": 2024, \"arxiv_id\": \"2403.12482\", \"doi\": null, \"gerekce\": \"Shows that organizational structure and leadership among embodied LLM agents cut communication overhead and improve team efficiency.\"},\n{\"sira\": 26, \"baslik\": \"Large Model Enabled Embodied Intelligence for 6G Integrated Perception, Communication, and Computation Network\", \"yil\": 2025, \"arxiv_id\": \"2512.15109\", \"doi\": null, \"gerekce\": \"Presents a large-model-based embodied intelligence architecture for a 6G network that integrates perception, communication and computation, along with an evaluation framework.\"},\n{\"sira\": 27, \"baslik\": \"Large Language Model based Multi-Agents: A Survey of Progress and Challenges\", \"yil\": 2024, \"arxiv_id\": \"2402.01680\", \"doi\": null, \"gerekce\": \"A broad survey of communication and coordination mechanisms in LLM-based multi-agent systems.\"},\n{\"sira\": 28, \"baslik\": \"Code as Policies: Language Model Programs for Embodied Control\", \"yil\": 2022, \"arxiv_id\": \"2209.07753\", \"doi\": null, \"gerekce\": \"Introduced generating robot policies as code with LLMs, a pattern adopted widely in multi-robot planners.\"},\n{\"sira\": 29, \"baslik\": \"π0: A Vision-Language-Action Flow Model for General Robot Control\", \"yil\": 2024, \"arxiv_id\": \"2410.24164\", \"doi\": null, \"gerekce\": \"A general-purpose robot control model based on flow matching and one of the leading VLA models.\"},\n{\"sira\": 30, \"baslik\": \"Task-Oriented Communication for Multi-Device Cooperative Edge Inference\", \"yil\": 2021, \"arxiv_id\": \"2109.00172\", \"doi\": null, \"gerekce\": \"Extends task-oriented communication to multi-device cooperative inference, which fits the multi-robot sensing-fusion setting directly.\"}\n]}",
+ "ttft_ms": 3406,
+ "type": "result",
+ "duration_ms": 159633,
+ "uuid": "66e59dba-d217-418c-ba83-d92f9fbac107",
+ "ttft_stream_ms": 1908,
+ "time_to_request_ms": 67,
+ "first_content_frame_ms": 1909,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

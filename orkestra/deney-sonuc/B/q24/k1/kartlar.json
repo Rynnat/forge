@@ -1,0 +1,1069 @@
+[
+ {
+  "id": "doi:10.1109/mm.2005.6",
+  "baslik": "Data Cache Prefetching Using a Global History Buffer",
+  "yil": 2005,
+  "cites": 226,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Global history buffer; adres korelasyonlu temporal prefetching",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/hpca.2007.346185",
+  "baslik": "Feedback Directed Prefetching: Improving the Performance and Bandwidth-Efficiency of Hardware Prefetchers",
+  "yil": 2007,
+  "cites": 269,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Geri beslemeli prefetcher agresifliği ve bant genişliği kontrolü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/micro.2016.7783763",
+  "baslik": "Path confidence based lookahead prefetching",
+  "yil": 2016,
+  "cites": 147,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Delta tabanlı SPP; yol güven skoru ile lookahead prefetching",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/264107.264207",
+  "baslik": "Prefetching using Markov predictors",
+  "yil": 1997,
+  "cites": 228,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Markov tabanlı klasik adres korelasyonu prefetcher'ı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/2925426.2926254",
+  "baslik": "Graph Prefetching Using Data Structure Knowledge",
+  "yil": 2016,
+  "cites": 68,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Graf analitiğinde veri yapısı bilgisiyle prefetching",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tc.2007.250620",
+  "baslik": "Reducing Cache Pollution via Dynamic Data Prefetch Filtering",
+  "yil": 2007,
+  "cites": 40,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Dinamik filtreleme ile önbellek kirliliğinin azaltılması",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/2540708.2540730",
+  "baslik": "Linearizing irregular memory accesses for improved correlated prefetching",
+  "yil": 2013,
+  "cites": 118,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Düzensiz erişimlerin doğrusallaştırılması ile korelasyonlu prefetching",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/hpca.2016.7446087",
+  "baslik": "Best-offset hardware prefetching",
+  "yil": 2016,
+  "cites": 186,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Delta/offset tabanlı en iyi offset prefetcher'ı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3445814.3446752",
+  "baslik": "A hierarchical neural model of data prefetching",
+  "yil": 2021,
+  "cites": 95,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Hiyerarşik sinir ağı modeli ile veri prefetching",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/12.381947",
+  "baslik": "Effective hardware-based data prefetching for high-performance processors",
+  "yil": 1995,
+  "cites": 370,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Donanım tabanlı klasik veri prefetching; stride temelli yöntemler",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icpp.2003.1240591",
+  "baslik": "A hardware-based cache pollution filtering mechanism for aggressive prefetches",
+  "yil": 2003,
+  "cites": 41,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Agresif prefetch'ler için donanım tabanlı kirlilik filtreleme",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/hpca.2019.00053",
+  "baslik": "Bingo Spatial Data Prefetcher",
+  "yil": 2019,
+  "cites": 134,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Bölgesel (spatial) örüntü tabanlı veri prefetcher'ı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/143365.143488",
+  "baslik": "Design and evaluation of a compiler algorithm for prefetching",
+  "yil": 1992,
+  "cites": 448,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Derleyici tabanlı prefetching algoritması; klasik yaklaşım",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3307650.3322207",
+  "baslik": "Perceptron-based prefetch filtering",
+  "yil": 2019,
+  "cites": 85,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Perceptron tabanlı prefetch filtreleme; öğrenme tabanlı yaklaşım",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/2907071",
+  "baslik": "A Survey of Recent Prefetching Techniques for Processor Caches",
+  "yil": 2016,
+  "cites": 86,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Önbellek prefetching tekniklerinin kapsamlı güncel derlemesi",
+  "alinti": "In this article, we survey several recent techniques that aim to improve the implementation and effectiveness of prefetching."
+ },
+ {
+  "id": "doi:10.1109/isca45697.2020.00021",
+  "baslik": "Bouquet of Instruction Pointers: Instruction Pointer Classifier-based Spatial Hardware Prefetching",
+  "yil": 2020,
+  "cites": 89,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Komut işaretçisi sınıflandırmalı uzamsal donanım prefetcher'ı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/hpca.2009.4798239",
+  "baslik": "Practical off-chip meta-data for temporal memory streaming",
+  "yil": 2009,
+  "cites": 73,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Temporal bellek akışı için off-chip metaveri depolama",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3307650.3322225",
+  "baslik": "Efficient metadata management for irregular data prefetching",
+  "yil": 2019,
+  "cites": 51,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Düzensiz veri prefetching için verimli metaveri yönetimi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/1150019.1136508",
+  "baslik": "Spatial Memory Streaming",
+  "yil": 2006,
+  "cites": 164,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kod korelasyonlu uzamsal örüntü ile bölge tabanlı streaming",
+  "alinti": "we propose Spatial Memory Streaming, a practical on-chip hardware technique that identifies codecorrelated spatial access patterns and streams predicted blocks to the primary cache ahead of demand misses"
+ },
+ {
+  "id": "arXiv:1804.00478",
+  "baslik": "A Neural Network Prefetcher for Arbitrary Memory Access Patterns",
+  "yil": 2018,
+  "cites": 45,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Keyfi erişim örüntüleri için bağlamsal sinir ağı prefetcher'ı",
+  "alinti": "the proposed NN prefetcher correlates program and machine contextual information with memory accesses patterns, using online-training to identify and dynamically adapt to unique access patterns"
+ },
+ {
+  "id": "doi:10.1007/978-3-031-01743-8",
+  "baslik": "A Primer on Hardware Prefetching",
+  "yil": 2014,
+  "cites": 47,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Donanım prefetching'e giriş; temel kavramların özeti",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/605397.605427",
+  "baslik": "A stateless, content-directed data prefetching mechanism",
+  "yil": 2002,
+  "cites": 88,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "İşaretçi yoğun uygulamalar için içerik tabanlı prefetching",
+  "alinti": "This paper proposes Content-Directed Data Prefetching, a data prefetching architecture that exploits the memory allocation used by operating systems and runtime systems to improve the performance of pointer-intensive applications"
+ },
+ {
+  "id": "doi:10.1109/micro56248.2022.00072",
+  "baslik": "Berti: an Accurate Local-Delta Data Prefetcher",
+  "yil": 2022,
+  "cites": 83,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Yerel delta tabanlı doğru veri prefetcher'ı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/hpca.2018.00021",
+  "baslik": "Domino Temporal Data Prefetcher",
+  "yil": 2018,
+  "cites": 87,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Temporal veri prefetcher'ı; adres geçmişi tabanlı korelasyon",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tc.2021.3065909",
+  "baslik": "Practical Temporal Prefetching With Compressed On-Chip Metadata",
+  "yil": 2022,
+  "cites": 16,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Başlık: sıkıştırılmış on-chip metaveri ile zamansal prefetching",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/285930.285958",
+  "baslik": "Retrospective: improving direct-mapped cache performance by the addition of a small fully-associative cache and prefetch buffers",
+  "yil": 1990,
+  "cites": 423,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Önbellek ve tampon temelli erken donanım önerileri; klasik kökenler",
+  "alinti": "Small miss caches of 2 to 5 entries are shown to be very effective in removing mapping conflict misses in first-level direct-mapped caches."
+ },
+ {
+  "id": "doi:10.1145/3352460.3358300",
+  "baslik": "Temporal Prefetching Without the Off-Chip Metadata",
+  "yil": 2019,
+  "cites": 57,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Başlık: zamansal prefetching, off-chip metaveri olmadan",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3373376.3378498",
+  "baslik": "Classifying Memory Access Patterns for Prefetching",
+  "yil": 2020,
+  "cites": 74,
+  "kaynaklar": [
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Bellek erişim örüntülerinin sınıflandırılması; düzensiz örüntü analizi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ipdpsw.2012.224",
+  "baslik": "Reducing Cache Pollution of Threaded Prefetching by Controlling Prefetch Distance",
+  "yil": 2012,
+  "cites": 4,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Thread tabanlı prefetching'de prefetch mesafesi ile kirlilik kontrolü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/1080695.1069989",
+  "baslik": "Temporal Streaming of Shared Memory",
+  "yil": 2005,
+  "cites": 14,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Zamansal adres korelasyonu; klasik zamansal streaming çalışması",
+  "alinti": "Temporal streaming dynamically identifies address sequences to be streamed by exploiting two common phenomena in shared-memory access patterns"
+ },
+ {
+  "id": "doi:10.1145/1555815.1555766",
+  "baslik": "Spatio-temporal memory streaming",
+  "yil": 2009,
+  "cites": 79,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Zamansal ve uzamsal streaming birleşimi; merkezi çalışma",
+  "alinti": "STeMS records and replays the temporal sequence of region accesses and uses spatial relationships within each region"
+ },
+ {
+  "id": "arXiv:2109.12021",
+  "baslik": "Pythia: A Customizable Hardware Prefetching Framework Using Online Reinforcement Learning",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Pekiştirmeli öğrenme tabanlı, sistem geri beslemeli prefetcher",
+  "alinti": "We show that prior prefetchers often lose their performance benefit over a wide range of workloads and system configurations due to their inherent inability"
+ },
+ {
+  "id": "doi:10.1145/3090635",
+  "baslik": "Band-Pass Prefetching",
+  "yil": 2017,
+  "cites": 12,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Çok çekirdekli sistemlerde prefetcher girişimi ve agresiflik kontrolü",
+  "alinti": "In multi-core systems, an application’s prefetcher can interfere with the memory requests of other applications using the shared resources"
+ },
+ {
+  "id": "doi:10.1109/icctwc68241.2026.11583211",
+  "baslik": "Mitigating Prefetcher-Caused Pollution using Informed Caching Policies for Prefetched Blocks",
+  "yil": 2015,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; prefetcher kaynaklı önbellek kirliliği",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1910.03075",
+  "baslik": "DSPatch: Dual Spatial Pattern Prefetcher",
+  "yil": 2019,
+  "cites": 70,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bant genişliğine uyarlanan uzamsal prefetcher (DSPatch)",
+  "alinti": "Prefetchers need the ability to dynamically adapt to available bandwidth, boosting prefetch count and prefetch coverage when headroom exists and throttling down to achieve high accuracy"
+ },
+ {
+  "id": "doi:10.1109/hpcc-css-icess.2015.175",
+  "baslik": "Maximizing Hardware Prefetch Effectiveness with Machine Learning",
+  "yil": 2015,
+  "cites": 23,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Makine öğrenmesiyle prefetch etkinliği; başlık",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1117/12.3113789",
+  "baslik": "Review of multimode prefetching: challenges and future directions",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Çoklu mod prefetching incelemesi; birden çok prefetcher seçimi.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/micro.2007.4408264",
+  "baslik": "Low-Cost Epoch-Based Correlation Prefetching for Commercial Applications",
+  "yil": 2007,
+  "cites": 58,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Epoch-based correlation prefetching; temporal, commercial workloads",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2412.05211",
+  "baslik": "Gaze into the Pattern: Characterizing Spatial Patterns with Internal Temporal Correlations for Hardware Prefetching",
+  "yil": 2024,
+  "cites": 12,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Uzamsal bölge örüntülerinde iç zamansal korelasyon kullanımı",
+  "alinti": "we propose Gaze, a simple and efficient hardware spatial prefetcher that skillfully utilizes footprint-internal temporal"
+ },
+ {
+  "id": "doi:10.1007/s11227-014-1088-y",
+  "baslik": "Adaptive prefetching using global history buffer in multicore processors",
+  "yil": 2014,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; çok çekirdekli GHB tabanlı uyarlanabilir prefetching",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2406.10627",
+  "baslik": "Triangel: A High-Performance, Accurate, Timely On-Chip Temporal Prefetcher",
+  "yil": 2024,
+  "cites": 23,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Üst düzey on-chip zamansal prefetcher; doğruluk ve zamanlılık",
+  "alinti": "Temporal prefetching, where correlated pairs of addresses are logged and replayed on repeat accesses, has recently become viable in commercial designs."
+ },
+ {
+  "id": "doi:10.1145/358923.358939",
+  "baslik": "Data prefetch mechanisms",
+  "yil": 2000,
+  "cites": 213,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Veri prefetching temelleri ve klasik inceleme",
+  "alinti": "Data prefetching has been proposed as a technique for hiding the access latency of data referencing patterns that defeat caching strategies"
+ },
+ {
+  "id": "doi:10.1109/ipdps.2019.00103",
+  "baslik": "Combining Prefetch Control and Cache Partitioning to Improve Multicore Performance",
+  "yil": 2019,
+  "cites": 12,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; prefetch kontrolü ve önbellek bölümleme",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/c-m.1978.218016",
+  "baslik": "Sequential Program Prefetching in Memory Hierarchies",
+  "yil": 1978,
+  "cites": 224,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; yazılım tabanlı sıralı prefetching",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1803.02329",
+  "baslik": "Learning Memory Access Patterns",
+  "yil": 2018,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LSTM ile bellek erişim örüntüsü öğrenimi; merkezi ML çalışması",
+  "alinti": "We relate contemporary prefetching strategies to n-gram models in natural language processing, and show how recurrent neural networks can serve as a drop-in replacement"
+ },
+ {
+  "id": "doi:10.1145/2830772.2830793",
+  "baslik": "Efficiently prefetching complex address patterns",
+  "yil": 2015,
+  "cites": 147,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Complex address pattern prefetching; delta signature-based",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/144965.145006",
+  "baslik": "Stride directed prefetching in scalar processors",
+  "yil": 1992,
+  "cites": 77,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Classic stride prefetching foundation",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/hpca.2009.4798282",
+  "baslik": "Feedback mechanisms for improving probabilistic memory prefetching",
+  "yil": 2009,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; olasılıksal prefetching için geri besleme",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2506.15985",
+  "baslik": "Profile-Guided Temporal Prefetching",
+  "yil": 2025,
+  "cites": 3,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Profil tabanlı metaveri depolama yönetimi; zamansal prefetching",
+  "alinti": "Recent studies introduced on-chip metadata storage to reduce the memory traffic caused by accessing metadata from off-chip DRAM."
+ },
+ {
+  "id": "arXiv:2403.15181",
+  "baslik": "A Two Level Neural Approach Combining Off-Chip Prediction with Adaptive Prefetch Filtering",
+  "yil": 2024,
+  "cites": 20,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Perceptron ile off-chip tahmini ve prefetch filtreleme",
+  "alinti": "The novelty of SLP relies on leveraging off-chip prediction to drive L1D prefetch filtering by using physical addresses and the FLP prediction as features"
+ },
+ {
+  "id": "doi:10.1145/3243176.3243181",
+  "baslik": "Near-side prefetch throttling",
+  "yil": 2018,
+  "cites": 35,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Yalnızca başlık; içerik yok",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/2890505",
+  "baslik": "Thread-Aware Adaptive Prefetcher on Multicore Systems",
+  "yil": 2016,
+  "cites": 7,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Çok çekirdekli ortamda uyarlanabilir, iş parçacığı farkında prefetcher",
+  "alinti": "This article proposes a thread-aware data prefetching mechanism based on low-overhead runtime information to tune prefetching modes and aggressiveness"
+ },
+ {
+  "id": "doi:10.1145/3631882.3631903",
+  "baslik": "Building Efficient Neural Prefetcher",
+  "yil": 2023,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Neural network-based prefetcher design",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/iceac.2015.7352208",
+  "baslik": "Machine learning techniques for improved data prefetching",
+  "yil": 2015,
+  "cites": 3,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ML tabanlı prefetching; yalnızca başlık mevcut",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/237090.237190",
+  "baslik": "Compiler-based prefetching for recursive data structures",
+  "yil": 1996,
+  "cites": 220,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Compiler-inserted prefetching for pointer-based structures",
+  "alinti": "This paper investigates compiler-based prefetching for pointer-based applications---in particular, those containing recursive data structures"
+ },
+ {
+  "id": "doi:10.1109/ispass.2018.00028",
+  "baslik": "A Workload Characterization of the SPEC CPU2017 Benchmark Suite",
+  "yil": 2018,
+  "cites": 87,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Benchmark suite characterization; evaluation-set relevance",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3132402.3132405",
+  "baslik": "Long short term memory based hardware prefetcher",
+  "yil": 2017,
+  "cites": 49,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LSTM tabanlı donanım prefetcher'ı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/hpca57654.2024.00040",
+  "baslik": "Differential-Matching Prefetcher for Indirect Memory Access",
+  "yil": 2024,
+  "cites": 17,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Prefetcher for indirect, irregular memory access",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3337821.3337854",
+  "baslik": "Machine Learning for Fine-Grained Hardware Prefetcher Control",
+  "yil": 2019,
+  "cites": 13,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "ML-based fine-grained control of hardware prefetchers.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3312740",
+  "baslik": "Evaluation Of Hardware Data Prefetchers On Server Processors",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; sunucu işlemcilerinde değerlendirme",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/micro.2006.32",
+  "baslik": "Memory Prefetching Using Adaptive Stream Detection",
+  "yil": 2006,
+  "cites": 70,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; adaptif akış algılama",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3725843.3756133",
+  "baslik": "Elevating Temporal Prefetching Through Instruction Correlation",
+  "yil": 2025,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Komut korelasyonu ile zamansal prefetching iyileştirmesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/545214.545235",
+  "baslik": "Using a user-level memory thread for correlation prefetching",
+  "yil": 2002,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Bellek tarafında yazılım iş parçacığıyla korelasyon prefetching",
+  "alinti": "The thread performs correlation prefetching in software, sending the prefetched data into the L2 cache of the main processor."
+ },
+ {
+  "id": "doi:10.1007/978-3-642-11515-8_19",
+  "baslik": "Multi-level Hardware Prefetching Using Low Complexity Delta Correlating Prediction Tables with Partial Matching",
+  "yil": 2010,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Delta korelasyonlu çok seviyeli donanım prefetch; başlık",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2205.02269",
+  "baslik": "Fine-Grained Address Segmentation for Attention-Based Variable-Degree Prefetching",
+  "yil": 2022,
+  "cites": 26,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Attention-based ML prefetcher with delta bitmaps",
+  "alinti": "To reduce vocabulary size, we use fine-grained address segmentation as input. To predict unordered sets of future addresses, we use delta bitmaps for multiple outputs"
+ },
+ {
+  "id": "doi:10.1109/micro50266.2020.00057",
+  "baslik": "RnR: A Software-Assisted Record-and-Replay Hardware Prefetcher",
+  "yil": 2020,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yazılım destekli kayıt-yeniden oynatma prefetcher'ı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tpds.2020.2982392",
+  "baslik": "Bandwidth-Aware Dynamic Prefetch Configuration for IBM POWER8",
+  "yil": 2020,
+  "cites": 15,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bant genişliğine duyarlı dinamik prefetch yapılandırması",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/2830772.2830816",
+  "baslik": "Self-contained, Accurate Precomputation Prefetching",
+  "yil": 2015,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; ön hesaplamalı (precomputation) prefetching",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2209.00188",
+  "baslik": "Hermes: Accelerating Long-Latency Load Requests via Perceptron-Based Off-Chip Load Prediction",
+  "yil": 2022,
+  "cites": 39,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Perceptron tabanlı off-chip yük tahmini; ML yaklaşımı",
+  "alinti": "even a sophisticated state-of-the-art prefetcher can only predict half of the off-chip load requests on average across a wide range of workloads"
+ },
+ {
+  "id": "doi:10.1109/lca.2015.2428703",
+  "baslik": "Expert Prefetch Prediction: An Expert Predicting the Usefulness of Hardware Prefetchers",
+  "yil": 2016,
+  "cites": 14,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Predicts usefulness of hardware prefetchers; feedback control",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/192007.192014",
+  "baslik": "Evaluating stream buffers as a secondary cache replacement",
+  "yil": 1994,
+  "cites": 26,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Stream buffer'ların ikincil önbellek yerine kullanımı; klasik",
+  "alinti": "We use trace-driven simulation of fifteen scientific applications from the NAS and PERFECT suites in our evaluation."
+ },
+ {
+  "id": "doi:10.1109/micro.2014.29",
+  "baslik": "B-Fetch: Branch Prediction Directed Prefetching for Chip-Multiprocessors",
+  "yil": 2014,
+  "cites": 28,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Branch-prediction-directed prefetching for multicore",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/aspdac.2013.6509617",
+  "baslik": "An Adaptive Filtering Mechanism For Energy Efficient Data Prefetching",
+  "yil": 2013,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Enerji verimli prefetching için uyarlamalı filtreleme; kirlilik kontrolü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.24963/ijcai.2021/628",
+  "baslik": "Generalizing to Unseen Domains: A Survey on Domain Generalization",
+  "yil": 2021,
+  "cites": 218,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Generic ML generalization survey; no prefetching content.",
+  "alinti": "Domain generalization deals with a challenging setting where one or several different but related domain(s) are given"
+ },
+ {
+  "id": "arXiv:2102.11528",
+  "baslik": "CBP: Coordinated management of cache partitioning, bandwidth partitioning and prefetch throttling",
+  "yil": 2021,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Coordinated cache, bandwidth and prefetch throttling in multicore",
+  "alinti": "Techniques for partitioning of shared resources - cache and bandwidth - and prefetching throttling have been proposed to mitigate contention and reduce the average memory access time"
+ },
+ {
+  "id": "doi:10.1109/access.2018.2876201",
+  "baslik": "Accelerating BFS via Data Structure-Aware Prefetching on GPU",
+  "yil": 2018,
+  "cites": 7,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "GPU'da BFS için veri yapısı farkındalıklı düzensiz erişim prefetching'i",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2503.19390",
+  "baslik": "Integrating Prefetcher Selection with Dynamic Request Allocation Improves Prefetching Efficiency",
+  "yil": 2025,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Prefetcher seçimi ve istek tahsisi; çakışma azaltma",
+  "alinti": "Consequently, commercial processors often employ a hybrid of these algorithms to enhance the overall prefetching performance."
+ },
+ {
+  "id": "doi:10.1145/2830772.2830812",
+  "baslik": "Filtered runahead execution with a runahead buffer",
+  "yil": 2015,
+  "cites": 28,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Runahead execution with filtered runahead buffer",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ccgrid.2010.61",
+  "baslik": "An Adaptive Data Prefetcher for High-Performance Processors",
+  "yil": 2010,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Adaptive prefetcher; runtime adjustment of aggressiveness",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1712.00905",
+  "baslik": "Data Cache Prefetching with Perceptron Learning",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Perceptron filtering of stride/Markov prefetches reduces pollution",
+  "alinti": "a neural network, perceptron is taken to detect and trace program memory access patterns, to help reject those unnecessary prefetching decisions"
+ }
+]

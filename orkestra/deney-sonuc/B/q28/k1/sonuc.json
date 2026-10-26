@@ -1,0 +1,948 @@
+{
+ "run_id": "20261026-055520-3814ef",
+ "soru": "Makine öğrenmesi hatlarında farklı saldırganların birlikte hareket ederek güvenlik, gizlilik ve adalet risklerini güçlendirmesi üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-05-08",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "arxiv",
+  "s2_zenginlestirme",
+  "ozet_arxiv"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6114,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.099512,
+   "in": 1230,
+   "out": 4484,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.22829592,
+   "in": 565297,
+   "out": 135722,
+   "web_search": 10
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.1543534,
+   "in": 172492,
+   "out": 239726,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.129252,
+   "in": 10220,
+   "out": 2375,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 40.7,
+  "toplama:openalex": 0.0,
+  "toplama:crossref": 75.3,
+  "web_isci": 105.6,
+  "toplama:dblp": 222.7,
+  "toplama:arxiv": 455.6,
+  "toplama": 706.6,
+  "tekil+kesim_1": 42.5,
+  "atif": 116.7,
+  "okuyucu": 187.5,
+  "damitma": 8.2,
+  "sef_final": 22.3,
+  "toplam": 1124.6
+ },
+ "ozet_token_tahmini": 3924,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Hangi temel çalışmalar ML hatlarında saldırgan modellerini, tehdit taksonomilerini ve zehirleme ile çıkarım saldırılarının temellerini tanımlar?",
+    "sorgular": [
+     "\"adversarial machine learning\" threat model taxonomy",
+     "\"data poisoning\" attacks survey",
+     "\"membership inference\" attacks machine learning",
+     "SoK security privacy machine learning",
+     "\"machine learning supply chain\" attacks"
+    ],
+    "yeterli": "Zehirleme, arka kapı, üyelik ve özellik çıkarımı ile model çıkarma saldırılarının klasik makaleleri ve en az iki kapsamlı SoK veya derleme kapsandığında yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "Federe ve dağıtık öğrenmede işbirliği yapan (colluding) veya Sybil saldırganlar, Bizans dayanıklı toplamayı nasıl aşar ve hangi savunmalar önerilmiştir?",
+    "sorgular": [
+     "colluding clients federated learning poisoning",
+     "Sybil attack federated learning",
+     "\"Byzantine-robust\" aggregation model poisoning",
+     "\"distributed backdoor attack\" federated",
+     "multiple malicious clients coordinated attack"
+    ],
+    "yeterli": "Krum, Bulyan ve FoolsGold gibi savunmalar, koordineli model zehirleme saldırıları (ALIE, DBA, Fang ve diğerleri) ve bunlara yönelik son karşı önlemler kapsandığında yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Bir saldırganın zehirlemesi başka bir saldırganın gizlilik saldırısını (üyelik veya özellik çıkarımı, veri çıkarma) nasıl güçlendirir; birleşik ve zincirlenmiş saldırılar nelerdir?",
+    "sorgular": [
+     "poisoning amplifies membership inference",
+     "\"Truth Serum\" poisoning privacy leakage",
+     "property inference from poisoning",
+     "combined poisoning and inference attack",
+     "\"privacy backdoor\" pretrained models"
+    ],
+    "yeterli": "Truth Serum, poisoning tabanlı özellik çıkarımı, gizlilik arka kapıları ve kötü niyetli sunucu ile istemci işbirliğine dayalı sızıntı çalışmaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Adalet (fairness) hedefli saldırılar ve güvenlik, gizlilik ve adalet arasındaki etkileşimler (ödünleşimler ve karşılıklı güçlenme) nelerdir?",
+    "sorgular": [
+     "fairness poisoning attack",
+     "\"algorithmic bias\" adversarial attack",
+     "privacy risks of fair machine learning",
+     "\"differential privacy\" disparate impact",
+     "robustness fairness privacy trade-off"
+    ],
+    "yeterli": "Adalet zehirleme saldırıları ile DP-adalet, adalet-gizlilik ve dayanıklılık-gizlilik etkileşimlerini ölçen temel çalışmalar kapsandığında yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Büyük ölçekli veri ve temel model hatlarında (web verisi, ince ayar, RLHF, RAG, ajanlar) çok aşamalı ve çok aktörlü saldırılar nasıl gerçekleşir?",
+    "sorgular": [
+     "poisoning web-scale training datasets",
+     "RLHF poisoning backdoor",
+     "\"retrieval-augmented generation\" poisoning",
+     "LLM supply chain attack fine-tuning",
+     "multi-agent LLM collusion security"
+    ],
+    "yeterli": "Web ölçekli zehirleme, RLHF ve talimat ayarı zehirlemesi, RAG zehirleme ve ajan ya da çok ajanlı LLM gizli işbirliği çalışmaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Çoklu saldırgan senaryoları için hangi değerlendirme çerçeveleri, kıyaslama setleri ve oyun kuramsal modeller vardır?",
+    "sorgular": [
+     "benchmark backdoor poisoning attacks defenses",
+     "federated learning attack benchmark",
+     "game-theoretic multiple adversaries learning",
+     "privacy auditing membership inference benchmark",
+     "\"BackdoorBench\""
+    ],
+    "yeterli": "En az bir zehirleme veya arka kapı kıyaslaması, bir FL saldırı çerçevesi, gizlilik denetimi yöntemleri ve çok saldırganlı oyun kuramsal modeller tanımlandığında yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Çok saldırganlı, bütünleşik risk modellemesinde açık problemler ve bütünsel savunmalar (sertifikalı dayanıklılık, DP ile dayanıklılık birleşimi, denetim) nelerdir?",
+    "sorgular": [
+     "certified robustness poisoning differential privacy",
+     "holistic trustworthy machine learning open problems",
+     "unified threat model security privacy fairness",
+     "\"trustworthy AI\" survey attacks interplay",
+     "defense composition multiple attacks"
+    ],
+    "yeterli": "Bütünleşik tehdit modelleri, savunmaların birleştirilmesi ve sertifikalı garantiler hakkında açık problemleri tartışan güncel derleme ve konum makaleleri belirlendiğinde yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Poisoning Attacks against Support Vector Machines",
+    "yil": 2012
+   },
+   {
+    "baslik": "Membership Inference Attacks Against Machine Learning Models",
+    "yil": 2017
+   },
+   {
+    "baslik": "BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain",
+    "yil": 2017
+   },
+   {
+    "baslik": "Machine Learning with Adversaries: Byzantine Tolerant Gradient Descent",
+    "yil": 2017
+   },
+   {
+    "baslik": "SoK: Security and Privacy in Machine Learning",
+    "yil": 2018
+   },
+   {
+    "baslik": "Mitigating Sybils in Federated Learning Poisoning",
+    "yil": 2018
+   },
+   {
+    "baslik": "Analyzing Federated Learning through an Adversarial Lens",
+    "yil": 2019
+   },
+   {
+    "baslik": "A Little Is Enough: Circumventing Defenses For Distributed Learning",
+    "yil": 2019
+   },
+   {
+    "baslik": "Exploiting Unintended Feature Leakage in Collaborative Learning",
+    "yil": 2019
+   },
+   {
+    "baslik": "Deep Leakage from Gradients",
+    "yil": 2019
+   },
+   {
+    "baslik": "Differential Privacy Has Disparate Impact on Model Accuracy",
+    "yil": 2019
+   },
+   {
+    "baslik": "Privacy Risks of Securing Machine Learning Models against Adversarial Examples",
+    "yil": 2019
+   },
+   {
+    "baslik": "How To Backdoor Federated Learning",
+    "yil": 2020
+   },
+   {
+    "baslik": "DBA: Distributed Backdoor Attacks against Federated Learning",
+    "yil": 2020
+   },
+   {
+    "baslik": "Local Model Poisoning Attacks to Byzantine-Robust Federated Learning",
+    "yil": 2020
+   },
+   {
+    "baslik": "Poisoning Attacks on Algorithmic Fairness",
+    "yil": 2020
+   },
+   {
+    "baslik": "Exacerbating Algorithmic Bias through Fairness Attacks",
+    "yil": 2021
+   },
+   {
+    "baslik": "On the Privacy Risks of Algorithmic Fairness",
+    "yil": 2021
+   },
+   {
+    "baslik": "Manipulating the Byzantine: Optimizing Model Poisoning Attacks and Defenses for Federated Learning",
+    "yil": 2021
+   },
+   {
+    "baslik": "Extracting Training Data from Large Language Models",
+    "yil": 2021
+   },
+   {
+    "baslik": "Truth Serum: Poisoning Machine Learning Models to Reveal Their Secrets",
+    "yil": 2022
+   },
+   {
+    "baslik": "Property Inference from Poisoning",
+    "yil": 2022
+   },
+   {
+    "baslik": "Dataset Security for Machine Learning: Data Poisoning, Backdoor Attacks, and Defenses",
+    "yil": 2022
+   },
+   {
+    "baslik": "Poisoning Web-Scale Training Datasets is Practical",
+    "yil": 2024
+   },
+   {
+    "baslik": "Universal Jailbreak Backdoors from Poisoned Human Feedback",
+    "yil": 2024
+   }
+  ],
+  "web_odaklari": [
+   "awesome federated learning attacks defenses papers github",
+   "awesome data poisoning backdoor attacks papers github",
+   "trustworthy machine learning security privacy fairness interplay reading list"
+  ]
+ },
+ "tohumlar": [
+  "doi:10.1109/eurosp51992.2021.00028",
+  "doi:10.1609/aaai.v35i10.17080",
+  "doi:10.1109/sp.2017.41",
+  "doi:10.1109/sp54263.2024.00179",
+  "arXiv:2004.07401",
+  "doi:10.14722/ndss.2021.24498",
+  "doi:10.1109/eurosp.2018.00035",
+  "doi:10.1145/3624010",
+  "doi:10.1145/3319535.3354211",
+  "doi:10.1109/tpami.2022.3162397",
+  "doi:10.1109/sp.2019.00029",
+  "doi:10.1007/978-3-030-63076-8_2"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1109/sp46214.2022.9833623",
+   "arxiv_id": null,
+   "doi": "10.1109/sp46214.2022.9833623",
+   "baslik": "Property Inference from Poisoning",
+   "yil": 2022,
+   "tarih": "2022-05",
+   "gerekce": "Zehirlemenin özellik çıkarımını güçlendirdiğini doğrudan ele alan çalışma; zincirlenmiş saldırıların (S3) temel örneği.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 54,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1145/3543507.3583542",
+   "arxiv_id": null,
+   "doi": "10.1145/3543507.3583542",
+   "baslik": "AgrEvader: Poisoning Membership Inference against Byzantine-robust Federated Learning",
+   "yil": 2023,
+   "tarih": "2023-04-30",
+   "gerekce": "Bizans dayanıklı FL'de zehirlemenin üyelik çıkarımını güçlendirmesini inceler; güvenlik ve gizlilik riskinin birleştiği merkezi örnek.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "web"
+   ],
+   "atif": 28,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1609/aaai.v37i7.26083",
+   "arxiv_id": null,
+   "doi": "10.1609/aaai.v37i7.26083",
+   "baslik": "Poisoning with Cerberus: Stealthy and Colluded Backdoor Attack against Federated Learning",
+   "yil": 2023,
+   "tarih": "2023-06-26",
+   "gerekce": "Kötü niyetli katılımcıların işbirliğini ayarlayarak gizli arka kapı yerleştirmeyi gösterir; işbirlikçi saldırganlar (S2) için doğrudan kanıt.",
+   "gerekce_kokeni": "sef",
+   "alinti": "our study shows that carefully tuning the collusion between malicious participants can minimize the trigger-induced bias of the poisoned local model from the poison-free one",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "dblp"
+   ],
+   "atif": 101,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.22541/au.177196323.32194073/v1",
+   "arxiv_id": null,
+   "doi": "10.22541/au.177196323.32194073/v1",
+   "baslik": "PRIVACY AMPLIFIER: Benchmarking Poisoning Membership Inference for Federated Learning",
+   "yil": 2026,
+   "tarih": "2026-02-24",
+   "gerekce": "Zehirleme ile ince taneli üyelik çıkarımı etkileşimini FL'de sistematik inceleyen kıyaslama seti; S3 ve S6 için önemli.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To bridge this gap, we introduce PRIVACY AMPLIFIER, a benchmark to systematically investigate the interplay between poisoning attacks and fine-grained MIAs in FL.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 0,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.14722/ndss.2021.24498",
+   "arxiv_id": null,
+   "doi": "10.14722/ndss.2021.24498",
+   "baslik": "Manipulating the Byzantine: Optimizing Model Poisoning Attacks and Defenses for Federated Learning",
+   "yil": 2021,
+   "tarih": "2021",
+   "gerekce": "FL'de Bizans model zehirleme saldırılarını ve savunmalarını optimize eden etkili çalışma; S2'nin temel yöntem ailesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 552,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1109/sp54263.2024.00179",
+   "arxiv_id": null,
+   "doi": "10.1109/sp54263.2024.00179",
+   "baslik": "Poisoning Web-Scale Training Datasets is Practical",
+   "yil": 2024,
+   "tarih": "2024-05-19",
+   "gerekce": "Web ölçekli eğitim veri setlerinin zehirlenmesinin pratik olduğunu gösterir; büyük ölçekli veri hatlarında (S5) kritik risk.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 117,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1145/3319535.3354211",
+   "arxiv_id": null,
+   "doi": "10.1145/3319535.3354211",
+   "baslik": "Privacy Risks of Securing Machine Learning Models against Adversarial Examples",
+   "yil": 2019,
+   "tarih": "2019-11-06",
+   "gerekce": "Düşman örneklere karşı güvenlik önlemlerinin gizlilik riskini artırdığını inceler; güvenlik-gizlilik ödünleşiminin temel çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 187,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1609/aaai.v35i10.17080",
+   "arxiv_id": null,
+   "doi": "10.1609/aaai.v35i10.17080",
+   "baslik": "Exacerbating Algorithmic Bias through Fairness Attacks",
+   "yil": 2021,
+   "tarih": "2021-05-18",
+   "gerekce": "Saldırganın sistemin adaletini kasıtlı hedeflediği yeni zehirleme saldırıları önerir; adalet hedefli saldırılar (S4) için merkezi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose new types of data poisoning attacks where an adversary intentionally targets the fairness of a system.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "dblp",
+    "sef"
+   ],
+   "atif": 40,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.21203/rs.3.rs-7109247/v1",
+   "arxiv_id": null,
+   "doi": "10.21203/rs.3.rs-7109247/v1",
+   "baslik": "MPAF: Model Poisoning Attacks to Federated Learning based on Fake Clients",
+   "yil": 2022,
+   "tarih": "2022-06",
+   "gerekce": "Sahte istemcilere dayalı model zehirleme saldırısı önerir; Sybil benzeri saldırganların FL'yi nasıl aştığını gösterir (S2).",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose novel attack strategies based on fake clients and gradient inversion: Model Poisoning Attack based on Fake Clients (MPAF), Gradient Descent Inversion Attack (GDIA), and Selective Aggregation Poisoning Attack (SAPA).",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "dblp"
+   ],
+   "atif": 198,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1109/sp.2019.00029",
+   "arxiv_id": null,
+   "doi": "10.1109/sp.2019.00029",
+   "baslik": "Exploiting Unintended Feature Leakage in Collaborative Learning",
+   "yil": 2019,
+   "tarih": "2019-05",
+   "gerekce": "İşbirlikçi öğrenmede istenmeyen özellik sızıntısını gösteren çok atıflı temel gizlilik saldırısı çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 1336,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1002/9781394402069",
+   "arxiv_id": null,
+   "doi": "10.1002/9781394402069",
+   "baslik": "Adversarial Machine Learning (AML)",
+   "yil": 2011,
+   "tarih": "2011",
+   "gerekce": "NIST raporu olarak AML kavram taksonomisi ve terminolojisi geliştirir; tehdit modellerinin (S1) temel referansı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This NIST AI report develops a taxonomy of concepts and defines terminology in the field of adversarial machine learning (AML).",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 148,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1145/3548606.3560675",
+   "arxiv_id": null,
+   "doi": "10.1145/3548606.3560675",
+   "baslik": "Enhanced Membership Inference Attacks against Machine Learning Models",
+   "yil": 2017,
+   "tarih": "2017-05",
+   "gerekce": "Hedef modelin eğitim verisi tahminlerini ayırt eden saldırı modeliyle üyelik çıkarımının temel çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We achieve this objective by creating an attack ML model which learns to differentiate the target model’s predictions on its training data from target model’s predictions on data not part of its training data.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 3740,
+   "rel": 2,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 13,
+   "id": "doi:10.1109/sp54263.2024.00243",
+   "arxiv_id": null,
+   "doi": "10.1109/sp54263.2024.00243",
+   "baslik": "SoK: Unintended Interactions among Machine Learning Defenses and Risks",
+   "yil": 2024,
+   "tarih": "2024-05-19",
+   "gerekce": "ML savunmaları ve riskleri arasındaki beklenmeyen etkileşimleri sistematize eden SoK; bütünleşik risk modellemesi (S7) için önemli.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 2,
+   "rel": 3,
+   "tohum_yakinligi": 8
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1109/access.2022.3218715",
+   "arxiv_id": null,
+   "doi": "10.1109/access.2022.3218715",
+   "baslik": "An Adversarial Perspective on Accuracy, Robustness, Fairness, and Privacy: Multilateral-Tradeoffs in Trustworthy ML",
+   "yil": 2022,
+   "tarih": "2022",
+   "gerekce": "Doğruluk, sağlamlık, adalet ve gizlilik arasındaki çok taraflı ödünleşimleri saldırgan perspektifinden ele alır (S4).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 14,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.1109/sp.2019.00044",
+   "arxiv_id": null,
+   "doi": "10.1109/sp.2019.00044",
+   "baslik": "Certified Robustness to Adversarial Examples with Differential Privacy",
+   "yil": 2019,
+   "tarih": "2019-05",
+   "gerekce": "Diferansiyel gizlilik ile düşman örneklere karşı sertifikalı dayanıklılığı birleştirir; bütünsel savunmalar (S7) için temel.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 441,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.24963/ijcai.2019/657",
+   "arxiv_id": null,
+   "doi": "10.24963/ijcai.2019/657",
+   "baslik": "Data Poisoning against Differentially-Private Learners: Attacks and Defenses",
+   "yil": 2019,
+   "tarih": "2019-08",
+   "gerekce": "Özel öğrenicilerin az sayıda zehirli öğeye karşı dayanıklı olduğunu gösterir; DP ile zehirleme dayanıklılığı birleşimi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We show that private learners are resistant to data poisoning attacks when the adversary is only able to poison a small number of items.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 75,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1145/3576915.3623193",
+   "arxiv_id": null,
+   "doi": "10.1145/3576915.3623193",
+   "baslik": "Unraveling the Connections between Privacy and Certified Robustness in Federated Learning Against Poisoning Attacks",
+   "yil": 2023,
+   "tarih": "2023-11-15",
+   "gerekce": "FL'de zehirlemeye karşı gizlilik ve sertifikalı dayanıklılık bağlantılarını birlikte inceler; S7 açısından doğrudan ilgili.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "dblp"
+   ],
+   "atif": 18,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.2478/popets-2022-0023",
+   "arxiv_id": null,
+   "doi": "10.2478/popets-2022-0023",
+   "baslik": "Disparate Vulnerability to Membership Inference Attacks",
+   "yil": 2021,
+   "tarih": "2021-11-20",
+   "gerekce": "Adaletin yalnızca sınırlı saldırganlara karşı eşitsiz kırılganlığı önlediğini, DP'nin ise doğrulukla sınırladığını gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We show that fairness can only prevent disparate vulnerability against limited classes of adversaries. Differential privacy bounds disparate vulnerability but can significantly reduce the accuracy of the model.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 20,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.1109/eurosp.2018.00035",
+   "arxiv_id": null,
+   "doi": "10.1109/eurosp.2018.00035",
+   "baslik": "SoK: Security and Privacy in Machine Learning",
+   "yil": 2018,
+   "tarih": "2018-04",
+   "gerekce": "ML'de güvenlik ve gizliliği sistematize eden temel SoK; saldırgan modelleri ve tehdit taksonomisi için referans.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 449,
+   "rel": 2,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1145/3579856.3590334",
+   "arxiv_id": null,
+   "doi": "10.1145/3579856.3590334",
+   "baslik": "LoDen: Making Every Client in Federated Learning a Defender Against the Poisoning Membership Inference Attacks",
+   "yil": 2023,
+   "tarih": "2023-07-10",
+   "gerekce": "FL'de zehirleme destekli üyelik çıkarım saldırılarına karşı her istemciyi savunucu yapan savunma önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "dblp",
+    "web"
+   ],
+   "atif": 15,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1109/eurosp51992.2021.00028",
+   "arxiv_id": null,
+   "doi": "10.1109/eurosp51992.2021.00028",
+   "baslik": "On the Privacy Risks of Algorithmic Fairness",
+   "yil": 2021,
+   "tarih": "2021-09",
+   "gerekce": "Algoritmik adaletin gizlilik risklerini inceler; adalet ile gizlilik arasındaki karşılıklı etkileşim (S4) için önemli.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 76,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1109/sp46215.2023.10179281",
+   "arxiv_id": null,
+   "doi": "10.1109/sp46215.2023.10179281",
+   "baslik": "SoK: Let the Privacy Games Begin! A Unified Treatment of Data Inference Privacy in Machine Learning",
+   "yil": 2023,
+   "tarih": "2023-05",
+   "gerekce": "Veri çıkarım gizliliğini oyun tabanlı birleşik çerçevede ele alır; değerlendirme ve oyun kuramsal modeller (S6) için değerli.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 37,
+   "rel": 2,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1109/tpami.2022.3162397",
+   "arxiv_id": null,
+   "doi": "10.1109/tpami.2022.3162397",
+   "baslik": "Dataset Security for Machine Learning: Data Poisoning, Backdoor Attacks, and Defenses",
+   "yil": 2022,
+   "tarih": "2022",
+   "gerekce": "Veri zehirleme, arka kapı saldırıları ve savunmalarını kapsayan veri seti güvenliği taksonomisi; S1 temeli.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 290,
+   "rel": 2,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1145/3624010",
+   "arxiv_id": null,
+   "doi": "10.1145/3624010",
+   "baslik": "A Survey of Privacy Attacks in Machine Learning",
+   "yil": 2023,
+   "tarih": "2023-11-10",
+   "gerekce": "Saldırgan bilgisi ve hedef varlıklara göre sınıflandıran gizlilik saldırısı taksonomisi ve tehdit modeli önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We propose an attack taxonomy, together with a threat model that allows the categorization of different attacks based on the adversarial knowledge, and the assets under attack.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "web"
+   ],
+   "atif": 220,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.36227/techrxiv.19560325.v1",
+   "arxiv_id": null,
+   "doi": "10.36227/techrxiv.19560325.v1",
+   "baslik": "An Experimental Study of Byzantine-Robust Aggregation Schemes in Federated Learning",
+   "yil": 2022,
+   "tarih": "2022-04-11",
+   "gerekce": "Bizans istemcilere karşı önerilen dayanıklı toplama şemalarını deneysel olarak karşılaştırır; S2 savunmalarının değerlendirmesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In recent years, several robust aggregation schemes have been proposed to defend against malicious updates from Byzantine clients and improve the robustness of federated learning.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 104,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "doi:10.3390/s23010031",
+   "arxiv_id": null,
+   "doi": "10.3390/s23010031",
+   "baslik": "Federated Learning Attacks Revisited: A Critical Discussion of Gaps, Assumptions, and Evaluation Setups",
+   "yil": 2022,
+   "tarih": "2022-12-20",
+   "gerekce": "FL saldırılarındaki boşlukları, varsayımları ve değerlendirme kurulumlarını eleştirel tartışır; açık problemler (S6, S7) için önemli.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Nevertheless, a number of works in the literature propose attacks that can manipulate the model and disclose information about the training data in FL.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 21,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1145/3488932.3501279",
+   "arxiv_id": null,
+   "doi": "10.1145/3488932.3501279",
+   "baslik": "Understanding Disparate Effects of Membership Inference Attacks and their Countermeasures",
+   "yil": 2022,
+   "tarih": "2022-05-30",
+   "gerekce": "Üyelik çıkarım saldırılarının ve karşı önlemlerinin eşitsiz etkilerini inceler; gizlilik ile adalet etkileşimi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 14,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.24963/ijcai.2024/57",
+   "arxiv_id": null,
+   "doi": "10.24963/ijcai.2024/57",
+   "baslik": "When Fairness Meets Privacy: Exploring Privacy Threats in Fair Binary Classifiers via Membership Inference Attacks",
+   "yil": 2024,
+   "tarih": "2024-08",
+   "gerekce": "Adalet müdahalelerinin mevcut üyelik çıkarım saldırılarına karşı daha dirençli olduğunu bulur; adalet-gizlilik ilişkisine karşıt kanıt.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Surprisingly, our results reveal that these fairness interventions exhibit increased resilience against existing attacks, indicating that enhancing fairness does not necessarily lead to privacy compromises.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 1,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1609/aaai.v36i9.21191",
+   "arxiv_id": null,
+   "doi": "10.1609/aaai.v36i9.21191",
+   "baslik": "Certified Robustness of Nearest Neighbors against Data Poisoning and Backdoor Attacks",
+   "yil": 2022,
+   "tarih": "2022-06-28",
+   "gerekce": "Çoğunluk oylamasına dayalı yaklaşımla zehirleme ve arka kapıya karşı sertifikalı dayanıklılık sunar (S7).",
+   "gerekce_kokeni": "sef",
+   "alinti": "The key idea of state-of-the-art certified defenses against data poisoning attacks and backdoor attacks is to create a majority vote mechanism to predict the label of a testing example.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "dblp"
+   ],
+   "atif": 35,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.52202/068431-0766",
+   "arxiv_id": null,
+   "doi": "10.52202/068431-0766",
+   "baslik": "BackdoorBench: A Comprehensive Benchmark of Backdoor Learning",
+   "yil": 2022,
+   "tarih": "2022",
+   "gerekce": "Arka kapı öğrenimi için kapsamlı kıyaslama çerçevesi; değerlendirme ve kıyaslama setleri (S6) için önemli.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 16,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

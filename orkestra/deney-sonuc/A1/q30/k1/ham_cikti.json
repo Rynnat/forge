@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 362261,
+ "stop_reason": "end_turn",
+ "session_id": "4df16f5f-9d0f-4df2-8def-0c8dee79c97f",
+ "total_cost_usd": 1.1194783,
+ "usage": {
+  "input_tokens": 26,
+  "cache_creation_input_tokens": 50011,
+  "cache_read_input_tokens": 351631,
+  "output_tokens": 13774,
+  "output_tokens_details": {
+   "thinking_tokens": 5467
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 50011,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 5039,
+    "cache_read_input_tokens": 49733,
+    "cache_creation_input_tokens": 3810,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3810
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 26,
+   "outputTokens": 13774,
+   "cacheReadInputTokens": 351631,
+   "cacheCreationInputTokens": 50011,
+   "webSearchRequests": 0,
+   "costUSD": 0.7459982000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 5467,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 469616,
+   "outputTokens": 33037,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 31,
+   "costUSD": 0.3734800999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 11155,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 41,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"calismalar\": [{\"sira\": 1, \"baslik\": \"Beyond Model Jailbreak: Systematic Dissection of the \\\"Ten DeadlySins\\\" in Embodied Intelligence\", \"yil\": 2025, \"arxiv_id\": \"2512.06387\", \"doi\": null, \"gerekce\": \"This is a full-stack security audit of the Unitree Go2 quadruped, covering wireless provisioning, the app, the cloud API and the hardware, and it reports ten vulnerabilities that chain together into full control takeover.\"}, {\"sira\": 2, \"baslik\": \"Jailbreaking LLM-Controlled Robots\", \"yil\": 2024, \"arxiv_id\": \"2410.13691\", \"doi\": null, \"gerekce\": \"RoboPAIR shows that a black-box jailbreak of the LLM control interface on a Unitree Go2 robot dog can make it perform harmful physical actions, often with a 100% success rate.\"}, {\"sira\": 3, \"baslik\": \"Cybersecurity AI: Humanoid Robots as Attack Vectors\", \"yil\": 2025, \"arxiv_id\": \"2509.14139\", \"doi\": null, \"gerekce\": \"It documents the BLE provisioning command injection, the weak FMX encryption and the covert telemetry exfiltration in Unitree firmware, which is also shared by the Go2 and B2 quadrupeds.\"}, {\"sira\": 4, \"baslik\": \"On the (In)Security of Secure ROS2\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"This CCS 2022 paper shows that SROS2, the main defence for the ROS 2/DDS stack used to command robots, has design-level weaknesses in permission revocation, namespace isolation and the discovery protocol.\"}, {\"sira\": 5, \"baslik\": \"Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers\", \"yil\": 2024, \"arxiv_id\": \"2405.12424\", \"doi\": null, \"gerekce\": \"It shows that low-magnitude sequential adversarial perturbations can make learned quadruped locomotion controllers fail, both in simulation and on a real robot.\"}, {\"sira\": 6, \"baslik\": \"To Make a Robot Secure: An Experimental Analysis of Cyber Security Threats Against Teleoperated Surgical Robots\", \"yil\": 2015, \"arxiv_id\": \"1504.04339\", \"doi\": null, \"gerekce\": \"This founding experimental work on teleoperation security shows command hijacking on the operator–robot link and single-packet attacks that abuse the E-stop.\"}, {\"sira\": 7, \"baslik\": \"An Experimental Security Analysis of an Industrial Robot Controller\", \"yil\": 2017, \"arxiv_id\": null, \"doi\": \"10.1109/SP.2017.20\", \"gerekce\": \"It was the first systematic attacker model and experimental analysis of a robot controller, showing that software vulnerabilities can break sensing accuracy, control logic and human safety.\"}, {\"sira\": 8, \"baslik\": \"Robotics cyber security: vulnerabilities, attacks, countermeasures, and recommendations\", \"yil\": 2022, \"arxiv_id\": null, \"doi\": \"10.1007/s10207-021-00545-8\", \"gerekce\": \"It is a widely cited taxonomy of robot vulnerabilities, attacks and countermeasures.\"}, {\"sira\": 9, \"baslik\": \"Cyber Security of Robots: a Comprehensive Survey\", \"yil\": 2023, \"arxiv_id\": null, \"doi\": \"10.1016/j.iswa.2023.200237\", \"gerekce\": \"It is a broad survey of robot cybersecurity covering communication, the control layer and defences.\"}, {\"sira\": 10, \"baslik\": \"Security Considerations in AI-Robotics: A Survey of Current Methods, Challenges, and Opportunities\", \"yil\": 2023, \"arxiv_id\": \"2310.08565\", \"doi\": \"10.1109/ACCESS.2024.3363657\", \"gerekce\": \"This survey systematises the attack surfaces and defences of AI-based robots and the security of human–robot interaction.\"}, {\"sira\": 11, \"baslik\": \"Targeted Attacks on Teleoperated Surgical Robots: Dynamic Model-based Detection and Mitigation\", \"yil\": 2016, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It shows timed malicious-command attacks on a teleoperated robot and proposes a real-time dynamic-model-based detection and mitigation defence, a DSN paper that later won the Test of Time award.\"}, {\"sira\": 12, \"baslik\": \"SROS2: Usable Cyber Security Tools for ROS 2\", \"yil\": 2022, \"arxiv_id\": \"2208.02615\", \"doi\": null, \"gerekce\": \"It presents the reference toolset for authentication, encryption and access control in ROS 2-based robot communication.\"}, {\"sira\": 13, \"baslik\": \"Security and Performance Considerations in ROS 2: A Balancing Act\", \"yil\": 2018, \"arxiv_id\": \"1809.09566\", \"doi\": null, \"gerekce\": \"It measures the latency and throughput cost of DDS security and VPNs on wired and wireless networks, a trade-off that matters for real-time remote control.\"}, {\"sira\": 14, \"baslik\": \"Robot Operating System 2: The need for a holistic security approach to robotic architectures\", \"yil\": 2018, \"arxiv_id\": null, \"doi\": \"10.1177/1729881418770011\", \"gerekce\": \"It argues that DDS security only protects data in transit and that robot architectures need a holistic security approach.\"}, {\"sira\": 15, \"baslik\": \"Credential Masquerading and OpenSSL Spy: Exploring ROS 2 using DDS security\", \"yil\": 2019, \"arxiv_id\": \"1904.09179\", \"doi\": null, \"gerekce\": \"It shows practical attacks such as credential masquerading and OpenSSL spying against ROS 2 even with DDS security enabled.\"}, {\"sira\": 16, \"baslik\": \"Introducing the Robot Vulnerability Database (RVD)\", \"yil\": 2019, \"arxiv_id\": \"1912.11299\", \"doi\": null, \"gerekce\": \"It established the robot-specific vulnerability database and disclosure process for robot hardware and software.\"}, {\"sira\": 17, \"baslik\": \"Towards an open standard for assessing the severity of robot security vulnerabilities, the Robot Vulnerability Scoring System (RVSS)\", \"yil\": 2018, \"arxiv_id\": \"1807.10357\", \"doi\": null, \"gerekce\": \"It adapts CVSS to cyber-physical robots by adding safety-impact metrics and robot-specific attack vectors.\"}, {\"sira\": 18, \"baslik\": \"Introducing the Robot Security Framework (RSF), a standardized methodology to perform security assessments in robotics\", \"yil\": 2018, \"arxiv_id\": \"1806.04042\", \"doi\": null, \"gerekce\": \"It provides a standard robot security assessment method across the physical, network, firmware and application layers.\"}, {\"sira\": 19, \"baslik\": \"BadRobot: Jailbreaking Embodied LLMs in the Physical World\", \"yil\": 2024, \"arxiv_id\": \"2407.20242\", \"doi\": null, \"gerekce\": \"It shows that voice-based jailbreaks of embodied LLM agents systematically produce unsafe physical actions (ICLR 2025).\"}, {\"sira\": 20, \"baslik\": \"Cyber-Secure Teleoperation With Encrypted Four-Channel Bilateral Control\", \"yil\": 2023, \"arxiv_id\": \"2302.13709\", \"doi\": \"10.1109/TCST.2025.3577536\", \"gerekce\": \"It is a defence that protects teleoperation signals and controller parameters with homomorphic encryption while preserving control performance.\"}, {\"sira\": 21, \"baslik\": \"Perfectly Undetectable False Data Injection Attacks on Encrypted Bilateral Teleoperation System based on Dynamic Symmetry and Malleability\", \"yil\": 2024, \"arxiv_id\": \"2409.13061\", \"doi\": null, \"gerekce\": \"It shows that even an encrypted teleoperation channel is open to undetectable false data injection through malleability, which is an important open problem.\"}, {\"sira\": 22, \"baslik\": \"On cyber-physical attacks in bilateral teleoperation systems: An experimental analysis\", \"yil\": 2018, \"arxiv_id\": null, \"doi\": null, \"gerekce\": \"It classifies attacks on bilateral teleoperation and shows experimentally that tampering with the passivity layer destabilises the follower robot.\"}, {\"sira\": 23, \"baslik\": \"Formal Analysis and Detection for ROS2 Communication Security Vulnerability\", \"yil\": 2024, \"arxiv_id\": null, \"doi\": \"10.3390/electronics13091762\", \"gerekce\": \"It uses formal modelling to characterise ROS 2 topic, service and action communication vulnerabilities and provides a detection tool.\"}, {\"sira\": 24, \"baslik\": \"Supply Chain Exploitation of Secure ROS 2 Systems: A Proof-of-Concept on Autonomous Platform Compromise via Keystore Exfiltration\", \"yil\": 2025, \"arxiv_id\": \"2511.00140\", \"doi\": null, \"gerekce\": \"It shows that a trojanised SROS2 package can leak keystore credentials, letting an attacker join as an authenticated participant and spoof control messages.\"}, {\"sira\": 25, \"baslik\": \"Cybersecurity in Robotics: Challenges, Quantitative Modeling, and Practice\", \"yil\": 2021, \"arxiv_id\": \"2103.05789\", \"doi\": null, \"gerekce\": \"It is a comprehensive overview of quantitative risk modelling and practical defences for robot cybersecurity.\"}, {\"sira\": 26, \"baslik\": \"Offensive Robot Cybersecurity\", \"yil\": 2025, \"arxiv_id\": \"2506.15343\", \"doi\": null, \"gerekce\": \"It brings together offensive security methods for robots, from ROS/DDS to commercial robots, including AI-assisted penetration testing.\"}, {\"sira\": 27, \"baslik\": \"Jamming Attacks and Anti-Jamming Strategies in Wireless Networks: A Comprehensive Survey\", \"yil\": 2021, \"arxiv_id\": \"2101.00292\", \"doi\": null, \"gerekce\": \"It is the reference survey on jamming threats and countermeasures for the Wi-Fi, Bluetooth, cellular and GPS links that remote-controlled quadrupeds rely on.\"}, {\"sira\": 28, \"baslik\": \"Adversarial Sensor Attack on LiDAR-based Perception in Autonomous Driving\", \"yil\": 2019, \"arxiv_id\": \"1907.06826\", \"doi\": \"10.1145/3319535.3339815\", \"gerekce\": \"It is the foundational work on LiDAR spoofing attacks against the perception layer that autonomous and semi-autonomous mobile robots also use.\"}, {\"sira\": 29, \"baslik\": \"Robot hazards: from safety to security\", \"yil\": 2018, \"arxiv_id\": \"1806.06681\", \"doi\": null, \"gerekce\": \"It is an early position paper arguing that robot vulnerabilities have physical safety consequences, which makes security a core requirement.\"}, {\"sira\": 30, \"baslik\": \"Can ROS be used securely in industry? Red teaming ROS-Industrial\", \"yil\": 2020, \"arxiv_id\": \"2009.08211\", \"doi\": null, \"gerekce\": \"It is a red-team exercise showing how attacks chain through the ROS-based control network.\"}]}",
+ "ttft_ms": 23326,
+ "type": "result",
+ "duration_ms": 228630,
+ "uuid": "9ffd2461-9b0f-4e96-b89b-dc369cfeb567",
+ "ttft_stream_ms": 2474,
+ "time_to_request_ms": 58,
+ "first_content_frame_ms": 2474,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

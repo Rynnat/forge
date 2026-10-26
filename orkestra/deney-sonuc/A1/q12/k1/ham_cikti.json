@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 279889,
+ "stop_reason": "end_turn",
+ "session_id": "06d1d457-9038-4172-b7b4-8b0e0fd5b237",
+ "total_cost_usd": 0.9872927000000002,
+ "usage": {
+  "input_tokens": 18,
+  "cache_creation_input_tokens": 45472,
+  "cache_read_input_tokens": 204716,
+  "output_tokens": 10360,
+  "output_tokens_details": {
+   "thinking_tokens": 2776
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 45472,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4692,
+    "cache_read_input_tokens": 43497,
+    "cache_creation_input_tokens": 5507,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5507
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 18,
+   "outputTokens": 10360,
+   "cacheReadInputTokens": 204716,
+   "cacheCreationInputTokens": 45472,
+   "webSearchRequests": 0,
+   "costUSD": 0.6119912000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2776,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 428565,
+   "outputTokens": 24890,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 32,
+   "costUSD": 0.3753015,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 5672,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 33,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "```json\n{\"calismalar\": [\n{\"sira\": 1, \"baslik\": \"A Comprehensive Review of Data-Driven Co-Speech Gesture Generation\", \"yil\": 2023, \"arxiv_id\": \"2301.05339\", \"doi\": \"10.1111/cgf.14776\", \"gerekce\": \"This review is the field's main reference survey: it organizes datasets, generative methods and evaluation practice for co-speech gesture generation and names the open problems.\"},\n{\"sira\": 2, \"baslik\": \"Learning Individual Styles of Conversational Gesture\", \"yil\": 2019, \"arxiv_id\": \"1906.04160\", \"doi\": null, \"gerekce\": \"It introduced large-scale learning of speaker-specific gestures from in-the-wild video, and its Speech2Gesture dataset became a standard benchmark.\"},\n{\"sira\": 3, \"baslik\": \"Speech Gesture Generation from the Trimodal Context of Text, Audio, and Speaker Identity\", \"yil\": 2020, \"arxiv_id\": \"2009.02119\", \"doi\": \"10.1145/3414685.3417838\", \"gerekce\": \"It established trimodal conditioning on text, audio and speaker identity, and introduced the Fréchet Gesture Distance (FGD), which became the field's standard objective metric.\"},\n{\"sira\": 4, \"baslik\": \"BEAT: A Large-Scale Semantic and Emotional Multi-Modal Dataset for Conversational Gestures Synthesis\", \"yil\": 2022, \"arxiv_id\": \"2203.05297\", \"doi\": null, \"gerekce\": \"It released a 76-hour multimodal motion-capture dataset with emotion and semantic annotations, along with the CaMN baseline and the SRGR metric.\"},\n{\"sira\": 5, \"baslik\": \"EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Masked Audio Gesture Modeling\", \"yil\": 2024, \"arxiv_id\": \"2401.00374\", \"doi\": null, \"gerekce\": \"It introduced the BEAT2 (SMPL-X + FLAME) dataset and a masked-modeling method that generates face, body, hands and global motion together, now a common holistic benchmark.\"},\n{\"sira\": 6, \"baslik\": \"Listen, Denoise, Action! Audio-Driven Motion Synthesis with Diffusion Models\", \"yil\": 2023, \"arxiv_id\": \"2211.09707\", \"doi\": \"10.1145/3592458\", \"gerekce\": \"It was a pioneering application of diffusion models to gesture and dance synthesis, with style control through classifier-free guidance.\"},\n{\"sira\": 7, \"baslik\": \"Evaluating gesture generation in a large-scale open challenge: The GENEA Challenge 2022\", \"yil\": 2024, \"arxiv_id\": \"2303.08737\", \"doi\": \"10.1145/3656374\", \"gerekce\": \"Its large-scale crowdsourced evaluation showed that objective metrics correlate poorly with human judgments, a central finding on evaluation.\"},\n{\"sira\": 8, \"baslik\": \"Generating Holistic 3D Human Motion from Speech\", \"yil\": 2023, \"arxiv_id\": \"2212.04420\", \"doi\": null, \"gerekce\": \"TalkSHOW introduced the SHOW dataset and a VQ-VAE-based approach for generating holistic 3D face, body and hand motion from speech.\"},\n{\"sira\": 9, \"baslik\": \"Style-Controllable Speech-Driven Gesture Synthesis Using Normalising Flows\", \"yil\": 2020, \"arxiv_id\": null, \"doi\": \"10.1111/cgf.13946\", \"gerekce\": \"It brought probabilistic generative modeling (MoGlow) and style control to gesture synthesis.\"},\n{\"sira\": 10, \"baslik\": \"A large, crowdsourced evaluation of gesture generation systems on common data: The GENEA Challenge 2020\", \"yil\": 2021, \"arxiv_id\": \"2102.11617\", \"doi\": \"10.1145/3397481.3450692\", \"gerekce\": \"It was the first benchmark to compare gesture systems with common data and a shared subjective-evaluation protocol.\"},\n{\"sira\": 11, \"baslik\": \"The GENEA Challenge 2023: A large-scale evaluation of gesture generation models in monadic and dyadic settings\", \"yil\": 2023, \"arxiv_id\": \"2308.12646\", \"doi\": null, \"gerekce\": \"It extended evaluation to dyadic settings that take the interlocutor's behaviour into account, and added an interlocutor-appropriateness criterion.\"},\n{\"sira\": 12, \"baslik\": \"GestureDiffuCLIP: Gesture Diffusion Model with CLIP Latents\", \"yil\": 2023, \"arxiv_id\": \"2303.14613\", \"doi\": null, \"gerekce\": \"It brought multimodal style control (text, motion, video) and semantic alignment to latent gesture diffusion through CLIP.\"},\n{\"sira\": 13, \"baslik\": \"Taming Diffusion Models for Audio-Driven Co-Speech Gesture Generation\", \"yil\": 2023, \"arxiv_id\": \"2303.09119\", \"doi\": null, \"gerekce\": \"DiffGesture was one of the first diffusion frameworks for co-speech gestures, targeting the mode collapse and instability problems of GANs.\"},\n{\"sira\": 14, \"baslik\": \"Rhythmic Gesticulator: Rhythm-Aware Co-Speech Gesture Synthesis with Hierarchical Neural Embeddings\", \"yil\": 2022, \"arxiv_id\": \"2210.01448\", \"doi\": \"10.1145/3550454.3555435\", \"gerekce\": \"It addressed rhythm–semantics alignment with rhythm-based segmentation and hierarchical embeddings, and won a best paper award at SIGGRAPH Asia 2022.\"},\n{\"sira\": 15, \"baslik\": \"Talking With Hands 16.2M: A Large-Scale Dataset of Synchronized Body-Finger Motion and Audio for Conversational Motion Analysis and Synthesis\", \"yil\": 2019, \"arxiv_id\": null, \"doi\": \"10.1109/ICCV.2019.00085\", \"gerekce\": \"This roughly 50-hour dyadic motion-capture dataset with finger motion became the basis of the GENEA 2022/2023 challenges.\"},\n{\"sira\": 16, \"baslik\": \"Gesticulator: A framework for semantically-aware speech-driven gesture generation\", \"yil\": 2020, \"arxiv_id\": \"2001.09326\", \"doi\": \"10.1145/3382507.3418815\", \"gerekce\": \"It combined acoustic and semantic (text) features to generate both beat and semantic gestures.\"},\n{\"sira\": 17, \"baslik\": \"Robots Learn Social Skills: End-to-End Learning of Co-Speech Gesture Generation for Humanoid Robots\", \"yil\": 2019, \"arxiv_id\": \"1810.12541\", \"doi\": \"10.1109/ICRA.2019.8793720\", \"gerekce\": \"It introduced the TED Gesture dataset and was an early end-to-end text-to-gesture model for robots.\"},\n{\"sira\": 18, \"baslik\": \"Learning Hierarchical Cross-Modal Association for Co-Speech Gesture Generation\", \"yil\": 2022, \"arxiv_id\": \"2203.13161\", \"doi\": null, \"gerekce\": \"HA2G modeled the hierarchical correspondence between audio and gesture and set a strong baseline on TED datasets.\"},\n{\"sira\": 19, \"baslik\": \"From Audio to Photoreal Embodiment: Synthesizing Humans in Conversations\", \"yil\": 2024, \"arxiv_id\": \"2401.01885\", \"doi\": null, \"gerekce\": \"It combined VQ and diffusion for dyadic conversational motion on photorealistic avatars, and showed that the rendering method affects evaluation.\"},\n{\"sira\": 20, \"baslik\": \"ZeroEGGS: Zero-shot Example-based Gesture Generation from Speech\", \"yil\": 2023, \"arxiv_id\": \"2209.07556\", \"doi\": \"10.1111/cgf.14734\", \"gerekce\": \"It enabled zero-shot style transfer from short example clips and released a dataset covering 19 styles.\"},\n{\"sira\": 21, \"baslik\": \"DiffuseStyleGesture: Stylized Audio-Driven Co-Speech Gesture Generation with Diffusion Models\", \"yil\": 2023, \"arxiv_id\": \"2305.04919\", \"doi\": \"10.24963/ijcai.2023/650\", \"gerekce\": \"It is a widely used diffusion baseline for stylized, diverse gestures from speech of arbitrary length.\"},\n{\"sira\": 22, \"baslik\": \"Audio2Gestures: Generating Diverse Gestures from Speech Audio with Conditional Variational Autoencoders\", \"yil\": 2021, \"arxiv_id\": \"2108.06720\", \"doi\": null, \"gerekce\": \"It treated the one-to-many nature of speech-to-gesture mapping explicitly with a CVAE that splits shared and motion-specific latent codes.\"},\n{\"sira\": 23, \"baslik\": \"Learning to Listen: Modeling Non-Deterministic Dyadic Facial Motion\", \"yil\": 2022, \"arxiv_id\": \"2204.08451\", \"doi\": null, \"gerekce\": \"It opened up the dyadic-interaction problem with probabilistic listener facial-motion generation and an in-the-wild dyadic dataset.\"},\n{\"sira\": 24, \"baslik\": \"Seamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale Dataset\", \"yil\": 2025, \"arxiv_id\": \"2506.22554\", \"doi\": null, \"gerekce\": \"It released more than 4,000 hours of face-to-face conversation data with dyadic face and gesture generation models, shifting the field's data scale.\"},\n{\"sira\": 25, \"baslik\": \"FaceFormer: Speech-Driven 3D Facial Animation with Transformers\", \"yil\": 2022, \"arxiv_id\": \"2112.05329\", \"doi\": null, \"gerekce\": \"It set the standard transformer and self-supervised speech-representation approach for speech-driven 3D facial animation.\"},\n{\"sira\": 26, \"baslik\": \"Capture, Learning, and Synthesis of 3D Speaking Styles\", \"yil\": 2019, \"arxiv_id\": \"1905.03079\", \"doi\": null, \"gerekce\": \"VOCA and its VOCASET dataset form the foundational benchmark for speech-driven 3D facial animation.\"},\n{\"sira\": 27, \"baslik\": \"CodeTalker: Speech-Driven 3D Facial Animation with Discrete Motion Prior\", \"yil\": 2023, \"arxiv_id\": \"2301.02379\", \"doi\": null, \"gerekce\": \"It brought a discrete codebook motion prior to facial animation, reducing over-smoothing.\"},\n{\"sira\": 28, \"baslik\": \"Semantic Gesticulator: Semantics-Aware Co-Speech Gesture Synthesis\", \"yil\": 2024, \"arxiv_id\": \"2405.09814\", \"doi\": null, \"gerekce\": \"It addressed the open problem of semantic gesture appropriateness with LLM-based retrieval and a semantic alignment mechanism.\"},\n{\"sira\": 29, \"baslik\": \"ConvoFusion: Multi-Modal Conversational Diffusion for Co-Speech Gesture Synthesis\", \"yil\": 2024, \"arxiv_id\": \"2403.17936\", \"doi\": null, \"gerekce\": \"It provided modality-level control in latent diffusion and released the DnD multi-party group gesture dataset.\"},\n{\"sira\": 30, \"baslik\": \"GestureLSM: Latent Shortcut based Co-Speech Gesture Generation with Spatial-Temporal Modeling\", \"yil\": 2025, \"arxiv_id\": \"2501.18898\", \"doi\": null, \"gerekce\": \"It addressed the open problem of real-time inference with flow matching and latent shortcuts, giving state-of-the-art quality on BEAT2 with fast generation.\"}\n]}\n```",
+ "ttft_ms": 25355,
+ "type": "result",
+ "duration_ms": 153723,
+ "uuid": "49fb8529-c434-4875-9d1e-cc5d26c27278",
+ "ttft_stream_ms": 2424,
+ "time_to_request_ms": 58,
+ "first_content_frame_ms": 2425,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,1066 @@
+[
+ {
+  "id": "doi:10.1109/icse48619.2023.00149",
+  "baslik": "Recommending Root-Cause and Mitigation Steps for Cloud Incidents using Large Language Models",
+  "yil": 2023,
+  "cites": 156,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ile bulut olayları için kök neden önerisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3660805",
+  "baslik": "BARO: Robust Root Cause Analysis for Microservices via Multivariate Bayesian Online Change Point Detection",
+  "yil": 2024,
+  "cites": 56,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Değişim noktası tabanlı anomali tespiti ve RCA entegrasyonu",
+  "alinti": "BARO leverages the Multivariate Bayesian Online Change Point Detection technique to model the dependency within multivariate time-series metrics data"
+ },
+ {
+  "id": "doi:10.1145/3627703.3629553",
+  "baslik": "Automatic Root Cause Analysis via Large Language Models for Cloud Incidents",
+  "yil": 2024,
+  "cites": 218,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Bulut olayları için LLM tabanlı otomatik RCA",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3691620.3695065",
+  "baslik": "Root Cause Analysis for Microservice System based on Causal Inference: How Far Are We?",
+  "yil": 2024,
+  "cites": 43,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Nedensel çıkarımlı mikroservis RCA'nın ampirik değerlendirmesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3627673.3680016",
+  "baslik": "RCAgent: Cloud Root Cause Analysis by Autonomous Agents with Tool-Augmented Large Language Models",
+  "yil": 2024,
+  "cites": 112,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Araç destekli LLM ajanlarıyla bulut RCA",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tse.2018.2887384",
+  "baslik": "Fault Analysis and Debugging of Microservice Systems: Industrial Survey, Benchmark System, and Empirical Study",
+  "yil": 2021,
+  "cites": 366,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Endüstriyel anket, kıyaslama ve ampirik çalışma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.52202/068431-2259",
+  "baslik": "Root Cause Analysis of Failures in Microservices Through Causal Discovery",
+  "yil": 2022,
+  "cites": 48,
+  "kaynaklar": [
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Nedensel keşif ile mikroservis hata RCA'sı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/iwqos52092.2021.9521340",
+  "baslik": "Practical Root Cause Localization for Microservice Systems via Trace Analysis",
+  "yil": 2021,
+  "cites": 155,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "İz analizi tabanlı pratik kök neden konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3701716.3715290",
+  "baslik": "RCAEval: A Benchmark for Root Cause Analysis of Microservice Systems with Telemetry Data",
+  "yil": 2025,
+  "cites": 46,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Telemetri verisiyle RCA kıyaslama sistemi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/iwqos49365.2020.9213058",
+  "baslik": "Localizing Failure Root Causes in a Microservice through Causality Inference",
+  "yil": 2020,
+  "cites": 154,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Nedensel çıkarımla mikroservis hata konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/noms47738.2020.9110353",
+  "baslik": "MicroRCA: Root Cause Localization of Performance Issues in Microservices",
+  "yil": 2020,
+  "cites": 239,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Mikroservislerde performans sorunu kök neden konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2206.05871",
+  "baslik": "Causal Inference-Based Root Cause Analysis for Online Service Systems with Intervention Recognition",
+  "yil": 2022,
+  "cites": 106,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Müdahale tanıma ile nedensel çıkarım tabanlı RCA",
+  "alinti": "The core idea is a sufficient condition for a monitoring variable to be a root cause indicator"
+ },
+ {
+  "id": "doi:10.1145/3623278.3624758",
+  "baslik": "Sleuth: A Trace-Based Root Cause Analysis System for Large-Scale Microservices with Graph Neural Networks",
+  "yil": 2023,
+  "cites": 24,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "İz tabanlı RCA ile graf sinir ağları",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ccgrid.2018.00076",
+  "baslik": "CloudRanger: Root Cause Identification for Cloud Native Systems",
+  "yil": 2018,
+  "cites": 164,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Bulut-yerel sistemlerde kök neden tanımlama",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3637528.3671530",
+  "baslik": "Microservice Root Cause Analysis With Limited Observability Through Intervention Recognition in the Latent Space",
+  "yil": 2024,
+  "cites": 25,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Sınırlı gözlemlenebilirlikte gizli uzayda müdahale tanıma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/infocom.2014.6848128",
+  "baslik": "CauseInfer: Automatic and distributed performance diagnosis with hierarchical causality graph in large distributed systems",
+  "yil": 2014,
+  "cites": 129,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Hiyerarşik nedensellik grafiğiyle dağıtık performans teşhisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icse48619.2023.00150",
+  "baslik": "Eadro: An End-to-End Troubleshooting Framework for Microservices on Multi-source Data",
+  "yil": 2023,
+  "cites": 151,
+  "kaynaklar": [
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Çok kaynaklı verilerle uçtan uca mikroservis teşhisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3611643.3616249",
+  "baslik": "Nezha: Interpretable Fine-Grained Root Causes Analysis for Microservices on Multi-modal Observability Data",
+  "yil": 2023,
+  "cites": 147,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Çok modlu gözlemlenebilirlik verisiyle ince taneli RCA",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-030-03596-9_1",
+  "baslik": "Microscope: Pinpoint Performance Issues with Causal Graphs in Micro-service Environments",
+  "yil": 2018,
+  "cites": 185,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Nedensel grafiklerle mikroservis performans sorunu teşhisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3442381.3449905",
+  "baslik": "MicroRank: End-to-End Latency Issue Localization with Extended Spectrum Analysis in Microservice Environments",
+  "yil": 2021,
+  "cites": 156,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Spektrum analiziyle gecikme sorunu konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2108.00344",
+  "baslik": "Groot: An Event-graph-based Approach for Root Cause Analysis in Industrial Settings",
+  "yil": 2021,
+  "cites": 94,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Endüstriyel olay-graf tabanlı RCA, üretim ölçeğinde",
+  "alinti": "Groot constructs a real-time causality graph based on events that summarize various types of metrics, logs, and activities in the system under analysis."
+ },
+ {
+  "id": "doi:10.1145/3540250.3549092",
+  "baslik": "Actionable and interpretable fault localization for recurring failures in online service systems",
+  "yil": 2022,
+  "cites": 76,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Tekrarlayan hatalarda yorumlanabilir hata konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icws67624.2025.00023",
+  "baslik": "Robust and Lightweight Root Cause Analysis for Microservice Metrics",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Sağlam ve hafif RCA için metrik tabanlı yaklaşım",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3501297",
+  "baslik": "Anomaly Detection and Failure Root Cause Analysis in (Micro) Service-Based Cloud Applications: A Survey",
+  "yil": 2022,
+  "cites": 250,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Anomali tespiti ve RCA üzerine derleme",
+  "alinti": "The objective of this survey is to provide a structured overview and qualitative analysis of currently available techniques for anomaly detection and root cause analysis in modern multi-service applications."
+ },
+ {
+  "id": "arXiv:2403.04123",
+  "baslik": "Exploring LLM-based Agents for Root Cause Analysis",
+  "yil": 2024,
+  "cites": 125,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ajanlarıyla dinamik tanı bilgisi toplama",
+  "alinti": "In this work, we explore the use of LLM based agents for RCA to address this limitation."
+ },
+ {
+  "id": "doi:10.1145/3663529.3663827",
+  "baslik": "Chain-of-Event: Interpretable Root Cause Analysis for Microservices through Automatically Learning Weighted Event Causal Graph",
+  "yil": 2024,
+  "cites": 25,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Ağırlıklı olay nedensel graflarıyla yorumlanabilir RCA",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3674726",
+  "baslik": "HeMiRCA: Fine-Grained Root Cause Analysis for Microservices with Heterogeneous Data Sources",
+  "yil": 2024,
+  "cites": 33,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Heterojen veri kaynaklarıyla hiyerarşik RCA",
+  "alinti": "HeMiRCA is based on the key observation that the microservice responsible for a particular type of fault exhibits a monotonic correlation between the trends of its associated metrics"
+ },
+ {
+  "id": "doi:10.1109/iwqos65803.2025.11143407",
+  "baslik": "Causelens: Causality-Based Interpretable Root Cause Analysis For Microservice Systems",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Nedensellik tabanlı açıklanabilir mikroservis RCA",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3338906.3338961",
+  "baslik": "Latent error prediction and fault localization for microservice applications by learning from system trace logs",
+  "yil": 2019,
+  "cites": 248,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Mikroservis hata konumlandırma, iz günlüklerinden öğrenme",
+  "alinti": "Latent error prediction and fault localization for microservice applications by learning from system trace logs"
+ },
+ {
+  "id": "doi:10.1145/3597503.3639088",
+  "baslik": "Trace-based Multi-Dimensional Root Cause Localization of Performance Issues in Microservice Systems",
+  "yil": 2024,
+  "cites": 29,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "İz tabanlı çok boyutlu performans sorunu konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icse-seip52600.2021.00043",
+  "baslik": "MicroHECL: High-Efficient Root Cause Localization in Large-Scale Microservice Systems",
+  "yil": 2021,
+  "cites": 177,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Büyük ölçekli mikroservislerde yüksek verimli kök neden konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3663529.3663858",
+  "baslik": "LM-PACE: Confidence Estimation by Large Language Models for Effective Root Causing of Cloud Incidents",
+  "yil": 2024,
+  "cites": 20,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ile bulut olayları için güven tahmini",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3483424",
+  "baslik": "A Survey of AIOps Methods for Failure Management",
+  "yil": 2021,
+  "cites": 137,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "AIOps arıza yönetimi derlemesi, RCA dışı kapsam geniş",
+  "alinti": "In this work, we focus on AIOps for Failure Management (FM), characterizing and describing 5 different categories and 14 subcategories of contributions"
+ },
+ {
+  "id": "doi:10.1109/icse-seip55303.2022.9793994",
+  "baslik": "Mining Root Cause Knowledge from Cloud Service Incident Investigations for AIOps",
+  "yil": 2022,
+  "cites": 29,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bulut olay soruşturmalarından kök neden bilgisi madenciliği",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3597503.3639081",
+  "baslik": "Xpert: Empowering Incident Management with Query Recommendations via Large Language Models",
+  "yil": 2024,
+  "cites": 48,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ile olay yönetimi sorgu önerileri",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.jss.2023.111724",
+  "baslik": "CausalRCA: Causal inference based precise fine-grained root cause localization for microservice applications",
+  "yil": 2023,
+  "cites": 105,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Nedensel çıkarım ile ince taneli mikroservis RCA",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3691620.3695489",
+  "baslik": "Giving Every Modality a Voice in Microservice Failure Diagnosis via Multimodal Adaptive Optimization",
+  "yil": 2024,
+  "cites": 15,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Çok modlu uyarlamalı optimizasyonla mikroservis arıza teşhisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icse-companion.2019.00023",
+  "baslik": "AIOps: Real-World Challenges and Research Innovations",
+  "yil": 2019,
+  "cites": 218,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Genel AIOps zorlukları, RCA'ya dolaylı bağlantı",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3691620.3695485",
+  "baslik": "MRCA: Metric-level Root Cause Analysis for Microservices via Multi-Modal Data",
+  "yil": 2024,
+  "cites": 23,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Çok modlu veriyle metrik düzeyinde mikroservis RCA",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3445814.3446700",
+  "baslik": "Sage: practical and scalable ML-driven performance debugging in microservices",
+  "yil": 2021,
+  "cites": 171,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "ML tabanlı mikroservis performans hata ayıklama",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.21203/rs.3.rs-5267111/v1",
+  "baslik": "Optimized Intention-adaptive Graph Neural Network for Robust Failure Diagnosis of Microservice System Using Multimodal Data",
+  "yil": 2024,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Çok modlu veriyle GNN tabanlı mikroservis arıza teşhisi",
+  "alinti": "It carries out an empirical study using actual failure scenarios to show that the integration of several data sources (multimodal data) leads to a more precise diagnosis."
+ },
+ {
+  "id": "doi:10.1504/ijsse.2023.10054431",
+  "baslik": "AIOps Research Innovations, Performance Impact and Challenges Faced",
+  "yil": 2023,
+  "cites": 11,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "AIOps araştırma yenilikleri, etki ve zorluklar",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/issre.2019.00015",
+  "baslik": "Generic and Robust Localization of Multi-dimensional Root Causes",
+  "yil": 2019,
+  "cites": 40,
+  "kaynaklar": [
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Çok boyutlu kök nedenlerin genel ve sağlam konumlandırması",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.23919/date56975.2023.10137078",
+  "baslik": "ImpactTracer: Root Cause Localization in Microservices Based on Fault Propagation Modeling",
+  "yil": 2023,
+  "cites": 13,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Hata yayılım modeliyle mikroservis kök neden konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3663529.3663846",
+  "baslik": "Automated Root Causing of Cloud Incidents using In-Context Learning with GPT-4",
+  "yil": 2024,
+  "cites": 63,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "GPT-4 bağlamsal öğrenmeyle bulut olaylarının otomatik kökü",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icdcs.2013.26",
+  "baslik": "FChain: Toward Black-Box Online Fault Localization for Cloud Systems",
+  "yil": 2013,
+  "cites": 83,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Bulut sistemleri için kara kutu çevrimiçi hata konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3663529.3663861",
+  "baslik": "X-Lifecycle Learning for Cloud Incident Management using LLMs",
+  "yil": 2024,
+  "cites": 33,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ile bulut olay yönetimi yaşam döngüsü öğrenimi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3368089.3417066",
+  "baslik": "Graph-based trace analysis for microservice architecture understanding and problem diagnosis",
+  "yil": 2020,
+  "cites": 107,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "İz tabanlı grafik analizi ile mikroservis teşhisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tsc.2023.3290018",
+  "baslik": "Robust Failure Diagnosis Of Microservice System Through Multimodal Data",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Çok modlu veriyle mikroservis hata teşhisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.23919/inm.2017.7987390",
+  "baslik": "Online approach to performance fault localization for cloud and datacenter services",
+  "yil": 2017,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bulut ve veri merkezi servislerinde performans hatası konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.compchemeng.2023.108453",
+  "baslik": "Graph attention network with Granger causality map for fault detection and root cause diagnosis",
+  "yil": 2024,
+  "cites": 75,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Granger nedensellik haritası ile GAT tabanlı RCA",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3583780.3614995",
+  "baslik": "On Root Cause Localization and Anomaly Mitigation through Causal Inference",
+  "yil": 2023,
+  "cites": 8,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Nedensel çıkarımla kök neden konumlandırma ve anomali azaltma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.eswa.2024.124679",
+  "baslik": "KGroot: A knowledge graph-enhanced method for root cause analysis",
+  "yil": 2024,
+  "cites": 40,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bilgi grafiği destekli bulut RCA yöntemi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3366423.3380111",
+  "baslik": "AutoMAP: Diagnose Your Microservice-based Web Applications Automatically",
+  "yil": 2020,
+  "cites": 121,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Mikroservis web uygulamalarında otomatik arıza teşhisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icnsc48988.2020.9238084",
+  "baslik": "Root Cause Analysis of Concurrent Alarms Based on Random Walk over Anomaly Propagation Graph",
+  "yil": 2020,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Anomali yayılım grafiğinde rastgele yürüyüşle eşzamanlı alarm analizi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3746635",
+  "baslik": "A Survey of AIOps in the Era of Large Language Models",
+  "yil": 2025,
+  "cites": 55,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM tabanlı AIOps derlemesi, doğrudan ilgili",
+  "alinti": "We analyzed 183 research articles published between January 2020 and December 2024 to answer four key research questions (RQs)."
+ },
+ {
+  "id": "doi:10.1145/3317550.3321438",
+  "baslik": "What bugs cause production cloud incidents?",
+  "yil": 2019,
+  "cites": 57,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Bulut üretim olaylarında hata kaynaklarına yönelik ampirik çalışma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3511430.3511916",
+  "baslik": "Challenges for the Industrial Adoption of AIOps Innovations",
+  "yil": 2022,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "AIOps yeniliklerinin endüstriyel benimsenme zorlukları",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/s11036-021-01832-3",
+  "baslik": "A Survey On Log Research Of AIOps: Methods and Trends",
+  "yil": 2021,
+  "cites": 13,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "AIOps'ta log araştırmaları derlemesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3663529.3663833",
+  "baslik": "Fault Diagnosis for Test Alarms in Microservices through Multi-source Data",
+  "yil": 2024,
+  "cites": 6,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Mikroservislerde çok kaynaklı veriyle test alarmı teşhisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3297858.3304013",
+  "baslik": "An Open-Source Benchmark Suite for Microservices and Their Hardware-Software Implications for Cloud &amp; Edge Systems",
+  "yil": 2019,
+  "cites": 623,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 1,
+  "not": "Mikroservis kıyaslama takımı; RCA değil, dolaylı ilgili",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3696630.3728619",
+  "baslik": "AIOpsLab In Action: An Open Platform For AIOps Research",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "AIOps araştırma platformu, olay giderme kıyaslaması",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/cloudintelligence52565.2021.00015",
+  "baslik": "MicroDiag: Fine-grained Performance Diagnosis for Microservice Systems",
+  "yil": 2021,
+  "cites": 63,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Mikroservis için ince taneli performans teşhisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/indin51400.2023.10218245",
+  "baslik": "Counterfactual Root Cause Analysis via Anomaly Detection and Causal Graphs",
+  "yil": 2023,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Anomali tespiti ve nedensel grafiklerle karşıolgusal kök neden",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icws60048.2023.00013",
+  "baslik": "A Trace-Log-Clusterings-Based Fault Localization Approach to Microservice Systems",
+  "yil": 2023,
+  "cites": 5,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "İz-log kümelemesi tabanlı mikroservis hata konumlandırma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.51219/jaimld/pradeep-bhosale/458",
+  "baslik": "Metrics, Logs, and Traces: A Unified Approach to Observability in Microservices",
+  "yil": 2022,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Mikroservislerde metrik, log ve iz birleşik gözlemlenebilirlik",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tsc.2016.2607739",
+  "baslik": "<i>CauseInfer</i>: Automated End-to-End Performance Diagnosis with Hierarchical Causality Graph in Cloud Environment",
+  "yil": 2019,
+  "cites": 76,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bulut performans teşhisi, hiyerarşik nedensellik grafiği",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/cscwd64889.2025.11033284",
+  "baslik": "MicroTR: Transaction Reproduction Fault Diagnosis Framework For Microservice On Multi-Source Data",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Çok kaynaklı veriyle mikroservis hata teşhisi.",
+  "alinti": "MicroTR: Transaction Reproduction Fault Diagnosis Framework For Microservice On Multi-Source Data."
+ },
+ {
+  "id": "doi:10.1145/3701716.3715225",
+  "baslik": "Flow-of-Action: SOP Enhanced LLM-Based Multi-Agent System for Root Cause Analysis",
+  "yil": 2025,
+  "cites": 41,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "SOP destekli LLM çok ajanlı kök neden analizi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/sose67019.2025.00009",
+  "baslik": "Benchmarking Component and Integration Testing in Microservices: Test Suites and Fault Analysis on TrainTicket",
+  "yil": 2025,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "TrainTicket kıyaslama ve hata analizi veri kümesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/scc.2009.48",
+  "baslik": "Multi-dimensional Knowledge Integration for Efficient Incident Management in a Services Cloud",
+  "yil": 2009,
+  "cites": 21,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Hizmet bulutunda olay yönetimi için bilgi entegrasyonu",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3691620.3695475",
+  "baslik": "The Potential of One-Shot Failure Root Cause Analysis: Collaboration of the Large Language Model and Small Classifier",
+  "yil": 2024,
+  "cites": 28,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "LLM ve küçük sınıflandırıcıyla tek atımlık kök neden analizi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ispa-bdcloud-socialcom-sustaincom52081.2021.00074",
+  "baslik": "Diagnosing Performance Issues in Microservices with Heterogeneous Data Source",
+  "yil": 2021,
+  "cites": 53,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Heterojen veriyle mikroservis performans teşhisi, merkezi.",
+  "alinti": "Diagnosing Performance Issues in Microservices with Heterogeneous Data Source."
+ },
+ {
+  "id": "doi:10.1007/978-1-4842-6998-5_12",
+  "baslik": "Observability: Logs, Metrics, and Traces",
+  "yil": 2021,
+  "cites": 13,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Gözlemlenebilirlik temelleri: log, metrik ve iz",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1145/3715005",
+  "baslik": "Failure Diagnosis In Microservice Systems: A Comprehensive Survey And Analysis",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Mikroservis hata teşhisi üzerine kapsamlı derleme.",
+  "alinti": "Failure Diagnosis In Microservice Systems: A Comprehensive Survey And Analysis."
+ },
+ {
+  "id": "doi:10.2139/ssrn.4414871",
+  "baslik": "Data-Driven Root Cause Analysis Via Causal Discovery&amp;nbsp;Using Time-To-Event Data",
+  "yil": 2023,
+  "cites": 21,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Nedensel keşifle kök neden analizi, zamana bağlı olay verisi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/ispa63168.2024.00241",
+  "baslik": "Power Microservices Troubleshooting by Pretrained Language Model with Multi-source Data",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Önceden eğitilmiş dil modeliyle mikroservis sorun giderme",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1016/j.ijinfomgt.2019.01.014",
+  "baslik": "An empirical study on predicting cloud incidents",
+  "yil": 2019,
+  "cites": 20,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bulut olaylarının tahmini üzerine ampirik çalışma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/apsec60848.2023.00032",
+  "baslik": "CP Decomposition And Set Theory Based Root Cause Analysis In Online Service Systems",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "CP ayrıştırma ve küme teorisiyle çevrimiçi servis kök neden",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/cloud53861.2021.00072",
+  "baslik": "Detecting Causal Structure On Cloud Application Microservices Using Granger Causality Models",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Bulut mikroservislerinde Granger nedensel yapi kesfi",
+  "alinti": ""
+ }
+]

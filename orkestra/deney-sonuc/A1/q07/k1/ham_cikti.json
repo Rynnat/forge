@@ -1,0 +1,113 @@
+{
+ "duration_api_ms": 314647,
+ "stop_reason": "end_turn",
+ "session_id": "373b7bff-9fbf-494d-ab41-d276c5f20928",
+ "total_cost_usd": 1.0722559999999999,
+ "usage": {
+  "input_tokens": 24,
+  "cache_creation_input_tokens": 46445,
+  "cache_read_input_tokens": 311958,
+  "output_tokens": 11540,
+  "output_tokens_details": {
+   "thinking_tokens": 3698
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 46445,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 4218,
+    "cache_read_input_tokens": 48127,
+    "cache_creation_input_tokens": 1850,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1850
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 24,
+   "outputTokens": 11540,
+   "cacheReadInputTokens": 311958,
+   "cacheCreationInputTokens": 46445,
+   "webSearchRequests": 0,
+   "costUSD": 0.6648476000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3698,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 544054,
+   "outputTokens": 26006,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 34,
+   "costUSD": 0.4074084000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 7090,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 36,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "I verified all 30 works on the web: arXiv pages, PMLR/NeurIPS/ICLR proceedings, and publisher DOI records. A DOI or arXiv ID is null wherever I couldn't confirm it. The year is the year of the venue or journal version, so a few works have arXiv IDs from an earlier year. The ranking is my own judgement, with the gradient and optimization theory on top. The \"open problems\" part of the question isn't covered: the reply format had no field for it. The 2026 survey that would list them (arXiv 2603.24613) is after the cutoff, and I couldn't read its open-questions section anyway.\n\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"Optimizing persistent homology based functions\", \"yil\": 2021, \"arxiv_id\": \"2010.08356\", \"doi\": null, \"gerekce\": \"Gives a general framework for gradients of persistence-based functions, based on o-minimal/semi-algebraic geometry, and proves stochastic subgradient descent converges; it is the reference theory for topological optimization.\"}, {\"sira\": 2, \"baslik\": \"A Framework for Differential Calculus on Persistence Barcodes\", \"yil\": 2022, \"arxiv_id\": \"1910.00960\", \"doi\": null, \"gerekce\": \"Uses diffeology to define differentiability of maps into and out of barcode space, with a chain rule, which puts gradient descent through barcodes on a rigorous footing.\"}, {\"sira\": 3, \"baslik\": \"A Topology Layer for Machine Learning\", \"yil\": 2020, \"arxiv_id\": \"1905.12200\", \"doi\": null, \"gerekce\": \"Introduced a differentiable persistent-homology layer for level-set and edge filtrations, and made topological regularization and topological priors common in ML.\"}, {\"sira\": 4, \"baslik\": \"Continuation of Point Clouds via Persistence Diagrams\", \"yil\": 2016, \"arxiv_id\": \"1506.03147\", \"doi\": \"10.1016/j.physd.2015.11.011\", \"gerekce\": \"First work to differentiate persistence diagrams with respect to point clouds and optimize toward a target diagram; this is the foundation of the vanilla topological gradient.\"}, {\"sira\": 5, \"baslik\": \"Connectivity-Optimized Representation Learning via Persistent Homology\", \"yil\": 2019, \"arxiv_id\": \"1906.09003\", \"doi\": null, \"gerekce\": \"Proved that a persistence-based connectivity loss is differentiable and used it to shape autoencoder latent spaces, an early milestone in topological regularization of representations.\"}, {\"sira\": 6, \"baslik\": \"Topological Autoencoders\", \"yil\": 2020, \"arxiv_id\": \"1906.00722\", \"doi\": null, \"gerekce\": \"Proposed a differentiable topological loss that keeps the multi-scale connectivity of the input in the latent space; widely used as a baseline for topology-preserving representation learning.\"}, {\"sira\": 7, \"baslik\": \"A Topological Regularizer for Classifiers via Persistent Homology\", \"yil\": 2019, \"arxiv_id\": \"1806.10714\", \"doi\": null, \"gerekce\": \"First to penalize the topological complexity of a classifier's decision boundary with persistent homology, including an efficient gradient computation.\"}, {\"sira\": 8, \"baslik\": \"Topology-Preserving Deep Image Segmentation\", \"yil\": 2019, \"arxiv_id\": \"1906.05404\", \"doi\": null, \"gerekce\": \"Introduced a differentiable persistence-diagram-matching loss that makes segmentations match the Betti numbers of the ground truth; this started topology-aware segmentation.\"}, {\"sira\": 9, \"baslik\": \"A Topological Loss Function for Deep-Learning based Image Segmentation using Persistent Homology\", \"yil\": 2022, \"arxiv_id\": \"1910.01877\", \"doi\": \"10.1109/TPAMI.2020.3013679\", \"gerekce\": \"Adds a persistent-homology loss that encodes known Betti-number priors to deep segmentation networks, and showed it works in medical imaging.\"}, {\"sira\": 10, \"baslik\": \"Topological Function Optimization for Continuous Shape Matching\", \"yil\": 2018, \"arxiv_id\": null, \"doi\": \"10.1111/cgf.13487\", \"gerekce\": \"Early practical method that optimizes functions on shapes with persistence-based objectives, showing that topological optimization can be used in geometry processing.\"}, {\"sira\": 11, \"baslik\": \"Topological Optimization with Big Steps\", \"yil\": 2024, \"arxiv_id\": \"2203.16748\", \"doi\": null, \"gerekce\": \"Uses the cycles and chains from the persistence computation to spread gradients over large parts of the domain, cutting the number of optimization steps by about an order of magnitude and addressing the sparse-gradient problem.\"}, {\"sira\": 12, \"baslik\": \"A Fast and Robust Method for Global Topological Functional Optimization\", \"yil\": 2021, \"arxiv_id\": \"2009.08496\", \"doi\": null, \"gerekce\": \"Replaces unstable, costly topological backpropagation with a faster and more robust scheme that finds better optima.\"}, {\"sira\": 13, \"baslik\": \"A Gradient Sampling Algorithm for Stratified Maps with Applications to Topological Data Analysis\", \"yil\": 2023, \"arxiv_id\": \"2109.00530\", \"doi\": \"10.1007/s10107-023-01931-x\", \"gerekce\": \"Extends gradient sampling to stratifiably smooth functions, giving convergence guarantees for non-smooth persistence objectives.\"}, {\"sira\": 14, \"baslik\": \"Diffeomorphic interpolation for efficient persistence-based topological optimization\", \"yil\": 2024, \"arxiv_id\": \"2405.18820\", \"doi\": null, \"gerekce\": \"Turns sparse topological gradients into smooth diffeomorphic vector fields, which allows large-scale topological optimization with subsampling.\"}, {\"sira\": 15, \"baslik\": \"Topologically Faithful Image Segmentation via Induced Matching of Persistence Barcodes\", \"yil\": 2023, \"arxiv_id\": \"2211.15272\", \"doi\": null, \"gerekce\": \"Introduced the Betti matching loss, which uses induced matchings to compare topological features in a spatially correct way and fixes the spatial errors of earlier topology losses.\"}, {\"sira\": 16, \"baslik\": \"Differentiability and Optimization of Multiparameter Persistent Homology\", \"yil\": 2024, \"arxiv_id\": \"2406.07224\", \"doi\": null, \"gerekce\": \"Extends the differentiability and optimization framework from one-parameter to multiparameter persistence descriptors.\"}, {\"sira\": 17, \"baslik\": \"Topologically Regularized Data Embeddings\", \"yil\": 2022, \"arxiv_id\": \"2110.09193\", \"doi\": null, \"gerekce\": \"Proposes general topological losses that push data embeddings toward a chosen topological model, such as a given number of clusters or loops.\"}, {\"sira\": 18, \"baslik\": \"Learning Topology-Preserving Data Representations\", \"yil\": 2023, \"arxiv_id\": \"2302.00136\", \"doi\": null, \"gerekce\": \"Introduced RTD-AE, which minimizes Representation Topology Divergence to preserve topology in dimensionality reduction, with theoretical guarantees.\"}, {\"sira\": 19, \"baslik\": \"clDice - a Novel Topology-Preserving Loss Function for Tubular Structure Segmentation\", \"yil\": 2021, \"arxiv_id\": \"2003.07311\", \"doi\": null, \"gerekce\": \"A cheap skeleton-based differentiable loss that preserves topology up to homotopy equivalence; a widely used alternative to persistence-based losses.\"}, {\"sira\": 20, \"baslik\": \"Topology-Aware Segmentation Using Discrete Morse Theory\", \"yil\": 2021, \"arxiv_id\": \"2103.09992\", \"doi\": null, \"gerekce\": \"Uses discrete Morse theory to find the global structures that matter for topology and trains on them, making topology-aware segmentation more efficient and spatially accurate.\"}, {\"sira\": 21, \"baslik\": \"Topology-Aware Surface Reconstruction for Point Clouds\", \"yil\": 2020, \"arxiv_id\": \"1811.12543\", \"doi\": \"10.1111/cgf.14079\", \"gerekce\": \"Puts persistence-diagram constraints into surface reconstruction, an example of topological priors used in geometric optimization.\"}, {\"sira\": 22, \"baslik\": \"PersLay: A Neural Network Layer for Persistence Diagrams and New Graph Topological Signatures\", \"yil\": 2020, \"arxiv_id\": \"1904.09378\", \"doi\": null, \"gerekce\": \"A general differentiable layer for persistence diagrams that covers most vectorizations and makes it possible to learn topological features end to end.\"}, {\"sira\": 23, \"baslik\": \"PLLay: Efficient Topological Layer based on Persistence Landscapes\", \"yil\": 2020, \"arxiv_id\": \"2002.02778\", \"doi\": null, \"gerekce\": \"A differentiable topological layer built on persistence landscapes for arbitrary filtrations, with stability guarantees against noise.\"}, {\"sira\": 24, \"baslik\": \"Neural Persistence: A Complexity Measure for Deep Neural Networks Using Algebraic Topology\", \"yil\": 2019, \"arxiv_id\": \"1812.09764\", \"doi\": null, \"gerekce\": \"Applies persistent homology to network weights to measure model complexity, which led to topological analysis and regularization of the models themselves.\"}, {\"sira\": 25, \"baslik\": \"Topological Graph Neural Networks\", \"yil\": 2022, \"arxiv_id\": \"2102.07835\", \"doi\": null, \"gerekce\": \"Introduced TOGL, a layer with learnable filtrations that adds persistent homology to GNNs and is provably more expressive than message passing.\"}, {\"sira\": 26, \"baslik\": \"Large Scale computation of Means and Clusters for Persistence Diagrams using Optimal Transport\", \"yil\": 2018, \"arxiv_id\": \"1805.08331\", \"doi\": null, \"gerekce\": \"Recasts diagram metrics as entropy-regularized optimal transport, giving differentiable, GPU-scalable diagram distances that later topological losses use.\"}, {\"sira\": 27, \"baslik\": \"A Survey of Topological Machine Learning Methods\", \"yil\": 2021, \"arxiv_id\": null, \"doi\": \"10.3389/frai.2021.681108\", \"gerekce\": \"Key survey of topological ML, including topological losses and regularization, which lists the field's open challenges.\"}, {\"sira\": 28, \"baslik\": \"Stability of persistence diagrams\", \"yil\": 2007, \"arxiv_id\": null, \"doi\": \"10.1007/s00454-006-1276-5\", \"gerekce\": \"The bottleneck stability theorem; it underlies the Lipschitz and convergence results for persistence-based losses.\"}, {\"sira\": 29, \"baslik\": \"Topological persistence and simplification\", \"yil\": 2002, \"arxiv_id\": null, \"doi\": \"10.1007/s00454-002-2885-2\", \"gerekce\": \"Founding paper on persistent homology and persistence-based topological simplification, the original notion behind topological optimization.\"}, {\"sira\": 30, \"baslik\": \"Vines and vineyards by updating persistence in linear time\", \"yil\": 2006, \"arxiv_id\": null, \"doi\": \"10.1145/1137856.1137877\", \"gerekce\": \"Updates persistence pairings under simplex transpositions; the big-step methods and stratified methods that track changing orderings during optimization rely on it.\"}]}",
+ "ttft_ms": 25745,
+ "type": "result",
+ "duration_ms": 187877,
+ "uuid": "60659d6b-a755-45d7-a512-b8b1ccf7b2af",
+ "ttft_stream_ms": 1563,
+ "time_to_request_ms": 118,
+ "first_content_frame_ms": 1563,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

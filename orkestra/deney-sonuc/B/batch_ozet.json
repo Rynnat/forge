@@ -1,55 +1,356 @@
 [
  {
-  "id": "q01",
+  "id": "q05",
   "k": 1,
   "durum": "EKSİK",
   "eksik": [
    "openalex",
    "s2_zenginlestirme"
   ],
-  "maliyet_usd": 0.6524,
-  "sure_s": 1151.2,
-  "ozet_token": 3601,
+  "maliyet_usd": 0.633,
+  "sure_s": 988.1,
+  "ozet_token": 3971,
   "n": 30
  },
  {
-  "id": "q02",
+  "id": "q06",
   "k": 1,
   "durum": "EKSİK",
   "eksik": [
    "openalex",
    "s2_zenginlestirme"
   ],
-  "maliyet_usd": 0.6693,
-  "sure_s": 1048.0,
-  "ozet_token": 3762,
+  "maliyet_usd": 0.537,
+  "sure_s": 1221.1,
+  "ozet_token": 3666,
   "n": 30
  },
  {
-  "id": "q03",
+  "id": "q07",
   "k": 1,
   "durum": "EKSİK",
   "eksik": [
    "openalex",
    "s2_zenginlestirme"
   ],
-  "maliyet_usd": 0.6581,
-  "sure_s": 1130.6,
-  "ozet_token": 3757,
+  "maliyet_usd": 0.6288,
+  "sure_s": 1019.7,
+  "ozet_token": 3907,
   "n": 30
  },
  {
-  "id": "q04",
+  "id": "q08",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.6086,
+  "sure_s": 1215.2,
+  "ozet_token": 3604,
+  "n": 30
+ },
+ {
+  "id": "q09",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.5283,
+  "sure_s": 1150.8,
+  "ozet_token": 3532,
+  "n": 30
+ },
+ {
+  "id": "q10",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.6989,
+  "sure_s": 4540.8,
+  "ozet_token": 3840,
+  "n": 30
+ },
+ {
+  "id": "q11",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.6983,
+  "sure_s": 1384.8,
+  "ozet_token": 3719,
+  "n": 30
+ },
+ {
+  "id": "q12",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.6831,
+  "sure_s": 1265.8,
+  "ozet_token": 3896,
+  "n": 30
+ },
+ {
+  "id": "q13",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.6987,
+  "sure_s": 1232.8,
+  "ozet_token": 3984,
+  "n": 30
+ },
+ {
+  "id": "q14",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.6549,
+  "sure_s": 1126.5,
+  "ozet_token": 3920,
+  "n": 30
+ },
+ {
+  "id": "q15",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.753,
+  "sure_s": 1323.4,
+  "ozet_token": 3901,
+  "n": 30
+ },
+ {
+  "id": "q16",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.6468,
+  "sure_s": 1645.6,
+  "ozet_token": 3979,
+  "n": 30
+ },
+ {
+  "id": "q17",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.7729,
+  "sure_s": 1754.0,
+  "ozet_token": 3682,
+  "n": 30
+ },
+ {
+  "id": "q18",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.7137,
+  "sure_s": 1597.4,
+  "ozet_token": 3797,
+  "n": 30
+ },
+ {
+  "id": "q19",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.5969,
+  "sure_s": 1193.2,
+  "ozet_token": 3780,
+  "n": 30
+ },
+ {
+  "id": "q20",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "arxiv",
+   "s2_zenginlestirme",
+   "ozet_arxiv"
+  ],
+  "maliyet_usd": 0.6191,
+  "sure_s": 1000.5,
+  "ozet_token": 3982,
+  "n": 30
+ },
+ {
+  "id": "q21",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.6034,
+  "sure_s": 1523.6,
+  "ozet_token": 3792,
+  "n": 30
+ },
+ {
+  "id": "q22",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.6105,
+  "sure_s": 1134.3,
+  "ozet_token": 3860,
+  "n": 30
+ },
+ {
+  "id": "q23",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.6505,
+  "sure_s": 1934.4,
+  "ozet_token": 3597,
+  "n": 30
+ },
+ {
+  "id": "q24",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "s2_zenginlestirme"
+  ],
+  "maliyet_usd": 0.5656,
+  "sure_s": 1281.1,
+  "ozet_token": 3635,
+  "n": 30
+ },
+ {
+  "id": "q25",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "arxiv",
+   "s2_zenginlestirme",
+   "ozet_arxiv"
+  ],
+  "maliyet_usd": 0.6301,
+  "sure_s": 1552.5,
+  "ozet_token": 3640,
+  "n": 30
+ },
+ {
+  "id": "q26",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "arxiv",
+   "s2_zenginlestirme",
+   "ozet_arxiv"
+  ],
+  "maliyet_usd": 0.6307,
+  "sure_s": 1155.5,
+  "ozet_token": 3879,
+  "n": 30
+ },
+ {
+  "id": "q27",
   "k": 1,
   "durum": "EKSİK",
   "eksik": [
    "openalex",
    "dblp",
-   "s2_zenginlestirme"
+   "arxiv",
+   "s2_zenginlestirme",
+   "ozet_arxiv"
   ],
-  "maliyet_usd": 0.5671,
-  "sure_s": 1022.3,
-  "ozet_token": 3943,
+  "maliyet_usd": 0.6054,
+  "sure_s": 1048.9,
+  "ozet_token": 3537,
+  "n": 30
+ },
+ {
+  "id": "q28",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "arxiv",
+   "s2_zenginlestirme",
+   "ozet_arxiv"
+  ],
+  "maliyet_usd": 0.6114,
+  "sure_s": 1124.6,
+  "ozet_token": 3924,
+  "n": 30
+ },
+ {
+  "id": "q29",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "arxiv",
+   "dblp",
+   "s2_zenginlestirme",
+   "ozet_arxiv"
+  ],
+  "maliyet_usd": 0.6565,
+  "sure_s": 1002.3,
+  "ozet_token": 3960,
+  "n": 30
+ },
+ {
+  "id": "q30",
+  "k": 1,
+  "durum": "EKSİK",
+  "eksik": [
+   "openalex",
+   "arxiv",
+   "s2_zenginlestirme",
+   "ozet_arxiv"
+  ],
+  "maliyet_usd": 0.6004,
+  "sure_s": 1072.7,
+  "ozet_token": 3756,
   "n": 30
  }
 ]

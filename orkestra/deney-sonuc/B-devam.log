@@ -1,0 +1,131 @@
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-25 20:46:42,600 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 5420.63it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-25 21:06:46,021 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Robot öğrenmesine fizik önbilgilerinin (fiziksel yasalar, simetriler, dinamik mo | kesim 2026-08-15 | $0.633 | 988 s | özet ~3971 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3222.15it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-25 21:23:57,599 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] LSM-ağacı tabanlı anahtar-değer depolarında sıkıştırma (compaction) kaynaklı per | kesim 2025-06-13 | $0.537 | 1221 s | özet ~3666 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3155.55it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-25 21:43:53,562 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Kalıcı homoloji (persistent homology) tabanlı topolojik optimizasyon, makine öğr | kesim 2026-02-24 | $0.629 | 1020 s | özet ~3907 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3233.85it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-25 22:01:57,419 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Heterojen 2.5D/3D entegre devrelerde ve paketlerde çok ölçekli ısıl modelleme yö | kesim 2026-02-26 | $0.609 | 1215 s | özet ~3604 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2983.35it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-25 23:13:37,222 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] SMT tabanlı sınırlı model denetimi ile C/C++ yazılımının biçimsel doğrulanması v | kesim 2026-04-25 | $0.528 | 1151 s | özet ~3532 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights:  25%|##5       | 26/103 [00:00<00:00, 231.97it/s]Loading weights:  74%|#######3  | 76/103 [00:00<00:00, 380.39it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 471.33it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-25 23:36:31,983 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Büyük dil modellerinde halüsinasyonların nedenleri, tespiti, azaltılması ve önle | kesim 2026-06-20 | $0.699 | 4541 s | özet ~3840 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1640.16it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 00:00:01,549 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Veri görselleştirmelerinde metin ile görselin birlikte kullanımı (veri anlatımı, | kesim 2026-02-01 | $0.698 | 1385 s | özet ~3719 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2160.92it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 00:20:39,943 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Konuşma ve bağlamdan beden ve yüz hareketi üretimi için kullanılan veri kümeleri | kesim 2025-11-09 | $0.683 | 1266 s | özet ~3896 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3112.82it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 00:41:30,865 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Araç kullanan ve hafızası olan büyük dil modeli ajanlarında veri gizliliği tehdi | kesim 2026-05-25 | $0.699 | 1233 s | özet ~3984 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2844.93it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 01:00:41,644 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Uyarlamalı (adaptive) girdilere karşı dayanıklı eskiz (sketching) ve akan veri ( | kesim 2026-06-15 | $0.655 | 1126 s | özet ~3920 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2815.94it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 01:25:43,870 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Bilişim eğitiminde üretken yapay zeka kullanımının zararları ve istenmeyen sonuç | kesim 2025-09-06 | $0.753 | 1323 s | özet ~3901 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2590.26it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 01:51:16,026 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Katı hal sürücülerinde (SSD) ölçeklenebilirlik, dayanıklılık, gecikme ve güvenli | kesim 2025-06-10 | $0.647 | 1646 s | özet ~3979 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3302.83it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 02:21:20,936 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Çok kipli büyük dil modelleriyle çalışan çoklu robot ağlarında algılama, haberle | kesim 2026-02-28 | $0.773 | 1754 s | özet ~3682 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights:  42%|####1     | 43/103 [00:00<00:00, 390.90it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 865.22it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 02:47:48,537 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] 6G kablosuz ağ yönetiminde (kaynak tahsisi, yörünge tasarımı, optimizasyon) büyü | kesim 2025-08-07 | $0.714 | 1597 s | özet ~3797 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3020.86it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 03:08:05,838 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Grafik ve çizelge anlama için çok kipli büyük dil modelleri üzerine en önemli ça | kesim 2026-01-08 | $0.597 | 1193 s | özet ~3780 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3209.58it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 03:23:42,704 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Dil modellerinin iç aktivasyonlarını yorumlanabilir özelliklere ayıran seyrek ot | kesim 2026-09-14 | $0.619 | 1000 s | özet ~3982 token | funnel dengeli: True
+  EKSİK: openalex, arxiv, s2_zenginlestirme, ozet_arxiv
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1866.30it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 03:48:20,075 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Veri değerleme ve veri paraya çevirme için ölçütler, KPI'lar ve taksonomiler üze | kesim 2025-07-25 | $0.603 | 1524 s | özet ~3792 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3297.71it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 04:18:56,903 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] İçerik dağıtım ağlarında önbellekleme ile birleşen güvenli kodlanmış önbelleklem | kesim 2026-02-11 | $0.611 | 1134 s | özet ~3860 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3344.22it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 04:40:32,586 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Açık radyo erişim ağlarında (O-RAN) makine öğrenmesi kullanımı, mimariler ve zor | kesim 2026-02-27 | $0.650 | 1934 s | özet ~3597 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3349.28it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 05:06:52,868 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Karmaşık bellek erişim örüntülerini tahmin eden akıllı veri önceden getirme (pre | kesim 2026-05-08 | $0.566 | 1281 s | özet ~3635 token | funnel dengeli: True
+  EKSİK: openalex, s2_zenginlestirme
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2416.97it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 05:28:39,602 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Büyük dil modellerinin eğitim verisinde belirli bir metnin yer alıp almadığını t | kesim 2026-04-21 | $0.630 | 1552 s | özet ~3640 token | funnel dengeli: True
+  EKSİK: openalex, arxiv, s2_zenginlestirme, ozet_arxiv
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3250.05it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 05:50:05,140 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Tıbbi görüntü analizinde (segmentasyon, sınıflandırma, rapor üretimi) temel mode | kesim 2025-09-19 | $0.631 | 1156 s | özet ~3879 token | funnel dengeli: True
+  EKSİK: openalex, arxiv, s2_zenginlestirme, ozet_arxiv
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3371.23it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 06:08:30,373 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Bulut hizmetlerinde olay yönetimi için kök neden analizi (hata konumlandırma, ne | kesim 2025-09-22 | $0.605 | 1049 s | özet ~3537 token | funnel dengeli: True
+  EKSİK: openalex, dblp, arxiv, s2_zenginlestirme, ozet_arxiv
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3304.29it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 06:22:41,540 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Makine öğrenmesi hatlarında farklı saldırganların birlikte hareket ederek güvenl | kesim 2026-05-08 | $0.611 | 1125 s | özet ~3924 token | funnel dengeli: True
+  EKSİK: openalex, arxiv, s2_zenginlestirme, ozet_arxiv
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3321.03it/s]
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+2026-10-26 06:42:56,351 huggingface_hub.hf_api Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+[EKSİK] Okul öncesi ve erken çocukluk eğitiminde artırılmış/sanal gerçeklik kullanımının | kesim 2026-01-13 | $0.656 | 1002 s | özet ~3960 token | funnel dengeli: True
+  EKSİK: openalex, arxiv, dblp, s2_zenginlestirme, ozet_arxiv
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3394.28it/s]
+[EKSİK] Uzaktan kumandalı dört bacaklı robotların iletişim ve kontrol altyapısına yöneli | kesim 2026-01-26 | $0.600 | 1073 s | özet ~3756 token | funnel dengeli: True
+  EKSİK: openalex, arxiv, s2_zenginlestirme, ozet_arxiv
+batch bitti: 26 koşu, 0 hata → deney-sonuc\B\batch_ozet.json

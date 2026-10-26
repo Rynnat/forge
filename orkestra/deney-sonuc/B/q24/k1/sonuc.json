@@ -1,0 +1,977 @@
+{
+ "run_id": "20261026-043122-04b193",
+ "soru": "Karmaşık bellek erişim örüntülerini tahmin eden akıllı veri önceden getirme (prefetching) teknikleri üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-05-08",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.5656,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.10301999999999999,
+   "in": 1216,
+   "out": 4665,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.16103469,
+   "in": 396926,
+   "out": 27623,
+   "web_search": 11
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.16169160000000002,
+   "in": 192063,
+   "out": 246574,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.139856,
+   "in": 9953,
+   "out": 3012,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 42.2,
+  "toplama:openalex": 0.0,
+  "web_isci": 49.8,
+  "toplama:crossref": 163.0,
+  "toplama:dblp": 198.2,
+  "toplama:arxiv": 465.4,
+  "toplama": 465.4,
+  "tekil+kesim_1": 42.3,
+  "atif": 236.8,
+  "okuyucu": 454.8,
+  "damitma": 10.1,
+  "sef_final": 29.4,
+  "toplam": 1281.1
+ },
+ "ozet_token_tahmini": 3635,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Donanım ve yazılım tabanlı veri önceden getirmenin temelleri nelerdir? Klasik stride, stream, Markov korelasyon ve derleyici tabanlı yöntemler hangileridir?",
+    "sorgular": [
+     "\"hardware data prefetching\" stride",
+     "\"stream buffers\" cache prefetch",
+     "\"Markov prefetcher\" correlation",
+     "\"compiler-based prefetching\" software prefetch",
+     "\"global history buffer\" prefetching"
+    ],
+    "yeterli": "Stride/stream, Markov/korelasyon, GHB ve derleyici tabanlı prefetching'in öncü makaleleri ile en az bir kapsamlı derleme bulunmuşsa yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "Düzensiz (irregular) ve karmaşık erişim örüntüleri için zamansal (temporal) ve adres korelasyonlu prefetcher'lar nasıl çalışır? Metaveri depolama problemi nasıl ele alınmıştır?",
+    "sorgular": [
+     "\"temporal prefetching\" irregular accesses",
+     "\"irregular stream buffer\" prefetch",
+     "\"address correlation\" prefetching metadata",
+     "\"temporal memory streaming\"",
+     "on-chip metadata \"temporal prefetcher\""
+    ],
+    "yeterli": "STMS, ISB, MISB, Domino, Triage ve ardılları gibi ana zamansal prefetcher'lar ile metaveri yönetimi çalışmaları kapsanmışsa yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Uzamsal (spatial) ve delta/offset tabanlı prefetcher'lar, bölgesel erişim örüntülerini nasıl yakalar?",
+    "sorgular": [
+     "\"spatial memory streaming\"",
+     "\"best-offset prefetcher\"",
+     "\"signature path prefetcher\" lookahead",
+     "delta correlation \"spatial prefetching\"",
+     "\"instruction pointer\" classifier prefetching"
+    ],
+    "yeterli": "SMS, BOP, SPP, Bingo, IPCP ve Berti gibi şampiyona düzeyindeki uzamsal ve delta prefetcher'lar bulunmuşsa yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Makine öğrenmesi tabanlı akıllı prefetching yöntemleri nelerdir? LSTM, transformer, pekiştirmeli öğrenme ve perceptron tabanlı yaklaşımlar bu kapsamdadır.",
+    "sorgular": [
+     "\"learning memory access patterns\" neural",
+     "\"machine learning\" prefetching LSTM",
+     "\"reinforcement learning\" hardware prefetcher",
+     "transformer attention \"memory prefetching\"",
+     "\"perceptron\" prefetch filtering"
+    ],
+    "yeterli": "Hashemi 2018, Voyager, Pythia, TransFetch, PPF ile 2023-2026 dönemindeki model sıkıştırma ve pratik ML prefetcher çalışmaları kapsanmışsa yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Prefetching yöntemleri hangi kıyaslama setleri, simülatörler ve izlerle (trace) değerlendirilir? Doğruluk, kapsama, zamanlılık ve bant genişliği metrikleri nasıl ölçülür?",
+    "sorgular": [
+     "\"Data Prefetching Championship\" DPC",
+     "ChampSim prefetcher evaluation",
+     "SPEC CPU2017 GAP prefetching traces",
+     "prefetch accuracy coverage timeliness",
+     "\"memory access traces\" benchmark machine learning"
+    ],
+    "yeterli": "DPC şampiyonaları, ChampSim, ML-DPC ve yaygın iş yükü setleri ile metrikleri tanımlayan çalışmalar belirlenmişse yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Prefetch agresifliğini, kirliliğini (cache pollution) ve bant genişliğini kontrol eden geri beslemeli ve uyarlamalı yöntemler nelerdir?",
+    "sorgular": [
+     "\"feedback directed prefetching\"",
+     "prefetch throttling bandwidth",
+     "\"cache pollution\" prefetch filtering",
+     "multicore prefetcher coordination",
+     "off-chip load prediction prefetch"
+    ],
+    "yeterli": "FDP, koordineli throttling, prefetch filtreleme ve Hermes benzeri off-chip tahmin çalışmaları kapsanmışsa yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Komşu alanlarda (graf analitiği, GPU, depolama/sayfa prefetching, runahead execution, uzak/ayrık bellek) karmaşık erişimler için hangi prefetching yöntemleri kullanılır?",
+    "sorgular": [
+     "\"graph prefetching\" data structure knowledge",
+     "\"runahead execution\" prefetch",
+     "GPU \"data prefetching\" irregular",
+     "\"page prefetching\" disaggregated memory learning",
+     "\"content-directed prefetching\" pointers"
+    ],
+    "yeterli": "Graf ve pointer yoğun iş yükleri, runahead, GPU ve ayrık bellek/OS seviyesi prefetching için temsilî çalışmalar bulunmuşsa yeterlidir."
+   },
+   {
+    "id": "S8",
+    "soru": "Açık problemler nelerdir? Donanım maliyeti ve gecikme altında ML modellerinin uygulanabilirliği, genellenebilirlik, güvenlik (yan kanal) ve çok çekirdekli etkileşimler bu kapsamda incelenmelidir.",
+    "sorgular": [
+     "practical \"ML-based prefetcher\" hardware overhead",
+     "prefetcher generalization unseen workloads",
+     "prefetcher \"side channel\" security",
+     "\"prefetching\" challenges future directions survey",
+     "model compression distillation prefetching"
+    ],
+    "yeterli": "Açık problemleri açıkça tartışan güncel derlemeler ve ML prefetcher pratikliği ile güvenlik üzerine yapılmış 2022-2026 çalışmaları bulunmuşsa yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Improving direct-mapped cache performance by the addition of a small fully-associative cache and prefetch buffers",
+    "yil": 1990
+   },
+   {
+    "baslik": "Design and evaluation of a compiler algorithm for prefetching",
+    "yil": 1992
+   },
+   {
+    "baslik": "Effective hardware-based data prefetching for high-performance processors",
+    "yil": 1995
+   },
+   {
+    "baslik": "Prefetching using Markov predictors",
+    "yil": 1997
+   },
+   {
+    "baslik": "A stateless, content-directed data prefetching mechanism",
+    "yil": 2002
+   },
+   {
+    "baslik": "Runahead execution: An alternative to very large instruction windows for out-of-order processors",
+    "yil": 2003
+   },
+   {
+    "baslik": "Data cache prefetching using a global history buffer",
+    "yil": 2004
+   },
+   {
+    "baslik": "Spatial memory streaming",
+    "yil": 2006
+   },
+   {
+    "baslik": "Feedback directed prefetching: Improving the performance and bandwidth-efficiency of hardware prefetchers",
+    "yil": 2007
+   },
+   {
+    "baslik": "Practical off-chip meta-data for temporal memory streaming",
+    "yil": 2009
+   },
+   {
+    "baslik": "Linearizing irregular memory accesses for improved correlated prefetching",
+    "yil": 2013
+   },
+   {
+    "baslik": "Best-offset hardware prefetching",
+    "yil": 2016
+   },
+   {
+    "baslik": "Path confidence based lookahead prefetching",
+    "yil": 2016
+   },
+   {
+    "baslik": "Graph prefetching using data structure knowledge",
+    "yil": 2016
+   },
+   {
+    "baslik": "A survey of recent prefetching techniques for processor caches",
+    "yil": 2016
+   },
+   {
+    "baslik": "Domino temporal data prefetcher",
+    "yil": 2018
+   },
+   {
+    "baslik": "Learning memory access patterns",
+    "yil": 2018
+   },
+   {
+    "baslik": "Perceptron-based prefetch filtering",
+    "yil": 2019
+   },
+   {
+    "baslik": "Bingo spatial data prefetcher",
+    "yil": 2019
+   },
+   {
+    "baslik": "Efficient metadata management for irregular data prefetching",
+    "yil": 2019
+   },
+   {
+    "baslik": "Temporal prefetching without the off-chip metadata",
+    "yil": 2019
+   },
+   {
+    "baslik": "Classifying memory access patterns for prefetching",
+    "yil": 2020
+   },
+   {
+    "baslik": "A hierarchical neural model of data prefetching",
+    "yil": 2021
+   },
+   {
+    "baslik": "Pythia: A customizable hardware prefetching framework using online reinforcement learning",
+    "yil": 2021
+   },
+   {
+    "baslik": "Berti: an accurate local-delta data prefetcher",
+    "yil": 2022
+   }
+  ],
+  "web_odaklari": [
+   "awesome hardware prefetching papers github",
+   "machine learning memory prefetching reading list",
+   "data prefetching championship papers list"
+  ]
+ },
+ "tohumlar": [
+  "doi:10.1109/hpca.2007.346185",
+  "doi:10.1109/hpca.2004.10030",
+  "doi:10.1145/3373376.3378498",
+  "doi:10.1109/tc.2007.250620",
+  "doi:10.1145/605432.605427",
+  "doi:10.1145/2925426.2926254",
+  "doi:10.1109/hpca.2016.7446087",
+  "doi:10.1109/isca.1990.134547",
+  "doi:10.1145/264107.264207",
+  "doi:10.1145/2540708.2540730",
+  "doi:10.1109/12.381947",
+  "doi:10.1109/isca.2006.38"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1109/12.381947",
+   "arxiv_id": null,
+   "doi": "10.1109/12.381947",
+   "baslik": "Effective hardware-based data prefetching for high-performance processors",
+   "yil": 1995,
+   "tarih": "1995-05",
+   "gerekce": "Yüksek performanslı işlemciler için donanım tabanlı veri önceden getirmenin klasik temelini ve stride temelli yöntemleri sunar (S1).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 370,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1145/143365.143488",
+   "arxiv_id": null,
+   "doi": "10.1145/143365.143488",
+   "baslik": "Design and evaluation of a compiler algorithm for prefetching",
+   "yil": 1992,
+   "tarih": "1992-09",
+   "gerekce": "Derleyici tabanlı prefetching algoritmasının tasarım ve değerlendirmesini yapan, yazılım prefetching'inin klasik temel çalışmasıdır (S1).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 448,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1145/264107.264207",
+   "arxiv_id": null,
+   "doi": "10.1145/264107.264207",
+   "baslik": "Prefetching using Markov predictors",
+   "yil": 1997,
+   "tarih": "1997-05",
+   "gerekce": "Markov tahmincileriyle prefetching yapar; adres korelasyonlu prefetcher ailesinin klasik çıkış noktasıdır (S1, S2).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 228,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1109/mm.2005.6",
+   "arxiv_id": null,
+   "doi": "10.1109/mm.2005.6",
+   "baslik": "Data Cache Prefetching Using a Global History Buffer",
+   "yil": 2005,
+   "tarih": "2005-01",
+   "gerekce": "Global history buffer önerir; adres korelasyonlu zamansal prefetching için yaygın biçimde kullanılan temel yapıdır (S2).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 226,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1109/hpca.2007.346185",
+   "arxiv_id": null,
+   "doi": "10.1109/hpca.2007.346185",
+   "baslik": "Feedback Directed Prefetching: Improving the Performance and Bandwidth-Efficiency of Hardware Prefetchers",
+   "yil": 2007,
+   "tarih": "2007",
+   "gerekce": "Geri beslemeli prefetching ile donanım prefetcher'larının agresifliğini ve bant genişliği verimliliğini kontrol eden temel çalışmadır (S6).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "dblp",
+    "sef"
+   ],
+   "atif": 269,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:1803.02329",
+   "arxiv_id": "1803.02329",
+   "doi": null,
+   "baslik": "Learning Memory Access Patterns",
+   "yil": 2018,
+   "tarih": "2018-03-06",
+   "gerekce": "Prefetching stratejilerini n-gram modelleriyle ilişkilendirir ve tekrarlayan sinir ağlarını doğrudan ikame olarak önerir; ML prefetching'in merkezi çalışmasıdır (S4).",
+   "gerekce_kokeni": "sef",
+   "alinti": "We relate contemporary prefetching strategies to n-gram models in natural language processing, and show how recurrent neural networks can serve as a drop-in replacement",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2109.12021",
+   "arxiv_id": "2109.12021",
+   "doi": "10.1145/3466752.3480114",
+   "baslik": "Pythia: A Customizable Hardware Prefetching Framework Using Online Reinforcement Learning",
+   "yil": 2021,
+   "tarih": "2021-09-24",
+   "gerekce": "Çevrimiçi pekiştirmeli öğrenmeyle özelleştirilebilir prefetcher sunar; önceki prefetcher'ların farklı iş yükü ve sistemlerde kazanç kaybettiğini gösterir (S4, S8).",
+   "gerekce_kokeni": "sef",
+   "alinti": "We show that prior prefetchers often lose their performance benefit over a wide range of workloads and system configurations due to their inherent inability",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "sef",
+    "web"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.1109/micro.2016.7783763",
+   "arxiv_id": null,
+   "doi": "10.1109/micro.2016.7783763",
+   "baslik": "Path confidence based lookahead prefetching",
+   "yil": 2016,
+   "tarih": "2016-10",
+   "gerekce": "Delta tabanlı SPP; yol güven skoruyla lookahead prefetching yapan etkili bir yöntem ailesini temsil eder (S3).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 147,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.1109/hpca.2016.7446087",
+   "arxiv_id": null,
+   "doi": "10.1109/hpca.2016.7446087",
+   "baslik": "Best-offset hardware prefetching",
+   "yil": 2016,
+   "tarih": "2016-03",
+   "gerekce": "En iyi offset'i seçen delta/offset tabanlı donanım prefetcher'ıdır; offset ailesinin temel çalışmasıdır (S3).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 186,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1145/1150019.1136508",
+   "arxiv_id": null,
+   "doi": "10.1145/1150019.1136508",
+   "baslik": "Spatial Memory Streaming",
+   "yil": 2006,
+   "tarih": "2006-05",
+   "gerekce": "Kod korelasyonlu uzamsal erişim örüntülerini tanıyıp blokları talep kaçırmalarından önce önbelleğe aktaran uzamsal prefetching'in temel çalışmasıdır (S3).",
+   "gerekce_kokeni": "sef",
+   "alinti": "we propose Spatial Memory Streaming, a practical on-chip hardware technique that identifies codecorrelated spatial access patterns and streams predicted blocks to the primary cache ahead of demand misses",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "dblp",
+    "sef",
+    "web"
+   ],
+   "atif": 164,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1145/1555815.1555766",
+   "arxiv_id": null,
+   "doi": "10.1145/1555815.1555766",
+   "baslik": "Spatio-temporal memory streaming",
+   "yil": 2009,
+   "tarih": "2009-06-15",
+   "gerekce": "Bölge erişimlerinin zamansal sırasını kaydedip oynatır ve bölge içi uzamsal ilişkileri kullanarak zamansal ve uzamsal streaming'i birleştirir (S2, S3).",
+   "gerekce_kokeni": "sef",
+   "alinti": "STeMS records and replays the temporal sequence of region accesses and uses spatial relationships within each region",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 79,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1109/hpca.2018.00021",
+   "arxiv_id": null,
+   "doi": "10.1109/hpca.2018.00021",
+   "baslik": "Domino Temporal Data Prefetcher",
+   "yil": 2018,
+   "tarih": "2018-02",
+   "gerekce": "Adres geçmişi tabanlı korelasyon kullanan önemli bir zamansal veri prefetcher'ıdır (S2).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 87,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 13,
+   "id": "doi:10.1145/2540708.2540730",
+   "arxiv_id": null,
+   "doi": "10.1145/2540708.2540730",
+   "baslik": "Linearizing irregular memory accesses for improved correlated prefetching",
+   "yil": 2013,
+   "tarih": "2013-12-07",
+   "gerekce": "Düzensiz bellek erişimlerini doğrusallaştırarak korelasyonlu prefetching'i iyileştirir; düzensiz örüntüler için kilit yaklaşımdır (S2).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 118,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1109/hpca.2009.4798239",
+   "arxiv_id": null,
+   "doi": "10.1109/hpca.2009.4798239",
+   "baslik": "Practical off-chip meta-data for temporal memory streaming",
+   "yil": 2009,
+   "tarih": "2009-02",
+   "gerekce": "Zamansal bellek akışı için pratik off-chip metaveri depolama önerir; metaveri depolama problemine doğrudan yanıt verir (S2).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 73,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2406.10627",
+   "arxiv_id": "2406.10627",
+   "doi": "10.1109/isca59077.2024.00090",
+   "baslik": "Triangel: A High-Performance, Accurate, Timely On-Chip Temporal Prefetcher",
+   "yil": 2024,
+   "tarih": "2024-06-15",
+   "gerekce": "Zamansal prefetching'in ticari tasarımlarda uygulanabilir hale geldiğini belirten, doğru ve zamanında çalışan on-chip zamansal prefetcher'dır (S2).",
+   "gerekce_kokeni": "sef",
+   "alinti": "Temporal prefetching, where correlated pairs of addresses are logged and replayed on repeat accesses, has recently become viable in commercial designs.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 23,
+   "rel": 3,
+   "tohum_yakinligi": 7
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.1145/3445814.3446752",
+   "arxiv_id": null,
+   "doi": "10.1145/3445814.3446752",
+   "baslik": "A hierarchical neural model of data prefetching",
+   "yil": 2021,
+   "tarih": "2021-04-17",
+   "gerekce": "Veri prefetching için hiyerarşik sinir ağı modeli önerir; güncel ve sık atıf alan bir ML yaklaşımıdır (S4).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 95,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1145/3307650.3322207",
+   "arxiv_id": null,
+   "doi": "10.1145/3307650.3322207",
+   "baslik": "Perceptron-based prefetch filtering",
+   "yil": 2019,
+   "tarih": "2019-06-22",
+   "gerekce": "Perceptron tabanlı prefetch filtreleme sunar; öğrenme tabanlı yaklaşım ile isabetsiz prefetch'leri ayıklar (S4, S6).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 85,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:1804.00478",
+   "arxiv_id": "1804.00478",
+   "doi": "10.1145/3345000",
+   "baslik": "A Neural Network Prefetcher for Arbitrary Memory Access Patterns",
+   "yil": 2018,
+   "tarih": "2018-03-19",
+   "gerekce": "Program ve makine bağlam bilgisini erişim örüntüleriyle ilişkilendiren, çevrimiçi eğitimle uyum sağlayan sinir ağı prefetcher'ıdır (S4).",
+   "gerekce_kokeni": "sef",
+   "alinti": "the proposed NN prefetcher correlates program and machine contextual information with memory accesses patterns, using online-training to identify and dynamically adapt to unique access patterns",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 45,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2205.02269",
+   "arxiv_id": "2205.02269",
+   "doi": "10.1145/3528416.3530236",
+   "baslik": "Fine-Grained Address Segmentation for Attention-Based Variable-Degree Prefetching",
+   "yil": 2022,
+   "tarih": "2022-05-01",
+   "gerekce": "İnce taneli adres bölütleme ve delta bitmap'leriyle attention tabanlı, değişken dereceli prefetching önerir; transformer ailesini temsil eder (S4).",
+   "gerekce_kokeni": "sef",
+   "alinti": "To reduce vocabulary size, we use fine-grained address segmentation as input. To predict unordered sets of future addresses, we use delta bitmaps for multiple outputs",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 26,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1109/hpca.2019.00053",
+   "arxiv_id": null,
+   "doi": "10.1109/hpca.2019.00053",
+   "baslik": "Bingo Spatial Data Prefetcher",
+   "yil": 2019,
+   "tarih": "2019-02",
+   "gerekce": "Bölgesel örüntü tabanlı Bingo uzamsal veri prefetcher'ı, uzamsal prefetching'in güçlü bir güncel temsilcisidir (S3).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 134,
+   "rel": 3,
+   "tohum_yakinligi": 6
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1109/micro56248.2022.00072",
+   "arxiv_id": null,
+   "doi": "10.1109/micro56248.2022.00072",
+   "baslik": "Berti: an Accurate Local-Delta Data Prefetcher",
+   "yil": 2022,
+   "tarih": "2022-10",
+   "gerekce": "Berti, yerel delta tabanlı doğru veri prefetching sunan güncel bir delta prefetcher ilerlemesidir (S3).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 83,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:1910.03075",
+   "arxiv_id": "1910.03075",
+   "doi": "10.1145/3352460.3358325",
+   "baslik": "DSPatch: Dual Spatial Pattern Prefetcher",
+   "yil": 2019,
+   "tarih": "2019-10-07",
+   "gerekce": "Mevcut bant genişliğine göre kapsamayı artıran veya doğruluk için kısan uyarlamalı uzamsal prefetcher'dır (S3, S6).",
+   "gerekce_kokeni": "sef",
+   "alinti": "Prefetchers need the ability to dynamically adapt to available bandwidth, boosting prefetch count and prefetch coverage when headroom exists and throttling down to achieve high accuracy",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref"
+   ],
+   "atif": 70,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1145/2907071",
+   "arxiv_id": null,
+   "doi": "10.1145/2907071",
+   "baslik": "A Survey of Recent Prefetching Techniques for Processor Caches",
+   "yil": 2016,
+   "tarih": "2016-08-02",
+   "gerekce": "İşlemci önbellekleri için güncel prefetching tekniklerinin uygulanmasını ve etkinliğini inceleyen kapsamlı bir derlemedir (S1, S8).",
+   "gerekce_kokeni": "sef",
+   "alinti": "In this article, we survey several recent techniques that aim to improve the implementation and effectiveness of prefetching.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 86,
+   "rel": 3,
+   "tohum_yakinligi": 7
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1145/285930.285958",
+   "arxiv_id": null,
+   "doi": "10.1145/285930.285958",
+   "baslik": "Retrospective: improving direct-mapped cache performance by the addition of a small fully-associative cache and prefetch buffers",
+   "yil": 1990,
+   "tarih": "1990-05",
+   "gerekce": "Küçük tam ilişkili önbellek ve prefetch tamponlarıyla erken donanım prefetching/stream tamponu önerilerinin klasik kökenidir (S1).",
+   "gerekce_kokeni": "sef",
+   "alinti": "Small miss caches of 2 to 5 entries are shown to be very effective in removing mapping conflict misses in first-level direct-mapped caches.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 423,
+   "rel": 2,
+   "tohum_yakinligi": 7
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1145/237090.237190",
+   "arxiv_id": null,
+   "doi": "10.1145/237090.237190",
+   "baslik": "Compiler-based prefetching for recursive data structures",
+   "yil": 1996,
+   "tarih": "1996-09",
+   "gerekce": "Özyinelemeli veri yapıları içeren işaretçi tabanlı uygulamalar için derleyici tabanlı prefetching'i inceler (S1, S2).",
+   "gerekce_kokeni": "sef",
+   "alinti": "This paper investigates compiler-based prefetching for pointer-based applications---in particular, those containing recursive data structures",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 220,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 26,
+   "id": "doi:10.1109/icpp.2003.1240591",
+   "arxiv_id": null,
+   "doi": "10.1109/icpp.2003.1240591",
+   "baslik": "A hardware-based cache pollution filtering mechanism for aggressive prefetches",
+   "yil": 2003,
+   "tarih": "2003",
+   "gerekce": "Agresif prefetch'lerin neden olduğu önbellek kirliliğini donanım tabanlı filtrelemeyle azaltır (S6).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 41,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.1145/3090635",
+   "arxiv_id": null,
+   "doi": "10.1145/3090635",
+   "baslik": "Band-Pass Prefetching",
+   "yil": 2017,
+   "tarih": "2017-06-28",
+   "gerekce": "Çok çekirdekli sistemlerde bir uygulamanın prefetcher'ının paylaşılan kaynaklarda diğerlerine girişim yapması sorununu ele alır (S6, S8).",
+   "gerekce_kokeni": "sef",
+   "alinti": "In multi-core systems, an application’s prefetcher can interfere with the memory requests of other applications using the shared resources",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 12,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.1145/2925426.2926254",
+   "arxiv_id": null,
+   "doi": "10.1145/2925426.2926254",
+   "baslik": "Graph Prefetching Using Data Structure Knowledge",
+   "yil": 2016,
+   "tarih": "2016-06",
+   "gerekce": "Graf analitiğinde veri yapısı bilgisini kullanarak prefetching yapar; komşu alan düzensiz erişimleri için önemlidir (S7).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 68,
+   "rel": 2,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1145/605397.605427",
+   "arxiv_id": null,
+   "doi": "10.1145/605397.605427",
+   "baslik": "A stateless, content-directed data prefetching mechanism",
+   "yil": 2002,
+   "tarih": "2002-10",
+   "gerekce": "İşletim sistemi bellek tahsisinden yararlanan, işaretçi yoğun uygulamalar için durumsuz içerik yönlendirmeli prefetching önerir (S2, S7).",
+   "gerekce_kokeni": "sef",
+   "alinti": "This paper proposes Content-Directed Data Prefetching, a data prefetching architecture that exploits the memory allocation used by operating systems and runtime systems to improve the performance of pointer-intensive applications",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 88,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1109/ispass.2018.00028",
+   "arxiv_id": null,
+   "doi": "10.1109/ispass.2018.00028",
+   "baslik": "A Workload Characterization of the SPEC CPU2017 Benchmark Suite",
+   "yil": 2018,
+   "tarih": "2018-04",
+   "gerekce": "Prefetching değerlendirmelerinde kullanılan SPEC CPU2017 kıyaslama setinin iş yükü karakterizasyonunu sunar (S5).",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 87,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

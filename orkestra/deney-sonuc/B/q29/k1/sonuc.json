@@ -1,0 +1,927 @@
+{
+ "run_id": "20261026-061404-5f0cd9",
+ "soru": "Okul öncesi ve erken çocukluk eğitiminde artırılmış/sanal gerçeklik kullanımının pedagojik, sağlık, etik ve gizlilik boyutları üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-01-13",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "arxiv",
+  "dblp",
+  "s2_zenginlestirme",
+  "ozet_arxiv"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6565,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.106072,
+   "in": 1235,
+   "out": 4810,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.16854015,
+   "in": 490633,
+   "out": 43913,
+   "web_search": 10
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.23977730000000003,
+   "in": 228059,
+   "out": 388347,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.142124,
+   "in": 11879,
+   "out": 2355,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 50.4,
+  "toplama:openalex": 0.0,
+  "toplama:crossref": 63.7,
+  "web_isci": 95.4,
+  "toplama:arxiv": 259.8,
+  "toplama:dblp": 300.0,
+  "toplama": 423.6,
+  "tekil+kesim_1": 42.4,
+  "atif": 188.0,
+  "okuyucu": 259.9,
+  "damitma": 15.7,
+  "sef_final": 22.4,
+  "toplam": 1002.3
+ },
+ "ozet_token_tahmini": 3960,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Okul öncesi ve erken çocukluk eğitiminde artırılmış gerçeklik (AR) ve sanal gerçeklik (VR) kullanımının temelleri nelerdir? Bu alandaki sistematik derlemeler ve meta-analizler hangi genel eğilimleri ortaya koyuyor?",
+    "sorgular": [
+     "augmented reality \"early childhood education\" systematic review",
+     "virtual reality preschool children review",
+     "\"augmented reality\" kindergarten meta-analysis",
+     "immersive technology \"young children\" education trends",
+     "AR VR \"early years\" learning literature review"
+    ],
+    "yeterli": "AR/VR'nin erken çocukluk eğitimindeki kullanımını haritalayan en az 4-5 derleme veya meta-analiz ve genel eğitim alanından 2-3 temel derleme bulunduğunda kapsam yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "AR/VR'nin küçük çocuklarda öğrenme çıktılarına, dil ve okuryazarlığa, matematiğe, fen kavramlarına ve motivasyona etkisi nedir? Bu etkiyi açıklayan pedagojik ve kuramsal çerçeveler nelerdir?",
+    "sorgular": [
+     "\"augmented reality\" picture book children reading",
+     "AR preschool vocabulary learning experiment",
+     "\"virtual reality\" children learning outcomes embodied",
+     "immersive VR presence learning \"cognitive load\"",
+     "augmented reality toys early childhood learning"
+    ],
+    "yeterli": "Okul öncesi yaş grubunda yapılmış çok sayıda deneysel veya yarı-deneysel çalışma ile bilişsel yük ve bedenlenmiş öğrenme kuramlarına dayanan temel çalışmalar kapsandığında yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "VR/AR'nin küçük çocuklar üzerindeki gelişimsel ve psikolojik etkileri nelerdir? Bu başlık; yürütücü işlevleri, sahte anıları, gerçek ile sanal arasındaki ayrımı ve sosyal davranışı kapsar.",
+    "sorgular": [
+     "\"virtual reality\" children \"inhibitory control\"",
+     "children \"false memories\" virtual reality",
+     "VR child development cognition effects",
+     "young children distinguishing virtual real",
+     "\"virtual reality\" children social behavior avatar"
+    ],
+    "yeterli": "Bailenson grubunun çocuk-VR çalışmaları ve gelişim psikolojisi perspektifinden yapılmış en az birkaç ampirik çalışma bulunduğunda yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Çocuklarda VR başlık (HMD) kullanımının sağlık boyutları nelerdir? Bu başlık; siber hastalığı, görme ve okülomotor etkileri, postüral dengeyi ve ekran süresi kaygılarını kapsar.",
+    "sorgular": [
+     "cybersickness children \"head-mounted display\"",
+     "\"virtual reality\" headset young children visuomotor",
+     "VR children vision accommodation vergence",
+     "\"simulator sickness\" pediatric virtual reality",
+     "screen time immersive media young children health"
+    ],
+    "yeterli": "Çocuk örneklemleriyle yapılmış oftalmolojik ve fizyolojik çalışmalar ile siber hastalık üzerine temel derlemeler kapsandığında yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Çocuklarla AR/VR kullanımının etik boyutları nelerdir? Bu başlık; rıza ve onay süreçlerini, gerçekçilik ve manipülasyonu, öğretmen ve ebeveynin rolünü ve sınıfa entegrasyon sorunlarını kapsar.",
+    "sorgular": [
+     "ethics \"virtual reality\" children",
+     "\"immersive virtual reality\" classrooms ethical lessons",
+     "VR code of ethical conduct",
+     "ethics of realism virtual augmented reality",
+     "children VR risks systematic review ethical concerns"
+    ],
+    "yeterli": "Genel VR etiği üzerine temel metinler ile özellikle çocuklar ve okullar bağlamında etik riskleri ele alan çalışmalar kapsandığında yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "AR/VR sistemlerinde çocuk verisi ve gizlilik konusunda neler biliniyor? Bu başlık; hareket verisiyle kimlik tespitini, göz izlemeyi, biyometrik verileri ve COPPA/GDPR gibi düzenlemeleri kapsar.",
+    "sorgular": [
+     "VR motion data user identification privacy",
+     "\"extended reality\" privacy security survey",
+     "eye tracking privacy virtual reality",
+     "children privacy augmented reality apps COPPA",
+     "XR biometric data GDPR minors"
+    ],
+    "yeterli": "Hareket ve göz izleme verisiyle kimlik tespitini gösteren temel güvenlik çalışmaları, XR gizlilik derlemeleri ve çocuk verisi düzenlemesini ele alan en az bir çalışma kapsandığında yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Bu alanda açık problemler ve komşu alanlar nelerdir? Bu başlık; uzun vadeli etkileri, yaşa uygun tasarım ilkelerini, özel gereksinimli çocukları (ör. otizm), öğretmen hazırbulunuşluğunu ve üretken yapay zekâ ile metaverse entegrasyonunu kapsar.",
+    "sorgular": [
+     "augmented reality autism children intervention",
+     "age-appropriate design immersive technology children",
+     "teachers perceptions augmented reality preschool",
+     "metaverse early childhood education",
+     "child-computer interaction AR design guidelines"
+    ],
+    "yeterli": "Araştırma gündemi belirleyen çalışmalar ile özel eğitim ve öğretmen perspektifi alt alanlarından temsilci çalışmalar kapsandığında yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Educational magic toys developed with augmented reality technology for early childhood education",
+    "yil": 2016
+   },
+   {
+    "baslik": "Considering virtual reality in children's lives",
+    "yil": 2017
+   },
+   {
+    "baslik": "Virtual reality's effect on children's inhibitory control, social compliance, and sharing",
+    "yil": 2019
+   },
+   {
+    "baslik": "Virtually true: Children's acquisition of false memories in virtual reality",
+    "yil": 2009
+   },
+   {
+    "baslik": "Augmented reality in education: a meta-review and cross-media analysis",
+    "yil": 2014
+   },
+   {
+    "baslik": "Advantages and challenges associated with augmented reality for education: A systematic review of the literature",
+    "yil": 2017
+   },
+   {
+    "baslik": "Augmented reality trends in education: a systematic review of research and applications",
+    "yil": 2014
+   },
+   {
+    "baslik": "Meta-analysis of the impact of Augmented Reality on students' learning gains",
+    "yil": 2019
+   },
+   {
+    "baslik": "A systematic review of immersive virtual reality applications for higher education: Design elements, lessons learned, and research agenda",
+    "yil": 2020
+   },
+   {
+    "baslik": "Adding immersive virtual reality to a science lab simulation causes more presence but less learning",
+    "yil": 2019
+   },
+   {
+    "baslik": "Embedding immersive virtual reality in classrooms: Ethical, organisational and educational lessons in bridging research and practice",
+    "yil": 2019
+   },
+   {
+    "baslik": "The ethics of realism in virtual and augmented reality",
+    "yil": 2020
+   },
+   {
+    "baslik": "Real virtuality: A code of ethical conduct. Recommendations for good scientific practice and the consumers of VR-technology",
+    "yil": 2016
+   },
+   {
+    "baslik": "Personal identifiability of user tracking data during observation of 360-degree VR video",
+    "yil": 2020
+   },
+   {
+    "baslik": "Unique identification of 50,000+ virtual reality users from head & hand motion data",
+    "yil": 2023
+   },
+   {
+    "baslik": "Review on cybersickness in applications and visual displays",
+    "yil": 2016
+   },
+   {
+    "baslik": "Effects of immersive virtual reality headset viewing on young children: visuomotor function, postural stability, and motion sickness",
+    "yil": 2020
+   },
+   {
+    "baslik": "Learning from the real and the virtual worlds: Educational use of augmented reality in early childhood",
+    "yil": 2019
+   },
+   {
+    "baslik": "Children and parents' reading of an augmented reality picture book: Analyses of behavioral patterns",
+    "yil": 2014
+   },
+   {
+    "baslik": "Could virtual reality applications pose real risks to children and adolescents? A systematic review of ethical issues and concerns",
+    "yil": 2022
+   },
+   {
+    "baslik": "The promise and pitfalls of learning in immersive virtual reality",
+    "yil": 2023
+   },
+   {
+    "baslik": "The current trends of augmented reality in early childhood education",
+    "yil": 2018
+   }
+  ],
+  "web_odaklari": [
+   "augmented reality early childhood education systematic review list",
+   "virtual reality children ethics privacy reading list",
+   "awesome XR privacy security papers github"
+  ]
+ },
+ "tohumlar": [
+  "doi:10.1007/s10055-021-00563-w",
+  "doi:10.1016/j.ijcci.2018.10.002",
+  "doi:10.5121/ijma.2018.10605",
+  "doi:10.1016/j.ajo.2019.07.020",
+  "doi:10.1016/j.appdev.2019.101052",
+  "doi:10.1016/j.edurev.2016.11.002",
+  "doi:10.71410/esapub.itej.2021.2",
+  "doi:10.1177/1836939119885311",
+  "doi:10.1016/j.compedu.2019.103778",
+  "doi:10.1016/j.chb.2015.07.040",
+  "doi:10.1016/j.ijcci.2019.06.002",
+  "doi:10.1080/15213260903287267"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "doi:10.1007/s10055-021-00563-w",
+   "arxiv_id": null,
+   "doi": "10.1007/s10055-021-00563-w",
+   "baslik": "Could virtual reality applications pose real risks to children and adolescents? A systematic review of ethical issues and concerns",
+   "yil": 2021,
+   "tarih": "2021-08-03",
+   "gerekce": "Çocuk ve ergenlerde VR uygulamalarının etik sorun ve kaygılarını sistematik olarak derleyen, yüksek atıflı temel çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Could virtual reality applications pose real risks to children and adolescents? A systematic review of ethical issues and concerns.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 206,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1016/j.jaapos.2018.07.011",
+   "arxiv_id": null,
+   "doi": "10.1016/j.jaapos.2018.07.011",
+   "baslik": "Effects of immersive virtual reality viewing on young children: visuomotor function, postural stability and visually induced motion sickness",
+   "yil": 2018,
+   "tarih": "2018-08",
+   "gerekce": "Küçük çocuklarda sürükleyici VR'nin görsel-motor işlev, postüral denge ve görsel kaynaklı hareket hastalığı üzerindeki etkilerini doğrudan inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Effects of immersive virtual reality viewing on young children: visuomotor function, postural stability and visually induced motion sickness.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 175,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1080/15213260903287267",
+   "arxiv_id": null,
+   "doi": "10.1080/15213260903287267",
+   "baslik": "Virtually True: Children's Acquisition of False Memories in Virtual Reality",
+   "yil": 2009,
+   "tarih": "2009-11-23",
+   "gerekce": "Çocukların VR ortamında sahte anı edinimini gösteren öncü çalışma; gerçek-sanal ayrımı sorusunun temel kaynağı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Virtually True: Children's Acquisition of False Memories in Virtual Reality.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 124,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1016/j.appdev.2019.101052",
+   "arxiv_id": null,
+   "doi": "10.1016/j.appdev.2019.101052",
+   "baslik": "Virtual reality's effect on children's inhibitory control, social compliance, and sharing",
+   "yil": 2019,
+   "tarih": "2019-07",
+   "gerekce": "VR'nin çocuklarda inhibitör kontrol, sosyal uyum ve paylaşma davranışına etkisini inceleyerek gelişimsel etkiler boyutunu kapsar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Virtual reality's effect on children's inhibitory control, social compliance, and sharing.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 59,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 5,
+   "id": "doi:10.1016/j.ijcci.2018.10.002",
+   "arxiv_id": null,
+   "doi": "10.1016/j.ijcci.2018.10.002",
+   "baslik": "Embedding immersive virtual reality in classrooms: Ethical, organisational and educational lessons in bridging research and practice",
+   "yil": 2019,
+   "tarih": "2019-03",
+   "gerekce": "Sürükleyici VR'nin sınıflara yerleştirilmesinde etik, örgütsel ve eğitsel dersleri sunarak araştırma-uygulama köprüsünü ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Embedding immersive virtual reality in classrooms: Ethical, organisational and educational lessons in bridging research and practice.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 160,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1109/vr.2017.7892226",
+   "arxiv_id": null,
+   "doi": "10.1109/vr.2017.7892226",
+   "baslik": "Asking ethical questions in research using immersive virtual and augmented reality technologies with children and youth",
+   "yil": 2017,
+   "tarih": "2017",
+   "gerekce": "Çocuk ve gençlerle sürükleyici VR/AR araştırmalarında sorulması gereken etik soruları doğrudan tartışır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Asking ethical questions in research using immersive virtual and augmented reality technologies with children and youth.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 44,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 7,
+   "id": "doi:10.1145/3628516.3655804",
+   "arxiv_id": null,
+   "doi": "10.1145/3628516.3655804",
+   "baslik": "Is Your Family Ready for VR? Ethical Concerns and Considerations in Children's VR Usage",
+   "yil": 2024,
+   "tarih": "2024-06-17",
+   "gerekce": "Çocukların VR kullanımındaki etik kaygıları aile hazırbulunuşluğu perspektifinden ele alan güncel, doğrudan ilgili çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 31,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 8,
+   "id": "doi:10.3389/frvir.2025.1547198",
+   "arxiv_id": null,
+   "doi": "10.3389/frvir.2025.1547198",
+   "baslik": "Effects of virtual reality use in children aged 10 to 12 years",
+   "yil": 2025,
+   "tarih": "2025-07-02",
+   "gerekce": "Beş günlük çalışmada ılımlı günlük VR kullanımının çocukların görsel, fiziksel ve bilişsel işlevlerini olumsuz etkilemediğini raporlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Results from this 5-day study demonstrate that moderate and daily VR usage did not negatively affect children’s visual, physical, and cognitive",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 4,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 9,
+   "id": "doi:10.1016/j.ijcci.2019.06.002",
+   "arxiv_id": null,
+   "doi": "10.1016/j.ijcci.2019.06.002",
+   "baslik": "Learning from the real and the virtual worlds: Educational use of augmented reality in early childhood",
+   "yil": 2019,
+   "tarih": "2019-09",
+   "gerekce": "Erken çocuklukta AR'nin eğitsel kullanımını gerçek ve sanal dünyalardan öğrenme çerçevesinde ele alan temel çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Learning from the real and the virtual worlds: Educational use of augmented reality in early childhood.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 63,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1177/1836939119885311",
+   "arxiv_id": null,
+   "doi": "10.1177/1836939119885311",
+   "baslik": "Augmented reality as a form of digital technology in early childhood education",
+   "yil": 2019,
+   "tarih": "2019-11-20",
+   "gerekce": "Okul öncesinde AR'nin öğretim pratiği ve çocuk öğrenme çıktılarına katkısı hakkında az şey bilindiğini vurgulayarak açık boşluğu belirtir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "However, little is known about the contribution of AR technology to teaching practice and child learning outcomes in the preschool years.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 39,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 11,
+   "id": "doi:10.1016/j.compedu.2013.12.003",
+   "arxiv_id": null,
+   "doi": "10.1016/j.compedu.2013.12.003",
+   "baslik": "Children and parents' reading of an augmented reality picture book: Analyses of behavioral patterns and cognitive attainment",
+   "yil": 2014,
+   "tarih": "2014-03",
+   "gerekce": "AR resimli kitabın çocuk-ebeveyn okumasında davranış örüntüleri ve bilişsel kazanımları analiz eden yüksek atıflı okuryazarlık çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Children and parents' reading of an augmented reality picture book: Analyses of behavioral patterns and cognitive attainment.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 134,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1111/bjet.12228",
+   "arxiv_id": null,
+   "doi": "10.1111/bjet.12228",
+   "baslik": "The interaction of child–parent shared reading with an augmented reality ( <scp>AR</scp> ) picture book and parents' conceptions of <scp>AR</scp> learning",
+   "yil": 2014,
+   "tarih": "2014-11-11",
+   "gerekce": "Ebeveynlerin AR öğrenmeyi kâğıt kitap okumayı engelleyici gördüğünü ve süreci domine ettiğini göstererek ebeveyn rolünü aydınlatır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "mostly considered AR learning as obstructing paper book reading and seemed to continually dominate the reading process to prevent the excessive use of mobile devices by their children.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 87,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 13,
+   "id": "doi:10.1016/j.edurev.2016.11.002",
+   "arxiv_id": null,
+   "doi": "10.1016/j.edurev.2016.11.002",
+   "baslik": "Advantages and challenges associated with augmented reality for education: A systematic review of the literature",
+   "yil": 2017,
+   "tarih": "2017-02",
+   "gerekce": "Eğitimde AR'nin avantaj ve zorluklarını derleyen çok yüksek atıflı sistematik derleme; alanın genel eğilimleri için temel.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Advantages and challenges associated with augmented reality for education: A systematic review of the literature.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 1710,
+   "rel": 2,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 14,
+   "id": "doi:10.1007/s00779-013-0747-y",
+   "arxiv_id": null,
+   "doi": "10.1007/s00779-013-0747-y",
+   "baslik": "Augmented reality in education: a meta-review and cross-media analysis",
+   "yil": 2014,
+   "tarih": "2014-01-14",
+   "gerekce": "Eğitimde AR üzerine meta-derleme ve medyalar arası analiz sunan etkili temel kaynak.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Augmented reality in education: a meta-review and cross-media analysis.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 696,
+   "rel": 2,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 15,
+   "id": "doi:10.18421/tem141-58",
+   "arxiv_id": null,
+   "doi": "10.18421/tem141-58",
+   "baslik": "Research Publication on Virtual Reality in Early Childhood Education: A Systematic Review",
+   "yil": 2025,
+   "tarih": "2025-02-27",
+   "gerekce": "Erken çocukluk eğitiminde VR kullanımının artan eğilimini ve öğrenme kalitesine katkılarını ortaya koyan güncel sistematik derleme.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The findings reveal a growing trend in the utilization of VR in early childhood education, highlighting its significant benefits for enhancing learning quality by employing more engaging and enjoyable methods.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "web"
+   ],
+   "atif": 2,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 16,
+   "id": "doi:10.3991/ijim.v18i22.50337",
+   "arxiv_id": null,
+   "doi": "10.3991/ijim.v18i22.50337",
+   "baslik": "Augmented Reality in Early Childhood Education: Trends, Practices, and Insights from a Literature Review",
+   "yil": 2024,
+   "tarih": "2024-11-22",
+   "gerekce": "Erken çocukluk eğitiminde AR'deki eğilim, uygulama ve içgörüleri literatür taramasıyla özetler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "In recent years, the use of augmented reality (AR) in early childhood education (ECE) has grown significantly.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "web"
+   ],
+   "atif": 9,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 17,
+   "id": "doi:10.1080/15391523.2023.2186988",
+   "arxiv_id": null,
+   "doi": "10.1080/15391523.2023.2186988",
+   "baslik": "An examination of the research studies on augmented reality use in preschool education: a bibliometric mapping analysis",
+   "yil": 2023,
+   "tarih": "2023-03-07",
+   "gerekce": "Okul öncesinde AR kullanımı araştırmalarının bibliyometrik haritalamasını sunarak alanın yapısını gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "An examination of the research studies on augmented reality use in preschool education: a bibliometric mapping analysis",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "web"
+   ],
+   "atif": 13,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 18,
+   "id": "doi:10.1504/ijtel.2025.10070960",
+   "arxiv_id": null,
+   "doi": "10.1504/ijtel.2025.10070960",
+   "baslik": "Integrating augmented reality in preschool education: a systematic review",
+   "yil": 2025,
+   "tarih": "2025",
+   "gerekce": "Okul öncesi eğitimde AR entegrasyonuna dair güncel sistematik derleme; S1 için doğrudan ilgili.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 0,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 19,
+   "id": "doi:10.3390/app10082948",
+   "arxiv_id": null,
+   "doi": "10.3390/app10082948",
+   "baslik": "Semi-Immersive Virtual Reality as a Tool to Improve Cognitive and Social Abilities in Preschool Children",
+   "yil": 2020,
+   "tarih": "2020-04-24",
+   "gerekce": "Anaokulunda 25 çocukla yarı-sürükleyici VR sisteminin bilişsel ve sosyal becerilere etkisini inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This report concerns a study of the impact of a semi-immersive VR system in a group of 25 children in a kindergarten context.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 43,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1016/j.chb.2022.107546",
+   "arxiv_id": null,
+   "doi": "10.1016/j.chb.2022.107546",
+   "baslik": "From virtual to prosocial reality: The effects of prosocial virtual reality games on preschool Children's prosocial tendencies in real life environments",
+   "yil": 2023,
+   "tarih": "2023-02",
+   "gerekce": "Prososyal VR oyunlarının okul öncesi çocukların gerçek yaşamdaki prososyal eğilimlerine etkisini inceleyerek sosyal davranış boyutunu kapsar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 33,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1080/17482798.2019.1684964",
+   "arxiv_id": null,
+   "doi": "10.1080/17482798.2019.1684964",
+   "baslik": "Is Seeing Believing? The Effects Of Virtual Reality On Young Children’S Understanding Of Possibility And Impossibility",
+   "yil": 2019,
+   "tarih": "2019-11-01",
+   "gerekce": "VR'nin küçük çocukların olasılık ve imkânsızlık anlayışına etkisini sorgulayarak gerçek-sanal ayrımı konusuna katkı verir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif"
+   ],
+   "atif": null,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1016/j.chb.2015.07.040",
+   "arxiv_id": null,
+   "doi": "10.1016/j.chb.2015.07.040",
+   "baslik": "Educational magic toys developed with augmented reality technology for early childhood education",
+   "yil": 2016,
+   "tarih": "2016-01",
+   "gerekce": "Erken çocukluk eğitimi için AR ile geliştirilmiş eğitsel oyuncakları sunan, yüksek atıflı tasarım çalışması.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Educational magic toys developed with augmented reality technology for early childhood education.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef"
+   ],
+   "atif": 232,
+   "rel": 2,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.25304/rlt.v29.2539",
+   "arxiv_id": null,
+   "doi": "10.25304/rlt.v29.2539",
+   "baslik": "Introducing augmented reality in early childhood literacy learning",
+   "yil": 2021,
+   "tarih": "2021-02-11",
+   "gerekce": "Erken çocukluk okuryazarlık öğrenimine AR'nin dahil edilmesini ele alarak dil ve okuryazarlık boyutunu kapsar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Introducing augmented reality in early childhood literacy learning.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 57,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.15516/cje.v20i1.2626",
+   "arxiv_id": null,
+   "doi": "10.15516/cje.v20i1.2626",
+   "baslik": "Preschool Teachers’ Opinions on the Use of Augmented Reality Application in Preschool Science Education / Mišljenja nastavnika predškolskog odgoja o upotrebi aplikacije proširene stvarnosti u predškolskom obrazovanju u području prirodnih znanosti",
+   "yil": 2018,
+   "tarih": "2018-01-30",
+   "gerekce": "Okul öncesi fen eğitiminde AR kullanımına dair öğretmen görüşlerini inceleyen, bu dönemde ilk olduğunu belirten çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This research is characterised by the fact that it is the first study to use the augmented reality technology for science education in the preschool period.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 25,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "doi:10.1038/s41598-020-74486-y",
+   "arxiv_id": null,
+   "doi": "10.1038/s41598-020-74486-y",
+   "baslik": "Personal identifiability of user tracking data during observation of 360-degree VR video",
+   "yil": 2020,
+   "tarih": "2020-10-15",
+   "gerekce": "511 katılımcıda beş dakikadan az takip verisiyle %95 doğru kimlik tespiti göstererek VR hareket verisi gizlilik riskini kanıtlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Out of a pool of 511 participants, the system identifies 95% of users correctly when trained on less than 5 min of tracking data per person.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "sef"
+   ],
+   "atif": 198,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 26,
+   "id": "doi:10.1109/vr59515.2025.00046",
+   "arxiv_id": null,
+   "doi": "10.1109/vr59515.2025.00046",
+   "baslik": "Exploring the Uncoordinated Privacy Protections of Eye Tracking and VR Motion Data for Unauthorized User Identification",
+   "yil": 2025,
+   "tarih": "2025-03-08",
+   "gerekce": "Göz izleme ve VR hareket verisinin izinsiz kullanıcı tanımlamada koordinasyonsuz gizlilik korumalarını inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Exploring the Uncoordinated Privacy Protections of Eye Tracking and VR Motion Data for Unauthorized User Identification",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 6,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 27,
+   "id": "doi:10.2139/ssrn.4780358",
+   "arxiv_id": null,
+   "doi": "10.2139/ssrn.4780358",
+   "baslik": "Privacy and Security in Extended Reality: Exploring the Risks of External Biometric Data Collection",
+   "yil": 2024,
+   "tarih": "2024",
+   "gerekce": "XR cihazlarının göz izleme, yüz ifadesi ve vücut hareketi gibi biyometrik veri toplama risklerini inceler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We explore the types of biometric data collected by XR devices, including eye-tracking, facial expressions, and body movements, facilitated by various sensors.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 4,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.1089/cyber.2019.0206",
+   "arxiv_id": null,
+   "doi": "10.1089/cyber.2019.0206",
+   "baslik": "Using Virtual Reality Head-Mounted Displays in Schools with Autistic Children: Views, Experiences, and Future Directions",
+   "yil": 2020,
+   "tarih": "2020-01-01",
+   "gerekce": "Otistik çocukların okullarda VR başlık kullanımına ilişkin görüş ve deneyimlerini ve gelecek yönelimleri ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Second, how do children on the autism spectrum report the physical experience, enjoyment, and potential of VR HMDs in their classrooms?",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 112,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1109/access.2020.2986608",
+   "arxiv_id": null,
+   "doi": "10.1109/access.2020.2986608",
+   "baslik": "Augmented Reality for Learning of Children and Adolescents With Autism Spectrum Disorder (ASD): A Systematic Review",
+   "yil": 2020,
+   "tarih": "2020",
+   "gerekce": "Otizm spektrum bozukluğu olan çocuk ve ergenlerin öğreniminde AR kullanımını sistematik olarak derler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Augmented Reality for Learning of Children and Adolescents With Autism Spectrum Disorder (ASD): A Systematic Review.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref",
+    "web"
+   ],
+   "atif": 123,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1007/s10643-025-01942-7",
+   "arxiv_id": null,
+   "doi": "10.1007/s10643-025-01942-7",
+   "baslik": "Investigating Virtual Reality as a Resource to Enhance Early Childhood Initial Teacher Education: A Scoping Review",
+   "yil": 2025,
+   "tarih": "2025-07-11",
+   "gerekce": "Erken çocukluk öğretmen eğitiminde VR potansiyeline odaklanan araştırma eksikliğini belirterek öğretmen hazırbulunuşluğu açık problemini işaret eder.",
+   "gerekce_kokeni": "sef",
+   "alinti": "there is a lack of research that focuses on the potential of VR to support learning within early childhood ITE courses",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "crossref"
+   ],
+   "atif": 3,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  }
+ ]
+}

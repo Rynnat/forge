@@ -1,0 +1,1136 @@
+[
+ {
+  "id": "arXiv:2009.06000",
+  "baslik": "Key Superposition Simultaneously Achieves Security and Privacy in Cache-Aided Linear Function Retrieval",
+  "yil": 2020,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Güvenlik ve talep gizliliği, doğrusal fonksiyon erişimi, PDA'dan türetim",
+  "alinti": "This procedure uses the superposition of security keys and privacy keys in both the cache placement and transmitted signal to guarantee content security and demand privacy, respectively"
+ },
+ {
+  "id": "arXiv:2101.07127",
+  "baslik": "Fundamental Limits of Demand-Private Coded Caching",
+  "yil": 2021,
+  "cites": 16,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Talep gizliliği sınırları ve şemaları; temel sonuç",
+  "alinti": "We first show that a demand-private scheme for $N$ files and $K$ users can be obtained from a non-private scheme"
+ },
+ {
+  "id": "arXiv:1510.05064",
+  "baslik": "On the Placement Delivery Array Design for Centralized Coded Caching Scheme",
+  "yil": 2015,
+  "cites": 228,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "PDA tasarım problemi; merkezi yerleştirme, kesin ana teori",
+  "alinti": "the placement delivery array (PDA) design problem is firstly formulated to characterize the placement issue and the delivery issue with a single array"
+ },
+ {
+  "id": "arXiv:1908.10821",
+  "baslik": "On Coded Caching with Private Demands",
+  "yil": 2019,
+  "cites": 60,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "MAN şemasında talep sızıntısı; özel talep modeli",
+  "alinti": "each user can obtain the information about the demands of other users, i.e., the MAN coded caching scheme is inherently prone to tampering and spying"
+ },
+ {
+  "id": "arXiv:1301.5848",
+  "baslik": "Decentralized Coded Caching Attains Order-Optimal Memory-Rate Tradeoff",
+  "yil": 2013,
+  "cites": 490,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Merkezi olmayan yerleştirme; MAN'ın temel genişlemesi",
+  "alinti": "In this paper, we propose an efficient caching scheme, in which the content placement is performed"
+ },
+ {
+  "id": "arXiv:1609.07817",
+  "baslik": "The Exact Rate-Memory Tradeoff for Caching with Uncoded Prefetching",
+  "yil": 2016,
+  "cites": 285,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kesin hız-bellek ödünleşimi, düz yerleştirme; S1 çekirdeği",
+  "alinti": "We provide the exact characterization of the rate-memory tradeoff for this problem"
+ },
+ {
+  "id": "doi:10.1109/mcom.2016.7537173",
+  "baslik": "Coding for caching: fundamental limits and practical challenges",
+  "yil": 2016,
+  "cites": 71,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Sadece başlık; kodlanmış önbellekleme temel sınırları ve pratik",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2008.03642",
+  "baslik": "Fundamental Limits of Caching for Demand Privacy against Colluding Users",
+  "yil": 2020,
+  "cites": 42,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "İşbirlikçi kullanıcılara karşı talep gizliliği; SFR/LFR sınırları",
+  "alinti": "This work investigates the problem of demand privacy against colluding users for shared-link coded caching systems"
+ },
+ {
+  "id": "arXiv:1209.5807",
+  "baslik": "Fundamental Limits of Caching",
+  "yil": 2012,
+  "cites": 1498,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Küresel önbellek kazancı; temel bilgi-kuramsal çerçeve",
+  "alinti": "we introduce and exploit a second, global, caching gain not utilized by conventional caching schemes"
+ },
+ {
+  "id": "arXiv:2001.04810",
+  "baslik": "An Index Coding Approach to Caching with Uncoded Cache Placement",
+  "yil": 2020,
+  "cites": 111,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Düz yerleştirme altında index coding ile temel sınırlar",
+  "alinti": "This paper investigates the same model under the constraint that content is placed uncoded within the caches"
+ },
+ {
+  "id": "arXiv:1909.10471",
+  "baslik": "Subpacketization in Coded Caching with Demand Privacy",
+  "yil": 2019,
+  "cites": 21,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Talep gizliliği ve alt paketleme; açık problem ilgisi",
+  "alinti": "we consider coded caching schemes that assure privacy for user demands with a particular focus on reducing subpacketization"
+ },
+ {
+  "id": "arXiv:1312.3961",
+  "baslik": "Fundamental Limits of Caching with Secure Delivery",
+  "yil": 2013,
+  "cites": 135,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Güvenli teslimat; dinleyiciye sızıntı minimizasyonu",
+  "alinti": "we consider the secure caching problem with the additional goal of minimizing information leakage to an external wiretapper"
+ },
+ {
+  "id": "arXiv:1709.01056",
+  "baslik": "Fundamental Limits of Cache-Aided Private Information Retrieval with Unknown and Uncoded Prefetching",
+  "yil": 2017,
+  "cites": 90,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Önbellekli PIR; bilinmeyen düz ön getirme",
+  "alinti": "We consider the problem of private information retrieval (PIR) from $N$ non-colluding and replicated databases when the user is equipped with a cache"
+ },
+ {
+  "id": "arXiv:1109.4179",
+  "baslik": "FemtoCaching: Wireless Video Content Delivery through Distributed Caching Helpers",
+  "yil": 2011,
+  "cites": 1069,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Femto/kablosuz yardımcı önbellekleme; güvenlik yok",
+  "alinti": "we propose a system where helpers with low-rate backhaul but high storage capacity cache popular video files"
+ },
+ {
+  "id": "arXiv:2007.07475",
+  "baslik": "Coded Caching with Demand Privacy: Constructions for Lower Subpacketization and Generalizations",
+  "yil": 2020,
+  "cites": 23,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Talep gizliliği için düşük alt paketlemeli PDA yapıları",
+  "alinti": "In this work, we propose several constructions of efficient PDAs through lifting, where a base PDA is expanded by replacing each entry by another PDA"
+ },
+ {
+  "id": "arXiv:1903.02408",
+  "baslik": "On the Optimality of Ali-Niesen Decentralized Coded Caching Scheme With and Without Error Correction",
+  "yil": 2019,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Merkezi olmayan şemanın optimalliği; hata düzeltme",
+  "alinti": "first it is shown that the decentralized coded caching scheme of Ali and Niesen is optimal"
+ },
+ {
+  "id": "arXiv:1911.06995",
+  "baslik": "Demand-Private Coded Caching and the Exact Trade-off for N=K=2",
+  "yil": 2019,
+  "cites": 16,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "N=K=2 için kesin talep gizliliği ödünleşimi",
+  "alinti": "In this paper, we consider the coded caching problem under the constraint that the demands of the other users remain information theoretically secret from each user"
+ },
+ {
+  "id": "arXiv:2201.11539",
+  "baslik": "Coded Caching with Private Demands and Caches",
+  "yil": 2022,
+  "cites": 6,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Önbellek ve talepleri gizleyen, iki sunucu PIR tabanlı şema",
+  "alinti": "Recently it was shown that the seminal Maddah-Ali and Niesen (MAN) coded caching scheme leaks the demand information of each user to the others"
+ },
+ {
+  "id": "arXiv:1605.01348",
+  "baslik": "Fundamental limits of secretive coded caching",
+  "yil": 2016,
+  "cites": 48,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Gizli kodlanmış önbellekleme; tanım ve order-optimal şema",
+  "alinti": "we introduce the problem of secretive coded caching where we impose the additional constraint that a user should not be able to learn anything"
+ },
+ {
+  "id": "doi:10.1109/tcomm.2018.2834364",
+  "baslik": "Fundamental limits of caching: Improved rate-memory trade-off with coded prefetching",
+  "yil": 2018,
+  "cites": 43,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Sadece başlık; kodlanmış ön getirme ile hız-bellek",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1706.07035",
+  "baslik": "The Capacity of Cache Aided Private Information Retrieval",
+  "yil": 2017,
+  "cites": 127,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Önbellek destekli PIR kapasitesinin tam karakterizasyonu.",
+  "alinti": "The main contribution of this work is the exact characterization of the capacity of cache aided PIR"
+ },
+ {
+  "id": "arXiv:1405.5336",
+  "baslik": "Fundamental Limits of Caching in Wireless D2D Networks",
+  "yil": 2014,
+  "cites": 490,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Kablosuz D2D önbellekleme; güvenlik/gizlilik yok",
+  "alinti": "We propose a caching strategy based on deterministic assignment of subpackets of the library files"
+ },
+ {
+  "id": "arXiv:2107.00399",
+  "baslik": "Secretive Coded Caching from PDAs",
+  "yil": 2021,
+  "cites": 9,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "PDA tabanlı gizli önbellekleme; düşük alt paketleme",
+  "alinti": "we propose a secretive coded caching scheme with low subpacketization using PDA, for users with dedicated caches in the centralized setting"
+ },
+ {
+  "id": "arXiv:1704.07901",
+  "baslik": "Fundamental Limits of Coded Caching: From Uncoded Prefetching to Coded Prefetching",
+  "yil": 2017,
+  "cites": 35,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Düz ve kodlanmış ön getirme arasında bağlantı; S1 teorisi",
+  "alinti": "In this work, we provide a connection between the uncoded prefetching scheme proposed by Maddah Ali and Niesen"
+ },
+ {
+  "id": "arXiv:1602.09134",
+  "baslik": "The Capacity of Private Information Retrieval",
+  "yil": 2016,
+  "cites": 398,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "PIR kapasitesi temel sonucu; önbellekli PIR'a temel",
+  "alinti": "The information theoretic capacity of PIR is the maximum number of bits of desired information that can be privately retrieved per bit of downloaded information"
+ },
+ {
+  "id": "arXiv:1403.7007",
+  "baslik": "Hierarchical Coded Caching",
+  "yil": 2014,
+  "cites": 221,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "İki katmanlı hiyerarşik ağ; kodlanmış çok noktaya yayın",
+  "alinti": "The first approach provides coded multicasting opportunities within each layer; the second approach provides coded multicasting opportunities across multiple layers"
+ },
+ {
+  "id": "arXiv:1511.02256",
+  "baslik": "On the Optimality of Uncoded Cache Placement",
+  "yil": 2015,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Düz yerleştirmenin optimalliği; index coding bağlantısı",
+  "alinti": "In this paper, by noticing that when the cache contents and the demands are fixed, the caching problem can be seen as an index coding problem"
+ },
+ {
+  "id": "doi:10.1109/lcomm.2022.3184765",
+  "baslik": "Coded Caching with File and Demand Privacy",
+  "yil": 2022,
+  "cites": 4,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; dosya ve talep gizliliği, merkezi konu.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2006.16557",
+  "baslik": "On the Fundamental Limits of Coded Caching Systems with Restricted Demand Types",
+  "yil": 2019,
+  "cites": 9,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "Kısıtlı talep tipleriyle MAN temel sınırları",
+  "alinti": "One of the reasons for this difficulty is that the original coded caching setting allows all possible multiple demand types during delivery"
+ },
+ {
+  "id": "arXiv:1702.04834",
+  "baslik": "Improved Converses and Gap Results for Coded Caching",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 2,
+  "not": "MAN alt sınırları ve boşluk sonuçları; temel teori",
+  "alinti": "Improved lower bounds on the average and the worst-case rate-memory tradeoffs for the Maddah-Ali&Niesen coded caching scenario are presented"
+ },
+ {
+  "id": "arXiv:2012.03165",
+  "baslik": "Security and Privacy for Mobile Edge Caching: Challenges and Solutions",
+  "yil": 2020,
+  "cites": 67,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Survey of security and privacy in mobile edge caching.",
+  "alinti": "Then, we examine the potential cyber threats, including cache poisoning attacks, cache pollution attacks, cache side-channel attacks, and cache deception attacks"
+ },
+ {
+  "id": "arXiv:2107.00361",
+  "baslik": "Coded Caching with Shared Caches from Generalized Placement Delivery Arrays",
+  "yil": 2021,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Paylaşımlı önbellek, PDA tabanlı düşük alt paketleme.",
+  "alinti": "Using the PDA framework, we propose a procedure to obtain new coded caching schemes for shared caches with lower sub-packetization requirements."
+ },
+ {
+  "id": "doi:10.1109/itw46852.2021.9457647",
+  "baslik": "Improved Memory-Rate Trade-off for Caching with Demand Privacy",
+  "yil": 2021,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; talep gizliliğinde bellek-hız ödünleşimi.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2101.08745",
+  "baslik": "Optimal Demand Private Coded Caching for Users with Small Buffers",
+  "yil": 2021,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Talep gizli kodlanmış önbellek; küçük tampon, tam ödünleşim.",
+  "alinti": "By memory sharing this characterizes the exact rate-memory trade-off for the demand private coded caching scheme for cache memory"
+ },
+ {
+  "id": "arXiv:2107.00226",
+  "baslik": "Multi-Access Coded Caching with Demand Privacy",
+  "yil": 2021,
+  "cites": 13,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Çoklu erişim ağında talep gizliliği, anahtar tabanlı şema.",
+  "alinti": "The additional constraint imposed is that one user should not get any information regarding the demands of the remaining users."
+ },
+ {
+  "id": "arXiv:1712.04930",
+  "baslik": "Combination Networks with or without Secrecy Constraints: The Impact of Caching Relays",
+  "yil": 2017,
+  "cites": 33,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Kombinasyon ağı; gizlilik kısıtı ve önbellekli röleler.",
+  "alinti": "This paper considers a two-hop network architecture known as a combination network, where a layer of relay nodes connects a server to a set of end users."
+ },
+ {
+  "id": "doi:10.1109/tit.2019.2955384",
+  "baslik": "Fundamental Limits of Coded Caching With Multiple Antennas, Shared Caches and Uncoded Prefetching",
+  "yil": 2020,
+  "cites": 87,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; çok antenli paylaşımlı önbellek sınırları.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2001.03577",
+  "baslik": "On the Optimal Load-Memory Tradeoff of Cache-Aided Scalar Linear Function Retrieval",
+  "yil": 2020,
+  "cites": 28,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "MAN genelleştirmesi; doğrusal fonksiyon erişimi, temel kuram.",
+  "alinti": "This paper generalizes the MAN problem so as to allow users to request scalar linear functions of the files."
+ },
+ {
+  "id": "doi:10.1109/jsac.2022.3142360",
+  "baslik": "Robust, Private and Secure Cache-Aided Scalar Linear Function Retrieval From Coded Servers",
+  "yil": 2022,
+  "cites": 9,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; secure, private, cache-aided function retrieval.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1604.03888",
+  "baslik": "Fundamental Limits of Coded Caching: Improved Delivery Rate-Cache Capacity Trade-off",
+  "yil": 2016,
+  "cites": 84,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Merkezi kodlanmış önbellekleme; iletim hızı iyileştirmesi.",
+  "alinti": "It is shown that the proposed scheme achieves a smaller delivery rate than the existing coded caching schemes"
+ },
+ {
+  "id": "arXiv:1604.07648",
+  "baslik": "A New Order-Optimal Decentralized Coded Caching Scheme With Good Performance in the Finite File Size Regime",
+  "yil": 2016,
+  "cites": 34,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "Merkezi olmayan şema; sonlu dosya boyutu performansı",
+  "alinti": "In this paper, we propose a decentralized random coded caching scheme and a partially decentralized sequential coded caching scheme"
+ },
+ {
+  "id": "doi:10.1109/acssc.2017.8335367",
+  "baslik": "Cache-aided private information retrieval",
+  "yil": 2017,
+  "cites": 9,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Title only; cache-aided PIR, central to S4.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1204.1595",
+  "baslik": "Femtocaching and Device-to-Device Collaboration: A New Architecture for Wireless Video Distribution",
+  "yil": 2012,
+  "cites": 588,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Femtoönbellekleme ve D2D; kablosuz uç önbellekleme.",
+  "alinti": "It is based on distributed caching of the content in femto-basestations with small or non-existing backhaul capacity but with considerable storage space"
+ },
+ {
+  "id": "arXiv:1712.07021",
+  "baslik": "Cache-Aided Private Information Retrieval with Partially Known Uncoded Prefetching: Fundamental Limits",
+  "yil": 2017,
+  "cites": 54,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Cache-aided PIR with partially known prefetching; fundamental limits.",
+  "alinti": "We investigate the optimal normalized download cost $D^*(r)$ in the retrieval phase as a function of $K$, $N$, $r$."
+ },
+ {
+  "id": "doi:10.1109/icc40277.2020.9149262",
+  "baslik": "On the Privacy Leakage of Coded Caching",
+  "yil": 2020,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Kodlanmış önbelleklemede gizlilik sızıntısı; yalnızca başlık",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1710.00809",
+  "baslik": "The Capacity of Private Information Retrieval with Partially Known Private Side Information",
+  "yil": 2017,
+  "cites": 47,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Önbellekli PIR, kısmen bilinen yan bilgi",
+  "alinti": "a cache-enabled user (retriever) of cache-size $M$ possesses side information in the form of full messages that are partially known to the databases"
+ },
+ {
+  "id": "arXiv:2010.06492",
+  "baslik": "On the Fundamental Limits of Cache-aided Multiuser Private Information Retrieval",
+  "yil": 2020,
+  "cites": 12,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Cache-aided multiuser PIR; central to S4.",
+  "alinti": "In MuPIR, each of the $K_{\\rm u}$ cache-equipped users wishes to privately retrieve a message out of $K$ messages from $N$ databases each having access to the entire message library."
+ },
+ {
+  "id": "doi:10.1109/isit50566.2022.9834824",
+  "baslik": "A Secretive Coded Caching for Shared Cache Systems using Placement Delivery Arrays",
+  "yil": 2022,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Title only; secretive caching, shared cache, PDA-based.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-1-4419-5906-5_762",
+  "baslik": "PIR – Private Information Retrieval",
+  "yil": 1998,
+  "cites": 7,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 1,
+  "not": "Yalnızca başlık; genel PIR, önbellek içeriği yok.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/isit45174.2021.9518164",
+  "baslik": "Coded Caching under Asynchronous Demands",
+  "yil": 2021,
+  "cites": 9,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; eşzamansız talepli kodlanmış önbellekleme.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/noms47738.2020.9110318",
+  "baslik": "A Proactive Cache Privacy Attack on NDN",
+  "yil": 2020,
+  "cites": 11,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "NDN önbellek gizliliği saldırısı; ICN gizliliği",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1603.03409",
+  "baslik": "Security, Privacy, and Access Control in Information-Centric Networking: A Survey",
+  "yil": 2016,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "ICN güvenlik ve gizlilik anketi",
+  "alinti": "In this article, we survey the existing literature in security and privacy research sub-space in ICN."
+ },
+ {
+  "id": "doi:10.1109/icis.2018.8466454",
+  "baslik": "A Triggered Delay-based Approach against Cache Privacy Attack in NDN",
+  "yil": 2018,
+  "cites": 6,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "NDN önbellek gizlilik saldırısına karşı gecikme tabanlı savunma",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/itw48936.2021.9611497",
+  "baslik": "Decentralized Multi-access Coded Caching with Uncoded Prefetching",
+  "yil": 2021,
+  "cites": 5,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; çoklu erişim, merkezi olmayan önbellekleme.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2404.06433",
+  "baslik": "A New Hotplug Coded Caching Scheme Using PDAs",
+  "yil": 2024,
+  "cites": 3,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Çevrimdışı kullanıcılar; PDA tabanlı hotplug şeması.",
+  "alinti": "In the original coded caching model introduced by Maddah-Ali and Niesen in 2014, the server starts broadcasting only after it receives demands from all the users."
+ },
+ {
+  "id": "arXiv:1907.11717",
+  "baslik": "Secure Distribution of Protected Content in Information-Centric Networking",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "ICN'de şifreli içerik önbellekleme ve erişim kontrolü",
+  "alinti": "For effective caching of encrypted contents in ICN, we propose a secure distribution of protected content (SDPC) scheme, which ensures that only authenticated consumers can access the content."
+ },
+ {
+  "id": "arXiv:1811.11160",
+  "baslik": "The Capacity of Private Information Retrieval from Decentralized Uncoded Caching Databases",
+  "yil": 2018,
+  "cites": 46,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Merkezi olmayan önbellekli veritabanlarında PIR kapasitesi",
+  "alinti": "We consider the private information retrieval (PIR) problem from decentralized uncoded caching databases. There are two phases in our problem setting, a caching phase, and a retrieval phase."
+ },
+ {
+  "id": "doi:10.1109/acssc.2016.7869609",
+  "baslik": "Fundamental limits of secure device-to-device coded caching",
+  "yil": 2016,
+  "cites": 13,
+  "kaynaklar": [
+   "crossref",
+   "dblp",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Title only; secure D2D coded caching, directly central.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-319-94421-0_3",
+  "baslik": "Identifying Previously Requested Content by Side-Channel Timing Attack in NDN",
+  "yil": 2018,
+  "cites": 10,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "NDN'de önbellek zamanlama yan kanal saldırısı; merkezi konu.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1611.02257",
+  "baslik": "Multiround Private Information Retrieval: Capacity and Storage Overhead",
+  "yil": 2016,
+  "cites": 64,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Multiround PIR capacity and storage overhead; no caching.",
+  "alinti": "We show that the capacity of multiround PIR is the same as the capacity of single-round PIR"
+ },
+ {
+  "id": "doi:10.1109/itw61385.2024.10806957",
+  "baslik": "Security, Privacy and Linear Function Retrieval in Multi-Access Combinatorial Topology with Private Cache",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Çok erişimli topolojide güvenlik, gizlilik ve fonksiyon erişimi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2405.01844",
+  "baslik": "A Survey on Privacy-Preserving Caching at Network Edge: Classification, Solutions, and Challenges",
+  "yil": 2024,
+  "cites": 22,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Uç önbellekte gizlilik sorunları üzerine derleme",
+  "alinti": "On the one hand, the multi-access open edge network provides an ideal entrance or interface for external attackers to obtain private data from edge caches by extracting sensitive information."
+ },
+ {
+  "id": "doi:10.1109/isit44484.2020.9174083",
+  "baslik": "Cache-aided Multiuser Private Information Retrieval",
+  "yil": 2020,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Önbellek destekli çok kullanıcılı PIR; doğrudan merkezi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-642-15328-0_17",
+  "baslik": "How to Share a Secret",
+  "yil": 1979,
+  "cites": 5,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Shamir secret sharing; foundational for secure schemes.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1801.06171",
+  "baslik": "Private Information Retrieval Through Wiretap Channel II: Privacy Meets Security",
+  "yil": 2018,
+  "cites": 39,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "PIR ve kanal güvenliği birleşimi; sınır karakterizasyonu",
+  "alinti": "We aim at characterizing the capacity of the PIR-WTC-II under the combined privacy and security constraints."
+ },
+ {
+  "id": "arXiv:2101.08723",
+  "baslik": "Maddah-Ali-Niesen Scheme for Multi-access Coded Caching",
+  "yil": 2021,
+  "cites": 50,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "MAN extended to multi-access coded caching.",
+  "alinti": "The well known Maddah-Ali-Niesen (MAN) coded caching scheme for users with dedicated cache is extended for use in multi-access coded cache scheme where the number of users need not be same as the number of caches in the system."
+ },
+ {
+  "id": "arXiv:1806.01253",
+  "baslik": "The Capacity of Private Information Retrieval with Private Side Information Under Storage Constraints",
+  "yil": 2018,
+  "cites": 37,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Önbellekli PIR, özel yan bilgi; kapasite sonucu",
+  "alinti": "The identities of these side information messages need to be kept private from the databases, i.e., we consider PIR with private side information (PSI)."
+ },
+ {
+  "id": "arXiv:1511.03005",
+  "baslik": "ELDA: Towards Efficient and Lightweight Detection of Cache Pollution Attacks in NDN",
+  "yil": 2015,
+  "cites": 21,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "NDN önbellek kirletme saldırısı tespiti",
+  "alinti": "However, the in-network caching is vulnerable to cache pollution attacks (CPA), which can reduce cache hits by violating cache locality and significantly degrade the overall performance of NDN."
+ },
+ {
+  "id": "arXiv:1709.03022",
+  "baslik": "The Capacity of <i>T</i>-Private Information Retrieval With Private Side Information",
+  "yil": 2017,
+  "cites": 73,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yan bilgili, gizli PIR kapasitesi; işbirlikçi sunucular",
+  "alinti": "a user, equipped with a local cache that holds $M$ messages as side information, wishes to retrieve one of the other $K-M$ messages."
+ },
+ {
+  "id": "doi:10.1109/tit.2025.3635388",
+  "baslik": "On the Optimal Memory-Rate Tradeoff of Demand-Private Coded Caching",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; talep gizli kodlı önbellek kapasitesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/allerton.2017.8262831",
+  "baslik": "Towards the exact rate-memory trade-off for uncoded caching with secure delivery",
+  "yil": 2017,
+  "cites": 6,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; güvenli teslimatlı tam değiş-tokuş",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1609.08138",
+  "baslik": "The Capacity of Private Information Retrieval from Coded Databases",
+  "yil": 2016,
+  "cites": 298,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "PIR capacity over coded databases; privacy foundation.",
+  "alinti": "We derive the information-theoretic capacity of this problem, which is defined as the maximum number of bits of the desired message that can be privately retrieved per one bit of downloaded information."
+ },
+ {
+  "id": "doi:10.1109/ieeeconf59524.2023.10476849",
+  "baslik": "A Novel Scheme for Cache-Aided Multiuser Private Information Retrieval with User-to-User Privacy",
+  "yil": 2023,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Önbellek destekli PIR ve kullanıcılar arası gizlilik",
+  "alinti": "A Novel Scheme for Cache-Aided Multiuser Private Information Retrieval with User-to-User Privacy."
+ },
+ {
+  "id": "doi:10.1109/lcomm.2021.3130027",
+  "baslik": "Coding Overhead Analysis of Decentralized Coded Caching",
+  "yil": 2022,
+  "cites": 0,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Ayrık-olmayan (decentralized) kodlanmış önbellekleme; yalnızca başlık",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tcomm.2021.3117936",
+  "baslik": "Fundamental Limits of Private Information Retrieval With Unknown Cache Prefetching",
+  "yil": 2021,
+  "cites": 4,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Önbellek ön yüklemeli PIR; yalnızca başlık",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.22452/mjcs.vol21no1.4",
+  "baslik": "PIR with P-Cache: A New Private Information Retrieval Protocol With Improved Performance",
+  "yil": 2008,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Önbellek destekli PIR protokolü; yalnızca başlık",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/tit.2022.3198031",
+  "baslik": "On the Computational Aspect of Coded Caching With Uncoded Prefetching",
+  "yil": 2023,
+  "cites": 2,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Title only; computational aspects of uncoded prefetching.",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/itc.2015.13",
+  "baslik": "An Efficient Delivery Scheme for Coded Caching",
+  "yil": 2015,
+  "cites": 26,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Yalnızca başlık; kodlanmış önbellek teslimatı, içerik belirsiz.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2001.03843",
+  "baslik": "The Capacity of Private Information Retrieval Under Arbitrary Collusion Patterns",
+  "yil": 2020,
+  "cites": 15,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "PIR capacity under arbitrary collusion; relevant to privacy.",
+  "alinti": "Hence, the collusion pattern affects the capacity of the PIR problem only through the number $S^*$."
+ },
+ {
+  "id": "doi:10.1109/ita.2015.7308972",
+  "baslik": "Coded caching under arbitrary popularity distributions",
+  "yil": 2015,
+  "cites": 64,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Kodlanmış önbellekleme, popülerlik dağılımı; yalnızca başlık",
+  "alinti": ""
+ }
+]

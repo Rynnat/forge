@@ -1,0 +1,1097 @@
+[
+ {
+  "id": "arXiv:2402.16893",
+  "baslik": "The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG)",
+  "yil": 2024,
+  "cites": 113,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "RAG veritabanı sızıntısı; eğitim verisi azaltımı da var",
+  "alinti": "we conduct extensive empirical studies with novel attack methods, which demonstrate the vulnerability of RAG systems on leaking the private retrieval database"
+ },
+ {
+  "id": "arXiv:2403.02691",
+  "baslik": "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents",
+  "yil": 2024,
+  "cites": 149,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Araç kullanan ajanlar için IPI benchmarkı, veri sızdırma dahil",
+  "alinti": "We categorize attack intentions into two primary types: direct harm to users and exfiltration of private data."
+ },
+ {
+  "id": "arXiv:2503.18813",
+  "baslik": "Defeating Prompt Injections by Design",
+  "yil": 2025,
+  "cites": 9,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Yetki ayrımı ve veri akışı kontrolüyle sistem düzeyinde savunma",
+  "alinti": "CaMeL uses a notion of a capability to prevent the exfiltration of private data over unauthorized data flows by enforcing security policies when tools are called"
+ },
+ {
+  "id": "arXiv:2310.17884",
+  "baslik": "Can LLMs Keep a Secret? Testing Privacy Implications of Language Models via Contextual Integrity Theory",
+  "yil": 2023,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Bağlamsal gizlilik benchmarkı; ajan bağlamına doğrudan taşınabilir",
+  "alinti": "we draw attention to the highly critical yet overlooked notion of contextual privacy by proposing ConfAIde, a benchmark designed to identify critical weaknesses in the privacy reasoning capabilities of instruction-tuned LLMs"
+ },
+ {
+  "id": "arXiv:2407.12784",
+  "baslik": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+  "yil": 2024,
+  "cites": 76,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Bellek/RAG zehirleme ile ajanlara arka kapı saldırısı",
+  "alinti": "we propose a novel red teaming approach AgentPoison, the first backdoor attack targeting generic and RAG-based LLM agents by poisoning their long-term memory or RAG knowledge base"
+ },
+ {
+  "id": "arXiv:2405.05175",
+  "baslik": "AirGapAgent: Protecting Privacy-Conscious Conversational Agents",
+  "yil": 2024,
+  "cites": 34,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Bağlamsal bütünlük tabanlı, erişim kısıtlayan ajan savunması",
+  "alinti": "Grounded in the framework of contextual integrity, we introduce AirGapAgent, a privacy-conscious agent designed to prevent unintended data leakage by restricting the agent's access to only the data necessary for a specific task."
+ },
+ {
+  "id": "arXiv:2502.13172",
+  "baslik": "Unveiling Privacy Risks in LLM Agent Memory",
+  "yil": 2024,
+  "cites": 23,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ajan belleğinden özel veri çıkarma saldırısı, doğrudan ilgili",
+  "alinti": "They enhance decision-making by storing private user-agent interactions in the memory module for demonstrations, introducing new privacy risks for LLM agents."
+ },
+ {
+  "id": "arXiv:2302.12173",
+  "baslik": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+  "yil": 2023,
+  "cites": 671,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Dolaylı istem enjeksiyonu ile veri hırsızlığı, temel çalışma",
+  "alinti": "We reveal new attack vectors, using Indirect Prompt Injection, that enable adversaries to remotely (without a direct interface) exploit LLM-integrated applications"
+ },
+ {
+  "id": "arXiv:2309.15817",
+  "baslik": "Identifying the Risks of LM Agents with an LM-Emulated Sandbox",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Araç kullanan ajanlar için LM-emülasyonlu test ortamı",
+  "alinti": "we introduce ToolEmu: a framework that uses an LM to emulate tool execution and enables the testing of LM agents against a diverse range of tools and scenarios"
+ },
+ {
+  "id": "arXiv:2409.00138",
+  "baslik": "PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action",
+  "yil": 2024,
+  "cites": 19,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Ajan eylemlerinde gizlilik sızıntısını değerlendiren benchmark",
+  "alinti": "we propose PrivacyLens, a novel framework designed to extend privacy-sensitive seeds into expressive vignettes and further into agent trajectories, enabling multi-level evaluation of privacy leakage in LM agents' actions"
+ },
+ {
+  "id": "arXiv:2012.07805",
+  "baslik": "Extracting Training Data from Large Language Models",
+  "yil": 2020,
+  "cites": 727,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Eğitim verisi çıkarımının temel çalışması (ezberleme)",
+  "alinti": "we demonstrate our attack on GPT-2, a language model trained on scrapes of the public Internet, and are able to extract hundreds of verbatim text sequences from the model's training data"
+ },
+ {
+  "id": "arXiv:2406.13352",
+  "baslik": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+  "yil": 2024,
+  "cites": 165,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Araç kullanan ajanlar için temel dinamik değerlendirme ortamı",
+  "alinti": "To measure the adversarial robustness of AI agents, we introduce AgentDojo, an evaluation framework for agents that execute tools over untrusted data."
+ },
+ {
+  "id": "arXiv:2407.19354",
+  "baslik": "The Emerged Security and Privacy of LLM Agent: A Survey with Case Studies",
+  "yil": 2024,
+  "cites": 56,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LLM ajanlarının güvenlik ve gizlilik sürveyi, vaka çalışmaları",
+  "alinti": "This survey aims to provide a comprehensive overview of the newly emerged privacy and security issues faced by LLM agents"
+ },
+ {
+  "id": "arXiv:2505.01976",
+  "baslik": "A Survey on Privacy Risks and Protection in Large Language Models",
+  "yil": 2025,
+  "cites": 42,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "LLM gizlilik riskleri ve savunmalarına genel sürvey",
+  "alinti": "we review existing privacy protection against such risks, such as inference detection, federated learning, backdoor mitigation, and confidential computing"
+ },
+ {
+  "id": "arXiv:2506.12699",
+  "baslik": "SoK: The Privacy Paradox of Large Language Models: Advancements, Privacy Risks, and Mitigation",
+  "yil": 2025,
+  "cites": 19,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Ajan gizliliğini de kapsayan kapsamlı SoK",
+  "alinti": "categorizing the challenges into four main areas: (i) privacy issues in LLM training data, (ii) privacy challenges associated with user prompts, (iii) privacy vulnerabilities in LLM-generated outputs, and (iv) privacy challenges involving LLM agents"
+ },
+ {
+  "id": "arXiv:2402.00888",
+  "baslik": "Security and Privacy Challenges of Large Language Models: A Survey",
+  "yil": 2024,
+  "cites": 365,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex",
+   "web"
+  ],
+  "rel": 2,
+  "not": "LLM güvenlik ve gizlilik sürveyi, savunmalar dahil",
+  "alinti": "This survey provides a thorough review of the security and privacy challenges of LLMs for both training data and users"
+ },
+ {
+  "id": "arXiv:2403.05156",
+  "baslik": "On Protecting the Data Privacy of Large Language Models (LLMs): A Survey",
+  "yil": 2024,
+  "cites": 130,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "LLM veri gizliliği tehditleri ve koruma mekanizmaları sürveyi",
+  "alinti": "a thorough investigation is undertaken to delineate the spectrum of data privacy threats, encompassing both passive privacy leakage and active privacy attacks within LLMs"
+ },
+ {
+  "id": "arXiv:2504.21036",
+  "baslik": "Can Differentially Private Fine-tuning LLMs Protect Against Privacy Attacks?",
+  "yil": 2025,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Diferansiyel gizlilikle ince ayar ve üyelik/çıkarım saldırıları",
+  "alinti": "When DP is applied, even a relatively high privacy budget can substantially lower privacy risk."
+ },
+ {
+  "id": "arXiv:2410.02644",
+  "baslik": "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Ajan saldırı ve savunmaları için kapsamlı benchmark",
+  "alinti": "we introduce Agent Security Bench (ASB), a comprehensive framework designed to formalize, benchmark, and evaluate the attacks and defenses of LLM-based agents"
+ },
+ {
+  "id": "doi:10.1016/j.hcc.2025.100300",
+  "baslik": "On protecting the data privacy of Large Language Models (LLMs) and LLM agents: A literature review",
+  "yil": 2025,
+  "cites": 86,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "LLM ve ajan veri gizliliği derlemesi; doğrudan kapsam",
+  "alinti": "On protecting the data privacy of Large Language Models (LLMs) and LLM agents: A literature review."
+ },
+ {
+  "id": "arXiv:2312.06717",
+  "baslik": "Privacy Issues in Large Language Models: A Survey",
+  "yil": 2023,
+  "cites": 74,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "LLM gizlilik sürveyi; kırmızı takım ve gizlilik odaklı eğitim",
+  "alinti": "we focus on work that red-teams models to highlight privacy risks, attempts to build privacy into the training or inference process"
+ },
+ {
+  "id": "arXiv:2605.02255",
+  "baslik": "On the Privacy of LLMs: An Ablation Study",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Saldırı ablasyonu; RAG sistemlerinde üyelik sızıntısı önerisi",
+  "alinti": "Based on these findings, we derive practical recommendations for privacy-aware LLM deployment, including prioritizing membership leakage assessments in retrieval-augmented systems"
+ },
+ {
+  "id": "arXiv:2202.05520",
+  "baslik": "What Does it Mean for a Language Model to Preserve Privacy?",
+  "yil": 2022,
+  "cites": 164,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Gizlilik kavramı ve sanitizasyon/DP sınırlılıkları üzerine tartışma",
+  "alinti": "Language models lack the ability to understand the context and sensitivity of text, and tend to memorize phrases present in their training sets."
+ },
+ {
+  "id": "arXiv:2402.06363",
+  "baslik": "StruQ: Defending Against Prompt Injection with Structured Queries",
+  "yil": 2024,
+  "cites": 10,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Yapılandırılmış sorgularla istem enjeksiyonu savunması",
+  "alinti": "Structured queries separate prompts and data into two channels. We implement a system that supports structured queries."
+ },
+ {
+  "id": "arXiv:2310.12815",
+  "baslik": "Formalizing and Benchmarking Prompt Injection Attacks and Defenses",
+  "yil": 2023,
+  "cites": 13,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "İstem enjeksiyonu saldırı/savunmalarının biçimsel çerçevesi ve benchmark",
+  "alinti": "we propose a framework to formalize prompt injection attacks. Existing attacks are special cases in our framework"
+ },
+ {
+  "id": "arXiv:2404.13208",
+  "baslik": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Talimat hiyerarşisi ile eğitim tabanlı enjeksiyon savunması",
+  "alinti": "we argue that one of the primary vulnerabilities underlying these attacks is that LLMs often consider system prompts"
+ },
+ {
+  "id": "arXiv:2410.05451",
+  "baslik": "SecAlign: Defending Against Prompt Injection with Preference Optimization",
+  "yil": 2024,
+  "cites": 30,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Tercih optimizasyonuyla istem enjeksiyonu savunması",
+  "alinti": "Adversarial prompts can be injected into external data sources to override the system's intended instruction and instead execute a malicious instruction"
+ },
+ {
+  "id": "arXiv:2408.12787",
+  "baslik": "LLM-PBE: Assessing Data Privacy in Large Language Models",
+  "yil": 2024,
+  "cites": 42,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Gizlilik risk değerlendirme araç seti; ajan odaklı değil",
+  "alinti": "LLM-PBE is designed to analyze privacy across the entire lifecycle of LLMs, incorporating diverse attack and defense strategies"
+ },
+ {
+  "id": "arXiv:2306.05499",
+  "baslik": "Prompt Injection attack against LLM-integrated Applications",
+  "yil": 2023,
+  "cites": 100,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Uygulama istemlerinin enjeksiyonla çalınması; ticari uygulamalar",
+  "alinti": "we unveil previously unknown and severe attack outcomes, such as unrestricted arbitrary LLM usage and uncomplicated application prompt theft"
+ },
+ {
+  "id": "arXiv:2203.03929",
+  "baslik": "Quantifying Privacy Risks of Masked Language Models Using Membership Inference Attacks",
+  "yil": 2022,
+  "cites": 77,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Üyelik çıkarımı temeli; ajan dışı, maskeli dil modelleri",
+  "alinti": "We devise a stronger membership inference attack based on likelihood ratio hypothesis testing that involves an additional reference MLM"
+ },
+ {
+  "id": "doi:10.18653/v1/2024.emnlp-main.785",
+  "baslik": "Large Language Models Can Be Contextual Privacy Protection Learners",
+  "yil": 2023,
+  "cites": 23,
+  "kaynaklar": [
+   "atif",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Bağlamsal gizlilik koruma; yalnızca başlık mevcut",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2408.02373",
+  "baslik": "Operationalizing Contextual Integrity in Privacy-Conscious Assistants",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Asistanlarda CI uygulaması; form doldurma benchmark'ı",
+  "alinti": "we propose to operationalize contextual integrity (CI), a framework that equates privacy with the appropriate flow of information in a given context"
+ },
+ {
+  "id": "arXiv:2402.07867",
+  "baslik": "PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models",
+  "yil": 2024,
+  "cites": 16,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "RAG bilgi tabanı zehirleme saldırısı; bellek tehdidi",
+  "alinti": "We find that the knowledge database in a RAG system introduces a new and practical attack surface"
+ },
+ {
+  "id": "arXiv:2510.01645",
+  "baslik": "Position: Privacy Is Not Just Memorization!",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ajan ve çıkarım tehditlerini kapsayan konum bildirisi",
+  "alinti": "encompassing risks from data collection practices, inference-time context leakage, autonomous agent capabilities, and the democratization of surveillance through deep inference attacks"
+ },
+ {
+  "id": "arXiv:2512.16962",
+  "baslik": "MemoryGraft: Persistent Compromise of LLM Agents via Poisoned Experience Retrieval",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Bellek zehirleme; deneyimsel bellek saldırısı",
+  "alinti": "it introduces a critical, unexplored attack surface, i.e., the trust boundary between an agent's reasoning core and its own past."
+ },
+ {
+  "id": "arXiv:2510.05244",
+  "baslik": "Indirect Prompt Injections: Are Firewalls All You Need, or Stronger Benchmarks?",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ajan-araç arayüzünde güvenlik duvarı savunması ve benchmark eleştirisi",
+  "alinti": "we show that a simple, modular, and model-agnostic defense operating at the agent--tool interface achieves perfect security"
+ },
+ {
+  "id": "doi:10.3390/jcp6020074",
+  "baslik": "Contextual Integrity in Large Language Models: A Review",
+  "yil": 2026,
+  "cites": 1,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM'lerde bağlamsal bütünlük çerçevesi derlemesi",
+  "alinti": "Contextual integrity (CI) provides a robust framework to address these challenges, emphasizing that information flows should adhere to context-specific social norms"
+ },
+ {
+  "id": "arXiv:2310.01424",
+  "baslik": "Identifying and Mitigating Privacy Risks Stemming from Language Models: A Survey",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "LLM gizlilik riskleri üzerine kapsamlı SoK araştırması",
+  "alinti": "Memorized text sequences have the potential to be directly leaked from LLMs, posing a serious threat to data privacy"
+ },
+ {
+  "id": "arXiv:2305.16157",
+  "baslik": "Training Data Extraction From Pre-trained Language Models: A Survey",
+  "yil": 2023,
+  "cites": 19,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Önceliklerle eğitim verisi çıkarımı üzerine kapsamlı sürvey",
+  "alinti": "First, preliminary knowledge is recapped and a taxonomy of various definitions of memorization is presented"
+ },
+ {
+  "id": "arXiv:2505.22852",
+  "baslik": "Operationalizing CaMeL: Strengthening LLM Defenses for Enterprise Deployment",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Yetki tabanlı savunma; ajan enjeksiyon savunması",
+  "alinti": "CaMeL (Capabilities for Machine Learning) introduces a capability-based sandbox to mitigate prompt injection attacks in large language model (LLM) agents."
+ },
+ {
+  "id": "arXiv:2504.08623",
+  "baslik": "Enterprise-Grade Security for the Model Context Protocol (MCP): Frameworks and Mitigation Strategies",
+  "yil": 2025,
+  "cites": 21,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "MCP kurumsal güvenlik çerçevesi ve azaltma stratejileri",
+  "alinti": "including sophisticated threats like tool poisoning, we present actionable security patterns tailored for MCP implementers and adopters"
+ },
+ {
+  "id": "arXiv:2302.00539",
+  "baslik": "Analyzing Leakage of Personally Identifiable Information in Language Models",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "PII sızıntısı tanımları; temizleme ve DP sınırlılıkları",
+  "alinti": "we introduce rigorous game-based definitions for three types of PII leakage via black-box extraction, inference, and reconstruction attacks with only API access to an LM"
+ },
+ {
+  "id": "arXiv:2503.00061",
+  "baslik": "Adaptive Attacks Break Defenses Against Indirect Prompt Injection Attacks on LLM Agents",
+  "yil": 2024,
+  "cites": 32,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Ajanlarda IPI savunmalarının uyarlanabilir saldırılarla kırılması",
+  "alinti": "we evaluate eight different defenses and bypass all of them using adaptive attacks, consistently achieving an attack success rate of over 50%"
+ },
+ {
+  "id": "arXiv:2601.08235",
+  "baslik": "MPCI-Bench: A Benchmark for Multimodal Pairwise Contextual Integrity Evaluation of Language Model Agents",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Ajanlar için çok modlu bağlamsal bütünlük benchmark'ı",
+  "alinti": "MPCI-Bench consists of paired positive and negative instances derived from the same visual source and instantiated across three tiers"
+ },
+ {
+  "id": "arXiv:2406.07973",
+  "baslik": "Unique Security and Privacy Threats of Large Language Models: A Comprehensive Survey",
+  "yil": 2024,
+  "cites": 45,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "LLM gizlilik/güvenlik tehditleri taksonomisi, ajanları içerir",
+  "alinti": "we emphasize the unique privacy and security threats associated with four specific scenarios: pre-training, fine-tuning, deployment, and LLM-based agents"
+ },
+ {
+  "id": "arXiv:1610.05820",
+  "baslik": "Membership Inference Attacks Against Machine Learning Models",
+  "yil": 2016,
+  "cites": 3740,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Üyelik çıkarım saldırılarının temel çalışması",
+  "alinti": "given a data record and black-box access to a model, determine if the record was in the model's training dataset"
+ },
+ {
+  "id": "arXiv:2210.15042",
+  "baslik": "EW-Tune: A Framework for Privately Fine-Tuning Large Language Models with Differential Privacy",
+  "yil": 2022,
+  "cites": 60,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Diferansiyel gizlilikle ince ayar savunması",
+  "alinti": "Differential privacy (DP) provides a rigorous framework that allows adding noise in the process of training or fine-tuning LLMs"
+ },
+ {
+  "id": "arXiv:2602.01129",
+  "baslik": "SMCP: Secure Model Context Protocol",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "MCP için protokol düzeyinde güvenli iletişim önerisi",
+  "alinti": "These include risks such as unauthorized access, tool poisoning, prompt injection, privilege escalation, and supply chain attacks"
+ },
+ {
+  "id": "arXiv:2202.07646",
+  "baslik": "Quantifying Memorization Across Neural Language Models",
+  "yil": 2022,
+  "cites": 204,
+  "kaynaklar": [
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Dil modellerinde ezberlemenin log-doğrusal ölçeklenme yasaları",
+  "alinti": "Memorization significantly grows as we increase (1) the capacity of a model, (2) the number of times an example has been duplicated"
+ },
+ {
+  "id": "arXiv:2508.14062",
+  "baslik": "Assessing and Mitigating Data Memorization Risks in Fine-Tuned Large Language Models",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "İnce ayarda ezberleme; çok katmanlı koruma çerçevesi",
+  "alinti": "fine-tuning with repeated sensitive data increases privacy leakage rates from baseline levels of 0-5% to 60-75%"
+ },
+ {
+  "id": "arXiv:2510.23883",
+  "baslik": "Agentic AI Security: Threats, Defenses, Evaluation, and Open Challenges",
+  "yil": 2025,
+  "cites": 25,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Agentik yapay zeka güvenliği: tehdit, savunma, değerlendirme anketi",
+  "alinti": "This survey outlines a taxonomy of threats specific to agentic AI, reviews recent benchmarks and evaluation methodologies, and discusses defense strategies"
+ },
+ {
+  "id": "arXiv:2412.16682",
+  "baslik": "The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents",
+  "yil": 2024,
+  "cites": 23,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "dblp",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ajanlarda görev hizalaması ile IPI savunması",
+  "alinti": "reframes agent security from preventing harmful actions to ensuring task alignment, requiring every agent action to serve user objectives"
+ },
+ {
+  "id": "arXiv:2512.08290",
+  "baslik": "Systematization of Knowledge: Security and Safety in the Model Context Protocol Ecosystem",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "MCP ekosistemi; araç zehirleme sistematizasyonu",
+  "alinti": "distinguishing between adversarial security threats (e.g., indirect prompt injection, tool poisoning) and epistemic safety hazards (e.g., alignment failures"
+ },
+ {
+  "id": "doi:10.1109/sp40000.2020.00095",
+  "baslik": "Privacy Risks of General-Purpose Language Models",
+  "yil": 2020,
+  "cites": 143,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Genel amaçlı dil modellerinde gizlilik riskleri; yalnızca başlık",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.4236/jsea.2024.175023",
+  "baslik": "Evaluating Privacy Leakage and Memorization Attacks on Large Language Models (LLMs) in Generative AI Applications",
+  "yil": 2024,
+  "cites": 10,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Kara kutu PII sızıntısı ve ezberleme saldırıları değerlendirmesi",
+  "alinti": "We describe different black-box attacks from potential adversaries and study their impact on the amount and type of information that may be recovered from commonly used and deployed LLMs"
+ },
+ {
+  "id": "arXiv:2508.07054",
+  "baslik": "Membership and Memorization in LLM Knowledge Distillation",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Bilgi damıtmada üyelik ve ezberleme riskleri; ajan dışı",
+  "alinti": "However, students may inherit the teacher's privacy when the teacher is trained on private data."
+ },
+ {
+  "id": "arXiv:2508.15310",
+  "baslik": "IPIGuard: A Novel Tool Dependency Graph-Based Defense Against Indirect Prompt Injection in LLM Agents",
+  "yil": 2025,
+  "cites": 13,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Araç bağımlılık grafiğiyle dolaylı enjeksiyon savunması",
+  "alinti": "they fundamentally rely on assumptions about the model's inherent security, which lacks structural constraints on agent behaviors"
+ },
+ {
+  "id": "arXiv:2604.21308",
+  "baslik": "CI-Work: Benchmarking Contextual Integrity in Enterprise LLM Agents",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Bağlamsal bütünlük tabanlı ajan benchmark'ı",
+  "alinti": "We introduce CI-Work, a Contextual Integrity (CI)-grounded benchmark that simulates enterprise workflows across five information-flow directions"
+ },
+ {
+  "id": "arXiv:2307.10476",
+  "baslik": "What can we learn from Data Leakage and Unlearning for Law?",
+  "yil": 2023,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "İnce ayar modelleri ön eğitim verisini de sızdırıyor",
+  "alinti": "we also show that not only do fine-tuned models leak their training data but they also leak the pre-training data"
+ },
+ {
+  "id": "doi:10.20944/preprints202504.0245.v1",
+  "baslik": "A Survey of the Model Context Protocol (MCP): Standardizing Context to Enhance Large Language Models (LLMs)",
+  "yil": 2025,
+  "cites": 24,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "MCP mimarisi ve güvenlik boyutu derlemesi",
+  "alinti": "This survey reviews the foundational architecture of MCP, including its client-server model, standardized messaging protocols, dynamic tool discovery, and security mechanisms"
+ },
+ {
+  "id": "arXiv:2406.19234",
+  "baslik": "Generating Is Believing: Membership Inference Attacks against Retrieval-Augmented Generation",
+  "yil": 2024,
+  "cites": 17,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "RAG veritabanı üyelik çıkarımı saldırısı",
+  "alinti": "focusing on membership privacy of RAG's external database, with the aim of determining whether a given sample is part of the RAG's database."
+ },
+ {
+  "id": "arXiv:2409.19091",
+  "baslik": "System-Level Defense against Indirect Prompt Injection Attacks: An Information Flow Control Perspective",
+  "yil": 2024,
+  "cites": 3,
+  "kaynaklar": [
+   "arxiv",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Bilgi akışı kontrolüne dayalı sistem düzeyi IPI savunması",
+  "alinti": "An f-secure LLM system disaggregates the components of an LLM system into a context-aware pipeline with dynamically generated structured executable plans"
+ },
+ {
+  "id": "arXiv:2312.02003",
+  "baslik": "A Survey on Large Language Model (LLM) Security and Privacy: The Good, the Bad, and the Ugly",
+  "yil": 2023,
+  "cites": 1099,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "LLM güvenlik ve gizlilik derlemesi; geniş kapsam",
+  "alinti": "we investigate how LLMs positively impact security and privacy, potential risks and threats associated with their use, and inherent vulnerabilities within LLMs"
+ },
+ {
+  "id": "arXiv:2506.10024",
+  "baslik": "Private Memorization Editing: Turning Memorization into a Defense to Strengthen Data Privacy in Large Language Models",
+  "yil": 2025,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Ezberlenen PII'yi düzenleyerek savunma; model düzeyi",
+  "alinti": "We detect a memorized PII and then mitigate the memorization of PII by editing a model knowledge of its training data"
+ },
+ {
+  "id": "arXiv:2503.23278",
+  "baslik": "Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "MCP yaşam döngüsü ve tehdit taksonomisi",
+  "alinti": "we construct a comprehensive threat taxonomy that categorizes security and privacy risks across four major attacker types"
+ },
+ {
+  "id": "doi:10.5391/jkiis.2025.35.6.541",
+  "baslik": "Privacy Threats and Policy Responses to the Use of AI Agents : Focusing on the Model Context Protocol Environment",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "MCP tabanlı ajanlarda gizlilik tehditleri ve politika yanıtları",
+  "alinti": "Privacy Threats and Policy Responses to the Use of AI Agents : Focusing on the Model Context Protocol Environment."
+ },
+ {
+  "id": "arXiv:2305.01639",
+  "baslik": "Privacy-Preserving In-Context Learning for Large Language Models",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Bağlamsal örneklerde diferansiyel gizlilik ile ICL koruması",
+  "alinti": "generating differentially private responses through a noisy consensus among an ensemble of LLM's responses based on disjoint exemplar sets"
+ },
+ {
+  "id": "arXiv:2604.09747",
+  "baslik": "ADAM: A Systematic Data Extraction Attack on Agent Memory via Adaptive Querying",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Ajan belleğinden sorgu tabanlı veri çıkarma saldırısı",
+  "alinti": "However, such a design also introduces a group of critical privacy vulnerabilities: sensitive information stored in memory can be leaked through query-based attacks."
+ },
+ {
+  "id": "arXiv:2403.08481",
+  "baslik": "SoK: Reducing the Vulnerability of Fine-tuned Language Models to Membership Inference Attacks",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "İnce ayarlı modellerde üyelik çıkarım savunmaları SoK",
+  "alinti": "We provide the first systematic review of the vulnerability of fine-tuned large language models to membership inference attacks"
+ },
+ {
+  "id": "arXiv:2508.06760",
+  "baslik": "Understanding Privacy Norms Around LLM-Based Chatbots: A Contextual Integrity Perspective",
+  "yil": 2025,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Sohbet botu gizlilik normları, bağlamsal bütünlük perspektifi",
+  "alinti": "We conduct a survey experiment with 300 US ChatGPT users to understand emerging privacy norms for sharing chatbot data"
+ },
+ {
+  "id": "arXiv:1502.02493",
+  "baslik": "Implicit Contextual Integrity in Online Social Networks",
+  "yil": 2015,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Çevrimiçi sosyal ağlarda örtük bağlamsal bütünlük modeli",
+  "alinti": "Computational models of Contextual Integrity assume the existence of well-defined contexts, in which individuals enact pre-defined roles"
+ },
+ {
+  "id": "arXiv:2501.19173",
+  "baslik": "Position: Contextual Integrity is Inadequately Applied to Language Models",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "openalex",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Bağlamsal bütünlüğün LLM'lerde yanlış uygulanması eleştirisi",
+  "alinti": "This position paper argues that existing literature inadequately applies CI for LLMs without embracing the theory's fundamental tenets."
+ },
+ {
+  "id": "arXiv:2507.05578",
+  "baslik": "The Landscape of Memorization in LLMs: Mechanisms, Measurement, and Mitigation",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Ezberleme ölçümü ve üyelik çıkarımı derlemesi",
+  "alinti": "we examine methodologies such as prefix-based extraction, membership inference, and adversarial prompting, assessing their effectiveness in detecting and measuring memorized content"
+ },
+ {
+  "id": "arXiv:2509.17488",
+  "baslik": "Privacy in Action: Towards Realistic Privacy Mitigation and Evaluation for LLM-Powered Agents",
+  "yil": 2025,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "Bağlamsal bütünlük tabanlı azaltma ve MCP/A2A ortam benchmarkı",
+  "alinti": "We present PrivacyChecker, a model-agnostic, contextual integrity based mitigation approach that effectively reduces privacy leakage from 36.08% to 7.30% on DeepSeek-R1"
+ },
+ {
+  "id": "doi:10.1109/acai68217.2025.11406667",
+  "baslik": "A Comprehensive Security Framework for the Model Context Protocol (MCP) in Multi-Agent AI Systems",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık var; MCP çok ajanlı güvenlik çerçevesi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2512.13352",
+  "baslik": "On the Effectiveness of Membership Inference in Targeted Data Extraction from Large Language Models",
+  "yil": 2025,
+  "cites": 0,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Veri çıkarımı hattında üyelik çıkarım tekniklerinin karşılaştırması",
+  "alinti": "In this study, we integrate multiple MIA techniques into the data extraction pipeline to systematically benchmark their effectiveness"
+ },
+ {
+  "id": "arXiv:2405.20446",
+  "baslik": "Is My Data in Your Retrieval Database? Membership Inference Attacks Against Retrieval Augmented Generation",
+  "yil": 2024,
+  "cites": 20,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "openalex"
+  ],
+  "rel": 3,
+  "not": "RAG veritabanında üyelik çıkarımı saldırısı",
+  "alinti": "an attacker may be able to infer whether a certain text passage appears in the retrieval database by observing the outputs of the RAG system"
+ },
+ {
+  "id": "arXiv:2508.13220",
+  "baslik": "MCPSecBench: A Systematic Security Benchmark and Playground for Testing Model Context Protocols",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "MCP security benchmark and playground",
+  "alinti": "we introduce MCPSecBench, a systematic security benchmark and playground that integrates prompt datasets, MCP servers, MCP clients, attack scripts"
+ },
+ {
+  "id": "doi:10.1109/tps-isa62245.2024.00053",
+  "baslik": "[Short Paper] Forensic Analysis of Indirect Prompt Injection Attacks on LLM Agents",
+  "yil": 2023,
+  "cites": 8,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "dblp",
+   "openalex"
+  ],
+  "rel": 2,
+  "not": "Ajan günlüklerinde IPI adli analizi; benchmark kullanılıyor",
+  "alinti": "We introduce a novel approach for forensic analysis of LLM agent execution logs to identify IPI attacks"
+ },
+ {
+  "id": "arXiv:2505.08807",
+  "baslik": "Security of Internet of Agents: Attacks and Countermeasures",
+  "yil": 2025,
+  "cites": 34,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Ajan interneti güvenliği, kimlik ve gizlilik riskleri anketi",
+  "alinti": "We begin by outlining the IoA architecture and its distinct vulnerabilities compared to traditional networks, focusing on four critical aspects"
+ }
+]

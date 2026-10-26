@@ -1,0 +1,1022 @@
+[
+ {
+  "id": "arXiv:2503.09829",
+  "baslik": "SE(3)-Equivariant Robot Learning and Control: A Tutorial Survey",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "SE(3)-eşdeğer robot öğrenmesi derlemesi; simetri doğrudan merkezde",
+  "alinti": "Equivariant neural networks overcome these limitations by explicitly integrating symmetry and invariance into their architectures, leading to improved efficiency and generalization."
+ },
+ {
+  "id": "arXiv:2203.16797",
+  "baslik": "When Physics Meets Machine Learning: A Survey of Physics-Informed Machine Learning",
+  "yil": 2022,
+  "cites": 251,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Genel fizik bilgili makine öğrenmesi derlemesi; robotik odaklı değil",
+  "alinti": "has emerged as an effective way to mitigate the shortage of training data, to increase models' generalizability and to ensure the physical plausibility of results"
+ },
+ {
+  "id": "arXiv:1811.08027",
+  "baslik": "Neural Lander: Stable Drone Landing Control using Learned Dynamics",
+  "yil": 2018,
+  "cites": 248,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Nominal dinamik + öğrenilmiş artık, kararlılık garantisi; drone",
+  "alinti": "Our approach combines a nominal dynamics model with a Deep Neural Network (DNN) that learns high-order interactions."
+ },
+ {
+  "id": "doi:10.1016/j.jcp.2018.10.045",
+  "baslik": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+  "yil": 2019,
+  "cites": 20363,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "PINN temel çalışması; yalnızca başlık mevcut",
+  "alinti": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations."
+ },
+ {
+  "id": "arXiv:2411.03990",
+  "baslik": "ET-SEED: Efficient Trajectory-Level SE(3) Equivariant Diffusion Policy",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "SE(3)-eşdeğer yörünge düzeyi difüzyon politikası",
+  "alinti": "we leverage spatial symmetry and propose ET-SEED, an efficient trajectory-level SE(3) equivariant diffusion model for generating action sequences in complex robot manipulation tasks"
+ },
+ {
+  "id": "arXiv:1612.00222",
+  "baslik": "Interaction Networks for Learning about Objects, Relations and Physics",
+  "yil": 2016,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Grafik ağı tabanlı nesne-ilişki fizik modeli; temel çalışma",
+  "alinti": "We evaluate its ability to reason about several challenging physical domains: n-body problems, rigid-body collision, and non-rigid dynamics."
+ },
+ {
+  "id": "arXiv:1903.11239",
+  "baslik": "TossingBot: Learning to Throw Arbitrary Objects with Residual Physics",
+  "yil": 2019,
+  "cites": 236,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Artık fizik (residual physics) ile fırlatma öğrenmesi",
+  "alinti": "In this work, we propose an end-to-end formulation that jointly learns to infer control parameters for grasping and throwing motion primitives from visual observations"
+ },
+ {
+  "id": "arXiv:1810.01054",
+  "baslik": "ChainQueen: A Real-Time Differentiable Physical Simulator for Soft Robotics",
+  "yil": 2018,
+  "cites": 180,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Diferansiyellenebilir yumuşak cisim simülatörü, robotik",
+  "alinti": "Simulating deformable objects is, however, more challenging compared to rigid body dynamics. The underlying physical laws of deformable objects are more complex"
+ },
+ {
+  "id": "arXiv:2308.14984",
+  "baslik": "Contact-Rich <i>SE(3)</i>-Equivariant Robot Manipulation Task Learning via Geometric Impedance Control",
+  "yil": 2023,
+  "cites": 12,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Geometrik empedans kontrolü + SE(3) eşdeğerlik, temas zengin",
+  "alinti": "This paper presents a differential geometric control approach that leverages SE(3) group invariance and equivariance to increase transferability"
+ },
+ {
+  "id": "arXiv:2509.22695",
+  "baslik": "ReSeFlow: Rectifying SE(3)-Equivariant Policy Learning Flows",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "SE(3)-eşdeğer akış tabanlı politika öğrenmesi",
+  "alinti": "Crucially, both components employ SE(3)-equivariant networks to preserve rotational and translational symmetry, enabling robust generalization under rigid-body motions."
+ },
+ {
+  "id": "arXiv:2112.05124",
+  "baslik": "Neural Descriptor Fields: SE(3)-Equivariant Object Representations for Manipulation",
+  "yil": 2021,
+  "cites": 147,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "SE(3)-eşdeğer nesne temsili, manipülasyon",
+  "alinti": "Further, NDFs are SE(3)-equivariant, guaranteeing performance that generalizes across all possible 3D object translations and rotations."
+ },
+ {
+  "id": "arXiv:2508.01247",
+  "baslik": "Coordinated Humanoid Robot Locomotion with Symmetry Equivariant Reinforcement Learning Policy",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Humanoid yürüme; morfolojik simetri eşdeğerliği",
+  "alinti": "SE-Policy enforces consistent behaviors across symmetric observations, producing temporally and spatially coordinated motions with higher task performance."
+ },
+ {
+  "id": "arXiv:2601.17486",
+  "baslik": "EquiForm: Noise-Robust SE(3)-Equivariant Policy Learning from 3D Point Clouds",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Gürültüye dayanıklı SE(3)-eşdeğer nokta bulutu politikası",
+  "alinti": "EquiForm formalizes how noise-induced geometric distortions lead to equivariance deviations in observation-to-action mappings"
+ },
+ {
+  "id": "arXiv:2405.07237",
+  "baslik": "Soft Contact Simulation and Manipulation Learning of Deformable Objects with Vision-based Tactile Sensor",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Yumuşak temas simülasyonu, deforme nesne, sim-to-real",
+  "alinti": "We propose a novel approach utilizing Vision-Based Tactile Sensors (VBTSs) as the end-effector in simulation"
+ },
+ {
+  "id": "arXiv:2110.15443",
+  "baslik": "Equivariant $Q$ Learning in Spatial Action Spaces",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Uzamsal eylem uzayında eşdeğer Q öğrenmesi",
+  "alinti": "These models are relevant to robotics because many robotics problems can be expressed in a rotationally symmetric way."
+ },
+ {
+  "id": "doi:10.1007/s11227-026-08287-x",
+  "baslik": "Data-efficient Reinforcement Learning And Control Of Soft Robots Via Deep Lagrangian-Informed Neural Network Dynamical Modeling",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Lagrange bilgili sinir ağı, yumuşak robot kontrolü",
+  "alinti": "Data-efficient Reinforcement Learning And Control Of Soft Robots Via Deep Lagrangian-Informed Neural Network Dynamical Modeling."
+ },
+ {
+  "id": "arXiv:2203.04439",
+  "baslik": "$\\mathrm{SO}(2)$-Equivariant Reinforcement Learning",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "SO(2)-eşdeğer DQN ve SAC, manipülasyon",
+  "alinti": "Equivariant neural networks enforce symmetry within the structure of their convolutional layers, resulting in a substantial improvement in sample efficiency"
+ },
+ {
+  "id": "arXiv:2407.01812",
+  "baslik": "Equivariant Diffusion Policy",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "SO(2)-eşdeğer difüzyon politikası, simetri analizi",
+  "alinti": "In this work, we propose Equivariant Diffusion Policy, a novel diffusion policy learning method that leverages domain symmetries to obtain better sample efficiency"
+ },
+ {
+  "id": "arXiv:2202.00817",
+  "baslik": "Do Differentiable Simulators Give Better Policy Gradients?",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Diferansiyellenebilir simülatör gradyan yanlılığı; süreksizlik sorunu",
+  "alinti": "We show that characteristics of certain physical systems, such as stiffness or discontinuities, may compromise the efficacy of the first-order estimator"
+ },
+ {
+  "id": "arXiv:2203.04923",
+  "baslik": "On-Robot Learning With Equivariant Models",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Gerçek robotta eşdeğer SAC ile politika öğrenmesi",
+  "alinti": "Recently, equivariant neural network models have been shown to improve sample efficiency for tasks in computer vision and reinforcement learning."
+ },
+ {
+  "id": "arXiv:1810.01566",
+  "baslik": "Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids",
+  "yil": 2018,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Öğrenilmiş parçacık simülatörü; katı, yumuşak, sıvı",
+  "alinti": "Real-life control tasks involve matters of various substances---rigid or soft bodies, liquid, gas---each with distinct physical behaviors."
+ },
+ {
+  "id": "arXiv:2002.09405",
+  "baslik": "Learning to Simulate Complex Physics with Graph Networks",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Grafik ağı tabanlı öğrenilmiş simülatör (GNS)",
+  "alinti": "represents the state of a physical system with particles, expressed as nodes in a graph, and computes dynamics via learned message-passing."
+ },
+ {
+  "id": "arXiv:1904.06580",
+  "baslik": "Combining Physical Simulators and Object-Based Networks for Control",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Fizik motoru ile nesne tabanlı ağın hibrit modeli.",
+  "alinti": "we propose a hybrid dynamics model, simulator-augmented interaction networks (SAIN), combining a physics engine with an object-based neural network for dynamics modeling."
+ },
+ {
+  "id": "arXiv:2408.02662",
+  "baslik": "Integrating Model-Based Footstep Planning with Model-Free Reinforcement Learning for Dynamic Legged Locomotion",
+  "yil": 2024,
+  "cites": 27,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "LIP fizik modeli ile model-free RL birleşimi.",
+  "alinti": "We then train an RL policy to track the foot placements without following the full reference motions derived from the LIP model."
+ },
+ {
+  "id": "arXiv:2104.03311",
+  "baslik": "PlasticineLab: A Soft-Body Manipulation Benchmark with Differentiable Physics",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Diferansiyellenebilir yumuşak cisim manipülasyon benchmarkı",
+  "alinti": "The underlying physics engine supports differentiable elastic and plastic deformation using the DiffTaichi system, posing many under-explored challenges to robotic agents."
+ },
+ {
+  "id": "arXiv:2011.13798",
+  "baslik": "Learning Hybrid Locomotion Skills -- Learn to Exploit Residual Dynamics and Modulate Model-based Gait Control",
+  "yil": 2020,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Model-tabanlı yürüyüş çekirdeği ile artık öğrenme, simetri.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2305.05375",
+  "baslik": "Physics-informed Neural Networks to Model and Control Robots: a Theoretical and Experimental Investigation",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Fizik bilgili sinir ağları ve kararlılık sınırları, kontrol.",
+  "alinti": "We propose to combine these learned models with model-based controllers originally developed with first-principle models in mind."
+ },
+ {
+  "id": "doi:10.1177/02783649261424445",
+  "baslik": "Equivariant diffusion policy for sample-efficient robotic manipulation",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Simetri önbilgili difüzyon politikası, örnek verimliliği.",
+  "alinti": "We theoretically characterize when a diffusion policy is equivariant and analyze the SO (2) symmetry of full 6-DoF control."
+ },
+ {
+  "id": "arXiv:2201.08434",
+  "baslik": "DROPO: Sim-to-Real Transfer with Offline Domain Randomization",
+  "yil": 2022,
+  "cites": 60,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Dinamik parametre alan rastgeleleştirme, sim-to-real",
+  "alinti": "DROPO only requires a limited, precollected offline dataset of trajectories, and explicitly models parameter uncertainty to match real data"
+ },
+ {
+  "id": "arXiv:2007.00987",
+  "baslik": "ADD: Analytically Differentiable Dynamics for Multi-Body Systems with Frictional Contact",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Sürtünmeli temas için analitik diferansiyellenebilir dinamik.",
+  "alinti": "We present a differentiable dynamics solver that is able to handle frictional contact for rigid and deformable objects within a unified framework."
+ },
+ {
+  "id": "arXiv:2403.08716",
+  "baslik": "DIFFTACTILE: A Physics-based Differentiable Tactile Simulator for Contact-rich Robotic Manipulation",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Diferansiyellenebilir dokunsal simülatör, FEM temas",
+  "alinti": "DIFFTACTILE emphasizes physics-based contact modeling with high fidelity, supporting simulations of diverse contact modes and interactions with objects"
+ },
+ {
+  "id": "arXiv:2010.03409",
+  "baslik": "Learning Mesh-Based Simulation with Graph Networks",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Grafik ağlarıyla mesh tabanlı öğrenilmiş simülasyon.",
+  "alinti": "Our model can be trained to pass messages on a mesh graph and to adapt the mesh discretization during forward simulation."
+ },
+ {
+  "id": "arXiv:2306.13867",
+  "baslik": "Physics-Informed Machine Learning for Modeling and Control of Dynamical Systems",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Fizik bilgili makine öğrenmesi için kapsamlı eğitici derleme.",
+  "alinti": "As opposed to purely data-driven methods, PIML models can be trained from additional information obtained by enforcing physical laws such as energy and mass conservation."
+ },
+ {
+  "id": "arXiv:2003.04630",
+  "baslik": "Lagrangian Neural Networks",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Core Lagrangian neural network with conservation laws",
+  "alinti": "In contrast to models that learn Hamiltonians, LNNs do not require canonical coordinates, and thus perform well in situations where canonical momenta are unknown or difficult to compute."
+ },
+ {
+  "id": "arXiv:1710.06537",
+  "baslik": "Sim-to-Real Transfer of Robotic Control with Dynamics Randomization",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Dinamik rastgeleleştirme ile sim-to-real aktarımı.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1907.04490",
+  "baslik": "Deep Lagrangian Networks: Using Physics as Model Prior for Deep Learning",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Core Lagrangian physics-prior network for model learning",
+  "alinti": "As a first example, we propose Deep Lagrangian Networks (DeLaN) as a deep network structure upon which Lagrangian Mechanics have been imposed."
+ },
+ {
+  "id": "arXiv:2207.05060",
+  "baslik": "Differentiable Physics Simulations with Contacts: Do They Have Correct Gradients w.r.t. Position, Velocity and Control?",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Temas modellerinde gradyan doğruluğu, diferansiyellenebilir simülasyon.",
+  "alinti": "We analyze and compare the gradients calculated by these models and show that the gradients are not always correct."
+ },
+ {
+  "id": "arXiv:2402.01086",
+  "baslik": "Sim-to-Real of Soft Robots with Learned Residual Physics",
+  "yil": 2024,
+  "cites": 34,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Residual physics for sim-to-real soft robots, directly central",
+  "alinti": "Residual physics networks learn from real-world data to augment a discrepant model and bring it closer to reality."
+ },
+ {
+  "id": "arXiv:2303.09597",
+  "baslik": "Residual Physics Learning and System Identification for Sim-to-real Transfer of Policies on Buoyancy Assisted Legged Robots",
+  "yil": 2023,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "dblp"
+  ],
+  "rel": 3,
+  "not": "Artık fizik öğrenme ve sistem tanılama, sim-to-real.",
+  "alinti": "we utilize deep reinforcement learning to train an external force policy to match real-world trajectories, which enables us to model residual physics with greater fidelity."
+ },
+ {
+  "id": "arXiv:2507.01723",
+  "baslik": "SE(3)-Equivariant Diffusion Policy in Spherical Fourier Space",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "SE(3) eşdeğerlikli difüzyon politikası, manipülasyon.",
+  "alinti": "Such equivariance is achieved by embedding the states, actions, and the denoising process in spherical Fourier space."
+ },
+ {
+  "id": "arXiv:2411.10935",
+  "baslik": "Exciting Contact Modes in Differentiable Simulations for Robot Learning",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Contact exploration in differentiable simulators for sim-to-real",
+  "alinti": "we explore an approach to actively plan and excite contact modes in differentiable simulators as a means to tighten the sim-to-real gap."
+ },
+ {
+  "id": "arXiv:2212.02179",
+  "baslik": "Physics-Informed Model-Based Reinforcement Learning",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Physics-informed dynamics models within model-based RL",
+  "alinti": "Recently, there has been growing interest in developing better deep neural network based dynamics models for physical systems, by utilizing the structure of the underlying physics."
+ },
+ {
+  "id": "arXiv:2303.12410",
+  "baslik": "EDGI: Equivariant Diffusion for Planning with Embodied Agents",
+  "yil": 2023,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "SE(3)xZxSn eşdeğerlikli difüzyon ile model-tabanlı planlama.",
+  "alinti": "Most algorithms for planning and model-based reinforcement learning (MBRL) do not take this rich geometric structure into account, leading to sample inefficiency and poor generalization."
+ },
+ {
+  "id": "arXiv:2211.08064",
+  "baslik": "Physics-Informed Machine Learning: A Survey on Problems, Methods and Applications",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Fizik bilgili makine öğrenmesi üzerine kapsamlı anket",
+  "alinti": "By integrating the data and mathematical physics models seamlessly, it can guide the machine learning model towards solutions that are physically plausible"
+ },
+ {
+  "id": "arXiv:1906.01563",
+  "baslik": "Hamiltonian Neural Networks",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Foundational Hamiltonian network with conservation laws",
+  "alinti": "draw inspiration from Hamiltonian mechanics to train models that learn and respect exact conservation laws in an unsupervised manner."
+ },
+ {
+  "id": "arXiv:2505.21351",
+  "baslik": "EquAct: An SE(3)-Equivariant Multi-Task Transformer for Open-Loop Robotic Manipulation",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "SE(3) eşdeğerlikli manipülasyon politikası, merkezi simetri yaklaşımı.",
+  "alinti": "we leverage SE(3) equivariance as a key structural property shared by both policy and language, and propose EquAct-a novel SE(3)-equivariant multi-task transformer."
+ },
+ {
+  "id": "arXiv:2006.16908",
+  "baslik": "MDP Homomorphic Networks: Group Symmetries in Reinforcement Learning",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Core symmetry/equivariance prior in RL policies",
+  "alinti": "MDP homomorphic networks are neural networks that are equivariant under symmetries in the joint state-action space of an MDP."
+ },
+ {
+  "id": "arXiv:2512.11345",
+  "baslik": "Symmetry-Aware Steering of Equivariant Diffusion Policies: Benefits and Limits",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Equivariant diffusion policies with symmetry-aware RL",
+  "alinti": "we theoretically establish that the diffusion process of an EDP is equivariant"
+ },
+ {
+  "id": "arXiv:1812.03201",
+  "baslik": "Residual Reinforcement Learning for Robot Control",
+  "yil": 2018,
+  "cites": 386,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Klasik kontrol + RL artığı; hibrit model",
+  "alinti": "we study how we can solve difficult control problems in the real world by decomposing them into a part that is solved efficiently by conventional feedback control methods"
+ },
+ {
+  "id": "arXiv:2310.09543",
+  "baslik": "Benchmarking the Sim-to-Real Gap in Cloth Manipulation",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Kumaş manipülasyonunda sim-to-real boşluğu karşılaştırması.",
+  "alinti": "We use the dataset to evaluate the reality gap, computational time, and simulation stability of four popular deformable object simulators: MuJoCo, Bullet, Flex, and SOFA."
+ },
+ {
+  "id": "arXiv:2203.00806",
+  "baslik": "Dojo: A Differentiable Physics Engine for Robotics",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Differentiable physics engine with contact modeling",
+  "alinti": "Dojo models hard contact and friction with a nonlinear complementarity problem with second-order cone constraints."
+ },
+ {
+  "id": "arXiv:2604.18161",
+  "baslik": "Does \"Do Differentiable Simulators Give Better Policy Gradients?'' Give Better Policy Gradients?",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Süreksiz dinamikte diferansiyellenebilir simülatör gradyan yanlılığı",
+  "alinti": "However, discontinuous dynamics cause bias and undermine the effectiveness of 1st-order estimators. Prior work addressed this bias by constructing a confidence interval"
+ },
+ {
+  "id": "doi:10.1177/02783649231219020",
+  "baslik": "RoboCraft: Learning to see, simulate, and shape elasto-plastic objects in 3D with graph networks",
+  "yil": 2023,
+  "cites": 36,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Graph-network dynamics for elasto-plastic objects with MPC",
+  "alinti": "It transforms the sensory data into particles and learns a particle-based dynamics model using graph neural networks (GNNs) to capture the structure of the underlying system."
+ },
+ {
+  "id": "arXiv:1909.12077",
+  "baslik": "Symplectic ODE-Net: Learning Hamiltonian Dynamics with Control",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Hamiltonian fizik önbilgili dinamik öğrenme, merkezi",
+  "alinti": "we enforce Hamiltonian dynamics with control to learn the underlying dynamics in a transparent way"
+ },
+ {
+  "id": "arXiv:2603.14469",
+  "baslik": "Physics-Informed Policy Optimization via Analytic Dynamics Regularization",
+  "yil": 2026,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Lagrangian residual regularization in policy optimization",
+  "alinti": "At the core of our method is the integration of a differentiable Lagrangian residual as a regularization term within the actor's objective."
+ },
+ {
+  "id": "arXiv:2309.01909",
+  "baslik": "A Survey on Physics Informed Reinforcement Learning: Review and Open Problems",
+  "yil": 2023,
+  "cites": 57,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Survey of physics-informed RL; directly central",
+  "alinti": "We present a thorough review of the literature on incorporating physics information, as known as physics priors, in reinforcement learning approaches"
+ },
+ {
+  "id": "doi:10.1109/iros.2017.8206343",
+  "baslik": "Data-efficient control policy search using residual dynamics learning",
+  "yil": 2017,
+  "cites": 37,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; artık dinamik öğrenme ile politika arama",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2002.08860",
+  "baslik": "Dissipative SymODEN: Encoding Hamiltonian Dynamics with Dissipation and Control into Deep Learning",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Sönümlemeli port-Hamiltonian yapılı dinamik öğrenme",
+  "alinti": "encodes the port-Hamiltonian dynamics with energy dissipation and external input into the design of its computation graph"
+ },
+ {
+  "id": "arXiv:1910.00935",
+  "baslik": "DiffTaichi: Differentiable Programming for Physical Simulation",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Diferansiyellenebilir fizik simülasyon dili, merkezi",
+  "alinti": "DiffTaichi generates gradients of simulation steps using source code transformations that preserve arithmetic intensity and parallelism"
+ },
+ {
+  "id": "doi:10.1109/fasta61401.2024.10595110",
+  "baslik": "Dynamics Modeling of Soft Robots Based on Attention-enhanced Lagrangian Deep Neural Networks",
+  "yil": 2024,
+  "cites": 2,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Lagrange tabanlı sinir ağı ile yumuşak robot dinamiği.",
+  "alinti": "Dynamics Modeling of Soft Robots Based on Attention-enhanced Lagrangian Deep Neural Networks."
+ },
+ {
+  "id": "doi:10.1016/j.robot.2023.104569",
+  "baslik": "Physics-informed Neural Network for Quadrotor Dynamical Modeling",
+  "yil": 2024,
+  "cites": 61,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; fizik bilgili dinamik modelleme, İHA",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2312.03297",
+  "baslik": "SoftMAC: Differentiable Soft Body Simulation with Forecast-based Contact Model and Two-way Coupling with Articulated Rigid Bodies and Clothes",
+  "yil": 2023,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Diferansiyellenebilir yumuşak cisim ve kumaş simülasyonu.",
+  "alinti": "We present SoftMAC, a differentiable simulation framework that couples soft bodies with articulated rigid bodies and clothes."
+ },
+ {
+  "id": "doi:10.1186/s10033-025-01299-3",
+  "baslik": "Physics-Informed Graph Learning for Shape Prediction in Robot Manipulate of Deformable Linear Objects",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Fizik bilgili GNN ile deformable kablo şekil tahmini",
+  "alinti": "a method of fiber shape prediction based on a physical information graph neural network (PIGNN) is proposed"
+ },
+ {
+  "id": "arXiv:2506.23135",
+  "baslik": "RoboScape: Physics-informed Embodied World Model",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Fizik bilgili robotik dünya modeli",
+  "alinti": "We introduce two key physics-informed joint training tasks: temporal depth prediction that enhances 3D geometric consistency in video rendering"
+ },
+ {
+  "id": "arXiv:2504.13659",
+  "baslik": "Performance Analysis of a Mass-Spring-Damper Deformable Linear Object Model in Robotic Simulation Frameworks",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Kütle-yay-sönümleyici model ve alan rastgeleleştirme, sim-to-real.",
+  "alinti": "The study aims to assess the impact of model parameter variations on DLO dynamics, using Isaac Sim and Gazebo to validate the applicability of DR technique in these scenarios."
+ },
+ {
+  "id": "doi:10.15607/rss.2018.xiv.044",
+  "baslik": "Differentiable Physics and Stable Modes for Tool-Use and Manipulation Planning",
+  "yil": 2018,
+  "cites": 179,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Diferansiyellenebilir fizik ve manipülasyon planlaması; başlık temelli.",
+  "alinti": "Differentiable Physics and Stable Modes for Tool-Use and Manipulation Planning."
+ },
+ {
+  "id": "arXiv:2210.07329",
+  "baslik": "Sample Efficient Dynamics Learning for Symmetrical Legged Robots: Leveraging Physics Invariance and Geometric Symmetries",
+  "yil": 2022,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Bacaklı robot dinamiğinde simetri ve eşdeğerlik",
+  "alinti": "we propose considering the geometric prior by representing the system in symmetrical object groups and designing neural network architecture to assess invariance and equivariance"
+ },
+ {
+  "id": "arXiv:1806.07851",
+  "baslik": "Sim-to-Real Reinforcement Learning for Deformable Object Manipulation",
+  "yil": 2018,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Deformable nesneler için sim-to-real RL",
+  "alinti": "an emerging trend is to learn control policies in simulation and then transfer them over to the real world"
+ },
+ {
+  "id": "doi:10.23919/siceiscs48470.2020.9083501",
+  "baslik": "Simulation-based Parameter Identification Framework for the Calibration of Rigid Body Simulation Models",
+  "yil": 2020,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Katı cisim simülasyon modeli kalibrasyonu; fizik parametre tanılama.",
+  "alinti": "Simulation-based Parameter Identification Framework for the Calibration of Rigid Body Simulation Models."
+ },
+ {
+  "id": "arXiv:2503.18787",
+  "baslik": "Sample-Efficient Reinforcement Learning of Koopman eNMPC",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Model-based RL with Koopman control; partial physics priors",
+  "alinti": "combine a model-based RL algorithm with our published method that turns Koopman (e)NMPCs into automatically differentiable policies."
+ },
+ {
+  "id": "arXiv:2410.03076",
+  "baslik": "Residual Policy Learning for Perceptive Quadruped Control Using Differentiable Simulation",
+  "yil": 2024,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Diferansiyellenebilir simülasyonda artık politika öğrenme; fizik gradyanları.",
+  "alinti": "we propose guiding the policy search by learning a residual over a simple baseline policy"
+ },
+ {
+  "id": "doi:10.1109/icra57385.2026.11696124",
+  "baslik": "A Framework for Soft Robot Control: Integrating Physics-Based Modeling with Exploration Based Learning",
+  "yil": 2026,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; fizik tabanlı modelleme ile öğrenmeyi birleştiriyor.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1509.06841",
+  "baslik": "One-shot learning of manipulation skills with online dynamics adaptation and neural network priors",
+  "yil": 2015,
+  "cites": 63,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Önceki görevlerden önbilgili dinamik modelle model tabanlı RL",
+  "alinti": "These two ingredients enable highly sample-efficient learning even in regimes where estimating the true dynamics is very difficult, since the online model adaptation allows the method to locally compensate for unmodeled variation in the dynamics."
+ },
+ {
+  "id": "arXiv:2211.00194",
+  "baslik": "SEIL: Simulation-augmented Equivariant Imitation Learning",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Eşdeğer taklit öğrenme, simülasyon artırımı, manipülasyon",
+  "alinti": "We propose Simulation-augmented Equivariant Imitation Learning (SEIL), a method that combines a novel data augmentation strategy of supplementing expert trajectories with simulated transitions and an equivariant model"
+ },
+ {
+  "id": "arXiv:2408.09840",
+  "baslik": "Machine Learning with Physics Knowledge for Prediction: A Survey",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Fizik bilgili makine öğrenmesi anketi; robotik odaklı değil.",
+  "alinti": "This survey examines the broad suite of methods and models for combining machine learning with physics knowledge for prediction and forecast"
+ },
+ {
+  "id": "arXiv:2403.17320",
+  "baslik": "Leveraging Symmetry in RL-based Legged Locomotion Control",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Symmetry priors for RL legged locomotion",
+  "alinti": "we can leverage symmetry to guide and improve the exploration in policy learning via equivariance/invariance constraints"
+ },
+ {
+  "id": "arXiv:2101.06005",
+  "baslik": "SimGAN: Hybrid Simulator Identification for Domain Adaptation via Adversarial Reinforcement Learning",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Hibrit simülatör tanımlama, sim-to-real alan uyarlama",
+  "alinti": "Our hybrid simulator combines neural networks and traditional physics simulation to balance expressiveness and generalizability"
+ },
+ {
+  "id": "arXiv:2511.08585",
+  "baslik": "Simulating the Visual World with Artificial Intelligence: A Roadmap",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Video foundation models as implicit world models; physics is one part",
+  "alinti": "The world model encodes structured knowledge about the world, including physical laws, interaction dynamics, and agent behavior."
+ },
+ {
+  "id": "arXiv:2106.05306",
+  "baslik": "DiffCloth: Differentiable Cloth Simulation with Dry Frictional Contact",
+  "yil": 2021,
+  "cites": 87,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Diferansiyellenebilir kumaş simülatörü, kontrol uygulamaları",
+  "alinti": "Finally, we demonstrate the efficacy of our simulator in a number of downstream applications, including system identification, trajectory optimization for assisted dressing, closed-loop control"
+ },
+ {
+  "id": "doi:10.1109/lra.2020.2974707",
+  "baslik": "RLBench: The Robot Learning Benchmark &amp; Learning Environment",
+  "yil": 2020,
+  "cites": 381,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 1,
+  "not": "Robot öğrenme benchmarkı; fizik odağı belirsiz",
+  "alinti": ""
+ }
+]

@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a1-20261026-065024-587ce2",
+ "sistem": "A-taban-a1",
+ "mod": "a1",
+ "soru": "Uzamsal bağlaşık (spatially coupled) kodlar, iletişim ve veri depolama için kodlama kuramındaki son gelişmeler üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-04-12",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 3.0,
+ "maliyet_usd": 1.2896,
+ "sure_s": 229.6,
+ "web_arama": 35,
+ "token": {
+  "in": 573344,
+  "out": 50591,
+  "cache_read": 460743,
+  "cache_write": 55204
+ },
+ "son_rapor_token_tahmini": 3089,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: Uzamsal bağlaşık (spatially coupled) kodlar, iletişim ve veri depolama için kodlama kuramındaki son gelişmeler üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-04-12. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first) — the kind a careful expert survey published right after the cutoff would cite. Give each with its arXiv id and/or DOI.\n\nYou MUST research this with web search rather than answer from memory: search for the important works, and verify each listed work's title, publication date and identifier on the web (e.g. arxiv.org, doi.org, the publisher or DBLP page) before including it.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:1001.1826",
+   "arxiv_id": "1001.1826",
+   "doi": "10.1109/TIT.2010.2095072",
+   "baslik": "Threshold Saturation via Spatial Coupling: Why Convolutional LDPC Ensembles Perform So Well over the BEC",
+   "yil": 2011,
+   "gerekce": "Proved threshold saturation on the BEC, showing that spatial coupling raises the BP threshold to the MAP threshold, and so founded the modern theory of spatially coupled codes."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:1201.2999",
+   "arxiv_id": "1201.2999",
+   "doi": "10.1109/TIT.2013.2280915",
+   "baslik": "Spatially Coupled Ensembles Universally Achieve Capacity Under Belief Propagation",
+   "yil": 2013,
+   "gerekce": "Extended threshold saturation to all BMS channels, proving that SC-LDPC ensembles universally achieve capacity under BP decoding."
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1109/18.782171",
+   "arxiv_id": null,
+   "doi": "10.1109/18.782171",
+   "baslik": "Time-varying periodic convolutional codes with low-density parity-check matrix",
+   "yil": 1999,
+   "gerekce": "Introduced LDPC convolutional codes, the origin of spatially coupled codes."
+  },
+  {
+   "sira": 4,
+   "id": "doi:10.1109/tit.2010.2059490",
+   "arxiv_id": null,
+   "doi": "10.1109/TIT.2010.2059490",
+   "baslik": "Iterative Decoding Threshold Analysis for LDPC Convolutional Codes",
+   "yil": 2010,
+   "gerekce": "Showed by density evolution that terminated LDPC convolutional codes have thresholds close to capacity, giving the first evidence of the threshold-improvement phenomenon."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:1309.7543",
+   "arxiv_id": "1309.7543",
+   "doi": "10.1109/TIT.2014.2360692",
+   "baslik": "Threshold Saturation for Spatially Coupled LDPC and LDGM Codes on BMS Channels",
+   "yil": 2014,
+   "gerekce": "Gave a general proof of threshold saturation on BMS channels for irregular LDPC and LDGM codes using the potential-function method."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:1309.7910",
+   "arxiv_id": "1309.7910",
+   "doi": "10.1109/TIT.2014.2352296",
+   "baslik": "A Simple Proof of Maxwell Saturation for Coupled Scalar Recursions",
+   "yil": 2014,
+   "gerekce": "Introduced the potential-function framework, a general and simple proof technique for coupled scalar recursions that later spread across many applications."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:1407.5366",
+   "arxiv_id": "1407.5366",
+   "doi": "10.1109/TIT.2015.2453267",
+   "baslik": "Spatially Coupled LDPC Codes Constructed From Protographs",
+   "yil": 2015,
+   "gerekce": "Systematized protograph-based SC-LDPC construction, achieving thresholds near capacity together with linear minimum-distance growth."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:1310.3724",
+   "arxiv_id": "1310.3724",
+   "doi": "10.1109/MCOM.2014.6852099",
+   "baslik": "Spatially Coupled Sparse Codes on Graphs: Theory and Practice",
+   "yil": 2014,
+   "gerekce": "A widely cited survey of the theory and practical aspects of SC-LDPC codes (window decoding, error floors, applications)."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:1010.4548",
+   "arxiv_id": "1010.4548",
+   "doi": "10.1109/TIT.2011.2177439",
+   "baslik": "Windowed Decoding of Protograph-Based LDPC Convolutional Codes Over Erasure Channels",
+   "yil": 2012,
+   "gerekce": "Analyzed the low-latency sliding-window decoder, which is key to practical use of SC codes."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:1112.0708",
+   "arxiv_id": "1112.0708",
+   "doi": "10.1109/TIT.2013.2274513",
+   "baslik": "Information-Theoretically Optimal Compressed Sensing via Spatial Coupling and Approximate Message Passing",
+   "yil": 2013,
+   "gerekce": "Rigorously proved that spatial coupling with AMP gives information-theoretically optimal reconstruction, carrying the idea beyond coding."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:1109.4424",
+   "arxiv_id": "1109.4424",
+   "doi": "10.1103/PhysRevX.2.021005",
+   "baslik": "Statistical-Physics-Based Reconstruction in Compressed Sensing",
+   "yil": 2012,
+   "gerekce": "Linked spatial coupling to nucleation (seeding) from statistical physics and achieved reconstruction close to the optimal limit."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:1201.4106",
+   "arxiv_id": "1201.4106",
+   "doi": "10.1109/JLT.2011.2175479",
+   "baslik": "Staircase Codes: FEC for 100 Gb/s OTN",
+   "yil": 2012,
+   "gerekce": "Introduced staircase codes, the spatially coupled product-like codes that became the industrial standard in high-speed optical communication."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:1202.6095",
+   "arxiv_id": "1202.6095",
+   "doi": "10.1109/TIT.2017.2717838",
+   "baslik": "Approaching Capacity at High Rates With Iterative Hard-Decision Decoding",
+   "yil": 2017,
+   "gerekce": "Showed that spatially coupled GLDPC codes with BCH components approach capacity at high rates under iterative hard-decision decoding."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:1604.07315",
+   "arxiv_id": "1604.07315",
+   "doi": "10.1109/TIT.2017.2735965",
+   "baslik": "Spatially Coupled Turbo-Like Codes",
+   "yil": 2017,
+   "gerekce": "Carried spatial coupling over to turbo and serially concatenated code families and proved threshold saturation for them."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:1404.5719",
+   "arxiv_id": "1404.5719",
+   "doi": "10.1109/TIT.2015.2422816",
+   "baslik": "A Scaling Law to Predict the Finite-Length Performance of Spatially-Coupled LDPC Codes",
+   "yil": 2015,
+   "gerekce": "Proposed the first scaling law predicting the finite-length performance of SC-LDPC codes, opening up the finite-length theory."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:1802.06481",
+   "arxiv_id": "1802.06481",
+   "doi": "10.1109/TCOMM.2018.2867493",
+   "baslik": "Finite-Length Construction of High Performance Spatially-Coupled Codes via Optimized Partitioning and Lifting",
+   "yil": 2019,
+   "gerekce": "The optimized partitioning and lifting (OO-CPO) framework gave a major error-floor improvement for finite-length SC codes, notably for storage."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2109.08978",
+   "arxiv_id": "2109.08978",
+   "doi": "10.1109/TIT.2022.3207321",
+   "baslik": "Breaking the Computational Bottleneck: Probabilistic Optimization of High-Memory Spatially-Coupled Codes",
+   "yil": 2023,
+   "gerekce": "Solved the computational bottleneck of high-memory SC code design with probabilistic gradient-based optimization (GRADE-AO)."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2002.07844",
+   "arxiv_id": "2002.07844",
+   "doi": "10.1109/TIT.2021.3083733",
+   "baslik": "Capacity-Achieving Spatially Coupled Sparse Superposition Codes With AMP Decoding",
+   "yil": 2021,
+   "gerekce": "Proved with non-asymptotic bounds that spatially coupled SPARCs achieve AWGN capacity under AMP decoding."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:1503.08040",
+   "arxiv_id": "1503.08040",
+   "doi": "10.1109/TIT.2017.2713833",
+   "baslik": "Approximate Message-Passing Decoder and Capacity Achieving Sparse Superposition Codes",
+   "yil": 2017,
+   "gerekce": "Showed that spatially coupled sparse superposition codes approach capacity with an AMP decoder."
+  },
+  {
+   "sira": 20,
+   "id": "doi:10.1109/tit.2021.3059751",
+   "arxiv_id": null,
+   "doi": "10.1109/TIT.2021.3059751",
+   "baslik": "Spatially Coupled LDPC Codes With Sub-Block Locality",
+   "yil": 2021,
+   "gerekce": "Introduced storage-motivated SC-LDPC codes that allow local sub-block access and semi-global decoding."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2203.10120",
+   "arxiv_id": "2203.10120",
+   "doi": "10.1109/JLT.2022.3193635",
+   "baslik": "Zipper Codes",
+   "yil": 2022,
+   "gerekce": "Unified spatially coupled product-like codes (staircase, braided, etc.) under one framework and analyzed their error floors."
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1109/jlt.2014.2379957",
+   "arxiv_id": null,
+   "doi": "10.1109/JLT.2014.2379957",
+   "baslik": "Spatially Coupled Soft-Decision Error Correction for Future Lightwave Systems",
+   "yil": 2015,
+   "gerekce": "Showed that soft-decision SC-LDPC codes outperform conventional LDPC and polar codes in optical communication."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:1908.02462",
+   "arxiv_id": "1908.02462",
+   "doi": "10.1109/TCOMM.2020.2971694",
+   "baslik": "Multi-Dimensional Spatially-Coupled Code Design: Enhancing the Cycle Properties",
+   "yil": 2020,
+   "gerekce": "Developed the design of multi-dimensional SC codes for multi-dimensional storage such as 2D magnetic recording and 3D Flash."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2201.09414",
+   "arxiv_id": "2201.09414",
+   "doi": "10.1109/TCOMM.2022.3196686",
+   "baslik": "Generalized Spatially-Coupled Parallel Concatenated Codes With Partial Repetition",
+   "yil": 2022,
+   "gerekce": "Presented the first class of spatially coupled turbo-like codes proven to achieve capacity."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:1105.0785",
+   "arxiv_id": "1105.0785",
+   "doi": "10.1109/CIG.2010.5592881",
+   "baslik": "Coupled Graphical Models and Their Thresholds",
+   "yil": 2010,
+   "gerekce": "Showed that spatial coupling is a general phenomenon across graphical models such as K-SAT, coloring and Curie-Weiss."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:1102.0406",
+   "arxiv_id": "1102.0406",
+   "doi": "10.1109/ISIT.2011.6034031",
+   "baslik": "Threshold Saturation on Channels with Memory via Spatial Coupling",
+   "yil": 2011,
+   "gerekce": "Extended threshold saturation to channels with memory, relevant to storage channels such as ISI channels."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2003.04421",
+   "arxiv_id": "2003.04421",
+   "doi": "10.1109/TCOMM.2020.3010958",
+   "baslik": "Finite-Length Scaling of Spatially Coupled LDPC Codes Under Window Decoding Over the BEC",
+   "yil": 2020,
+   "gerekce": "Extended finite-length scaling laws to the practically important window decoder."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2507.14064",
+   "arxiv_id": "2507.14064",
+   "doi": "10.1109/ITW62417.2025.11240539",
+   "baslik": "Bounds and Constructions of High-Memory Spatially-Coupled Codes",
+   "yil": 2025,
+   "gerekce": "Gave existence bounds and a constructive algorithm for high-memory SC codes using the Lovász Local Lemma, addressing an open problem."
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2509.21112",
+   "arxiv_id": "2509.21112",
+   "doi": null,
+   "baslik": "Adapt or Regress: Rate-Memory-Compatible Spatially-Coupled Codes",
+   "yil": 2025,
+   "gerekce": "Proposed reconfigurable rate- and memory-compatible SC codes for storage that ages over time."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:2603.25824",
+   "arxiv_id": "2603.25824",
+   "doi": null,
+   "baslik": "Exploiting the Degrees of Freedom: Multi-Dimensional Spatially-Coupled Codes Based on Gradient Descent",
+   "yil": 2026,
+   "gerekce": "Most recent work, from March 2026, on probabilistic gradient-descent design of multi-dimensional SC codes that minimizes detrimental objects."
+  }
+ ]
+}

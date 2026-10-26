@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a1-20261026-075550-17746d",
+ "sistem": "A-taban-a1",
+ "mod": "a1",
+ "soru": "Tıbbi görüntü analizinde (segmentasyon, sınıflandırma, rapor üretimi) temel modellerin kullanımı üzerine en önemli çalışmalar, kanıtlar ve açık problemler neler?",
+ "kesim": "2025-09-19",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 3.0,
+ "maliyet_usd": 1.0523,
+ "sure_s": 130.0,
+ "web_arama": 36,
+ "token": {
+  "in": 475170,
+  "out": 38319,
+  "cache_read": 155823,
+  "cache_write": 48144
+ },
+ "son_rapor_token_tahmini": 3001,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: Tıbbi görüntü analizinde (segmentasyon, sınıflandırma, rapor üretimi) temel modellerin kullanımı üzerine en önemli çalışmalar, kanıtlar ve açık problemler neler?\n\nCutoff date: 2025-09-19. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first) — the kind a careful expert survey published right after the cutoff would cite. Give each with its arXiv id and/or DOI.\n\nYou MUST research this with web search rather than answer from memory: search for the important works, and verify each listed work's title, publication date and identifier on the web (e.g. arxiv.org, doi.org, the publisher or DBLP page) before including it.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2304.12306",
+   "arxiv_id": "2304.12306",
+   "doi": "10.1038/s41467-024-44824-z",
+   "baslik": "Segment Anything in Medical Images",
+   "yil": 2024,
+   "gerekce": "MedSAM is the reference foundation model for universal promptable medical segmentation, trained on about 1.57M image–mask pairs from 10 modalities."
+  },
+  {
+   "sira": 2,
+   "id": "doi:10.1038/s41586-023-05881-4",
+   "arxiv_id": null,
+   "doi": "10.1038/s41586-023-05881-4",
+   "baslik": "Foundation models for generalist medical artificial intelligence",
+   "yil": 2023,
+   "gerekce": "This Nature Perspective set out the generalist medical AI (GMAI) idea along with its validation and regulation challenges, and it framed the field."
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1038/s41586-023-06555-x",
+   "arxiv_id": null,
+   "doi": "10.1038/s41586-023-06555-x",
+   "baslik": "A foundation model for generalizable disease detection from retinal images",
+   "yil": 2023,
+   "gerekce": "RETFound, self-supervised on 1.6M retinal images, showed label-efficient detection of both eye and systemic diseases."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2308.15474",
+   "arxiv_id": "2308.15474",
+   "doi": "10.1038/s41591-024-02857-3",
+   "baslik": "Towards a general-purpose foundation model for computational pathology",
+   "yil": 2024,
+   "gerekce": "The UNI self-supervised pathology encoder was evaluated on 34 tasks and became the standard backbone for pathology classification."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2307.12914",
+   "arxiv_id": "2307.12914",
+   "doi": "10.1038/s41591-024-02856-4",
+   "baslik": "A visual-language foundation model for computational pathology",
+   "yil": 2024,
+   "gerekce": "CONCH is a contrastive image–caption pathology model that set the state of the art in zero-shot classification, segmentation, captioning and retrieval."
+  },
+  {
+   "sira": 6,
+   "id": "doi:10.1038/s41586-024-07441-w",
+   "arxiv_id": null,
+   "doi": "10.1038/s41586-024-07441-w",
+   "baslik": "A whole-slide foundation model for digital pathology from real-world data",
+   "yil": 2024,
+   "gerekce": "Prov-GigaPath is an open-weight whole-slide model trained on 1.3B tiles from real-world data, and it was best on 25 of 26 tasks."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2306.00890",
+   "arxiv_id": "2306.00890",
+   "doi": null,
+   "baslik": "LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day",
+   "yil": 2023,
+   "gerekce": "This open biomedical multimodal assistant uses instruction tuning built from PMC figures and became the base for many medical VLMs."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2307.14334",
+   "arxiv_id": "2307.14334",
+   "doi": null,
+   "baslik": "Towards Generalist Biomedical AI",
+   "yil": 2023,
+   "gerekce": "Med-PaLM M and the MultiMedBench benchmark showed a single generalist multimodal model, including radiologist-preferred report generation."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2303.00915",
+   "arxiv_id": "2303.00915",
+   "doi": "10.1056/AIoa2400640",
+   "baslik": "BiomedCLIP: a multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs",
+   "yil": 2023,
+   "gerekce": "Built on PMC-15M, this is the most widely used general biomedical CLIP model for zero-shot classification and retrieval."
+  },
+  {
+   "sira": 10,
+   "id": "doi:10.1038/s41551-022-00936-9",
+   "arxiv_id": null,
+   "doi": "10.1038/s41551-022-00936-9",
+   "baslik": "Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning",
+   "yil": 2022,
+   "gerekce": "CheXzero showed that a CLIP model trained only on image–report pairs reaches near-radiologist zero-shot classification."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2304.02643",
+   "arxiv_id": "2304.02643",
+   "doi": "10.1109/ICCV51070.2023.00371",
+   "baslik": "Segment Anything",
+   "yil": 2023,
+   "gerekce": "SAM and SA-1B started the wave of promptable segmentation foundation models adapted to medical imaging."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:2304.10517",
+   "arxiv_id": "2304.10517",
+   "doi": "10.1016/j.media.2023.102918",
+   "baslik": "Segment anything model for medical image analysis: an experimental study",
+   "yil": 2023,
+   "gerekce": "This systematic zero-shot test of SAM on 19 medical datasets exposed the domain gap and how strongly results vary across tasks."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2309.07778",
+   "arxiv_id": "2309.07778",
+   "doi": "10.1038/s41591-024-03141-0",
+   "baslik": "A foundation model for clinical-grade computational pathology and rare cancers detection",
+   "yil": 2024,
+   "gerekce": "Virchow was trained on 1.5M slides and showed clinical-grade pan-cancer and rare-cancer detection."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2405.12971",
+   "arxiv_id": "2405.12971",
+   "doi": "10.1038/s41592-024-02499-w",
+   "baslik": "A foundation model for joint segmentation, detection and recognition of biomedical objects across nine modalities",
+   "yil": 2024,
+   "gerekce": "BiomedParse combines text-prompted segmentation, detection and recognition in one model across nine modalities."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2308.02463",
+   "arxiv_id": "2308.02463",
+   "doi": null,
+   "baslik": "Towards Generalist Foundation Model for Radiology by Leveraging Web-scale 2D&3D Medical Data",
+   "yil": 2023,
+   "gerekce": "RadFM, together with the MedMD (16M) dataset and RadBench, is a generalist radiology generative model covering both 2D and 3D scans."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2010.00747",
+   "arxiv_id": "2010.00747",
+   "doi": null,
+   "baslik": "Contrastive Learning of Medical Visual Representations from Paired Images and Text",
+   "yil": 2020,
+   "gerekce": "ConVIRT pioneered image–report contrastive pretraining and directly inspired CLIP."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2311.18260",
+   "arxiv_id": "2311.18260",
+   "doi": null,
+   "baslik": "Consensus, dissensus and synergy between clinicians and specialist foundation models in radiology report generation",
+   "yil": 2023,
+   "gerekce": "Flamingo-CXR evaluated foundation-model report generation and clinician–AI collaboration through a large radiologist study."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2305.17100",
+   "arxiv_id": "2305.17100",
+   "doi": "10.1038/s41591-024-03185-2",
+   "baslik": "A generalist vision–language foundation model for diverse biomedical tasks",
+   "yil": 2024,
+   "gerekce": "BiomedGPT is an open, lightweight generalist VLM that also covers report generation and VQA, evaluated by humans."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2405.03162",
+   "arxiv_id": "2405.03162",
+   "doi": null,
+   "baslik": "Advancing Multimodal Medical Capabilities of Gemini",
+   "yil": 2024,
+   "gerekce": "Med-Gemini reached a new level in 2D chest X-ray and 3D CT report generation and in pathology, dermatology and ophthalmology tasks."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2507.05201",
+   "arxiv_id": "2507.05201",
+   "doi": null,
+   "baslik": "MedGemma Technical Report",
+   "yil": 2025,
+   "gerekce": "MedGemma and MedSigLIP are open medical VLMs that approach task-specific models in classification and report generation."
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2401.12208",
+   "arxiv_id": "2401.12208",
+   "doi": null,
+   "baslik": "CheXagent: Towards a Foundation Model for Chest X-Ray Interpretation",
+   "yil": 2024,
+   "gerekce": "This instruction-tuned chest X-ray foundation model comes with the CheXinstruct dataset, the CheXbench benchmark and a fairness analysis."
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1038/s41591-023-02504-3",
+   "arxiv_id": null,
+   "doi": "10.1038/s41591-023-02504-3",
+   "baslik": "A visual–language foundation model for pathology image analysis using medical Twitter",
+   "yil": 2023,
+   "gerekce": "PLIP was the first large pathology vision–language model and showed that public social-media data can be used for pretraining."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2304.12620",
+   "arxiv_id": "2304.12620",
+   "doi": null,
+   "baslik": "Medical SAM Adapter: Adapting Segment Anything Model for Medical Image Segmentation",
+   "yil": 2023,
+   "gerekce": "Med-SA showed parameter-efficient adapter tuning of SAM for medical and 3D segmentation."
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2308.16184",
+   "arxiv_id": "2308.16184",
+   "doi": null,
+   "baslik": "SAM-Med2D",
+   "yil": 2023,
+   "gerekce": "SAM-Med2D fully fine-tuned SAM on 4.6M images and 19.7M masks and is a large-scale benchmark for medical SAM adaptation."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2403.17834",
+   "arxiv_id": "2403.17834",
+   "doi": null,
+   "baslik": "Developing Generalist Foundation Models from a Multimodal Dataset for 3D Computed Tomography",
+   "yil": 2024,
+   "gerekce": "With the CT-RATE dataset plus CT-CLIP and CT-CHAT, this is a key public resource for 3D CT vision–language models."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2406.06512",
+   "arxiv_id": "2406.06512",
+   "doi": null,
+   "baslik": "Merlin: A Vision Language Foundation Model for 3D Computed Tomography",
+   "yil": 2024,
+   "gerekce": "Merlin is supervised by EHR codes and reports and covers 752 tasks, including classification, report generation and segmentation."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2406.04449",
+   "arxiv_id": "2406.04449",
+   "doi": null,
+   "baslik": "MAIRA-2: Grounded Radiology Report Generation",
+   "yil": 2024,
+   "gerekce": "MAIRA-2 introduced grounded report generation and the RadFact factuality evaluation, which target hallucination in report writing."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2401.10815",
+   "arxiv_id": "2401.10815",
+   "doi": null,
+   "baslik": "Exploring scalable medical image encoders beyond text supervision",
+   "yil": 2024,
+   "gerekce": "RAD-DINO showed that image-only self-supervised encoders can match or beat text-supervised ones for classification, segmentation and reporting."
+  },
+  {
+   "sira": 29,
+   "id": "doi:10.1038/s42256-024-00807-9",
+   "arxiv_id": null,
+   "doi": "10.1038/s42256-024-00807-9",
+   "baslik": "Foundation model for cancer imaging biomarkers",
+   "yil": 2024,
+   "gerekce": "This self-supervised radiology foundation model for cancer imaging biomarkers is label-efficient, robust and biologically interpretable."
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1038/s41591-024-03113-4",
+   "arxiv_id": null,
+   "doi": "10.1038/s41591-024-03113-4",
+   "baslik": "The limits of fair medical imaging AI in real-world generalization",
+   "yil": 2024,
+   "gerekce": "It documents the open problems of demographic shortcuts and fairness not holding up under distribution shift in medical imaging models, including foundation models."
+  }
+ ]
+}

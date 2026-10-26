@@ -1,0 +1,1016 @@
+{
+ "run_id": "20261025-235229-0f2698",
+ "soru": "Konuşma ve bağlamdan beden ve yüz hareketi üretimi için kullanılan veri kümeleri, değerlendirme ölçütleri ve üretken yöntemler üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2025-11-09",
+ "durum": "EKSİK",
+ "eksik_kaynaklar": [
+  "openalex",
+  "s2_zenginlestirme"
+ ],
+ "funnel_dengeli": true,
+ "maliyet_usd": 0.6831,
+ "maliyet_asama": {
+  "sef_plan": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.07251599999999998,
+   "in": 1233,
+   "out": 3133,
+   "web_search": 0
+  },
+  "web_isci": {
+   "calls": 3,
+   "failed": 0,
+   "cost_usd": 0.18585265,
+   "in": 568372,
+   "out": 101649,
+   "web_search": 8
+  },
+  "okuyucu": {
+   "calls": 40,
+   "failed": 0,
+   "cost_usd": 0.26030679999999995,
+   "in": 327424,
+   "out": 389660,
+   "web_search": 0
+  },
+  "sef_final": {
+   "calls": 1,
+   "failed": 0,
+   "cost_usd": 0.164404,
+   "in": 13134,
+   "out": 2967,
+   "web_search": 0
+  }
+ },
+ "sureler_s": {
+  "sef_plan": 31.7,
+  "toplama:openalex": 19.8,
+  "toplama:crossref": 85.0,
+  "web_isci": 119.1,
+  "toplama:dblp": 204.9,
+  "toplama:arxiv": 363.7,
+  "toplama": 363.7,
+  "tekil+kesim_1": 55.8,
+  "atif": 253.5,
+  "okuyucu": 456.6,
+  "damitma": 74.4,
+  "sef_final": 30.1,
+  "toplam": 1265.8
+ },
+ "ozet_token_tahmini": 3896,
+ "plan": {
+  "alt_sorular": [
+   {
+    "id": "S1",
+    "soru": "Konuşmaya eşlik eden jest (co-speech gesture) üretiminin temelleri ve klasik yöntemler nelerdir (kural tabanlı, istatistiksel, erken derin öğrenme)?",
+    "sorgular": [
+     "\"co-speech gesture\" generation",
+     "speech-driven gesture synthesis",
+     "rule-based gesture generation embodied conversational agent",
+     "\"BEAT\" behavior expression animation toolkit",
+     "audio-driven head motion prosody"
+    ],
+    "yeterli": "Kural tabanlı sistemlerden (BEAT vb.) ilk derin öğrenme tabanlı konuşma-jest modellerine kadar temel çalışmalar ve kavramsal arka plan kapsandığında yeterlidir."
+   },
+   {
+    "id": "S2",
+    "soru": "Konuşma ve bağlamdan beden/jest üretiminde ana üretken yöntem aileleri nelerdir (GAN, VAE, normalizing flow, VQ-VAE, difüzyon, transformer/LLM tabanlı)?",
+    "sorgular": [
+     "diffusion co-speech gesture generation",
+     "normalizing flow gesture synthesis MoGlow",
+     "VQ-VAE gesture tokens speech",
+     "GAN speech-driven gesture",
+     "LLM-based gesture generation semantic"
+    ],
+    "yeterli": "Her yöntem ailesinden en az bir veya iki öncü ve güncel (2023-2025) çalışma belirlendiğinde yeterlidir."
+   },
+   {
+    "id": "S3",
+    "soru": "Konuşmadan yüz animasyonu ve konuşan yüz/kafa üretimi (3D yüz, dudak senkronu, ifade) için önemli yöntemler nelerdir?",
+    "sorgular": [
+     "speech-driven 3D facial animation",
+     "audio-driven talking head generation",
+     "\"lip sync\" talking face",
+     "FaceFormer audio-driven facial animation",
+     "emotional talking face generation"
+    ],
+    "yeterli": "3D yüz animasyonu (VOCA, FaceFormer, CodeTalker vb.) ve 2D konuşan kafa (Wav2Lip, SadTalker vb.) hatlarının ana çalışmaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S4",
+    "soru": "Bu alanda yaygın kullanılan veri kümeleri ve benchmarklar nelerdir (TED, Trinity, BEAT, Talking With Hands, SHOW, VOCASET, BIWI, MEAD)?",
+    "sorgular": [
+     "co-speech gesture dataset motion capture",
+     "BEAT dataset body expression audio text",
+     "\"Talking With Hands\" 16.2M dataset",
+     "Trinity speech gesture dataset",
+     "VOCASET BIWI 3D face audio dataset"
+    ],
+    "yeterli": "Beden, el, yüz ve diyadik etkileşim için en çok kullanılan veri kümeleri ve bunların özellikleri tanımlandığında yeterlidir."
+   },
+   {
+    "id": "S5",
+    "soru": "Jest ve yüz hareketi üretiminin değerlendirilmesinde hangi nesnel ölçütler ve öznel değerlendirme protokolleri kullanılır (FGD, beat alignment, diversity, lip vertex error, GENEA challenge)?",
+    "sorgular": [
+     "GENEA challenge gesture generation evaluation",
+     "Fréchet Gesture Distance FGD",
+     "gesture evaluation metrics human perception",
+     "beat consistency score gesture",
+     "\"lip vertex error\" facial animation evaluation"
+    ],
+    "yeterli": "Yaygın nesnel ölçütler, bunların insan algısıyla ilişkisi ve GENEA gibi standart öznel değerlendirme kampanyaları kapsandığında yeterlidir."
+   },
+   {
+    "id": "S6",
+    "soru": "Bağlam ve etkileşim (diyalog, dinleyici tepkisi, duygu, konuşmacı kimliği, anlamsal içerik) hareket üretimine nasıl dahil edilir?",
+    "sorgular": [
+     "listener head motion generation dyadic",
+     "interlocutor-aware gesture generation",
+     "semantic gesture generation text speech",
+     "emotion-controllable co-speech gesture",
+     "speaker style gesture transfer"
+    ],
+    "yeterli": "Dinleyici modelleme, diyadik etkileşim, duygu/stil kontrolü ve anlamsal jest çalışmalarından temsilci örnekler belirlendiğinde yeterlidir."
+   },
+   {
+    "id": "S7",
+    "soru": "Komşu alanlardan (metinden hareket, müzikten dans, insan hareket difüzyonu) hangi yöntemler aktarılmaktadır ve açık problemler nelerdir?",
+    "sorgular": [
+     "text-to-motion diffusion human motion",
+     "music-to-dance generation",
+     "motion diffusion model MDM",
+     "co-speech gesture survey open challenges",
+     "gesture generation review deep learning"
+    ],
+    "yeterli": "Ana komşu alan yöntemleri ve en az iki kapsamlı derleme ile açık problemler (değerlendirme, anlamsal tutarlılık, veri kıtlığı, gerçek zamanlılık) belirlendiğinde yeterlidir."
+   }
+  ],
+  "capa_calismalar": [
+   {
+    "baslik": "Learning Individual Styles of Conversational Gesture",
+    "yil": 2019
+   },
+   {
+    "baslik": "Robots Learn Social Skills: End-to-End Learning of Co-Speech Gesture Generation for Humanoid Robots",
+    "yil": 2019
+   },
+   {
+    "baslik": "Speech Gesture Generation from the Trimodal Context of Text, Audio, and Speaker Identity",
+    "yil": 2020
+   },
+   {
+    "baslik": "Style-Controllable Speech-Driven Gesture Synthesis Using Normalising Flows",
+    "yil": 2020
+   },
+   {
+    "baslik": "Gesticulator: A framework for semantically-aware speech-driven gesture generation",
+    "yil": 2020
+   },
+   {
+    "baslik": "BEAT: A Large-Scale Semantic and Emotional Multi-Modal Dataset for Conversational Gestures Synthesis",
+    "yil": 2022
+   },
+   {
+    "baslik": "Learning Hierarchical Cross-Modal Association for Co-Speech Gesture Generation",
+    "yil": 2022
+   },
+   {
+    "baslik": "Generating Holistic 3D Human Motion from Speech",
+    "yil": 2023
+   },
+   {
+    "baslik": "Listen, Denoise, Action! Audio-Driven Motion Synthesis with Diffusion Models",
+    "yil": 2023
+   },
+   {
+    "baslik": "GestureDiffuCLIP: Gesture Diffusion Model with CLIP Latents",
+    "yil": 2023
+   },
+   {
+    "baslik": "Rhythmic Gesticulator: Rhythm-Aware Co-Speech Gesture Synthesis with Hierarchical Neural Embeddings",
+    "yil": 2022
+   },
+   {
+    "baslik": "Taming Diffusion Models for Audio-Driven Co-Speech Gesture Generation",
+    "yil": 2023
+   },
+   {
+    "baslik": "EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Masked Audio Gesture Modeling",
+    "yil": 2024
+   },
+   {
+    "baslik": "A Comprehensive Review of Data-Driven Co-Speech Gesture Generation",
+    "yil": 2023
+   },
+   {
+    "baslik": "Capture, Learning, and Synthesis of 3D Speaking Styles",
+    "yil": 2019
+   },
+   {
+    "baslik": "FaceFormer: Speech-Driven 3D Facial Animation with Transformers",
+    "yil": 2022
+   },
+   {
+    "baslik": "CodeTalker: Speech-Driven 3D Facial Animation with Discrete Motion Prior",
+    "yil": 2023
+   },
+   {
+    "baslik": "A Lip Sync Expert Is All You Need for Speech to Lip Generation In the Wild",
+    "yil": 2020
+   },
+   {
+    "baslik": "SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation",
+    "yil": 2023
+   },
+   {
+    "baslik": "Learning to Listen: Modeling Non-Deterministic Dyadic Facial Motion",
+    "yil": 2022
+   },
+   {
+    "baslik": "Audio2Photoreal: From Audio to Photoreal Embodiment: Synthesizing Humans in Conversations",
+    "yil": 2024
+   },
+   {
+    "baslik": "Talking With Hands 16.2M: A Large-Scale Dataset of Synchronized Body-Finger Motion and Audio for Conversational Motion Analysis and Synthesis",
+    "yil": 2019
+   },
+   {
+    "baslik": "MEAD: A Large-scale Audio-visual Dataset for Emotional Talking-face Generation",
+    "yil": 2020
+   },
+   {
+    "baslik": "Human Motion Diffusion Model",
+    "yil": 2023
+   },
+   {
+    "baslik": "DiffuseStyleGesture: Stylized Audio-Driven Co-Speech Gesture Generation with Diffusion Models",
+    "yil": 2023
+   }
+  ],
+  "web_odaklari": [
+   "awesome co-speech gesture generation papers github",
+   "awesome talking head generation github",
+   "speech-driven gesture and facial animation reading list"
+  ]
+ },
+ "tohumlar": [
+  "doi:10.1109/iccv.2019.00085",
+  "arXiv:1810.12541",
+  "arXiv:2101.03769",
+  "arXiv:2211.12194",
+  "arXiv:2401.00374",
+  "doi:10.1109/icassp48485.2024.10446842",
+  "arXiv:1905.03079",
+  "arXiv:2301.05339",
+  "arXiv:2112.05329",
+  "arXiv:2009.02119",
+  "arXiv:2001.09326",
+  "arXiv:2211.09707"
+ ],
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2301.05339",
+   "arxiv_id": "2301.05339",
+   "doi": "10.1111/cgf.14776",
+   "baslik": "A Comprehensive Review of Data-Driven Co-Speech Gesture Generation",
+   "yil": 2023,
+   "tarih": "2023-01-13",
+   "gerekce": "Derin üretken modellere odaklanan kapsamlı bir derleme; veriye dayalı konuşma jesti üretimi alanını özetler.",
+   "gerekce_kokeni": "sef",
+   "alinti": "This review article summarizes co‐speech gesture generation research, with a particular focus on deep generative models.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 106,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2203.05297",
+   "arxiv_id": "2203.05297",
+   "doi": "10.1007/978-3-031-20071-7_36",
+   "baslik": "BEAT: A Large-Scale Semantic and Emotional Multi-Modal Dataset for Conversational Gestures Synthesis",
+   "yil": 2022,
+   "tarih": "2022-01-01",
+   "gerekce": "Anlamsal ve duygusal çok modlu temel veri kümesi; jestlerin ifade, duygu ve anlamla ilişkisini gösterir, SRGR metriği ve CaMN taban modelini sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our statistical analysis on BEAT demonstrates the correlation of conversational gestures with facial expressions, emotions, and semantics, in addition to the known correlation with audio, text, and speaker identity.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 162,
+   "rel": 3,
+   "tohum_yakinligi": 7
+  },
+  {
+   "sira": 3,
+   "id": "doi:10.1109/iccv.2019.00085",
+   "arxiv_id": null,
+   "doi": "10.1109/iccv.2019.00085",
+   "baslik": "Talking With Hands 16.2M: A Large-Scale Dataset of Synchronized Body-Finger Motion and Audio for Conversational Motion Analysis and Synthesis",
+   "yil": 2019,
+   "tarih": "2019-10",
+   "gerekce": "Senkronize vücut-parmak hareketi ve ses içeren büyük ölçekli konuşma veri kümesi; Talking With Hands benchmark'ı.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Talking With Hands 16.2M: A Large-Scale Dataset of Synchronized Body-Finger Motion and Audio for Conversational Motion Analysis and Synthesis.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "baslik",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 62,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:1905.03079",
+   "arxiv_id": "1905.03079",
+   "doi": "10.1109/cvpr.2019.01034",
+   "baslik": "Capture, Learning, and Synthesis of 3D Speaking Styles",
+   "yil": 2019,
+   "tarih": "2019-05-08",
+   "gerekce": "VOCA ve VOCASET'i tanıtır: 12 konuşmacıdan senkron sesli 4B yüz taramaları; 3B konuşan yüz için temel çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To address this, we introduce a unique 4D face dataset with about 29 minutes of 4D scans captured at 60 fps and synchronized audio from 12 speakers.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 370,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2102.11617",
+   "arxiv_id": "2102.11617",
+   "doi": "10.1145/3397481.3450692",
+   "baslik": "A large, crowdsourced evaluation of gesture generation systems on common data: The GENEA Challenge 2020",
+   "yil": 2021,
+   "tarih": "2021-02-23",
+   "gerekce": "GENEA 2020, ortak veri ve kitle kaynaklı değerlendirmeyle yerleşik benchmark eksikliğini ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "there are no established benchmarks, and each study tends to use its own dataset, motion visualisation, and evaluation methodology.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "web"
+   ],
+   "atif": 77,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2308.12646",
+   "arxiv_id": "2308.12646",
+   "doi": "10.1145/3577190.3616120",
+   "baslik": "The GENEA Challenge 2023: A large scale evaluation of gesture generation models in monadic and dyadic settings",
+   "yil": 2023,
+   "tarih": "2023-08-24",
+   "gerekce": "GENEA 2023, 12 başvuruyu monadik ve diyadik ortamlarda büyük ölçekli kullanıcı çalışmalarıyla değerlendirir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We evaluated 12 submissions and 2 baselines together with held-out motion-capture data in several large-scale user studies.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 67,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2101.03769",
+   "arxiv_id": "2101.03769",
+   "doi": "10.1109/thms.2022.3149173",
+   "baslik": "A Review of Evaluation Practices of Gesture Generation in Embodied Conversational Agents",
+   "yil": 2021,
+   "tarih": "2021-01-11",
+   "gerekce": "Jest üretiminde çeşitli değerlendirme ölçütlerinin karşılaştırmayı zorlaştırdığını gösteren değerlendirme pratikleri incelemesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "However, reports on gesture generation methods use a variety of evaluation measures, which hinders comparison.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 81,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:2009.02119",
+   "arxiv_id": "2009.02119",
+   "doi": "10.1145/3414685.3417838",
+   "baslik": "Speech Gesture Generation from the Trimodal Context of Text, Audio, and Speaker Identity",
+   "yil": 2020,
+   "tarih": "2020-09-04",
+   "gerekce": "Metin, ses ve konuşmacı kimliğinden oluşan üçlü bağlamı çekişmeli eğitimle birleştirir; içerik ve ritme uygun jestler üretir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "By incorporating a multimodal context and an adversarial training scheme, the proposed model outputs gestures that are human-like and that match with speech content and rhythm.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 330,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:1906.04160",
+   "arxiv_id": "1906.04160",
+   "doi": "10.1109/cvpr.2019.00361",
+   "baslik": "Learning Individual Styles of Conversational Gesture",
+   "yil": 2019,
+   "tarih": "2019-06-01",
+   "gerekce": "Konuşmacıya özgü jest stillerini öğrenir ve kişiye özgü jestlerden oluşan büyük bir video veri kümesi yayımlar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To support research toward obtaining a computational understanding of the relationship between gesture and speech, we release a large video dataset of person-specific gestures.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 341,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:1810.12541",
+   "arxiv_id": "1810.12541",
+   "doi": "10.1109/icra.2019.8793720",
+   "baslik": "Robots Learn Social Skills: End-to-End Learning of Co-Speech Gesture Generation for Humanoid Robots",
+   "yil": 2018,
+   "tarih": "2018-10-30",
+   "gerekce": "52 saatlik TED konuşmasından uçtan uca öğrenilen erken derin öğrenme tabanlı jest üretimi; insansı robotlara uygulanır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We present a learning-based co-speech gesture generation that is learned from 52 h of TED talks.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 258,
+   "rel": 2,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2001.09326",
+   "arxiv_id": "2001.09326",
+   "doi": "10.1145/3382507.3418815",
+   "baslik": "Gesticulator: A framework for semantically-aware speech-driven gesture generation",
+   "yil": 2020,
+   "tarih": "2020-01-25",
+   "gerekce": "Akustik ve anlamsal konuşma temsillerini birlikte kullanarak anlam farkındalıklı jest üretir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our deep-learning based model takes both acoustic and semantic representations of speech as input, and generates gestures as a sequence of joint angle rotations as output.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 173,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 12,
+   "id": "doi:10.1111/cgf.13946",
+   "arxiv_id": null,
+   "doi": "10.1111/cgf.13946",
+   "baslik": "Style‐Controllable Speech‐Driven Gesture Synthesis Using Normalising Flows",
+   "yil": 2020,
+   "tarih": "2020-05-01",
+   "gerekce": "MoGlow'u uyarlayan normalizing flow tabanlı, stil kontrollü gerçekçi konuşma jesti üretimi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "By adapting a deep learning‐based motion synthesis method called MoGlow, we propose a new generative model for generating state‐of‐the‐art realistic speech‐driven gesticulation.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex",
+    "sef"
+   ],
+   "atif": 176,
+   "rel": 3,
+   "tohum_yakinligi": 7
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:2211.09707",
+   "arxiv_id": "2211.09707",
+   "doi": "10.1145/3592458",
+   "baslik": "Listen, Denoise, Action! Audio-Driven Motion Synthesis with Diffusion Models",
+   "yil": 2022,
+   "tarih": "2022-11-17",
+   "gerekce": "Difüzyon modellerinin dans ve konuşma jesti gibi sesle eş zamanlı hareket sentezine çok uygun olduğunu gösterir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We show that these models are an excellent fit for synthesising human motion that co-occurs with audio, e.g., dancing and co-speech gesticulation",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 217,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2303.09119",
+   "arxiv_id": "2303.09119",
+   "doi": "10.1109/cvpr52729.2023.01016",
+   "baslik": "Taming Diffusion Models for Audio-Driven Co-Speech Gesture Generation",
+   "yil": 2023,
+   "tarih": "2023-03-16",
+   "gerekce": "GAN'ların mod çöküşü ve kararsız eğitim sorunlarına karşı difüzyon tabanlı jest üretimi önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "The existing methods mainly rely on generative adversarial networks (GANs), which typically suffer from notorious mode collapse and unstable training",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 131,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2305.04919",
+   "arxiv_id": "2305.04919",
+   "doi": "10.24963/ijcai.2023/650",
+   "baslik": "DiffuseStyleGesture: Stylized Audio-Driven Co-Speech Gesture Generation with Diffusion Models",
+   "yil": 2023,
+   "tarih": "2023-05-08",
+   "gerekce": "Sınıflandırıcısız rehberlikle interpolasyon/ekstrapolasyon yoluyla stil kontrolü sağlayan difüzyon tabanlı stilize jest üretimi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "We then train our model with classifier-free guidance to control the gesture style by interpolation or extrapolation.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 100,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2303.14613",
+   "arxiv_id": "2303.14613",
+   "doi": "10.1145/3592097",
+   "baslik": "GestureDiffuCLIP: Gesture Diffusion Model with CLIP Latents",
+   "yil": 2023,
+   "tarih": "2023-03-26",
+   "gerekce": "CLIP gizil temsilleriyle esnek stil kontrolü sağlayan difüzyon tabanlı jest modeli; önceden tanımlı etiketlerin sınırlılığını aşar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Previous systems typically allow style control via predefined text labels or example motion clips, which are often not flexible enough to convey user intent accurately.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 156,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2401.00374",
+   "arxiv_id": "2401.00374",
+   "doi": "10.1109/cvpr52733.2024.00115",
+   "baslik": "EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Masked Audio Gesture Modeling",
+   "yil": 2023,
+   "tarih": "2023-12-31",
+   "gerekce": "Maskeli ses-jest modellemesiyle bütüncül jest üretimi; SMPL-X ve FLAME içeren standart BEAT2 veri kümesini sunar.",
+   "gerekce_kokeni": "sef",
+   "alinti": "BEAT2 combines a MoShed SMPL-X body with FLAME head parameters and further refines the modeling of head, neck, and finger movements, offering a community-standardized, high-quality 3D motion captured dataset.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 103,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2212.04420",
+   "arxiv_id": "2212.04420",
+   "doi": "10.1109/cvpr52729.2023.00053",
+   "baslik": "Generating Holistic 3D Human Motion from Speech",
+   "yil": 2022,
+   "tarih": "2022-12-08",
+   "gerekce": "Konuşmadan bütüncül 3B hareket üretir; yüz için otokodlayıcı, vücut ve eller için kompozisyonel VQ-VAE kullanır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Specifically, we employ an autoencoder for face motions, and a compositional vector-quantized variational autoencoder (VQ-VAE) for the body and hand motions.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 0,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2112.05329",
+   "arxiv_id": "2112.05329",
+   "doi": "10.1109/cvpr52688.2022.01821",
+   "baslik": "FaceFormer: Speech-Driven 3D Facial Animation with Transformers",
+   "yil": 2021,
+   "tarih": "2021-12-10",
+   "gerekce": "Transformer tabanlı otoregresif 3B yüz animasyonu; kısa ses penceresi kaynaklı hatalı dudak hareketlerini ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Prior works typically focus on learning phoneme-level features of short audio windows with limited context, occasionally resulting in inaccurate lip movements.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 275,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2301.02379",
+   "arxiv_id": "2301.02379",
+   "doi": "10.1109/cvpr52729.2023.01229",
+   "baslik": "CodeTalker: Speech-Driven 3D Facial Animation with Discrete Motion Prior",
+   "yil": 2023,
+   "tarih": "2023-01-06",
+   "gerekce": "Ayrık hareket öncülü ve otoregresif model ile dudak senkronlu, makul yüz ifadeleri üretir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Over the discrete motion space, a temporal autoregressive model is employed to sequentially synthesize facial motions from the input speech signal, which guarantees lip-sync as well as plausible facial expressions.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "dblp",
+    "openalex",
+    "sef",
+    "web"
+   ],
+   "atif": 207,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 21,
+   "id": "arXiv:2104.08223",
+   "arxiv_id": "2104.08223",
+   "doi": "10.1109/iccv48922.2021.00121",
+   "baslik": "MeshTalk: 3D Face Animation from Speech using Cross-Modality Disentanglement",
+   "yil": 2021,
+   "tarih": "2021-04-16",
+   "gerekce": "Modaliteler arası ayrıştırma yapar; mevcut yöntemlerdeki statik üst yüz ve hatalı koartikülasyon sorunlarını ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Existing approaches to audio-driven facial animation exhibit uncanny or static upper face animation, fail to produce accurate and plausible co-articulation or rely on person-specific models that limit their scalability.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "web"
+   ],
+   "atif": 230,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 22,
+   "id": "doi:10.1145/3072959.3073658",
+   "arxiv_id": null,
+   "doi": "10.1145/3072959.3073658",
+   "baslik": "Audio-driven facial animation by joint end-to-end learning of pose and emotion",
+   "yil": 2017,
+   "tarih": "2017-07-20",
+   "gerekce": "Ses dalga formundan 3B yüz köşe noktalarına uçtan uca eşleme öğrenen, gizil duygu kodlu öncü çalışma.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our deep neural network learns a mapping from input waveforms to the 3D vertex coordinates of a face model",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 381,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 23,
+   "id": "doi:10.1007/978-3-030-58589-1_42",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-030-58589-1_42",
+   "baslik": "MEAD: A Large-Scale Audio-Visual Dataset for Emotional Talking-Face Generation",
+   "yil": 2020,
+   "tarih": "2020-11-12",
+   "gerekce": "Duygusal konuşan yüz üretimi için büyük ölçekli görsel-işitsel MEAD veri kümesi.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "sef",
+    "web"
+   ],
+   "atif": 308,
+   "rel": 3,
+   "tohum_yakinligi": 1
+  },
+  {
+   "sira": 24,
+   "id": "arXiv:2204.08451",
+   "arxiv_id": "2204.08451",
+   "doi": "10.1109/cvpr52688.2022.01975",
+   "baslik": "Learning to Listen: Modeling Non-Deterministic Dyadic Facial Motion",
+   "yil": 2022,
+   "tarih": "2022-04-18",
+   "gerekce": "İkili konuşmada dinleyici yüz hareketini VQ-VAE ile deterministik olmayan biçimde modelleyerek etkileşim bağlamını ele alır.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Furthermore, we enable non-deterministic prediction by learning a discrete latent representation of realistic listener motion with a novel motion-encoding VQ-VAE.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "openalex",
+    "sef"
+   ],
+   "atif": 99,
+   "rel": 3,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2401.04747",
+   "arxiv_id": "2401.04747",
+   "doi": "10.1109/cvpr52733.2024.00702",
+   "baslik": "DiffSHEG: A Diffusion-Based Approach for Real-Time Speech-driven Holistic 3D Expression and Gesture Generation",
+   "yil": 2024,
+   "tarih": "2024-01-09",
+   "gerekce": "Senkron yüz ifadesi ve jestin birlikte üretimi az araştırılmışken bunları gerçek zamanlı difüzyonla birlikte üretir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "While previous works focused on co-speech gesture or expression generation individually, the joint generation of synchronized expressions and gestures remains barely explored.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 62,
+   "rel": 3,
+   "tohum_yakinligi": 5
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2410.10851",
+   "arxiv_id": "2410.10851",
+   "doi": "10.1117/12.3060395",
+   "baslik": "LLM Gesticulator: Leveraging Large Language Models for Scalable and Controllable Co-Speech Gesture Synthesis",
+   "yil": 2024,
+   "tarih": "2024-10-06",
+   "gerekce": "Büyük dil modelleriyle ölçeklenebilir jest sentezi; içerik ve stil metin istemiyle kontrol edilebilir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Our method also exhibits strong controllability where the content, style of the generated gestures can be controlled by text prompt.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 6,
+   "rel": 3,
+   "tohum_yakinligi": 3
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2209.14916",
+   "arxiv_id": "2209.14916",
+   "doi": null,
+   "baslik": "Human Motion Diffusion Model",
+   "yil": 2022,
+   "tarih": "2022-09-29",
+   "gerekce": "Çoktan çoğa yapısıyla insan hareketine uygun difüzyon modeli; komşu alandan jest üretimine aktarılan yöntem.",
+   "gerekce_kokeni": "sef",
+   "alinti": "Diffusion models, which have already shown remarkable generative capabilities in other domains, are promising candidates for human motion due to their many-to-many nature",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "sef"
+   ],
+   "atif": null,
+   "rel": 2,
+   "tohum_yakinligi": 0
+  },
+  {
+   "sira": 28,
+   "id": "doi:10.6084/m9.figshare.29617663",
+   "arxiv_id": null,
+   "doi": "10.6084/m9.figshare.29617663",
+   "baslik": "Advancing Objective Evaluation of Speech-Driven Gesture Generation for Embodied Conversational Agents",
+   "yil": 2025,
+   "tarih": "2025-07-22",
+   "gerekce": "Öznel çalışmalarla korelasyonu artırmak için benzerlik tabanlı nesnel değerlendirmeye yeni öznitelik çıkarıcılar önerir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To address this, we propose novel feature extractors for a similarity-based objective evaluation framework, designed to enhance correlation with subjective studies.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref",
+    "openalex"
+   ],
+   "atif": 5,
+   "rel": 3,
+   "tohum_yakinligi": 4
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2306.08990",
+   "arxiv_id": "2306.08990",
+   "doi": "10.1145/3610548.3618183",
+   "baslik": "Emotional Speech-Driven Animation with Content-Emotion Disentanglement",
+   "yil": 2023,
+   "tarih": "2023-06-15",
+   "gerekce": "Dudak senkronu ve duygu için ayrıştırılmış kayıplarla duygusal konuşma kaynaklı yüz animasyonu üretir.",
+   "gerekce_kokeni": "sef",
+   "alinti": "To achieve this, we supervise EMOTE with decoupled losses for speech (i.e., lip-sync) and emotion.",
+   "alinti_durum": "VERIFIED",
+   "alinti_kaynagi": "ozet",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "arxiv",
+    "atif",
+    "openalex",
+    "web"
+   ],
+   "atif": 88,
+   "rel": 3,
+   "tohum_yakinligi": 2
+  },
+  {
+   "sira": 30,
+   "id": "doi:10.1007/978-3-662-08373-4_8",
+   "arxiv_id": null,
+   "doi": "10.1007/978-3-662-08373-4_8",
+   "baslik": "BEAT: the Behavior Expression Animation Toolkit",
+   "yil": 2004,
+   "tarih": "2004",
+   "gerekce": "Klasik kural tabanlı Behavior Expression Animation Toolkit; jest üretiminin erken temellerini temsil eder.",
+   "gerekce_kokeni": "sef",
+   "alinti": "",
+   "alinti_durum": "OZET_YOK",
+   "alinti_kaynagi": "",
+   "ozet_kaynagi": "",
+   "kaynaklar": [
+    "atif",
+    "crossref"
+   ],
+   "atif": 90,
+   "rel": 2,
+   "tohum_yakinligi": 3
+  }
+ ]
+}

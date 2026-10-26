@@ -1,0 +1,1048 @@
+[
+ {
+  "id": "arXiv:1908.02518",
+  "baslik": "Ripser: efficient computation of Vietoris-Rips persistence barcodes",
+  "yil": 2019,
+  "cites": 309,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Ripser: Vietoris-Rips barkod hesabı, temel yazılım",
+  "alinti": "The method relies on implicit representations of the coboundary operator and the filtration order of the simplices, avoiding the explicit construction and storage of the filtration coboundary matrix."
+ },
+ {
+  "id": "arXiv:1904.09378",
+  "baslik": "PersLay: A Neural Network Layer for Persistence Diagrams and New Graph Topological Signatures",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kalıcılık diyagramları için öğrenilebilir sinir katmanı",
+  "alinti": "We then propose a general and versatile framework for learning vectorizations of persistence diagrams, which encompasses most of the vectorization techniques used in"
+ },
+ {
+  "id": "doi:10.1007/s00454-002-2885-2",
+  "baslik": "Topological persistence and simplification",
+  "yil": 2002,
+  "cites": 1416,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; temel kalıcılık referansı",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1506.08903",
+  "baslik": "A roadmap for the computation of persistent homology",
+  "yil": 2015,
+  "cites": 634,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 2,
+  "not": "PH hesaplama yol haritası, kıyaslamalar içerir",
+  "alinti": "We give a friendly introduction to PH, navigate the pipeline for the computation of PH with an eye towards applications"
+ },
+ {
+  "id": "arXiv:2010.08356",
+  "baslik": "Optimizing persistent homology based functions",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Kalıcılık fonksiyonları için alt gradyan yakınsaklığı",
+  "alinti": "We also provide a simple, explicit and sufficient condition for convergence of stochastic subgradient methods for such functions."
+ },
+ {
+  "id": "doi:10.1145/997817.997870",
+  "baslik": "Computing persistent homology",
+  "yil": 2004,
+  "cites": 153,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; kalıcı homoloji hesabı",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1910.01877",
+  "baslik": "A Topological Loss Function for Deep-Learning based Image Segmentation using Persistent Homology",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Betti sayısıyla topolojik segmentasyon kaybı, etiket gerektirmez",
+  "alinti": "By using the differentiable properties of persistent homology, a concept used in topological data analysis, we can specify the desired topology of segmented objects in terms of their Betti numbers"
+ },
+ {
+  "id": "arXiv:1905.12200",
+  "baslik": "A Topology Layer for Machine Learning",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Türevlenebilir topoloji katmanı; düzenlileştirme ve kayıp uygulamaları",
+  "alinti": "We present a differentiable topology layer that computes persistent homology based on level set filtrations and edge-based filtrations."
+ },
+ {
+  "id": "doi:10.1007/s00454-006-1276-5",
+  "baslik": "Stability of persistence diagrams",
+  "yil": 2005,
+  "cites": 946,
+  "kaynaklar": [
+   "atif",
+   "crossref",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Yalnızca başlık; kararlılık teoremi konusu",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1707.04041",
+  "baslik": "Deep Learning with Topological Signatures",
+  "yil": 2017,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Topolojik imzaları derin ağlara giriş olarak öğrenen katman",
+  "alinti": "we propose a technique that enables us to input topological signatures to deep neural networks and learn a task-optimal representation during training"
+ },
+ {
+  "id": "arXiv:2403.11001",
+  "baslik": "Topologically Faithful Multi-class Segmentation in Medical Images",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Çok sınıflı tıbbi segmentasyonda Betti eşleştirme kaybı",
+  "alinti": "We propose a general loss function for topologically faithful multi-class segmentation extending the recent Betti matching concept, which is based on induced matchings of persistence barcodes."
+ },
+ {
+  "id": "arXiv:1906.05404",
+  "baslik": "Topology-Preserving Deep Image Segmentation",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Topoloji koruyan segmentasyon için türevlenebilir kayıp",
+  "alinti": "we design a continuous-valued loss function that enforces a segmentation to have the same topology as the ground truth, i.e., having the same Betti number."
+ },
+ {
+  "id": "arXiv:2003.07311",
+  "baslik": "clDice -- A Novel Topology-Preserving Loss Function for Tubular Structure Segmentation",
+  "yil": 2020,
+  "cites": 584,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef"
+  ],
+  "rel": 2,
+  "not": "Tübüler yapılar için topoloji koruyan kayıp; PH'ye dolaylı",
+  "alinti": "We introduce a novel similarity measure termed centerlineDice (short clDice), which is calculated on the intersection of the segmentation masks and their (morphological) skeleta."
+ },
+ {
+  "id": "arXiv:1906.00722",
+  "baslik": "Topological Autoencoders",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Gizli uzay için topoloji koruyan otokodlayıcı kaybı",
+  "alinti": "Using persistent homology, a technique from topological data analysis, we calculate topological signatures of both the input and latent space to derive a topological loss term."
+ },
+ {
+  "id": "arXiv:2507.19504",
+  "baslik": "Topological Data Analysis and Topological Deep Learning Beyond Persistent Homology -- A Review",
+  "yil": 2025,
+  "cites": 22,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Kalıcı homolojinin sınırları ve ötesi için inceleme",
+  "alinti": "However, persistent homology has many limitations due to its high-level abstraction, insensitivity to non-topological changes, and reliance on point cloud data."
+ },
+ {
+  "id": "arXiv:2408.08038",
+  "baslik": "PI-Att: Topology Attention for Segmentation Networks through Adaptive Persistence Image Representation",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Persistence image tabanlı topoloji dikkat kaybı",
+  "alinti": "we introduce a new topology-aware loss function, which we call PI-Att, that explicitly forces the network to minimize the topological dissimilarity between the ground truth and prediction maps"
+ },
+ {
+  "id": "doi:10.24963/ijcai.2022/168",
+  "baslik": "TopoSeg: Topology-aware Segmentation for Point Clouds",
+  "yil": 2022,
+  "cites": 5,
+  "kaynaklar": [
+   "crossref",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Nokta bulutu segmentasyonu için topoloji kaybı",
+  "alinti": "we design a topological loss function embedded in TopoSeg module, which imposes topological constraints on the segmentation of 3D point clouds."
+ },
+ {
+  "id": "arXiv:1811.00252",
+  "baslik": "Persistent-Homology-based Machine Learning and its Applications -- A Survey",
+  "yil": 2018,
+  "cites": 55,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Survey covering PH representations, metrics, features, software",
+  "alinti": "In this paper, we provide a systematical review of PH and PH-based supervised and unsupervised models from a computational perspective."
+ },
+ {
+  "id": "arXiv:1910.00960",
+  "baslik": "A Framework for Differential Calculus on Persistence Barcodes",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Differentiability framework for barcodes; central.",
+  "alinti": "The two derived notions of differentiability (respectively from and to the space of barcodes) combine together naturally to produce a chain rule that enables the use of gradient descent"
+ },
+ {
+  "id": "arXiv:2107.05412",
+  "baslik": "giotto-ph: A Python Library for High-Performance Computation of Persistent Homology of Vietoris-Rips Filtrations",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Vietoris-Rips için yüksek performanslı kütüphane",
+  "alinti": "Our persistent homology backend establishes a new state of the art, surpassing even GPU-accelerated implementations such as Ripser++ when using as few as 5-10 CPU cores."
+ },
+ {
+  "id": "arXiv:2004.00738",
+  "baslik": "Persistent Homology and Applied Homotopy Theory",
+  "yil": 2020,
+  "cites": 15,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Kalıcı homoloji teorisi ve vektörleştirme anketi",
+  "alinti": "It includes the theory of persistence modules, as well as stability theorems for persistence barcodes, generalized persistence, vectorization of persistence barcodes"
+ },
+ {
+  "id": "arXiv:2003.07989",
+  "baslik": "GPU-Accelerated Computation of Vietoris-Rips Persistence Barcodes",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Vietoris-Rips barkodları için GPU hızlandırmalı yazılım",
+  "alinti": "We also design massively parallel algorithms to take advantage of the very large number of simplices that can be processed independently of each other."
+ },
+ {
+  "id": "arXiv:2001.02960",
+  "baslik": "Computing Persistent Homology with Various Coefficient Fields in a Single Pass",
+  "yil": 2014,
+  "cites": 4,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Tek geçişte çoklu katsayı alanı için PH hesabı",
+  "alinti": "This article introduces an algorithm to compute the persistent homology of a filtered complex with various coefficient fields in a single matrix reduction."
+ },
+ {
+  "id": "arXiv:1501.00179",
+  "baslik": "A persistence landscapes toolbox for topological statistics",
+  "yil": 2014,
+  "cites": 142,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Kalıcılık manzaraları için araç kutusu ve algoritmalar",
+  "alinti": "The persistence landscape is a topological summary that can be easily combined with tools from statistics and machine learning."
+ },
+ {
+  "id": "arXiv:2112.03610",
+  "baslik": "Persistent Homology Analysis for Materials Research and Persistent Homology Software: HomCloud",
+  "yil": 2021,
+  "cites": 151,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Malzeme araştırmalarında PH ve HomCloud yazılımı",
+  "alinti": "This paper introduces persistent homology, which is a powerful tool to characterize the shape of data using the mathematical concept of topology."
+ },
+ {
+  "id": "arXiv:2503.01614",
+  "baslik": "Stability of Bipath Persistence Diagrams",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Bipath kalıcılığında kararlılık teoremi; genişletme",
+  "alinti": "In proving the stability theorem, the algebraic stability theorem/the isometry theorem for persistence modules plays a central role."
+ },
+ {
+  "id": "arXiv:1901.10244",
+  "baslik": "Explicit Topological Priors for Deep-Learning Based Image Segmentation Using Persistent Homology",
+  "yil": 2019,
+  "cites": 64,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Differentiable topological prior loss for segmentation via Betti numbers",
+  "alinti": "to capture high-level topological characteristics of segmentation results in a way which is differentiable with respect to the pixelwise probability"
+ },
+ {
+  "id": "arXiv:2407.01517",
+  "baslik": "Centerline Boundary Dice Loss for Vascular Segmentation",
+  "yil": 2024,
+  "cites": 43,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Topology-aware vascular loss; clDice-based, not persistent homology",
+  "alinti": "Traditional methods, like the centerline Dice (clDice) loss, ensure topology preservation but falter in capturing geometric details"
+ },
+ {
+  "id": "arXiv:2312.05840",
+  "baslik": "Topological Data Analysis for Neural Network Analysis: A Comprehensive Survey",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 2,
+  "not": "Sinir ağı analizinde TDA anketi; genelleme bağlantısı",
+  "alinti": "Additionally, we review how topological information can be leveraged to analyze properties of neural networks, such as their generalization capacity or expressivity."
+ },
+ {
+  "id": "arXiv:2302.00136",
+  "baslik": "Learning Topology-Preserving Data Representations",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Topology-preserving autoencoder with differentiable RTD loss",
+  "alinti": "We develop a scheme for RTD differentiation and apply it as a loss term for the autoencoder."
+ },
+ {
+  "id": "doi:10.1109/tkde.2022.3147070",
+  "baslik": "A Survey on the High Performance Computation of Persistent Homology",
+  "yil": 2022,
+  "cites": 10,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; PH yüksek performans hesabı anketi",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2011.14688",
+  "baslik": "Can neural networks learn persistent homology features?",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Neural networks learning features of persistence diagrams directly",
+  "alinti": "In our work, we explore the possibility of learning several types of features extracted from persistence diagrams using neural networks."
+ },
+ {
+  "id": "arXiv:2201.04170",
+  "baslik": "Efficient Computation of Image Persistence",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 2,
+  "not": "Görüntü kalıcılığı için verimli hesaplama algoritmaları",
+  "alinti": "These algorithms make use of the clearing optimization and can be applied to inclusion-induced maps in persistent absolute homology and persistent relative cohomology"
+ },
+ {
+  "id": "arXiv:2102.07835",
+  "baslik": "Topological Graph Neural Networks",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Topological GNN layer exceeding message-passing expressivity",
+  "alinti": "We present TOGL, a novel layer that incorporates global topological information of a graph using persistent homology."
+ },
+ {
+  "id": "arXiv:2112.15210",
+  "baslik": "Persformer: A Transformer Architecture for Topological Machine Learning",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Transformer for diagrams with universal approximation and interpretability",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2507.23763",
+  "baslik": "Topology Optimization In Medical Image Segmentation With Fast Χ Euler Characteristic",
+  "yil": 2025,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Fast Euler characteristic topology loss for medical segmentation",
+  "alinti": "Existing topology-aware approaches commonly estimate and constrain the topological structure via the concept of persistent homology (PH)."
+ },
+ {
+  "id": "arXiv:2412.18696",
+  "baslik": "STITCH: Surface reconstrucTion using Implicit neural representations with Topology Constraints and persistent Homology",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Topological loss for neural implicit surface reconstruction, with convergence",
+  "alinti": "We develop a new differentiable framework based on persistent homology to formulate topological loss terms that enforce the prior of a single 2-manifold object."
+ },
+ {
+  "id": "arXiv:1806.10714",
+  "baslik": "A Topological Regularizer for Classifiers via Persistent Homology",
+  "yil": 2018,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Topological penalty regularizer for classifier boundaries",
+  "alinti": "In particular, our measurement of topological complexity incorporates the importance of topological features (e.g., connected components, handles, and so on)"
+ },
+ {
+  "id": "arXiv:2302.03836",
+  "baslik": "Topological Deep Learning: A Review of an Emerging Paradigm",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Survey of topological deep learning; central.",
+  "alinti": "we review the nascent field of topological deep learning by first revisiting the core concepts of TDA"
+ },
+ {
+  "id": "arXiv:2105.03629",
+  "baslik": "Fast computation of persistent homology representatives with involuted persistent homology",
+  "yil": 2021,
+  "cites": 8,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Faster extraction of homology representatives via cohomology",
+  "alinti": "This algorithm applied to Rips filtrations generally computes persistent homology representatives much faster than the standard methods."
+ },
+ {
+  "id": "arXiv:2303.01501",
+  "baslik": "Stability and Machine Learning Applications of Persistent Homology Using the Delaunay-Rips Complex",
+  "yil": 2023,
+  "cites": 14,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Delaunay-Rips complex for stable, efficient persistent homology",
+  "alinti": "However, computational costs may present challenges to effectively using PH in certain data contexts, and theoretical stability results may not hold in practice."
+ },
+ {
+  "id": "arXiv:2405.18820",
+  "baslik": "Diffeomorphic interpolation for efficient persistence-based topological optimization",
+  "yil": 2024,
+  "cites": 1,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Addresses sparse gradients in topological optimization; central.",
+  "alinti": "Focusing on the central case of topological optimization for point clouds, we propose in this work to overcome this limitation using diffeomorphic interpolation"
+ },
+ {
+  "id": "arXiv:1904.07768",
+  "baslik": "Persistence Curves: A canonical framework for summarizing persistence diagrams",
+  "yil": 2019,
+  "cites": 45,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Unifying vectorization framework with stability analysis.",
+  "alinti": "Second, we propose several new summaries based on PC framework and provide a theoretical foundation for their stability analysis."
+ },
+ {
+  "id": "arXiv:2207.03394",
+  "baslik": "MuRiT: Efficient Computation of Pathwise Persistence Barcodes in Multi-Filtered Flag Complexes via Vietoris-Rips Transformations",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Çok parametreli kalıcılık için ölçeklenebilir hesaplama",
+  "alinti": "We introduce the concept of a Vietoris-Rips transformation, a method that reduces the computation of the one-parameter persistent homology of pathwise subcomplexes in multi-filtered flag complexes"
+ },
+ {
+  "id": "arXiv:2110.10136",
+  "baslik": "Activation Landscapes as a Topological Summary of Neural Network Performance",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Sinir ağı katmanlarında aktivasyon kalıcılık manzaraları",
+  "alinti": "We compute the persistent homology of the activation data for each layer of the network and summarize this information using persistence landscapes."
+ },
+ {
+  "id": "arXiv:2412.02076",
+  "baslik": "Topology-Preserving Image Segmentation with Spatial-Aware Persistent Feature Matching",
+  "yil": 2024,
+  "cites": 5,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Topological segmentation loss for tubular structures; central.",
+  "alinti": "Existing topological segmentation loss functions are primarily based on the persistent homology of the image."
+ },
+ {
+  "id": "doi:10.1007/978-3-662-44199-2_28",
+  "baslik": "The Gudhi Library: Simplicial Complexes and Persistent Homology",
+  "yil": 2014,
+  "cites": 179,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Yalnızca başlık; yaygın PH yazılım kütüphanesi",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1109/icme59968.2025.11209425",
+  "baslik": "TopoLayer: A Universal Neural Network Layer for Topological Feature Learning on Point Clouds using Persistent Homology",
+  "yil": 2025,
+  "cites": 1,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Title only; learnable topological layer; abstract absent.",
+  "alinti": "TopoLayer: A Universal Neural Network Layer for Topological Feature Learning on Point Clouds using Persistent Homology."
+ },
+ {
+  "id": "arXiv:2203.12330",
+  "baslik": "Predicting the generalization gap in neural networks using topological data analysis",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "PH predicts generalization gap of neural networks; central.",
+  "alinti": "we compute homological persistence diagrams of weighted graphs constructed from neuron activation correlations after a training phase"
+ },
+ {
+  "id": "arXiv:1507.06217",
+  "baslik": "Persistence Images: A Stable Vector Representation of Persistent Homology",
+  "yil": 2015,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef"
+  ],
+  "rel": 3,
+  "not": "Vectorization with stability proof; central to S4.",
+  "alinti": "We convert a PD to a finite-dimensional vector representation which we call a persistence image (PI), and prove the stability of this transformation"
+ },
+ {
+  "id": "arXiv:2107.12689",
+  "baslik": "A persistent homology-based topological loss for CNN-based multi-class segmentation of CMR",
+  "yil": 2021,
+  "cites": 53,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Çok sınıflı CMR segmentasyonu için PH tabanlı topolojik kayıp.",
+  "alinti": "make predictable and statistically significant improvements in segmentation topology using a CNN-based post-processing framework."
+ },
+ {
+  "id": "arXiv:2406.02234",
+  "baslik": "On the Limitations of Fractal Dimension as a Measure of Generalization",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Empirical evaluation of PH-based generalization measures.",
+  "alinti": "This paper performs an empirical evaluation of these persistent homology-based generalization measures, with an in-depth statistical analysis."
+ },
+ {
+  "id": "arXiv:2203.16748",
+  "baslik": "Topological Optimization with Big Steps",
+  "yil": 2022,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Gradient prescription for PH-guided optimization; central.",
+  "alinti": "Existing methods treat persistence calculation as a black box and backpropagate gradients only onto the simplices involved in particular pairs."
+ },
+ {
+  "id": "arXiv:1907.13496",
+  "baslik": "Topological Machine Learning with Persistence Indicator Functions",
+  "yil": 2019,
+  "cites": 21,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Kernel-compatible vectorization of persistence diagrams",
+  "alinti": "This paper presents persistence indicator functions (PIFs), which summarize persistence diagrams, i.e., feature descriptors in topological data analysis."
+ },
+ {
+  "id": "doi:10.3390/math11041008",
+  "baslik": "Topological Regularization for Representation Learning via Persistent Homology",
+  "yil": 2023,
+  "cites": 6,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Topological regularizer for representation learning with generalization proof",
+  "alinti": "To impose this property, we propose a novel weight function to extract topological information, and we introduce a new regularizer including three items to guide the representation learning in a topology-aware manner."
+ },
+ {
+  "id": "doi:10.21105/joss.00925",
+  "baslik": "Ripser.py: A Lean Persistent Homology Library for Python",
+  "yil": 2018,
+  "cites": 210,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Python persistent homology software library (Ripser)",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-642-23175-9_7",
+  "baslik": "Efficient Computation of Persistent Homology for Cubical Data",
+  "yil": 2011,
+  "cites": 77,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Efficient persistent homology for cubical data; title only",
+  "alinti": ""
+ },
+ {
+  "id": "doi:10.1007/978-3-662-44199-2_24",
+  "baslik": "Phat – Persistent Homology Algorithms Toolbox",
+  "yil": 2014,
+  "cites": 106,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Persistent homology software toolbox; title only",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:2407.04683",
+  "baslik": "Efficient Betti Matching Enables Topology-Aware 3D Segmentation via Persistent Homology",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Betti eşleştirme kaybı; hızlı C++ uygulaması; segmentasyon.",
+  "alinti": "We use Betti matching 3D to train segmentation networks with the Betti matching loss and demonstrate improved topological correctness of predicted segmentations across several datasets."
+ },
+ {
+  "id": "arXiv:2106.00012",
+  "baslik": "Persistent Homology Captures the Generalization of Neural Networks Without A Validation Set",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "PH-based generalization estimation without validation set.",
+  "alinti": "Results show that the PH diagram distance between consecutive neural network states correlates with the validation accuracy"
+ },
+ {
+  "id": "arXiv:1809.10231",
+  "baslik": "A Kernel for Multi-Parameter Persistent Homology",
+  "yil": 2018,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Stable kernel for multi-parameter persistent homology",
+  "alinti": "We contribute a kernel construction for multi-parameter persistence by integrating a one-parameter kernel weighted along straight lines."
+ },
+ {
+  "id": "arXiv:2301.09734",
+  "baslik": "Topological Learning in Multi-Class Data Sets",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Topological complexity linked to DNN classification learnability",
+  "alinti": "We hypothesize that topological complexity is negatively correlated with the ability of a fully connected feedforward deep neural network to learn to classify data correctly."
+ },
+ {
+  "id": "arXiv:2307.09259",
+  "baslik": "Adaptive Topological Feature via Persistent Homology: Filtration Learning for Point Clouds",
+  "yil": 2023,
+  "cites": 2,
+  "kaynaklar": [
+   "arxiv",
+   "crossref",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Learnable filtration for PH on point clouds; central.",
+  "alinti": "In this paper, we propose a framework that learns a filtration adaptively with the use of neural networks."
+ },
+ {
+  "id": "doi:10.3390/futuretransp5040177",
+  "baslik": "Beyond Conventional Losses: Skeleton-Based Loss for Preserving Connectivity in Crack Segmentation",
+  "yil": 2025,
+  "cites": 5,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "clDice topolojik kayıp; çatlak segmentasyonunda bağlantı korunumu.",
+  "alinti": "we investigate one of the skeleton-based losses, the Centerline Dice (clDice) loss, which emphasizes the preservation of tubular structures via soft skeletonization."
+ },
+ {
+  "id": "arXiv:2406.07224",
+  "baslik": "Differentiability and Optimization of Multiparameter Persistent Homology",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Çok parametreli PH için türevlenebilirlik ve gradyan optimizasyonu çerçevesi.",
+  "alinti": "When optimizing a vector-valued function (the multiparameter setting), there is no unique choice of descriptor for multiparameter persistent homology, and many distinct descriptors have been proposed."
+ },
+ {
+  "id": "arXiv:2311.06375",
+  "baslik": "Image Classification using Combination of Topological Features and Neural Networks",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 2,
+  "not": "Topological features combined with MLP/CNN on MNIST",
+  "alinti": "Additionally, we applied vectorization techniques to the persistence diagram to make this topological information compatible with machine learning algorithms."
+ },
+ {
+  "id": "doi:10.1609/aaai.v37i13.27026",
+  "baslik": "Persistent Homology through Image Segmentation (Student Abstract)",
+  "yil": 2023,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Approximates persistence diagram computation with deep networks",
+  "alinti": "However, TDA's usability in large scale machine learning applications is hindered by the significant computational cost of generating persistence diagrams."
+ },
+ {
+  "id": "arXiv:2402.08871",
+  "baslik": "Position: Topological Deep Learning is the New Frontier for Relational Learning",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "TDL açık problemler konumlandırma makalesi",
+  "alinti": "To this end, this paper discusses open problems in TDL, ranging from practical benefits to theoretical foundations."
+ },
+ {
+  "id": "arXiv:2307.11603",
+  "baslik": "Cascaded multitask U-Net using topological loss for vessel segmentation and centerline extraction",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "3B damar segmentasyonunda topolojik kayıp; clDice iyileştirmesi.",
+  "alinti": "To overcome these limitations, the clDice loss, a topological loss that focuses on the vessel centerlines, has been recently proposed."
+ },
+ {
+  "id": "arXiv:1906.09003",
+  "baslik": "Connectivity-Optimized Representation Learning via Persistent Homology",
+  "yil": 2019,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "sef",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Otokodlayıcı gizli uzayında PH tabanlı bağlantısallık kaybı.",
+  "alinti": "In particular, we control the connectivity of an autoencoder's latent space via a novel type of loss, operating on information from persistent homology."
+ },
+ {
+  "id": "arXiv:2008.09585",
+  "baslik": "A persistent homology-based topological loss function for multi-class CNN segmentation of cardiac MRI",
+  "yil": 2020,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif",
+   "web"
+  ],
+  "rel": 3,
+  "not": "Çok sınıflı kardiyak MR segmentasyonu için topolojik kayıp; item 2 ile ilişkili.",
+  "alinti": "Building a richer description of segmentation topology by considering all possible labels and label pairs, we extend these losses to the task of multi-class segmentation."
+ },
+ {
+  "id": "doi:10.1145/1137856.1137878",
+  "baslik": "Persistence-sensitive simplification functions on 2-manifolds",
+  "yil": 2006,
+  "cites": 54,
+  "kaynaklar": [
+   "atif",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Persistence-based function simplification; directly relevant to topological optimization.",
+  "alinti": ""
+ },
+ {
+  "id": "arXiv:1804.07795",
+  "baslik": "Stochastic Subgradient Method Converges on Tame Functions",
+  "yil": 2018,
+  "cites": 142,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "Core subgradient convergence theory for nonsmooth learning.",
+  "alinti": "We prove that the stochastic subgradient method, on any semialgebraic locally Lipschitz function, produces limit points that are all first-order stationary."
+ },
+ {
+  "id": "arXiv:2311.17243",
+  "baslik": "PHG-Net: Persistent Homology Guided Medical Image Classification<sup>*</sup>",
+  "yil": 2023,
+  "cites": 24,
+  "kaynaklar": [
+   "arxiv",
+   "crossref"
+  ],
+  "rel": 3,
+  "not": "PH module integrated into CNN/Transformer for medical images.",
+  "alinti": "For an input image, we first compute its cubical persistence diagram and extract topological features into a vector representation using a small neural network"
+ },
+ {
+  "id": "arXiv:2412.03806",
+  "baslik": "Dynamical Persistent Homology via Wasserstein Gradient Flow",
+  "yil": 2024,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Wasserstein gradient flow of diagrams mapped back to data",
+  "alinti": "Our research focuses on the development of algorithms that translate variations in persistence diagrams back into the data space."
+ },
+ {
+  "id": "doi:10.67698/pjpcr.2026.0124",
+  "baslik": "Persistent Homology and Wasserstein Distance Stability for Topological Data Analysis of High-Dimensional Point Clouds",
+  "yil": 2023,
+  "cites": 0,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "Vague methodology; unverified quantitative claims in abstract",
+  "alinti": "Using Vietoris-Rips filtration with ripser library, Wasserstein distance computation between persistence diagrams, and noise stability analysis under Gaussian perturbation"
+ },
+ {
+  "id": "arXiv:2304.04970",
+  "baslik": "GRIL: A $2$-parameter Persistence Based Vectorization for Machine Learning",
+  "yil": 2023,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "İki parametreli persistans için türevlenebilir, Lipschitz kararlı vektörleştirme.",
+  "alinti": "We show that this vector representation is $1$-Lipschitz stable and differentiable with respect to underlying filtration functions and can be easily integrated into machine learning models"
+ },
+ {
+  "id": "arXiv:2110.06295",
+  "baslik": "Persistent Homology with Improved Locality Information for more Effective Delineation",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv",
+   "atif"
+  ],
+  "rel": 3,
+  "not": "Yer bilgisi içeren filtrasyon; yol ve nöron bağlantısı kaybı.",
+  "alinti": "We experimentally demonstrate that deep networks trained using our PH-based loss function yield reconstructions of road networks and neuronal processes that reflect ground-truth connectivity better than networks trained with existing loss functions based on PH."
+ },
+ {
+  "id": "doi:10.1007/s10472-021-09761-3",
+  "baslik": "Topological measurement of deep neural networks using persistent homology",
+  "yil": 2021,
+  "cites": 24,
+  "kaynaklar": [
+   "crossref"
+  ],
+  "rel": 2,
+  "not": "PH analysis of trained DNN internals; interpretability focus.",
+  "alinti": "Persistent homology (PH), one of the outstanding methods in TDA, was employed for investigating the complexities of trained DNNs."
+ },
+ {
+  "id": "arXiv:2101.05201",
+  "baslik": "Optimisation of Spectral Wavelets for Persistence-based Graph Classification",
+  "yil": 2021,
+  "cites": null,
+  "kaynaklar": [
+   "arxiv"
+  ],
+  "rel": 3,
+  "not": "Learnable wavelets with differentiable extended PH; central.",
+  "alinti": "To provide the underlying theoretical foundations, we extend the differentiability result for ordinary persistent homology to extended persistent homology."
+ }
+]

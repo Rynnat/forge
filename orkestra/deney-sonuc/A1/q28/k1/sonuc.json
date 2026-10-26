@@ -1,0 +1,297 @@
+{
+ "run_id": "taban-a1-20261026-080053-373951",
+ "sistem": "A-taban-a1",
+ "mod": "a1",
+ "soru": "Makine öğrenmesi hatlarında farklı saldırganların birlikte hareket ederek güvenlik, gizlilik ve adalet risklerini güçlendirmesi üzerine en önemli çalışmalar ve açık problemler neler?",
+ "kesim": "2026-05-08",
+ "durum": "OK",
+ "hata": "",
+ "model": "opus",
+ "araclar": "WebSearch,WebFetch",
+ "tavan_usd": 3.0,
+ "maliyet_usd": 1.1016,
+ "sure_s": 232.1,
+ "web_arama": 34,
+ "token": {
+  "in": 609759,
+  "out": 43391,
+  "cache_read": 308809,
+  "cache_write": 49818
+ },
+ "son_rapor_token_tahmini": 2812,
+ "ham_sayi": 30,
+ "gecerli_gorunen_kimlik": 30,
+ "istem": "Research question: Makine öğrenmesi hatlarında farklı saldırganların birlikte hareket ederek güvenlik, gizlilik ve adalet risklerini güçlendirmesi üzerine en önemli çalışmalar ve açık problemler neler?\n\nCutoff date: 2026-05-08. Only works published BEFORE this date count.\n\nList the 30 most important works (papers) for this research question that were published before the cutoff date, in order of importance (most important first) — the kind a careful expert survey published right after the cutoff would cite. Give each with its arXiv id and/or DOI.\n\nYou MUST research this with web search rather than answer from memory: search for the important works, and verify each listed work's title, publication date and identifier on the web (e.g. arxiv.org, doi.org, the publisher or DBLP page) before including it.\n\nWhen you are done, reply with ONLY a JSON object in this form (no other text):\n{\"calismalar\": [{\"sira\": 1, \"baslik\": \"exact title\", \"yil\": 2020, \"arxiv_id\": \"arXiv id or null\", \"doi\": \"DOI or null\", \"gerekce\": \"one sentence on why this work is important\"}]}\nwith exactly 30 items. If you do not know an identifier, use null instead of guessing.",
+ "calismalar": [
+  {
+   "sira": 1,
+   "id": "arXiv:2204.00032",
+   "arxiv_id": "2204.00032",
+   "doi": null,
+   "baslik": "Truth Serum: Poisoning Machine Learning Models to Reveal Their Secrets",
+   "yil": 2022,
+   "gerekce": "This is the defining work showing that a poisoning adversary can boost membership inference, attribute inference and data extraction against other parties' data by one to two orders of magnitude."
+  },
+  {
+   "sira": 2,
+   "id": "arXiv:2312.04542",
+   "arxiv_id": "2312.04542",
+   "doi": null,
+   "baslik": "SoK: Unintended Interactions among Machine Learning Defenses and Risks",
+   "yil": 2024,
+   "gerekce": "This IEEE S&P 2024 distinguished paper provides the framework, based on overfitting and memorization, that explains how security, privacy and fairness risks and defenses affect one another."
+  },
+  {
+   "sira": 3,
+   "id": "arXiv:2211.00463",
+   "arxiv_id": "2211.00463",
+   "doi": null,
+   "baslik": "Amplifying Membership Exposure via Data Poisoning",
+   "yil": 2022,
+   "gerekce": "It shows with dirty-label and clean-label poisoning that a poisoning adversary can raise the membership inference adversary's success."
+  },
+  {
+   "sira": 4,
+   "id": "arXiv:2101.11073",
+   "arxiv_id": "2101.11073",
+   "doi": null,
+   "baslik": "Property Inference From Poisoning",
+   "yil": 2021,
+   "gerekce": "It is the first work to show that poisoning strengthens property and distribution inference attacks."
+  },
+  {
+   "sira": 5,
+   "id": "arXiv:2208.12348",
+   "arxiv_id": "2208.12348",
+   "doi": null,
+   "baslik": "SNAP: Efficient Extraction of Private Properties with Poisoning",
+   "yil": 2022,
+   "gerekce": "This IEEE S&P 2023 paper makes the poisoning-assisted property inference collusion efficient and practical."
+  },
+  {
+   "sira": 6,
+   "id": "arXiv:2012.08723",
+   "arxiv_id": "2012.08723",
+   "doi": "10.1609/aaai.v35i10.17080",
+   "baslik": "Exacerbating Algorithmic Bias through Fairness Attacks",
+   "yil": 2021,
+   "gerekce": "It introduces the anchoring and influence attacks, which use poisoning to worsen algorithmic bias."
+  },
+  {
+   "sira": 7,
+   "id": "arXiv:2004.07401",
+   "arxiv_id": "2004.07401",
+   "doi": null,
+   "baslik": "Poisoning Attacks on Algorithmic Fairness",
+   "yil": 2020,
+   "gerekce": "It is the first gradient-based framework that turns poisoning against fairness instead of accuracy."
+  },
+  {
+   "sira": 8,
+   "id": "arXiv:1911.01559",
+   "arxiv_id": "1911.01559",
+   "doi": null,
+   "baslik": "A Tale of Evil Twins: Adversarial Inputs versus Poisoned Models",
+   "yil": 2020,
+   "gerekce": "It systematically shows that evasion and poisoning adversaries reinforce each other."
+  },
+  {
+   "sira": 9,
+   "id": "arXiv:2506.18870",
+   "arxiv_id": "2506.18870",
+   "doi": null,
+   "baslik": "Amplifying Machine Learning Attacks Through Strategic Compositions",
+   "yil": 2025,
+   "gerekce": "It systematically studies how test-time attacks such as adversarial examples, MIA, AIA and PIA can be composed to amplify one another."
+  },
+  {
+   "sira": 10,
+   "id": "arXiv:2404.00473",
+   "arxiv_id": "2404.00473",
+   "doi": null,
+   "baslik": "Privacy Backdoors: Stealing Data with Corrupted Pretrained Models",
+   "yil": 2024,
+   "gerekce": "It shows that a supply-chain (pretrained model) adversary can enable fine-tuning data to be stolen and can weaken DP guarantees."
+  },
+  {
+   "sira": 11,
+   "id": "arXiv:2404.01231",
+   "arxiv_id": "2404.01231",
+   "doi": null,
+   "baslik": "Privacy Backdoors: Enhancing Membership Inference through Poisoning Pre-trained Models",
+   "yil": 2024,
+   "gerekce": "It shows that a poisoned pretrained model sharply increases membership leakage after fine-tuning in CLIP and LLMs."
+  },
+  {
+   "sira": 12,
+   "id": "arXiv:1709.07886",
+   "arxiv_id": "1709.07886",
+   "doi": null,
+   "baslik": "Machine Learning Models that Remember Too Much",
+   "yil": 2017,
+   "gerekce": "It is an early example of a malicious training-code provider enabling data extraction by a later inference adversary."
+  },
+  {
+   "sira": 13,
+   "id": "arXiv:1905.10291",
+   "arxiv_id": "1905.10291",
+   "doi": null,
+   "baslik": "Privacy Risks of Securing Machine Learning Models against Adversarial Examples",
+   "yil": 2019,
+   "gerekce": "It is the foundational evidence that robustness defenses increase membership inference risk."
+  },
+  {
+   "sira": 14,
+   "id": "arXiv:2011.03731",
+   "arxiv_id": "2011.03731",
+   "doi": null,
+   "baslik": "On the Privacy Risks of Algorithmic Fairness",
+   "yil": 2020,
+   "gerekce": "It shows that fairness constraints increase privacy leakage, especially for disadvantaged subgroups."
+  },
+  {
+   "sira": 15,
+   "id": "arXiv:2212.10986",
+   "arxiv_id": "2212.10986",
+   "doi": null,
+   "baslik": "SoK: Let the Privacy Games Begin! A Unified Treatment of Data Inference Privacy in Machine Learning",
+   "yil": 2023,
+   "gerekce": "It formally relates different inference risks through games, laying groundwork for analyzing collusion between inference adversaries."
+  },
+  {
+   "sira": 16,
+   "id": "arXiv:2403.00871",
+   "arxiv_id": "2403.00871",
+   "doi": null,
+   "baslik": "Teach LLMs to Phish: Stealing Private Information from Language Models",
+   "yil": 2024,
+   "gerekce": "It shows that inserting a few benign-looking poison sentences enables PII extraction from LLMs."
+  },
+  {
+   "sira": 17,
+   "id": "arXiv:2105.10909",
+   "arxiv_id": "2105.10909",
+   "doi": null,
+   "baslik": "Killing One Bird with Two Stones: Model Extraction and Attribute Inference Attacks against BERT-based APIs",
+   "yil": 2021,
+   "gerekce": "It shows the model extraction → attribute inference chain, where one adversary's output feeds another adversary."
+  },
+  {
+   "sira": 18,
+   "id": "arXiv:2303.11643",
+   "arxiv_id": "2303.11643",
+   "doi": null,
+   "baslik": "Manipulating Transfer Learning for Property Inference",
+   "yil": 2023,
+   "gerekce": "It shows that an adversary who manipulates the upstream model enables property inference on downstream training data."
+  },
+  {
+   "sira": 19,
+   "id": "arXiv:2407.01919",
+   "arxiv_id": "2407.01919",
+   "doi": null,
+   "baslik": "A Method to Facilitate Membership Inference Attacks in Deep Learning Models",
+   "yil": 2024,
+   "gerekce": "It shows that a malicious training-code provider enables near-complete membership inference and exposes the weakness of privacy audits."
+  },
+  {
+   "sira": 20,
+   "id": "arXiv:2303.12233",
+   "arxiv_id": "2303.12233",
+   "doi": null,
+   "baslik": "LOKI: Large-scale Data Reconstruction Attack against Federated Learning through Model Manipulation",
+   "yil": 2023,
+   "gerekce": "It shows that a malicious server's model manipulation enables large-scale data reconstruction even under FedAvg and secure aggregation."
+  },
+  {
+   "sira": 21,
+   "id": "doi:10.1145/3543507.3583542",
+   "arxiv_id": null,
+   "doi": "10.1145/3543507.3583542",
+   "baslik": "AgrEvader: Poisoning Membership Inference against Byzantine-robust Federated Learning",
+   "yil": 2023,
+   "gerekce": "It shows that poisoning-assisted membership inference in federated learning can bypass Byzantine-robust aggregation."
+  },
+  {
+   "sira": 22,
+   "id": "arXiv:2207.01991",
+   "arxiv_id": "2207.01991",
+   "doi": null,
+   "baslik": "Conflicting Interactions Among Protection Mechanisms for Machine Learning Models",
+   "yil": 2022,
+   "gerekce": "It empirically documents conflicts among ownership verification, DP and adversarial robustness."
+  },
+  {
+   "sira": 23,
+   "id": "arXiv:2312.10508",
+   "arxiv_id": "2312.10508",
+   "doi": null,
+   "baslik": "TrojFair: Trojan Fairness Attacks",
+   "yil": 2023,
+   "gerekce": "It shows a backdoor that targets fairness and evades fairness audits."
+  },
+  {
+   "sira": 24,
+   "id": "doi:10.1109/sds57574.2022.10062890",
+   "arxiv_id": null,
+   "doi": "10.1109/SDS57574.2022.10062890",
+   "baslik": "Un-Fair Trojan: Targeted Backdoor Attacks Against Model Fairness",
+   "yil": 2022,
+   "gerekce": "It is an early study showing backdoor/poisoning attacks that degrade fairness stealthily in federated learning."
+  },
+  {
+   "sira": 25,
+   "id": "arXiv:2106.10807",
+   "arxiv_id": "2106.10807",
+   "doi": null,
+   "baslik": "Adversarial Examples Make Strong Poisons",
+   "yil": 2021,
+   "gerekce": "It shows evasion techniques being directly reused as poisoning, i.e. the evasion → poisoning link."
+  },
+  {
+   "sira": 26,
+   "id": "arXiv:2105.12049",
+   "arxiv_id": "2105.12049",
+   "doi": "10.1145/3460120.3484533",
+   "baslik": "Honest-but-Curious Nets: Sensitive Attributes of Private Inputs Can Be Secretly Coded into the Classifiers' Outputs",
+   "yil": 2021,
+   "gerekce": "It shows that a malicious model provider can covertly enable attribute inference by encoding sensitive attributes into the model's outputs."
+  },
+  {
+   "sira": 27,
+   "id": "arXiv:2402.18607",
+   "arxiv_id": "2402.18607",
+   "doi": null,
+   "baslik": "Exploring Privacy and Fairness Risks in Sharing Diffusion Models: An Adversarial Perspective",
+   "yil": 2024,
+   "gerekce": "It studies fairness poisoning and property inference risks together in a diffusion-model sharing scenario."
+  },
+  {
+   "sira": 28,
+   "id": "arXiv:2406.15213",
+   "arxiv_id": "2406.15213",
+   "doi": null,
+   "baslik": "Backdooring Bias into Text-to-Image Models",
+   "yil": 2024,
+   "gerekce": "It shows that low-cost poisoning can inject trigger-activated bias into generative models."
+  },
+  {
+   "sira": 29,
+   "id": "arXiv:2411.01705",
+   "arxiv_id": "2411.01705",
+   "doi": null,
+   "baslik": "Data Extraction Attacks in Retrieval-Augmented Generation via Backdoors",
+   "yil": 2024,
+   "gerekce": "It shows fine-tuning poisoning enabling extraction of the RAG database in LLM pipelines."
+  },
+  {
+   "sira": 30,
+   "id": "arXiv:1709.01604",
+   "arxiv_id": "1709.01604",
+   "doi": null,
+   "baslik": "Privacy Risk in Machine Learning: Analyzing the Connection to Overfitting",
+   "yil": 2017,
+   "gerekce": "It provides the theoretical basis for the link between overfitting and inference attacks, which is the core factor explaining why collusions occur."
+  }
+ ]
+}

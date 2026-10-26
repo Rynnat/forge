@@ -1,0 +1,55 @@
+# Orkestra özeti
+Soru: Çok kipli büyük dil modelleriyle çalışan çoklu robot ağlarında algılama, haberleşme ve hesaplamanın birlikte ele alınması üzerine en önemli çalışmalar ve açık problemler neler?
+Kesim: 2026-02-28 | koşu: 20261026-014224-123b1e
+Durum: EKSİK (eksik: openalex, s2_zenginlestirme)
+Maliyet (teorik, liste fiyatı): $0.773 | süre: 1754 s
+
+## Funnel
+- toplama:openalex: 1144 → 1144 (düşen: –)
+- cozumleme:sef_capa: 23 → 22 (düşen: cozulemedi 1)
+- toplama:crossref: 4000 → 3829 (düşen: tur_disi:proceedings 5, tur_disi:peer-review 40, tur_disi:dataset 126)
+- cozumleme:web: 144 → 111 (düşen: cozulemedi 10, tekrar_baslik 23)
+- toplama:dblp: 676 → 672 (düşen: kesim_sonrasi(yil) 4)
+- toplama:arxiv: 4991 → 4991 (düşen: –)
+- tekillestirme_1: 10769 → 8896 (düşen: birlesti 1873)
+- kesim_1: 8896 → 8429 (düşen: tarih_belirsiz 467)
+- toplama:atif: 10047 → 675 (düşen: atif_yapan_kesim_sonrasi 39, tavan_kesimi 9308, meta_yok 25)
+- tekillestirme_2: 9104 → 9003 (düşen: birlesti 101)
+- kesim_2: 9003 → 8987 (düşen: tarih_belirsiz 9, tarih_yok 7)
+- okuyucu_kesimi: 8987 → 1200 (düşen: on_siralama_kesimi 7787)
+- okuyucu: 1200 → 1189 (düşen: kesin_alakasiz 11)
+- damitma: 1189 → 80 (düşen: ilk_kart_disi 1109)
+- sef_final: 80 → 30 (düşen: secilmedi 50)
+Kaynaklar: sef_plan OK; openalex EKSİK [bütçe: koşu başı anahtarsız tavan (12) doldu]; web OK; crossref OK; dblp OK; arxiv OK; s2_zenginlestirme EKSİK [s2: HTTP 429: 3 denemede 429]; atif OK; ozet_arxiv OK; sef_final OK
+
+## 30 çalışma (önem sırasıyla)
+1. arXiv:2211.02574 — Pushing AI to Wireless Network Edge: An Overview on Integrated Sensing, Communication, and Computation towards 6G (2022-11-04). ISCC'yi 6G uç zekâsı için temellendiren anket; algılama, haberleşme ve hesaplamanın kesintisiz bütünleşmesini ve kaynak tasarımını ele alır. «seamless integrated sensing, communication, and computation»
+2. arXiv:2108.07165 — Integrated Sensing and Communications: Towards Dual-functional Wireless Networks for 6G and Beyond (2021-08-16). ISAC'ın temel çalışması; algılamanın 6G RAN'ın anahtar özelliği olarak çift işlevli kablosuz ağlara entegrasyonunu tanımlar. «The integration of sensing functionality is emerging as a key feature…»
+3. arXiv:2309.16739 — Pushing Large Language Models to the 6G Edge: Vision, Challenges, and Opportunities (2023-09-28). Robotik dahil çok kipli LLM uygulamalarını 6G uç ağlarına taşımanın vizyonunu, zorluklarını ve fırsatlarını doğrudan tartışır. «We start by introducing killer applications powered by multimodal LLM…»
+4. arXiv:2309.15943 — Scalable Multi-Robot Collaboration with Large Language Models: Centralized or Decentralized Systems? (2023-09-27). Merkezi, dağıtık ve hibrit LLM çoklu robot iletişim çerçevelerini görev başarısı ve token verimliliği açısından doğrudan karşılaştırır. «compare the task success rate and token efficiency of four multi-agen…»
+5. arXiv:2307.04738 — RoCo: Dialectic Multi-Robot Collaboration with Large Language Models (2023-07-10). LLM donanımlı robotların dil aracılığıyla tartışıp ortak strateji ürettiği diyalektik çoklu robot işbirliğinin öncü çalışması. «Robots are equipped with LLMs to discuss and collectively reason task…»
+6. arXiv:2309.10062 — SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models (2023-09-18). Yüksek seviyeli talimatları LLM ile çoklu robot görev planına dönüştüren, çok atıflı temel çalışma ve kıyaslama sunar. «harnesses the power of LLMs to convert high-level task instructions p…»
+7. arXiv:2408.08074 — A Survey on Integrated Sensing, Communication, and Computation (2024-08-15). ISCC anketi; modüllerin birbirine bağımlılığının zaman, enerji ve bant genişliği için kaynak rekabeti yarattığını vurgular. «However, the performance of these modules is interdependent, creating…»
+8. arXiv:2307.15818 — RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control (2023-07-28). İnternet ölçekli görme-dil modellerini uçtan uca robot kontrolüne aktaran VLA paradigmasının temel çalışması. «We study how vision-language models trained on Internet-scale data ca…»
+9. arXiv:2303.03378 — PaLM-E: An Embodied Multimodal Language Model (2023-03-06). Sürekli sensör kiplerini doğrudan dil modellerine katarak kelimeler ile algılar arasında bağ kuran gömülü çok kipli model. «We propose embodied language models to directly incorporate real-worl…»
+10. arXiv:2209.12836 — Where2comm: Communication-Efficient Collaborative Perception via Spatial Confidence Maps (2022-09-26). Uzamsal güven haritalarıyla bant genişliği verimli işbirlikçi algılama sağlayan merkezi yöntem; tamamlayıcı bilgi paylaşımını optimize eder. «Multi-agent collaborative perception could significantly upgrade the…»
+11. arXiv:2207.09353 — Beyond Transmitting Bits: Context, Semantics, and Task-Oriented Communications (2022-07-19). Mesaj anlamını ve haberleşme amaçlarını sistem tasarımına katan anlamsal ve görev odaklı haberleşmenin temel eğitim çalışması. «Next generation systems, however, can be potentially enriched by fold…»
+12. arXiv:2207.00969 — Task-Oriented Sensing, Computation, and Communication Integration for Multi-Device Edge AI (2022-07-03). Model bölünmüş çıkarım ile ISAC'ı çok cihazlı uç yapay zekâ için görev odaklı biçimde birlikte ele alır. «jointly exploits the AI model split inference and integrated sensing…»
+13. arXiv:2406.09246 — OpenVLA: An Open-Source Vision-Language-Action Model (2024-06-13). Görsel-motor kontrol için ince ayarlanabilen açık kaynak VLA modeli; robot algılama ve kontrolünde yaygın temel sağlar. «we can fine-tune such vision-language-action (VLA) models to obtain r…»
+14. arXiv:2109.00172 — Task-Oriented Communication for Multi-Device Cooperative Edge Inference (2021-09-01). Çok cihazlı işbirlikçi uç çıkarımda yerel öznitelik çıkarımı ve dağıtık kodlamayı görev odaklı optimize eden öğrenme tabanlı şema. «we propose a learning-based communication scheme that optimizes local…»
+15. arXiv:2307.02485 — Building Cooperative Embodied Agents Modularly with Large Language Models (2023-07-05). Ücretsiz kanal veya merkezi denetleyici varsayımlarını sorgulayarak dağıtık iletişimli modüler LLM işbirlikçi gömülü ajanlar önerir. «While previous research either presupposes a cost-free communication…»
+16. arXiv:2202.08449 — V2X-Sim: Multi-Agent Collaborative Perception Dataset and Benchmark for Autonomous Driving (2022-02-17). Otonom sürüşte çok ajanlı işbirlikçi algılama için veri kümesi ve kıyaslama sunar; değerlendirme altyapısı açısından kritik. «V2X-Sim seeks to stimulate collaborative perception research for auto…»
+17. arXiv:1605.06676 — Learning to Communicate with Deep Multi-Agent Reinforcement Learning (2016-05-21). RIAL ve DIAL ile derin çok ajanlı pekiştirmeli öğrenmede haberleşmenin öğrenilmesini başlatan temel çalışma. «We propose two approaches for learning in these domains: Reinforced I…»
+18. doi:10.1088/978-0-7503-5593-3ch1 — Edge Intelligence (2018-08-01). Gerçek zamanlı DNN çıkarımı için hesaplamayı cihaz ile uç arasında uyarlamalı bölen bölünmüş çıkarım yaklaşımı. «DNN partitioning that adaptively partitions DNN computation between d…»
+19. arXiv:1701.01090 — A Survey on Mobile Edge Computing: The Communication Perspective (2017-01-01). Hesaplama, ağ denetimi ve depolamayı ağ kenarına iten MEC'i haberleşme perspektifiyle inceleyen çok atıflı temel anket. «push mobile computing, network control and storage to the network edg…»
+20. arXiv:2409.15146 — COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models (2024-09-23). Merkezi görev atayıcıyla karmaşık görevleri alt görevlere bölen heterojen çoklu robot LLM işbirliği çerçevesi. «a centralized task assigner makes a task planning proposal to decompo…»
+21. doi:10.1109/jiot.2025.3579940 — AI-Enabled Integrated Sensing, Communication, and Computation Survey: Techniques, Status, and Perspectives (2025-06-23). Yapay zekâ destekli ISCC tekniklerini, mevcut durumu ve gelecek perspektiflerini kapsamlı biçimde derleyen güncel anket. «ISCC aims to integrate communication, sensing, and computation functi…»
+22. arXiv:2408.02549 — Generative AI as a Service in 6G Edge-Cloud: Generation Task Offloading by In-context Learning (2024-08-05). Temel modellerin hizmet gecikmesini radyo kaynak tahsisi ve görev aktarımıyla en aza indiren 6G uç-bulut yaklaşımı. «it aims to minimize the service delay of foundation models by radio r…»
+23. doi:10.1109/icccas62034.2024.10652700 — Joint Resource Allocation and Task Scheduling for UAV-Assisted ISCC Networks (2024-05-10). İHA destekli ISCC'de algılama verisinin yerel hesaplama ile uç sunucuya kısmi aktarım arasında zamanlanmasını ele alır. «the UAV collects sensing data and determines the scheduling strategy…»
+24. arXiv:2602.11583 — The Five Ws of Multi-Agent Communication: Who Talks to Whom, When, What, and Why -- A Survey from MARL to Emergent Language and LLMs (2025-09-11). MARL'den ortaya çıkan dile ve LLM'lere uzanan çok ajanlı iletişimi kim, kime, ne zaman, ne ve neden boyutlarıyla inceler. «In dynamic and partially observable environments, effective communica…»
+25. arXiv:2510.07077 — Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications (2025-01-01). Gerçek dünya robotik dağıtımına yönelik tam kapsamlı VLA incelemesi; genelleme ve uygulama zorluklarını değerlendirir. «By unifying vision, language, and action data at scale, which have tr…»
+26. arXiv:2505.00820 — HMCF: A Human-in-the-loop Multi-Robot Collaboration Framework Based on Large Language Models (2025-05-01). Her robotta LLM ajanı bulunan, insan denetimiyle halüsinasyonu azaltan çoklu robot işbirliği çerçevesi; güvenilirlik sorununa değinir. «Each robot is equipped with an LLM agent capable of understanding its…»
+27. doi:10.1109/tccn.2021.3130993 — Communication-Efficient and Federated Multi-Agent Reinforcement Learning (2021-11-26). Kablosuz kanalı ADMM formülasyonuna katan haberleşme verimli federe çok ajanlı pekiştirmeli öğrenme yöntemi. «Our algorithm incorporates the wireless channel into the formulation…»
+28. doi:10.1007/s44336-024-00009-2 — A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges (2024-10-08). LLM tabanlı çok ajanlı sistemlerin iş akışı, altyapısı ve zorluklarını ele alan çok atıflı kapsamlı anket. «Leveraging the exceptional reasoning and planning capabilities of lar…»
+29. doi:10.1016/j.procir.2026.05.337 — A Hierarchical Framework of Central-Distributed LLM Negotiation and Specialized Model Orchestration for Multi-Robot Collaborative Assembly (2026-01-01). Merkezi LLM'in alt görevleri robotlara gömülü dağıtık LLM'lere yayınladığı hiyerarşik merkezi-dağıtık müzakere çerçevesi. «a Central LLM is used to parse high-level task specifications into at…»
+30. arXiv:2511.21510 — Tool-RoCo: An Agent-as-Tool Self-organization Large Language Model Benchmark in Multi-robot Cooperation (2025-11-26). Her ajanın kendi LLM'iyle yerel bilgiye dayalı araç çağırdığı dağıtık işbirliğini kıyaslayan çoklu robot LLM benchmark'ı. «decentralized cooperation, where each agent has its own LLM and calls…»
